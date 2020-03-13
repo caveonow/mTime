@@ -1,6 +1,7 @@
 ﻿Imports System.Web.Optimization
 
 Public Module BundleConfig
+
     ' For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
     Public Sub RegisterBundles(ByVal bundles As BundleCollection)
 
@@ -16,11 +17,13 @@ Public Module BundleConfig
                     "~/Scripts/modernizr-*"))
 
         bundles.Add(New ScriptBundle("~/bundles/bootstrap").Include(
-                  "~/Scripts/bootstrap.js"))
+                  "~/Scripts/bootstrap.js",
+                  "~/Scripts/srs.js"))
 
         bundles.Add(New StyleBundle("~/Content/css").Include(
                   "~/Content/bootstrap.css",
-                  "~/Content/site.css"))
+                  "~/Content/font-awesome.css",
+                  "~/Content/style.css"))
     End Sub
-End Module
 
+End Module
