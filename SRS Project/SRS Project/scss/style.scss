@@ -33,11 +33,36 @@ html, body {
     width: 325px !important;
 }
 
+.padding0_10 {
+    padding: 0 10px;
+}
+
 .header_part1 {
     width: 100%;
     height: 40px;
     background-color: #038C76;
     position: relative;
+    z-index: 10;
+
+    .translate_part {
+        width: initial;
+        height: inherit;
+        float: right;
+
+        .tsl_pt_ttbtn {
+            width: initial;
+            height: initial;
+            color: #fff;
+            font-size: 14px;
+            line-height: 30px;
+            text-align: center;
+            float: right;
+            margin: 5px 0;
+            padding: 0 10px;
+            text-decoration: none;
+            position: relative;
+        }
+    }
 
     .hd_pt1_inbox1 {
         color: #fff;
@@ -79,6 +104,7 @@ html, body {
         border-left: 2px #09af94 solid;
         text-decoration: none;
         position: relative;
+        cursor: pointer;
 
         .logouticon_mo_tt {
             display: none;
@@ -336,10 +362,190 @@ html, body {
                 position: absolute;
                 z-index: 1;
                 top: -5px;
-                left: 1px;
+                margin: 0 0;
             }
         }
     }
+}
+
+.firstlogin_box {
+    width: 500px;
+    height: initial;
+    padding: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+    z-index: 1;
+
+    .ftlogin_b_icon {
+        width: 100%;
+        height: initial;
+        float: left;
+        color: #666;
+        text-align: center;
+        font-size: 80px;
+        margin: 0 0 20px 0;
+    }
+
+    .ftlogin_b_httt {
+        width: 100%;
+        line-height: 30px;
+        margin: 0 0 10px 0;
+        padding: 0 10px;
+        float: left;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .ftlogin_b_part {
+        width: 100%;
+        height: initial;
+        float: left;
+        margin: 0 0 10px 0;
+
+        .b_pt_tt {
+            width: 150px;
+            line-height: 30px;
+            font-size: 14px;
+            float: left;
+            color: #333;
+            text-align: right;
+        }
+
+        .b_pt_box {
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            padding: 0 15px 0 175px;
+
+            input {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px #aaa solid;
+            }
+        }
+
+        .b_pt_tt1 {
+            width: 70px;
+            line-height: 30px;
+            font-size: 14px;
+            float: left;
+            color: #333;
+            text-align: right;
+        }
+
+        .b_pt_box1 {
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            padding: 0 15px 0 95px;
+
+            input {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px #aaa solid;
+            }
+        }
+    }
+
+    .ftlogin_b_partbtm {
+        width: 100%;
+        height: 30px;
+        float: left;
+    }
+}
+
+.ctr_leftpart_home {
+    width: 300px;
+    height: initial;
+    float: left;
+    position: relative;
+    z-index: 10;
+
+    .leftpart_home_box {
+        width: inherit;
+        height: initial;
+        min-height: 200px;
+        background-color: #444;
+        float: left;
+        position: relative;
+        border-radius: 0 5px 5px 0;
+        padding: 0 0 10px 0;
+        margin: 0 0 15px 0;
+
+        .ltpt_home_b_httt {
+            width: initial;
+            height: 40px;
+            background-color: #222;
+            line-height: 16px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 0 5px 0 0;
+            padding: 12px 10px;
+        }
+    }
+}
+
+.leftpart_ul_box {
+    list-style-type: circle;
+    height: initial;
+    float: left;
+    display: block;
+    background-color: transparent;
+    margin: 0 0;
+
+    li {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 5px 0;
+        color: #fff;
+
+        a {
+            width: inherit;
+            height: initial;
+            float: left;
+            text-decoration: none;
+            color: #aaa;
+            padding: 1px 5px 1px 0;
+            font-size: 12px;
+        }
+    }
+}
+
+.popup_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 99;
+}
+
+.massage_part {
+    width: initial;
+    height: inherit;
+    line-height: 40px;
+    padding: 0 10px;
+    color: #ff0000;
+    float: left;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.35)
 }
 
 .malaysia_logo {
@@ -349,6 +555,7 @@ html, body {
     z-index: 1;
     background: url(../../img/malaysia_logo_s.png) center center no-repeat;
     opacity: 0.15;
+    pointer-events: none;
 }
 
 .body_center {
@@ -775,15 +982,14 @@ html, body {
                         background-color: #fff;
                         border: 1px #aaa solid;
                     }
-
-                    .hlday_addbox_pt_error {
+                    /*.hlday_addbox_pt_error {
                         width: 100%;
                         line-height: 20px;
                         float: left;
                         color: #ff0000;
                         font-size: 12px;
                         text-align: right;
-                    }
+                    }*/
                 }
 
                 .hlday_addbox_partbtn {
@@ -840,6 +1046,66 @@ html, body {
             }
         }
     }
+}
+
+.edit_pt_box {
+    width: 100%;
+    height: inherit;
+    float: left;
+
+    .edit_pt_inb {
+        width: 100%;
+        height: initial;
+        float: left;
+        margin: 0 0 10px 0;
+        padding: 0 0 0 170px;
+
+        .pt_inb_tt {
+            width: 160px;
+            height: 30px;
+            text-align: right;
+            float: left;
+            padding: 0 10px;
+            line-height: 30px;
+            font-size: 14px;
+            position: absolute;
+            left: 0;
+        }
+
+        .pt_inb_input_none {
+            width: 100%;
+            height: 30px;
+            float: left;
+            line-height: 30px;
+            font-size: 14px;
+            padding: 0 10px;
+            background-color: #ccc;
+            border: 1px #aaa solid;
+            color: #333;
+            pointer-events: none;
+        }
+
+        .pt_inb_input {
+            width: 100%;
+            height: 30px;
+            float: left;
+            line-height: 30px;
+            font-size: 14px;
+            padding: 0 10px;
+            background-color: #fff;
+            border: 1px #aaa solid;
+            color: #333;
+        }
+    }
+}
+
+.hlday_addbox_pt_error {
+    width: 100%;
+    line-height: 20px;
+    float: left;
+    color: #ff0000;
+    font-size: 12px;
+    text-align: right;
 }
 
 tbody {
@@ -979,6 +1245,18 @@ ul {
     cursor: pointer;
 }
 
+.btn_editprofile {
+    width: initial;
+    height: inherit;
+    float: right;
+    font-size: 12px;
+    text-align: right;
+    line-height: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
 .btn_edit {
     width: 20px;
     line-height: 30px !important;
@@ -1042,6 +1320,18 @@ ul {
     border-radius: 5px;
     background-color: #666;
     color: #fff;
+    cursor: pointer;
+}
+
+.rtpt_forgotpwbtn {
+    width: initial;
+    line-height: 30px;
+    float: right;
+    text-align: left;
+    text-decoration: none;
+    color: #0069ae;
+    font-size: 12px;
+    padding: 0 10px;
     cursor: pointer;
 }
 

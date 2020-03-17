@@ -326,6 +326,7 @@
     <Content Include="Views\Maintenance\LateTolerant.vbhtml" />
     <Content Include="Views\Administration\Superior.vbhtml" />
     <Content Include="Views\Administration\Administrator.vbhtml" />
+    <Content Include="Views\Shared\_StaffMenuTop.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

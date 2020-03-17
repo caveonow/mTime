@@ -20,6 +20,40 @@
 //    alterClass();
 //});
 
+//Login Page Function
+$("#confirmbtn, #loginbtn").click(function () {
+    $("#logout").removeClass("display_none").addClass("display_block");
+    $("#login").addClass("display_none").removeClass("display_block");
+});
+
+$(" #logout_btn").click(function () {
+    $("#login").removeClass("display_none").addClass("display_block");
+    $("#logout").addClass("display_none").removeClass("display_block");
+});
+
+$("#btn_firstlogin").click(function () {
+    $("#firstlogin_popup").addClass("display_block").removeClass("display_none");
+});
+
+$("#btn_login").click(function () {
+    $("#login_popup").addClass("display_block").removeClass("display_none");
+});
+
+$("#editprofile_btn").click(function () {
+    $("#editprofile_popup").addClass("display_block").removeClass("display_none");
+});
+
+$("#forgotpw_btn").click(function () {
+    $("#forgotpw_popup").addClass("display_block").removeClass("display_none");
+    $("#login_popup").addClass("display_none").removeClass("display_block");
+});
+
+$("#closebtn, #confirmbtn, #sendbtn, #loginbtn, #savebtn").click(function () {
+    $("#firstlogin_popup, #login_popup, #forgotpw_popup, #editprofile_popup").addClass("display_none").removeClass("display_block");
+});
+//Nav Top Menu Staff
+$("#stfhdr_btn1").addClass("pt2_b_btneff");
+
 //Nav Top Menu Part1
 $("#hdr_btn4").addClass("pt2_b_btneff");
 
@@ -158,9 +192,19 @@ function display_ct() {
     tt = display_c();
 }
 
-$(".pt1_inbox2_usericon").click(function () {
-    $(".hd_profile").slideToggle("fast");
-    $(".pt1_inbox2_usericon").toggleClass("filter_cs1");
+//$(".pt1_inbox2_usericon").click(function () {
+//    $(".hd_profile").slideToggle("fast");
+//    $(".pt1_inbox2_usericon").toggleClass("filter_cs1");
+//});
+
+$(".pt1_inbox2_usericon").mouseover(function () {
+    $(".hd_profile").slideDown("fast");
+    $(".pt1_inbox2_usericon").addClass("filter_cs1");
+});
+
+$(".hd_profile").mouseleave(function () {
+    $(".hd_profile").slideUp("fast");
+    $(".pt1_inbox2_usericon").removeClass("filter_cs1");
 });
 
 //Hyperlink Page jquery
