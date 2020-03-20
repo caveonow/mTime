@@ -234,6 +234,31 @@ $("#deletebtn").click(function () {
     $("#deletebox-01").addClass("display_block").removeClass("display_none");
 });
 
+// Attendance Page
+$("#atdc_tab1").click(function () {
+    $("#atdc_part1, .tab_eff1").addClass("display_block").removeClass("display_none");
+    $("#atdc_part2, #atdc_part3").addClass("display_none").removeClass("display_block");
+    $(".tab_eff2, .tab_eff3").addClass("display_none").removeClass("display_block");
+    $("#atdc_tab1").addClass("bg_color_444");
+    $("#atdc_tab2, #atdc_tab3").removeClass("bg_color_444");
+});
+
+$("#atdc_tab2").click(function () {
+    $("#atdc_part2, .tab_eff2").addClass("display_block").removeClass("display_none");
+    $("#atdc_part1, #atdc_part3").addClass("display_none").removeClass("display_block");
+    $(".tab_eff1, .tab_eff3").addClass("display_none").removeClass("display_block");
+    $("#atdc_tab2").addClass("bg_color_444");
+    $("#atdc_tab1, #atdc_tab3").removeClass("bg_color_444");
+});
+
+$("#atdc_tab3").click(function () {
+    $("#atdc_part3, .tab_eff3").addClass("display_block").removeClass("display_none");
+    $("#atdc_part1, #atdc_part2").addClass("display_none").removeClass("display_block");
+    $(".tab_eff1, .tab_eff2").addClass("display_none").removeClass("display_block");
+    $("#atdc_tab3").addClass("bg_color_444");
+    $("#atdc_tab1, #atdc_tab2").removeClass("bg_color_444");
+});
+
 ////Holiday Page jquery
 //$("#holiday_add").click(function () {
 //    $(".bd_ctr_rightpart").css("padding", "0 10px 15px 210px");

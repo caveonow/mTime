@@ -151,6 +151,7 @@
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="Controllers\AdministrationController.vb" />
+    <Compile Include="Controllers\AttendanceController.vb" />
     <Compile Include="Controllers\MaintenanceController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
     <Compile Include="Global.asax.vb">
@@ -327,6 +328,10 @@
     <Content Include="Views\Administration\Superior.vbhtml" />
     <Content Include="Views\Administration\Administrator.vbhtml" />
     <Content Include="Views\Shared\_StaffMenuTop.vbhtml" />
+    <Content Include="Views\Attendance\Index.vbhtml" />
+    <Content Include="Views\Attendance\_AdjustmentArrival.vbhtml" />
+    <Content Include="Views\Attendance\_AttendanceRecord.vbhtml" />
+    <Content Include="Views\Attendance\_DoorAccess.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

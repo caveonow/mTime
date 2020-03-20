@@ -8,7 +8,7 @@
             <div class="pt2_b_inbtnefflight"></div>
         </a>
 
-        <a href="" class="pt2_b_btn" id="stfhdr_btn2">
+        <a href="@Url.Action("Index", "Attendance")" class="pt2_b_btn" id="stfhdr_btn2">
             <div class="pt2_b_inbtn">Attendance</div>
             <div class="pt2_b_inbtneff"></div>
             <div class="pt2_b_inbtnefflight"></div>
