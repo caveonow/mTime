@@ -51,20 +51,12 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="FirebirdSql.Data.FirebirdClient, Version=7.5.0.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
       <HintPath>..\packages\FirebirdSql.Data.FirebirdClient.7.5.0\lib\net452\FirebirdSql.Data.FirebirdClient.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -165,79 +157,10 @@
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="Controllers\AdministrationController.vb" />
-    <Compile Include="Controllers\AttendanceController.vb" />
-    <Compile Include="Controllers\Login.vb" />
     <Compile Include="Controllers\MaintenanceController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ACTIVITYLOG.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ANNOUNCEMENT.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ATTENDACNESTATUSVALIDATION.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ATTENDANCESTATU.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\COMPANY.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DEPARTMENT.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\FEEDBACK.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\HOLIDAY.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\HYPERLINK.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\PERSONALMESSAGE.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\POORATTENDANCEREASON.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SHIFT.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SHIFTSCHEDULE.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SRSdb.Context.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SRSdb.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SRSdb.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SRSdb.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SRSdb.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\StaffDB.vb" />
-    <Compile Include="Models\Staff.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\STAFFGROUP.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sysdiagram.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\USERSSHIFT.vb">
-      <DependentUpon>SRSdb.tt</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -264,121 +187,21 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="obj\Debug\SRS_Project.Resources.resources" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Antlr3.Runtime.dll" />
-    <Content Include="bin\Antlr3.Runtime.pdb" />
-    <Content Include="bin\FirebirdSql.Data.FirebirdClient.dll" />
-    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
-    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
-    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="bin\Newtonsoft.Json.dll" />
-    <Content Include="bin\Newtonsoft.Json.xml" />
-    <Content Include="bin\roslyn\csc.exe" />
-    <Content Include="bin\roslyn\csi.exe" />
-    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
-    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
-    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
-    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
-    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
-    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
-    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
-    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
-    <Content Include="bin\roslyn\Microsoft.Win32.Primitives.dll" />
-    <Content Include="bin\roslyn\System.AppContext.dll" />
-    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
-    <Content Include="bin\roslyn\System.Console.dll" />
-    <Content Include="bin\roslyn\System.Diagnostics.DiagnosticSource.dll" />
-    <Content Include="bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
-    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
-    <Content Include="bin\roslyn\System.Globalization.Calendars.dll" />
-    <Content Include="bin\roslyn\System.IO.Compression.dll" />
-    <Content Include="bin\roslyn\System.IO.Compression.ZipFile.dll" />
-    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
-    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
-    <Content Include="bin\roslyn\System.Net.Http.dll" />
-    <Content Include="bin\roslyn\System.Net.Sockets.dll" />
-    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
-    <Content Include="bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll" />
-    <Content Include="bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
-    <Content Include="bin\roslyn\System.Security.Cryptography.Encoding.dll" />
-    <Content Include="bin\roslyn\System.Security.Cryptography.Primitives.dll" />
-    <Content Include="bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
-    <Content Include="bin\roslyn\System.Text.Encoding.CodePages.dll" />
-    <Content Include="bin\roslyn\System.Threading.Tasks.Extensions.dll" />
-    <Content Include="bin\roslyn\System.ValueTuple.dll" />
-    <Content Include="bin\roslyn\System.Xml.ReaderWriter.dll" />
-    <Content Include="bin\roslyn\System.Xml.XmlDocument.dll" />
-    <Content Include="bin\roslyn\System.Xml.XPath.dll" />
-    <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
-    <Content Include="bin\roslyn\vbc.exe" />
-    <Content Include="bin\roslyn\VBCSCompiler.exe" />
-    <Content Include="bin\SRS Project.dll" />
-    <Content Include="bin\SRS Project.pdb" />
-    <Content Include="bin\SRS Project.xml" />
-    <Content Include="bin\System.Web.Helpers.dll" />
-    <Content Include="bin\System.Web.Helpers.xml" />
-    <Content Include="bin\System.Web.Mvc.dll" />
-    <Content Include="bin\System.Web.Mvc.xml" />
-    <Content Include="bin\System.Web.Optimization.dll" />
-    <Content Include="bin\System.Web.Optimization.xml" />
-    <Content Include="bin\System.Web.Razor.dll" />
-    <Content Include="bin\System.Web.Razor.xml" />
-    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
-    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
-    <Content Include="bin\System.Web.WebPages.dll" />
-    <Content Include="bin\System.Web.WebPages.Razor.dll" />
-    <Content Include="bin\System.Web.WebPages.Razor.xml" />
-    <Content Include="bin\System.Web.WebPages.xml" />
-    <Content Include="bin\WebGrease.dll" />
-    <Content Include="Content\bootstrap-grid.css" />
-    <Content Include="Content\bootstrap-grid.min.css" />
-    <Content Include="Content\bootstrap-reboot.css" />
-    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\font-awesome.css" />
-    <Content Include="Content\style.css" />
-    <Content Include="fonts\fontawesome-webfont.svg" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="bin\roslyn\csc.exe.config" />
-    <Content Include="bin\roslyn\csc.rsp" />
-    <Content Include="bin\roslyn\csi.exe.config" />
-    <Content Include="bin\roslyn\csi.rsp" />
-    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
-    <Content Include="bin\roslyn\Microsoft.Managed.Core.targets" />
-    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
-    <Content Include="bin\roslyn\vbc.exe.config" />
-    <Content Include="bin\roslyn\vbc.rsp" />
-    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
-    <Content Include="bin\SRS Project.dll.config" />
-    <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="Content\bootstrap-grid.map" />
-    <Content Include="Content\bootstrap-grid.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.css.map" />
-    <Content Include="Content\bootstrap-reboot.map" />
-    <Content Include="Content\bootstrap-reboot.min.css.map" />
-    <Content Include="Content\bootstrap.map" />
-    <Content Include="Content\style.map" />
-    <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\fontawesome-webfont.woff2" />
-    <Content Include="fonts\FontAwesome.otf" />
-    <EntityDeploy Include="Models\SRSdb.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SRSdb.Designer.vb</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\SRSdb.edmx.diagram">
-      <DependentUpon>SRSdb.edmx</DependentUpon>
-    </Content>
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -388,223 +211,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <Content Include="Models\SRSdb.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>SRSdb.Context.vb</LastGenOutput>
-      <DependentUpon>SRSdb.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\SRSdb.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SRSdb.edmx</DependentUpon>
-      <LastGenOutput>SRSdb.vb</LastGenOutput>
-    </Content>
-    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <Content Include="obj\Debug\SRS Project.vbproj.CopyComplete" />
-    <Content Include="obj\Debug\SRS Project.vbproj.GenerateResource.cache" />
-    <Content Include="obj\Debug\SRS Project.vbprojAssemblyReference.cache" />
-    <Content Include="obj\Debug\Tsc.out" />
     <None Include="packages.config" />
-    <Content Include="img\htr_bg.jpg" />
-    <Content Include="img\malaysia_logo.png" />
-    <Content Include="img\malaysia_logo_s.png" />
-    <Content Include="obj\Debug\SRS Project.dll" />
-    <Content Include="obj\Debug\SRS Project.pdb" />
-    <Content Include="obj\Debug\SRS Project.vbproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\SRS Project.xml" />
-    <Content Include="Scripts\bootstrap.bundle.js" />
-    <Content Include="Scripts\bootstrap.bundle.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
-    <Content Include="Scripts\popper-utils.js" />
-    <Content Include="Scripts\popper-utils.min.js" />
-    <Content Include="Scripts\popper.js" />
-    <Content Include="Scripts\popper.min.js" />
-    <Content Include="Scripts\src\index.js" />
-    <Content Include="Scripts\src\methods\defaults.js" />
-    <Content Include="Scripts\src\methods\destroy.js" />
-    <Content Include="Scripts\src\methods\disableEventListeners.js" />
-    <Content Include="Scripts\src\methods\enableEventListeners.js" />
-    <Content Include="Scripts\src\methods\placements.js" />
-    <Content Include="Scripts\src\methods\update.js" />
-    <Content Include="Scripts\src\modifiers\applyStyle.js" />
-    <Content Include="Scripts\src\modifiers\arrow.js" />
-    <Content Include="Scripts\src\modifiers\computeStyle.js" />
-    <Content Include="Scripts\src\modifiers\flip.js" />
-    <Content Include="Scripts\src\modifiers\hide.js" />
-    <Content Include="Scripts\src\modifiers\index.js" />
-    <Content Include="Scripts\src\modifiers\inner.js" />
-    <Content Include="Scripts\src\modifiers\keepTogether.js" />
-    <Content Include="Scripts\src\modifiers\offset.js" />
-    <Content Include="Scripts\src\modifiers\preventOverflow.js" />
-    <Content Include="Scripts\src\modifiers\shift.js" />
-    <Content Include="Scripts\src\utils\clockwise.js" />
-    <Content Include="Scripts\src\utils\computeAutoPlacement.js" />
-    <Content Include="Scripts\src\utils\debounce.js" />
-    <Content Include="Scripts\src\utils\find.js" />
-    <Content Include="Scripts\src\utils\findCommonOffsetParent.js" />
-    <Content Include="Scripts\src\utils\findIndex.js" />
-    <Content Include="Scripts\src\utils\getBordersSize.js" />
-    <Content Include="Scripts\src\utils\getBoundaries.js" />
-    <Content Include="Scripts\src\utils\getBoundingClientRect.js" />
-    <Content Include="Scripts\src\utils\getClientRect.js" />
-    <Content Include="Scripts\src\utils\getFixedPositionOffsetParent.js" />
-    <Content Include="Scripts\src\utils\getOffsetParent.js" />
-    <Content Include="Scripts\src\utils\getOffsetRect.js" />
-    <Content Include="Scripts\src\utils\getOffsetRectRelativeToArbitraryNode.js" />
-    <Content Include="Scripts\src\utils\getOppositePlacement.js" />
-    <Content Include="Scripts\src\utils\getOppositeVariation.js" />
-    <Content Include="Scripts\src\utils\getOuterSizes.js" />
-    <Content Include="Scripts\src\utils\getParentNode.js" />
-    <Content Include="Scripts\src\utils\getPopperOffsets.js" />
-    <Content Include="Scripts\src\utils\getReferenceNode.js" />
-    <Content Include="Scripts\src\utils\getReferenceOffsets.js" />
-    <Content Include="Scripts\src\utils\getRoot.js" />
-    <Content Include="Scripts\src\utils\getRoundedOffsets.js" />
-    <Content Include="Scripts\src\utils\getScroll.js" />
-    <Content Include="Scripts\src\utils\getScrollParent.js" />
-    <Content Include="Scripts\src\utils\getStyleComputedProperty.js" />
-    <Content Include="Scripts\src\utils\getSupportedPropertyName.js" />
-    <Content Include="Scripts\src\utils\getViewportOffsetRectRelativeToArtbitraryNode.js" />
-    <Content Include="Scripts\src\utils\getWindow.js" />
-    <Content Include="Scripts\src\utils\getWindowSizes.js" />
-    <Content Include="Scripts\src\utils\includeScroll.js" />
-    <Content Include="Scripts\src\utils\index.js" />
-    <Content Include="Scripts\src\utils\isBrowser.js" />
-    <Content Include="Scripts\src\utils\isFixed.js" />
-    <Content Include="Scripts\src\utils\isFunction.js" />
-    <Content Include="Scripts\src\utils\isIE.js" />
-    <Content Include="Scripts\src\utils\isModifierEnabled.js" />
-    <Content Include="Scripts\src\utils\isModifierRequired.js" />
-    <Content Include="Scripts\src\utils\isNumeric.js" />
-    <Content Include="Scripts\src\utils\isOffsetContainer.js" />
-    <Content Include="Scripts\src\utils\removeEventListeners.js" />
-    <Content Include="Scripts\src\utils\runModifiers.js" />
-    <Content Include="Scripts\src\utils\setAttributes.js" />
-    <Content Include="Scripts\src\utils\setStyles.js" />
-    <Content Include="Scripts\src\utils\setupEventListeners.js" />
-    <Content Include="Scripts\srs.js" />
-    <Content Include="Scripts\umd\popper-utils.js" />
-    <Content Include="Scripts\umd\popper-utils.min.js" />
-    <Content Include="Scripts\umd\popper.js" />
-    <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="scss\bootstrap-grid.scss" />
-    <Content Include="scss\bootstrap-reboot.scss" />
-    <Content Include="scss\bootstrap.scss" />
-    <Content Include="scss\mixins\_alert.scss" />
-    <Content Include="scss\mixins\_background-variant.scss" />
-    <Content Include="scss\mixins\_badge.scss" />
-    <Content Include="scss\mixins\_border-radius.scss" />
-    <Content Include="scss\mixins\_box-shadow.scss" />
-    <Content Include="scss\mixins\_breakpoints.scss" />
-    <Content Include="scss\mixins\_buttons.scss" />
-    <Content Include="scss\mixins\_caret.scss" />
-    <Content Include="scss\mixins\_clearfix.scss" />
-    <Content Include="scss\mixins\_deprecate.scss" />
-    <Content Include="scss\mixins\_float.scss" />
-    <Content Include="scss\mixins\_forms.scss" />
-    <Content Include="scss\mixins\_gradients.scss" />
-    <Content Include="scss\mixins\_grid-framework.scss" />
-    <Content Include="scss\mixins\_grid.scss" />
-    <Content Include="scss\mixins\_hover.scss" />
-    <Content Include="scss\mixins\_image.scss" />
-    <Content Include="scss\mixins\_list-group.scss" />
-    <Content Include="scss\mixins\_lists.scss" />
-    <Content Include="scss\mixins\_nav-divider.scss" />
-    <Content Include="scss\mixins\_pagination.scss" />
-    <Content Include="scss\mixins\_reset-text.scss" />
-    <Content Include="scss\mixins\_resize.scss" />
-    <Content Include="scss\mixins\_screen-reader.scss" />
-    <Content Include="scss\mixins\_size.scss" />
-    <Content Include="scss\mixins\_table-row.scss" />
-    <Content Include="scss\mixins\_text-emphasis.scss" />
-    <Content Include="scss\mixins\_text-hide.scss" />
-    <Content Include="scss\mixins\_text-truncate.scss" />
-    <Content Include="scss\mixins\_transition.scss" />
-    <Content Include="scss\mixins\_visibility.scss" />
-    <Content Include="scss\style.scss" />
-    <Content Include="scss\utilities\_align.scss" />
-    <Content Include="scss\utilities\_background.scss" />
-    <Content Include="scss\utilities\_borders.scss" />
-    <Content Include="scss\utilities\_clearfix.scss" />
-    <Content Include="scss\utilities\_display.scss" />
-    <Content Include="scss\utilities\_embed.scss" />
-    <Content Include="scss\utilities\_flex.scss" />
-    <Content Include="scss\utilities\_float.scss" />
-    <Content Include="scss\utilities\_overflow.scss" />
-    <Content Include="scss\utilities\_position.scss" />
-    <Content Include="scss\utilities\_screenreaders.scss" />
-    <Content Include="scss\utilities\_shadows.scss" />
-    <Content Include="scss\utilities\_sizing.scss" />
-    <Content Include="scss\utilities\_spacing.scss" />
-    <Content Include="scss\utilities\_stretched-link.scss" />
-    <Content Include="scss\utilities\_text.scss" />
-    <Content Include="scss\utilities\_visibility.scss" />
-    <Content Include="scss\vendor\_rfs.scss" />
-    <Content Include="scss\_alert.scss" />
-    <Content Include="scss\_badge.scss" />
-    <Content Include="scss\_breadcrumb.scss" />
-    <Content Include="scss\_button-group.scss" />
-    <Content Include="scss\_buttons.scss" />
-    <Content Include="scss\_card.scss" />
-    <Content Include="scss\_carousel.scss" />
-    <Content Include="scss\_close.scss" />
-    <Content Include="scss\_code.scss" />
-    <Content Include="scss\_custom-forms.scss" />
-    <Content Include="scss\_dropdown.scss" />
-    <Content Include="scss\_forms.scss" />
-    <Content Include="scss\_functions.scss" />
-    <Content Include="scss\_grid.scss" />
-    <Content Include="scss\_images.scss" />
-    <Content Include="scss\_input-group.scss" />
-    <Content Include="scss\_jumbotron.scss" />
-    <Content Include="scss\_list-group.scss" />
-    <Content Include="scss\_media.scss" />
-    <Content Include="scss\_mixins.scss" />
-    <Content Include="scss\_modal.scss" />
-    <Content Include="scss\_nav.scss" />
-    <Content Include="scss\_navbar.scss" />
-    <Content Include="scss\_pagination.scss" />
-    <Content Include="scss\_popover.scss" />
-    <Content Include="scss\_print.scss" />
-    <Content Include="scss\_progress.scss" />
-    <Content Include="scss\_reboot.scss" />
-    <Content Include="scss\_root.scss" />
-    <Content Include="scss\_spinners.scss" />
-    <Content Include="scss\_tables.scss" />
-    <Content Include="scss\_toasts.scss" />
-    <Content Include="scss\_tooltip.scss" />
-    <Content Include="scss\_transitions.scss" />
-    <Content Include="scss\_type.scss" />
-    <Content Include="scss\_utilities.scss" />
-    <Content Include="scss\_variables.scss" />
-    <Content Include="Views\Administration\Administrator.vbhtml" />
-    <Content Include="Views\Administration\Superior.vbhtml" />
-    <Content Include="Views\Attendance\Index.vbhtml" />
-    <Content Include="Views\Attendance\_AdjustmentArrival.vbhtml" />
-    <Content Include="Views\Attendance\_AttendanceRecord.vbhtml" />
-    <Content Include="Views\Attendance\_DoorAccess.vbhtml" />
-    <Content Include="Views\Maintenance\AttendanceStatus.vbhtml" />
-    <Content Include="Views\Maintenance\Department.vbhtml" />
-    <Content Include="Views\Maintenance\Grade.vbhtml" />
-    <Content Include="Views\Maintenance\Holiday.vbhtml" />
-    <Content Include="Views\Maintenance\Index.vbhtml" />
-    <Content Include="Views\Maintenance\LateTolerant.vbhtml" />
-    <Content Include="Views\Maintenance\Reason.vbhtml" />
-    <Content Include="Views\Maintenance\WorkingShift.vbhtml" />
-    <Content Include="Views\Shared\_AdminMenuTop.vbhtml" />
-    <Content Include="Views\Shared\_StaffMenuTop.vbhtml" />
-    <Content Include="Scripts\umd\popper-utils.js.map" />
-    <Content Include="Scripts\umd\popper-utils.min.js.map" />
-    <Content Include="Scripts\umd\popper.js.flow" />
-    <Content Include="Scripts\umd\popper.js.map" />
-    <Content Include="Scripts\umd\popper.min.js.map" />
-    <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Scripts\popper-utils.min.js.map" />
-    <Content Include="Scripts\popper.js.map" />
-    <Content Include="Scripts\popper.min.js.map" />
-    <Content Include="Scripts\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -645,15 +254,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="obj\Debug\TempPE\" />
-    <Folder Include="obj\Release\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -674,7 +281,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50838</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:44350</IISUrl>
+          <IISUrl>http://localhost/SRS Project</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

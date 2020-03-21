@@ -120,8 +120,7 @@
     </div>
 
     @*PoPup Login *@
-<div id="login_popup" class="popup_bg display_none">
-    <form action="/Login" method="post">
+    <div id="login_popup" class="popup_bg display_none">
         <div class="firstlogin_box">
             <div class="fa fa-user-circle ftlogin_b_icon"></div>
 
@@ -129,7 +128,7 @@
                 <div class="b_pt_tt">NRIC :</div>
 
                 <div class="b_pt_box">
-                    <input type="text" id="title" name="NRIC">
+                    <input type="text" id="title" name="title">
                 </div>
                 <div class="hlday_addbox_pt_error">Text Error</div>
             </div>
@@ -138,7 +137,7 @@
                 <div class="b_pt_tt">Password :</div>
 
                 <div class="b_pt_box">
-                    <input type="password" id="title" name="Password">
+                    <input type="password" id="title" name="title">
                 </div>
                 <div class="hlday_addbox_pt_error">Text Error</div>
             </div>
@@ -146,13 +145,12 @@
             <div class="ftlogin_b_partbtm">
                 <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
 
-                <div id="loginbtn" class="rtpt_savebtn filter1">Login</div>
-                @Html.ActionLink("Login", "LoginWithParam", "Shared")
+                <div id="loginbtn" class="rtpt_savebtn filter1">Lonig</div>
+
                 <div id="forgotpw_btn" class="rtpt_forgotpwbtn filter1">Forgot Password</div>
             </div>
         </div>
-    </form>
-</div>
+    </div>
 
     @*PoPup Forgot Password *@
     <div id="forgotpw_popup" class="popup_bg display_none">
