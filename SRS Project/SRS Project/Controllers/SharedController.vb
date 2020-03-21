@@ -22,4 +22,8 @@ Public Class SharedController
         Return View()
     End Function
 
+    Function _StaffMenuTop() As ActionResult
+        Return View()
+    End Function
+
 End Class
