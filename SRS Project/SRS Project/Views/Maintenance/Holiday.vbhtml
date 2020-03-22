@@ -59,24 +59,30 @@ End Code
             </div>
 
             <div class="ctr_holiday_addbox">
-                <div class="hlday_addbox_part">
-                    <div class="hlday_addbox_pt_tt">Date :</div>
-                    <input type="text" id="title" name="title">
+                <!-- this is the action that call to the method in maintenance -->
+                <form action="/Maintenance/AddHoliday" method="post">
+                    <div class="hlday_addbox_part">
+                        <div class="hlday_addbox_pt_tt">Date :</div>
+                        <input type="text" id="title" name="title">
 
-                    <div class="hlday_addbox_pt_error">Text Error</div>
-                </div>
+                        <div class="hlday_addbox_pt_error">Text Error</div>
+                    </div>
 
-                <div class="hlday_addbox_part">
-                    <div class="hlday_addbox_pt_tt">Description :</div>
-                    <input type="text" id="URL" name="URL">
+                    <div class="hlday_addbox_part">
+                        <div class="hlday_addbox_pt_tt">Description :</div>
+                        <!-- name must be same with the param name OR Request.Form("title") -->
+                        <input type="text" id="description" name="description">
 
-                    <div class="hlday_addbox_pt_error">Text Error</div>
-                </div>
+                        <div class="hlday_addbox_pt_error">Text Error</div>
+                    </div>
 
-                <div class="hlday_addbox_partbtn">
-                    <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
-                    <div id="savebtn" class="rtpt_savebtn filter1">Save</div>
-                </div>
+                    <div class="hlday_addbox_partbtn">
+                        <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
+
+                        <!-- need to use input with type="submit" -->
+                        <input id="savebtn1" class="rtpt_savebtn filter1" type="submit" value="Save" />
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -86,25 +92,27 @@ End Code
             </div>
 
             <div class="ctr_holiday_addbox">
-                <div class="hlday_addbox_part">
-                    <div class="hlday_addbox_pt_tt">Date :</div>
-                    <input type="text" id="title" name="title" value="31/8/2020">
+                <form action="/Maintenance/EditHoliday" method="post">
+                    <div class="hlday_addbox_part">
+                        <div class="hlday_addbox_pt_tt">Date :</div>
+                        <input type="text" id="title" name="title" value="31/8/2020">
 
-                    <div class="hlday_addbox_pt_error">Text Error</div>
-                </div>
+                        <div class="hlday_addbox_pt_error">Text Error</div>
+                    </div>
 
-                <div class="hlday_addbox_part">
-                    <div class="hlday_addbox_pt_tt">Description :</div>
-                    <input type="text" id="URL" name="URL" value="Day Day Holiday">
+                    <div class="hlday_addbox_part">
+                        <div class="hlday_addbox_pt_tt">Description :</div>
+                        <input type="text" id="description" name="description" value="Day Day Holiday">
 
-                    <div class="hlday_addbox_pt_error">Text Error</div>
-                </div>
+                        <div class="hlday_addbox_pt_error">Text Error</div>
+                    </div>
 
-                <div class="hlday_addbox_partbtn">
-                    <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
+                    <div class="hlday_addbox_partbtn">
+                        <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
 
-                    <div id="savebtn" class="rtpt_savebtn filter1">Save</div>
-                </div>
+                        <input id="savebtn" class="rtpt_savebtn filter1" type="submit" value="Save" />
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -122,13 +130,17 @@ End Code
 
         <div id="deletebox-01" class="ctr_rtpt_popupbox display_none">
             <div class="rtpt_popupbox_inb">
-                <div class="fa fa-trash-o popupbox_inb_icon_red"></div>
-                <div class="popupbox_inb_tt">Confirm Delete</div>
+                <form action="/Maintenance/DeleteHoliday" method="post">
+                    <input type="text" id="uuid" name="uuid" value="123" style="display:none">
 
-                <div class="popupbox_inb_btnpart">
-                    <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
-                    <div id="yesbtn" class="rtpt_yesbtn filter1">Yes</div>
-                </div>
+                    <div class="fa fa-trash-o popupbox_inb_icon_red"></div>
+                    <div class="popupbox_inb_tt">Confirm Delete</div>
+
+                    <div class="popupbox_inb_btnpart">
+                        <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
+                        <input id="yesbtn" type="submit" class="rtpt_yesbtn filter1" value="Yes" />
+                    </div>
+                </form>
             </div>
         </div>
 
