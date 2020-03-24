@@ -192,7 +192,7 @@ html, body {
                 float: right;
             }
 
-            .hd_pf_part1:hover, .hd_pf_part2:hover, .hd_pf_part3:hover, .hd_pf_part4:hover {
+            .hd_pf_part1:hover, .hd_pf_part2:hover, .hd_pf_part3:hover, .hd_pf_part4:hover, .hd_pf_part5:hover {
                 background-color: #038C76;
             }
 
@@ -323,6 +323,17 @@ html, body {
                     color: #fff;
                 }
             }
+
+            .hd_pf_part5 {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                float: left;
+                font-size: 14px;
+                padding: 0 5px;
+                text-decoration: none;
+                cursor: pointer;
+            }
         }
     }
 }
@@ -381,6 +392,61 @@ html, body {
                 margin: 0 0;
             }
         }
+    }
+}
+
+.Feedback_box {
+    width: 500px;
+    height: initial;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+    z-index: 1;
+
+    .Fbk_b_htr {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        float: left;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+        background-color: #222;
+    }
+
+    .Fbk_b_ttarea {
+        width: 100%;
+        line-height: 30px;
+        float: left;
+        font-size: 12px;
+        color: #333;
+        padding: 10px 10px;
+        background-color: #fff;
+
+        .b_ttarea_box {
+            width: 480px;
+            max-height: 100px;
+            min-height: 100px;
+            float: left;
+            font-size: 12px;
+            color: #333;
+            border: 1px #aaa solid;
+            padding: 5px 5px;
+            line-height: 16px;
+        }
+    }
+
+    .Fbk_b_ftr {
+        width: 100%;
+        height: 30px;
+        float: left;
+        padding: 0 10px;
+        margin: 5px 0;
     }
 }
 
@@ -1556,6 +1622,17 @@ ul {
     cursor: pointer;
 }
 
+.btn_email {
+    width: 20px;
+    line-height: 30px !important;
+    text-align: center;
+    float: left;
+    font-size: 16px !important;
+    color: #154eb7;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
 .btn_trash {
     width: 20px;
     line-height: 30px !important;
@@ -1593,6 +1670,21 @@ ul {
     float: right;
     border-radius: 5px;
     background-color: #0069ae;
+    color: #fff;
+    cursor: pointer;
+}
+
+.rtpt_ftr_deletebtn {
+    width: initial;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    /*margin: 0 0 0 10px;*/
+    margin: 5px 5px;
+    font-size: 14px;
+    float: right;
+    border-radius: 5px;
+    background-color: #ff0000;
     color: #fff;
     cursor: pointer;
 }
@@ -1667,6 +1759,102 @@ ul {
 
 .rtpt_ftr_addbtn:hover {
     background-color: #004f83;
+}
+
+.message_part {
+    width: 49%;
+    height: 500px;
+    float: left;
+    border-radius: 5px 5px;
+    border: 1px #ccc solid;
+    margin: 0 0 0 10px;
+    overflow: auto;
+
+    .mse_pt_table {
+        width: 100%;
+        margin: 0 0 30px 0;
+        float: left;
+        line-height: 30px;
+        font-size: 12px;
+
+        thead {
+            background-color: #aaa;
+            height: 30px;
+
+            th {
+                border-right: 1px #ccc solid;
+                padding: 0 5px;
+                color: #fff;
+            }
+
+            th:last-child {
+                border-right: 0;
+            }
+        }
+    }
+
+    .mse_pt_itenbox {
+        width: inherit;
+        height: 30px;
+        background-color: #ccc;
+        border-radius: 0 0 5px 5px;
+        padding: 0 10px;
+        position: absolute;
+        bottom: 0;
+
+        span {
+            width: 100%;
+            float: left;
+            color: #333;
+            line-height: 30px;
+            font-size: 12px;
+        }
+    }
+}
+
+.mse_pt_msebox {
+    width: 49%;
+    min-height: 500px;
+    float: right;
+    border-radius: 5px 5px;
+    margin: 0 10px 0 0;
+    background-color: rgba(0, 0, 0, 0.03);
+
+    .msebox_htr {
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        float: left;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+
+        span {
+            width: initial;
+            float: left;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+        }
+
+        .msebox_htr_date {
+            width: initial;
+            float: right;
+            padding: 0 0 0 10px;
+            line-height: 40px;
+            font-size: 12px;
+            color: #fff;
+        }
+    }
+
+    .msebox_ttbox {
+        width: 100%;
+        height: initial;
+        float: left;
+        font-size: 12px;
+        color: #333;
+        line-height: 16px;
+        padding: 10px 10px;
+    }
 }
 // Triangle
 .arrow_up {

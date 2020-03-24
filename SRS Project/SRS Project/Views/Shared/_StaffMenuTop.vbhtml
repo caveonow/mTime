@@ -14,23 +14,23 @@
             <div class="pt2_b_inbtnefflight"></div>
         </a>
 
-        <a href="" class="pt2_b_btn" id="stfhdr_btn3">
+        <a href="@Url.Action("Index", "PrivateMessage")" class="pt2_b_btn" id="stfhdr_btn3">
             <div class="pt2_b_inbtn">Private Message</div>
             <div class="pt2_b_inbtneff"></div>
             <div class="pt2_b_inbtnefflight"></div>
         </a>
 
-        <a href="" class="pt2_b_btn" id="stfhdr_btn4">
-            <div class="pt2_b_inbtn">Profile</div>
-            <div class="pt2_b_inbtneff"></div>
-            <div class="pt2_b_inbtnefflight"></div>
-        </a>
+        @*<a href="" class="pt2_b_btn" id="stfhdr_btn4">
+                    <div class="pt2_b_inbtn">Profile</div>
+                    <div class="pt2_b_inbtneff"></div>
+                    <div class="pt2_b_inbtnefflight"></div>
+                </a>
 
-        <a href="" class="pt2_b_btn" id="stfhdr_btn5">
-            <div class="pt2_b_inbtn">Feedback</div>
-            <div class="pt2_b_inbtneff"></div>
-            <div class="pt2_b_inbtnefflight"></div>
-        </a>
+            <a href="" class="pt2_b_btn" id="stfhdr_btn5">
+                <div class="pt2_b_inbtn">Feedback</div>
+                <div class="pt2_b_inbtneff"></div>
+                <div class="pt2_b_inbtnefflight"></div>
+            </a>*@
 
         <a href="" class="pt2_b_btn" id="stfhdr_btn6">
             <div class="pt2_b_inbtn">F.A.Q</div>

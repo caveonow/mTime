@@ -58,6 +58,8 @@
                     User Name
                 </div>
 
+                <div id="Feedback_btn" class="hd_pf_part5">Feedback</div>
+
                 <div class="hd_pf_part3">
                     Translate
                     <div class="pf_p3_box">
@@ -78,6 +80,25 @@
                 <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
             </footer>
         </div>*@
+
+    @*Feedback PopUp *@
+    <div id="Feedback_popup" class="popup_bg display_none">
+        <div class="Feedback_box">
+            <div class="Fbk_b_htr">Feedback</div>
+
+            <div class="Fbk_b_ttarea">
+                Please leave us your suggestions and complaints about this application. thank you.
+
+                <textarea id="" rows="4" cols="50" class="b_ttarea_box"></textarea>
+            </div>
+
+            <div class="Fbk_b_ftr">
+                <div id="closebtn" class="rtpt_closebtn filter1">Cancel</div>
+
+                <div id="sendbtn" class="rtpt_savebtn filter1">Send</div>
+            </div>
+        </div>
+    </div>
 
     @*PoPup First Login *@
     <div id="firstlogin_popup" class="popup_bg display_none">
