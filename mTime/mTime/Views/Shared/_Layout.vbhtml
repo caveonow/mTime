@@ -5,7 +5,7 @@
     <!--<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
     <meta name="viewport" content="width=1024, initial-scale=1.0">
-    <title>SRS Project</title>
+    <title>mTime</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>

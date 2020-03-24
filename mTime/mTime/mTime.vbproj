@@ -12,8 +12,8 @@
     <ProjectGuid>{C5A39D71-C328-4FD2-9620-C1AFDA405E0E}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>SRS_Project</RootNamespace>
-    <AssemblyName>SRS Project</AssemblyName>
+    <RootNamespace>mTime</RootNamespace>
+    <AssemblyName>mTime</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <OptionExplicit>Off</OptionExplicit>
     <OptionCompare>Text</OptionCompare>
@@ -37,7 +37,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\</OutputPath>
-    <DocumentationFile>SRS Project.xml</DocumentationFile>
+    <DocumentationFile>mTime.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -47,16 +47,28 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DocumentationFile>SRS Project.xml</DocumentationFile>
+    <DocumentationFile>mTime.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="FirebirdSql.Data.FirebirdClient, Version=7.5.0.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
       <HintPath>..\packages\FirebirdSql.Data.FirebirdClient.7.5.0\lib\net452\FirebirdSql.Data.FirebirdClient.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -162,6 +174,72 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ACTIVITYLOG.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ANNOUNCEMENT.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ATTENDACNESTATUSVALIDATION.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ATTENDANCESTATU.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\COMPANY.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DEPARTMENT.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EXDBTRANSSYNCTRDATA.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FEEDBACK.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HOLIDAY.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HYPERLINK.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\mTime.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mTime.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\mTime.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mTime.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\mTime.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PERSONALMESSAGE.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\POORATTENDANCEREASON.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SHIFT.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SHIFTSCHEDULE.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\STAFF.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\STAFFGROUP.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\USERSSHIFT.vb">
+      <DependentUpon>mTime.tt</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -202,6 +280,13 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <EntityDeploy Include="Models\mTime.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>mTime.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\mTime.edmx.diagram">
+      <DependentUpon>mTime.edmx</DependentUpon>
+    </Content>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -212,6 +297,16 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <Content Include="Models\mTime.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>mTime.Context.vb</LastGenOutput>
+      <DependentUpon>mTime.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\mTime.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>mTime.edmx</DependentUpon>
+      <LastGenOutput>mTime.vb</LastGenOutput>
+    </Content>
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
   </ItemGroup>
@@ -254,13 +349,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -281,7 +376,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50838</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/SRS Project</IISUrl>
+          <IISUrl>http://localhost:44350</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
