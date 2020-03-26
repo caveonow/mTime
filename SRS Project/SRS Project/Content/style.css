@@ -531,8 +531,8 @@ html, body {
   margin: 0 0 20px 0;
 }
 
-/* line 476, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
-.firstlogin_box .ftlogin_b_httt {
+/* line 475, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.firstlogin_box .ftlogin_b_icon .ftlogin_b_httt {
   width: 100%;
   line-height: 30px;
   margin: 0 0 10px 0;
@@ -540,9 +540,10 @@ html, body {
   float: left;
   font-size: 20px;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
-/* line 486, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 487, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .firstlogin_box .ftlogin_b_part {
   width: 100%;
   height: initial;
@@ -550,7 +551,7 @@ html, body {
   margin: 0 0 10px 0;
 }
 
-/* line 492, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 493, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .firstlogin_box .ftlogin_b_part .b_pt_tt {
   width: 150px;
   line-height: 30px;
@@ -560,7 +561,7 @@ html, body {
   text-align: right;
 }
 
-/* line 501, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 502, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .firstlogin_box .ftlogin_b_part .b_pt_box {
   width: 100%;
   height: 30px;
@@ -569,7 +570,7 @@ html, body {
   padding: 0 15px 0 175px;
 }
 
-/* line 508, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 509, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .firstlogin_box .ftlogin_b_part .b_pt_box input {
   width: 100%;
   height: 30px;
@@ -580,7 +581,7 @@ html, body {
   border: 1px #aaa solid;
 }
 
-/* line 519, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 520, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .firstlogin_box .ftlogin_b_part .b_pt_tt1 {
   width: 70px;
   line-height: 30px;
@@ -590,7 +591,7 @@ html, body {
   text-align: right;
 }
 
-/* line 528, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 529, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .firstlogin_box .ftlogin_b_part .b_pt_box1 {
   width: 100%;
   height: 30px;
@@ -599,7 +600,7 @@ html, body {
   padding: 0 15px 0 95px;
 }
 
-/* line 535, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 536, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .firstlogin_box .ftlogin_b_part .b_pt_box1 input {
   width: 100%;
   height: 30px;
@@ -610,14 +611,138 @@ html, body {
   border: 1px #aaa solid;
 }
 
-/* line 547, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 548, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .firstlogin_box .ftlogin_b_partbtm {
   width: 100%;
   height: 30px;
   float: left;
 }
 
-/* line 554, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 555, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.passwordchange_box {
+  width: 500px;
+  height: initial;
+  padding: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+/* line 568, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.passwordchange_box .pwchange_b_icon {
+  width: 100%;
+  height: initial;
+  float: left;
+  color: #666;
+  text-align: center;
+  font-size: 80px;
+  margin: 0 0 20px 0;
+}
+
+/* line 577, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.passwordchange_box .pwchange_b_icon .b_icon_tt {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px !important;
+  color: #333;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* line 589, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.passwordchange_box .pwchange_b_httt {
+  width: 100%;
+  line-height: 30px;
+  margin: 0 0 10px 0;
+  padding: 0 10px;
+  float: left;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* line 599, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.passwordchange_box .pwchange_b_part {
+  width: 100%;
+  height: initial;
+  float: left;
+  margin: 0 0 10px 0;
+}
+
+/* line 605, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.passwordchange_box .pwchange_b_part .b_pt_tt {
+  width: 150px;
+  line-height: 30px;
+  font-size: 14px;
+  float: left;
+  color: #333;
+  text-align: right;
+}
+
+/* line 614, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.passwordchange_box .pwchange_b_part .b_pt_box {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  padding: 0 15px 0 175px;
+}
+
+/* line 621, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.passwordchange_box .pwchange_b_part .b_pt_box input {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0 10px;
+  background-color: #fff;
+  border: 1px #aaa solid;
+}
+
+/* line 632, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.passwordchange_box .pwchange_b_part .b_pt_tt1 {
+  width: 70px;
+  line-height: 30px;
+  font-size: 14px;
+  float: left;
+  color: #333;
+  text-align: right;
+}
+
+/* line 641, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.passwordchange_box .pwchange_b_part .b_pt_box1 {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  padding: 0 15px 0 95px;
+}
+
+/* line 648, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.passwordchange_box .pwchange_b_part .b_pt_box1 input {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0 10px;
+  background-color: #fff;
+  border: 1px #aaa solid;
+}
+
+/* line 660, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.passwordchange_box .pwchange_b_partbtm {
+  width: 100%;
+  height: 30px;
+  float: left;
+}
+
+/* line 667, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_leftpart_home {
   width: 300px;
   height: initial;
@@ -626,7 +751,7 @@ html, body {
   z-index: 10;
 }
 
-/* line 561, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 674, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_leftpart_home .leftpart_home_box {
   width: inherit;
   height: initial;
@@ -639,7 +764,7 @@ html, body {
   margin: 0 0 15px 0;
 }
 
-/* line 572, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 685, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_leftpart_home .leftpart_home_box .ltpt_home_b_httt {
   width: initial;
   height: 40px;
@@ -652,7 +777,7 @@ html, body {
   padding: 12px 10px;
 }
 
-/* line 586, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 699, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .leftpart_ul_box {
   list-style-type: circle;
   height: initial;
@@ -662,7 +787,7 @@ html, body {
   margin: 0 0;
 }
 
-/* line 594, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 707, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .leftpart_ul_box li {
   font-size: 12px;
   line-height: 16px;
@@ -670,7 +795,7 @@ html, body {
   color: #fff;
 }
 
-/* line 600, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 713, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .leftpart_ul_box li a {
   width: inherit;
   height: initial;
@@ -681,7 +806,82 @@ html, body {
   font-size: 12px;
 }
 
-/* line 612, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 725, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.faq_box {
+  width: 100%;
+  min-height: 500px;
+  float: right;
+  border-radius: 5px 5px;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* line 732, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.faq_box .faq_b_htrtt {
+  width: 100%;
+  height: 40px;
+  background-color: #222;
+  float: left;
+  border-radius: 5px 5px 0 0;
+  padding: 0 10px;
+  margin: 0 0 10px 0;
+}
+
+/* line 741, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.faq_box .faq_b_htrtt span {
+  width: initial;
+  float: left;
+  color: #fff;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+/* line 750, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.faq_box .faq_b_row {
+  width: 100%;
+  height: initial;
+  float: left;
+  padding: 0 5px;
+  margin: 0 0 10px 0;
+}
+
+/* line 757, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.faq_box .faq_b_row .b_row_htrtt {
+  width: 100%;
+  float: left;
+  color: #333;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #ddd;
+  border-radius: 5px 5px;
+  margin: 5px 0 0 0;
+  padding: 0 5px;
+}
+
+/* line 769, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.faq_box .faq_b_row .b_row_htrtt .row_htrtt_icon {
+  color: #333;
+  line-height: 26px;
+  text-align: center;
+  float: right;
+  margin: 2px 0;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+/* line 780, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+.faq_box .faq_b_row .b_row_htrst {
+  width: 100%;
+  height: initial;
+  float: left;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333;
+  padding: 10px 15px;
+  background-color: #fff;
+}
+
+/* line 793, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_rightpart_home {
   width: 100%;
   height: 100%;
@@ -691,7 +891,7 @@ html, body {
   padding: 0 10px 15px 310px;
 }
 
-/* line 621, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 802, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_rightpart_atdc {
   width: 100%;
   max-height: inherit;
@@ -702,7 +902,7 @@ html, body {
   padding: 0 10px 0 310px;
 }
 
-/* line 631, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 812, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_atdc_box {
   width: 100%;
   min-height: 500px;
@@ -712,7 +912,7 @@ html, body {
   border-radius: 5px 5px;
 }
 
-/* line 639, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 820, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_atdc_box .atdc_b_htrbox {
   width: 100%;
   height: 40px;
@@ -722,7 +922,7 @@ html, body {
   padding: 0 10px;
 }
 
-/* line 647, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 828, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_atdc_box .atdc_b_htrbox span {
   width: initial;
   float: left;
@@ -731,7 +931,7 @@ html, body {
   font-size: 14px;
 }
 
-/* line 656, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 837, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_atdc_box .atdc_b_tablebox {
   width: 100%;
   line-height: 30px;
@@ -739,20 +939,20 @@ html, body {
   font-size: 12px;
 }
 
-/* line 662, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 843, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_atdc_box .atdc_b_tablebox thead {
   background-color: #aaa;
   height: 30px;
 }
 
-/* line 667, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 848, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_atdc_box .atdc_b_tablebox thead tr th {
   border-right: 1px #ccc solid;
   padding: 0 5px;
   color: #fff;
 }
 
-/* line 676, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 857, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_atdc_box .atdc_b_totalbox {
   width: 100%;
   height: 30px;
@@ -763,7 +963,7 @@ html, body {
   bottom: 0;
 }
 
-/* line 685, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 866, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_atdc_box .atdc_b_totalbox span {
   width: initial;
   float: left;
@@ -772,7 +972,7 @@ html, body {
   font-size: 12px;
 }
 
-/* line 695, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 876, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_home_box {
   width: 100%;
   height: inherit;
@@ -782,7 +982,7 @@ html, body {
   border-radius: 5px 5px;
 }
 
-/* line 703, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 884, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_home_box .rtpt_home_b_img {
   width: 100%;
   height: 200px;
@@ -792,7 +992,7 @@ html, body {
   border-radius: 5px 5px 0 0;
 }
 
-/* line 712, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 893, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_home_box .rtpt_home_b_tt {
   width: 100%;
   height: initial;
@@ -803,7 +1003,7 @@ html, body {
   padding: 5px 5px;
 }
 
-/* line 722, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 903, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_home_box .rtpt_home_b_linkpart {
   width: 100%;
   height: 40px;
@@ -818,12 +1018,12 @@ html, body {
   font-weight: bold;
 }
 
-/* line 737, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 918, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .bg_color_444 {
   background-color: #444 !important;
 }
 
-/* line 741, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 922, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_htrcenter {
   width: 100%;
   height: 40px;
@@ -833,7 +1033,7 @@ html, body {
   border-bottom: 2px #ccc solid;
 }
 
-/* line 749, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 930, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_htrcenter .htrcenter_tab {
   width: initial;
   height: inherit;
@@ -849,7 +1049,7 @@ html, body {
   font-size: 14px;
 }
 
-/* line 763, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 944, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_htrcenter .htrcenter_tab .tab_btneff {
   width: 100%;
   height: 40px;
@@ -861,12 +1061,12 @@ html, body {
   top: 0;
 }
 
-/* line 775, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 956, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_htrcenter .htrcenter_tab:hover {
   background-color: #444;
 }
 
-/* line 778, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 959, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_htrcenter .htrcenter_tab:hover .tab_btneff {
   width: 100%;
   height: 40px;
@@ -879,7 +1079,7 @@ html, body {
   display: block;
 }
 
-/* line 792, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 973, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_leftpart_atd {
   width: 300px;
   height: initial;
@@ -889,7 +1089,7 @@ html, body {
   padding: 0 0 0 10px;
 }
 
-/* line 800, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 981, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_leftpart_atd .leftpart_atd_box {
   width: 100%;
   height: initial;
@@ -901,7 +1101,7 @@ html, body {
   padding: 0 10px;
 }
 
-/* line 810, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 991, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_leftpart_atd .leftpart_atd_box .atd_b_part {
   width: 100%;
   height: 40px;
@@ -909,7 +1109,7 @@ html, body {
   margin: 10px 0;
 }
 
-/* line 816, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 997, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_leftpart_atd .leftpart_atd_box .atd_b_part .atd_b_pt_tt {
   width: initial;
   line-height: 40px;
@@ -919,7 +1119,7 @@ html, body {
   font-size: 14px;
 }
 
-/* line 825, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1006, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_leftpart_atd .leftpart_atd_box .atd_b_part .atd_b_pt_slt {
   float: right;
   position: relative;
@@ -931,7 +1131,7 @@ html, body {
   border-radius: 5px 5px;
 }
 
-/* line 837, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1018, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_leftpart_atd .leftpart_atd_box .atd_b_checkbox {
   width: 100%;
   height: initial;
@@ -942,13 +1142,13 @@ html, body {
   color: #fff;
 }
 
-/* line 846, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1027, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_leftpart_atd .leftpart_atd_box .atd_b_checkbox .atd_b_ckb_box {
   margin: 2px 5px 0 0;
   float: left;
 }
 
-/* line 852, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1033, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_leftpart_atd .leftpart_atd_box .atd_b_ttbox {
   width: 100%;
   height: initial;
@@ -963,7 +1163,7 @@ html, body {
   line-height: 16px;
 }
 
-/* line 866, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1047, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_leftpart_atd .leftpart_atd_box .atd_b_btnpart {
   width: 100%;
   height: initial;
@@ -973,7 +1173,7 @@ html, body {
   padding: 0 10px 10px;
 }
 
-/* line 877, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1058, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .atdc_editbox1 {
   margin: 10px 0;
   min-height: initial;
@@ -981,7 +1181,7 @@ html, body {
   background-color: #fff;
 }
 
-/* line 884, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1065, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .popup_bg {
   width: 100%;
   height: 100%;
@@ -992,7 +1192,7 @@ html, body {
   z-index: 99;
 }
 
-/* line 894, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1075, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .massage_part {
   width: initial;
   height: inherit;
@@ -1004,7 +1204,7 @@ html, body {
   background-color: rgba(255, 255, 255, 0.35);
 }
 
-/* line 905, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1086, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .malaysia_logo {
   width: 100%;
   height: 100%;
@@ -1015,7 +1215,7 @@ html, body {
   pointer-events: none;
 }
 
-/* line 915, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1096, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center {
   width: 100%;
   height: initial;
@@ -1025,7 +1225,7 @@ html, body {
   top: 85px;
 }
 
-/* line 923, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1104, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav {
   width: 200px;
   height: initial;
@@ -1034,7 +1234,7 @@ html, body {
   z-index: 10;
 }
 
-/* line 930, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1111, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .innav1_btnleft_icon {
   width: 40px;
   height: 40px;
@@ -1042,7 +1242,7 @@ html, body {
   background-color: #222;
 }
 
-/* line 936, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1117, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .innav1_btnleft_icon .innav1_btt1_btnleft {
   width: 30px;
   height: 30px;
@@ -1057,13 +1257,13 @@ html, body {
   z-index: 1;
 }
 
-/* line 950, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1131, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .innav1_btnleft_icon .innav1_btt1_btnleft:hover {
   background-color: #038c76;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
 }
 
-/* line 956, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1137, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav1 {
   width: 200px;
   height: initial;
@@ -1081,7 +1281,7 @@ html, body {
             }*/
 }
 
-/* line 968, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1149, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btt1 span {
   width: 200px;
   height: 40px;
@@ -1097,7 +1297,7 @@ html, body {
   padding: 0 35px 0 10px;
 }
 
-/* line 984, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1165, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn {
   width: 100%;
   height: 40px;
@@ -1105,7 +1305,7 @@ html, body {
   text-decoration: none;
 }
 
-/* line 990, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1171, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn .innav1_inbtn_icon {
   width: 40px;
   line-height: 40px;
@@ -1116,7 +1316,7 @@ html, body {
   float: left;
 }
 
-/* line 1001, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1182, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn .innav1_inbtn_tt span {
   line-height: 16px;
   display: table-cell;
@@ -1129,7 +1329,7 @@ html, body {
   font-size: 14px;
 }
 
-/* line 1020, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1201, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_ttbox {
   width: initial;
   height: 26px;
@@ -1148,20 +1348,20 @@ html, body {
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
-/* line 1040, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1221, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_icon, .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btneff .innav1_inbtn_icon {
   color: #fff;
   background-color: #038c76;
 }
 
-/* line 1046, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1227, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_tt span, .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btneff .innav1_inbtn_tt span {
   color: #fff;
   background-color: #09af94;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
 }
 
-/* line 1055, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1236, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav2 {
   width: 200px;
   height: initial;
@@ -1179,7 +1379,7 @@ html, body {
             }*/
 }
 
-/* line 1066, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1247, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav2 .innav2_btnleft_box {
   width: 40px;
   height: 40px;
@@ -1188,7 +1388,7 @@ html, body {
   display: none;
 }
 
-/* line 1075, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1256, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btt1 span {
   width: 200px;
   height: 40px;
@@ -1204,7 +1404,7 @@ html, body {
   padding: 0 35px 0 10px;
 }
 
-/* line 1091, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1272, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn {
   width: 100%;
   height: 40px;
@@ -1212,7 +1412,7 @@ html, body {
   text-decoration: none;
 }
 
-/* line 1097, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1278, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn .innav2_inbtn_icon {
   width: 40px;
   line-height: 40px;
@@ -1223,7 +1423,7 @@ html, body {
   float: left;
 }
 
-/* line 1108, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1289, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn .innav2_inbtn_tt span {
   line-height: 16px;
   display: table-cell;
@@ -1236,7 +1436,7 @@ html, body {
   font-size: 14px;
 }
 
-/* line 1127, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1308, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_ttbox {
   width: initial;
   height: 26px;
@@ -1255,20 +1455,20 @@ html, body {
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
-/* line 1147, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1328, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_icon, .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btneff .innav2_inbtn_icon {
   color: #fff;
   background-color: #038c76;
 }
 
-/* line 1153, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1334, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_tt span, .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btneff .innav2_inbtn_tt span {
   color: #fff;
   background-color: #09af94;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
 }
 
-/* line 1163, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1344, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart {
   width: 100%;
   height: 100%;
@@ -1279,7 +1479,7 @@ html, body {
   padding: 0 10px 15px 210px;
 }
 
-/* line 1172, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1353, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box {
   width: 100%;
   height: inherit;
@@ -1290,7 +1490,7 @@ html, body {
   border: 1px #999 solid;
 }
 
-/* line 1181, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1362, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht {
   width: 100%;
   height: 40px;
@@ -1300,7 +1500,7 @@ html, body {
   padding: 0 10px;
 }
 
-/* line 1189, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1370, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht span {
   width: initial;
   float: left;
@@ -1309,7 +1509,7 @@ html, body {
   font-size: 14px;
 }
 
-/* line 1197, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1378, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht .rtpt_b_ht_refresh {
   width: 30px;
   line-height: 30px;
@@ -1321,12 +1521,12 @@ html, body {
   cursor: pointer;
 }
 
-/* line 1208, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1389, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht .rtpt_b_ht_refresh:hover {
   color: #09af94;
 }
 
-/* line 1213, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1394, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box table {
   width: 100%;
   line-height: 30px;
@@ -1334,20 +1534,20 @@ html, body {
   font-size: 12px;
 }
 
-/* line 1219, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1400, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box table thead {
   background-color: #aaa;
   height: 30px;
 }
 
-/* line 1224, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1405, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box table thead tr th {
   border-right: 1px #ccc solid;
   padding: 0 5px;
   color: #fff;
 }
 
-/* line 1233, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1414, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ftr {
   width: 100%;
   height: 30px;
@@ -1358,7 +1558,7 @@ html, body {
   bottom: 0;
 }
 
-/* line 1242, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1423, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ftr span {
   width: initial;
   float: left;
@@ -1367,7 +1567,7 @@ html, body {
   font-size: 12px;
 }
 
-/* line 1251, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1432, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox {
   width: 500px;
   height: initial;
@@ -1378,7 +1578,7 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
-/* line 1260, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1441, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part {
   width: 100%;
   height: initial;
@@ -1386,7 +1586,7 @@ html, body {
   margin: 0 0 10px 0;
 }
 
-/* line 1266, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1447, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_pt_tt {
   width: 100px;
   height: 30px;
@@ -1397,7 +1597,7 @@ html, body {
   font-size: 14px;
 }
 
-/* line 1276, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1457, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part input {
   width: 370px;
   height: 30px;
@@ -1409,7 +1609,7 @@ html, body {
   border: 1px #aaa solid;
 }
 
-/* line 1287, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1468, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_pt_error {
   width: 100%;
   line-height: 20px;
@@ -1419,14 +1619,14 @@ html, body {
   text-align: right;
 }
 
-/* line 1297, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1478, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_partbtn {
   width: 100%;
   height: 30px;
   float: left;
 }
 
-/* line 1304, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1485, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox {
   width: 550px;
   height: initial;
@@ -1437,7 +1637,7 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
-/* line 1313, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1494, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part {
   width: 100%;
   height: initial;
@@ -1453,7 +1653,7 @@ html, body {
                     }*/
 }
 
-/* line 1319, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1500, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .hlday_addbox_pt_tt {
   width: 150px;
   height: 30px;
@@ -1464,7 +1664,7 @@ html, body {
   font-size: 14px;
 }
 
-/* line 1329, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1510, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part input {
   width: 370px;
   height: 30px;
@@ -1476,14 +1676,14 @@ html, body {
   border: 1px #aaa solid;
 }
 
-/* line 1349, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1530, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_partbtn {
   width: 100%;
   height: 30px;
   float: left;
 }
 
-/* line 1357, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1538, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart .ctr_rtpt_footer {
   width: 100%;
   height: initial;
@@ -1491,7 +1691,7 @@ html, body {
   padding: 5px 0;
 }
 
-/* line 1365, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1546, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart1 {
   width: 100%;
   height: initial;
@@ -1499,7 +1699,7 @@ html, body {
   padding: 10px 10px 0 10px;
 }
 
-/* line 1371, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1552, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb {
   width: 100%;
   line-height: 30px;
@@ -1510,7 +1710,7 @@ html, body {
   background-color: #fff;
 }
 
-/* line 1380, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1561, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb .ctr_rtpt1_icon1 {
   width: 30px;
   height: inherit;
@@ -1526,7 +1726,7 @@ html, body {
   cursor: pointer;
 }
 
-/* line 1395, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1576, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb .ctr_rtpt1_icon2 {
   font-size: 18px;
   line-height: 30px;
@@ -1534,14 +1734,14 @@ html, body {
   margin: 0 5px 0 0;
 }
 
-/* line 1405, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1586, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .edit_pt_box {
   width: 100%;
   height: inherit;
   float: left;
 }
 
-/* line 1410, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1591, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .edit_pt_box .edit_pt_inb {
   width: 100%;
   height: initial;
@@ -1550,7 +1750,7 @@ html, body {
   padding: 0 0 0 170px;
 }
 
-/* line 1417, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1598, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .edit_pt_box .edit_pt_inb .pt_inb_tt {
   width: 160px;
   height: 30px;
@@ -1563,7 +1763,7 @@ html, body {
   left: 0;
 }
 
-/* line 1429, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1610, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .edit_pt_box .edit_pt_inb .pt_inb_input_none {
   width: 100%;
   height: 30px;
@@ -1577,7 +1777,7 @@ html, body {
   pointer-events: none;
 }
 
-/* line 1442, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1623, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .edit_pt_box .edit_pt_inb .pt_inb_input {
   width: 100%;
   height: 30px;
@@ -1590,7 +1790,7 @@ html, body {
   color: #333;
 }
 
-/* line 1456, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1637, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .hlday_addbox_pt_error {
   width: 100%;
   line-height: 20px;
@@ -1600,38 +1800,38 @@ html, body {
   text-align: right;
 }
 
-/* line 1465, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1646, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 tbody {
   height: 30px;
 }
 
-/* line 1469, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1650, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 tbody tr td {
   border-right: 1px #aaa solid;
   padding: 0 5px;
 }
 
-/* line 1474, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1655, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 tbody tr td:last-child {
   border-right: 0;
 }
 
-/* line 1479, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1660, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 tbody tr:nth-child(odd) {
   background-color: #fff;
 }
 
-/* line 1483, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1664, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 tbody tr:nth-child(even) {
   background-color: #eee;
 }
 
-/* line 1487, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1668, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 tbody tr:hover {
   background-color: #daf1ed;
 }
 
-/* line 1492, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1673, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_rtpt_popupbox {
   width: 100%;
   height: 100%;
@@ -1640,7 +1840,7 @@ tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.35);
 }
 
-/* line 1499, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1680, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_rtpt_popupbox .rtpt_popupbox_inb {
   width: 500px;
   height: initial;
@@ -1655,7 +1855,7 @@ tbody tr:hover {
   z-index: 10;
 }
 
-/* line 1512, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1693, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon {
   width: 100%;
   height: initial;
@@ -1665,7 +1865,7 @@ tbody tr:hover {
   font-size: 60px;
 }
 
-/* line 1521, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1702, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon_red {
   width: 100%;
   height: initial;
@@ -1675,7 +1875,7 @@ tbody tr:hover {
   font-size: 60px;
 }
 
-/* line 1530, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1711, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_tt {
   width: 100%;
   line-height: 30px;
@@ -1687,7 +1887,7 @@ tbody tr:hover {
   font-weight: bold;
 }
 
-/* line 1541, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1722, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_btnpart {
   width: initial;
   height: initial;
@@ -1696,7 +1896,7 @@ tbody tr:hover {
   display: table;
 }
 
-/* line 1551, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1732, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 ul {
   list-style-type: none;
   margin: 31px 0 0 0;
@@ -1704,7 +1904,7 @@ ul {
   background-color: #fff;
 }
 
-/* line 1557, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1738, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 ul li {
   font-size: 12px;
   line-height: 18px;
@@ -1712,7 +1912,7 @@ ul li {
   color: #333;
 }
 
-/* line 1563, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1744, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 ul li .li_users_icon {
   width: initial;
   height: initial;
@@ -1722,12 +1922,12 @@ ul li .li_users_icon {
   color: #09af94;
 }
 
-/* line 1573, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1754, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 ul li:hover {
   background-color: #fcfccc;
 }
 
-/* line 1578, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1759, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .li_btn_rename {
   width: initial;
   font-size: 12px;
@@ -1740,7 +1940,7 @@ ul li:hover {
   cursor: pointer;
 }
 
-/* line 1590, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1771, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .li_btn_delete {
   width: initial;
   font-size: 12px;
@@ -1753,7 +1953,7 @@ ul li:hover {
   cursor: pointer;
 }
 
-/* line 1602, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1783, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .btn_editprofile {
   width: initial;
   height: inherit;
@@ -1766,7 +1966,7 @@ ul li:hover {
   color: #fff;
 }
 
-/* line 1614, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1795, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .btn_edit {
   width: 20px;
   line-height: 30px !important;
@@ -1778,7 +1978,7 @@ ul li:hover {
   cursor: pointer;
 }
 
-/* line 1625, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1806, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .btn_email {
   width: 20px;
   line-height: 30px !important;
@@ -1790,7 +1990,7 @@ ul li:hover {
   cursor: pointer;
 }
 
-/* line 1636, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1817, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .btn_trash {
   width: 20px;
   line-height: 30px !important;
@@ -1802,7 +2002,7 @@ ul li:hover {
   cursor: pointer;
 }
 
-/* line 1647, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1828, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .btn_copy {
   width: 20px;
   line-height: 30px !important;
@@ -1814,12 +2014,12 @@ ul li:hover {
   cursor: pointer;
 }
 
-/* line 1658, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1839, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .btn_edit:hover, .btn_trash:hover, .btn_copy:hover {
   color: #333;
 }
 
-/* line 1662, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1843, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_ftr_addbtn {
   width: initial;
   height: 30px;
@@ -1835,7 +2035,7 @@ ul li:hover {
   cursor: pointer;
 }
 
-/* line 1677, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1858, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_ftr_deletebtn {
   width: initial;
   height: 30px;
@@ -1851,7 +2051,7 @@ ul li:hover {
   cursor: pointer;
 }
 
-/* line 1692, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1873, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_closebtn {
   width: initial;
   height: 30px;
@@ -1866,7 +2066,7 @@ ul li:hover {
   cursor: pointer;
 }
 
-/* line 1706, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1887, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_printbtn {
   width: initial;
   height: 30px;
@@ -1881,7 +2081,7 @@ ul li:hover {
   cursor: pointer;
 }
 
-/* line 1720, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1901, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_forgotpwbtn {
   width: initial;
   line-height: 30px;
@@ -1894,7 +2094,7 @@ ul li:hover {
   cursor: pointer;
 }
 
-/* line 1732, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1913, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_savebtn {
   width: initial;
   height: 30px;
@@ -1909,7 +2109,7 @@ ul li:hover {
   cursor: pointer;
 }
 
-/* line 1746, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1927, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_yesbtn {
   width: initial;
   height: 30px;
@@ -1924,12 +2124,12 @@ ul li:hover {
   cursor: pointer;
 }
 
-/* line 1760, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1941, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .rtpt_ftr_addbtn:hover {
   background-color: #004f83;
 }
 
-/* line 1764, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1945, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .message_part {
   width: 49%;
   height: 500px;
@@ -1940,7 +2140,7 @@ ul li:hover {
   overflow: auto;
 }
 
-/* line 1773, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1954, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .message_part .mse_pt_table {
   width: 100%;
   margin: 0 0 30px 0;
@@ -1949,25 +2149,25 @@ ul li:hover {
   font-size: 12px;
 }
 
-/* line 1780, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1961, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .message_part .mse_pt_table thead {
   background-color: #aaa;
   height: 30px;
 }
 
-/* line 1784, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1965, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .message_part .mse_pt_table thead th {
   border-right: 1px #ccc solid;
   padding: 0 5px;
   color: #fff;
 }
 
-/* line 1790, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1971, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .message_part .mse_pt_table thead th:last-child {
   border-right: 0;
 }
 
-/* line 1796, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1977, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .message_part .mse_pt_itenbox {
   width: inherit;
   height: 30px;
@@ -1978,7 +2178,7 @@ ul li:hover {
   bottom: 0;
 }
 
-/* line 1805, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1986, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .message_part .mse_pt_itenbox span {
   width: 100%;
   float: left;
@@ -1987,7 +2187,7 @@ ul li:hover {
   font-size: 12px;
 }
 
-/* line 1815, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 1996, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .mse_pt_msebox {
   width: 49%;
   min-height: 500px;
@@ -1997,7 +2197,7 @@ ul li:hover {
   background-color: rgba(0, 0, 0, 0.03);
 }
 
-/* line 1823, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 2004, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .mse_pt_msebox .msebox_htr {
   width: 100%;
   height: 40px;
@@ -2007,7 +2207,7 @@ ul li:hover {
   padding: 0 10px;
 }
 
-/* line 1831, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 2012, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .mse_pt_msebox .msebox_htr span {
   width: initial;
   float: left;
@@ -2016,7 +2216,7 @@ ul li:hover {
   font-size: 14px;
 }
 
-/* line 1839, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 2020, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .mse_pt_msebox .msebox_htr .msebox_htr_date {
   width: initial;
   float: right;
@@ -2026,7 +2226,7 @@ ul li:hover {
   color: #fff;
 }
 
-/* line 1849, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 2030, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .mse_pt_msebox .msebox_ttbox {
   width: 100%;
   height: initial;
@@ -2037,7 +2237,7 @@ ul li:hover {
   padding: 10px 10px;
 }
 
-/* line 1860, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 2041, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .arrow_up {
   width: 0;
   height: 0;
@@ -2046,7 +2246,7 @@ ul li:hover {
   border-bottom: 10px solid rgba(0, 0, 0, 0.75);
 }
 
-/* line 1868, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 2049, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .arrow_down {
   width: 0;
   height: 0;
@@ -2055,7 +2255,7 @@ ul li:hover {
   border-top: 10px solid rgba(0, 0, 0, 0.75);
 }
 
-/* line 1876, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 2057, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .arrowr_right {
   width: 0;
   height: 0;
@@ -2064,7 +2264,7 @@ ul li:hover {
   border-left: 10px solid rgba(0, 0, 0, 0.75);
 }
 
-/* line 1884, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 2065, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .arrow_left {
   width: 0;
   height: 0;
@@ -2073,7 +2273,7 @@ ul li:hover {
   border-right: 10px solid rgba(0, 0, 0, 0.75);
 }
 
-/* line 1892, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 2073, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .arrow_up_c {
   width: 0;
   height: 0;
@@ -2082,7 +2282,7 @@ ul li:hover {
   border-bottom: 10px solid #026f5d;
 }
 
-/* line 1900, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 2081, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .arrow_down_c {
   width: 0;
   height: 0;
@@ -2091,7 +2291,7 @@ ul li:hover {
   border-top: 10px solid #026f5d;
 }
 
-/* line 1908, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 2089, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .arrowr_right _c {
   width: 0;
   height: 0;
@@ -2100,7 +2300,7 @@ ul li:hover {
   border-left: 10px solid #026f5d;
 }
 
-/* line 1916, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
+/* line 2097, D:/SRS-Project/SRS Project/SRS Project/scss/style.scss */
 .arrow_left_c {
   width: 0;
   height: 0;

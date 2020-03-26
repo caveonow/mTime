@@ -47,13 +47,17 @@ $("#editprofile_btn").click(function () {
     $("#editprofile_popup").addClass("display_block").removeClass("display_none");
 });
 
+$("#passwordchange_btn").click(function () {
+    $("#passwordchange_popup").addClass("display_block").removeClass("display_none");
+});
+
 $("#forgotpw_btn").click(function () {
     $("#forgotpw_popup").addClass("display_block").removeClass("display_none");
     $("#login_popup").addClass("display_none").removeClass("display_block");
 });
 
-$("#closebtn, #confirmbtn, #sendbtn, #loginbtn, #savebtn").click(function () {
-    $("#firstlogin_popup, #login_popup, #forgotpw_popup, #editprofile_popup, #Feedback_popup").addClass("display_none").removeClass("display_block");
+$("#closebtn, #confirmbtn, #sendbtn, #loginbtn, #savebtn, #cancelbtn").click(function () {
+    $("#firstlogin_popup, #login_popup, #forgotpw_popup, #editprofile_popup, #Feedback_popup, #passwordchange_popup").addClass("display_none").removeClass("display_block");
 });
 //Nav Top Menu Staff
 $("#stfhdr_btn1").addClass("pt2_b_btneff");
@@ -71,6 +75,16 @@ $(function () {
         e.preventDefault();
         $(e.target.parentElement.nextElementSibling).slideToggle();
         $(e.target).toggleClass('fa-angle-down');
+    });
+});
+
+$(function () {
+    var pull = $(".faq_heading_btm");
+
+    pull.on("click", function (e) {
+        e.preventDefault();
+        $(e.target.parentElement.nextElementSibling).slideToggle();
+        $(e.target).toggleClass('fa-minus');
     });
 });
 

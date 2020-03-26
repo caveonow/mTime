@@ -153,6 +153,7 @@
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="Controllers\AdministrationController.vb" />
     <Compile Include="Controllers\AttendanceController.vb" />
+    <Compile Include="Controllers\FAQController.vb" />
     <Compile Include="Controllers\MaintenanceController.vb" />
     <Compile Include="Controllers\PrivateMessageController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
@@ -212,6 +213,7 @@
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Controllers\HtmlPage1.html" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
@@ -335,6 +337,7 @@
     <Content Include="Views\Attendance\_AttendanceRecord.vbhtml" />
     <Content Include="Views\Attendance\_DoorAccess.vbhtml" />
     <Content Include="Views\PrivateMessage\Index.vbhtml" />
+    <Content Include="Views\FAQ\Index.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

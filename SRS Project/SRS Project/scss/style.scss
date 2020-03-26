@@ -471,16 +471,17 @@ html, body {
         text-align: center;
         font-size: 80px;
         margin: 0 0 20px 0;
-    }
 
-    .ftlogin_b_httt {
-        width: 100%;
-        line-height: 30px;
-        margin: 0 0 10px 0;
-        padding: 0 10px;
-        float: left;
-        font-size: 20px;
-        text-align: center;
+        .ftlogin_b_httt {
+            width: 100%;
+            line-height: 30px;
+            margin: 0 0 10px 0;
+            padding: 0 10px;
+            float: left;
+            font-size: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
     }
 
     .ftlogin_b_part {
@@ -551,6 +552,118 @@ html, body {
     }
 }
 
+.passwordchange_box {
+    width: 500px;
+    height: initial;
+    padding: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+    z-index: 1;
+
+    .pwchange_b_icon {
+        width: 100%;
+        height: initial;
+        float: left;
+        color: #666;
+        text-align: center;
+        font-size: 80px;
+        margin: 0 0 20px 0;
+
+        .b_icon_tt {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 20px !important;
+            color: #333;
+            float: left;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+    }
+
+    .pwchange_b_httt {
+        width: 100%;
+        line-height: 30px;
+        margin: 0 0 10px 0;
+        padding: 0 10px;
+        float: left;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .pwchange_b_part {
+        width: 100%;
+        height: initial;
+        float: left;
+        margin: 0 0 10px 0;
+
+        .b_pt_tt {
+            width: 150px;
+            line-height: 30px;
+            font-size: 14px;
+            float: left;
+            color: #333;
+            text-align: right;
+        }
+
+        .b_pt_box {
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            padding: 0 15px 0 175px;
+
+            input {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px #aaa solid;
+            }
+        }
+
+        .b_pt_tt1 {
+            width: 70px;
+            line-height: 30px;
+            font-size: 14px;
+            float: left;
+            color: #333;
+            text-align: right;
+        }
+
+        .b_pt_box1 {
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            padding: 0 15px 0 95px;
+
+            input {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px #aaa solid;
+            }
+        }
+    }
+
+    .pwchange_b_partbtm {
+        width: 100%;
+        height: 30px;
+        float: left;
+    }
+}
+
 .ctr_leftpart_home {
     width: 300px;
     height: initial;
@@ -605,6 +718,74 @@ html, body {
             color: #aaa;
             padding: 1px 5px 1px 0;
             font-size: 12px;
+        }
+    }
+}
+
+.faq_box {
+    width: 100%;
+    min-height: 500px;
+    float: right;
+    border-radius: 5px 5px;
+    background-color: rgba(0, 0, 0, 0.03);
+
+    .faq_b_htrtt {
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        float: left;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+        margin: 0 0 10px 0;
+
+        span {
+            width: initial;
+            float: left;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .faq_b_row {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 0 5px;
+        margin: 0 0 10px 0;
+
+        .b_row_htrtt {
+            width: 100%;
+            float: left;
+            color: #333;
+            line-height: 30px;
+            font-size: 12px;
+            font-weight: bold;
+            background-color: #ddd;
+            border-radius: 5px 5px;
+            margin: 5px 0 0 0;
+            padding: 0 5px;
+
+            .row_htrtt_icon {
+                color: #333;
+                line-height: 26px;
+                text-align: center;
+                float: right;
+                margin: 2px 0;
+                font-size: 18px;
+                padding: 0 10px;
+            }
+        }
+
+        .b_row_htrst {
+            width: 100%;
+            height: initial;
+            float: left;
+            font-size: 12px;
+            line-height: 16px;
+            color: #333;
+            padding: 10px 15px;
+            background-color: #fff;
         }
     }
 }
