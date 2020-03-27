@@ -1901,4 +1901,8 @@ ul li:hover {
   border-right: 10px solid #026f5d;
 }
 
+.input_field_fill_available {
+  width: -webkit-fill-available !important;
+}
+
 /*# sourceMappingURL=style.css.map */
