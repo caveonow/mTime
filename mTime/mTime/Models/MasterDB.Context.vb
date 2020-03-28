@@ -13,11 +13,11 @@ Imports System.Data.Entity.Infrastructure
 
 Namespace mTime
 
-    Partial Public Class mTimeEntities
+    Partial Public Class MasterDB
         Inherits DbContext
     
         Public Sub New()
-            MyBase.New("name=mTimeEntities")
+            MyBase.New("name=MasterDB")
         End Sub
     
         Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
