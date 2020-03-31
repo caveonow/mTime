@@ -9,14 +9,19 @@
 
 Imports System
 Imports System.Collections.Generic
+Imports System.ComponentModel.DataAnnotations
 
 Namespace mTime
 
     Partial Public Class HOLIDAY
         Public Property HOLIDAYID As Integer
+        <Display(Name:="Holiday Name")>
         Public Property HOLIDAYNAME As String
+        <Display(Name:="Start Date")>
         Public Property FROM As Date
+        <Display(Name:="End Date")>
         Public Property [UNTIL] As Date
+        <Display(Name:="Is In Used")>
         Public Property ISINUSED As Boolean
         Public Property CREATEDBY As String
         Public Property CREATEDON As Date
