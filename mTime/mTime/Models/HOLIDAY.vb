@@ -18,8 +18,10 @@ Namespace mTime
         <Display(Name:="Holiday Name")>
         Public Property HOLIDAYNAME As String
         <Display(Name:="Start Date")>
+        <DisplayFormat(DataFormatString:="{0:dd/MM/yyyy}")>
         Public Property FROM As Date
         <Display(Name:="End Date")>
+        <DisplayFormat(DataFormatString:="{0:dd/MM/yyyy}")>
         Public Property [UNTIL] As Date
         <Display(Name:="Is In Used")>
         Public Property ISINUSED As Boolean

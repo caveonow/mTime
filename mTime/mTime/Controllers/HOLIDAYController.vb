@@ -1,11 +1,5 @@
-﻿Imports System
-Imports System.Collections.Generic
-Imports System.Data
-Imports System.Data.Entity
-Imports System.Linq
+﻿Imports System.Data.Entity
 Imports System.Net
-Imports System.Web
-Imports System.Web.Mvc
 Imports mTime.mTime
 Imports PagedList
 
@@ -80,8 +74,13 @@ Namespace Controllers
         <HttpPost()>
         <ValidateAntiForgeryToken()>
         Function Create(<Bind(Include:="HOLIDAYID,HOLIDAYNAME,FROM,UNTIL,ISINUSED,CREATEDBY,CREATEDON,UPDATEDBY,UPDATEDON")> ByVal hOLIDAY As HOLIDAY) As ActionResult
-            If ModelState.IsValid Then
+            ' Check is same year
+            If Not checkIsSameYear(hOLIDAY.FROM, hOLIDAY.UNTIL) Then
+                ModelState.AddModelError("FROM", "Year not same")
+                ModelState.AddModelError("Until", "Year not same")
+            End If
 
+            If ModelState.IsValid Then
                 hOLIDAY.CREATEDBY = "SYSTEM"
                 hOLIDAY.CREATEDON = System.DateTime.Now
                 hOLIDAY.UPDATEDBY = "SYSTEM"
@@ -89,8 +88,21 @@ Namespace Controllers
 
                 db.HOLIDAYs.Add(hOLIDAY)
                 db.SaveChanges()
-                Return RedirectToAction("Index")
+
+                ' https://docs.microsoft.com/en-us/office/vba/language/reference/user-interface-help/inputbox-function
+                ' show successfully save dialog
+                Dim Msg, Style, Title, Response
+                Msg = "Save successfully"
+                Style = vbOKOnly
+                Title = "Save successfully"
+                Response = MsgBox(Msg, Style, Title)
+                If Response = vbOK Then
+                    Return RedirectToAction("Index")
+                Else
+                    Return RedirectToAction("Index")
+                End If
             End If
+
             Return View(hOLIDAY)
         End Function
 
@@ -112,13 +124,30 @@ Namespace Controllers
         <HttpPost()>
         <ValidateAntiForgeryToken()>
         Function Edit(<Bind(Include:="HOLIDAYID,HOLIDAYNAME,FROM,UNTIL,ISINUSED,CREATEDBY,CREATEDON,UPDATEDBY,UPDATEDON")> ByVal hOLIDAY As HOLIDAY) As ActionResult
+            ' Check is same year
+            If Not checkIsSameYear(hOLIDAY.FROM, hOLIDAY.UNTIL) Then
+                ModelState.AddModelError("FROM", "Year not same")
+                ModelState.AddModelError("Until", "Year not same")
+            End If
+
             If ModelState.IsValid Then
                 hOLIDAY.UPDATEDBY = "SYSTEM"
                 hOLIDAY.UPDATEDON = System.DateTime.Now
 
                 db.Entry(hOLIDAY).State = EntityState.Modified
                 db.SaveChanges()
-                Return RedirectToAction("Index")
+
+                ' show successfully update dialog
+                Dim Msg, Style, Title, Response
+                Msg = "Update successfully"
+                Style = vbOKOnly
+                Title = "Update successfully"
+                Response = MsgBox(Msg, Style, Title)
+                If Response = vbOK Then
+                    Return RedirectToAction("Index")
+                Else
+                    Return RedirectToAction("Index")
+                End If
             End If
             Return View(hOLIDAY)
         End Function
@@ -146,7 +175,18 @@ Namespace Controllers
 
             db.HOLIDAYs.Remove(hOLIDAY)
             db.SaveChanges()
-            Return RedirectToAction("Index")
+
+            ' show successfully delete dialog
+            Dim Msg, Style, Title, Response
+            Msg = "Delete successfully"
+            Style = vbOKOnly
+            Title = "Delete successfully"
+            Response = MsgBox(Msg, Style, Title)
+            If Response = vbOK Then
+                Return RedirectToAction("Index")
+            Else
+                Return RedirectToAction("Index")
+            End If
         End Function
 
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
@@ -166,6 +206,14 @@ Namespace Controllers
                 Return HttpNotFound()
             End If
             Return View("Create", hOLIDAY)
+        End Function
+
+        Function checkIsSameYear(firstDate As DateTime, secondDate As DateTime) As Boolean
+            If (Year(firstDate) = Year(secondDate)) Then
+                Return True
+            End If
+
+            Return False
         End Function
     End Class
 End Namespace

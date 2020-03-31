@@ -55,9 +55,11 @@ End Code
                             </td>
                             <td>
                                 @Html.DisplayFor(Function(modelItem) item.FROM)
+                                @*@item.FROM.ToString("dd/MM/yyyy")*@
                             </td>
                             <td>
                                 @Html.DisplayFor(Function(modelItem) item.UNTIL)
+                                @*@item.UNTIL.ToString("dd/MM/yyyy")*@
                             </td>
                             <td>
                                 @Html.DisplayFor(Function(modelItem) item.ISINUSED)
