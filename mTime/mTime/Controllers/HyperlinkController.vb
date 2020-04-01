@@ -11,26 +11,24 @@ Namespace Controllers
         ' GET: Hyperlink
         Function Index() As ActionResult
 
-            ViewBag.TotalCount = db.HYPERLINK.ToList.Count
-
             '# Return updated dataset
             Return View(db.HYPERLINK.ToList())
         End Function
 
-        Function Details(ByRef id As Integer) As ActionResult
+        'Function Details(ByRef id As Integer) As ActionResult
 
-            If IsNothing(id) Then
-                Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
-            End If
+        '    If IsNothing(id) Then
+        '        Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
+        '    End If
 
-            Dim hyperlink As model.HYPERLINK = db.HYPERLINK.Find(id)
+        '    Dim hyperlink As model.HYPERLINK = db.HYPERLINK.Find(id)
 
-            If IsNothing(hyperlink) Then
-                Return HttpNotFound()
-            End If
-            Return View(hyperlink)
+        '    If IsNothing(hyperlink) Then
+        '        Return HttpNotFound()
+        '    End If
+        '    Return View(hyperlink)
 
-        End Function
+        'End Function
 
 
         ' GET : Create-Hyperlink
@@ -107,7 +105,7 @@ Namespace Controllers
             End If
 
 
-            Debug.Print(hyperlink.HYPERLINKID)
+            'Debug.Print(hyperlink.HYPERLINKID)
 
             Return View(hyperlink)
 
@@ -115,17 +113,22 @@ Namespace Controllers
 
         <HttpPost>
         <ValidateAntiForgeryToken>
-        Function Edit(ByVal hyperlink As model.HYPERLINK) As ActionResult
+        Function Edit(<Bind(Include:="HYPERLINKID, TITLE, URL, CREATEDBY, CREATEDON, UPDAEDBY, UPDATEDBY")> ByVal hyperlink As model.HYPERLINK) As ActionResult
+
+            If (ValidateURL(hyperlink.URL)) = False Then
+                ModelState.AddModelError("URL", "URL is invalid")
+            End If
 
             If ModelState.IsValid Then
 
-                Debug.Print(hyperlink.HYPERLINKID)
+                hyperlink.UPDATEDBY = "NICK"
+                hyperlink.UPDATEDON = Now
 
                 db.Entry(hyperlink).State = System.Data.Entity.EntityState.Modified
                 db.SaveChanges()
 
                 '# Return to Index 
-                Return RedirectToAction("Index")
+                Return RedirectToRoute("HyperlinkList")
 
             End If
 
@@ -134,6 +137,8 @@ Namespace Controllers
 
         ' GET : Delete-Hyperlink
         Function Delete(ByVal id As Integer) As ActionResult
+
+            Debug.Print("Get : " & id.ToString)
 
             If IsNothing(id) Then
                 Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
@@ -148,17 +153,22 @@ Namespace Controllers
 
         End Function
 
+        'Function Delete(<Bind(Include:="HYPERLINKID, TITLE, URL, CREATEDBY, CREATEDON, UPDAEDBY, UPDATEDBY")> ByVal hyperlink As model.HYPERLINK) As ActionResult
+        '<ActionName("Delete")>
+
         <HttpPost>
         <ActionName("Delete")>
         <ValidateAntiForgeryToken>
         Function DeleteConfirmed(ByVal id As Integer) As ActionResult
+
+            Debug.Print(id.ToString)
 
             Dim hyperlink As model.HYPERLINK = db.HYPERLINK.Find(id)
             db.HYPERLINK.Remove(hyperlink)
             db.SaveChanges()
 
             '# Return to Index 
-            Return RedirectToAction("Index")
+            Return RedirectToRoute("HyperlinkList")
 
         End Function
 

@@ -68,24 +68,46 @@ End Code
                 </div>
 
             End Using
+
+
+            <div id="" Class="ctr_rtpt_popupbox display_none savepopup">
+                <div Class="rtpt_popupbox_inb">
+                    <div Class="fa fa-check-circle-o popupbox_inb_icon_blue"></div>
+                    <div Class="popupbox_inb_tt">Save</div>
+                </div>
+            </div>
         </div>
-
     </div>
-
 </div>
+
+
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">
     $(function () {
         $("#save").click(function () {         
+            $(".savepopup").addClass("display_block").fadeOut(3000);
             document.forms[0].submit();
             return false;
         });
     });
 
+    // Click Save button Popup
+    //$("#save").click(function () {
+    //    $("#savepopup").addClass("display_block");
+    //});
+
+    //$(function () {
+    //    const myForm = document.getElementById('savebtn');
+    //    myForm.style.display = 'block';
+    //    setTimeout(() => {
+    //        myForm.style.display = 'none';
+    //    }, 3000);
+    //});
+      //Click Save button Popup
 </script>
 
-End If
+
 
 
 

@@ -7,6 +7,7 @@ End Code
 
 @Html.Partial("_AdminMenuTop")
 
+
 <div class="body_center">
     @Html.Partial("_SubMenuLeft")
     <div class="bd_ctr_rightpart">
@@ -15,18 +16,25 @@ End Code
             @Using (Html.BeginForm())
 
                 @Html.AntiForgeryToken()
+
                 @<div class="form-horizontal">
 
+                    @Html.HiddenFor(Function(Model) Model.HYPERLINKID)
+                    @Html.HiddenFor(Function(Model) Model.CREATEDBY)
+                    @Html.HiddenFor(Function(Model) Model.CREATEDON)
+                    @Html.HiddenFor(Function(Model) Model.UPDATEDBY)
+                    @Html.HiddenFor(Function(Model) Model.UPDATEDON)
+            
                     <div Class="ctr_rtpt_b_ht">
                         <span> Hyperlink - Edit Item</span>
                     </div>
-
+            
                     <div Class="ctr_rtpt_addbox">
                         <div Class="rtpt_addbox_part">
                             <div class="form-group">
                                 <div Class="rtpt_addbox_pt_tt">Title :</div>
-                                
-                                @Html.TextBoxFor(Function(model) model.TITLE, New With {.Readonly = True})
+
+                                @Html.TextBoxFor(Function(model) model.TITLE, New With {.Readonly = True, .Style = "background-color:#eee; pointer-events: none;"})
 
                             </div>
                         </div>
@@ -81,7 +89,7 @@ End Code
 
 </script>
 
-End If
+
 
 
 
