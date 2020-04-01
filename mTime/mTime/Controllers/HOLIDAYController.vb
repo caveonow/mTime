@@ -7,7 +7,7 @@ Namespace Controllers
     Public Class HOLIDAYController
         Inherits System.Web.Mvc.Controller
 
-        Private db As New mTimedbEntities
+        Private db As New MasterDB
 
         ' GET: HOLIDAYs
         Function Index(ByVal page As Integer?, ByVal yearFilter As String) As ActionResult
