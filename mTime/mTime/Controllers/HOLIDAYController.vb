@@ -1,12 +1,7 @@
-﻿Imports System
-Imports System.Collections.Generic
-Imports System.Data
-Imports System.Data.Entity
-Imports System.Linq
+﻿Imports System.Data.Entity
 Imports System.Net
-Imports System.Web
-Imports System.Web.Mvc
 Imports mTime.mTime
+Imports PagedList
 
 Namespace Controllers
     Public Class HOLIDAYController
@@ -15,8 +10,45 @@ Namespace Controllers
         Private db As New mTimedbEntities
 
         ' GET: HOLIDAYs
-        Function Index() As ActionResult
-            Return View(db.HOLIDAYs.ToList())
+        Function Index(ByVal page As Integer?, ByVal yearFilter As String) As ActionResult
+            ' https://www.mikesdotnetting.com/article/243/mvc-5-with-ef-6-in-visual-basic-sorting-filtering-and-paging
+
+            ' paging
+            Dim pg = 1
+
+            If Not IsNothing(page) Then
+                pg = page
+            End If
+
+            ' get result from db
+            Dim listing = db.HOLIDAYs.ToList()
+
+            ' get all available year for dropdown
+            Dim yearListing As New List(Of Integer)
+
+            For Each listingItem As HOLIDAY In listing
+                yearListing.Add(Year(listingItem.FROM))
+            Next
+
+            ' add current year if is empty
+            If IsNothing(yearListing) Or yearListing.Count <= 0 Then
+                yearListing.Add(System.DateTime.Now.Year)
+            Else
+                yearListing = yearListing.Distinct().ToList()
+            End If
+
+            ' Filter the year
+            If Not IsNothing(yearFilter) And Not yearFilter = "All" Then
+                listing = listing.Where(Function(h) Year(h.FROM) = yearFilter).ToList()
+            End If
+
+            ' add necessary viewbag
+            ViewBag.TotalHolidays = listing.Count
+            ViewBag.yearListing = yearListing
+            ViewBag.yearFilter = yearFilter
+
+            ' Return with paging
+            Return View(listing.ToPagedList(pg, 10))
         End Function
 
         ' GET: HOLIDAYs/Details/5
@@ -42,11 +74,35 @@ Namespace Controllers
         <HttpPost()>
         <ValidateAntiForgeryToken()>
         Function Create(<Bind(Include:="HOLIDAYID,HOLIDAYNAME,FROM,UNTIL,ISINUSED,CREATEDBY,CREATEDON,UPDATEDBY,UPDATEDON")> ByVal hOLIDAY As HOLIDAY) As ActionResult
+            ' Check is same year
+            If Not checkIsSameYear(hOLIDAY.FROM, hOLIDAY.UNTIL) Then
+                ModelState.AddModelError("FROM", "Year not same")
+                ModelState.AddModelError("Until", "Year not same")
+            End If
+
             If ModelState.IsValid Then
+                hOLIDAY.CREATEDBY = "SYSTEM"
+                hOLIDAY.CREATEDON = System.DateTime.Now
+                hOLIDAY.UPDATEDBY = "SYSTEM"
+                hOLIDAY.UPDATEDON = System.DateTime.Now
+
                 db.HOLIDAYs.Add(hOLIDAY)
                 db.SaveChanges()
-                Return RedirectToAction("Index")
+
+                ' https://docs.microsoft.com/en-us/office/vba/language/reference/user-interface-help/inputbox-function
+                ' show successfully save dialog
+                Dim Msg, Style, Title, Response
+                Msg = "Save successfully"
+                Style = vbOKOnly
+                Title = "Save successfully"
+                Response = MsgBox(Msg, Style, Title)
+                If Response = vbOK Then
+                    Return RedirectToAction("Index")
+                Else
+                    Return RedirectToAction("Index")
+                End If
             End If
+
             Return View(hOLIDAY)
         End Function
 
@@ -68,10 +124,30 @@ Namespace Controllers
         <HttpPost()>
         <ValidateAntiForgeryToken()>
         Function Edit(<Bind(Include:="HOLIDAYID,HOLIDAYNAME,FROM,UNTIL,ISINUSED,CREATEDBY,CREATEDON,UPDATEDBY,UPDATEDON")> ByVal hOLIDAY As HOLIDAY) As ActionResult
+            ' Check is same year
+            If Not checkIsSameYear(hOLIDAY.FROM, hOLIDAY.UNTIL) Then
+                ModelState.AddModelError("FROM", "Year not same")
+                ModelState.AddModelError("Until", "Year not same")
+            End If
+
             If ModelState.IsValid Then
+                hOLIDAY.UPDATEDBY = "SYSTEM"
+                hOLIDAY.UPDATEDON = System.DateTime.Now
+
                 db.Entry(hOLIDAY).State = EntityState.Modified
                 db.SaveChanges()
-                Return RedirectToAction("Index")
+
+                ' show successfully update dialog
+                Dim Msg, Style, Title, Response
+                Msg = "Update successfully"
+                Style = vbOKOnly
+                Title = "Update successfully"
+                Response = MsgBox(Msg, Style, Title)
+                If Response = vbOK Then
+                    Return RedirectToAction("Index")
+                Else
+                    Return RedirectToAction("Index")
+                End If
             End If
             Return View(hOLIDAY)
         End Function
@@ -94,9 +170,23 @@ Namespace Controllers
         <ValidateAntiForgeryToken()>
         Function DeleteConfirmed(ByVal id As Integer) As ActionResult
             Dim hOLIDAY As HOLIDAY = db.HOLIDAYs.Find(id)
+            hOLIDAY.UPDATEDBY = "SYSTEM"
+            hOLIDAY.UPDATEDON = System.DateTime.Now
+
             db.HOLIDAYs.Remove(hOLIDAY)
             db.SaveChanges()
-            Return RedirectToAction("Index")
+
+            ' show successfully delete dialog
+            Dim Msg, Style, Title, Response
+            Msg = "Delete successfully"
+            Style = vbOKOnly
+            Title = "Delete successfully"
+            Response = MsgBox(Msg, Style, Title)
+            If Response = vbOK Then
+                Return RedirectToAction("Index")
+            Else
+                Return RedirectToAction("Index")
+            End If
         End Function
 
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
@@ -105,5 +195,25 @@ Namespace Controllers
             End If
             MyBase.Dispose(disposing)
         End Sub
+
+        ' GET: HOLIDAYs/Copy/5
+        Function Copy(ByVal id As Integer?) As ActionResult
+            If IsNothing(id) Then
+                Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
+            End If
+            Dim hOLIDAY As HOLIDAY = db.HOLIDAYs.Find(id)
+            If IsNothing(hOLIDAY) Then
+                Return HttpNotFound()
+            End If
+            Return View("Create", hOLIDAY)
+        End Function
+
+        Function checkIsSameYear(firstDate As DateTime, secondDate As DateTime) As Boolean
+            If (Year(firstDate) = Year(secondDate)) Then
+                Return True
+            End If
+
+            Return False
+        End Function
     End Class
 End Namespace
