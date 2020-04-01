@@ -80,6 +80,8 @@ Namespace Controllers
                 ModelState.AddModelError("Until", "Year not same")
             End If
 
+            validateBeforeSave(hOLIDAY)
+
             If ModelState.IsValid Then
                 hOLIDAY.CREATEDBY = "SYSTEM"
                 hOLIDAY.CREATEDON = System.DateTime.Now
@@ -129,6 +131,8 @@ Namespace Controllers
                 ModelState.AddModelError("FROM", "Year not same")
                 ModelState.AddModelError("Until", "Year not same")
             End If
+
+            validateBeforeSave(hOLIDAY)
 
             If ModelState.IsValid Then
                 hOLIDAY.UPDATEDBY = "SYSTEM"
@@ -215,5 +219,19 @@ Namespace Controllers
 
             Return False
         End Function
+
+        Private Sub validateBeforeSave(holiday As HOLIDAY)
+            If IsNothing(holiday.HOLIDAYNAME) Then
+                ModelState.AddModelError("HOLIDAYNAME", "Name is required")
+            End If
+
+            If IsNothing(holiday.FROM) Then
+                ModelState.AddModelError("FROM", "Date from is required")
+            End If
+
+            If IsNothing(holiday.UNTIL) Then
+                ModelState.AddModelError("UNTIL", "Date to is required")
+            End If
+        End Sub
     End Class
 End Namespace
