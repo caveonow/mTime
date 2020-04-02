@@ -1,4 +1,5 @@
-﻿@ModelType IEnumerable(Of mTime.mTime.HOLIDAY)
+﻿@ModelType PagedList.IPagedList(Of mTime.mTime.HOLIDAY)
+@Imports PagedList.Mvc
 @Code
     ViewData("Title") = "Index"
 End Code
@@ -14,68 +15,67 @@ End Code
                 <span>Holiday</span>
 
                 <div class="fa fa-refresh rtpt_b_ht_refresh"></div>
-                <!-- <div id="addnewbtn" class="rtpt_ftr_addbtn filter1">Add Item</div> -->
                 @Html.ActionLink("Add Item", "Create")
             </div>
+
+            @Using Html.BeginForm("Index", "Holiday", FormMethod.Get)
+                @<p>
+                    
+                     <select class="form-control" id="yearFilter" name="yearFilter" value="@ViewBag.yearFilter">
+                         <option>All</option>
+                         @For Each item In ViewBag.yearListing
+                             @<option value="@ViewBag.yearFilter">@item</option>
+                         Next
+                     </select>
+                    <input type="submit" value="Search" />
+                </p>
+            End Using
 
             <table>
                 <thead>
                     <tr>
+                        <th style="width: 110px;" />
                         <th style="width: 90px;">Name</th>
                         <th style="width: 150px;">Date From</th>
                         <th style="width: 150px;">Date To</th>
                         <th>Is Used</th>
-                        <th>Created By</th>
-                        <th style="width: 150px;">Created Date</th>
-                        <th>Updated By</th>
-                        <th style="width: 150px;">Updated Date</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     @For Each item In Model
-                    @<tr>
-                        <td>
-                            @Html.DisplayFor(Function(modelItem) item.HOLIDAYNAME)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(Function(modelItem) item.FROM)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(Function(modelItem) item.UNTIL)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(Function(modelItem) item.ISINUSED)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(Function(modelItem) item.CREATEDBY)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(Function(modelItem) item.CREATEDON)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(Function(modelItem) item.UPDATEDBY)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(Function(modelItem) item.UPDATEDON)
-                        </td>
-                        <td>
-                            @Html.ActionLink("Edit", "Edit", New With {.id = item.HOLIDAYID }) |
-                            @Html.ActionLink("Details", "Details", New With {.id = item.HOLIDAYID }) |
-                            @Html.ActionLink("Delete", "Delete", New With {.id = item.HOLIDAYID })
-                        </td>
-                    </tr>
+                        @<tr>
+                            <td>
+                                <a href="@Url.Action("Edit", "HOLIDAY", New With {.id = item.HOLIDAYID})" class="fa fa-pencil-square-o btn_edit" />
+                                <a href="@Url.Action("Copy", "HOLIDAY", New With {.id = item.HOLIDAYID})" class="fa fa-files-o btn_copy" />
+                                <a href="@Url.Action("Delete", "HOLIDAY", New With {.id = item.HOLIDAYID})" class="fa fa-trash-o btn_trash" />
+                            </td>
+                            <td>
+                                @Html.DisplayFor(Function(modelItem) item.HOLIDAYNAME)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(Function(modelItem) item.FROM)
+                                @*@item.FROM.ToString("dd/MM/yyyy")*@
+                            </td>
+                            <td>
+                                @Html.DisplayFor(Function(modelItem) item.UNTIL)
+                                @*@item.UNTIL.ToString("dd/MM/yyyy")*@
+                            </td>
+                            <td>
+                                @Html.DisplayFor(Function(modelItem) item.ISINUSED)
+
+                            </td>
+                        </tr>
                     Next
                 </tbody>
             </table>
 
             <div class="ctr_rtpt_b_ftr">
-                <span>Total 2 iten(s)</span>
+                Page @IIf(Model.PageCount < Model.PageNumber, 0, Model.PageNumber) of @Model.PageCount |
+                Total @ViewBag.TotalHolidays item(s)
+
+                @Html.PagedListPager(Model, Function(page) Url.Action("Index", New With {page, .yearFilter = ViewBag.yearFilter}))
             </div>
         </div>
-
-        @*<div class="ctr_rtpt_footer">
-            <div class="rtpt_ftr_addbtn filter1">Add Item</div>
-        </div>*@
     </div>
 </div>

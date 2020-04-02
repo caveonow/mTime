@@ -45,44 +45,12 @@ End Code
                     <div class="hlday_addbox_pt_tt">Is Used :</div>
                     <div class="col-md-8">
                         @Html.EditorFor(Function(model) model.ISINUSED, New With { .htmlAttributes = New With { .style = "width: -webkit-fill-available; float: left" } })
-                        @Html.ValidationMessageFor(Function(model) model.ISINUSED, "", New With { .class = "text-danger" })
-                    </div>
-                </div>
-
-                <div class="hlday_addbox_part">
-                    <div class="hlday_addbox_pt_tt">Create By :</div>
-                    <div class="col-md-8">
-                        @Html.EditorFor(Function(model) model.CREATEDBY, New With { .htmlAttributes = New With { .class = "form-control input_field_fill_available" } })
-                        @Html.ValidationMessageFor(Function(model) model.CREATEDBY, "", New With { .class = "text-danger" })
-                    </div>
-                </div>
-
-                <div class="hlday_addbox_part">
-                    <div class="hlday_addbox_pt_tt">Create Date :</div>
-                    <div class="col-md-8">
-                        @Html.EditorFor(Function(model) model.CREATEDON, New With { .htmlAttributes = New With { .class = "form-control input_field_fill_available" } })
-                        @Html.ValidationMessageFor(Function(model) model.CREATEDON, "", New With { .class = "text-danger" })
-                    </div>
-                </div>
-
-                <div class="hlday_addbox_part">
-                    <div class="hlday_addbox_pt_tt">Update By :</div>
-                    <div class="col-md-8">
-                        @Html.EditorFor(Function(model) model.UPDATEDBY, New With { .htmlAttributes = New With { .class = "form-control input_field_fill_available" } })
-                        @Html.ValidationMessageFor(Function(model) model.UPDATEDBY, "", New With { .class = "text-danger" })
-                    </div>
-                </div>
-
-                <div class="hlday_addbox_part">
-                    <div class="hlday_addbox_pt_tt">Update By :</div>
-                    <div class="col-md-8">
-                        @Html.EditorFor(Function(model) model.UPDATEDON, New With { .htmlAttributes = New With { .class = "form-control input_field_fill_available" } })
-                        @Html.ValidationMessageFor(Function(model) model.UPDATEDON, "", New With { .class = "text-danger" })
+                        @Html.ValidationMessageFor(Function(model) model.ISINUSED, "", New With {.class = "text-danger"})
                     </div>
                 </div>
 
                 <div class="hlday_addbox_partbtn">
-                    <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
+                    @Html.ActionLink("Back to List", "Index")
                     <input id="savebtn1" class="rtpt_savebtn filter1" type="submit" value="Create" />
                 </div>
             </div>

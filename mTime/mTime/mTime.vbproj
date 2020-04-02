@@ -184,71 +184,75 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ACTIVITYLOG.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ANNOUNCEMENT.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ATTENDACNESTATUSVALIDATION.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ATTENDANCESTATU.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\COMPANY.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DEPARTMENT.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\EXDBTRANSSYNCTRDATA.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\FEEDBACK.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\HOLIDAY.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\HYPERLINK.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
+
     <Compile Include="Models\HyperlinkModel.vb" />
     <Compile Include="Models\mTime.Context.vb">
+
+    <Compile Include="Models\MasterDB.Context.vb">
+
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>mTime.Context.tt</DependentUpon>
+      <DependentUpon>MasterDB.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\mTime.Designer.vb">
+    <Compile Include="Models\MasterDB.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>mTime.edmx</DependentUpon>
+      <DependentUpon>MasterDB.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\mTime.vb">
+    <Compile Include="Models\MasterDB.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PERSONALMESSAGE.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\POORATTENDANCEREASON.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\SHIFT.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\SHIFTSCHEDULE.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\STAFF.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\STAFFGROUP.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\USERSSHIFT.vb">
-      <DependentUpon>mTime.tt</DependentUpon>
+      <DependentUpon>MasterDB.tt</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -292,12 +296,12 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <EntityDeploy Include="Models\mTime.edmx">
+    <EntityDeploy Include="Models\MasterDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>mTime.Designer.vb</LastGenOutput>
+      <LastGenOutput>MasterDB.Designer.vb</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\mTime.edmx.diagram">
-      <DependentUpon>mTime.edmx</DependentUpon>
+    <Content Include="Models\MasterDB.edmx.diagram">
+      <DependentUpon>MasterDB.edmx</DependentUpon>
     </Content>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -309,15 +313,15 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
-    <Content Include="Models\mTime.Context.tt">
+    <Content Include="Models\MasterDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>mTime.Context.vb</LastGenOutput>
-      <DependentUpon>mTime.edmx</DependentUpon>
+      <DependentUpon>MasterDB.edmx</DependentUpon>
+      <LastGenOutput>MasterDB.Context.vb</LastGenOutput>
     </Content>
-    <Content Include="Models\mTime.tt">
+    <Content Include="Models\MasterDB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>mTime.edmx</DependentUpon>
-      <LastGenOutput>mTime.vb</LastGenOutput>
+      <DependentUpon>MasterDB.edmx</DependentUpon>
+      <LastGenOutput>MasterDB.vb</LastGenOutput>
     </Content>
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />

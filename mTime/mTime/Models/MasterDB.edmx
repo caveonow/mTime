@@ -547,7 +547,7 @@
           <Property Name="SHIFTID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="EFFECTIVEON" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
-        <EntityContainer Name="mTimeEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="MasterDB" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ACTIVITYLOGs" EntityType="Self.ACTIVITYLOG" />
           <EntitySet Name="ANNOUNCEMENTs" EntityType="Self.ANNOUNCEMENT" />
           <EntitySet Name="ATTENDACNESTATUSVALIDATIONs" EntityType="Self.ATTENDACNESTATUSVALIDATION" />
@@ -571,7 +571,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="mTimeModelStoreContainer" CdmEntityContainer="mTimeEntities">
+        <EntityContainerMapping StorageEntityContainer="mTimeModelStoreContainer" CdmEntityContainer="MasterDB">
           <EntitySetMapping Name="ACTIVITYLOGs">
             <EntityTypeMapping TypeName="mTimeModel.ACTIVITYLOG">
               <MappingFragment StoreEntitySet="ACTIVITYLOG">

@@ -1,95 +1,90 @@
 ﻿@ModelType mTime.mTime.HOLIDAY
 @Code
-    ViewData("Title") = "Edit"
+    ViewData("Title") = "Create"
 End Code
 
-<h2>Edit</h2>
+@Html.Partial("_AdminMenuTop")
 
-@Using (Html.BeginForm())
-    @Html.AntiForgeryToken()
-    
-    @<div class="form-horizontal">
-        <h4>HOLIDAY</h4>
-        <hr />
-        @Html.ValidationSummary(True, "", New With { .class = "text-danger" })
-        @Html.HiddenFor(Function(model) model.HOLIDAYID)
+<div class="body_center">
+    @Html.Partial("_SubMenuLeft")
 
-        <div class="form-group">
-            @Html.LabelFor(Function(model) model.HOLIDAYNAME, htmlAttributes:= New With { .class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(Function(model) model.HOLIDAYNAME, New With { .htmlAttributes = New With { .class = "form-control" } })
-                @Html.ValidationMessageFor(Function(model) model.HOLIDAYNAME, "", New With { .class = "text-danger" })
+    <div class="bd_ctr_rightpart">
+        <div id="addbox-01" class="ctr_rtpt_box">
+            <div class="ctr_rtpt_b_ht">
+                <span>Holiday - Edit Item</span>
             </div>
-        </div>
+            
+            @Using (Html.BeginForm())
+                @Html.AntiForgeryToken()
 
-        <div class="form-group">
-            @Html.LabelFor(Function(model) model.FROM, htmlAttributes:= New With { .class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(Function(model) model.FROM, New With { .htmlAttributes = New With { .class = "form-control" } })
-                @Html.ValidationMessageFor(Function(model) model.FROM, "", New With { .class = "text-danger" })
-            </div>
-        </div>
+                @<div class="form-horizontal">
+                    <hr />
+                    @Html.ValidationSummary(True, "", New With {.class = "text-danger"})
+                    @Html.HiddenFor(Function(model) model.HOLIDAYID)
 
-        <div class="form-group">
-            @Html.LabelFor(Function(model) model.UNTIL, htmlAttributes:= New With { .class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(Function(model) model.UNTIL, New With { .htmlAttributes = New With { .class = "form-control" } })
-                @Html.ValidationMessageFor(Function(model) model.UNTIL, "", New With { .class = "text-danger" })
-            </div>
-        </div>
+                    <div class="form-group">
+                        @Html.LabelFor(Function(model) model.HOLIDAYNAME, htmlAttributes:=New With {.class = "control-label col-md-2"})
+                        <div class="col-md-10">
+                            @Html.EditorFor(Function(model) model.HOLIDAYNAME, New With {.htmlAttributes = New With {.class = "form-control"}})
+                            @Html.ValidationMessageFor(Function(model) model.HOLIDAYNAME, "", New With {.class = "text-danger"})
+                        </div>
+                    </div>
 
-        <div class="form-group">
-            @Html.LabelFor(Function(model) model.ISINUSED, htmlAttributes:= New With { .class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(Function(model) model.ISINUSED)
-                    @Html.ValidationMessageFor(Function(model) model.ISINUSED, "", New With { .class = "text-danger" })
-                </div>
-            </div>
-        </div>
+                    <div class="form-group">
+                        @Html.LabelFor(Function(model) model.FROM, htmlAttributes:=New With {.class = "control-label col-md-2"})
+                        <div class="col-md-10">
+                            @Html.EditorFor(Function(model) model.FROM, New With {.htmlAttributes = New With {.class = "form-control"}})
+                            @Html.ValidationMessageFor(Function(model) model.FROM, "", New With {.class = "text-danger"})
+                        </div>
+                    </div>
 
-        <div class="form-group">
-            @Html.LabelFor(Function(model) model.CREATEDBY, htmlAttributes:= New With { .class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(Function(model) model.CREATEDBY, New With { .htmlAttributes = New With { .class = "form-control" } })
-                @Html.ValidationMessageFor(Function(model) model.CREATEDBY, "", New With { .class = "text-danger" })
-            </div>
-        </div>
+                    <div class="form-group">
+                        @Html.LabelFor(Function(model) model.UNTIL, htmlAttributes:=New With {.class = "control-label col-md-2"})
+                        <div class="col-md-10">
+                            @Html.EditorFor(Function(model) model.UNTIL, New With {.htmlAttributes = New With {.class = "form-control"}})
+                            @Html.ValidationMessageFor(Function(model) model.UNTIL, "", New With {.class = "text-danger"})
+                        </div>
+                    </div>
 
-        <div class="form-group">
-            @Html.LabelFor(Function(model) model.CREATEDON, htmlAttributes:= New With { .class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(Function(model) model.CREATEDON, New With { .htmlAttributes = New With { .class = "form-control" } })
-                @Html.ValidationMessageFor(Function(model) model.CREATEDON, "", New With { .class = "text-danger" })
-            </div>
-        </div>
+                    <div class="form-group">
+                        @Html.LabelFor(Function(model) model.ISINUSED, htmlAttributes:=New With {.class = "control-label col-md-2"})
+                        <div class="col-md-10">
+                            <div class="checkbox">
+                                @Html.EditorFor(Function(model) model.ISINUSED, New With {.htmlAttributes = New With {.style = "margin-left: 0px !important"}})
+                                @Html.ValidationMessageFor(Function(model) model.ISINUSED, "", New With {.class = "text-danger"})
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="form-group">
-            @Html.LabelFor(Function(model) model.UPDATEDBY, htmlAttributes:= New With { .class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(Function(model) model.UPDATEDBY, New With { .htmlAttributes = New With { .class = "form-control" } })
-                @Html.ValidationMessageFor(Function(model) model.UPDATEDBY, "", New With { .class = "text-danger" })
-            </div>
-        </div>
+                    <div class="form-group" style="display: none">
+                        @Html.LabelFor(Function(model) model.CREATEDBY, htmlAttributes:=New With {.class = "control-label col-md-2"})
+                        <div class="col-md-10">
+                            <div class="checkbox">
+                                @Html.EditorFor(Function(model) model.CREATEDBY, New With {.htmlAttributes = New With {.style = "margin-left: 0px !important"}})
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="form-group">
-            @Html.LabelFor(Function(model) model.UPDATEDON, htmlAttributes:= New With { .class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(Function(model) model.UPDATEDON, New With { .htmlAttributes = New With { .class = "form-control" } })
-                @Html.ValidationMessageFor(Function(model) model.UPDATEDON, "", New With { .class = "text-danger" })
-            </div>
-        </div>
+                    <div class="form-group" style="display: none">
+                        @Html.LabelFor(Function(model) model.CREATEDON, htmlAttributes:=New With {.class = "control-label col-md-2"})
+                        <div class="col-md-10">
+                            <div class="checkbox">
+                                @Html.EditorFor(Function(model) model.CREATEDON, New With {.htmlAttributes = New With {.style = "margin-left: 0px !important"}})
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
-            </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            @Html.ActionLink("Back to List", "Index")
+                            <input type="submit" value="Save" class="btn btn-default" />
+                        </div>
+                    </div>
+                    </div>
+            End Using
         </div>
     </div>
-End Using
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
 </div>
 
 @Section Scripts 
