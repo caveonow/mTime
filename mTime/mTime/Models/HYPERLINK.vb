@@ -19,8 +19,7 @@ Namespace mTime
         Public Property CREATEDBY As String
         Public Property CREATEDON As Date
         Public Property UPDATEDBY As String
-        Public Property UPDATEDON As Nullable(Of Date)
-    
+        Public Property UPDATEDON As Nullable(Of Date)    
     End Class
 
 End Namespace

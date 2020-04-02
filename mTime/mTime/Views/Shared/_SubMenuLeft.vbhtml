@@ -80,7 +80,7 @@
             <span>Administration</span>
         </div>
 
-        <a href="@Url.Action("Superior", "Administration")" id="left1nav1" class="ctr_innav2_btn">
+        <a href="@Url.Action("Superior", "Administration")" id="left1nav9" class="ctr_innav2_btn">
             <div class="fa fa-user innav2_inbtn_icon"></div>
             <div class="innav2_inbtn_tt">
                 <span>Superior</span>
@@ -88,7 +88,7 @@
             <div id="innav2_boxeff" class="display_none">Superior</div>
         </a>
 
-        <a href="@Url.Action("Administrator", "Administration")" id="left1nav2" class="ctr_innav2_btn">
+        <a href="@Url.Action("Administrator", "Administration")" id="left1nav10" class="ctr_innav2_btn">
             <div class="fa fa-building innav2_inbtn_icon"></div>
             <div class="innav2_inbtn_tt">
                 <span>Administrator</span>
