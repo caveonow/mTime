@@ -176,6 +176,7 @@
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="Controllers\AdministrationController.vb" />
+    <Compile Include="Controllers\DepartmentController.vb" />
     <Compile Include="Controllers\HyperlinkController.vb" />
     <Compile Include="Controllers\MaintenanceController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
@@ -365,6 +366,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Department\" />
     <Folder Include="Views\Maintenance\" />
   </ItemGroup>
   <ItemGroup>

@@ -39,3 +39,17 @@
     float: left;
     overflow: auto;
 }
+
+.body_center .bd_ctr_rightpart{
+    z-index:2 !important;
+}
+
+.bg_color_w {
+    width:100%; 
+    height:100%; 
+    position:fixed; 
+    top:0; 
+    left:0; 
+    background-color:#fff; 
+    z-index:1;
+}

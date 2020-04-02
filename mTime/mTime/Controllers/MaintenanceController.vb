@@ -11,14 +11,13 @@ Namespace Controllers
         ' GET: Hyperlink
         Function Index() As ActionResult
 
-            ViewBag.TotalCount = db.HYPERLINK.ToList.Count
+            Dim sortedList = db.HYPERLINK.SortBy("TITLE").ToList
 
-            'Dim hyperlink As model.HYPERLINK = db.HYPERLINK.ToList
+            'db.HYPERLINK.ToList
 
             '# Return updated dataset
-            Return View(db.HYPERLINK.ToList)
+            Return View(sortedList)
         End Function
-
 
         '' GET: Maintenance
         'Function Index() As ActionResult

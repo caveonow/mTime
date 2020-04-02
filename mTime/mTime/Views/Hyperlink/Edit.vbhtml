@@ -7,7 +7,6 @@ End Code
 
 @Html.Partial("_AdminMenuTop")
 
-
 <div class="body_center">
     @Html.Partial("_SubMenuLeft")
     <div class="bd_ctr_rightpart">
@@ -26,7 +25,7 @@ End Code
                     @Html.HiddenFor(Function(Model) Model.UPDATEDON)
             
                     <div Class="ctr_rtpt_b_ht">
-                        <span> Hyperlink - Edit Item</span>
+                        <span> Hyperlink :: Edit</span>
                     </div>
             
                     <div Class="ctr_rtpt_addbox">

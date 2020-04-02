@@ -8,12 +8,13 @@ Namespace Controllers
 
         Private db As New model.MasterDB
 
-        ' GET: Hyperlink
-        Function Index() As ActionResult
+        '' GET: Hyperlink
+        'Function Index() As ActionResult
 
-            '# Return updated dataset
-            Return View(db.HYPERLINK.ToList())
-        End Function
+        '    '# Return updated dataset
+        '    'Return View(db.HYPERLINK.ToList())
+        '    Return View()
+        'End Function
 
         'Function Details(ByRef id As Integer) As ActionResult
 
@@ -33,9 +34,6 @@ Namespace Controllers
 
         ' GET : Create-Hyperlink
         Function Create() As ActionResult
-
-            ViewBag.Message = "Created"
-
             Return View()
         End Function
 
@@ -52,8 +50,6 @@ Namespace Controllers
             If blnIsDuplicated = True Then
                 ModelState.AddModelError("TITLE", "Title is duplicated")
             Else
-
-
                 If (ValidateURL(hyperlink.URL)) = False Then
                     ModelState.AddModelError("URL", "URL is invalid")
                 End If
@@ -67,8 +63,9 @@ Namespace Controllers
                 db.HYPERLINK.Add(hyperlink)
                 db.SaveChanges()
 
-                '* Defined in App_Start->RouteConfig.vb
-                Return RedirectToRoute("HyperlinkList")
+                ViewBag.Result = "OK"
+                'Return RedirectToRoute("HyperlinkList")
+                Return View()
 
             End If
 

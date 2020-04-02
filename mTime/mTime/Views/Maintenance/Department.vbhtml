@@ -16,30 +16,160 @@ End Code
                 <div id="addnewbtn" class="rtpt_ftr_addbtn filter1">Add Item</div>
             </div>
 
-            <div class="bd_ctr_rightpart1">
-                <div class="ctr_rtpt1_inb">
-                    <div class="fa fa-angle-right pn_heading_btm ctr_rtpt1_icon1"></div>
-                    <div class="fa fa-building-o ctr_rtpt1_icon2"></div>
-                    COMPANY1
+            <div class="overflow_box">
+                <div class="bd_ctr_rightpart1">
+                    <div class="ctr_rtpt1_inb">
+                        <div class="fa fa-angle-right pn_heading_btm ctr_rtpt1_icon1"></div>
+                        <div class="fa fa-building-o ctr_rtpt1_icon2"></div>
+                        COMPANY1
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM1 (20)
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM2 (6)
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM3
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                    </ul>
                 </div>
 
-                <ul>
-                    <li>
-                        <div class="fa fa-users li_users_icon"></div>TEAM1 (20)
-                        <div id="renamebtn" class="li_btn_rename">Rename</div>
-                        <div id="deletebtn" class="li_btn_delete">Delete</div>
-                    </li>
-                    <li>
-                        <div class="fa fa-users li_users_icon"></div>TEAM2 (6)
-                        <div id="renamebtn" class="li_btn_rename">Rename</div>
-                        <div id="deletebtn" class="li_btn_delete">Delete</div>
-                    </li>
-                    <li>
-                        <div class="fa fa-users li_users_icon"></div>TEAM3
-                        <div id="renamebtn" class="li_btn_rename">Rename</div>
-                        <div id="deletebtn" class="li_btn_delete">Delete</div>
-                    </li>
-                </ul>
+                <div class="bd_ctr_rightpart1">
+                    <div class="ctr_rtpt1_inb">
+                        <div class="fa fa-angle-right pn_heading_btm ctr_rtpt1_icon1"></div>
+                        <div class="fa fa-building-o ctr_rtpt1_icon2"></div>
+                        COMPANY1
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM1 (20)
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM2 (6)
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM3
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bd_ctr_rightpart1">
+                    <div class="ctr_rtpt1_inb">
+                        <div class="fa fa-angle-right pn_heading_btm ctr_rtpt1_icon1"></div>
+                        <div class="fa fa-building-o ctr_rtpt1_icon2"></div>
+                        COMPANY1
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM1 (20)
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM2 (6)
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM3
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bd_ctr_rightpart1">
+                    <div class="ctr_rtpt1_inb">
+                        <div class="fa fa-angle-right pn_heading_btm ctr_rtpt1_icon1"></div>
+                        <div class="fa fa-building-o ctr_rtpt1_icon2"></div>
+                        COMPANY1
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM1 (20)
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM2 (6)
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM3
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bd_ctr_rightpart1">
+                    <div class="ctr_rtpt1_inb">
+                        <div class="fa fa-angle-right pn_heading_btm ctr_rtpt1_icon1"></div>
+                        <div class="fa fa-building-o ctr_rtpt1_icon2"></div>
+                        COMPANY1
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM1 (20)
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM2 (6)
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM3
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bd_ctr_rightpart1">
+                    <div class="ctr_rtpt1_inb">
+                        <div class="fa fa-angle-right pn_heading_btm ctr_rtpt1_icon1"></div>
+                        <div class="fa fa-building-o ctr_rtpt1_icon2"></div>
+                        COMPANY1
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM1 (20)
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM2 (6)
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                        <li>
+                            <div class="fa fa-users li_users_icon"></div>TEAM3
+                            <div id="renamebtn" class="li_btn_rename">Rename</div>
+                            <div id="deletebtn" class="li_btn_delete">Delete</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="ctr_rtpt_b_ftr">
@@ -119,3 +249,5 @@ End Code
             </div>*@
     </div>
 </div>
+
+<div class="bg_color_w"></div>

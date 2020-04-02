@@ -157,3 +157,5 @@ End Code
             </div>*@
     </div>
 </div>
+
+<div class="bg_color_w"></div>

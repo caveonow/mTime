@@ -21,7 +21,7 @@ End Code
                     @Html.HiddenFor(Function(Model) Model.HYPERLINKID)
 
                     <div Class="ctr_rtpt_b_ht">
-                        <span> Hyperlink - Delete Item</span>
+                        <span> Hyperlink :: Delete</span>
                     </div>
 
                     <div Class="ctr_rtpt_addbox">
