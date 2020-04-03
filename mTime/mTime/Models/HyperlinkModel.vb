@@ -22,19 +22,6 @@ Namespace model
 
     End Class
 
-    Public Class MasterDB
-        Inherits DbContext
-        Public Property HYPERLINK() As DbSet(Of HYPERLINK)
-
-        Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
-            MyBase.OnModelCreating(modelBuilder)
-
-            modelBuilder.Conventions.Remove(Of PluralizingTableNameConvention)()
-
-        End Sub
-
-    End Class
-
 End Namespace
 
 

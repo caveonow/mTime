@@ -6,7 +6,24 @@
 '     Manual changes to this file will be overwritten if the code is regenerated.
 ' </auto-generated>
 '------------------------------------------------------------------------------
+Imports System.Data.Entity
+Imports System.Data.Entity.ModelConfiguration.Conventions
+Imports System.ComponentModel.DataAnnotations
 
-Imports System
-Imports System.Collections.Generic
+Namespace model
 
+    Public Class MasterDB
+        Inherits DbContext
+        Public Property HYPERLINK() As DbSet(Of HYPERLINK)
+        Public Property DEPARTMENT() As DbSet(Of DEPARTMENT)
+
+        Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
+            MyBase.OnModelCreating(modelBuilder)
+
+            modelBuilder.Conventions.Remove(Of PluralizingTableNameConvention)()
+
+        End Sub
+
+    End Class
+
+End Namespace
