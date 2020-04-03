@@ -176,14 +176,81 @@
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="Controllers\AdministrationController.vb" />
+    <Compile Include="Controllers\AttendanceController.vb" />
     <Compile Include="Controllers\DepartmentController.vb" />
+    <Compile Include="Controllers\FAQController.vb" />
+    <Compile Include="Controllers\HOLIDAYController.vb" />
+    <Compile Include="Controllers\HomeController.vb" />
     <Compile Include="Controllers\HyperlinkController.vb" />
+    <Compile Include="Controllers\Login.vb" />
     <Compile Include="Controllers\MaintenanceController.vb" />
+    <Compile Include="Controllers\PrivateMessageController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ACTIVITYLOG.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ANNOUNCEMENT.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ATTENDACNESTATUSVALIDATION.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ATTENDANCESTATU.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\COMPANY.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DEPARTMENT.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EXDBTRANSSYNCTRDATA.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FEEDBACK.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HOLIDAY.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HYPERLINK.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\HyperlinkModel.vb" />
+    <Compile Include="Models\MasterDB.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MasterDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MasterDB.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PERSONALMESSAGE.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\POORATTENDANCEREASON.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SHIFT.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SHIFTSCHEDULE.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\STAFF.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\STAFFGROUP.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\USERSSHIFT.vb">
+      <DependentUpon>MasterDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -199,7 +266,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Controllers\HomeController.vb" />
     <Compile Include="Views\IISHandler1.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -209,26 +275,50 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\mTime.Resources.resources" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
     <Content Include="Content\Other_style.css" />
     <Content Include="Content\PagedList.css" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\style.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
+    <EntityDeploy Include="Models\MasterDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MasterDB.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="img\htr_bg.jpg" />
     <Content Include="img\malaysia_logo.png" />
     <Content Include="img\malaysia_logo_s.png" />
+    <Content Include="Models\MasterDB.edmx.diagram">
+      <DependentUpon>MasterDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap-grid.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-reboot.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap.map" />
+    <Content Include="Content\style.map" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -238,9 +328,108 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\MasterDB.csdl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\MasterDB.msl" />
+    <Content Include="obj\Debug\edmxResourcesToEmbed\Models\MasterDB.ssdl" />
+    <Content Include="obj\Debug\mTime.vbproj.CopyComplete" />
+    <Content Include="obj\Debug\mTime.vbproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\mTime.vbproj.GenerateResource.cache" />
+    <Content Include="obj\Debug\mTime.vbprojAssemblyReference.cache" />
+    <Content Include="obj\Debug\Tsc.out" />
     <None Include="packages.config" />
+    <Content Include="Models\MasterDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MasterDB.edmx</DependentUpon>
+      <LastGenOutput>MasterDB.Context.vb</LastGenOutput>
+    </Content>
+    <Content Include="Models\MasterDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MasterDB.edmx</DependentUpon>
+      <LastGenOutput>MasterDB.vb</LastGenOutput>
+    </Content>
+    <Content Include="obj\Debug\mTime.dll" />
+    <Content Include="obj\Debug\mTime.pdb" />
+    <Content Include="obj\Debug\mTime.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\mTime.xml" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\src\index.js" />
+    <Content Include="Scripts\src\methods\defaults.js" />
+    <Content Include="Scripts\src\methods\destroy.js" />
+    <Content Include="Scripts\src\methods\disableEventListeners.js" />
+    <Content Include="Scripts\src\methods\enableEventListeners.js" />
+    <Content Include="Scripts\src\methods\placements.js" />
+    <Content Include="Scripts\src\methods\update.js" />
+    <Content Include="Scripts\src\modifiers\applyStyle.js" />
+    <Content Include="Scripts\src\modifiers\arrow.js" />
+    <Content Include="Scripts\src\modifiers\computeStyle.js" />
+    <Content Include="Scripts\src\modifiers\flip.js" />
+    <Content Include="Scripts\src\modifiers\hide.js" />
+    <Content Include="Scripts\src\modifiers\index.js" />
+    <Content Include="Scripts\src\modifiers\inner.js" />
+    <Content Include="Scripts\src\modifiers\keepTogether.js" />
+    <Content Include="Scripts\src\modifiers\offset.js" />
+    <Content Include="Scripts\src\modifiers\preventOverflow.js" />
+    <Content Include="Scripts\src\modifiers\shift.js" />
+    <Content Include="Scripts\src\utils\clockwise.js" />
+    <Content Include="Scripts\src\utils\computeAutoPlacement.js" />
+    <Content Include="Scripts\src\utils\debounce.js" />
+    <Content Include="Scripts\src\utils\find.js" />
+    <Content Include="Scripts\src\utils\findCommonOffsetParent.js" />
+    <Content Include="Scripts\src\utils\findIndex.js" />
+    <Content Include="Scripts\src\utils\getBordersSize.js" />
+    <Content Include="Scripts\src\utils\getBoundaries.js" />
+    <Content Include="Scripts\src\utils\getBoundingClientRect.js" />
+    <Content Include="Scripts\src\utils\getClientRect.js" />
+    <Content Include="Scripts\src\utils\getFixedPositionOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetRect.js" />
+    <Content Include="Scripts\src\utils\getOffsetRectRelativeToArbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getOppositePlacement.js" />
+    <Content Include="Scripts\src\utils\getOppositeVariation.js" />
+    <Content Include="Scripts\src\utils\getOuterSizes.js" />
+    <Content Include="Scripts\src\utils\getParentNode.js" />
+    <Content Include="Scripts\src\utils\getPopperOffsets.js" />
+    <Content Include="Scripts\src\utils\getReferenceNode.js" />
+    <Content Include="Scripts\src\utils\getReferenceOffsets.js" />
+    <Content Include="Scripts\src\utils\getRoot.js" />
+    <Content Include="Scripts\src\utils\getRoundedOffsets.js" />
+    <Content Include="Scripts\src\utils\getScroll.js" />
+    <Content Include="Scripts\src\utils\getScrollParent.js" />
+    <Content Include="Scripts\src\utils\getStyleComputedProperty.js" />
+    <Content Include="Scripts\src\utils\getSupportedPropertyName.js" />
+    <Content Include="Scripts\src\utils\getViewportOffsetRectRelativeToArtbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getWindow.js" />
+    <Content Include="Scripts\src\utils\getWindowSizes.js" />
+    <Content Include="Scripts\src\utils\includeScroll.js" />
+    <Content Include="Scripts\src\utils\index.js" />
+    <Content Include="Scripts\src\utils\isBrowser.js" />
+    <Content Include="Scripts\src\utils\isFixed.js" />
+    <Content Include="Scripts\src\utils\isFunction.js" />
+    <Content Include="Scripts\src\utils\isIE.js" />
+    <Content Include="Scripts\src\utils\isModifierEnabled.js" />
+    <Content Include="Scripts\src\utils\isModifierRequired.js" />
+    <Content Include="Scripts\src\utils\isNumeric.js" />
+    <Content Include="Scripts\src\utils\isOffsetContainer.js" />
+    <Content Include="Scripts\src\utils\removeEventListeners.js" />
+    <Content Include="Scripts\src\utils\runModifiers.js" />
+    <Content Include="Scripts\src\utils\setAttributes.js" />
+    <Content Include="Scripts\src\utils\setStyles.js" />
+    <Content Include="Scripts\src\utils\setupEventListeners.js" />
+    <Content Include="Scripts\srs.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Views\Hyperlink\Create.vbhtml" />
     <Content Include="Views\Hyperlink\Edit.vbhtml" />
     <Content Include="Views\Hyperlink\Delete.vbhtml" />
@@ -334,6 +523,16 @@
     <Content Include="scss\_type.scss" />
     <Content Include="scss\_utilities.scss" />
     <Content Include="scss\_variables.scss" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.flow" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\README.md" />
     <Content Include="Views\Administration\Administrator.vbhtml" />
     <Content Include="Views\Administration\Superior.vbhtml" />
     <Content Include="Views\Attendance\Index.vbhtml" />
@@ -345,6 +544,18 @@
     <Content Include="Views\HOLIDAY\Details.vbhtml" />
     <Content Include="Views\HOLIDAY\Edit.vbhtml" />
     <Content Include="Views\HOLIDAY\Index.vbhtml" />
+    <Content Include="Views\Maintenance\AttendanceStatus.vbhtml" />
+    <Content Include="Views\Maintenance\Department.vbhtml" />
+    <Content Include="Views\Maintenance\Grade.vbhtml" />
+    <Content Include="Views\Maintenance\Holiday.vbhtml" />
+    <Content Include="Views\Maintenance\Index.vbhtml" />
+    <Content Include="Views\Maintenance\LateTolerant.vbhtml" />
+    <Content Include="Views\Maintenance\Reason.vbhtml" />
+    <Content Include="Views\Maintenance\WorkingShift.vbhtml" />
+    <Content Include="Views\Shared\_AdminMenuTop.vbhtml" />
+    <Content Include="Views\Shared\_StaffMenuTop.vbhtml" />
+    <Content Include="Views\PrivateMessage\Index.vbhtml" />
+    <Content Include="Views\FAQ\Index.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -383,14 +594,14 @@
     <Content Include="Views\Home\Index.vbhtml" />
     <Content Include="Views\Shared\Error.vbhtml" />
     <Content Include="Views\Shared\_Layout.vbhtml" />
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="bin\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Department\" />
-    <Folder Include="Views\Maintenance\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
