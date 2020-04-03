@@ -1,8 +1,8 @@
-﻿    @*@model IEnumerable<model.HYPERLINK>
-    *@
+﻿    @model IEnumerable<model.HYPERLINK>
+
 
     @Code
-    ViewData("Title") = "Home Page"
+        ViewData("Title") = "Home Page"
     End Code
 
     @Html.Partial("_AdminMenuTop")
@@ -37,21 +37,21 @@
 
                         <tbody>
 
-                            @For Each item In model                            
-                            @<tr>
-                                <td>
-                                    <a href="@Url.Action("Edit", "Hyperlink" , New With {.id=item.HyperlinkID})">
-                                        <div id="editbtn" class="fa fa-pencil-square-o btn_edit"></div>
-                                    </a>
+                            @For Each item In model
+                                @<tr>
+                                    <td>
+                                        <a href="@Url.Action("Edit", "Hyperlink" , New With {.id=item.HyperlinkID})">
+                                            <div id="editbtn" class="fa fa-pencil-square-o btn_edit"></div>
+                                        </a>
 
-                                    <a href="@Url.Action("Delete", "Hyperlink" , New With {.id=item.HyperlinkID})">
-                                        <div id="" class="fa fa-trash-o btn_trash deletebtn"></div>
-                                    </a>
+                                        <a href="@Url.Action("Delete", "Hyperlink" , New With {.id=item.HyperlinkID})">
+                                            <div id="" class="fa fa-trash-o btn_trash deletebtn"></div>
+                                        </a>
 
-                                </td>
-                                <td>@item.Title</td>
-                                <td style="padding: 0 5px;">@item.URL</td>
-                            </tr>
+                                    </td>
+                                    <td>@item.Title</td>
+                                    <td style="padding: 0 5px;">@item.URL</td>
+                                </tr>
 
                             Next
 
@@ -59,29 +59,29 @@
                     </table>
 
                     @*<div id="" class="ctr_rtpt_popupbox deletebox-01 display_none">
-                        <div class="rtpt_popupbox_inb">
-                            <div class="fa fa-trash-o popupbox_inb_icon_red"></div>
-                            <div class="popupbox_inb_tt">Confirm Delete</div>
+                            <div class="rtpt_popupbox_inb">
+                                <div class="fa fa-trash-o popupbox_inb_icon_red"></div>
+                                <div class="popupbox_inb_tt">Confirm Delete</div>
 
-                            <div class="popupbox_inb_btnpart">
-                                <div id="closebtn" class="rtpt_closebtn filter1">No</div>
+                                <div class="popupbox_inb_btnpart">
+                                    <div id="closebtn" class="rtpt_closebtn filter1">No</div>
 
-                                <a href="@Url.Action("Delete", "Hyperlink" , New With {.id=item.HyperlinkID} )" id="deleteconfirmed">
-                                    <div id="yesbtn" class="rtpt_yesbtn filter1">Yes</div>
-                                </a>
+                                    <a href="@Url.Action("Delete", "Hyperlink" , New With {.id=item.HyperlinkID} )" id="deleteconfirmed">
+                                        <div id="yesbtn" class="rtpt_yesbtn filter1">Yes</div>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
 
-                    </div>*@
+                        </div>*@
 
                 </div>
 
                 <div class="ctr_rtpt_b_ftr">
 
                     @If Model.Count() > 1 Then
-                    @<span>Total : @Model.Count() row(s)</span>
+                        @<span>Total : @Model.Count() row(s)</span>
                     else
-                    @<span>Total : @Model.Count() row</span>
+                        @<span>Total : @Model.Count() row</span>
                     end if
 
                 </div>

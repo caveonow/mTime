@@ -183,77 +183,7 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ACTIVITYLOG.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ANNOUNCEMENT.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ATTENDACNESTATUSVALIDATION.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ATTENDANCESTATU.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\COMPANY.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DEPARTMENT.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EXDBTRANSSYNCTRDATA.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\FEEDBACK.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\HOLIDAY.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\HYPERLINK.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-
     <Compile Include="Models\HyperlinkModel.vb" />
-    <Compile Include="Models\mTime.Context.vb">
-
-    <Compile Include="Models\MasterDB.Context.vb">
-
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MasterDB.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MasterDB.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MasterDB.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MasterDB.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\PERSONALMESSAGE.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\POORATTENDANCEREASON.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SHIFT.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SHIFTSCHEDULE.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\STAFF.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\STAFFGROUP.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\USERSSHIFT.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -296,13 +226,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <EntityDeploy Include="Models\MasterDB.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MasterDB.Designer.vb</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\MasterDB.edmx.diagram">
-      <DependentUpon>MasterDB.edmx</DependentUpon>
-    </Content>
+    <Content Include="img\htr_bg.jpg" />
+    <Content Include="img\malaysia_logo.png" />
+    <Content Include="img\malaysia_logo_s.png" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -313,21 +239,112 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
-    <Content Include="Models\MasterDB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MasterDB.edmx</DependentUpon>
-      <LastGenOutput>MasterDB.Context.vb</LastGenOutput>
-    </Content>
-    <Content Include="Models\MasterDB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MasterDB.edmx</DependentUpon>
-      <LastGenOutput>MasterDB.vb</LastGenOutput>
-    </Content>
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Views\Hyperlink\Create.vbhtml" />
     <Content Include="Views\Hyperlink\Edit.vbhtml" />
     <Content Include="Views\Hyperlink\Delete.vbhtml" />
+    <Content Include="scss\bootstrap-grid.scss" />
+    <Content Include="scss\bootstrap-reboot.scss" />
+    <Content Include="scss\bootstrap.scss" />
+    <Content Include="scss\mixins\_alert.scss" />
+    <Content Include="scss\mixins\_background-variant.scss" />
+    <Content Include="scss\mixins\_badge.scss" />
+    <Content Include="scss\mixins\_border-radius.scss" />
+    <Content Include="scss\mixins\_box-shadow.scss" />
+    <Content Include="scss\mixins\_breakpoints.scss" />
+    <Content Include="scss\mixins\_buttons.scss" />
+    <Content Include="scss\mixins\_caret.scss" />
+    <Content Include="scss\mixins\_clearfix.scss" />
+    <Content Include="scss\mixins\_deprecate.scss" />
+    <Content Include="scss\mixins\_float.scss" />
+    <Content Include="scss\mixins\_forms.scss" />
+    <Content Include="scss\mixins\_gradients.scss" />
+    <Content Include="scss\mixins\_grid-framework.scss" />
+    <Content Include="scss\mixins\_grid.scss" />
+    <Content Include="scss\mixins\_hover.scss" />
+    <Content Include="scss\mixins\_image.scss" />
+    <Content Include="scss\mixins\_list-group.scss" />
+    <Content Include="scss\mixins\_lists.scss" />
+    <Content Include="scss\mixins\_nav-divider.scss" />
+    <Content Include="scss\mixins\_pagination.scss" />
+    <Content Include="scss\mixins\_reset-text.scss" />
+    <Content Include="scss\mixins\_resize.scss" />
+    <Content Include="scss\mixins\_screen-reader.scss" />
+    <Content Include="scss\mixins\_size.scss" />
+    <Content Include="scss\mixins\_table-row.scss" />
+    <Content Include="scss\mixins\_text-emphasis.scss" />
+    <Content Include="scss\mixins\_text-hide.scss" />
+    <Content Include="scss\mixins\_text-truncate.scss" />
+    <Content Include="scss\mixins\_transition.scss" />
+    <Content Include="scss\mixins\_visibility.scss" />
+    <Content Include="scss\style.scss" />
+    <Content Include="scss\utilities\_align.scss" />
+    <Content Include="scss\utilities\_background.scss" />
+    <Content Include="scss\utilities\_borders.scss" />
+    <Content Include="scss\utilities\_clearfix.scss" />
+    <Content Include="scss\utilities\_display.scss" />
+    <Content Include="scss\utilities\_embed.scss" />
+    <Content Include="scss\utilities\_flex.scss" />
+    <Content Include="scss\utilities\_float.scss" />
+    <Content Include="scss\utilities\_overflow.scss" />
+    <Content Include="scss\utilities\_position.scss" />
+    <Content Include="scss\utilities\_screenreaders.scss" />
+    <Content Include="scss\utilities\_shadows.scss" />
+    <Content Include="scss\utilities\_sizing.scss" />
+    <Content Include="scss\utilities\_spacing.scss" />
+    <Content Include="scss\utilities\_stretched-link.scss" />
+    <Content Include="scss\utilities\_text.scss" />
+    <Content Include="scss\utilities\_visibility.scss" />
+    <Content Include="scss\vendor\_rfs.scss" />
+    <Content Include="scss\_alert.scss" />
+    <Content Include="scss\_badge.scss" />
+    <Content Include="scss\_breadcrumb.scss" />
+    <Content Include="scss\_button-group.scss" />
+    <Content Include="scss\_buttons.scss" />
+    <Content Include="scss\_card.scss" />
+    <Content Include="scss\_carousel.scss" />
+    <Content Include="scss\_close.scss" />
+    <Content Include="scss\_code.scss" />
+    <Content Include="scss\_custom-forms.scss" />
+    <Content Include="scss\_dropdown.scss" />
+    <Content Include="scss\_forms.scss" />
+    <Content Include="scss\_functions.scss" />
+    <Content Include="scss\_grid.scss" />
+    <Content Include="scss\_images.scss" />
+    <Content Include="scss\_input-group.scss" />
+    <Content Include="scss\_jumbotron.scss" />
+    <Content Include="scss\_list-group.scss" />
+    <Content Include="scss\_media.scss" />
+    <Content Include="scss\_mixins.scss" />
+    <Content Include="scss\_modal.scss" />
+    <Content Include="scss\_nav.scss" />
+    <Content Include="scss\_navbar.scss" />
+    <Content Include="scss\_pagination.scss" />
+    <Content Include="scss\_popover.scss" />
+    <Content Include="scss\_print.scss" />
+    <Content Include="scss\_progress.scss" />
+    <Content Include="scss\_reboot.scss" />
+    <Content Include="scss\_root.scss" />
+    <Content Include="scss\_spinners.scss" />
+    <Content Include="scss\_tables.scss" />
+    <Content Include="scss\_toasts.scss" />
+    <Content Include="scss\_tooltip.scss" />
+    <Content Include="scss\_transitions.scss" />
+    <Content Include="scss\_type.scss" />
+    <Content Include="scss\_utilities.scss" />
+    <Content Include="scss\_variables.scss" />
+    <Content Include="Views\Administration\Administrator.vbhtml" />
+    <Content Include="Views\Administration\Superior.vbhtml" />
+    <Content Include="Views\Attendance\Index.vbhtml" />
+    <Content Include="Views\Attendance\_AdjustmentArrival.vbhtml" />
+    <Content Include="Views\Attendance\_AttendanceRecord.vbhtml" />
+    <Content Include="Views\Attendance\_DoorAccess.vbhtml" />
+    <Content Include="Views\HOLIDAY\Create.vbhtml" />
+    <Content Include="Views\HOLIDAY\Delete.vbhtml" />
+    <Content Include="Views\HOLIDAY\Details.vbhtml" />
+    <Content Include="Views\HOLIDAY\Edit.vbhtml" />
+    <Content Include="Views\HOLIDAY\Index.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -370,6 +387,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="bin\" />
+    <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\Department\" />
     <Folder Include="Views\Maintenance\" />
   </ItemGroup>
