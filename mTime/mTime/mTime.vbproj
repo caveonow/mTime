@@ -189,68 +189,7 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ACTIVITYLOG.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ANNOUNCEMENT.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ATTENDACNESTATUSVALIDATION.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ATTENDANCESTATU.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\COMPANY.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DEPARTMENT.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EXDBTRANSSYNCTRDATA.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\FEEDBACK.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\HOLIDAY.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\HYPERLINK.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\HyperlinkModel.vb" />
-    <Compile Include="Models\MasterDB.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MasterDB.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MasterDB.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\PERSONALMESSAGE.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\POORATTENDANCEREASON.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SHIFT.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SHIFTSCHEDULE.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\STAFF.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\STAFFGROUP.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\USERSSHIFT.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -291,10 +230,6 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <EntityDeploy Include="Models\MasterDB.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MasterDB.Designer.vb</LastGenOutput>
-    </EntityDeploy>
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -303,9 +238,6 @@
     <Content Include="img\htr_bg.jpg" />
     <Content Include="img\malaysia_logo.png" />
     <Content Include="img\malaysia_logo_s.png" />
-    <Content Include="Models\MasterDB.edmx.diagram">
-      <DependentUpon>MasterDB.edmx</DependentUpon>
-    </Content>
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
@@ -338,16 +270,6 @@
     <Content Include="obj\Debug\mTime.vbprojAssemblyReference.cache" />
     <Content Include="obj\Debug\Tsc.out" />
     <None Include="packages.config" />
-    <Content Include="Models\MasterDB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MasterDB.edmx</DependentUpon>
-      <LastGenOutput>MasterDB.Context.vb</LastGenOutput>
-    </Content>
-    <Content Include="Models\MasterDB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MasterDB.edmx</DependentUpon>
-      <LastGenOutput>MasterDB.vb</LastGenOutput>
-    </Content>
     <Content Include="obj\Debug\mTime.dll" />
     <Content Include="obj\Debug\mTime.pdb" />
     <Content Include="obj\Debug\mTime.vbproj.FileListAbsolute.txt" />
