@@ -23,11 +23,11 @@ End Code
                     @Html.HiddenFor(Function(Model) Model.CREATEDON)
                     @Html.HiddenFor(Function(Model) Model.UPDATEDBY)
                     @Html.HiddenFor(Function(Model) Model.UPDATEDON)
-            
+
                     <div Class="ctr_rtpt_b_ht">
                         <span> Hyperlink :: Edit</span>
                     </div>
-            
+
                     <div Class="ctr_rtpt_addbox">
                         <div Class="rtpt_addbox_part">
                             <div class="form-group">
@@ -76,6 +76,8 @@ End Code
     </div>
 
 </div>
+
+<div class="bg_color_w"></div>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">

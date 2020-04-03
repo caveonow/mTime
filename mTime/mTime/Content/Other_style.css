@@ -1,4 +1,4 @@
-﻿.rtpt_deletebtn {
+﻿/*.rtpt_deletebtn {
     width: initial;
     height: 30px;
     line-height: 30px;
@@ -14,7 +14,6 @@
 
 .body_center .bd_ctr_rightpart .ctr_rtpt_box {
     height:515px !important;
-    /*overflow: auto;*/
 }
 
 
@@ -52,4 +51,4 @@
     left:0; 
     background-color:#fff; 
     z-index:1;
-}
+}*/
