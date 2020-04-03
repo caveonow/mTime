@@ -1,5 +1,4 @@
-﻿
-@ModelType model.HYPERLINK
+﻿@ModelType model.HYPERLINK
 
 @Code
     ViewData("Title") = "Create"
@@ -31,7 +30,6 @@ End Code
                                 <div Class="rtpt_addbox_pt_error">
                                     @Html.ValidationMessageFor(Function(model) model.TITLE)
                                 </div>
-
                             </div>
                         </div>
 
@@ -45,9 +43,7 @@ End Code
                                     @Html.ValidationMessageFor(Function(model) model.URL)
                                 </div>
                             </div>
-
                         </div>
-
 
                         <div Class="rtpt_addbox_partbtn">
                             <a href="@Url.Action("Index", "Maintenance")">
@@ -61,11 +57,8 @@ End Code
                                     Save
                                 </div>
                             </a>
-
                         </div>
-
                     </div>
-
                 </div>
 
             End Using
@@ -74,18 +67,13 @@ End Code
 
                 If ViewBag.Result = "OK" Then
                     @<script>
-                            window.onload = function() {                           
+                            window.onload = function() {
                               $(".save_ok_popup").addClass("display_block").fadeOut(3000);
                                window.location.href = "@Url.Action("index", "Maintenance")";
-                           }; 
+                           };
                     </script>
                 End If
             End Code
-
-
-
-
-
 
             <div id="" Class="ctr_rtpt_popupbox display_none save_ok_popup">
                 <div Class="rtpt_popupbox_inb">
@@ -100,18 +88,18 @@ End Code
                     <div Class="popupbox_inb_tt">Save failed</div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
 
+<div class="bg_color_w"></div>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">
     $(function () {
 
-        $("#save").click(function () {           
-            document.forms[0].submit();        
+        $("#save").click(function () {
+            document.forms[0].submit();
             return false;
         });
 
@@ -130,25 +118,5 @@ End Code
 
         };*@
 
-
     });
-
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

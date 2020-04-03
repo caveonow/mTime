@@ -35,6 +35,10 @@ $("#btn_firstlogin").click(function () {
     $("#firstlogin_popup").addClass("display_block").removeClass("display_none");
 });
 
+$("#Feedback_btn").click(function () {
+    $("#Feedback_popup").addClass("display_block").removeClass("display_none");
+});
+
 $("#btn_login").click(function () {
     $("#login_popup").addClass("display_block").removeClass("display_none");
 });
@@ -43,19 +47,23 @@ $("#editprofile_btn").click(function () {
     $("#editprofile_popup").addClass("display_block").removeClass("display_none");
 });
 
+$("#passwordchange_btn").click(function () {
+    $("#passwordchange_popup").addClass("display_block").removeClass("display_none");
+});
+
 $("#forgotpw_btn").click(function () {
     $("#forgotpw_popup").addClass("display_block").removeClass("display_none");
     $("#login_popup").addClass("display_none").removeClass("display_block");
 });
 
-$("#closebtn, #confirmbtn, #sendbtn, #loginbtn, #savebtn").click(function () {
-    $("#firstlogin_popup, #login_popup, #forgotpw_popup, #editprofile_popup").addClass("display_none").removeClass("display_block");
+$("#closebtn, #confirmbtn, #sendbtn, #loginbtn, #savebtn, #cancelbtn").click(function () {
+    $("#firstlogin_popup, #login_popup, #forgotpw_popup, #editprofile_popup, #Feedback_popup, #passwordchange_popup").addClass("display_none").removeClass("display_block");
 });
 //Nav Top Menu Staff
-$("#stfhdr_btn1").addClass("pt2_b_btneff");
+//$("#stfhdr_btn1").addClass("pt2_b_btneff");
 
 //Nav Top Menu Part1
-$("#hdr_btn4").addClass("pt2_b_btneff");
+//$("#hdr_btn4").addClass("pt2_b_btneff");
 
 //Nav Left Menu Part1
 //$("#leftnav1").addClass("ctr_innav1_btneff");
@@ -67,6 +75,16 @@ $(function () {
         e.preventDefault();
         $(e.target.parentElement.nextElementSibling).slideToggle();
         $(e.target).toggleClass('fa-angle-down');
+    });
+});
+
+$(function () {
+    var pull = $(".faq_heading_btm");
+
+    pull.on("click", function (e) {
+        e.preventDefault();
+        $(e.target.parentElement.nextElementSibling).slideToggle();
+        $(e.target).toggleClass('fa-minus');
     });
 });
 
@@ -278,3 +296,31 @@ $("#atdc_tab3").click(function () {
 //    $("#holiday_editbox-01").addClass("display_block").removeClass("display_none");
 //    $("#holiday_box-01, .ctr_rtpt_footer").addClass("display_none").removeClass("display_block");
 //});
+
+//$(function () {
+//    var pull = $(".pn_heading_btm");
+
+//    pull.on("click", function (e) {
+//        e.preventDefault();
+//        $(e.target.parentElement.nextElementSibling).slideToggle();
+//        $(e.target).toggleClass('fa-chevron-up');
+//    });
+//});
+
+//Private Message Page
+$(".deletebtn").click(function () {
+    $(".msebox_ttbox, .deletebtn, .msebox_htr_date").remove();
+});
+
+$(function () {
+    $('table').on('click', '.btn_trash', function (e) {
+        e.preventDefault();
+        $(this).parents('tr').remove();
+    });
+});
+
+$(".btn_email").click(function () {
+    $("#email01").addClass("fa-envelope-open").removeClass("fa-envelope");
+    $(".msebox_ttbox, .deletebtn, .msebox_htr_date").addClass("display_black").removeClass("display_none");
+});
+//Private Message Page
