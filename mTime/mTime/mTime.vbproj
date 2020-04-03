@@ -179,6 +179,7 @@
     <Compile Include="Controllers\AttendanceController.vb" />
     <Compile Include="Controllers\DepartmentController.vb" />
     <Compile Include="Controllers\FAQController.vb" />
+    <Compile Include="Controllers\HOLIDAYController.vb" />
     <Compile Include="Controllers\HomeController.vb" />
     <Compile Include="Controllers\HyperlinkController.vb" />
     <Compile Include="Controllers\Login.vb" />
@@ -191,6 +192,7 @@
     <Compile Include="Models\DepartmentModel.vb" />
     <Compile Include="Models\HyperlinkModel.vb" />
     <Compile Include="Models\MasterDB.vb" />
+    <Compile Include="Models\HyperlinkModel.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -525,6 +527,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Views\Department\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />

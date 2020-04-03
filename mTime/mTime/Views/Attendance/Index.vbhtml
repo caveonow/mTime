@@ -29,3 +29,8 @@ End Code
 
     <div id="atdc_part3" class="display_none">@Html.Partial("_DoorAccess")</div>
 </div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $("#stfhdr_btn2").addClass("pt2_b_btneff");
+</script>
