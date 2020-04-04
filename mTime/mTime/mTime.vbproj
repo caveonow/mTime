@@ -185,7 +185,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\DepartmentModel.vb" />
-    <Compile Include="Models\HyperlinkModel.vb" />
     <Compile Include="Models\MasterDB.vb" />
     <Compile Include="Models\HyperlinkModel.vb" />
     <Compile Include="Models\PoorAttendanceReasonModel.vb" />
@@ -373,7 +372,6 @@
     <Content Include="Views\PrivateMessage\Index.vbhtml" />
     <Content Include="Views\FAQ\Index.vbhtml" />
     <Content Include="Views\Department\Create.vbhtml" />
-
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -416,8 +414,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Department\" />
-    <Folder Include="Views\Maintenance\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />

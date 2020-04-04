@@ -43,11 +43,11 @@
                             @For Each item In model
                                 @<tr>
                                     <td>
-                                        <a href="@Url.Action(" Edit", "PoorAttendanceReason" , New With {.id=item.PoorAttendanceReasonID})">
+                                        <a href="@Url.Action("Edit", "PoorAttendanceReason", New With {.id = item.PoorAttendanceReasonID})">
                                             <div id="editbtn" class="fa fa-pencil-square-o btn_edit"></div>
                                         </a>
 
-                                        <a href="@Url.Action(" Delete", "PoorAttendanceReason" , New With {.id=item.PoorAttendanceReasonID})">
+                                        <a href="@Url.Action("Delete", "PoorAttendanceReason", New With {.id = item.PoorAttendanceReasonID})">
                                             <div id="" class="fa fa-trash-o btn_trash deletebtn"></div>
                                         </a>
 
