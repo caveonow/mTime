@@ -1,8 +1,7 @@
-﻿
-@ModelType model.POORATTENDANCEREASON
+@ModelType model.ATTENDANCESTATUS
 
 @Code
-    ViewData("Title") = "Create"
+    ViewData("Title") = "Edit"
 End Code
 
 @Html.Partial("_AdminMenuTop")
@@ -15,22 +14,25 @@ End Code
             @Using (Html.BeginForm())
 
                 @Html.AntiForgeryToken()
+
                 @<div class="form-horizontal">
 
+                    @Html.HiddenFor(Function(Model) Model.ATTENDANCESTATUSID)
+                    @Html.HiddenFor(Function(Model) Model.CREATEDBY)
+                    @Html.HiddenFor(Function(Model) Model.CREATEDON)
+                    @Html.HiddenFor(Function(Model) Model.UPDATEDBY)
+                    @Html.HiddenFor(Function(Model) Model.UPDATEDON)
+
                     <div Class="ctr_rtpt_b_ht">
-                        <span> Reason :: Add</span>
+                        <span> Attendance Status :: Edit</span>
                     </div>
 
                     <div Class="ctr_rtpt_addbox">
                         <div Class="rtpt_addbox_part">
                             <div class="">
-                                <div Class="rtpt_addbox_pt_tt">Reason Code :</div>
+                                <div Class="rtpt_addbox_pt_tt">Attendance Code :</div>
 
-                                @Html.TextBoxFor(Function(model) model.POORATTENDANCEREASONID, New With {.maxlength = 20})
-
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.POORATTENDANCEREASONID)
-                                </div>
+                                @Html.TextBoxFor(Function(model) model.ATTENDANCESTATUSID, New With {.Readonly = True, .Style = "background-color:#eee; pointer-events: none;"})
 
                             </div>
                         </div>
@@ -40,7 +42,7 @@ End Code
                             <div class="">
                                 <div Class="rtpt_addbox_pt_tt">Description :</div>
 
-                                @Html.TextBoxFor(Function(model) model.DESCRIPTION, New With {.maxlength = 200})
+                                @Html.TextBoxFor(Function(model) model.DESCRIPTION)
                                 <div Class="rtpt_addbox_pt_error">
                                     @Html.ValidationMessageFor(Function(model) model.DESCRIPTION)
                                 </div>
@@ -51,12 +53,11 @@ End Code
                         <div Class="rtpt_addbox_part">
 
                             <div class="">
-                                <div Class="rtpt_addbox_pt_tt">For Late-In :</div>
-                                <div class="rtpt_addbox_checkbox">
-                                    @Html.CheckBoxFor(Function(model) model.ISFORLATEIN)
-                                </div>
+                                <div Class="rtpt_addbox_pt_tt">Condition :</div>
+
+                                @Html.TextBoxFor(Function(model) model.CONDITION)
                                 <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.ISFORLATEIN)
+                                    @Html.ValidationMessageFor(Function(model) model.CONDITION)
                                 </div>
                             </div>
 
@@ -65,25 +66,22 @@ End Code
                         <div Class="rtpt_addbox_part">
 
                             <div class="">
-                                <div Class="rtpt_addbox_pt_tt">For Early-Out :</div>
+                                <div Class="rtpt_addbox_pt_tt">In Used :</div>
                                 <div class="rtpt_addbox_checkbox">
-                                    @Html.CheckBoxFor(Function(model) model.ISFOREARLYOUT)
-                                </div>
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.ISFOREARLYOUT)
-                                </div>
+                                    @Html.CheckBoxFor(Function(model) model.ISINUSED)
+                                </div>                            
                             </div>
 
                         </div>
 
                         <div Class="rtpt_addbox_partbtn">
-                            <a href="@Url.Action("Reason", "Maintenance")">
+                            <a href="@Url.Action("AttendanceStatus", "Maintenance")">
                                 <div id="closebtn" Class="rtpt_closebtn filter1">
                                     Cancel
                                 </div>
                             </a>
 
-                            <a href="@Url.Action("Create", "PoorAttendanceReason")" id="save">
+                            <a href="@Url.Action("Edit", "AttendanceStatus")" id="save">
                                 <div id="savebtn" Class="rtpt_savebtn filter1">
                                     Save
                                 </div>
@@ -91,19 +89,20 @@ End Code
 
                         </div>
 
+
                     </div>
 
                 </div>
 
             End Using
 
-            @Code
 
+            @Code
                 If ViewBag.Result = "OK" Then
                     @<script>
                             window.onload = function() {
                               $(".save_ok_popup").addClass("display_block").fadeOut(3000);
-                               window.location.href = "@Url.Action("Reason", "Maintenance")";
+                               window.location.href = "@Url.Action("AttendanceStatus", "Maintenance")";
                            };
                     </script>
                 End If
@@ -125,61 +124,20 @@ End Code
             </div>
 
         </div>
+
     </div>
+
 </div>
 
 <div class="bg_color_w"></div>
 
-
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">
     $(function () {
-
         $("#save").click(function () {
             document.forms[0].submit();
             return false;
         });
-
-        @*function displayStatus() {
-
-            $(".save_ok_popup").show();
-            setInterval(function () {
-                seconds--;
-                if (seconds == 0) {
-                    $(".save_ok_popup").hide();
-                    window.location.href = "@Url.Action("index", "Maintenance")";
-                }
-            }, 1000);
-
-            return false;
-
-        };*@
-
-
     });
 
-    //Nav Top Menu Part1
-    $("#hdr_btn4").addClass("pt2_b_btneff");
-
-    //Nav Left Menu Part1
-    $("#leftnav5").addClass("ctr_innav1_btneff");
-
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

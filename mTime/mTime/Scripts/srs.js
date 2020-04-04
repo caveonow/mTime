@@ -309,15 +309,17 @@ $("#atdc_tab3").click(function () {
 
 //Private Message Page
 $(".deletebtn").click(function () {
-    $(".msebox_ttbox, .deletebtn, .msebox_htr_date").remove();
+    $(".msebox_ttbox, .msebox_htr_date").remove();
 });
 
+/*
 $(function () {
     $('table').on('click', '.btn_trash', function (e) {
         e.preventDefault();
         $(this).parents('tr').remove();
     });
 });
+*/
 
 $(".btn_email").click(function () {
     $("#email01").addClass("fa-envelope-open").removeClass("fa-envelope");

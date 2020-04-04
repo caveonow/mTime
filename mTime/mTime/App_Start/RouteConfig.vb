@@ -17,6 +17,12 @@ Public Module RouteConfig
 
 
         routes.MapRoute(
+            name:="HolidayList",
+            url:="Maintenance/",
+            defaults:=New With {.controller = "Maintenance", .action = "Holiday", .id = UrlParameter.Optional}
+        )
+
+        routes.MapRoute(
             name:="Default",
             url:="{controller}/{action}/{id}",
             defaults:=New With {.controller = "Home", .action = "Index", .id = UrlParameter.Optional}

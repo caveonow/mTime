@@ -27,7 +27,12 @@ Namespace Controllers
         'End Function
 
         Function Holiday() As ActionResult
-            Return View()
+
+            Dim sortedList = db.HOLIDAY.SortBy("FROM").ToList
+
+            '# Return updated dataset
+            Return View(sortedList)
+
         End Function
 
         Function Department() As ActionResult
@@ -51,7 +56,9 @@ Namespace Controllers
         End Function
 
         Function AttendanceStatus() As ActionResult
-            Return View()
+            Dim sortedList = db.ATTENDANCESTATUS.SortBy("ATTENDANCESTATUSID").ToList
+
+            Return View(sortedList)
         End Function
 
         Function WorkingShift() As ActionResult

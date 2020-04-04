@@ -76,6 +76,18 @@ End Code
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", New With { .id = Model.HOLIDAYID }) |
+    @Html.ActionLink("Edit", "Edit", New With {.id = Model.HOLIDAYID}) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+<div class="bg_color_w"></div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+            //Nav Top Menu Part1
+            $("#hdr_btn4").addClass("pt2_b_btneff");
+
+            //Nav Left Menu Part1
+            $("#leftnav2").addClass("ctr_innav1_btneff");
+</script>
