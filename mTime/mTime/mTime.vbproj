@@ -374,6 +374,8 @@
     <Content Include="Views\PrivateMessage\Index.vbhtml" />
     <Content Include="Views\FAQ\Index.vbhtml" />
     <Content Include="Views\Department\Create.vbhtml" />
+    <Content Include="Views\Department\Edit.vbhtml" />
+    <Content Include="Views\Department\Delete.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

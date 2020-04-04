@@ -31,7 +31,10 @@ Namespace Controllers
         End Function
 
         Function Department() As ActionResult
-            Return View()
+            Dim sortedList = db.DEPARTMENT.SortBy("DEPARTMENTID").ToList
+
+            '# Return updated dataset
+            Return View(sortedList)
         End Function
 
         Function Grade() As ActionResult

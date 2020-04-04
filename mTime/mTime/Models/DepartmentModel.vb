@@ -8,12 +8,9 @@ Namespace model
 
         <Required(ErrorMessage:=" Department ID is Required")>
         Public Property DEPARTMENTID As String
-
         <Required(ErrorMessage:="Department Name is Required")>
         Public Property DEPARTMENTNAME As String
-
         Public Property ISINUSED As Boolean
-
         Public Property CREATEDBY As String
         Public Property CREATEDON As Date
         Public Property UPDATEDBY As String

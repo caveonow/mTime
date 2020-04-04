@@ -1,6 +1,4 @@
-﻿@ModelType model.DEPARTMENT
-
-@Code
+﻿@Code
     ViewData("Title") = "Home Page"
 End Code
 
@@ -16,7 +14,8 @@ End Code
 
                 @*<div class="fa fa-refresh rtpt_b_ht_refresh"></div>*@
                 <a href="@Url.Action("Create", "Department")">
-                    <div id="addnewbtn" class="rtpt_ftr_addbtn filter1">Add</div>
+                <div id="addnewbtn" class="rtpt_ftr_addbtn filter1">Add</div>
+                </a>
             </div>
 
             <div class="overflow_box">
@@ -28,28 +27,28 @@ End Code
                     </div>
 
                     <ul>
-                        <li>
-                            <div class="fa fa-users li_users_icon"></div>TEAM1 (20)
-                            <div id="renamebtn" class="li_btn_rename">Rename</div>
-                            <div id="deletebtn" class="li_btn_delete">Delete</div>
-                        </li>
-                        <li>
-                            <div class="fa fa-users li_users_icon"></div>TEAM2 (6)
-                            <div id="renamebtn" class="li_btn_rename">Rename</div>
-                            <div id="deletebtn" class="li_btn_delete">Delete</div>
-                        </li>
-                        <li>
-                            <div class="fa fa-users li_users_icon"></div>TEAM3
-                            <div id="renamebtn" class="li_btn_rename">Rename</div>
-                            <div id="deletebtn" class="li_btn_delete">Delete</div>
-                        </li>
+                        @Code
+                        Dim TotalCompanyCount = 1
+                        End Code
+
+                        @For Each item In model
+                        
+                        @<li>
+                            <div class="fa fa-users li_users_icon"></div>
+                            @item.DEPARTMENTNAME
+                            @*<div id="renamebtn" class="li_btn_rename"></div>*@
+                            @Html.ActionLink("Rename", "Edit", "Department", new with {.id = item.DEPARTMENTID}, new with {.class = "li_btn_rename"})
+                            @*<div id="deletebtn" class="li_btn_delete">Delete</div>*@
+                            @Html.ActionLink("Delete", "Delete", "Department", new with {.id = item.DEPARTMENTID}, new with {.class = "li_btn_delete"})                      
+                         </li>
+                         Next item
                     </ul>
                 </div>
-
             </div>
 
             <div class="ctr_rtpt_b_ftr">
-                <span>Total 2 iten(s)</span>
+
+                <span>Total @TotalCompanyCount item(s)</span>
             </div>
         </div>
 
@@ -80,45 +79,6 @@ End Code
             </div>
         </div>
 
-        <div id="editbox-01" class="ctr_rtpt_box display_none">
-            <div class="ctr_rtpt_b_ht">
-                <span>Department - Edit</span>
-            </div>
-
-            <div class="ctr_holiday_addbox">
-                <div class="hlday_addbox_part">
-                    <div class="hlday_addbox_pt_tt">Company :</div>
-                    <input type="text" id="title" name="title" value="COMPANY 1">
-
-                    <div class="hlday_addbox_pt_error">Text Error</div>
-                </div>
-
-                <div class="hlday_addbox_part">
-                    <div class="hlday_addbox_pt_tt">Department :</div>
-                    <input type="text" id="URL" name="URL" value="TEAM1">
-
-                    <div class="hlday_addbox_pt_error">Text Error</div>
-                </div>
-
-                <div class="hlday_addbox_partbtn">
-                    <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
-
-                    <div id="savebtn" class="rtpt_savebtn filter1">Save</div>
-                </div>
-            </div>
-        </div>
-
-        <div id="deletebox-01" class="ctr_rtpt_popupbox display_none">
-            <div class="rtpt_popupbox_inb">
-                <div class="fa fa-trash-o popupbox_inb_icon_red"></div>
-                <div class="popupbox_inb_tt">Confirm Delete</div>
-
-                <div class="popupbox_inb_btnpart">
-                    <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
-                    <div id="yesbtn" class="rtpt_yesbtn filter1">Yes</div>
-                </div>
-            </div>
-        </div>
 
         @*<div class="ctr_rtpt_footer">
                 <div class="rtpt_ftr_addbtn filter1">Add Item</div>

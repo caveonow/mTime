@@ -1,7 +1,7 @@
 ﻿@ModelType model.DEPARTMENT
 
 @Code
-    ViewData("Title") = "Create"
+    ViewData("Title") = "Edit"
 End Code
 
 @Html.Partial("_AdminMenuTop")
@@ -14,31 +14,34 @@ End Code
             @Using (Html.BeginForm())
 
                 @Html.AntiForgeryToken()
+
                 @<div class="form-horizontal">
 
+                    @Html.HiddenFor(Function(Model) Model.DEPARTMENTID)
+                    @Html.HiddenFor(Function(Model) Model.DEPARTMENTNAME)
+                    @Html.HiddenFor(Function(Model) Model.ISINUSED)
+                    @Html.HiddenFor(Function(Model) Model.CREATEDBY)
+                    @Html.HiddenFor(Function(Model) Model.CREATEDON)
+                    @Html.HiddenFor(Function(Model) Model.UPDATEDBY)
+                    @Html.HiddenFor(Function(Model) Model.UPDATEDON)
+
                     <div Class="ctr_rtpt_b_ht">
-                        <span> Department :: Add</span>
+                        <span> Reason :: Edit</span>
                     </div>
 
                     <div Class="ctr_rtpt_addbox">
                         <div Class="rtpt_addbox_part">
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">Department ID: </div>
-
-                                @Html.TextBoxFor(Function(model) model.DEPARTMENTID, New With {.maxlength = 20})
-
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.DEPARTMENTID)
-                                </div>
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">Department ID :</div>
+                                @Html.TextBoxFor(Function(model) model.DEPARTMENTID, New With {.Readonly = True, .Style = "background-color:#eee; pointer-events: none;"})
+                                @*@Html.TextBoxFor(Function(model) model.POORATTENDANCEREASONID, New With {.Disabled = True})*@
                             </div>
                         </div>
 
                         <div Class="rtpt_addbox_part">
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">Department: </div>
-
-                                @Html.TextBoxFor(Function(model) model.DEPARTMENTNAME, New With {.maxlength = 100})
-
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">Department Name :</div>
+                                @Html.TextBoxFor(Function(model) model.DEPARTMENTNAME)
                                 <div Class="rtpt_addbox_pt_error">
                                     @Html.ValidationMessageFor(Function(model) model.DEPARTMENTNAME)
                                 </div>
@@ -46,24 +49,22 @@ End Code
                         </div>
 
                         <div Class="rtpt_addbox_part">
-
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">Is Used?:</div>
-
-                                @Html.CheckBoxFor(Function(model) model.ISINUSED)
-                                <div Class="rtpt_addbox_pt_error">
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">In Used?:</div>
+                                <div class="rtpt_addbox_checkbox">
+                                    @Html.CheckBoxFor(Function(model) model.ISINUSED)
                                 </div>
                             </div>
                         </div>
 
                         <div Class="rtpt_addbox_partbtn">
-                            <a href="@Url.Action("Index", "Maintenance")">
+                            <a href="@Url.Action("Department", "Maintenance")">
                                 <div id="closebtn" Class="rtpt_closebtn filter1">
                                     Cancel
                                 </div>
                             </a>
 
-                            <a href="@Url.Action("Create", "Department")" id="save">
+                            <a href="@Url.Action("Edit", "Department")" id="save">
                                 <div id="savebtn" Class="rtpt_savebtn filter1">
                                     Save
                                 </div>
@@ -74,13 +75,14 @@ End Code
 
             End Using
 
+
             @Code
 
                 If ViewBag.Result = "OK" Then
                     @<script>
                             window.onload = function() {
                               $(".save_ok_popup").addClass("display_block").fadeOut(3000);
-                               window.location.href = "@Url.Action("Department", "Maintenance")";
+                               window.location.href = "@Url.Action("Reason", "Maintenance")";
                            };
                     </script>
                 End If
@@ -99,8 +101,11 @@ End Code
                     <div Class="popupbox_inb_tt">Save failed</div>
                 </div>
             </div>
+
         </div>
+
     </div>
+
 </div>
 
 <div class="bg_color_w"></div>
@@ -108,26 +113,10 @@ End Code
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">
     $(function () {
-
         $("#save").click(function () {
             document.forms[0].submit();
             return false;
         });
-
-        @*function displayStatus() {
-
-            $(".save_ok_popup").show();
-            setInterval(function () {
-                seconds--;
-                if (seconds == 0) {
-                    $(".save_ok_popup").hide();
-                    window.location.href = "@Url.Action("index", "Maintenance")";
-                }
-            }, 1000);
-
-            return false;
-
-        };*@
-
     });
+
 </script>
