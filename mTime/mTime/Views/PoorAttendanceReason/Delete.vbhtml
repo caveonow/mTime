@@ -1,5 +1,5 @@
 ﻿
-@ModelType model.HYPERLINK
+@ModelType model.POORATTENDANCEREASON
 
 @Code
     ViewData("Title") = "Delete"
@@ -12,41 +12,79 @@ End Code
     <div class="bd_ctr_rightpart">
         <div id="rtpt_box-01" class="ctr_rtpt_box">
 
-            @Using (Html.BeginForm("Delete", "Hyperlink", method:=FormMethod.Post))
+            @Using (Html.BeginForm("Delete", "PoorAttendanceReason", method:=FormMethod.Post))
 
                 @Html.AntiForgeryToken()
 
                 @<div class="form-horizontal">
 
-                    @Html.HiddenFor(Function(Model) Model.HYPERLINKID)
+                    @*@Html.HiddenFor(Function(Model) Model.POORATTENDANCEREASONID)*@
 
                     <div Class="ctr_rtpt_b_ht">
-                        <span> Hyperlink :: Delete</span>
+                        <span> Reason :: Delete</span>
                     </div>
 
                     <div Class="ctr_rtpt_addbox">
                         <div Class="rtpt_addbox_part">
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">Title :</div>
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">Reason Code :</div>
 
-                                @Html.TextBoxFor(Function(model) model.TITLE, New With {.Readonly = True, .Style = "background-color:lightgrey"})
+                                @Html.TextBoxFor(Function(model) model.POORATTENDANCEREASONID, New With {.Readonly = True, .Style = "background-color:lightgrey"})
 
+                              @*@Html.TextBoxFor(Function(model) model.POORATTENDANCEREASONID, New With {.Disabled = True})*@*@
                             </div>
                         </div>
 
                         <div Class="rtpt_addbox_part">
 
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">URL :</div>
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">Description :</div>
 
-                                @Html.TextBoxFor(Function(model) model.URL, New With {.Readonly = True, .Style = "background-color:lightgrey"})
+                                @Html.TextBoxFor(Function(model) model.DESCRIPTION, New With {.Readonly = True, .Style = "background-color:lightgrey"})
+                                @*@Html.TextBoxFor(Function(model) model.DESCRIPTION, New With {.Disabled = True})*@
+                            </div>
 
+                        </div>
+                        
+                        <div Class="rtpt_addbox_part">
+
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">For Late-In :</div>
+                                <div class="rtpt_addbox_checkbox">
+                                    @Html.CheckBoxFor(Function(model) model.ISFORLATEIN, New With {.Disabled = True}
+)
+                                </div>                          
+                            </div>
+
+                        </div>
+
+                        <div Class="rtpt_addbox_part">
+
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">For Early-Out :</div>
+                                <div class="rtpt_addbox_checkbox">
+                                    @Html.CheckBoxFor(Function(model) model.ISFOREARLYOUT, New With {.Disabled = True}
+)
+                                </div>
+                              
+                            </div>
+
+                        </div>
+
+                        <div Class="rtpt_addbox_part">
+
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">In Used :</div>
+                                <div class="rtpt_addbox_checkbox">
+                                    @Html.CheckBoxFor(Function(model) model.ISINUSED, New With {.Disabled = True}
+)                                </div>
+                                
                             </div>
 
                         </div>
 
                         <div Class="rtpt_addbox_partbtn">
-                            <a href="@Url.Action("Index", "Maintenance")">
+                            <a href="@Url.Action("Reason", "Maintenance")">
                                 <div id="closebtn" Class="rtpt_closebtn filter1">
                                     Cancel
                                 </div>
@@ -59,12 +97,12 @@ End Code
                             <div id="" class="ctr_rtpt_popupbox display_none deletebox-01">
                                 <div class="rtpt_popupbox_inb">
                                     <div class="fa fa-trash-o popupbox_inb_icon_red"></div>
-                                    <div class="popupbox_inb_tt">Delete @Model.TITLE ? </div>
+                                    <div class="popupbox_inb_tt">Delete @Model.POORATTENDANCEREASONID ? </div>
 
                                     <div class="popupbox_inb_btnpart">
                                         <div id="closebtn" class="rtpt_closebtn filter1">No</div>
 
-                                        <a href="@Url.Action("Delete", "Hyperlink")" id="deleteconfirmed">
+                                        <a href="@Url.Action("Delete", "PoorAttendanceReason")" id="deleteconfirmed">
                                             <div id="yesbtn" class="rtpt_yesbtn filter1">Yes</div>
                                         </a>
 

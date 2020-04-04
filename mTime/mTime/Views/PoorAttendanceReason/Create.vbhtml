@@ -1,5 +1,5 @@
 ﻿
-@ModelType model.HYPERLINK
+@ModelType model.POORATTENDANCEREASON
 
 @Code
     ViewData("Title") = "Create"
@@ -18,18 +18,18 @@ End Code
                 @<div class="form-horizontal">
 
                     <div Class="ctr_rtpt_b_ht">
-                        <span> Hyperlink :: Add</span>
+                        <span> Reason :: Add</span>
                     </div>
 
                     <div Class="ctr_rtpt_addbox">
                         <div Class="rtpt_addbox_part">
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">Title :</div>
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">Reason Code :</div>
 
-                                @Html.TextBoxFor(Function(model) model.TITLE, New With {.maxlength = 10})
+                                @Html.TextBoxFor(Function(model) model.POORATTENDANCEREASONID, New With {.maxlength = 20})
 
                                 <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.TITLE)
+                                    @Html.ValidationMessageFor(Function(model) model.POORATTENDANCEREASONID)
                                 </div>
 
                             </div>
@@ -37,26 +37,53 @@ End Code
 
                         <div Class="rtpt_addbox_part">
 
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">URL :</div>
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">Description :</div>
 
-                                @Html.TextBoxFor(Function(model) model.URL, New With {.maxlength = 200})
+                                @Html.TextBoxFor(Function(model) model.DESCRIPTION, New With {.maxlength = 200})
                                 <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.URL)
+                                    @Html.ValidationMessageFor(Function(model) model.DESCRIPTION)
                                 </div>
                             </div>
 
                         </div>
 
+                        <div Class="rtpt_addbox_part">
 
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">For Late-In :</div>
+                                <div class="rtpt_addbox_checkbox">
+                                    @Html.CheckBoxFor(Function(model) model.ISFORLATEIN)
+                                </div>
+                                <div Class="rtpt_addbox_pt_error">
+                                    @Html.ValidationMessageFor(Function(model) model.ISFORLATEIN)
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div Class="rtpt_addbox_part">
+
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">For Early-Out :</div>
+                                <div class="rtpt_addbox_checkbox">
+                                    @Html.CheckBoxFor(Function(model) model.ISFOREARLYOUT)
+                                </div>
+                                <div Class="rtpt_addbox_pt_error">
+                                    @Html.ValidationMessageFor(Function(model) model.ISFOREARLYOUT)
+                                </div>
+                            </div>
+
+                        </div>
+                        
                         <div Class="rtpt_addbox_partbtn">
-                            <a href="@Url.Action("Index", "Maintenance")">
+                            <a href="@Url.Action("Reason", "Maintenance")">
                                 <div id="closebtn" Class="rtpt_closebtn filter1">
                                     Cancel
                                 </div>
                             </a>
 
-                            <a href="@Url.Action("Create", "Hyperlink")" id="save">
+                            <a href="@Url.Action("Create", "PoorAttendanceReason")" id="save">
                                 <div id="savebtn" Class="rtpt_savebtn filter1">
                                     Save
                                 </div>
@@ -74,15 +101,15 @@ End Code
 
                 If ViewBag.Result = "OK" Then
                     @<script>
-                            window.onload = function() {                           
+                            window.onload = function() {
                               $(".save_ok_popup").addClass("display_block").fadeOut(3000);
                                window.location.href = "@Url.Action("index", "Maintenance")";
-                           }; 
+                           };
                     </script>
                 End If
             End Code
 
-                                          
+
             <div id="" Class="ctr_rtpt_popupbox display_none save_ok_popup">
                 <div Class="rtpt_popupbox_inb">
                     <div Class="fa fa-check-circle-o popupbox_inb_icon_blue"></div>
@@ -108,8 +135,8 @@ End Code
 <script type="text/javascript">
     $(function () {
 
-        $("#save").click(function () {           
-            document.forms[0].submit();        
+        $("#save").click(function () {
+            document.forms[0].submit();
             return false;
         });
 
