@@ -1,5 +1,6 @@
-﻿@ModelType PagedList.IPagedList(Of model.HOLIDAY)
-@Imports PagedList.Mvc
+﻿@*@ModelType PagedList.IPagedList(Of model.HOLIDAY)
+    @Imports PagedList.Mvc*@
+
 @Code
     ViewData("Title") = "Index"
 End Code
@@ -13,69 +14,98 @@ End Code
         <div id="rtpt_box-01" class="ctr_rtpt_box">
             <div class="ctr_rtpt_b_ht">
                 <span>Holiday</span>
+                <a href="@Url.Action("Create", "Holiday")">
+                    <div id="addnewbtn" class="rtpt_ftr_addbtn filter1">
+                        Add
+                    </div>
+                </a>
 
-                <div class="fa fa-refresh rtpt_b_ht_refresh"></div>
-                @Html.ActionLink("Add Item", "Create")
             </div>
 
-            @Using Html.BeginForm("Index", "Holiday", FormMethod.Get)
-                @<p>
-                    
-                     <select class="form-control" id="yearFilter" name="yearFilter" value="@ViewBag.yearFilter">
-                         <option>All</option>
-                         @For Each item In ViewBag.yearListing
-                             @<option value="@item">@item</option>
-                         Next
-                     </select>
-                    <input type="submit" value="Search" />
-                </p>
-            End Using
+            @*@Using Html.BeginForm("Index", "Holiday", FormMethod.Get)
+                    @<p>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th style="width: 110px;" />
-                        <th style="width: 90px;">Name</th>
-                        <th style="width: 150px;">Date From</th>
-                        <th style="width: 150px;">Date To</th>
-                        <th>Is Used</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    @For Each item In Model
-                        @<tr>
-                            <td>
-                                <a href="@Url.Action("Edit", "HOLIDAY", New With {.id = item.HOLIDAYID})" class="fa fa-pencil-square-o btn_edit" />
-                                <a href="@Url.Action("Copy", "HOLIDAY", New With {.id = item.HOLIDAYID})" class="fa fa-files-o btn_copy" />
-                                <a href="@Url.Action("Delete", "HOLIDAY", New With {.id = item.HOLIDAYID})" class="fa fa-trash-o btn_trash deletebtn" />
-                            </td>
-                            <td>
-                                @Html.DisplayFor(Function(modelItem) item.HOLIDAYNAME)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(Function(modelItem) item.FROM)
-                                @*@item.FROM.ToString("dd/MM/yyyy")*@
-                            </td>
-                            <td>
-                                @Html.DisplayFor(Function(modelItem) item.UNTIL)
-                                @*@item.UNTIL.ToString("dd/MM/yyyy")*@
-                            </td>
-                            <td>
-                                @Html.DisplayFor(Function(modelItem) item.ISINUSED)
-
-                            </td>
+                         <select class="form-control" id="yearFilter" name="yearFilter" value="@ViewBag.yearFilter">
+                             <option>All</option>
+                             @For Each item In ViewBag.yearListing
+                                 @<option value="@item">@item</option>
+                             Next
+                         </select>
+                        <input type="submit" value="Search" />
+                    </p>
+                End Using*@
+            <div class="overflow_box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 110px;" />
+                            <th style="width: 90px;">Name</th>
+                            <th style="width: 150px;">Date From</th>
+                            <th style="width: 150px;">Date To</th>
+                            <th>Is Used</th>
                         </tr>
-                    Next
-                </tbody>
-            </table>
+                    </thead>
+
+                    <tbody>
+                        @For Each item In Model
+                            @<tr>
+                                <td>
+                                    <a href="@Url.Action("Edit", "HOLIDAY", New With {.id = item.HOLIDAYID})" class="fa fa-pencil-square-o btn_edit" />
+                                    <a href="@Url.Action("Copy", "HOLIDAY", New With {.id = item.HOLIDAYID})" class="fa fa-files-o btn_copy" />
+                                    <a href="@Url.Action("Delete", "HOLIDAY", New With {.id = item.HOLIDAYID})" class="fa fa-trash-o btn_trash deletebtn" />
+                                </td>
+                                <td>
+                                    @item.HOLIDAYNAME
+                                </td>
+                                <td>
+                                    @item.FROM
+                                </td>
+                                <td>
+                                    @item.UNTIL
+                                </td>
+
+                                <td style="padding: 0 5px;">
+                                    <input type="checkbox" name="isForLateIn" checked=@item.ISINUSED readonly="true">
+                                </td>
+
+                            </tr>
+                        Next
+                    </tbody>
+                </table>
+            </div>
 
             <div class="ctr_rtpt_b_ftr">
-                Page @IIf(Model.PageCount < Model.PageNumber, 0, Model.PageNumber) of @Model.PageCount |
-                Total @ViewBag.TotalHolidays item(s)
 
-                @Html.PagedListPager(Model, Function(page) Url.Action("Index", New With {page, .yearFilter = ViewBag.yearFilter}))
+                @If Model.Count() > 1 Then
+                    @<span>Total : @Model.Count() row(s)</span>
+                Else
+                    @<span>Total : @Model.Count() row</span>
+                End If
+
             </div>
+
         </div>
     </div>
 </div>
+
+
+<div class="bg_color_w"></div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#deleteconfirmed").click(function () {
+            document.forms[0].submit();
+            return false;
+        });
+    });
+
+</script>
+
+<script type="text/javascript">
+    //Nav Top Menu Part1
+    $("#hdr_btn4").addClass("pt2_b_btneff");
+
+    //Nav Left Menu Part1
+    $("#leftnav1").addClass("ctr_innav1_btneff");
+</script>

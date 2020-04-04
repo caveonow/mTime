@@ -75,7 +75,7 @@ End Code
                             </div>
 
                         </div>
-                        
+
                         <div Class="rtpt_addbox_partbtn">
                             <a href="@Url.Action("Reason", "Maintenance")">
                                 <div id="closebtn" Class="rtpt_closebtn filter1">
@@ -157,6 +157,12 @@ End Code
 
 
     });
+
+    //Nav Top Menu Part1
+    $("#hdr_btn4").addClass("pt2_b_btneff");
+
+    //Nav Left Menu Part1
+    $("#leftnav5").addClass("ctr_innav1_btneff");
 
 </script>
 

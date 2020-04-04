@@ -178,7 +178,7 @@
     <Compile Include="Controllers\AdministrationController.vb" />
     <Compile Include="Controllers\DepartmentController.vb" />
     <Compile Include="Controllers\HyperlinkController.vb" />
-    <Compile Include="Controllers\HOLIDAYController.vb" />
+    <Compile Include="Controllers\HolidayController.vb" />
     <Compile Include="Controllers\MaintenanceController.vb" />
     <Compile Include="Controllers\PoorAttendanceReasonController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
@@ -356,15 +356,13 @@
     <Content Include="Views\Attendance\_AdjustmentArrival.vbhtml" />
     <Content Include="Views\Attendance\_AttendanceRecord.vbhtml" />
     <Content Include="Views\Attendance\_DoorAccess.vbhtml" />
-    <Content Include="Views\HOLIDAY\Create.vbhtml" />
-    <Content Include="Views\HOLIDAY\Delete.vbhtml" />
-    <Content Include="Views\HOLIDAY\Details.vbhtml" />
-    <Content Include="Views\HOLIDAY\Edit.vbhtml" />
-    <Content Include="Views\HOLIDAY\Index.vbhtml" />
+    <Content Include="Views\Holiday\Create.vbhtml" />
+    <Content Include="Views\Holiday\Delete.vbhtml" />
+    <Content Include="Views\Holiday\Details.vbhtml" />
+    <Content Include="Views\Holiday\Edit.vbhtml" />
     <Content Include="Views\Maintenance\AttendanceStatus.vbhtml" />
     <Content Include="Views\Maintenance\Department.vbhtml" />
     <Content Include="Views\Maintenance\Grade.vbhtml" />
-    <Content Include="Views\Maintenance\Holiday.vbhtml" />
     <Content Include="Views\Maintenance\Index.vbhtml" />
     <Content Include="Views\Maintenance\LateTolerant.vbhtml" />
     <Content Include="Views\Maintenance\Reason.vbhtml" />
@@ -374,6 +372,7 @@
     <Content Include="Views\PrivateMessage\Index.vbhtml" />
     <Content Include="Views\FAQ\Index.vbhtml" />
     <Content Include="Views\Department\Create.vbhtml" />
+    <Content Include="Views\Holiday\Index.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
