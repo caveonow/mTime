@@ -58,7 +58,7 @@ $("#stfhdr_btn1").addClass("pt2_b_btneff");
 $("#hdr_btn4").addClass("pt2_b_btneff");
 
 //Nav Left Menu Part1
-$("#leftnav1").addClass("ctr_innav1_btneff");
+//$("#leftnav1").addClass("ctr_innav1_btneff");
 
 $(function () {
     var pull = $(".pn_heading_btm");
@@ -216,7 +216,7 @@ $("#addnewbtn").click(function () {
 
 $("#closebtn, #savebtn, #yesbtn").click(function () {
     //$(".bd_ctr_rightpart").css("padding", "0 10px 50px 210px");
-    $("#addbox-01, #editbox-01, #copybox-01, #deletebox-01").addClass("display_none").removeClass("display_block");
+    $("#addbox-01, #editbox-01, #copybox-01, .deletebox-01").addClass("display_none").removeClass("display_block");
     $("#rtpt_box-01, .ctr_rtpt_footer").addClass("display_block").removeClass("display_none");
 });
 
@@ -230,8 +230,8 @@ $("#copybtn").click(function () {
     $("#copybox-01").addClass("display_block").removeClass("display_none");
 });
 
-$("#deletebtn").click(function () {
-    $("#deletebox-01").addClass("display_block").removeClass("display_none");
+$(".deletebtn").click(function () {
+    $(".deletebox-01").addClass("display_block").removeClass("display_none");
 });
 
 // Attendance Page

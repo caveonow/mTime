@@ -1,0 +1,80 @@
+﻿.rtpt_deletebtn {
+    width: initial;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    float: right;
+    border-radius: 5px;
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+}
+
+.body_center .bd_ctr_rightpart .ctr_rtpt_box {
+    height:515px !important;
+    /*overflow: auto;*/
+}
+
+
+    .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ftr {
+        background-color: #eee !important;
+        z-index: 1;
+    }
+
+
+.ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon_blue {
+    width: 100%;
+    height: initial;
+    float: left;
+    color: #0069ae;
+    text-align: center;
+    font-size: 66px;
+}
+
+.overflow_box {
+    width: 100%;
+    height: 445px;
+    float: left;
+    overflow: auto;
+}
+
+.body_center .bd_ctr_rightpart{
+    z-index:2 !important;
+}
+
+.bg_color_w {
+    width:100%; 
+    height:100%; 
+    position:fixed; 
+    top:0; 
+    left:0; 
+    background-color:#fff; 
+    z-index:1;
+}
+
+
+
+/*New Class*/
+
+.body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_checkbox input {
+    width: 30px !important;
+    float: left;
+    margin: 0 0 0 10px;
+    border: 1px #aaa solid !important;
+}
+
+
+.body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_pt_tt {
+    width: 150px !important;
+}
+
+.body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox{
+    width:550px !important;
+}
+
+.header_part2{
+    position:relative;
+    z-index:10;
+}

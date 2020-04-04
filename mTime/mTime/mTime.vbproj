@@ -60,8 +60,15 @@
     <Reference Include="FirebirdSql.Data.FirebirdClient, Version=7.5.0.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
       <HintPath>..\packages\FirebirdSql.Data.FirebirdClient.7.5.0\lib\net452\FirebirdSql.Data.FirebirdClient.dll</HintPath>
     </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
@@ -169,77 +176,17 @@
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="Controllers\AdministrationController.vb" />
+    <Compile Include="Controllers\DepartmentController.vb" />
+    <Compile Include="Controllers\HyperlinkController.vb" />
     <Compile Include="Controllers\MaintenanceController.vb" />
+    <Compile Include="Controllers\PoorAttendanceReasonController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ACTIVITYLOG.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ANNOUNCEMENT.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ATTENDACNESTATUSVALIDATION.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ATTENDANCESTATU.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\COMPANY.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DEPARTMENT.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EXDBTRANSSYNCTRDATA.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\FEEDBACK.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\HOLIDAY.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\HYPERLINK.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MasterDB.Context.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MasterDB.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MasterDB.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MasterDB.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MasterDB.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\PERSONALMESSAGE.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\POORATTENDANCEREASON.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SHIFT.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SHIFTSCHEDULE.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\STAFF.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\STAFFGROUP.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\USERSSHIFT.vb">
-      <DependentUpon>MasterDB.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\MasterDB.vb" />
+    <Compile Include="Models\HyperlinkModel.vb" />
+    <Compile Include="Models\PoorAttendanceReasonModel.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -271,6 +218,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Other_style.css" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -280,13 +229,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <EntityDeploy Include="Models\MasterDB.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MasterDB.Designer.vb</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\MasterDB.edmx.diagram">
-      <DependentUpon>MasterDB.edmx</DependentUpon>
-    </Content>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -297,18 +239,14 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
-    <Content Include="Models\MasterDB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MasterDB.edmx</DependentUpon>
-      <LastGenOutput>MasterDB.Context.vb</LastGenOutput>
-    </Content>
-    <Content Include="Models\MasterDB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MasterDB.edmx</DependentUpon>
-      <LastGenOutput>MasterDB.vb</LastGenOutput>
-    </Content>
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Views\Hyperlink\Create.vbhtml" />
+    <Content Include="Views\Hyperlink\Edit.vbhtml" />
+    <Content Include="Views\Hyperlink\Delete.vbhtml" />
+    <Content Include="Views\PoorAttendanceReason\Create.vbhtml" />
+    <Content Include="Views\PoorAttendanceReason\Edit.vbhtml" />
+    <Content Include="Views\PoorAttendanceReason\Delete.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -334,7 +272,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Views\Shared\_SubMenuLeft.vbhtml" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -349,6 +289,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Department\" />
+    <Folder Include="Views\Maintenance\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
