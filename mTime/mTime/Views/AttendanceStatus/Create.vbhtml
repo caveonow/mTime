@@ -1,5 +1,4 @@
-﻿
-@ModelType model.POORATTENDANCEREASON
+@ModelType model.ATTENDANCESTATUS
 
 @Code
     ViewData("Title") = "Create"
@@ -18,18 +17,18 @@ End Code
                 @<div class="form-horizontal">
 
                     <div Class="ctr_rtpt_b_ht">
-                        <span> Reason :: Add</span>
+                        <span> Attendance Status :: Add</span>
                     </div>
 
                     <div Class="ctr_rtpt_addbox">
                         <div Class="rtpt_addbox_part">
                             <div class="">
-                                <div Class="rtpt_addbox_pt_tt">Reason Code :</div>
+                                <div Class="rtpt_addbox_pt_tt">Attendance Code :</div>
 
-                                @Html.TextBoxFor(Function(model) model.POORATTENDANCEREASONID, New With {.maxlength = 20})
+                                @Html.TextBoxFor(Function(model) model.ATTENDANCESTATUSID, New With {.maxlength = 20})
 
                                 <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.POORATTENDANCEREASONID)
+                                    @Html.ValidationMessageFor(Function(model) model.ATTENDANCESTATUSID)
                                 </div>
 
                             </div>
@@ -51,39 +50,24 @@ End Code
                         <div Class="rtpt_addbox_part">
 
                             <div class="">
-                                <div Class="rtpt_addbox_pt_tt">For Late-In :</div>
-                                <div class="rtpt_addbox_checkbox">
-                                    @Html.CheckBoxFor(Function(model) model.ISFORLATEIN)
-                                </div>
+                                <div Class="rtpt_addbox_pt_tt">Condition :</div>
+
+                                @Html.TextBoxFor(Function(model) model.CONDITION, New With {.maxlength = 10})
                                 <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.ISFORLATEIN)
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-
-                            <div class="">
-                                <div Class="rtpt_addbox_pt_tt">For Early-Out :</div>
-                                <div class="rtpt_addbox_checkbox">
-                                    @Html.CheckBoxFor(Function(model) model.ISFOREARLYOUT)
-                                </div>
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.ISFOREARLYOUT)
+                                    @Html.ValidationMessageFor(Function(model) model.CONDITION)
                                 </div>
                             </div>
 
                         </div>
                         
                         <div Class="rtpt_addbox_partbtn">
-                            <a href="@Url.Action("Reason", "Maintenance")">
+                            <a href="@Url.Action("AttendanceStatus", "Maintenance")">
                                 <div id="closebtn" Class="rtpt_closebtn filter1">
                                     Cancel
                                 </div>
                             </a>
 
-                            <a href="@Url.Action("Create", "PoorAttendanceReason")" id="save">
+                            <a href="@Url.Action("Create", "AttendanceStatus")" id="save">
                                 <div id="savebtn" Class="rtpt_savebtn filter1">
                                     Save
                                 </div>
@@ -103,7 +87,7 @@ End Code
                     @<script>
                             window.onload = function() {
                               $(".save_ok_popup").addClass("display_block").fadeOut(3000);
-                               window.location.href = "@Url.Action("Reason", "Maintenance")";
+                               window.location.href = "@Url.Action("AttendanceStatus", "Maintenance")";
                            };
                     </script>
                 End If
@@ -134,28 +118,10 @@ End Code
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">
     $(function () {
-
         $("#save").click(function () {
             document.forms[0].submit();
             return false;
         });
-
-        @*function displayStatus() {
-
-            $(".save_ok_popup").show();
-            setInterval(function () {
-                seconds--;
-                if (seconds == 0) {
-                    $(".save_ok_popup").hide();
-                    window.location.href = "@Url.Action("index", "Maintenance")";
-                }
-            }, 1000);
-
-            return false;
-
-        };*@
-
-
     });
 
 </script>
