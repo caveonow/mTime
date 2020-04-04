@@ -4,16 +4,15 @@ Imports System.ComponentModel.DataAnnotations
 
 Namespace model
 
-    Public Class HYPERLINK
+    Public Class DEPARTMENT
 
+        <Required(ErrorMessage:=" Department ID is Required")>
+        Public Property DEPARTMENTID As String
 
-        Public Property HYPERLINKID As Integer
+        <Required(ErrorMessage:="Department Name is Required")>
+        Public Property DEPARTMENTNAME As String
 
-        <Required(ErrorMessage:="Title is required")>
-        Public Property TITLE As String
-
-        <Required(ErrorMessage:="URL is required")>
-        Public Property URL As String
+        Public Property ISINUSED As Boolean
 
         Public Property CREATEDBY As String
         Public Property CREATEDON As Date
@@ -23,5 +22,6 @@ Namespace model
     End Class
 
 End Namespace
+
 
 

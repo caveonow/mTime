@@ -189,6 +189,9 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DepartmentModel.vb" />
+    <Compile Include="Models\HyperlinkModel.vb" />
+    <Compile Include="Models\MasterDB.vb" />
     <Compile Include="Models\HyperlinkModel.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -478,6 +481,7 @@
     <Content Include="Views\Shared\_StaffMenuTop.vbhtml" />
     <Content Include="Views\PrivateMessage\Index.vbhtml" />
     <Content Include="Views\FAQ\Index.vbhtml" />
+    <Content Include="Views\Department\Create.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
