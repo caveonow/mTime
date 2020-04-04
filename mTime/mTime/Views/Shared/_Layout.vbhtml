@@ -58,6 +58,15 @@
                     User Name
                 </div>
 
+                <div class="hd_pf_part4">
+                    Password
+                    <div id="passwordchange_btn" class="pf_p4_tt1">
+                        Change
+                    </div>
+                </div>
+
+                <div id="Feedback_btn" class="hd_pf_part5">Feedback</div>
+
                 <div class="hd_pf_part3">
                     Translate
                     <div class="pf_p3_box">
@@ -79,10 +88,31 @@
             </footer>
         </div>*@
 
+    @*Feedback PopUp *@
+    <div id="Feedback_popup" class="popup_bg display_none">
+        <div class="Feedback_box">
+            <div class="Fbk_b_htr">Feedback</div>
+
+            <div class="Fbk_b_ttarea">
+                Please leave us your suggestions and complaints about this application. thank you.
+
+                <textarea id="" rows="4" cols="50" class="b_ttarea_box"></textarea>
+            </div>
+
+            <div class="Fbk_b_ftr">
+                <div id="closebtn" class="rtpt_closebtn filter1">Cancel</div>
+
+                <div id="sendbtn" class="rtpt_savebtn filter1">Send</div>
+            </div>
+        </div>
+    </div>
+
     @*PoPup First Login *@
     <div id="firstlogin_popup" class="popup_bg display_none">
         <div class="firstlogin_box">
-            <div class="fa fa-user-circle ftlogin_b_icon"></div>
+            <div class="fa fa-user-circle ftlogin_b_icon">
+                <div class="ftlogin_b_httt">First Login</div>
+            </div>
 
             <div class="ftlogin_b_part">
                 <div class="b_pt_tt">NRIC :</div>
@@ -122,7 +152,9 @@
     @*PoPup Login *@
     <div id="login_popup" class="popup_bg display_none">
         <div class="firstlogin_box">
-            <div class="fa fa-user-circle ftlogin_b_icon"></div>
+            <div class="fa fa-user-circle ftlogin_b_icon">
+                <div class="ftlogin_b_httt">Login</div>
+            </div>
 
             <div class="ftlogin_b_part">
                 <div class="b_pt_tt">NRIC :</div>
@@ -152,12 +184,63 @@
         </div>
     </div>
 
+    @*PoPup First Login *@
+    <div id="passwordchange_popup" class="popup_bg display_none">
+        <div class="passwordchange_box">
+            <div class="fa fa-user-circle pwchange_b_icon">
+                <div class="b_icon_tt">Password Change</div>
+            </div>
+
+            <div class="pwchange_b_part">
+                <div class="b_pt_tt">NRIC :</div>
+
+                <div class="b_pt_box">
+                    <input type="text" id="title" name="title">
+                </div>
+                <div class="hlday_addbox_pt_error">Text Error</div>
+            </div>
+
+            <div class="pwchange_b_part">
+                <div class="b_pt_tt">Old Password :</div>
+
+                <div class="b_pt_box">
+                    <input type="password" id="title" name="title">
+                </div>
+                <div class="hlday_addbox_pt_error">Text Error</div>
+            </div>
+
+            <div class="pwchange_b_part">
+                <div class="b_pt_tt">Password :</div>
+
+                <div class="b_pt_box">
+                    <input type="password" id="title" name="title">
+                </div>
+                <div class="hlday_addbox_pt_error">Text Error</div>
+            </div>
+
+            <div class="pwchange_b_part">
+                <div class="b_pt_tt">Confirm Password :</div>
+
+                <div class="b_pt_box">
+                    <input type="password" id="title" name="title">
+                </div>
+                <div class="hlday_addbox_pt_error">Text Error</div>
+            </div>
+
+            <div class="pwchange_b_partbtm">
+                <div id="cancelbtn" class="rtpt_closebtn filter1">Cancel</div>
+
+                <div id="savebtn" class="rtpt_savebtn filter1">Save</div>
+            </div>
+        </div>
+    </div>
+
     @*PoPup Forgot Password *@
     <div id="forgotpw_popup" class="popup_bg display_none">
         <div class="firstlogin_box">
-            <div class="fa fa-user-circle ftlogin_b_icon"></div>
-
-            <div class="ftlogin_b_httt">Account Recovery</div>
+            <div class="fa fa-user-circle ftlogin_b_icon">
+                <div class="ftlogin_b_httt">Account Recovery</div>
+            </div>
 
             <div class="ftlogin_b_part">
                 <div class="b_pt_tt1">NRIC :</div>
@@ -179,9 +262,9 @@
     @*PoPup Edit Profile *@
     <div id="editprofile_popup" class="popup_bg display_none">
         <div class="firstlogin_box">
-            <div class="fa fa-user-circle ftlogin_b_icon"></div>
-
-            <div class="ftlogin_b_httt">Profile Edit</div>
+            <div class="fa fa-user-circle ftlogin_b_icon">
+                <div class="ftlogin_b_httt">Profile Edit</div>
+            </div>
 
             <div class="edit_pt_box">
                 <div class="edit_pt_inb">
