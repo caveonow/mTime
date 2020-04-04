@@ -1,15 +1,14 @@
-﻿Imports System.Data.Entity
+Imports System.Data.Entity
 Imports System.Data.Entity.ModelConfiguration.Conventions
+Imports System.ComponentModel.DataAnnotations
 
 Namespace model
 
     Public Class MasterDB
         Inherits DbContext
-
-        '# Add all the models here :
-
         Public Property HYPERLINK() As DbSet(Of HYPERLINK)
-        Public Property POORATTENDANCEREASON() As DbSet(Of POORATTENDANCEREASON)
+        Public Property DEPARTMENT() As DbSet(Of DEPARTMENT)
+
 
         Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
             MyBase.OnModelCreating(modelBuilder)
