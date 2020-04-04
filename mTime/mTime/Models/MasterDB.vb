@@ -9,6 +9,8 @@ Namespace model
         Public Property HYPERLINK() As DbSet(Of HYPERLINK)
         Public Property DEPARTMENT() As DbSet(Of DEPARTMENT)
 
+        Public Property POORATTENDANCEREASON() As DbSet(Of POORATTENDANCEREASON)
+
 
         Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
             MyBase.OnModelCreating(modelBuilder)
