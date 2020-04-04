@@ -153,7 +153,8 @@ Namespace Controllers
             db.SaveChanges()
 
             '# Return to Index 
-            Return RedirectToRoute("PoorAttendanceReasonList")
+            ViewBag.Result = "OK"
+            Return View(PoorAttendanceReason)
 
         End Function
 

@@ -181,6 +181,7 @@
     <Compile Include="Controllers\HolidayController.vb" />
     <Compile Include="Controllers\MaintenanceController.vb" />
     <Compile Include="Controllers\PoorAttendanceReasonController.vb" />
+    <Compile Include="Controllers\AttendanceStatusController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
@@ -190,6 +191,7 @@
     <Compile Include="Models\HyperlinkModel.vb" />
     <Compile Include="Models\HolidayModel.vb" />
     <Compile Include="Models\PoorAttendanceReasonModel.vb" />
+    <Compile Include="Models\AttendanceStatusModel.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -250,6 +252,9 @@
     <Content Include="Views\PoorAttendanceReason\Create.vbhtml" />
     <Content Include="Views\PoorAttendanceReason\Edit.vbhtml" />
     <Content Include="Views\PoorAttendanceReason\Delete.vbhtml" />
+    <Content Include="Views\AttendanceStatus\Create.vbhtml" />
+    <Content Include="Views\AttendanceStatus\Edit.vbhtml" />
+    <Content Include="Views\AttendanceStatus\Delete.vbhtml" />
     <Content Include="scss\bootstrap-grid.scss" />
     <Content Include="scss\bootstrap-reboot.scss" />
     <Content Include="scss\bootstrap.scss" />

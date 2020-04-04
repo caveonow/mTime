@@ -9,8 +9,8 @@ Namespace model
         Public Property HYPERLINK() As DbSet(Of HYPERLINK)
         Public Property DEPARTMENT() As DbSet(Of DEPARTMENT)
         Public Property HOLIDAY() As DbSet(Of HOLIDAY)
-
         Public Property POORATTENDANCEREASON() As DbSet(Of POORATTENDANCEREASON)
+        Public Property ATTENDANCESTATUS() As DbSet(Of ATTENDANCESTATUS)
 
 
         Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)

@@ -53,7 +53,9 @@ Namespace Controllers
         End Function
 
         Function AttendanceStatus() As ActionResult
-            Return View()
+            Dim sortedList = db.ATTENDANCESTATUS.SortBy("ATTENDANCESTATUSID").ToList
+
+            Return View(sortedList)
         End Function
 
         Function WorkingShift() As ActionResult
