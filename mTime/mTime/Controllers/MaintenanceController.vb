@@ -39,7 +39,12 @@ Namespace Controllers
         End Function
 
         Function Reason() As ActionResult
-            Return View()
+            Dim sortedList = db.POORATTENDANCEREASON.SortBy("POORATTENDANCEREASONID").ToList
+
+            Debug.Print("OK")
+
+            '# Return updated dataset
+            Return View(sortedList)
         End Function
 
         Function AttendanceStatus() As ActionResult

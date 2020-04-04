@@ -1,5 +1,5 @@
 ﻿
-@ModelType model.HYPERLINK
+@ModelType model.POORATTENDANCEREASON
 
 @Code
     ViewData("Title") = "Edit"
@@ -18,53 +18,92 @@ End Code
 
                 @<div class="form-horizontal">
 
-                    @Html.HiddenFor(Function(Model) Model.HYPERLINKID)
+                    @Html.HiddenFor(Function(Model) Model.POORATTENDANCEREASONID)
                     @Html.HiddenFor(Function(Model) Model.CREATEDBY)
                     @Html.HiddenFor(Function(Model) Model.CREATEDON)
                     @Html.HiddenFor(Function(Model) Model.UPDATEDBY)
                     @Html.HiddenFor(Function(Model) Model.UPDATEDON)
 
                     <div Class="ctr_rtpt_b_ht">
-                        <span> Hyperlink :: Edit</span>
+                        <span> Reason :: Edit</span>
                     </div>
 
                     <div Class="ctr_rtpt_addbox">
                         <div Class="rtpt_addbox_part">
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">Title :</div>
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">Reason Code :</div>
 
-                                @Html.TextBoxFor(Function(model) model.TITLE, New With {.Readonly = True, .Style = "background-color:#eee; pointer-events: none;"})
+                                @Html.TextBoxFor(Function(model) model.POORATTENDANCEREASONID, New With {.Readonly = True, .Style = "background-color:#eee; pointer-events: none;"})
+                                @*@Html.TextBoxFor(Function(model) model.POORATTENDANCEREASONID, New With {.Disabled = True})*@
 
                             </div>
                         </div>
 
                         <div Class="rtpt_addbox_part">
 
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">URL :</div>
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">Description :</div>
 
-                                @Html.TextBoxFor(Function(model) model.URL, New With {.maxlength = 200})
+                                @Html.TextBoxFor(Function(model) model.DESCRIPTION)
                                 <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.URL)
+                                    @Html.ValidationMessageFor(Function(model) model.DESCRIPTION)
                                 </div>
                             </div>
 
                         </div>
 
 
+                        <div Class="rtpt_addbox_part">
+
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">For Late-In :</div>
+                                <div class="rtpt_addbox_checkbox">
+                                    @Html.CheckBoxFor(Function(model) model.ISFORLATEIN)
+                                </div>
+                                <div Class="rtpt_addbox_pt_error">
+                                    @Html.ValidationMessageFor(Function(model) model.ISFORLATEIN)
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div Class="rtpt_addbox_part">
+
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">For Early-Out :</div>
+                                <div class="rtpt_addbox_checkbox">
+                                    @Html.CheckBoxFor(Function(model) model.ISFOREARLYOUT)
+                                </div>                           
+                            </div>
+
+                        </div>
+
+                        <div Class="rtpt_addbox_part">
+
+                            <div class="">
+                                <div Class="rtpt_addbox_pt_tt">In Used :</div>
+                                <div class="rtpt_addbox_checkbox">
+                                    @Html.CheckBoxFor(Function(model) model.ISINUSED)
+                                </div>                            
+                            </div>
+
+                        </div>
+
                         <div Class="rtpt_addbox_partbtn">
-                            <a href="@Url.Action("Index", "Maintenance")">
+                            <a href="@Url.Action("Reason", "Maintenance")">
                                 <div id="closebtn" Class="rtpt_closebtn filter1">
                                     Cancel
                                 </div>
                             </a>
-                            <a href="@Url.Action("Edit", "Hyperlink")" id="save">
+
+                            <a href="@Url.Action("Edit", "PoorAttendanceReason")" id="save">
                                 <div id="savebtn" Class="rtpt_savebtn filter1">
                                     Save
                                 </div>
                             </a>
 
                         </div>
+
 
                     </div>
 
@@ -79,7 +118,7 @@ End Code
                     @<script>
                             window.onload = function() {
                               $(".save_ok_popup").addClass("display_block").fadeOut(3000);
-                               window.location.href = "@Url.Action("index", "Maintenance")";
+                               window.location.href = "@Url.Action("Reason", "Maintenance")";
                            };
                     </script>
                 End If

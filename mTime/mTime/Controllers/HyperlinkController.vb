@@ -124,8 +124,13 @@ Namespace Controllers
                 db.Entry(hyperlink).State = System.Data.Entity.EntityState.Modified
                 db.SaveChanges()
 
-                '# Return to Index 
-                Return RedirectToRoute("HyperlinkList")
+                ''# Return to Index 
+                'Return RedirectToRoute("HyperlinkList")
+
+
+                ViewBag.Result = "OK"
+                'Return RedirectToRoute("HyperlinkList")
+                Return View(hyperlink)
 
             End If
 
