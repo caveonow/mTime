@@ -1,4 +1,4 @@
-﻿@ModelType PagedList.IPagedList(Of mTime.mTime.HOLIDAY)
+﻿@ModelType PagedList.IPagedList(Of model.HOLIDAY)
 @Imports PagedList.Mvc
 @Code
     ViewData("Title") = "Index"
@@ -24,7 +24,7 @@ End Code
                      <select class="form-control" id="yearFilter" name="yearFilter" value="@ViewBag.yearFilter">
                          <option>All</option>
                          @For Each item In ViewBag.yearListing
-                             @<option value="@ViewBag.yearFilter">@item</option>
+                             @<option value="@item">@item</option>
                          Next
                      </select>
                     <input type="submit" value="Search" />
@@ -48,7 +48,7 @@ End Code
                             <td>
                                 <a href="@Url.Action("Edit", "HOLIDAY", New With {.id = item.HOLIDAYID})" class="fa fa-pencil-square-o btn_edit" />
                                 <a href="@Url.Action("Copy", "HOLIDAY", New With {.id = item.HOLIDAYID})" class="fa fa-files-o btn_copy" />
-                                <a href="@Url.Action("Delete", "HOLIDAY", New With {.id = item.HOLIDAYID})" class="fa fa-trash-o btn_trash" />
+                                <a href="@Url.Action("Delete", "HOLIDAY", New With {.id = item.HOLIDAYID})" class="fa fa-trash-o btn_trash deletebtn" />
                             </td>
                             <td>
                                 @Html.DisplayFor(Function(modelItem) item.HOLIDAYNAME)

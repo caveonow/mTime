@@ -178,6 +178,7 @@
     <Compile Include="Controllers\AdministrationController.vb" />
     <Compile Include="Controllers\DepartmentController.vb" />
     <Compile Include="Controllers\HyperlinkController.vb" />
+    <Compile Include="Controllers\HOLIDAYController.vb" />
     <Compile Include="Controllers\MaintenanceController.vb" />
     <Compile Include="Controllers\PoorAttendanceReasonController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
@@ -187,6 +188,7 @@
     <Compile Include="Models\DepartmentModel.vb" />
     <Compile Include="Models\MasterDB.vb" />
     <Compile Include="Models\HyperlinkModel.vb" />
+    <Compile Include="Models\HolidayModel.vb" />
     <Compile Include="Models\PoorAttendanceReasonModel.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
