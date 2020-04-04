@@ -1,6 +1,6 @@
 ﻿Imports System.Data.Entity
 Imports System.Net
-Imports mTime.mTime
+Imports mTime
 Imports PagedList
 
 Namespace Controllers
@@ -21,12 +21,12 @@ Namespace Controllers
             End If
 
             ' get result from db
-            Dim listing = db.HOLIDAYs.ToList()
+            Dim listing = db.HOLIDAY.ToList()
 
             ' get all available year for dropdown
             Dim yearListing As New List(Of Integer)
 
-            For Each listingItem As HOLIDAY In listing
+            For Each listingItem As model.HOLIDAY In listing
                 yearListing.Add(Year(listingItem.FROM))
             Next
 
@@ -56,7 +56,7 @@ Namespace Controllers
             If IsNothing(id) Then
                 Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
             End If
-            Dim hOLIDAY As HOLIDAY = db.HOLIDAYs.Find(id)
+            Dim hOLIDAY As model.HOLIDAY = db.HOLIDAY.Find(id)
             If IsNothing(hOLIDAY) Then
                 Return HttpNotFound()
             End If
@@ -73,7 +73,7 @@ Namespace Controllers
         'more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         <HttpPost()>
         <ValidateAntiForgeryToken()>
-        Function Create(<Bind(Include:="HOLIDAYID,HOLIDAYNAME,FROM,UNTIL,ISINUSED,CREATEDBY,CREATEDON,UPDATEDBY,UPDATEDON")> ByVal hOLIDAY As HOLIDAY) As ActionResult
+        Function Create(<Bind(Include:="HOLIDAYID,HOLIDAYNAME,FROM,UNTIL,ISINUSED,CREATEDBY,CREATEDON,UPDATEDBY,UPDATEDON")> ByVal hOLIDAY As model.HOLIDAY) As ActionResult
             ' Check is same year
             If Not checkIsSameYear(hOLIDAY.FROM, hOLIDAY.UNTIL) Then
                 ModelState.AddModelError("FROM", "Year not same")
@@ -88,7 +88,7 @@ Namespace Controllers
                 hOLIDAY.UPDATEDBY = "SYSTEM"
                 hOLIDAY.UPDATEDON = System.DateTime.Now
 
-                db.HOLIDAYs.Add(hOLIDAY)
+                db.HOLIDAY.Add(hOLIDAY)
                 db.SaveChanges()
 
                 ' https://docs.microsoft.com/en-us/office/vba/language/reference/user-interface-help/inputbox-function
@@ -113,7 +113,7 @@ Namespace Controllers
             If IsNothing(id) Then
                 Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
             End If
-            Dim hOLIDAY As HOLIDAY = db.HOLIDAYs.Find(id)
+            Dim hOLIDAY As model.HOLIDAY = db.HOLIDAY.Find(id)
             If IsNothing(hOLIDAY) Then
                 Return HttpNotFound()
             End If
@@ -125,7 +125,7 @@ Namespace Controllers
         'more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         <HttpPost()>
         <ValidateAntiForgeryToken()>
-        Function Edit(<Bind(Include:="HOLIDAYID,HOLIDAYNAME,FROM,UNTIL,ISINUSED,CREATEDBY,CREATEDON,UPDATEDBY,UPDATEDON")> ByVal hOLIDAY As HOLIDAY) As ActionResult
+        Function Edit(<Bind(Include:="HOLIDAYID,HOLIDAYNAME,FROM,UNTIL,ISINUSED,CREATEDBY,CREATEDON,UPDATEDBY,UPDATEDON")> ByVal hOLIDAY As model.HOLIDAY) As ActionResult
             ' Check is same year
             If Not checkIsSameYear(hOLIDAY.FROM, hOLIDAY.UNTIL) Then
                 ModelState.AddModelError("FROM", "Year not same")
@@ -161,7 +161,7 @@ Namespace Controllers
             If IsNothing(id) Then
                 Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
             End If
-            Dim hOLIDAY As HOLIDAY = db.HOLIDAYs.Find(id)
+            Dim hOLIDAY As model.HOLIDAY = db.HOLIDAY.Find(id)
             If IsNothing(hOLIDAY) Then
                 Return HttpNotFound()
             End If
@@ -173,11 +173,11 @@ Namespace Controllers
         <ActionName("Delete")>
         <ValidateAntiForgeryToken()>
         Function DeleteConfirmed(ByVal id As Integer) As ActionResult
-            Dim hOLIDAY As HOLIDAY = db.HOLIDAYs.Find(id)
+            Dim hOLIDAY As model.HOLIDAY = db.HOLIDAY.Find(id)
             hOLIDAY.UPDATEDBY = "SYSTEM"
             hOLIDAY.UPDATEDON = System.DateTime.Now
 
-            db.HOLIDAYs.Remove(hOLIDAY)
+            db.HOLIDAY.Remove(hOLIDAY)
             db.SaveChanges()
 
             ' show successfully delete dialog
@@ -205,7 +205,7 @@ Namespace Controllers
             If IsNothing(id) Then
                 Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
             End If
-            Dim hOLIDAY As HOLIDAY = db.HOLIDAYs.Find(id)
+            Dim hOLIDAY As model.HOLIDAY = db.HOLIDAY.Find(id)
             If IsNothing(hOLIDAY) Then
                 Return HttpNotFound()
             End If
@@ -220,7 +220,7 @@ Namespace Controllers
             Return False
         End Function
 
-        Private Sub validateBeforeSave(holiday As HOLIDAY)
+        Private Sub validateBeforeSave(holiday As model.HOLIDAY)
             If IsNothing(holiday.HOLIDAYNAME) Then
                 ModelState.AddModelError("HOLIDAYNAME", "Name is required")
             End If

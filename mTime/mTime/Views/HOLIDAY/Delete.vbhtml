@@ -1,4 +1,4 @@
-﻿@ModelType mTime.mTime.HOLIDAY
+﻿@ModelType model.HOLIDAY
 @Code
     ViewData("Title") = "Create"
 End Code
