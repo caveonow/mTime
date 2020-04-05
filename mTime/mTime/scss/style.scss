@@ -70,12 +70,35 @@ html, body {
     z-index: 1;
 }
 
+.check-box {
+    float: left;
+    width: 17px !important;
+    height: 17px !important;
+    margin: 0 0;
+}
+
+input {
+    border: 0;
+}
+
+.events_none {
+    background-color: #dddd;
+    border: 1px #aaa solid;
+    pointer-events: none;
+}
+
+td {
+    .check-box {
+        margin: 0 0 -4px 0;
+    }
+}
+
 .header_part1 {
     width: 100%;
     height: 40px;
     background-color: #038C76;
     position: relative;
-    z-index: 10;
+    z-index: 99;
 
     .translate_part {
         width: initial;
@@ -360,7 +383,7 @@ html, body {
     height: 40px;
     float: left;
     background-color: #09af94;
-    z-index: 10;
+    z-index: 99;
     position: relative;
 
     .hd_pt2_box {
@@ -742,7 +765,6 @@ html, body {
     }
 
     li:hover {
-
         a {
             color: #fff;
         }
@@ -915,6 +937,11 @@ html, body {
         margin: 0 0 10px 0;
         background: url(../../img/htr_bg.jpg) top center no-repeat;
         background-size: cover;
+        border-radius: 5px 5px 0 0;
+    }
+
+    img {
+        margin: 0 0 10px 0;
         border-radius: 5px 5px 0 0;
     }
 
@@ -1128,6 +1155,7 @@ html, body {
     position: absolute;
     /*bottom: 7px;*/
     top: 85px;
+    z-index: 10;
 
     .bd_ctr_nav {
         width: 200px;
@@ -1460,7 +1488,7 @@ html, body {
             }
 
             .ctr_rtpt_addbox {
-                width: 500px;
+                width: 550px;
                 height: initial;
                 padding: 10px;
                 position: absolute;
@@ -1475,7 +1503,7 @@ html, body {
                     margin: 0 0 10px 0;
 
                     .rtpt_addbox_pt_tt {
-                        width: 100px;
+                        width: 150px;
                         height: 30px;
                         text-align: right;
                         float: left;
@@ -1502,6 +1530,15 @@ html, body {
                         color: #ff0000;
                         font-size: 12px;
                         text-align: right;
+                    }
+
+                    .rtpt_addbox_checkbox {
+                        input {
+                            width: 30px !important;
+                            float: left;
+                            margin: 0 0 0 10px;
+                            border: 1px #aaa solid !important;
+                        }
                     }
                 }
 
@@ -1535,6 +1572,7 @@ html, body {
                         padding: 0 10px;
                         line-height: 30px;
                         font-size: 14px;
+                        font-weight: normal;
                     }
 
                     input {
@@ -1555,6 +1593,21 @@ html, body {
                         font-size: 12px;
                         text-align: right;
                     }*/
+                    .checkbox1 {
+                        float: left;
+                        width: 17px !important;
+                        height: 17px !important;
+                        margin: 7px 0 0 10px !important;
+                    }
+
+                    .hlday_addbox_pt_ttbox {
+                        width: 370px;
+                        height: 30px;
+                        float: right;
+                        line-height: 30px;
+                        font-size: 14px;
+                        padding: 0 10px;
+                    }
                 }
 
                 .hlday_addbox_partbtn {
@@ -1611,6 +1664,361 @@ html, body {
             }
         }
     }
+}
+
+.systembox_lt {
+    width: 49%;
+    min-height: 605px;
+    float: left;
+    border-radius: 5px 5px;
+    border: 1px #ccc solid;
+    margin: 0 0 10px 10px;
+    overflow: auto;
+    position:relative;
+
+    .stbox_lt_htb {
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        float: left;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+
+        span {
+            width: initial;
+            float: left;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .stbox_lt_part1 {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 10px 10px;
+
+        .lt_pt1_box1 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 30px 0 160px;
+            margin: 0 0 10px 0;
+
+            .pt1_b1_tt {
+                width: 150px;
+                height: 30px;
+                text-align: right;
+                float: left;
+                line-height: 30px;
+                font-size: 14px;
+                position: absolute;
+                left: 0;
+            }
+
+            .pt1_b1_input {
+                width: 100%;
+                height: 30px;
+                float: right;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px #aaa solid;
+            }
+
+            .pt1_b1_textarea {
+                width: 100%;
+                max-height: 100px;
+                min-height: 100px;
+                float: right;
+                line-height: 16px;
+                font-size: 14px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px #aaa solid;
+            }
+        }
+
+        .lt_pt1_box2 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 100px 0 160px;
+            margin: 0 0 10px 0;
+
+            .pt1_b2_tt {
+                width: 150px;
+                height: 30px;
+                text-align: right;
+                float: left;
+                line-height: 30px;
+                font-size: 14px;
+                position: absolute;
+                left: 0;
+            }
+
+            .pt1_b2_inputimg {
+                background-color: #fff;
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+
+    .stbox_lt_part2 {
+        width: 100%;
+        height: initial;
+        float: left;
+        position: absolute;
+        padding: 0 10px;
+        bottom:10px;
+    }
+}
+
+.systembox_rt1 {
+    width: 49%;
+    min-height: 200px;
+    float: right;
+    border-radius: 5px 5px;
+    margin: 0 10px 10px 0;
+    background-color: #fff;
+    border: 1px #ccc solid;
+    position: relative;
+
+    .stbox_rt1_httt {
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        float: left;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+
+        span {
+            width: initial;
+            float: left;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .stbox_rt1_box {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 10px 10px;
+
+        .rt1_b_part1 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 30px 0 200px;
+            margin: 0 0 10px 0;
+
+            .b_pt1_tt {
+                width: 190px;
+                height: 30px;
+                text-align: right;
+                float: left;
+                line-height: 30px;
+                font-size: 14px;
+                position: absolute;
+                left: 0;
+            }
+        }
+
+        .rt1_b_part2 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 10px;
+        }
+    }
+}
+
+
+.systembox_rt2 {
+    width: 49%;
+    min-height: 100px;
+    float: right;
+    border-radius: 5px 5px;
+    margin: 0 10px 10px 0;
+    background-color: #fff;
+    border: 1px #ccc solid;
+
+    .stbox_rt2_box1 {
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        float: left;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+
+        span {
+            width: initial;
+            float: left;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .stbox_rt2_box2 {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 10px 10px;
+
+        .rt2_b2_tt {
+            width: 100%;
+            height: initial;
+            line-height: 16px;
+            padding: 5px 0;
+            font-size: 12px;
+            color: #666;
+            margin: 0 0 10px 0;
+        }
+
+        .rt2_b2_box {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 10px;
+        }
+    }
+}
+
+.systembox_rt3 {
+    width: 49%;
+    min-height: 100px;
+    float: right;
+    border-radius: 5px 5px;
+    margin: 0 10px 10px 0;
+    background-color: #fff;
+    border: 1px #ccc solid;
+
+    .stbox_rt3_box {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 10px 10px;
+
+        .rt3_b_httext {
+            width: 100%;
+            height: initial;
+            line-height: 16px;
+            padding: 5px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #666;
+            margin: 0 0 10px 0;
+        }
+
+        .rt3_b_addtext {
+            width: 100%;
+            height: initial;
+            line-height: 16px;
+            padding: 5px 0;
+            font-size: 12px;
+            color: #666;
+            margin: 0 0 10px 0;
+        }
+
+        .rt3_b_textbox {
+            width: 100%;
+            height: initial;
+            line-height: 16px;
+            padding: 5px 0;
+            font-size: 12px;
+            color: #666;
+            margin: 0 0 10px 0;
+
+            b {
+                width: 40px;
+                float: left;
+            }
+
+            div {
+                float: left;
+            }
+        }
+    }
+}
+
+.inbox_haedtext {
+    width: 100%;
+    height: 40px;
+    background-color: #222;
+    float: left;
+    border-radius: 5px 5px 0 0;
+    padding: 0 10px;
+
+    span {
+        width: initial;
+        float: left;
+        color: #fff;
+        line-height: 40px;
+        font-size: 14px;
+    }
+}
+
+.all_input1 {
+    width: 100%;
+    height: 30px;
+    float: right;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0 0 0 10px;
+    background-color: #fff;
+    border: 1px #aaa solid;
+}
+
+.pt1_b1_inforbtn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    color: #004f83 !important;
+}
+
+.pt1_b2_folderbtn {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    right: 65px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px #aaa solid;
+    color: #f50;
+}
+
+.pt1_b2_deletebtn {
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px #aaa solid;
+    color: #f00;
 }
 
 .edit_pt_box {
@@ -1993,6 +2401,12 @@ ul {
     background-color: #f00;
     color: #fff;
     cursor: pointer;
+}
+
+a, a:hover {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .message_part {

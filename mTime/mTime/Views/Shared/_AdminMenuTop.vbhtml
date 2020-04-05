@@ -24,7 +24,7 @@
             <div class="pt2_b_inbtnefflight"></div>
         </a>
 
-        <a href="" class="pt2_b_btn" id="hdr_btn5">
+        <a href="@Url.Action("Index", "System")" class="pt2_b_btn" id="hdr_btn5">
             <div class="pt2_b_inbtn">System</div>
             <div class="pt2_b_inbtneff"></div>
             <div class="pt2_b_inbtnefflight"></div>

@@ -177,14 +177,19 @@
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="Controllers\AdministrationController.vb" />
     <Compile Include="Controllers\CompanyController.vb" />
+    <Compile Include="Controllers\AttendanceController.vb" />
     <Compile Include="Controllers\DepartmentController.vb" />
+    <Compile Include="Controllers\FAQController.vb" />
     <Compile Include="Controllers\HyperlinkController.vb" />
-    <Compile Include="Controllers\HolidayController.vb" />
+    <Compile Include="Controllers\HOLIDAYController.vb" />
+    <Compile Include="Controllers\Login.vb" />
     <Compile Include="Controllers\MaintenanceController.vb" />
     <Compile Include="Controllers\PoorAttendanceReasonController.vb" />
     <Compile Include="Controllers\AttendanceStatusController.vb" />
+    <Compile Include="Controllers\PrivateMessageController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
     <Compile Include="Controllers\StaffController.vb" />
+    <Compile Include="Controllers\SystemController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -227,8 +232,11 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
     <Content Include="Content\Other_style.css" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -238,6 +246,12 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Content\style.map" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -248,8 +262,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <Content Include="img\htr_bg.jpg" />
+    <Content Include="img\malaysia_logo.png" />
+    <Content Include="img\malaysia_logo_s.png" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\srs.js" />
     <Content Include="Views\Hyperlink\Create.vbhtml" />
     <Content Include="Views\Hyperlink\Edit.vbhtml" />
     <Content Include="Views\Hyperlink\Delete.vbhtml" />
@@ -382,6 +400,8 @@
     <Content Include="Views\FAQ\Index.vbhtml" />
     <Content Include="Views\Department\Create.vbhtml" />
     <Content Include="Views\Staff\Create.vbhtml" />
+    <Content Include="Views\Holiday\Index.vbhtml" />
+    <Content Include="Views\System\Index.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

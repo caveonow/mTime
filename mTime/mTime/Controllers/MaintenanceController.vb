@@ -26,13 +26,36 @@ Namespace Controllers
 
         'End Function
 
-        Function Holiday() As ActionResult
+        Function Holiday(ByVal yearFilter As String) As ActionResult
+            ' get result from db
+            Dim listing = db.HOLIDAY.SortBy("FROM").ToList
 
-            Dim sortedList = db.HOLIDAY.SortBy("FROM").ToList
+            ' get all available year for dropdown
+            Dim yearListing As New List(Of Integer)
 
-            '# Return updated dataset
-            Return View(sortedList)
+            For Each listingItem As model.HOLIDAY In listing
+                yearListing.Add(Year(listingItem.FROM))
+            Next
 
+            ' add current year if is empty
+            If IsNothing(yearListing) Or yearListing.Count <= 0 Then
+                yearListing.Add(System.DateTime.Now.Year)
+            Else
+                yearListing = yearListing.Distinct().ToList()
+            End If
+
+            ' Filter the year
+            If Not IsNothing(yearFilter) And Not yearFilter = "All" Then
+                listing = listing.Where(Function(h) Year(h.FROM) = yearFilter).ToList()
+            End If
+
+            ' add necessary viewbag
+            ViewBag.TotalHolidays = listing.Count
+            ViewBag.yearListing = yearListing
+            ViewBag.yearFilter = yearFilter
+
+            ' Return with paging
+            Return View(listing)
         End Function
 
         Function Department() As ActionResult
@@ -61,8 +84,10 @@ Namespace Controllers
             Return View(sortedList)
         End Function
 
-        Function WorkingShift() As ActionResult
-            Return View()
+        Function Shift() As ActionResult
+            Dim sortedList = db.SHIFT.SortBy("SHIFTID").ToList
+
+            Return View(sortedList)
         End Function
 
         Function LateTolerant() As ActionResult
