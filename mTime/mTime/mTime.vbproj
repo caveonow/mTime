@@ -188,12 +188,10 @@
     <Compile Include="Controllers\AttendanceStatusController.vb" />
     <Compile Include="Controllers\PrivateMessageController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
-    <Compile Include="Controllers\StaffController.vb" />
     <Compile Include="Controllers\SystemController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\StaffModel.vb" />
     <Compile Include="Models\CompanyModel.vb" />
     <Compile Include="Models\DepartmentModel.vb" />
     <Compile Include="Models\MasterDB.vb" />
