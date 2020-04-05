@@ -17,21 +17,21 @@ End Code
             <div class="ctr_holiday_addbox">
                 <div class="hlday_addbox_part">
                     <div class="hlday_addbox_pt_tt">@Html.DisplayNameFor(Function(model) model.HOLIDAYNAME)</div>
-                    <div class="hlday_addbox_pt_ttbox">
+                    <div class="hlday_addbox_pt_ttbox events_none">
                         @Html.DisplayFor(Function(model) model.HOLIDAYNAME)
                     </div>
                 </div>
 
                 <div class="hlday_addbox_part">
                     <div class="hlday_addbox_pt_tt">@Html.DisplayNameFor(Function(model) model.FROM)</div>
-                    <div class="hlday_addbox_pt_ttbox">
+                    <div class="hlday_addbox_pt_ttbox events_none">
                         @Html.DisplayFor(Function(model) model.FROM)
                     </div>
                 </div>
 
                 <div class="hlday_addbox_part">
                     <div class="hlday_addbox_pt_tt">@Html.DisplayNameFor(Function(model) model.UNTIL)</div>
-                    <div class="hlday_addbox_pt_ttbox">
+                    <div class="hlday_addbox_pt_ttbox events_none">
                         @Html.DisplayFor(Function(model) model.UNTIL)
                     </div>
                 </div>

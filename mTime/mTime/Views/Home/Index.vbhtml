@@ -50,7 +50,9 @@ End Code
 
     <div class="ctr_rightpart_home">
         <div class="rtpt_home_box">
-            <div class="rtpt_home_b_img"></div>
+            @*<div class="rtpt_home_b_img"></div>*@
+
+            <img src="../../img/htr_bg.jpg"  width="100%">
 
             <div class="rtpt_home_b_tt">
                 selamat datang ke MyTie sistem kedatangan. Andb dibenarkan mencetak and membetulkan record kedatangan anda di sini.

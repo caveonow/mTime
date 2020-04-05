@@ -1,4 +1,4 @@
-﻿.rtpt_deletebtn {
+﻿/*.rtpt_deletebtn {
     width: initial;
     height: 30px;
     line-height: 30px;
@@ -14,7 +14,6 @@
 
 .body_center .bd_ctr_rightpart .ctr_rtpt_box {
     height:515px !important;
-    /*overflow: auto;*/
 }
 
 
@@ -56,7 +55,6 @@
 
 
 
-/*New Class*/
 
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_checkbox input {
     width: 30px !important;
@@ -85,9 +83,6 @@
     font-size: 14px;
 }
 
-/*.body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part input {
-    width: 330px !important;
-}*/
 
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .checkbox1 {
     float: left;
@@ -128,4 +123,4 @@ td .check-box {
     height: 17px;
     margin: 0 0 -4px 0;
     float: left;
-}
+}*/
