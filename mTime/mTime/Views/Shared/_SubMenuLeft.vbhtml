@@ -15,8 +15,8 @@
             </div>
             <div id="innav1_boxeff" class="display_none">Hyperlink</div>
         </a>
-
-        <a href="@Url.Action("Index", "Holiday")" id="leftnav2" class="ctr_innav1_btn">
+        
+        <a href="@Url.Action("Holiday", "Maintenance")" id="leftnav2" class="ctr_innav1_btn">
             <div class="fa fa-sun-o innav1_inbtn_icon"></div>
             <div class="innav1_inbtn_tt">
                 <span>Holiday</span>
@@ -56,7 +56,7 @@
             <div id="innav1_boxeff" class="display_none">Attendance Status</div>
         </a>
 
-        <a href="@Url.Action("WorkingShift", "Maintenance")" id="leftnav7" class="ctr_innav1_btn">
+        <a href="@Url.Action("Shift", "Maintenance")" id="leftnav7" class="ctr_innav1_btn">
             <div class="fa fa-briefcase innav1_inbtn_icon"></div>
             <div class="innav1_inbtn_tt">
                 <span>Working Shift</span>
