@@ -74,6 +74,7 @@ $(function () {
     pull.on("click", function (e) {
         e.preventDefault();
         $(e.target.parentElement.nextElementSibling).slideToggle();
+        $(e.target).toggleClass('fa-angle-right');
         $(e.target).toggleClass('fa-angle-down');
     });
 });

@@ -10,35 +10,29 @@ End Code
 
     <div class="bd_ctr_rightpart">
         <div id="addbox-01" class="ctr_rtpt_box">
-            <div class="ctr_rtpt_b_ht">
+            <div class="inbox_haedtext">
                 <span>Holiday :: Create</span>
             </div>
 
             @Using (Html.BeginForm())
                 @Html.AntiForgeryToken()
-                @<div class="ctr_holiday_addbox">
+                @<div class="ctr_holiday_addbox bg_bd1_radius">
                     <div class="hlday_addbox_part">
                         <div class="hlday_addbox_pt_tt">Holiday Name :</div>
-                        <div class="">
-                            @Html.EditorFor(Function(model) model.HOLIDAYNAME, New With {.htmlAttributes = New With {.class = "input_field_fill_available"}})
-                            @Html.ValidationMessageFor(Function(model) model.HOLIDAYNAME, "", New With {.class = "text-danger"})
-                        </div>
+                        @Html.EditorFor(Function(model) model.HOLIDAYNAME, New With {.htmlAttributes = New With {.class = "all_input1"}})
+                        @Html.ValidationMessageFor(Function(model) model.HOLIDAYNAME, "", New With {.class = "text-danger"})
                     </div>
 
                     <div class="hlday_addbox_part">
                         <div class="hlday_addbox_pt_tt">Date From :</div>
-                        <div class="">
-                            @Html.EditorFor(Function(model) model.FROM, New With {.htmlAttributes = New With {.class = "input_field_fill_available"}})
-                            @Html.ValidationMessageFor(Function(model) model.FROM, "", New With {.class = "text-danger"})
-                        </div>
+                        @Html.EditorFor(Function(model) model.FROM, New With {.htmlAttributes = New With {.class = "all_input1"}})
+                        @Html.ValidationMessageFor(Function(model) model.FROM, "", New With {.class = "text-danger"})
                     </div>
 
                     <div class="hlday_addbox_part">
                         <div class="hlday_addbox_pt_tt">Date To :</div>
-                        <div class="">
-                            @Html.EditorFor(Function(model) model.UNTIL, New With {.htmlAttributes = New With {.class = "input_field_fill_available"}})
-                            @Html.ValidationMessageFor(Function(model) model.UNTIL, "", New With {.class = "text-danger"})
-                        </div>
+                        @Html.EditorFor(Function(model) model.UNTIL, New With {.htmlAttributes = New With {.class = "all_input1"}})
+                        @Html.ValidationMessageFor(Function(model) model.UNTIL, "", New With {.class = "text-danger"})
                     </div>
 
                     <div class="hlday_addbox_partbtn">

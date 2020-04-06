@@ -60,6 +60,12 @@ html, body {
     overflow: auto;
 }
 
+.bg_bd1_radius {
+    background-color: #fff;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+}
+
 .bg_color_w {
     width: 100%;
     height: 100%;
@@ -76,15 +82,28 @@ html, body {
     height: 17px !important;
     margin: 0 0;
 }
+input[type="radio"], input[type="checkbox"] {
+    float: left;
+    width: 17px !important;
+    height: 17px !important;
+    margin: 0 0;
+}
+
+.checkinbox {
+    width: 100%;
+    height: 30px;
+    float: left;
+    padding: 8px 0 0 0;
+}
 
 input {
     border: 0;
 }
 
 .events_none {
-    background-color: #dddd;
+    background-color: #ddd !important;
     border: 1px #aaa solid;
-    pointer-events: none;
+    pointer-events: none !important;
 }
 
 td {
@@ -1501,18 +1520,19 @@ td {
                     height: initial;
                     float: left;
                     margin: 0 0 10px 0;
+                    padding: 0 0 0 160px;
+                    position: relative;
 
                     .rtpt_addbox_pt_tt {
                         width: 150px;
                         height: 30px;
                         text-align: right;
-                        float: left;
-                        padding: 0 10px;
+                        position: absolute;
+                        left: 0;
                         line-height: 30px;
                         font-size: 14px;
                     }
-
-                    input {
+                    /*input {
                         width: 370px;
                         height: 30px;
                         float: right;
@@ -1521,8 +1541,7 @@ td {
                         padding: 0 10px;
                         background-color: #fff;
                         border: 1px #aaa solid;
-                    }
-
+                    }*/
                     .rtpt_addbox_pt_error {
                         width: 100%;
                         line-height: 20px;
@@ -1532,14 +1551,6 @@ td {
                         text-align: right;
                     }
 
-                    .rtpt_addbox_checkbox {
-                        input {
-                            width: 30px !important;
-                            float: left;
-                            margin: 0 0 0 10px;
-                            border: 1px #aaa solid !important;
-                        }
-                    }
                 }
 
                 .rtpt_addbox_partbtn {
@@ -1563,19 +1574,21 @@ td {
                     height: initial;
                     float: left;
                     margin: 0 0 10px 0;
+                    padding: 0 0 0 170px;
+                    position: relative;
 
                     .hlday_addbox_pt_tt {
-                        width: 150px;
+                        width: 160px;
                         height: 30px;
                         text-align: right;
-                        float: left;
-                        padding: 0 10px;
+                        position: absolute;
+                        left: 0;
                         line-height: 30px;
                         font-size: 14px;
                         font-weight: normal;
                     }
 
-                    input {
+                    /*input {
                         width: 370px;
                         height: 30px;
                         float: right;
@@ -1584,7 +1597,7 @@ td {
                         padding: 0 10px;
                         background-color: #fff;
                         border: 1px #aaa solid;
-                    }
+                    }*/
                     /*.hlday_addbox_pt_error {
                         width: 100%;
                         line-height: 20px;
@@ -1674,7 +1687,7 @@ td {
     border: 1px #ccc solid;
     margin: 0 0 10px 10px;
     overflow: auto;
-    position:relative;
+    position: relative;
 
     .stbox_lt_htb {
         width: 100%;
@@ -1776,7 +1789,7 @@ td {
         float: left;
         position: absolute;
         padding: 0 10px;
-        bottom:10px;
+        bottom: 10px;
     }
 }
 
@@ -1842,7 +1855,6 @@ td {
         }
     }
 }
-
 
 .systembox_rt2 {
     width: 49%;
@@ -2110,8 +2122,8 @@ tbody {
 
 .ctr_rtpt_popupbox {
     width: 100%;
-    height: 100%;
-    position: relative;
+    height: 515px;
+    position: absolute;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.35);
 
@@ -2179,7 +2191,7 @@ tbody {
 ul {
     list-style-type: none;
     margin: 31px 0 0 0;
-    display: none;
+    display: block;
     background-color: #fff;
 
     li {
@@ -2195,6 +2207,13 @@ ul {
             margin: 0 10px 0 20px;
             font-size: 16px;
             color: #09af94;
+            float: left;
+        }
+
+        .li_text {
+            line-height: 18px;
+            float: left;
+            padding: 0 5px;
         }
     }
 
@@ -2203,7 +2222,7 @@ ul {
     }
 }
 
-.li_btn_rename {
+.li_btn_rename, .li_btn_rename:hover {
     width: initial;
     font-size: 12px;
     display: initial;
@@ -2215,7 +2234,7 @@ ul {
     cursor: pointer;
 }
 
-.li_btn_delete {
+.li_btn_delete, .li_btn_delete:hover {
     width: initial;
     font-size: 12px;
     display: initial;

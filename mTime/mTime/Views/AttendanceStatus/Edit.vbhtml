@@ -23,55 +23,41 @@ End Code
                     @Html.HiddenFor(Function(Model) Model.UPDATEDBY)
                     @Html.HiddenFor(Function(Model) Model.UPDATEDON)
 
-                    <div Class="ctr_rtpt_b_ht">
+                    <div Class="inbox_haedtext">
                         <span> Attendance Status :: Edit</span>
                     </div>
 
                     <div Class="ctr_rtpt_addbox">
                         <div Class="rtpt_addbox_part">
-                            <div class="">
-                                <div Class="rtpt_addbox_pt_tt">Attendance Code :</div>
+                            <div Class="rtpt_addbox_pt_tt">Attendance Code :</div>
 
-                                @Html.TextBoxFor(Function(model) model.ATTENDANCESTATUSID, New With {.Readonly = True, .Style = "background-color:#eee; pointer-events: none;"})
-
-                            </div>
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-
-                            <div class="">
-                                <div Class="rtpt_addbox_pt_tt">Description :</div>
-
-                                @Html.TextBoxFor(Function(model) model.DESCRIPTION)
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.DESCRIPTION)
-                                </div>
-                            </div>
+                            @Html.TextBoxFor(Function(model) model.ATTENDANCESTATUSID, New With {.Readonly = True, .class = "all_input1 events_none"})
 
                         </div>
 
                         <div Class="rtpt_addbox_part">
+                            <div Class="rtpt_addbox_pt_tt">Description :</div>
 
-                            <div class="">
-                                <div Class="rtpt_addbox_pt_tt">Condition :</div>
-
-                                @Html.TextBoxFor(Function(model) model.CONDITION)
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.CONDITION)
-                                </div>
+                            @Html.TextBoxFor(Function(model) model.DESCRIPTION, New With {.class = "all_input1"})
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.DESCRIPTION)
                             </div>
-
                         </div>
 
                         <div Class="rtpt_addbox_part">
+                            <div Class="rtpt_addbox_pt_tt">Condition :</div>
 
-                            <div class="">
-                                <div Class="rtpt_addbox_pt_tt">In Used :</div>
-                                <div class="rtpt_addbox_checkbox">
-                                    @Html.CheckBoxFor(Function(model) model.ISINUSED)
-                                </div>                            
+                            @Html.TextBoxFor(Function(model) model.CONDITION, New With {.class = "all_input1"})
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.CONDITION)
                             </div>
+                        </div>
 
+                        <div Class="rtpt_addbox_part">
+                            <div Class="rtpt_addbox_pt_tt">In Used :</div>
+                            <div class="checkinbox">
+                                @Html.CheckBoxFor(Function(model) model.ISINUSED)
+                            </div>
                         </div>
 
                         <div Class="rtpt_addbox_partbtn">
@@ -139,5 +125,12 @@ End Code
             return false;
         });
     });
+
+
+    //Nav Top Menu Part1
+    $("#hdr_btn4").addClass("pt2_b_btneff");
+
+    //Nav Left Menu Part1
+    $("#leftnav6").addClass("ctr_innav1_btneff");
 
 </script>

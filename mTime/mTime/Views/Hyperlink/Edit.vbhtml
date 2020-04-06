@@ -1,5 +1,4 @@
-﻿
-@ModelType model.HYPERLINK
+﻿@ModelType model.HYPERLINK
 
 @Code
     ViewData("Title") = "Edit"
@@ -10,7 +9,7 @@ End Code
 <div class="body_center">
     @Html.Partial("_SubMenuLeft")
     <div class="bd_ctr_rightpart">
-        <div id="rtpt_box-01" class="ctr_rtpt_box">
+        <div id="rtpt_box-01" class="ctr_rtpt_box bg_bd1_radius">
 
             @Using (Html.BeginForm())
 
@@ -24,33 +23,25 @@ End Code
                     @Html.HiddenFor(Function(Model) Model.UPDATEDBY)
                     @Html.HiddenFor(Function(Model) Model.UPDATEDON)
 
-                    <div Class="ctr_rtpt_b_ht">
+                    <div Class="inbox_haedtext">
                         <span> Hyperlink :: Edit</span>
                     </div>
 
-                    <div Class="ctr_rtpt_addbox">
+                    <div Class="ctr_rtpt_addbox bg_bd1_radius">
                         <div Class="rtpt_addbox_part">
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">Title :</div>
+                            <div Class="rtpt_addbox_pt_tt">Title :</div>
 
-                                @Html.TextBoxFor(Function(model) model.TITLE, New With {.Readonly = True, .Style = "background-color:#eee; pointer-events: none;"})
-
-                            </div>
+                            @Html.TextBoxFor(Function(model) model.TITLE, New With {.Readonly = True, .Class = "all_input1 events_none"})
                         </div>
 
                         <div Class="rtpt_addbox_part">
+                            <div Class="rtpt_addbox_pt_tt">URL :</div>
 
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">URL :</div>
-
-                                @Html.TextBoxFor(Function(model) model.URL, New With {.maxlength = 200})
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.URL)
-                                </div>
+                            @Html.TextBoxFor(Function(model) model.URL, New With {.maxlength = 200, .class = "all_input1"})
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.URL)
                             </div>
-
                         </div>
-
 
                         <div Class="rtpt_addbox_partbtn">
                             <a href="@Url.Action("Index", "Maintenance")">
@@ -63,15 +54,11 @@ End Code
                                     Save
                                 </div>
                             </a>
-
                         </div>
-
                     </div>
-
                 </div>
 
             End Using
-
 
             @Code
 
@@ -84,7 +71,6 @@ End Code
                     </script>
                 End If
             End Code
-
 
             <div id="" Class="ctr_rtpt_popupbox display_none save_ok_popup">
                 <div Class="rtpt_popupbox_inb">
@@ -99,11 +85,8 @@ End Code
                     <div Class="popupbox_inb_tt">Save failed</div>
                 </div>
             </div>
-
         </div>
-
     </div>
-
 </div>
 
 <div class="bg_color_w"></div>
@@ -117,17 +100,9 @@ End Code
         });
     });
 
+    //Nav Top Menu Part1
+    $("#hdr_btn4").addClass("pt2_b_btneff");
+
+    //Nav Left Menu Part1
+    $("#leftnav1").addClass("ctr_innav1_btneff");
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,5 +1,4 @@
-﻿
-@ModelType model.HYPERLINK
+﻿@ModelType model.HYPERLINK
 
 @Code
     ViewData("Title") = "Delete"
@@ -20,29 +19,21 @@ End Code
 
                     @Html.HiddenFor(Function(Model) Model.HYPERLINKID)
 
-                    <div Class="ctr_rtpt_b_ht">
+                    <div Class="inbox_haedtext">
                         <span> Hyperlink :: Delete</span>
                     </div>
 
-                    <div Class="ctr_rtpt_addbox">
+                    <div Class="ctr_rtpt_addbox bg_bd1_radius">
                         <div Class="rtpt_addbox_part">
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">Title :</div>
+                            <div Class="rtpt_addbox_pt_tt">Title :</div>
 
-                                @Html.TextBoxFor(Function(model) model.TITLE, New With {.Readonly = True, .Style = "background-color:lightgrey"})
-
-                            </div>
+                            @Html.TextBoxFor(Function(model) model.TITLE, New With {.Readonly = True, .class = "all_input1"})
                         </div>
 
                         <div Class="rtpt_addbox_part">
+                            <div Class="rtpt_addbox_pt_tt">URL :</div>
 
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">URL :</div>
-
-                                @Html.TextBoxFor(Function(model) model.URL, New With {.Readonly = True, .Style = "background-color:lightgrey"})
-
-                            </div>
-
+                            @Html.TextBoxFor(Function(model) model.URL, New With {.Readonly = True, .class = "all_input1"})
                         </div>
 
                         <div Class="rtpt_addbox_partbtn">
@@ -76,59 +67,40 @@ End Code
                                                     return false;
                                                 });
                                             });
-
                                         </script>
-
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
 
             End Using
         </div>
-
     </div>
-
 </div>
 
 <div class="bg_color_w"></div>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    //$(function () {
+    //    $("#delete").click(function () {
 
+    //        if (confirm('delete ?') == true) {
 
+    //            document.forms[0].submit();
 
-@*<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("#delete").click(function () {
+    //        }
 
-                if (confirm('Delete ?') == true) {
+    //        return false;
 
-                    document.forms[0].submit();
+    //    });
+    //});
 
-                }
+    //Nav Top Menu Part1
+    $("#hdr_btn4").addClass("pt2_b_btneff");
 
-
-                return false;
-
-            });
-        });
-
-    </script>*@
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //Nav Left Menu Part1
+    $("#leftnav1").addClass("ctr_innav1_btneff");
+</script>

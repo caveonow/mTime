@@ -401,6 +401,11 @@
     <Content Include="Views\Staff\Create.vbhtml" />
     <Content Include="Views\Holiday\Index.vbhtml" />
     <Content Include="Views\System\Index.vbhtml" />
+    <Content Include="Views\Department\Delete.vbhtml" />
+    <Content Include="Views\Department\Edit.vbhtml" />
+    <Content Include="Views\Employee\Index.vbhtml" />
+    <Content Include="Views\_ViewStart.vbhtml" />
+    <Content Include="Views\Maintenance\Holiday.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

@@ -16,48 +16,37 @@ End Code
                 @Html.AntiForgeryToken()
                 @<div class="form-horizontal">
 
-                    <div Class="ctr_rtpt_b_ht">
+                    <div Class="inbox_haedtext">
                         <span> Attendance Status :: Add</span>
                     </div>
 
-                    <div Class="ctr_rtpt_addbox">
+                    <div Class="ctr_rtpt_addbox bg_bd1_radius">
                         <div Class="rtpt_addbox_part">
-                            <div class="">
-                                <div Class="rtpt_addbox_pt_tt">Attendance Code :</div>
+                                                           <div Class="rtpt_addbox_pt_tt">Attendance Code :</div>
 
-                                @Html.TextBoxFor(Function(model) model.ATTENDANCESTATUSID, New With {.maxlength = 20})
+                                @Html.TextBoxFor(Function(model) model.ATTENDANCESTATUSID, New With {.maxlength = 20, .class = "all_input1"})
 
                                 <div Class="rtpt_addbox_pt_error">
                                     @Html.ValidationMessageFor(Function(model) model.ATTENDANCESTATUSID)
                                 </div>
-
-                            </div>
-                        </div>
+                                                    </div>
 
                         <div Class="rtpt_addbox_part">
-
-                            <div class="">
                                 <div Class="rtpt_addbox_pt_tt">Description :</div>
 
-                                @Html.TextBoxFor(Function(model) model.DESCRIPTION, New With {.maxlength = 200})
+                                @Html.TextBoxFor(Function(model) model.DESCRIPTION, New With {.maxlength = 200, .class = "all_input1"})
                                 <div Class="rtpt_addbox_pt_error">
                                     @Html.ValidationMessageFor(Function(model) model.DESCRIPTION)
                                 </div>
-                            </div>
-
                         </div>
 
                         <div Class="rtpt_addbox_part">
-
-                            <div class="">
                                 <div Class="rtpt_addbox_pt_tt">Condition :</div>
 
-                                @Html.TextBoxFor(Function(model) model.CONDITION, New With {.maxlength = 10})
+                                @Html.TextBoxFor(Function(model) model.CONDITION, New With {.maxlength = 10, .class = "all_input1"})
                                 <div Class="rtpt_addbox_pt_error">
                                     @Html.ValidationMessageFor(Function(model) model.CONDITION)
                                 </div>
-                            </div>
-
                         </div>
                         
                         <div Class="rtpt_addbox_partbtn">
@@ -123,6 +112,12 @@ End Code
             return false;
         });
     });
+
+    //Nav Top Menu Part1
+    $("#hdr_btn4").addClass("pt2_b_btneff");
+
+    //Nav Left Menu Part1
+    $("#leftnav6").addClass("ctr_innav1_btneff");
 
 </script>
 

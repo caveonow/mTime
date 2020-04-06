@@ -9,39 +9,42 @@ End Code
 
     <div class="bd_ctr_rightpart">
         <div id="rtpt_box-01" class="ctr_rtpt_box">
-            <div class="ctr_rtpt_b_ht">
+            <div class="inbox_haedtext">
                 <span>Department</span>
 
                 @*<div class="fa fa-refresh rtpt_b_ht_refresh"></div>*@
                 <a href="@Url.Action("Create", "Department")">
-                <div id="addnewbtn" class="rtpt_ftr_addbtn filter1">Add</div>
+                    <div id="addnewbtn" class="rtpt_ftr_addbtn filter1">Add</div>
                 </a>
             </div>
 
             <div class="overflow_box">
                 <div class="bd_ctr_rightpart1">
                     <div class="ctr_rtpt1_inb">
-                        <div class="fa fa-angle-right pn_heading_btm ctr_rtpt1_icon1"></div>
+                        <div class="fa fa-angle-down fa-angle-down pn_heading_btm ctr_rtpt1_icon1"></div>
                         <div class="fa fa-building-o ctr_rtpt1_icon2"></div>
                         COMPANY1
                     </div>
 
                     <ul>
                         @Code
-                        Dim TotalCompanyCount = 1
+                            Dim TotalCompanyCount = 1
                         End Code
 
                         @For Each item In model
-                        
-                        @<li>
-                            <div class="fa fa-users li_users_icon"></div>
-                            @item.DEPARTMENTNAME
-                            @*<div id="renamebtn" class="li_btn_rename"></div>*@
-                            @Html.ActionLink("Rename", "Edit", "Department", new with {.id = item.DEPARTMENTID}, new with {.class = "li_btn_rename"})
-                            @*<div id="deletebtn" class="li_btn_delete">Delete</div>*@
-                            @Html.ActionLink("Delete", "Delete", "Department", new with {.id = item.DEPARTMENTID}, new with {.class = "li_btn_delete"})                      
-                         </li>
-                         Next item
+
+                            @<li>
+                                <div class="fa fa-users li_users_icon"></div>
+                                <div class="li_text">
+                                    @item.DEPARTMENTNAME
+                                    <b>: 10</b>
+                                </div>
+                                @*<div id="renamebtn" class="li_btn_rename"></div>*@
+                                @Html.ActionLink("Rename", "Edit", "Department", New With {.id = item.DEPARTMENTID}, New With {.class = "li_btn_rename filter1"})
+                                @*<div id="deletebtn" class="li_btn_delete">Delete</div>*@
+                                @Html.ActionLink("Delete", "Delete", "Department", New With {.id = item.DEPARTMENTID}, New With {.class = "li_btn_delete filter1"})
+                            </li>
+                        Next item
                     </ul>
                 </div>
             </div>
@@ -53,7 +56,7 @@ End Code
         </div>
 
         <div id="addbox-01" class="ctr_rtpt_box display_none">
-            <div class="ctr_rtpt_b_ht">
+            <div class="inbox_haedtext">
                 <span>Department - Add Item</span>
             </div>
 
@@ -87,3 +90,14 @@ End Code
 </div>
 
 <div class="bg_color_w"></div>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+    //Nav Top Menu Part1
+    $("#hdr_btn4").addClass("pt2_b_btneff");
+
+    //Nav Left Menu Part1
+    $("#leftnav3").addClass("ctr_innav1_btneff");
+</script>

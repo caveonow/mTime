@@ -12,7 +12,7 @@
 
         <div class="bd_ctr_rightpart">
             <div id="rtpt_box-01" class="ctr_rtpt_box">
-                <div class="ctr_rtpt_b_ht">
+                <div class="inbox_haedtext">
 
                     <span>Reason</span>
                     <a href="@Url.Action("Create", "PoorAttendanceReason" )">
@@ -100,11 +100,12 @@
                 });
             });
 
-        </script>
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script type="text/javascript">
-            $("#leftnav1").addClass("ctr_innav1_btneff");
+            //Nav Top Menu Part1
+            $("#hdr_btn4").addClass("pt2_b_btneff");
+
+            //Nav Left Menu Part1
+            $("#leftnav5").addClass("ctr_innav1_btneff");
         </script>
 
 

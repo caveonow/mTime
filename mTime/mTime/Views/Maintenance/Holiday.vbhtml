@@ -9,7 +9,7 @@ End Code
 
     <div class="bd_ctr_rightpart">
         <div id="rtpt_box-01" class="ctr_rtpt_box">
-            <div class="ctr_rtpt_b_ht">
+            <div class="inbox_haedtext">
                 <span>Holiday</span>
                 <a href="@Url.Action("Create", "Holiday")">
                     <div id="addnewbtn" class="rtpt_ftr_addbtn filter1">
@@ -35,7 +35,7 @@ End Code
                 <table>
                     <thead>
                         <tr>
-                            <th style="width: 110px;" />
+                            <th style="width: 90px;" />
                             <th style="width: 90px;">Name</th>
                             <th style="width: 150px;">Date From</th>
                             <th style="width: 150px;">Date To</th>
@@ -62,7 +62,7 @@ End Code
                                 </td>
 
                                 <td style="padding: 0 5px;">
-                                    <input type="checkbox" name="isInUsed" checked=@item.ISINUSED disabled="true"/>
+                                    <input type="checkbox" name="isInUsed" checked=@item.ISINUSED disabled="true" class="check-box"/>
                                 </td>
 
                             </tr>
@@ -104,5 +104,5 @@ End Code
     $("#hdr_btn4").addClass("pt2_b_btneff");
 
     //Nav Left Menu Part1
-    $("#leftnav1").addClass("ctr_innav1_btneff");
+    $("#leftnav2").addClass("ctr_innav1_btneff");
 </script>

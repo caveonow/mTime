@@ -25,34 +25,30 @@ End Code
                     @Html.HiddenFor(Function(Model) Model.UPDATEDBY)
                     @Html.HiddenFor(Function(Model) Model.UPDATEDON)
 
-                    <div Class="ctr_rtpt_b_ht">
+                    <div Class="inbox_haedtext">
                         <span> Reason :: Edit</span>
                     </div>
 
-                    <div Class="ctr_rtpt_addbox">
+                    <div Class="ctr_rtpt_addbox bg_bd1_radius">
                         <div Class="rtpt_addbox_part">
-                            <div class="">
-                                <div Class="rtpt_addbox_pt_tt">Department ID :</div>
-                                @Html.TextBoxFor(Function(model) model.DEPARTMENTID, New With {.Readonly = True, .Style = "background-color:#eee; pointer-events: none;"})
+                                                           <div Class="rtpt_addbox_pt_tt">Department ID :</div>
+                                @Html.TextBoxFor(Function(model) model.DEPARTMENTID, New With {.Readonly = True, .class = "all_input1 events_none"})
                                 @*@Html.TextBoxFor(Function(model) model.POORATTENDANCEREASONID, New With {.Disabled = True})*@
-                            </div>
-                        </div>
+                                                    </div>
 
                         <div Class="rtpt_addbox_part">
-                            <div class="">
-                                <div Class="rtpt_addbox_pt_tt">Department Name :</div>
-                                @Html.TextBoxFor(Function(model) model.DEPARTMENTNAME)
+                                                          <div Class="rtpt_addbox_pt_tt">Department Name :</div>
+                                @Html.TextBoxFor(Function(model) model.DEPARTMENTNAME, New With {.class = "all_input1"})
                                 <div Class="rtpt_addbox_pt_error">
                                     @Html.ValidationMessageFor(Function(model) model.DEPARTMENTNAME)
                                 </div>
-                            </div>
-                        </div>
+                                                </div>
 
                         <div Class="rtpt_addbox_part">
                             <div class="">
                                 <div Class="rtpt_addbox_pt_tt">In Used?:</div>
-                                <div class="rtpt_addbox_checkbox">
-                                    @Html.CheckBoxFor(Function(model) model.ISINUSED)
+                                <div class="checkinbox">
+                                    @Html.CheckBoxFor(Function(model) model.ISINUSED, New With {.class = "check-box"})
                                 </div>
                             </div>
                         </div>
@@ -119,4 +115,9 @@ End Code
         });
     });
 
+    //Nav Top Menu Part1
+    $("#hdr_btn4").addClass("pt2_b_btneff");
+
+    //Nav Left Menu Part1
+    $("#leftnav3").addClass("ctr_innav1_btneff");
 </script>

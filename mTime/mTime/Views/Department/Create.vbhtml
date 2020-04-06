@@ -16,43 +16,37 @@ End Code
                 @Html.AntiForgeryToken()
                 @<div class="form-horizontal">
 
-                    <div Class="ctr_rtpt_b_ht">
+                    <div Class="inbox_haedtext">
                         <span> Department :: Add</span>
                     </div>
 
-                    <div Class="ctr_rtpt_addbox">
+                    <div Class="ctr_rtpt_addbox bg_bd1_radius">
                         <div Class="rtpt_addbox_part">
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">Department ID: </div>
+                            <div Class="rtpt_addbox_pt_tt">Department ID: </div>
 
-                                @Html.TextBoxFor(Function(model) model.DEPARTMENTID, New With {.maxlength = 20})
+                            @Html.TextBoxFor(Function(model) model.DEPARTMENTID, New With {.maxlength = 20, .class = "all_input1"})
 
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.DEPARTMENTID)
-                                </div>
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.DEPARTMENTID)
                             </div>
                         </div>
 
                         <div Class="rtpt_addbox_part">
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">Department: </div>
+                            <div Class="rtpt_addbox_pt_tt">Department: </div>
 
-                                @Html.TextBoxFor(Function(model) model.DEPARTMENTNAME, New With {.maxlength = 100})
+                            @Html.TextBoxFor(Function(model) model.DEPARTMENTNAME, New With {.maxlength = 100, .class = "all_input1"})
 
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.DEPARTMENTNAME)
-                                </div>
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.DEPARTMENTNAME)
                             </div>
                         </div>
 
                         <div Class="rtpt_addbox_part">
-
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">Is Used?:</div>
-
-                                @Html.CheckBoxFor(Function(model) model.ISINUSED)
-                                <div Class="rtpt_addbox_pt_error">
-                                </div>
+                            <div Class="rtpt_addbox_pt_tt">Is Used?:</div>
+                            <div class="checkinbox">
+                                @Html.CheckBoxFor(Function(model) model.ISINUSED, New With {.class = "check-box"})
+                            </div>
+                            <div Class="rtpt_addbox_pt_error">
                             </div>
                         </div>
 
@@ -130,4 +124,10 @@ End Code
         };*@
 
     });
+
+    //Nav Top Menu Part1
+    $("#hdr_btn4").addClass("pt2_b_btneff");
+
+    //Nav Left Menu Part1
+    $("#leftnav3").addClass("ctr_innav1_btneff");
 </script>

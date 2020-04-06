@@ -10,48 +10,41 @@ End Code
 
     <div class="bd_ctr_rightpart">
         <div id="addbox-01" class="ctr_rtpt_box">
-            <div class="ctr_rtpt_b_ht">
+            <div class="inbox_haedtext">
                 <span>Holiday :: Edit</span>
             </div>
 
             @Using (Html.BeginForm())
                 @Html.AntiForgeryToken()
 
-                @<div class="ctr_holiday_addbox">
-                    <hr />
+                @<div class="ctr_holiday_addbox bg_bd1_radius">
                     @Html.ValidationSummary(True, "", New With {.class = "text-danger"})
                     @Html.HiddenFor(Function(model) model.HOLIDAYID)
 
                     <div class="hlday_addbox_part">
                         @Html.LabelFor(Function(model) model.HOLIDAYNAME, htmlAttributes:=New With {.class = "hlday_addbox_pt_tt"})
-                        <div class="">
-                            @Html.EditorFor(Function(model) model.HOLIDAYNAME, New With {.htmlAttributes = New With {.class = ""}})
-                            @Html.ValidationMessageFor(Function(model) model.HOLIDAYNAME, "", New With {.class = "text-danger"})
-                        </div>
+                        @Html.EditorFor(Function(model) model.HOLIDAYNAME, New With {.htmlAttributes = New With {.class = "all_input1"}})
+                        @Html.ValidationMessageFor(Function(model) model.HOLIDAYNAME, "", New With {.class = "text-danger"})
                     </div>
 
                     <div class="hlday_addbox_part">
                         @Html.LabelFor(Function(model) model.FROM, htmlAttributes:=New With {.class = "hlday_addbox_pt_tt"})
-                        <div class="">
-                            @Html.EditorFor(Function(model) model.FROM, New With {.htmlAttributes = New With {.class = ""}})
-                            @Html.ValidationMessageFor(Function(model) model.FROM, "", New With {.class = "text-danger"})
-                        </div>
+                        @Html.EditorFor(Function(model) model.FROM, New With {.htmlAttributes = New With {.class = "all_input1"}})
+                        @Html.ValidationMessageFor(Function(model) model.FROM, "", New With {.class = "text-danger"})
                     </div>
 
                     <div class="hlday_addbox_part">
                         @Html.LabelFor(Function(model) model.UNTIL, htmlAttributes:=New With {.class = "hlday_addbox_pt_tt"})
-                        <div class="">
-                            @Html.EditorFor(Function(model) model.UNTIL, New With {.htmlAttributes = New With {.class = ""}})
-                            @Html.ValidationMessageFor(Function(model) model.UNTIL, "", New With {.class = "text-danger"})
-                        </div>
+                        @Html.EditorFor(Function(model) model.UNTIL, New With {.htmlAttributes = New With {.class = "all_input1"}})
+                        @Html.ValidationMessageFor(Function(model) model.UNTIL, "", New With {.class = "text-danger"})
                     </div>
 
                     <div class="hlday_addbox_part">
                         @Html.LabelFor(Function(model) model.ISINUSED, htmlAttributes:=New With {.class = "hlday_addbox_pt_tt"})
-                        <div class="">
-                            @Html.EditorFor(Function(model) model.ISINUSED, New With {.htmlAttributes = New With {.class = "checkbox1"}})
-                            @Html.ValidationMessageFor(Function(model) model.ISINUSED, "", New With {.class = "text-danger"})
+                        <div class="checkinbox">
+                            @Html.EditorFor(Function(model) model.ISINUSED, New With {.htmlAttributes = New With {.class = ""}})
                         </div>
+                        @Html.ValidationMessageFor(Function(model) model.ISINUSED, "", New With {.class = "text-danger"})
                     </div>
 
                     <div class="hlday_addbox_part" style="display: none">

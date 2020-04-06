@@ -17,61 +17,47 @@ End Code
                 @Html.AntiForgeryToken()
                 @<div class="form-horizontal">
 
-                    <div Class="ctr_rtpt_b_ht">
+                    <div Class="inbox_haedtext">
                         <span> Reason :: Add</span>
                     </div>
 
-                    <div Class="ctr_rtpt_addbox">
+                    <div Class="ctr_rtpt_addbox bg_bd1_radius">
                         <div Class="rtpt_addbox_part">
-                            <div class="">
-                                <div Class="rtpt_addbox_pt_tt">Reason Code :</div>
+                            <div Class="rtpt_addbox_pt_tt">Reason Code :</div>
 
-                                @Html.TextBoxFor(Function(model) model.POORATTENDANCEREASONID, New With {.maxlength = 20})
+                            @Html.TextBoxFor(Function(model) model.POORATTENDANCEREASONID, New With {.maxlength = 20, .class = "all_input1"})
 
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.POORATTENDANCEREASONID)
-                                </div>
-
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.POORATTENDANCEREASONID)
                             </div>
                         </div>
 
                         <div Class="rtpt_addbox_part">
+                            <div Class="rtpt_addbox_pt_tt">Description :</div>
 
-                            <div class="">
-                                <div Class="rtpt_addbox_pt_tt">Description :</div>
-
-                                @Html.TextBoxFor(Function(model) model.DESCRIPTION, New With {.maxlength = 200})
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.DESCRIPTION)
-                                </div>
+                            @Html.TextBoxFor(Function(model) model.DESCRIPTION, New With {.maxlength = 200, .class = "all_input1"})
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.DESCRIPTION)
                             </div>
-
                         </div>
 
                         <div Class="rtpt_addbox_part">
-
-                            <div class="">
-                                <div Class="rtpt_addbox_pt_tt">For Late-In :</div>
-                                <div class="rtpt_addbox_checkbox">
-                                    @Html.CheckBoxFor(Function(model) model.ISFORLATEIN)
-                                </div>
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.ISFORLATEIN)
-                                </div>
+                            <div Class="rtpt_addbox_pt_tt">For Late-In :</div>
+                            <div class="checkinbox">
+                                @Html.CheckBoxFor(Function(model) model.ISFORLATEIN)
                             </div>
-
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.ISFORLATEIN)
+                            </div>
                         </div>
 
                         <div Class="rtpt_addbox_part">
-
-                            <div class="">
-                                <div Class="rtpt_addbox_pt_tt">For Early-Out :</div>
-                                <div class="rtpt_addbox_checkbox">
-                                    @Html.CheckBoxFor(Function(model) model.ISFOREARLYOUT)
-                                </div>
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.ISFOREARLYOUT)
-                                </div>
+                            <div Class="rtpt_addbox_pt_tt">For Early-Out :</div>
+                            <div class="checkinbox">
+                                @Html.CheckBoxFor(Function(model) model.ISFOREARLYOUT)
+                            </div>
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.ISFOREARLYOUT)
                             </div>
 
                         </div>
