@@ -1342,13 +1342,13 @@ td .check-box {
         padding: 0 10px;
         position: absolute;
         bottom: 0;
-        background-color: #eee !important;
+        background-color: #444;
         z-index: 1; }
         /* line 1500, D:/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ftr span {
           width: initial;
           float: left;
-          color: #333;
+          color: #fff;
           line-height: 30px;
           font-size: 12px; }
       /* line 1509, D:/mTime/mTime/mTime/scss/style.scss */
