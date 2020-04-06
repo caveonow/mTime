@@ -176,6 +176,7 @@
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="Controllers\AdministrationController.vb" />
+    <Compile Include="Controllers\CompanyController.vb" />
     <Compile Include="Controllers\AttendanceController.vb" />
     <Compile Include="Controllers\DepartmentController.vb" />
     <Compile Include="Controllers\EmployeeController.vb" />
@@ -192,6 +193,7 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CompanyModel.vb" />
     <Compile Include="Models\DepartmentModel.vb" />
     <Compile Include="Models\MasterDB.vb" />
     <Compile Include="Models\HyperlinkModel.vb" />
@@ -396,6 +398,7 @@
     <Content Include="Views\PrivateMessage\Index.vbhtml" />
     <Content Include="Views\FAQ\Index.vbhtml" />
     <Content Include="Views\Department\Create.vbhtml" />
+    <Content Include="Views\Staff\Create.vbhtml" />
     <Content Include="Views\Holiday\Index.vbhtml" />
     <Content Include="Views\System\Index.vbhtml" />
   </ItemGroup>
@@ -432,7 +435,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\_ViewStart.vbhtml" />
     <Content Include="Views\Home\Index.vbhtml" />
     <Content Include="Views\Shared\Error.vbhtml" />
     <Content Include="Views\Shared\_Layout.vbhtml" />

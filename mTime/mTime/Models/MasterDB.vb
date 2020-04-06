@@ -11,6 +11,7 @@ Namespace model
         Public Property HOLIDAY() As DbSet(Of HOLIDAY)
         Public Property POORATTENDANCEREASON() As DbSet(Of POORATTENDANCEREASON)
         Public Property ATTENDANCESTATUS() As DbSet(Of ATTENDANCESTATUS)
+        'Public Property STAFF() As DbSet(Of STAFF)
 
 
         Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)

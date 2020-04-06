@@ -1,6 +1,4 @@
-﻿Imports System.Data.Entity
-Imports System.Data.Entity.ModelConfiguration.Conventions
-Imports System.ComponentModel.DataAnnotations
+﻿Imports System.ComponentModel.DataAnnotations
 
 Namespace model
 
