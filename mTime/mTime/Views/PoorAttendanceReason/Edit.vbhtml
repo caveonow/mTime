@@ -50,10 +50,11 @@ End Code
                             <div Class="rtpt_addbox_pt_tt">For Late-In :</div>
                             <div class="checkinbox">
                                 @Html.CheckBoxFor(Function(model) model.ISFORLATEIN)
+                                <div Class="rtpt_addbox_pt_error">
+                                    @Html.ValidationMessageFor(Function(model) model.ISFORLATEIN)
+                                </div>
                             </div>
-                            <div Class="rtpt_addbox_pt_error">
-                                @Html.ValidationMessageFor(Function(model) model.ISFORLATEIN)
-                            </div>
+                          
                         </div>
 
                         <div Class="rtpt_addbox_part">

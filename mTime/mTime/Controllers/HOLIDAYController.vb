@@ -4,7 +4,7 @@ Imports mTime
 Imports PagedList
 
 Namespace Controllers
-    Public Class HolidayController
+    Public Class holidayController
         Inherits Controller
 
         Private db As New model.MasterDB
@@ -81,30 +81,38 @@ Namespace Controllers
         'more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         <HttpPost>
         <ValidateAntiForgeryToken>
-        Function Create(ByVal hOLIDAY As model.HOLIDAY) As ActionResult
+        Function Create(ByVal holiday As model.HOLIDAY) As ActionResult
+
+
             ' Check is same year
-            If Not checkIsSameYear(hOLIDAY.FROM, hOLIDAY.UNTIL) Then
-                ModelState.AddModelError("FROM", "Year not same")
+            If Not checkIsSameYear(holiday.FROM, holiday.UNTIL) Then
+                'ModelState.AddModelError("FROM", "Year not same")
                 ModelState.AddModelError("Until", "Year not same")
+            Else
+
+                If DateDiff(DateInterval.Day, holiday.FROM, holiday.UNTIL) < 0 Then
+                    ModelState.AddModelError("Until", "End Date must latest than Start Date")
+                End If
+
             End If
 
-            validateBeforeSave(hOLIDAY)
+            'validateBeforeSave(hOLIDAY)
 
             If ModelState.IsValid Then
-                hOLIDAY.ISINUSED = True
-                hOLIDAY.CREATEDBY = "SYSTEM"
-                hOLIDAY.CREATEDON = System.DateTime.Now
-                hOLIDAY.UPDATEDBY = "SYSTEM"
-                hOLIDAY.UPDATEDON = System.DateTime.Now
+                holiday.ISINUSED = True
+                holiday.CREATEDBY = "SYSTEM"
+                holiday.CREATEDON = System.DateTime.Now
+                holiday.UPDATEDBY = "SYSTEM"
+                holiday.UPDATEDON = System.DateTime.Now
 
-                db.HOLIDAY.Add(hOLIDAY)
+                db.HOLIDAY.Add(holiday)
                 db.SaveChanges()
 
                 ViewBag.Result = "OK"
                 Return View()
             End If
 
-            Return View(hOLIDAY)
+            Return View(holiday)
         End Function
 
         ' GET: HOLIDAYs/Edit/5
@@ -112,11 +120,11 @@ Namespace Controllers
             If IsNothing(id) Then
                 Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
             End If
-            Dim hOLIDAY As model.HOLIDAY = db.HOLIDAY.Find(id)
-            If IsNothing(hOLIDAY) Then
+            Dim holiday As model.HOLIDAY = db.HOLIDAY.Find(id)
+            If IsNothing(holiday) Then
                 Return HttpNotFound()
             End If
-            Return View(hOLIDAY)
+            Return View(holiday)
         End Function
 
         ' POST: HOLIDAYs/Edit/5
@@ -124,26 +132,31 @@ Namespace Controllers
         'more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         <HttpPost>
         <ValidateAntiForgeryToken>
-        Function Edit(<Bind(Include:="HOLIDAYID,HOLIDAYNAME,FROM,UNTIL,ISINUSED,CREATEDBY,CREATEDON,UPDATEDBY,UPDATEDON")> ByVal hOLIDAY As model.HOLIDAY) As ActionResult
+        Function Edit(<Bind(Include:="HOLIDAYID,HOLIDAYNAME,FROM,UNTIL,ISINUSED,CREATEDBY,CREATEDON,UPDATEDBY,UPDATEDON")> ByVal holiday As model.HOLIDAY) As ActionResult
             ' Check is same year
-            If Not checkIsSameYear(hOLIDAY.FROM, hOLIDAY.UNTIL) Then
-                ModelState.AddModelError("FROM", "Year not same")
-                ModelState.AddModelError("Until", "Year not same")
+            If Not checkIsSameYear(holiday.FROM, holiday.UNTIL) Then
+                'ModelState.AddModelError("FROM", "Year not same")
+                ModelState.AddModelError("Until", "Cross year is not allowed")
+            Else
+                If DateDiff(DateInterval.Day, holiday.FROM, holiday.UNTIL) < 0 Then
+                    ModelState.AddModelError("Until", "End Date must latest than Start Date")
+                End If
             End If
 
-            validateBeforeSave(hOLIDAY)
+            'validateBeforeSave(hOLIDAY)
 
             If ModelState.IsValid Then
-                hOLIDAY.UPDATEDBY = "SYSTEM"
-                hOLIDAY.UPDATEDON = System.DateTime.Now
+                holiday.UPDATEDBY = "SYSTEM"
+                holiday.UPDATEDON = System.DateTime.Now
 
-                db.Entry(hOLIDAY).State = EntityState.Modified
+                db.Entry(holiday).State = EntityState.Modified
                 db.SaveChanges()
 
                 ViewBag.Result = "OK"
-                Return View(hOLIDAY)
+                Return View()
             End If
-            Return View(hOLIDAY)
+
+            Return View(holiday)
         End Function
 
         ' GET: HOLIDAYs/Delete/5
@@ -151,11 +164,11 @@ Namespace Controllers
             If IsNothing(id) Then
                 Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
             End If
-            Dim hOLIDAY As model.HOLIDAY = db.HOLIDAY.Find(id)
-            If IsNothing(hOLIDAY) Then
+            Dim holiday As model.HOLIDAY = db.HOLIDAY.Find(id)
+            If IsNothing(holiday) Then
                 Return HttpNotFound()
             End If
-            Return View(hOLIDAY)
+            Return View(holiday)
         End Function
 
         ' POST: HOLIDAYs/Delete/5
@@ -163,15 +176,15 @@ Namespace Controllers
         <ActionName("Delete")>
         <ValidateAntiForgeryToken>
         Function DeleteConfirmed(ByVal id As Integer) As ActionResult
-            Dim hOLIDAY As model.HOLIDAY = db.HOLIDAY.Find(id)
-            hOLIDAY.UPDATEDBY = "SYSTEM"
-            hOLIDAY.UPDATEDON = System.DateTime.Now
+            Dim holiday As model.HOLIDAY = db.HOLIDAY.Find(id)
+            holiday.UPDATEDBY = "SYSTEM"
+            holiday.UPDATEDON = System.DateTime.Now
 
-            db.HOLIDAY.Remove(hOLIDAY)
+            db.HOLIDAY.Remove(holiday)
             db.SaveChanges()
 
             ViewBag.Result = "OK"
-            Return View(hOLIDAY)
+            Return View(holiday)
         End Function
 
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
@@ -182,25 +195,29 @@ Namespace Controllers
         End Sub
 
         Function checkIsSameYear(firstDate As DateTime, secondDate As DateTime) As Boolean
-            If (Year(firstDate) = Year(secondDate)) Then
-                Return True
+
+            If IsDBNull(firstDate) = False Or IsDBNull(secondDate) = False Then
+                If (Year(firstDate) = Year(secondDate)) Then
+                    Return True
+                End If
             End If
 
             Return False
         End Function
 
-        Private Sub validateBeforeSave(holiday As model.HOLIDAY)
-            If IsNothing(holiday.HOLIDAYNAME) Then
-                ModelState.AddModelError("HOLIDAYNAME", "Name is required")
-            End If
 
-            If IsNothing(holiday.FROM) Then
-                ModelState.AddModelError("FROM", "Date from is required")
-            End If
+        'Private Sub validateBeforeSave(holiday As model.holiday)
+        '    If IsNothing(holiday.holidayNAME) Then
+        '        ModelState.AddModelError("holidayNAME", "Name is required")
+        '    End If
 
-            If IsNothing(holiday.UNTIL) Then
-                ModelState.AddModelError("UNTIL", "Date to is required")
-            End If
-        End Sub
+        '    If IsNothing(holiday.FROM) Then
+        '        ModelState.AddModelError("FROM", "Date from is required")
+        '    End If
+
+        '    If IsNothing(holiday.UNTIL) Then
+        '        ModelState.AddModelError("UNTIL", "Date to is required")
+        '    End If
+        'End Sub
     End Class
 End Namespace

@@ -23,21 +23,24 @@ End Code
                     <div Class="ctr_rtpt_addbox bg_bd1_radius">
                         <div Class="rtpt_addbox_part">
                             <div Class="rtpt_addbox_pt_tt">Holiday Name :</div>
-
-                            @Html.TextBoxFor(Function(model) model.HOLIDAYNAME, New With {.Readonly = True, .class = "all_input1 events_none"})
+                            @Html.EditorFor(Function(model) model.HOLIDAYNAME, New With {.htmlAttributes = New With {.class = "all_input1 events_none"}})
                         </div>
 
                         <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Date From :</div>
+                            <div Class="rtpt_addbox_pt_tt">Start Date :</div>
 
-                            @Html.TextBoxFor(Function(model) model.FROM, New With {.Readonly = True, .class = "all_input1 events_none"})
+                            @* @Html.TextBoxFor(Function(model) model.FROM, New With {.Readonly = True, .class = "all_input1 events_none"})*@
+                            @Html.EditorFor(Function(model) model.FROM, New With {.htmlAttributes = New With {.id = "datePickerFrom", .class = "all_input1 events_none"}})
 
                         </div>
 
                         <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Date To :</div>
+                            <div Class="rtpt_addbox_pt_tt">End Date :</div>
 
-                            @Html.TextBoxFor(Function(model) model.UNTIL, New With {.Readonly = True, .class = "all_input1 events_none"})
+                            @* @Html.TextBoxFor(Function(model) model.UNTIL, New With {.Readonly = True, .class = "all_input1 events_none"})*@
+                            @Html.EditorFor(Function(model) model.UNTIL, New With {.htmlAttributes = New With {.id = "datePickerUntil", .class = "all_input1 events_none"}})
+
+
                         </div>
 
                         <div Class="rtpt_addbox_part">
@@ -110,12 +113,59 @@ End Code
 
 <div class="bg_color_w"></div>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+@Section Scripts
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/bootstrap-datepicker.js")
 
-<script type="text/javascript">
-    //Nav Top Menu Part1
-    $("#hdr_btn4").addClass("pt2_b_btneff");
+    <script type="text/javascript">
 
-    //Nav Left Menu Part1
-    $("#leftnav2").addClass("ctr_innav1_btneff");
-</script>
+        // Nav Top Menu Part1
+        $("#hdr_btn4").addClass("pt2_b_btneff");
+
+        //Nav Left Menu Part1
+        $("#leftnav2").addClass("ctr_innav1_btneff");
+
+        $(function () {
+
+            $("#save").click(function () {
+                document.forms[0].submit();
+                return false;
+            });
+
+            $('#datePickerFrom').datepicker({
+
+                autoclose: true,
+                changeMonth: true,
+                changeYear: true,
+                language: "en-IE",
+                format: "dd/mm/yyyy"
+
+            });
+
+            $('#datePickerUntil').datepicker({
+                autoclose: true,
+                changeMonth: true,
+                changeYear: true,
+                language: "en-IE",
+                format: "dd/mm/yyyy"
+            });
+
+            $.validator.methods.date = function (value, element) {
+                return this.optional(element) || moment(value, 'DD/MM/YYYY').isValid();
+            };
+
+        });
+
+    </script>
+
+End Section
+
+
+@*<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        //Nav Top Menu Part1
+        $("#hdr_btn4").addClass("pt2_b_btneff");
+
+        //Nav Left Menu Part1
+        $("#leftnav2").addClass("ctr_innav1_btneff");
+    </script>*@

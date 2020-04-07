@@ -1,3 +1,6 @@
+
+@ModelType IEnumerable(Of model.HOLIDAY)
+
 @Code
     ViewData("Title") = "Index"
 End Code
@@ -18,28 +21,16 @@ End Code
                 </a>
 
             </div>
-
-            @*@Using Html.BeginForm("Holiday", "Maintenance", FormMethod.Get)
-                @<p>
-                    <select class="form-control" id="yearFilter" name="yearFilter" value="@ViewBag.yearFilter">
-                        <option>All</option>
-                        @For Each item In ViewBag.yearListing
-                            @<option value="@item">@item</option>
-                        Next
-                    </select>
-                    <input type="submit" value="Search" />
-                </p>
-            End Using
-            *@
+                     
             <div class="overflow_box">
                 <table>
                     <thead>
                         <tr>
                             <th style="width: 90px;" />
                             <th style="width: 90px;">Name</th>
-                            <th style="width: 150px;">Date From</th>
-                            <th style="width: 150px;">Date To</th>
-                            <th>Is Used</th>
+                            <th style="width: 150px;">Start Date</th>
+                            <th style="width: 150px;">End Date</th>
+                            <th>In Used</th>
                         </tr>
                     </thead>
 
@@ -51,18 +42,18 @@ End Code
                                     <a href="@Url.Action("Create", "Holiday", New With {.id = item.HOLIDAYID})" class="fa fa-files-o btn_copy" />
                                     <a href="@Url.Action("Delete", "Holiday", New With {.id = item.HOLIDAYID})" class="fa fa-trash-o btn_trash deletebtn" />
                                 </td>
-                                <td>
-                                    @item.HOLIDAYNAME
+                                <td>                         
+                                    @Html.DisplayFor(Function(modelItem) item.HOLIDAYNAME)
                                 </td>
                                 <td>
-                                    @item.FROM
+                                    @Html.DisplayFor(Function(modelItem) item.FROM)
                                 </td>
                                 <td>
-                                    @item.UNTIL
+                                    @Html.DisplayFor(Function(modelItem) item.UNTIL)
                                 </td>
 
                                 <td style="padding: 0 5px;">
-                                    <input type="checkbox" name="isInUsed" checked=@item.ISINUSED disabled="true" class="check-box"/>
+                                    <input type="checkbox" name="isInUsed" checked=@item.ISINUSED onclick="return false" class="check-box" />
                                 </td>
 
                             </tr>

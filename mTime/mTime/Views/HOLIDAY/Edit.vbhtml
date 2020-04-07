@@ -17,68 +17,73 @@ End Code
             @Using (Html.BeginForm())
                 @Html.AntiForgeryToken()
 
-                @<div class="ctr_holiday_addbox bg_bd1_radius">
-                    @Html.ValidationSummary(True, "", New With {.class = "text-danger"})
-                    @Html.HiddenFor(Function(model) model.HOLIDAYID)
+                @<div class="form-horizontal">
 
-                    <div class="hlday_addbox_part">
-                        @Html.LabelFor(Function(model) model.HOLIDAYNAME, htmlAttributes:=New With {.class = "hlday_addbox_pt_tt"})
-                        @Html.EditorFor(Function(model) model.HOLIDAYNAME, New With {.htmlAttributes = New With {.class = "all_input1"}})
-                        @Html.ValidationMessageFor(Function(model) model.HOLIDAYNAME, "", New With {.class = "text-danger"})
-                    </div>
+                    <div Class="ctr_rtpt_addbox bg_bd1_radius">
+                        @*@Html.ValidationSummary(True, "", New With {.class = "text-danger"})*@
+                        @Html.HiddenFor(Function(model) model.HOLIDAYID)
 
-                    <div class="hlday_addbox_part">
-                        @Html.LabelFor(Function(model) model.FROM, htmlAttributes:=New With {.class = "hlday_addbox_pt_tt"})
-                        @Html.EditorFor(Function(model) model.FROM, New With {.htmlAttributes = New With {.class = "all_input1"}})
-                        @Html.ValidationMessageFor(Function(model) model.FROM, "", New With {.class = "text-danger"})
-                    </div>
-
-                    <div class="hlday_addbox_part">
-                        @Html.LabelFor(Function(model) model.UNTIL, htmlAttributes:=New With {.class = "hlday_addbox_pt_tt"})
-                        @Html.EditorFor(Function(model) model.UNTIL, New With {.htmlAttributes = New With {.class = "all_input1"}})
-                        @Html.ValidationMessageFor(Function(model) model.UNTIL, "", New With {.class = "text-danger"})
-                    </div>
-
-                    <div class="hlday_addbox_part">
-                        @Html.LabelFor(Function(model) model.ISINUSED, htmlAttributes:=New With {.class = "hlday_addbox_pt_tt"})
-                        <div class="checkinbox">
-                            @Html.EditorFor(Function(model) model.ISINUSED, New With {.htmlAttributes = New With {.class = ""}})
+                        <div class="rtpt_addbox_part">
+                            @Html.LabelFor(Function(model) model.HOLIDAYNAME, htmlAttributes:=New With {.class = "rtpt_addbox_pt_tt"})
+                            @Html.EditorFor(Function(model) model.HOLIDAYNAME, New With {.htmlAttributes = New With {.class = "all_input1 events_none"}})
                         </div>
-                        @Html.ValidationMessageFor(Function(model) model.ISINUSED, "", New With {.class = "text-danger"})
-                    </div>
 
-                    <div class="hlday_addbox_part" style="display: none">
-                        @Html.LabelFor(Function(model) model.CREATEDBY, htmlAttributes:=New With {.class = "hlday_addbox_pt_tt"})
-                        <div class="">
-                            <div class="checkbox">
-                                @Html.EditorFor(Function(model) model.CREATEDBY, New With {.htmlAttributes = New With {.style = "margin-left: 0px !important"}})
+                        <div class="rtpt_addbox_part">
+                            @Html.LabelFor(Function(model) model.FROM, htmlAttributes:=New With {.class = "rtpt_addbox_pt_tt"})
+                            @Html.EditorFor(Function(model) model.FROM, New With {.htmlAttributes = New With {.id = "datePickerFrom", .class = "all_input1"}})
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.FROM)
                             </div>
                         </div>
-                    </div>
 
-                    <div class="hlday_addbox_part" style="display: none">
-                        @Html.LabelFor(Function(model) model.CREATEDON, htmlAttributes:=New With {.class = "hlday_addbox_pt_tt"})
-                        <div class="">
-                            <div class="checkbox">
-                                @Html.EditorFor(Function(model) model.CREATEDON, New With {.htmlAttributes = New With {.style = "margin-left: 0px !important"}})
+                        <div class="rtpt_addbox_part">
+                            @Html.LabelFor(Function(model) model.UNTIL, htmlAttributes:=New With {.class = "rtpt_addbox_pt_tt"})
+                            @Html.EditorFor(Function(model) model.UNTIL, New With {.htmlAttributes = New With {.id = "datePickerUntil", .class = "all_input1"}})
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.UNTIL)
                             </div>
                         </div>
-                    </div>
 
-
-                    <div Class="rtpt_addbox_partbtn">
-                        <a href="@Url.Action("Holiday", "Maintenance")">
-                            <div id="closebtn" Class="rtpt_closebtn filter1">
-                                Cancel
+                        <div class="rtpt_addbox_part">
+                            @Html.LabelFor(Function(model) model.ISINUSED, htmlAttributes:=New With {.class = "rtpt_addbox_pt_tt"})
+                            <div class="checkinbox">
+                                @Html.EditorFor(Function(model) model.ISINUSED, New With {.htmlAttributes = New With {.class = ""}})
                             </div>
-                        </a>
+                        </div>
 
-                        <a href="@Url.Action("Edit", "Holiday")" id="save">
-                            <div id="savebtn" Class="rtpt_savebtn filter1">
-                                Save
+                        <div class="rtpt_addbox_part" style="display: none">
+                            @Html.LabelFor(Function(model) model.CREATEDBY, htmlAttributes:=New With {.class = "rtpt_addbox_pt_tt"})
+                            <div class="">
+                                <div class="checkbox">
+                                    @Html.EditorFor(Function(model) model.CREATEDBY, New With {.htmlAttributes = New With {.style = "margin-left: 0px !important"}})
+                                </div>
                             </div>
-                        </a>
+                        </div>
 
+                        <div class="rtpt_addbox_part" style="display: none">
+                            @Html.LabelFor(Function(model) model.CREATEDON, htmlAttributes:=New With {.class = "rtpt_addbox_pt_tt"})
+                            <div class="">
+                                <div class="checkbox">
+                                    @Html.EditorFor(Function(model) model.CREATEDON, New With {.htmlAttributes = New With {.style = "margin-left: 0px !important"}})
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div Class="rtpt_addbox_partbtn">
+                            <a href="@Url.Action("Holiday", "Maintenance")">
+                                <div id="closebtn" Class="rtpt_closebtn filter1">
+                                    Cancel
+                                </div>
+                            </a>
+
+                            <a href="@Url.Action("Edit", "Holiday")" id="save">
+                                <div id="savebtn" Class="rtpt_savebtn filter1">
+                                    Save
+                                </div>
+                            </a>
+
+                        </div>
                     </div>
                 </div>
             End Using
@@ -86,10 +91,10 @@ End Code
             @Code
                 If ViewBag.Result = "OK" Then
                     @<script>
-                            window.onload = function() {
-                              $(".save_ok_popup").addClass("display_block").fadeOut(3000);
-                               window.location.href = "@Url.Action("Holiday", "Maintenance")";
-                           };
+                        window.onload = function() {
+                            $(".save_ok_popup").addClass("display_block").fadeOut(3000);
+                            window.location.href = "@Url.Action("Holiday", "Maintenance")";
+                        };
                     </script>
                 End If
             End Code
@@ -116,21 +121,48 @@ End Code
 
 @Section Scripts
     @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/bootstrap-datepicker.js")
+
+    <script type="text/javascript">
+        
+        // Nav Top Menu Part1
+        $("#hdr_btn4").addClass("pt2_b_btneff");
+
+        //Nav Left Menu Part1
+        $("#leftnav2").addClass("ctr_innav1_btneff");
+
+        $(function () {
+
+            $("#save").click(function () {
+                document.forms[0].submit();
+                return false;
+            });
+
+            $('#datePickerFrom').datepicker({
+
+                autoclose: true,
+                changeMonth: true,
+                changeYear: true,
+                language: "en-IE",
+                format: "dd/mm/yyyy"
+
+            });
+
+            $('#datePickerUntil').datepicker({
+                autoclose: true,
+                changeMonth: true,
+                changeYear: true,
+                language: "en-IE",
+                format: "dd/mm/yyyy"
+            });
+
+            $.validator.methods.date = function (value, element) {
+                return this.optional(element) || moment(value, 'DD/MM/YYYY').isValid();
+            };
+
+        });
+
+    </script>
+
 End Section
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
-<script type="text/javascript">
-    //Nav Top Menu Part1
-    $("#hdr_btn4").addClass("pt2_b_btneff");
-
-    //Nav Left Menu Part1
-    $("#leftnav2").addClass("ctr_innav1_btneff");
-
-    $(function () {
-        $("#save").click(function () {
-            document.forms[0].submit();
-            return false;
-        });
-    });
-</script>

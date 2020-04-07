@@ -79,6 +79,7 @@ End Code
 
                         </div>
                     </div>
+
                     <div id="" class="ctr_rtpt_popupbox display_none deletebox-01">
                         <div class="rtpt_popupbox_inb">
                             <div class="fa fa-trash-o popupbox_inb_icon_red"></div>

@@ -60,9 +60,9 @@
                                     <td>@item.IsInUsed</td>*@
 
 
-                                    <td style="padding: 0 5px;"><input type="checkbox" name="isForLateIn" checked=@item.IsForLateIn disabled="true" /> </td>
-                                    <td style="padding: 0 5px;"><input type="checkbox" name="isForEarlyOut" checked=@item.IsForEarlyOut disabled="true" /> </td>
-                                    <td style="padding: 0 5px;"><input type="checkbox" name="isInUsed" checked=@item.IsInUsed disabled="true" /> </td>
+                                    <td style="padding: 0 5px;"><input type="checkbox" name="isForLateIn" checked=@item.IsForLateIn onclick="return false" /> </td>
+                                    <td style="padding: 0 5px;"><input type="checkbox" name="isForEarlyOut" checked=@item.IsForEarlyOut onclick="return false" /> </td>
+                                    <td style="padding: 0 5px;"><input type="checkbox" name="isInUsed" checked=@item.IsInUsed onclick="return false" /> </td>
                                     @*<td style="padding: 0 5px;">@Html.Checkbox("isInUsed", @item.IsInused)</td>*@
 
                                 </tr>

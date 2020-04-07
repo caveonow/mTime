@@ -6,47 +6,63 @@ End Code
 @Html.Partial("_AdminMenuTop")
 
 <div class="body_center">
-    @Html.Partial("_SubMenuLeft")
+    @Html.Partial("_SubMenuLeft")'
 
     <div class="bd_ctr_rightpart">
-        <div id="addbox-01" class="ctr_rtpt_box">
-            <div class="inbox_haedtext">
-                <span>Holiday :: Create</span>
-            </div>
+        <div id="rtpt_box-01" class="ctr_rtpt_box">
 
             @Using (Html.BeginForm())
                 @Html.AntiForgeryToken()
-                @<div class="ctr_holiday_addbox bg_bd1_radius">
-                    <div class="hlday_addbox_part">
-                        <div class="hlday_addbox_pt_tt">Holiday Name :</div>
-                        @Html.EditorFor(Function(model) model.HOLIDAYNAME, New With {.htmlAttributes = New With {.class = "all_input1"}})
-                        @Html.ValidationMessageFor(Function(model) model.HOLIDAYNAME, "", New With {.class = "text-danger"})
+                @<div class="form-horizontal">
+
+                    @*@Html.TextBox("SelectedDate", "", New With {.readonly = "readonly"})*@
+
+                    <div class="inbox_haedtext">
+                        <span>Holiday :: Add</span>
                     </div>
 
-                    <div class="hlday_addbox_part">
-                        <div class="hlday_addbox_pt_tt">Date From :</div>
-                        @Html.EditorFor(Function(model) model.FROM, New With {.htmlAttributes = New With {.class = "all_input1"}})
-                        @Html.ValidationMessageFor(Function(model) model.FROM, "", New With {.class = "text-danger"})
-                    </div>
+                    <div Class="ctr_rtpt_addbox bg_bd1_radius">
+                        <div Class="rtpt_addbox_part">
+                            <div class="rtpt_addbox_pt_tt">Holiday Name :</div>
 
-                    <div class="hlday_addbox_part">
-                        <div class="hlday_addbox_pt_tt">Date To :</div>
-                        @Html.EditorFor(Function(model) model.UNTIL, New With {.htmlAttributes = New With {.class = "all_input1"}})
-                        @Html.ValidationMessageFor(Function(model) model.UNTIL, "", New With {.class = "text-danger"})
-                    </div>
-
-                    <div class="hlday_addbox_partbtn">
-                        <a href="@Url.Action("Holiday", "Maintenance")">
-                            <div id="closebtn" Class="rtpt_closebtn filter1">
-                                Cancel
+                            @Html.EditorFor(Function(model) model.HOLIDAYNAME, New With {.htmlAttributes = New With {.class = "all_input1"}})
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.HOLIDAYNAME)
                             </div>
-                        </a>
 
-                        <a href="@Url.Action("Create", "Holiday")" id="save">
-                            <div id="savebtn" Class="rtpt_savebtn filter1">
-                                Save
+                        </div>
+
+                        <div class="rtpt_addbox_part">
+                            <div class="rtpt_addbox_pt_tt">Start Date :</div>
+
+                            @Html.EditorFor(Function(model) model.FROM, New With {.htmlAttributes = New With {.id = "datePickerFrom", .class = "all_input1"}})
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.FROM)
                             </div>
-                        </a>
+                        </div>
+
+                        <div class="rtpt_addbox_part">
+                            <div class="rtpt_addbox_pt_tt">End Date :</div>
+
+                            @Html.EditorFor(Function(model) model.UNTIL, New With {.htmlAttributes = New With {.id = "datePickerUntil", .class = "all_input1"}})
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.UNTIL)
+                            </div>
+                        </div>
+
+                        <div class="rtpt_addbox_partbtn">
+                            <a href="@Url.Action("Holiday", "Maintenance")">
+                                <div id="closebtn" Class="rtpt_closebtn filter1">
+                                    Cancel
+                                </div>
+                            </a>
+
+                            <a href="@Url.Action("Create", "Holiday")" id="save">
+                                <div id="savebtn" Class="rtpt_savebtn filter1">
+                                    Save
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             End Using
@@ -84,16 +100,43 @@ End Code
 
 @Section Scripts
     @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/bootstrap-datepicker.js")
+
+    <script type="text/javascript">
+
+        $(function () {
+            $("#save").click(function () {
+                document.forms[0].submit();
+                return false;
+            });
+
+            $('#datePickerFrom').datepicker({
+                
+                autoclose: true,
+                changeMonth: true,
+                changeYear: true,
+                language: "en-IE",
+                format: "dd/mm/yyyy"
+                
+            });
+
+            $('#datePickerUntil').datepicker({
+                autoclose: true,
+                changeMonth: true,
+                changeYear: true,
+                language: "en-IE",
+                format: "dd/mm/yyyy"
+            });
+
+            $.validator.methods.date = function (value, element) {
+                return this.optional(element) || moment(value, 'DD/MM/YYYY').isValid();
+            };
+                     
+
+        });
+
+    </script>
 End Section
 
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-<script type="text/javascript">
-    $(function () {
-        $("#save").click(function () {
-            document.forms[0].submit();
-            return false;
-        });
-    });
-</script>

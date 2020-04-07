@@ -45,20 +45,18 @@ End Code
                             <div Class="rtpt_addbox_pt_tt">For Late-In :</div>
                             <div class="checkinbox">
                                 @Html.CheckBoxFor(Function(model) model.ISFORLATEIN)
+                                <div Class="rtpt_addbox_pt_error">
+                                    @Html.ValidationMessageFor(Function(model) model.ISFORLATEIN)
+                                </div>
                             </div>
-                            <div Class="rtpt_addbox_pt_error">
-                                @Html.ValidationMessageFor(Function(model) model.ISFORLATEIN)
-                            </div>
+                            
                         </div>
 
                         <div Class="rtpt_addbox_part">
                             <div Class="rtpt_addbox_pt_tt">For Early-Out :</div>
                             <div class="checkinbox">
-                                @Html.CheckBoxFor(Function(model) model.ISFOREARLYOUT)
-                            </div>
-                            <div Class="rtpt_addbox_pt_error">
-                                @Html.ValidationMessageFor(Function(model) model.ISFOREARLYOUT)
-                            </div>
+                                @Html.CheckBoxFor(Function(model) model.ISFOREARLYOUT)                             
+                            </div>                           
 
                         </div>
 

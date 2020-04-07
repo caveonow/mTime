@@ -100,6 +100,29 @@ End Code
         });
     });
 
+
+    $('#datePickerFrom').datepicker({
+
+        autoclose: true,
+        changeMonth: true,
+        changeYear: true,
+        language: "en-IE",
+        format: "dd/mm/yyyy"
+
+    });
+
+    $('#datePickerUntil').datepicker({
+        autoclose: true,
+        changeMonth: true,
+        changeYear: true,
+        language: "en-IE",
+        format: "dd/mm/yyyy"
+    });
+
+    $.validator.methods.date = function (value, element) {
+        return this.optional(element) || moment(value, 'DD/MM/YYYY').isValid();
+    };
+
     //Nav Top Menu Part1
     $("#hdr_btn4").addClass("pt2_b_btneff");
 
