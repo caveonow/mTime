@@ -1,10 +1,10 @@
 ﻿Imports System.Web.Mvc
 
 Namespace Controllers
-    Public Class PrivateMessageController
+    Public Class PersonalMessageController
         Inherits Controller
 
-        ' GET: PrivateMessage
+        ' GET: PersonalMessage
         Function Index() As ActionResult
             Return View()
         End Function

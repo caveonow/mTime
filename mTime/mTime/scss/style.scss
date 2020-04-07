@@ -66,6 +66,14 @@ html, body {
     border-radius: 5px;
 }
 
+.footer_row_btn {
+    width: 100%;
+    height: initial;
+    float: left;
+    position: relative;
+    padding: 0 10px;
+}
+
 .bg_color_w {
     width: 100%;
     height: 100%;
@@ -82,6 +90,7 @@ html, body {
     height: 17px !important;
     margin: 0 0;
 }
+
 input[type="radio"], input[type="checkbox"] {
     float: left;
     width: 17px !important;
@@ -454,6 +463,173 @@ td {
             }
         }
     }
+}
+
+.employee_part {
+    width: 100%;
+    height: initial;
+    float: left;
+    position: relative;
+    padding: 0 10px 0 420px;
+
+    .epy_pt_lt {
+        width: 400px;
+        height: initial;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        .epy_lt_box1 {
+            width: 100%;
+            height: initial;
+            border-radius: 5px 5px;
+            border: 1px #ccc solid;
+            margin: 0 0 10px 10px;
+            overflow: auto;
+            position: relative;
+            float: left;
+
+            .lt_b1_inb {
+                padding: 10px 10px;
+                width: 100%;
+                height: initial;
+                float: left;
+
+                .b1_inb_part {
+                    width: 100%;
+                    height: initial;
+                    float: left;
+                    position: relative;
+                    padding: 0 0 0 120px;
+                    margin: 0 0 10px 0;
+
+                    .inb_pt_tt {
+                        width: 110px;
+                        height: 30px;
+                        text-align: right;
+                        float: left;
+                        line-height: 30px;
+                        font-size: 14px;
+                        position: absolute;
+                        left: 0;
+                    }
+
+                    .inb_pt_checkboxtt {
+                        width: 100%;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 12px;
+                    }
+                }
+
+                .b1_inb_part1 {
+                    width: 100%;
+                    height: initial;
+                    float: left;
+                    position: relative;
+                    padding: 0 40px 0 120px;
+                    margin: 0 0 10px 0;
+
+                    .inb_pt1_tt {
+                        width: 110px;
+                        height: 30px;
+                        text-align: right;
+                        float: left;
+                        line-height: 30px;
+                        font-size: 14px;
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        .epy_lt_box2 {
+            width: 100%;
+            height: initial;
+            border-radius: 5px 5px;
+            border: 1px #ccc solid;
+            margin: 0 0 10px 10px;
+            position: relative;
+            float: left;
+        }
+    }
+
+    .epy_pt_rt {
+        width: 100%;
+        min-height: 515px;
+        float: left;
+        border-radius: 5px 5px;
+        border: 1px #ccc solid;
+        margin: 0 0 10px 0;
+        overflow: auto;
+        position: relative;
+    }
+}
+
+.epy_lt_table {
+    width: 750px;
+    line-height: 30px;
+    margin: 0 0 40px 0;
+    font-size: 12px;
+    position: relative;
+
+    thead {
+        background-color: #aaa;
+        height: 30px;
+
+        tr {
+            th {
+                border-right: 1px #ccc solid;
+                padding: 0 5px;
+                color: #fff;
+            }
+        }
+    }
+
+    tbody {
+        height: 30px;
+
+        tr {
+            td {
+                border-right: 1px #aaa solid;
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+.footer_row_total {
+    width: 100%;
+    height: 30px;
+    border-radius: 0 0 5px 5px;
+    padding: 0 10px;
+    position: relative;
+    float: left;
+    background-color: #444;
+    z-index: 1;
+
+    span {
+        width: initial;
+        float: left;
+        color: #fff;
+        line-height: 30px;
+        font-size: 12px;
+    }
+}
+
+.icon_calendar_btn {
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    position: absolute;
+    right: 0;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
 }
 
 .Feedback_box {
@@ -1550,7 +1726,6 @@ td {
                         font-size: 12px;
                         text-align: right;
                     }
-
                 }
 
                 .rtpt_addbox_partbtn {
@@ -1587,7 +1762,6 @@ td {
                         font-size: 14px;
                         font-weight: normal;
                     }
-
                     /*input {
                         width: 370px;
                         height: 30px;
@@ -2463,7 +2637,7 @@ a, a:hover {
     .mse_pt_itenbox {
         width: inherit;
         height: 30px;
-        background-color: #ccc;
+        background-color: #444;
         border-radius: 0 0 5px 5px;
         padding: 0 10px;
         position: absolute;
@@ -2472,7 +2646,7 @@ a, a:hover {
         span {
             width: 100%;
             float: left;
-            color: #333;
+            color: #fff;
             line-height: 30px;
             font-size: 12px;
         }
