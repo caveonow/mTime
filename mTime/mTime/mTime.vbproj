@@ -185,9 +185,9 @@
     <Compile Include="Controllers\HOLIDAYController.vb" />
     <Compile Include="Controllers\Login.vb" />
     <Compile Include="Controllers\MaintenanceController.vb" />
+    <Compile Include="Controllers\PersonalMessageController.vb" />
     <Compile Include="Controllers\PoorAttendanceReasonController.vb" />
     <Compile Include="Controllers\AttendanceStatusController.vb" />
-    <Compile Include="Controllers\PrivateMessageController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
     <Compile Include="Controllers\SystemController.vb" />
     <Compile Include="Global.asax.vb">
@@ -395,7 +395,6 @@
     <Content Include="Views\Maintenance\WorkingShift.vbhtml" />
     <Content Include="Views\Shared\_AdminMenuTop.vbhtml" />
     <Content Include="Views\Shared\_StaffMenuTop.vbhtml" />
-    <Content Include="Views\PrivateMessage\Index.vbhtml" />
     <Content Include="Views\FAQ\Index.vbhtml" />
     <Content Include="Views\Department\Create.vbhtml" />
     <Content Include="Views\Staff\Create.vbhtml" />
@@ -406,6 +405,7 @@
     <Content Include="Views\Employee\Index.vbhtml" />
     <Content Include="Views\_ViewStart.vbhtml" />
     <Content Include="Views\Maintenance\Holiday.vbhtml" />
+    <Content Include="Views\PersonalMessage\Index.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

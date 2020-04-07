@@ -1,180 +1,132 @@
 ﻿@Code
-    ViewData("System") = "Index"
+    ViewData("Employee") = "Index"
 End Code
 
 @Html.Partial("_AdminMenuTop")
 
 <div class="body_center">
-    <div class="systembox_lt">
-        <div class="inbox_haedtext">
-            <span>Company Info</span>
+    <div class="employee_part" style="">
+        <div class="epy_pt_lt" style="">
+            <div class="epy_lt_box1" style="">
+
+                <div class="inbox_haedtext">
+                    <span>Search Employee</span>
+                </div>
+
+                <div class="lt_b1_inb" style="">
+                    <div class="b1_inb_part" style="">
+                        <div class="inb_pt_tt" style="">Name :</div>
+
+                        <input type="text" id="title" name="title" class="all_input1">
+                        <div class="hlday_addbox_pt_error">Text Error</div>
+                    </div>
+
+                    <div class="b1_inb_part" style="">
+                        <div class="inb_pt_tt" style="">Sumame :</div>
+
+                        <input type="text" id="title" name="title" class="all_input1">
+                        <div class="hlday_addbox_pt_error">Text Error</div>
+                    </div>
+
+                    <div class="b1_inb_part" style="">
+                        <div class="inb_pt_tt" style="">NRIC :</div>
+
+                        <input type="text" id="title" name="title" class="all_input1">
+                        <div class="hlday_addbox_pt_error">Text Error</div>
+                    </div>
+
+                    <div class="b1_inb_part" style="">
+                        <div class="inb_pt_tt" style="">Department :</div>
+
+                        <select id="cars" class="all_input1">
+                            <option value="EP1">EP1</option>
+                            <option value="EP2">EP2</option>
+                            <option value="EP3">EP3</option>
+                            <option value="EP4">EP4</option>
+                        </select>
+
+                        <div class="hlday_addbox_pt_error">Text Error</div>
+                    </div>
+
+                    <div class="b1_inb_part1" style="">
+                        <div class="inb_pt1_tt" style="">Working Shift :</div>
+
+                        <select id="cars" class="all_input1">
+                            <option value="EP1">EP1</option>
+                            <option value="EP2">EP2</option>
+                            <option value="EP3">EP3</option>
+                            <option value="EP4">EP4</option>
+                        </select>
+
+                        <a class="fa fa-calendar events_none icon_calendar_btn" style=""></a>
+
+                        <div class="hlday_addbox_pt_error">Text Error</div>
+                    </div>
+
+                    <div class="b1_inb_part" style="">
+                        <input type="checkbox" id="" name="vehicle1" style="margin:5px 5px 0 0;">
+                        <div class="inb_pt_checkboxtt" style="">Show Resigned Employees</div>
+                    </div>
+
+                    <div class="footer_row_btn" style="padding:0 0;">
+                        <a href="" id="save" class="rtpt_closebtn filter1">
+                            Display
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="epy_lt_box2" style="">
+
+                <div class="inbox_haedtext">
+                    <span>Employee List</span>
+                </div>
+
+                <div class="overflow_box" style="height: 300px;">
+                    <table class="epy_lt_table" style="">
+                        <thead style="">
+                            <tr>
+                                <th style="width: 200px;">Name</th>
+                                <th style="width: 100px;">Sumame</th>
+                                <th style="width: 150px;">NRIC</th>
+                                <th style="width: 100px;">Department</th>
+                                <th style="width: 100px;">Working Shift</th>
+                            </tr>
+                        </thead>
+
+                        <tbody style="">
+                            <tr>
+                                <td style="">1</td>
+                                <td style="">1</td>
+                                <td style="">1</td>
+                                <td style="">1</td>
+                                <td style="padding: 0 5px;">1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="footer_row_total" style="">
+                    <span>Total : 0 row</span>
+                </div>
+            </div>
         </div>
 
-        <div class="stbox_lt_part1">
-            <div class="lt_pt1_box1">
-                <div class="pt1_b1_tt">Name :</div>
-
-                <input type="text" id="title" name="title" class="all_input1">
-
-                <div class="hlday_addbox_pt_error">Text Error</div>
+        <div class="epy_pt_rt">
+            <div class="inbox_haedtext">
+                <span>Select an employee from "Employee List" and edit here.</span>
             </div>
 
-            <div class="lt_pt1_box1">
-                <div class="pt1_b1_tt">Address :</div>
+            <div class="overflow_box">
 
-                <textarea type="" id="title" name="title" class="pt1_b1_textarea"></textarea>
-
-                <div class="hlday_addbox_pt_error">Text Error</div>
             </div>
 
-            <div class="lt_pt1_box1">
-                <div class="pt1_b1_tt">Tel :</div>
-
-                <input type="tel" id="title" name="title" class="all_input1">
-
-                <a href="" class="fa fa-info-circle pt1_b1_inforbtn filter1"></a>
-
-                <div class="hlday_addbox_pt_error">Text Error</div>
-            </div>
-
-            <div class="lt_pt1_box1">
-                <div class="pt1_b1_tt">Fax :</div>
-
-                <input type="tel" id="title" name="title" class="all_input1">
-
-                <a href="" class="fa fa-info-circle pt1_b1_inforbtn filter1"></a>
-                <div class="hlday_addbox_pt_error">Text Error</div>
-            </div>
-
-            <div class="lt_pt1_box2">
-                <div class="pt1_b2_tt">Company Logo :</div>
-
-                <input type="tel" id="title" name="title" class="all_input1 pt1_b2_inputimg" style="background-image:url(../../img/malaysia_logo_s.png);">
-
-                <a href="" class="fa fa-folder-open pt1_b2_folderbtn filter1"></a>
-
-                <a href="" class="fa fa-times pt1_b2_deletebtn filter1"></a>
-
-                <a href="" class="fa fa-info-circle pt1_b1_inforbtn filter1"></a>
-
-                <div class="hlday_addbox_pt_error">Text Error</div>
-            </div>
-
-            <div class="lt_pt1_box2">
-                <div class="pt1_b2_tt">Company Header :</div>
-
-                <input type="tel" id="title" name="title" class="all_input1 pt1_b2_inputimg" style=" background-image:url(../../img/htr_bg.jpg);">
-
-                <a href="" class="fa fa-folder-open pt1_b2_folderbtn filter1"></a>
-
-                <a href="" class="fa fa-times pt1_b2_deletebtn filter1"></a>
-
-                <a href="" class="fa fa-info-circle pt1_b1_inforbtn filter1"></a>
-
-                <div class="hlday_addbox_pt_error">Text Error</div>
-            </div>
-
-            <div class="lt_pt1_box2">
-                <div class="pt1_b2_tt">Home Header :</div>
-
-                <input type="tel" id="title" name="title" class="all_input1 pt1_b2_inputimg" style=" background-image:url(../../img/htr_bg.jpg);">
-
-                <a href="" class="fa fa-folder-open pt1_b2_folderbtn filter1"></a>
-
-                <a href="" class="fa fa-times pt1_b2_deletebtn filter1"></a>
-
-                <a href="" class="fa fa-info-circle pt1_b1_inforbtn filter1"></a>
-
-                <div class="hlday_addbox_pt_error">Text Error</div>
-            </div>
-        </div>
-
-        <div class="stbox_lt_part2">
-            <a href="" id="save" class="rtpt_savebtn filter1">
-                Save
-            </a>
-        </div>
-    </div>
-
-    <div class="systembox_rt1">
-        <div class="inbox_haedtext">
-            <span>Setting</span>
-        </div>
-
-        <div class="stbox_rt1_box">
-            <div class="rt1_b_part1">
-                <div class="b_pt1_tt">Grace period (Day) :</div>
-
-                <input type="number" id="" name="day" value="7" class="all_input1">
-
-                <a href="" class="fa fa-info-circle pt1_b1_inforbtn filter1"></a>
-
-                <div class="hlday_addbox_pt_error">Text Error</div>
-            </div>
-
-            <div class="rt1_b_part1">
-                <div class="b_pt1_tt">Max. Announcement :</div>
-
-                <input type="number" id="" name="day" value="30" class="all_input1">
-
-                <a href="" class="fa fa-info-circle pt1_b1_inforbtn filter1"></a>
-
-                <div class="hlday_addbox_pt_error">Text Error</div>
-            </div>
-
-            <div class="rt1_b_part1">
-                <div class="b_pt1_tt"> Announcement Expire Day :</div>
-
-                <input type="number" id="" name="day" value="60" class="all_input1">
-
-                <a href="" class="fa fa-info-circle pt1_b1_inforbtn filter1"></a>
-
-                <div class="hlday_addbox_pt_error">Text Error</div>
-            </div>
-
-            <div class="rt1_b_part2">
-                <a href="" id="save" class="rtpt_closebtn filter1">default</a>
+            <div class="footer_row_btn" style="margin: 0 0 10px 0;">
                 <a href="" id="save" class="rtpt_savebtn filter1">Save</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="systembox_rt2">
-        <div class="inbox_haedtext">
-            <span>Housekeeping</span>
-        </div>
-
-        <div class="stbox_rt2_box2">
-            <div class="rt2_b2_tt">Purge Announcement and Feedback history record regularly can reduce the database size and improve system performance.</div>
-
-            <div class="rt2_b2_box">
-                <a href="" id="save" class="rtpt_savebtn filter1">Purge</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="systembox_rt3">
-        <div class="inbox_haedtext">
-            <span>Manufacturer</span>
-        </div>
-
-        <div class="stbox_rt3_box">
-            <div class="rt3_b_httext">
-                eModuler Solutions Sdn. Bhd.
-            </div>
-
-            <div class="rt3_b_addtext">
-                22A-D Jalan BS 9,<br />
-                Tanam Bukit Segar<br />
-                Cheras Batu 9
-            </div>
-
-            <div class="rt3_b_textbox">
-                <b>Tel</b> <div>: +603-9100 5155</div>
-            </div>
-
-            <div class="rt3_b_textbox">
-                <b>Fax</b> <div>: +603-9100 5155</div>
+                <a href="" id="save" class="rtpt_savebtn filter1">Save All</a>
+                <a href="" id="save" class="rtpt_deletebtn filter1">Delete</a>
+                <a href="" id="save" class="rtpt_closebtn filter1">Add Employee</a>
+                <a href="" id="save" class="rtpt_yesbtn filter1">Reset Login</a>
             </div>
         </div>
     </div>
@@ -194,5 +146,5 @@ End Code
 
 <script type="text/javascript">
     //Nav Top Menu Part1
-    $("#hdr_btn5").addClass("pt2_b_btneff");
+    $("#hdr_btn1").addClass("pt2_b_btneff");
 </script>
