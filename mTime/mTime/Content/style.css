@@ -1063,8 +1063,10 @@ td .check-box {
   float: left;
   margin: 5px 0;
   padding: 0 10px;
-  border-bottom: 2px #ccc solid; }
-  /* line 1180, D:/mTime/mTime/mTime/scss/style.scss */
+  border-bottom: 2px #ccc solid;
+  z-index: 20;
+  position: relative; }
+  /* line 1182, D:/mTime/mTime/mTime/scss/style.scss */
   .body_htrcenter .htrcenter_tab {
     width: initial;
     height: inherit;
@@ -1078,7 +1080,7 @@ td .check-box {
     position: relative;
     cursor: pointer;
     font-size: 14px; }
-    /* line 1194, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1196, D:/mTime/mTime/mTime/scss/style.scss */
     .body_htrcenter .htrcenter_tab .tab_btneff {
       width: 100%;
       height: 40px;
@@ -1088,10 +1090,10 @@ td .check-box {
       position: absolute;
       left: 0;
       top: 0; }
-  /* line 1206, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 1208, D:/mTime/mTime/mTime/scss/style.scss */
   .body_htrcenter .htrcenter_tab:hover {
     background-color: #444; }
-    /* line 1209, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1211, D:/mTime/mTime/mTime/scss/style.scss */
     .body_htrcenter .htrcenter_tab:hover .tab_btneff {
       width: 100%;
       height: 40px;
@@ -1103,7 +1105,7 @@ td .check-box {
       top: 0;
       display: block; }
 
-/* line 1223, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 1225, D:/mTime/mTime/mTime/scss/style.scss */
 .ctr_leftpart_atd {
   width: 300px;
   height: initial;
@@ -1111,7 +1113,7 @@ td .check-box {
   position: relative;
   z-index: 10;
   padding: 0 0 0 10px; }
-  /* line 1231, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 1233, D:/mTime/mTime/mTime/scss/style.scss */
   .ctr_leftpart_atd .leftpart_atd_box {
     width: 100%;
     height: initial;
@@ -1121,13 +1123,13 @@ td .check-box {
     position: relative;
     border-radius: 5px 5px;
     padding: 0 10px; }
-    /* line 1241, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1243, D:/mTime/mTime/mTime/scss/style.scss */
     .ctr_leftpart_atd .leftpart_atd_box .atd_b_part {
       width: 100%;
       height: 40px;
       float: left;
       margin: 10px 0; }
-      /* line 1247, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1249, D:/mTime/mTime/mTime/scss/style.scss */
       .ctr_leftpart_atd .leftpart_atd_box .atd_b_part .atd_b_pt_tt {
         width: initial;
         line-height: 40px;
@@ -1135,7 +1137,7 @@ td .check-box {
         padding: 0 5px;
         color: #fff;
         font-size: 14px; }
-      /* line 1256, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1258, D:/mTime/mTime/mTime/scss/style.scss */
       .ctr_leftpart_atd .leftpart_atd_box .atd_b_part .atd_b_pt_slt {
         float: right;
         position: relative;
@@ -1145,7 +1147,7 @@ td .check-box {
         width: 200px;
         font-size: 12px;
         border-radius: 5px 5px; }
-    /* line 1268, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1270, D:/mTime/mTime/mTime/scss/style.scss */
     .ctr_leftpart_atd .leftpart_atd_box .atd_b_checkbox {
       width: 100%;
       height: initial;
@@ -1154,11 +1156,11 @@ td .check-box {
       padding: 6px 5px 6px 20px;
       font-size: 12px;
       color: #fff; }
-      /* line 1277, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1279, D:/mTime/mTime/mTime/scss/style.scss */
       .ctr_leftpart_atd .leftpart_atd_box .atd_b_checkbox .atd_b_ckb_box {
         margin: 2px 5px 0 0;
         float: left; }
-    /* line 1283, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1285, D:/mTime/mTime/mTime/scss/style.scss */
     .ctr_leftpart_atd .leftpart_atd_box .atd_b_ttbox {
       width: 100%;
       height: initial;
@@ -1171,7 +1173,7 @@ td .check-box {
       padding: 10px 10px;
       margin: 5px 0;
       line-height: 16px; }
-    /* line 1297, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1299, D:/mTime/mTime/mTime/scss/style.scss */
     .ctr_leftpart_atd .leftpart_atd_box .atd_b_btnpart {
       width: 100%;
       height: initial;
@@ -1180,14 +1182,14 @@ td .check-box {
       left: 0;
       padding: 0 10px 10px; }
 
-/* line 1308, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 1310, D:/mTime/mTime/mTime/scss/style.scss */
 .atdc_editbox1 {
   margin: 10px 0;
   min-height: initial;
   border: 1px #aaa solid;
   background-color: #fff; }
 
-/* line 1315, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 1317, D:/mTime/mTime/mTime/scss/style.scss */
 .popup_bg {
   width: 100%;
   height: 100%;
@@ -1197,7 +1199,7 @@ td .check-box {
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 99; }
 
-/* line 1325, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 1327, D:/mTime/mTime/mTime/scss/style.scss */
 .massage_part {
   width: initial;
   height: inherit;
@@ -1208,7 +1210,7 @@ td .check-box {
   font-size: 12px;
   background-color: rgba(255, 255, 255, 0.35); }
 
-/* line 1336, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 1338, D:/mTime/mTime/mTime/scss/style.scss */
 .malaysia_logo {
   width: 100%;
   height: 100%;
@@ -1218,7 +1220,7 @@ td .check-box {
   opacity: 0.15;
   pointer-events: none; }
 
-/* line 1346, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 1348, D:/mTime/mTime/mTime/scss/style.scss */
 .body_center {
   width: 100%;
   height: initial;
@@ -1227,20 +1229,20 @@ td .check-box {
   /*bottom: 7px;*/
   top: 85px;
   z-index: 10; }
-  /* line 1355, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 1357, D:/mTime/mTime/mTime/scss/style.scss */
   .body_center .bd_ctr_nav {
     width: 200px;
     height: initial;
     float: left;
     position: relative;
     z-index: 10; }
-    /* line 1362, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1364, D:/mTime/mTime/mTime/scss/style.scss */
     .body_center .bd_ctr_nav .innav1_btnleft_icon {
       width: 40px;
       height: 40px;
       border-radius: 0 5px 0 0;
       background-color: #222; }
-      /* line 1368, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1370, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .innav1_btnleft_icon .innav1_btt1_btnleft {
         width: 30px;
         height: 30px;
@@ -1253,11 +1255,11 @@ td .check-box {
         cursor: pointer;
         color: #fff;
         z-index: 1; }
-      /* line 1382, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1384, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .innav1_btnleft_icon .innav1_btt1_btnleft:hover {
         background-color: #038c76;
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35); }
-    /* line 1388, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1390, D:/mTime/mTime/mTime/scss/style.scss */
     .body_center .bd_ctr_nav .ctr_innav1 {
       width: 200px;
       height: initial;
@@ -1273,7 +1275,7 @@ td .check-box {
                     display: none;
                 }
             }*/ }
-      /* line 1400, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1402, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btt1 span {
         width: 200px;
         height: 40px;
@@ -1287,13 +1289,13 @@ td .check-box {
         color: #fff;
         border-radius: 0 5px 0 0;
         padding: 0 35px 0 10px; }
-      /* line 1416, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1418, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn {
         width: 100%;
         height: 40px;
         float: left;
         text-decoration: none; }
-        /* line 1422, D:/mTime/mTime/mTime/scss/style.scss */
+        /* line 1424, D:/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn .innav1_inbtn_icon {
           width: 40px;
           line-height: 40px;
@@ -1302,7 +1304,7 @@ td .check-box {
           /*color: #4ecab5;*/
           font-size: 18px;
           float: left; }
-        /* line 1433, D:/mTime/mTime/mTime/scss/style.scss */
+        /* line 1435, D:/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn .innav1_inbtn_tt span {
           line-height: 16px;
           display: table-cell;
@@ -1313,7 +1315,7 @@ td .check-box {
           padding: 0 5px;
           margin: 0 0 0 40px;
           font-size: 14px; }
-      /* line 1452, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1454, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_ttbox {
         width: initial;
         height: 26px;
@@ -1330,16 +1332,16 @@ td .check-box {
         pointer-events: none;
         border-radius: 5px;
         font-family: Arial, Helvetica, sans-serif !important; }
-      /* line 1472, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1474, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_icon, .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btneff .innav1_inbtn_icon {
         color: #fff;
         background-color: #038c76; }
-      /* line 1478, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1480, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_tt span, .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btneff .innav1_inbtn_tt span {
         color: #fff;
         background-color: #09af94;
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35); }
-    /* line 1487, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1489, D:/mTime/mTime/mTime/scss/style.scss */
     .body_center .bd_ctr_nav .ctr_innav2 {
       width: 200px;
       height: initial;
@@ -1355,14 +1357,14 @@ td .check-box {
                     display: none;
                 }
             }*/ }
-      /* line 1498, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1500, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav2 .innav2_btnleft_box {
         width: 40px;
         height: 40px;
         border-radius: 0 5px 0 0;
         background-color: #222;
         display: none; }
-      /* line 1507, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1509, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btt1 span {
         width: 200px;
         height: 40px;
@@ -1376,13 +1378,13 @@ td .check-box {
         color: #fff;
         border-radius: 0 5px 0 0;
         padding: 0 35px 0 10px; }
-      /* line 1523, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1525, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn {
         width: 100%;
         height: 40px;
         float: left;
         text-decoration: none; }
-        /* line 1529, D:/mTime/mTime/mTime/scss/style.scss */
+        /* line 1531, D:/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn .innav2_inbtn_icon {
           width: 40px;
           line-height: 40px;
@@ -1391,7 +1393,7 @@ td .check-box {
           /*color: #4ecab5;*/
           font-size: 18px;
           float: left; }
-        /* line 1540, D:/mTime/mTime/mTime/scss/style.scss */
+        /* line 1542, D:/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn .innav2_inbtn_tt span {
           line-height: 16px;
           display: table-cell;
@@ -1402,7 +1404,7 @@ td .check-box {
           padding: 0 5px;
           margin: 0 0 0 40px;
           font-size: 14px; }
-      /* line 1559, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1561, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_ttbox {
         width: initial;
         height: 26px;
@@ -1419,16 +1421,16 @@ td .check-box {
         pointer-events: none;
         border-radius: 5px;
         font-family: Arial, Helvetica, sans-serif !important; }
-      /* line 1579, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1581, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_icon, .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btneff .innav2_inbtn_icon {
         color: #fff;
         background-color: #038c76; }
-      /* line 1585, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1587, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_tt span, .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btneff .innav2_inbtn_tt span {
         color: #fff;
         background-color: #09af94;
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35); }
-  /* line 1595, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 1597, D:/mTime/mTime/mTime/scss/style.scss */
   .body_center .bd_ctr_rightpart {
     width: 100%;
     height: 100%;
@@ -1437,7 +1439,7 @@ td .check-box {
     z-index: 2;
     /*padding: 0 10px 50px 210px;*/
     padding: 0 10px 15px 210px; }
-    /* line 1604, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1606, D:/mTime/mTime/mTime/scss/style.scss */
     .body_center .bd_ctr_rightpart .ctr_rtpt_box {
       width: 100%;
       height: 515px;
@@ -1446,7 +1448,7 @@ td .check-box {
       border-radius: 5px 5px;
       background-color: rgba(0, 0, 0, 0.03);
       border: 1px #999 solid; }
-      /* line 1613, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1615, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht {
         width: 100%;
         height: 40px;
@@ -1454,14 +1456,14 @@ td .check-box {
         float: left;
         border-radius: 5px 5px 0 0;
         padding: 0 10px; }
-        /* line 1621, D:/mTime/mTime/mTime/scss/style.scss */
+        /* line 1623, D:/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht span {
           width: initial;
           float: left;
           color: #fff;
           line-height: 40px;
           font-size: 14px; }
-        /* line 1629, D:/mTime/mTime/mTime/scss/style.scss */
+        /* line 1631, D:/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht .rtpt_b_ht_refresh {
           width: 30px;
           line-height: 30px;
@@ -1471,25 +1473,25 @@ td .check-box {
           color: #fff;
           margin: 5px 0 5px 5px;
           cursor: pointer; }
-        /* line 1640, D:/mTime/mTime/mTime/scss/style.scss */
+        /* line 1642, D:/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht .rtpt_b_ht_refresh:hover {
           color: #09af94; }
-      /* line 1645, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1647, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_rightpart .ctr_rtpt_box table {
         width: 100%;
         line-height: 30px;
         margin: 0 0 40px 0;
         font-size: 12px; }
-        /* line 1651, D:/mTime/mTime/mTime/scss/style.scss */
+        /* line 1653, D:/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box table thead {
           background-color: #aaa;
           height: 30px; }
-          /* line 1656, D:/mTime/mTime/mTime/scss/style.scss */
+          /* line 1658, D:/mTime/mTime/mTime/scss/style.scss */
           .body_center .bd_ctr_rightpart .ctr_rtpt_box table thead tr th {
             border-right: 1px #ccc solid;
             padding: 0 5px;
             color: #fff; }
-      /* line 1665, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1667, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ftr {
         width: 100%;
         height: 30px;
@@ -1500,14 +1502,14 @@ td .check-box {
         bottom: 0;
         background-color: #444;
         z-index: 1; }
-        /* line 1676, D:/mTime/mTime/mTime/scss/style.scss */
+        /* line 1678, D:/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ftr span {
           width: initial;
           float: left;
           color: #fff;
           line-height: 30px;
           font-size: 12px; }
-      /* line 1685, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1687, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox {
         width: 550px;
         height: initial;
@@ -1516,7 +1518,7 @@ td .check-box {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%); }
-        /* line 1694, D:/mTime/mTime/mTime/scss/style.scss */
+        /* line 1696, D:/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part {
           width: 100%;
           height: initial;
@@ -1534,7 +1536,7 @@ td .check-box {
                         background-color: #fff;
                         border: 1px #aaa solid;
                     }*/ }
-          /* line 1702, D:/mTime/mTime/mTime/scss/style.scss */
+          /* line 1704, D:/mTime/mTime/mTime/scss/style.scss */
           .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_pt_tt {
             width: 150px;
             height: 30px;
@@ -1543,7 +1545,7 @@ td .check-box {
             left: 0;
             line-height: 30px;
             font-size: 14px; }
-          /* line 1721, D:/mTime/mTime/mTime/scss/style.scss */
+          /* line 1723, D:/mTime/mTime/mTime/scss/style.scss */
           .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_pt_error {
             width: 100%;
             line-height: 20px;
@@ -1551,12 +1553,12 @@ td .check-box {
             color: #ff0000;
             font-size: 12px;
             text-align: right; }
-        /* line 1731, D:/mTime/mTime/mTime/scss/style.scss */
+        /* line 1733, D:/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_partbtn {
           width: 100%;
           height: 30px;
           float: left; }
-      /* line 1738, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1740, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox {
         width: 550px;
         height: initial;
@@ -1565,7 +1567,7 @@ td .check-box {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%); }
-        /* line 1747, D:/mTime/mTime/mTime/scss/style.scss */
+        /* line 1749, D:/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part {
           width: 100%;
           height: initial;
@@ -1591,7 +1593,7 @@ td .check-box {
                         font-size: 12px;
                         text-align: right;
                     }*/ }
-          /* line 1755, D:/mTime/mTime/mTime/scss/style.scss */
+          /* line 1757, D:/mTime/mTime/mTime/scss/style.scss */
           .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .hlday_addbox_pt_tt {
             width: 160px;
             height: 30px;
@@ -1601,13 +1603,13 @@ td .check-box {
             line-height: 30px;
             font-size: 14px;
             font-weight: normal; }
-          /* line 1783, D:/mTime/mTime/mTime/scss/style.scss */
+          /* line 1785, D:/mTime/mTime/mTime/scss/style.scss */
           .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .checkbox1 {
             float: left;
             width: 17px !important;
             height: 17px !important;
             margin: 7px 0 0 10px !important; }
-          /* line 1790, D:/mTime/mTime/mTime/scss/style.scss */
+          /* line 1792, D:/mTime/mTime/mTime/scss/style.scss */
           .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .hlday_addbox_pt_ttbox {
             width: 370px;
             height: 30px;
@@ -1615,24 +1617,24 @@ td .check-box {
             line-height: 30px;
             font-size: 14px;
             padding: 0 10px; }
-        /* line 1800, D:/mTime/mTime/mTime/scss/style.scss */
+        /* line 1802, D:/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_partbtn {
           width: 100%;
           height: 30px;
           float: left; }
-    /* line 1808, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1810, D:/mTime/mTime/mTime/scss/style.scss */
     .body_center .bd_ctr_rightpart .ctr_rtpt_footer {
       width: 100%;
       height: initial;
       float: left;
       padding: 5px 0; }
-  /* line 1816, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 1818, D:/mTime/mTime/mTime/scss/style.scss */
   .body_center .bd_ctr_rightpart1 {
     width: 100%;
     height: initial;
     float: left;
     padding: 10px 10px 0 10px; }
-    /* line 1822, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1824, D:/mTime/mTime/mTime/scss/style.scss */
     .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb {
       width: 100%;
       line-height: 30px;
@@ -1641,7 +1643,7 @@ td .check-box {
       font-size: 14px;
       font-weight: bold;
       background-color: #fff; }
-      /* line 1831, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1833, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb .ctr_rtpt1_icon1 {
         width: 30px;
         height: inherit;
@@ -1655,14 +1657,14 @@ td .check-box {
         color: #fff;
         box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.35);
         cursor: pointer; }
-      /* line 1846, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1848, D:/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb .ctr_rtpt1_icon2 {
         font-size: 18px;
         line-height: 30px;
         text-align: center;
         margin: 0 5px 0 0; }
 
-/* line 1856, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 1858, D:/mTime/mTime/mTime/scss/style.scss */
 .systembox_lt {
   width: 49%;
   min-height: 605px;
@@ -1672,7 +1674,7 @@ td .check-box {
   margin: 0 0 10px 10px;
   overflow: auto;
   position: relative; }
-  /* line 1866, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 1868, D:/mTime/mTime/mTime/scss/style.scss */
   .systembox_lt .stbox_lt_htb {
     width: 100%;
     height: 40px;
@@ -1680,20 +1682,20 @@ td .check-box {
     float: left;
     border-radius: 5px 5px 0 0;
     padding: 0 10px; }
-    /* line 1874, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1876, D:/mTime/mTime/mTime/scss/style.scss */
     .systembox_lt .stbox_lt_htb span {
       width: initial;
       float: left;
       color: #fff;
       line-height: 40px;
       font-size: 14px; }
-  /* line 1883, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 1885, D:/mTime/mTime/mTime/scss/style.scss */
   .systembox_lt .stbox_lt_part1 {
     width: 100%;
     height: initial;
     float: left;
     padding: 10px 10px; }
-    /* line 1889, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1891, D:/mTime/mTime/mTime/scss/style.scss */
     .systembox_lt .stbox_lt_part1 .lt_pt1_box1 {
       width: 100%;
       height: initial;
@@ -1701,7 +1703,7 @@ td .check-box {
       position: relative;
       padding: 0 30px 0 160px;
       margin: 0 0 10px 0; }
-      /* line 1897, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1899, D:/mTime/mTime/mTime/scss/style.scss */
       .systembox_lt .stbox_lt_part1 .lt_pt1_box1 .pt1_b1_tt {
         width: 150px;
         height: 30px;
@@ -1711,7 +1713,7 @@ td .check-box {
         font-size: 14px;
         position: absolute;
         left: 0; }
-      /* line 1908, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1910, D:/mTime/mTime/mTime/scss/style.scss */
       .systembox_lt .stbox_lt_part1 .lt_pt1_box1 .pt1_b1_input {
         width: 100%;
         height: 30px;
@@ -1721,7 +1723,7 @@ td .check-box {
         padding: 0 10px;
         background-color: #fff;
         border: 1px #aaa solid; }
-      /* line 1919, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1921, D:/mTime/mTime/mTime/scss/style.scss */
       .systembox_lt .stbox_lt_part1 .lt_pt1_box1 .pt1_b1_textarea {
         width: 100%;
         max-height: 100px;
@@ -1732,7 +1734,7 @@ td .check-box {
         padding: 0 10px;
         background-color: #fff;
         border: 1px #aaa solid; }
-    /* line 1932, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1934, D:/mTime/mTime/mTime/scss/style.scss */
     .systembox_lt .stbox_lt_part1 .lt_pt1_box2 {
       width: 100%;
       height: initial;
@@ -1740,7 +1742,7 @@ td .check-box {
       position: relative;
       padding: 0 100px 0 160px;
       margin: 0 0 10px 0; }
-      /* line 1940, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1942, D:/mTime/mTime/mTime/scss/style.scss */
       .systembox_lt .stbox_lt_part1 .lt_pt1_box2 .pt1_b2_tt {
         width: 150px;
         height: 30px;
@@ -1750,13 +1752,13 @@ td .check-box {
         font-size: 14px;
         position: absolute;
         left: 0; }
-      /* line 1951, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 1953, D:/mTime/mTime/mTime/scss/style.scss */
       .systembox_lt .stbox_lt_part1 .lt_pt1_box2 .pt1_b2_inputimg {
         background-color: #fff;
         background-position: left top;
         background-repeat: no-repeat;
         background-size: contain; }
-  /* line 1960, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 1962, D:/mTime/mTime/mTime/scss/style.scss */
   .systembox_lt .stbox_lt_part2 {
     width: 100%;
     height: initial;
@@ -1765,7 +1767,7 @@ td .check-box {
     padding: 0 10px;
     bottom: 10px; }
 
-/* line 1970, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 1972, D:/mTime/mTime/mTime/scss/style.scss */
 .systembox_rt1 {
   width: 49%;
   min-height: 200px;
@@ -1775,7 +1777,7 @@ td .check-box {
   background-color: #fff;
   border: 1px #ccc solid;
   position: relative; }
-  /* line 1980, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 1982, D:/mTime/mTime/mTime/scss/style.scss */
   .systembox_rt1 .stbox_rt1_httt {
     width: 100%;
     height: 40px;
@@ -1783,20 +1785,20 @@ td .check-box {
     float: left;
     border-radius: 5px 5px 0 0;
     padding: 0 10px; }
-    /* line 1988, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 1990, D:/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt1 .stbox_rt1_httt span {
       width: initial;
       float: left;
       color: #fff;
       line-height: 40px;
       font-size: 14px; }
-  /* line 1997, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 1999, D:/mTime/mTime/mTime/scss/style.scss */
   .systembox_rt1 .stbox_rt1_box {
     width: 100%;
     height: initial;
     float: left;
     padding: 10px 10px; }
-    /* line 2003, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2005, D:/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt1 .stbox_rt1_box .rt1_b_part1 {
       width: 100%;
       height: initial;
@@ -1804,7 +1806,7 @@ td .check-box {
       position: relative;
       padding: 0 30px 0 200px;
       margin: 0 0 10px 0; }
-      /* line 2011, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 2013, D:/mTime/mTime/mTime/scss/style.scss */
       .systembox_rt1 .stbox_rt1_box .rt1_b_part1 .b_pt1_tt {
         width: 190px;
         height: 30px;
@@ -1814,7 +1816,7 @@ td .check-box {
         font-size: 14px;
         position: absolute;
         left: 0; }
-    /* line 2023, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2025, D:/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt1 .stbox_rt1_box .rt1_b_part2 {
       width: 100%;
       height: initial;
@@ -1822,7 +1824,7 @@ td .check-box {
       position: relative;
       padding: 0 10px; }
 
-/* line 2033, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2035, D:/mTime/mTime/mTime/scss/style.scss */
 .systembox_rt2 {
   width: 49%;
   min-height: 100px;
@@ -1831,7 +1833,7 @@ td .check-box {
   margin: 0 10px 10px 0;
   background-color: #fff;
   border: 1px #ccc solid; }
-  /* line 2042, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2044, D:/mTime/mTime/mTime/scss/style.scss */
   .systembox_rt2 .stbox_rt2_box1 {
     width: 100%;
     height: 40px;
@@ -1839,20 +1841,20 @@ td .check-box {
     float: left;
     border-radius: 5px 5px 0 0;
     padding: 0 10px; }
-    /* line 2050, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2052, D:/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt2 .stbox_rt2_box1 span {
       width: initial;
       float: left;
       color: #fff;
       line-height: 40px;
       font-size: 14px; }
-  /* line 2059, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2061, D:/mTime/mTime/mTime/scss/style.scss */
   .systembox_rt2 .stbox_rt2_box2 {
     width: 100%;
     height: initial;
     float: left;
     padding: 10px 10px; }
-    /* line 2065, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2067, D:/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt2 .stbox_rt2_box2 .rt2_b2_tt {
       width: 100%;
       height: initial;
@@ -1861,7 +1863,7 @@ td .check-box {
       font-size: 12px;
       color: #666;
       margin: 0 0 10px 0; }
-    /* line 2075, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2077, D:/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt2 .stbox_rt2_box2 .rt2_b2_box {
       width: 100%;
       height: initial;
@@ -1869,7 +1871,7 @@ td .check-box {
       position: relative;
       padding: 0 10px; }
 
-/* line 2085, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2087, D:/mTime/mTime/mTime/scss/style.scss */
 .systembox_rt3 {
   width: 49%;
   min-height: 100px;
@@ -1878,13 +1880,13 @@ td .check-box {
   margin: 0 10px 10px 0;
   background-color: #fff;
   border: 1px #ccc solid; }
-  /* line 2094, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2096, D:/mTime/mTime/mTime/scss/style.scss */
   .systembox_rt3 .stbox_rt3_box {
     width: 100%;
     height: initial;
     float: left;
     padding: 10px 10px; }
-    /* line 2100, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2102, D:/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt3 .stbox_rt3_box .rt3_b_httext {
       width: 100%;
       height: initial;
@@ -1894,7 +1896,7 @@ td .check-box {
       font-weight: bold;
       color: #666;
       margin: 0 0 10px 0; }
-    /* line 2111, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2113, D:/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt3 .stbox_rt3_box .rt3_b_addtext {
       width: 100%;
       height: initial;
@@ -1903,7 +1905,7 @@ td .check-box {
       font-size: 12px;
       color: #666;
       margin: 0 0 10px 0; }
-    /* line 2121, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2123, D:/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt3 .stbox_rt3_box .rt3_b_textbox {
       width: 100%;
       height: initial;
@@ -1912,15 +1914,15 @@ td .check-box {
       font-size: 12px;
       color: #666;
       margin: 0 0 10px 0; }
-      /* line 2130, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 2132, D:/mTime/mTime/mTime/scss/style.scss */
       .systembox_rt3 .stbox_rt3_box .rt3_b_textbox b {
         width: 40px;
         float: left; }
-      /* line 2135, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 2137, D:/mTime/mTime/mTime/scss/style.scss */
       .systembox_rt3 .stbox_rt3_box .rt3_b_textbox div {
         float: left; }
 
-/* line 2142, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2144, D:/mTime/mTime/mTime/scss/style.scss */
 .inbox_haedtext {
   width: 100%;
   height: 40px;
@@ -1928,7 +1930,7 @@ td .check-box {
   float: left;
   border-radius: 5px 5px 0 0;
   padding: 0 10px; }
-  /* line 2150, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2152, D:/mTime/mTime/mTime/scss/style.scss */
   .inbox_haedtext span {
     width: initial;
     float: left;
@@ -1936,7 +1938,7 @@ td .check-box {
     line-height: 40px;
     font-size: 14px; }
 
-/* line 2159, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2161, D:/mTime/mTime/mTime/scss/style.scss */
 .all_input1 {
   width: 100%;
   height: 30px;
@@ -1947,7 +1949,7 @@ td .check-box {
   background-color: #fff;
   border: 1px #aaa solid; }
 
-/* line 2170, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2172, D:/mTime/mTime/mTime/scss/style.scss */
 .pt1_b1_inforbtn {
   width: 30px;
   height: 30px;
@@ -1959,7 +1961,7 @@ td .check-box {
   line-height: 30px;
   color: #004f83 !important; }
 
-/* line 2182, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2184, D:/mTime/mTime/mTime/scss/style.scss */
 .pt1_b2_folderbtn {
   width: 30px;
   height: 30px;
@@ -1973,7 +1975,7 @@ td .check-box {
   border: 1px #aaa solid;
   color: #f50; }
 
-/* line 2196, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2198, D:/mTime/mTime/mTime/scss/style.scss */
 .pt1_b2_deletebtn {
   width: 30px;
   height: 30px;
@@ -1987,19 +1989,19 @@ td .check-box {
   border: 1px #aaa solid;
   color: #f00; }
 
-/* line 2210, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2212, D:/mTime/mTime/mTime/scss/style.scss */
 .edit_pt_box {
   width: 100%;
   height: inherit;
   float: left; }
-  /* line 2215, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2217, D:/mTime/mTime/mTime/scss/style.scss */
   .edit_pt_box .edit_pt_inb {
     width: 100%;
     height: initial;
     float: left;
     margin: 0 0 10px 0;
     padding: 0 0 0 170px; }
-    /* line 2222, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2224, D:/mTime/mTime/mTime/scss/style.scss */
     .edit_pt_box .edit_pt_inb .pt_inb_tt {
       width: 160px;
       height: 30px;
@@ -2010,7 +2012,7 @@ td .check-box {
       font-size: 14px;
       position: absolute;
       left: 0; }
-    /* line 2234, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2236, D:/mTime/mTime/mTime/scss/style.scss */
     .edit_pt_box .edit_pt_inb .pt_inb_input_none {
       width: 100%;
       height: 30px;
@@ -2022,7 +2024,7 @@ td .check-box {
       border: 1px #aaa solid;
       color: #333;
       pointer-events: none; }
-    /* line 2247, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2249, D:/mTime/mTime/mTime/scss/style.scss */
     .edit_pt_box .edit_pt_inb .pt_inb_input {
       width: 100%;
       height: 30px;
@@ -2034,7 +2036,7 @@ td .check-box {
       border: 1px #aaa solid;
       color: #333; }
 
-/* line 2261, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2263, D:/mTime/mTime/mTime/scss/style.scss */
 .hlday_addbox_pt_error {
   width: 100%;
   line-height: 20px;
@@ -2043,34 +2045,34 @@ td .check-box {
   font-size: 12px;
   text-align: right; }
 
-/* line 2270, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2272, D:/mTime/mTime/mTime/scss/style.scss */
 tbody {
   height: 30px; }
-  /* line 2274, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2276, D:/mTime/mTime/mTime/scss/style.scss */
   tbody tr td {
     border-right: 1px #aaa solid;
     padding: 0 5px; }
-  /* line 2279, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2281, D:/mTime/mTime/mTime/scss/style.scss */
   tbody tr td:last-child {
     border-right: 0; }
-  /* line 2284, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2286, D:/mTime/mTime/mTime/scss/style.scss */
   tbody tr:nth-child(odd) {
     background-color: #fff; }
-  /* line 2288, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2290, D:/mTime/mTime/mTime/scss/style.scss */
   tbody tr:nth-child(even) {
     background-color: #eee; }
-  /* line 2292, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2294, D:/mTime/mTime/mTime/scss/style.scss */
   tbody tr:hover {
     background-color: #daf1ed; }
 
-/* line 2297, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2299, D:/mTime/mTime/mTime/scss/style.scss */
 .ctr_rtpt_popupbox {
   width: 100%;
   height: 515px;
   position: absolute;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.35); }
-  /* line 2304, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2306, D:/mTime/mTime/mTime/scss/style.scss */
   .ctr_rtpt_popupbox .rtpt_popupbox_inb {
     width: 500px;
     height: initial;
@@ -2083,7 +2085,7 @@ tbody {
     border-radius: 5px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
     z-index: 10; }
-    /* line 2317, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2319, D:/mTime/mTime/mTime/scss/style.scss */
     .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon {
       width: 100%;
       height: initial;
@@ -2091,7 +2093,7 @@ tbody {
       color: #666;
       text-align: center;
       font-size: 60px; }
-    /* line 2326, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2328, D:/mTime/mTime/mTime/scss/style.scss */
     .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon_red {
       width: 100%;
       height: initial;
@@ -2099,7 +2101,7 @@ tbody {
       color: #f00;
       text-align: center;
       font-size: 60px; }
-    /* line 2335, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2337, D:/mTime/mTime/mTime/scss/style.scss */
     .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_tt {
       width: 100%;
       line-height: 30px;
@@ -2109,14 +2111,14 @@ tbody {
       float: left;
       padding: 5px 5px;
       font-weight: bold; }
-    /* line 2346, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2348, D:/mTime/mTime/mTime/scss/style.scss */
     .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_btnpart {
       width: initial;
       height: initial;
       margin: 10px auto 0;
       position: relative;
       display: table; }
-    /* line 2354, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2356, D:/mTime/mTime/mTime/scss/style.scss */
     .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon_blue {
       width: 100%;
       height: initial;
@@ -2125,19 +2127,19 @@ tbody {
       text-align: center;
       font-size: 66px; }
 
-/* line 2365, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2367, D:/mTime/mTime/mTime/scss/style.scss */
 ul {
   list-style-type: none;
   margin: 31px 0 0 0;
   display: block;
   background-color: #fff; }
-  /* line 2371, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2373, D:/mTime/mTime/mTime/scss/style.scss */
   ul li {
     font-size: 12px;
     line-height: 18px;
     padding: 5px 0;
     color: #333; }
-    /* line 2377, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2379, D:/mTime/mTime/mTime/scss/style.scss */
     ul li .li_users_icon {
       width: initial;
       height: initial;
@@ -2146,16 +2148,16 @@ ul {
       font-size: 16px;
       color: #09af94;
       float: left; }
-    /* line 2387, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2389, D:/mTime/mTime/mTime/scss/style.scss */
     ul li .li_text {
       line-height: 18px;
       float: left;
       padding: 0 5px; }
-  /* line 2394, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2396, D:/mTime/mTime/mTime/scss/style.scss */
   ul li:hover {
     background-color: #fcfccc; }
 
-/* line 2399, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2401, D:/mTime/mTime/mTime/scss/style.scss */
 .li_btn_rename, .li_btn_rename:hover {
   width: initial;
   font-size: 12px;
@@ -2167,7 +2169,7 @@ ul {
   border-radius: 5px;
   cursor: pointer; }
 
-/* line 2411, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2413, D:/mTime/mTime/mTime/scss/style.scss */
 .li_btn_delete, .li_btn_delete:hover {
   width: initial;
   font-size: 12px;
@@ -2179,7 +2181,7 @@ ul {
   border-radius: 5px;
   cursor: pointer; }
 
-/* line 2423, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2425, D:/mTime/mTime/mTime/scss/style.scss */
 .btn_editprofile {
   width: initial;
   height: inherit;
@@ -2191,7 +2193,7 @@ ul {
   text-decoration: none;
   color: #fff; }
 
-/* line 2435, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2437, D:/mTime/mTime/mTime/scss/style.scss */
 .btn_edit {
   width: 20px;
   line-height: 30px !important;
@@ -2202,7 +2204,7 @@ ul {
   margin: 0 2px;
   cursor: pointer; }
 
-/* line 2446, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2448, D:/mTime/mTime/mTime/scss/style.scss */
 .btn_email {
   width: 20px;
   line-height: 30px !important;
@@ -2213,7 +2215,7 @@ ul {
   margin: 0 2px;
   cursor: pointer; }
 
-/* line 2457, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2459, D:/mTime/mTime/mTime/scss/style.scss */
 .btn_trash {
   width: 20px;
   line-height: 30px !important;
@@ -2224,7 +2226,7 @@ ul {
   margin: 0 2px;
   cursor: pointer; }
 
-/* line 2468, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2470, D:/mTime/mTime/mTime/scss/style.scss */
 .btn_copy {
   width: 20px;
   line-height: 30px !important;
@@ -2235,11 +2237,11 @@ ul {
   margin: 0 2px;
   cursor: pointer; }
 
-/* line 2479, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2481, D:/mTime/mTime/mTime/scss/style.scss */
 .btn_edit:hover, .btn_trash:hover, .btn_copy:hover {
   color: #333; }
 
-/* line 2483, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2485, D:/mTime/mTime/mTime/scss/style.scss */
 .rtpt_ftr_addbtn {
   width: initial;
   height: 30px;
@@ -2254,7 +2256,7 @@ ul {
   color: #fff;
   cursor: pointer; }
 
-/* line 2498, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2500, D:/mTime/mTime/mTime/scss/style.scss */
 .rtpt_ftr_deletebtn {
   width: initial;
   height: 30px;
@@ -2269,7 +2271,7 @@ ul {
   color: #fff;
   cursor: pointer; }
 
-/* line 2513, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2515, D:/mTime/mTime/mTime/scss/style.scss */
 .rtpt_closebtn {
   width: initial;
   height: 30px;
@@ -2283,7 +2285,7 @@ ul {
   color: #fff;
   cursor: pointer; }
 
-/* line 2527, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2529, D:/mTime/mTime/mTime/scss/style.scss */
 .rtpt_printbtn {
   width: initial;
   height: 30px;
@@ -2297,7 +2299,7 @@ ul {
   color: #fff;
   cursor: pointer; }
 
-/* line 2541, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2543, D:/mTime/mTime/mTime/scss/style.scss */
 .rtpt_forgotpwbtn {
   width: initial;
   line-height: 30px;
@@ -2309,7 +2311,7 @@ ul {
   padding: 0 10px;
   cursor: pointer; }
 
-/* line 2553, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2555, D:/mTime/mTime/mTime/scss/style.scss */
 .rtpt_savebtn {
   width: initial;
   height: 30px;
@@ -2323,7 +2325,7 @@ ul {
   color: #fff;
   cursor: pointer; }
 
-/* line 2567, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2569, D:/mTime/mTime/mTime/scss/style.scss */
 .rtpt_yesbtn {
   width: initial;
   height: 30px;
@@ -2337,11 +2339,11 @@ ul {
   color: #fff;
   cursor: pointer; }
 
-/* line 2581, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2583, D:/mTime/mTime/mTime/scss/style.scss */
 .rtpt_ftr_addbtn:hover {
   background-color: #004f83; }
 
-/* line 2585, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2587, D:/mTime/mTime/mTime/scss/style.scss */
 .rtpt_deletebtn {
   width: initial;
   height: 30px;
@@ -2355,13 +2357,13 @@ ul {
   color: #fff;
   cursor: pointer; }
 
-/* line 2599, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2601, D:/mTime/mTime/mTime/scss/style.scss */
 a, a:hover {
   color: #fff;
   text-decoration: none;
   font-size: 14px; }
 
-/* line 2605, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2607, D:/mTime/mTime/mTime/scss/style.scss */
 .message_part {
   width: 49%;
   height: 500px;
@@ -2370,26 +2372,26 @@ a, a:hover {
   border: 1px #ccc solid;
   margin: 0 0 0 10px;
   overflow: auto; }
-  /* line 2614, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2616, D:/mTime/mTime/mTime/scss/style.scss */
   .message_part .mse_pt_table {
     width: 100%;
     margin: 0 0 30px 0;
     float: left;
     line-height: 30px;
     font-size: 12px; }
-    /* line 2621, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2623, D:/mTime/mTime/mTime/scss/style.scss */
     .message_part .mse_pt_table thead {
       background-color: #aaa;
       height: 30px; }
-      /* line 2625, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 2627, D:/mTime/mTime/mTime/scss/style.scss */
       .message_part .mse_pt_table thead th {
         border-right: 1px #ccc solid;
         padding: 0 5px;
         color: #fff; }
-      /* line 2631, D:/mTime/mTime/mTime/scss/style.scss */
+      /* line 2633, D:/mTime/mTime/mTime/scss/style.scss */
       .message_part .mse_pt_table thead th:last-child {
         border-right: 0; }
-  /* line 2637, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2639, D:/mTime/mTime/mTime/scss/style.scss */
   .message_part .mse_pt_itenbox {
     width: inherit;
     height: 30px;
@@ -2398,7 +2400,7 @@ a, a:hover {
     padding: 0 10px;
     position: absolute;
     bottom: 0; }
-    /* line 2646, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2648, D:/mTime/mTime/mTime/scss/style.scss */
     .message_part .mse_pt_itenbox span {
       width: 100%;
       float: left;
@@ -2406,7 +2408,7 @@ a, a:hover {
       line-height: 30px;
       font-size: 12px; }
 
-/* line 2656, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2658, D:/mTime/mTime/mTime/scss/style.scss */
 .mse_pt_msebox {
   width: 49%;
   min-height: 500px;
@@ -2414,7 +2416,7 @@ a, a:hover {
   border-radius: 5px 5px;
   margin: 0 10px 0 0;
   background-color: rgba(0, 0, 0, 0.03); }
-  /* line 2664, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2666, D:/mTime/mTime/mTime/scss/style.scss */
   .mse_pt_msebox .msebox_htr {
     width: 100%;
     height: 40px;
@@ -2422,14 +2424,14 @@ a, a:hover {
     float: left;
     border-radius: 5px 5px 0 0;
     padding: 0 10px; }
-    /* line 2672, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2674, D:/mTime/mTime/mTime/scss/style.scss */
     .mse_pt_msebox .msebox_htr span {
       width: initial;
       float: left;
       color: #fff;
       line-height: 40px;
       font-size: 14px; }
-    /* line 2680, D:/mTime/mTime/mTime/scss/style.scss */
+    /* line 2682, D:/mTime/mTime/mTime/scss/style.scss */
     .mse_pt_msebox .msebox_htr .msebox_htr_date {
       width: initial;
       float: right;
@@ -2437,7 +2439,7 @@ a, a:hover {
       line-height: 40px;
       font-size: 12px;
       color: #fff; }
-  /* line 2690, D:/mTime/mTime/mTime/scss/style.scss */
+  /* line 2692, D:/mTime/mTime/mTime/scss/style.scss */
   .mse_pt_msebox .msebox_ttbox {
     width: 100%;
     height: initial;
@@ -2447,7 +2449,39 @@ a, a:hover {
     line-height: 16px;
     padding: 10px 10px; }
 
-/* line 2701, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2703, D:/mTime/mTime/mTime/scss/style.scss */
+.message_lt_part {
+  width: 49%;
+  min-height: 515px;
+  float: left;
+  border-radius: 5px 5px;
+  border: 1px #ccc solid;
+  margin: 0 0 10px 10px;
+  overflow: auto;
+  position: relative; }
+
+/* line 2714, D:/mTime/mTime/mTime/scss/style.scss */
+.message_rt_part {
+  width: 49%;
+  min-height: 515px;
+  float: right;
+  border-radius: 5px 5px;
+  margin: 0 10px 10px 0;
+  background-color: #fff;
+  border: 1px #ccc solid;
+  position: relative; }
+
+/* line 2725, D:/mTime/mTime/mTime/scss/style.scss */
+.ball_color1 {
+  width: 16px;
+  height: 16px;
+  border-radius: 20px;
+  border: 2px #aaa solid;
+  background-color: #154eb7;
+  margin: 0 5px 0 0;
+  float: left; }
+
+/* line 2735, D:/mTime/mTime/mTime/scss/style.scss */
 .arrow_up {
   width: 0;
   height: 0;
@@ -2455,7 +2489,7 @@ a, a:hover {
   border-right: 10px solid transparent;
   border-bottom: 10px solid rgba(0, 0, 0, 0.75); }
 
-/* line 2709, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2743, D:/mTime/mTime/mTime/scss/style.scss */
 .arrow_down {
   width: 0;
   height: 0;
@@ -2463,7 +2497,7 @@ a, a:hover {
   border-right: 10px solid transparent;
   border-top: 10px solid rgba(0, 0, 0, 0.75); }
 
-/* line 2717, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2751, D:/mTime/mTime/mTime/scss/style.scss */
 .arrowr_right {
   width: 0;
   height: 0;
@@ -2471,7 +2505,7 @@ a, a:hover {
   border-bottom: 10px solid transparent;
   border-left: 10px solid rgba(0, 0, 0, 0.75); }
 
-/* line 2725, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2759, D:/mTime/mTime/mTime/scss/style.scss */
 .arrow_left {
   width: 0;
   height: 0;
@@ -2479,7 +2513,7 @@ a, a:hover {
   border-bottom: 10px solid transparent;
   border-right: 10px solid rgba(0, 0, 0, 0.75); }
 
-/* line 2733, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2767, D:/mTime/mTime/mTime/scss/style.scss */
 .arrow_up_c {
   width: 0;
   height: 0;
@@ -2487,7 +2521,7 @@ a, a:hover {
   border-right: 10px solid transparent;
   border-bottom: 10px solid #026f5d; }
 
-/* line 2741, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2775, D:/mTime/mTime/mTime/scss/style.scss */
 .arrow_down_c {
   width: 0;
   height: 0;
@@ -2495,7 +2529,7 @@ a, a:hover {
   border-right: 10px solid transparent;
   border-top: 10px solid #026f5d; }
 
-/* line 2749, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2783, D:/mTime/mTime/mTime/scss/style.scss */
 .arrowr_right _c {
   width: 0;
   height: 0;
@@ -2503,7 +2537,7 @@ a, a:hover {
   border-bottom: 10px solid transparent;
   border-left: 10px solid #026f5d; }
 
-/* line 2757, D:/mTime/mTime/mTime/scss/style.scss */
+/* line 2791, D:/mTime/mTime/mTime/scss/style.scss */
 .arrow_left_c {
   width: 0;
   height: 0;

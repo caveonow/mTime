@@ -1176,6 +1176,8 @@ td {
     margin: 5px 0;
     padding: 0 10px;
     border-bottom: 2px #ccc solid;
+    z-index: 20;
+    position: relative;
 
     .htrcenter_tab {
         width: initial;
@@ -2696,6 +2698,38 @@ a, a:hover {
         line-height: 16px;
         padding: 10px 10px;
     }
+}
+
+.message_lt_part {
+    width: 49%;
+    min-height: 515px;
+    float: left;
+    border-radius: 5px 5px;
+    border: 1px #ccc solid;
+    margin: 0 0 10px 10px;
+    overflow: auto;
+    position: relative;
+}
+
+.message_rt_part {
+    width: 49%;
+    min-height: 515px;
+    float: right;
+    border-radius: 5px 5px;
+    margin: 0 10px 10px 0;
+    background-color: #fff;
+    border: 1px #ccc solid;
+    position: relative;
+}
+
+.ball_color1 {
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    border: 2px #aaa solid;
+    background-color: #154eb7;
+    margin: 0 5px 0 0;
+    float: left;
 }
 // Triangle
 .arrow_up {
