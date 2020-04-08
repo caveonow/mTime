@@ -185,6 +185,7 @@
     <Compile Include="Controllers\HOLIDAYController.vb" />
     <Compile Include="Controllers\Login.vb" />
     <Compile Include="Controllers\MaintenanceController.vb" />
+    <Compile Include="Controllers\MessageController.vb" />
     <Compile Include="Controllers\PersonalMessageController.vb" />
     <Compile Include="Controllers\PoorAttendanceReasonController.vb" />
     <Compile Include="Controllers\AttendanceStatusController.vb" />
@@ -502,6 +503,10 @@
     <Content Include="Views\_ViewStart.vbhtml" />
     <Content Include="Views\Maintenance\Holiday.vbhtml" />
     <Content Include="Views\PersonalMessage\Index.vbhtml" />
+    <Content Include="Views\Message\Index.vbhtml" />
+    <Content Include="Views\Message\_PersonalMessage.vbhtml" />
+    <Content Include="Views\Message\_Announcement.vbhtml" />
+    <Content Include="Views\Message\_Feedback.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

@@ -5,38 +5,38 @@ End Code
 @Html.Partial("_AdminMenuTop")
 
 <div class="body_center">
-    <div class="employee_part" style="">
-        <div class="epy_pt_lt" style="">
-            <div class="epy_lt_box1" style="">
+    <div class="employee_part">
+        <div class="epy_pt_lt">
+            <div class="epy_lt_box1">
 
                 <div class="inbox_haedtext">
                     <span>Search Employee</span>
                 </div>
 
-                <div class="lt_b1_inb" style="">
-                    <div class="b1_inb_part" style="">
-                        <div class="inb_pt_tt" style="">Name :</div>
+                <div class="lt_b1_inb">
+                    <div class="b1_inb_part">
+                        <div class="inb_pt_tt">Name :</div>
 
                         <input type="text" id="title" name="title" class="all_input1">
                         <div class="hlday_addbox_pt_error">Text Error</div>
                     </div>
 
-                    <div class="b1_inb_part" style="">
-                        <div class="inb_pt_tt" style="">Sumame :</div>
+                    <div class="b1_inb_part">
+                        <div class="inb_pt_tt">Sumame :</div>
 
                         <input type="text" id="title" name="title" class="all_input1">
                         <div class="hlday_addbox_pt_error">Text Error</div>
                     </div>
 
-                    <div class="b1_inb_part" style="">
-                        <div class="inb_pt_tt" style="">NRIC :</div>
+                    <div class="b1_inb_part">
+                        <div class="inb_pt_tt">NRIC :</div>
 
                         <input type="text" id="title" name="title" class="all_input1">
                         <div class="hlday_addbox_pt_error">Text Error</div>
                     </div>
 
-                    <div class="b1_inb_part" style="">
-                        <div class="inb_pt_tt" style="">Department :</div>
+                    <div class="b1_inb_part">
+                        <div class="inb_pt_tt">Department :</div>
 
                         <select id="cars" class="all_input1">
                             <option value="EP1">EP1</option>
@@ -48,8 +48,8 @@ End Code
                         <div class="hlday_addbox_pt_error">Text Error</div>
                     </div>
 
-                    <div class="b1_inb_part1" style="">
-                        <div class="inb_pt1_tt" style="">Working Shift :</div>
+                    <div class="b1_inb_part1">
+                        <div class="inb_pt1_tt">Working Shift :</div>
 
                         <select id="cars" class="all_input1">
                             <option value="EP1">EP1</option>
@@ -58,14 +58,14 @@ End Code
                             <option value="EP4">EP4</option>
                         </select>
 
-                        <a class="fa fa-calendar events_none icon_calendar_btn" style=""></a>
+                        <a class="fa fa-calendar events_none icon_calendar_btn"></a>
 
                         <div class="hlday_addbox_pt_error">Text Error</div>
                     </div>
 
-                    <div class="b1_inb_part" style="">
+                    <div class="b1_inb_part">
                         <input type="checkbox" id="" name="vehicle1" style="margin:5px 5px 0 0;">
-                        <div class="inb_pt_checkboxtt" style="">Show Resigned Employees</div>
+                        <div class="inb_pt_checkboxtt">Show Resigned Employees</div>
                     </div>
 
                     <div class="footer_row_btn" style="padding:0 0;">
@@ -76,15 +76,15 @@ End Code
                 </div>
             </div>
 
-            <div class="epy_lt_box2" style="">
+            <div class="epy_lt_box2">
 
                 <div class="inbox_haedtext">
                     <span>Employee List</span>
                 </div>
 
                 <div class="overflow_box" style="height: 300px;">
-                    <table class="epy_lt_table" style="">
-                        <thead style="">
+                    <table class="epy_lt_table">
+                        <thead>
                             <tr>
                                 <th style="width: 200px;">Name</th>
                                 <th style="width: 100px;">Sumame</th>
@@ -94,19 +94,19 @@ End Code
                             </tr>
                         </thead>
 
-                        <tbody style="">
+                        <tbody>
                             <tr>
-                                <td style="">1</td>
-                                <td style="">1</td>
-                                <td style="">1</td>
-                                <td style="">1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
                                 <td style="padding: 0 5px;">1</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="footer_row_total" style="">
+                <div class="footer_row_total">
                     <span>Total : 0 row</span>
                 </div>
             </div>
