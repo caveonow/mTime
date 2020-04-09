@@ -6,7 +6,7 @@ End Code
 @Html.Partial("_AdminMenuTop")
 
 <div class="body_center">
-    @Html.Partial("_SubMenuLeft")'
+    @Html.Partial("_SubMenuLeft")
 
     <div class="bd_ctr_rightpart">
         <div id="rtpt_box-01" class="ctr_rtpt_box">
@@ -14,9 +14,6 @@ End Code
             @Using (Html.BeginForm())
                 @Html.AntiForgeryToken()
                 @<div class="form-horizontal">
-
-                    @*@Html.TextBox("SelectedDate", "", New With {.readonly = "readonly"})*@
-
                     <div class="inbox_haedtext">
                         <span>Holiday :: Add</span>
                     </div>

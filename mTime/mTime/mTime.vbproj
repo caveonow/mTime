@@ -202,6 +202,7 @@
     <Compile Include="Models\HolidayModel.vb" />
     <Compile Include="Models\PoorAttendanceReasonModel.vb" />
     <Compile Include="Models\AttendanceStatusModel.vb" />
+    <Compile Include="Models\ShiftModel.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -374,6 +375,10 @@
     <Content Include="Views\AttendanceStatus\Create.vbhtml" />
     <Content Include="Views\AttendanceStatus\Edit.vbhtml" />
     <Content Include="Views\AttendanceStatus\Delete.vbhtml" />
+    <Content Include="Views\Shift\Create.vbhtml" />
+    <Content Include="Views\Shift\Details.vbhtml" />
+    <Content Include="Views\Shift\Edit.vbhtml" />
+    <Content Include="Views\Shift\Delete.vbhtml" />
     <Content Include="scss\bootstrap-grid.scss" />
     <Content Include="scss\bootstrap-reboot.scss" />
     <Content Include="scss\bootstrap.scss" />
@@ -490,7 +495,7 @@
     <Content Include="Views\Maintenance\Index.vbhtml" />
     <Content Include="Views\Maintenance\LateTolerant.vbhtml" />
     <Content Include="Views\Maintenance\Reason.vbhtml" />
-    <Content Include="Views\Maintenance\WorkingShift.vbhtml" />
+    <Content Include="Views\Maintenance\Shift.vbhtml" />
     <Content Include="Views\Shared\_AdminMenuTop.vbhtml" />
     <Content Include="Views\Shared\_StaffMenuTop.vbhtml" />
     <Content Include="Views\FAQ\Index.vbhtml" />

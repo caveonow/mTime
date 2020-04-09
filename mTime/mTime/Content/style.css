@@ -1,2114 +1,754 @@
 /* line 1, D:/mTime/mTime/mTime/scss/style.scss */
 html, body {
-  font-family: Arial, Helvetica, sans-serif !important;
-  min-width: 1024px !important;
-  padding: 0 0; }
+    font-family: Arial, Helvetica, sans-serif !important;
+    min-width: 1024px !important;
+    padding: 0 0;
+}
 
 /* line 7, D:/mTime/mTime/mTime/scss/style.scss */
 .filter1:hover {
-  filter: brightness(85%); }
+    filter: brightness(85%);
+}
 
 /* line 11, D:/mTime/mTime/mTime/scss/style.scss */
 .filter_c1:hover {
-  color: #026f5d !important; }
+    color: #026f5d !important;
+}
 
 /* line 16, D:/mTime/mTime/mTime/scss/style.scss */
 .filter_cs1 {
-  color: #026f5d !important; }
+    color: #026f5d !important;
+}
 
 /* line 20, D:/mTime/mTime/mTime/scss/style.scss */
 .display_none {
-  display: none; }
+    display: none;
+}
 
 /* line 24, D:/mTime/mTime/mTime/scss/style.scss */
 .display_block {
-  display: block; }
+    display: block;
+}
 
 /* line 28, D:/mTime/mTime/mTime/scss/style.scss */
 .width150 {
-  width: 150px !important; }
+    width: 150px !important;
+}
 
 /* line 32, D:/mTime/mTime/mTime/scss/style.scss */
 .width200 {
-  width: 200px !important; }
+    width: 200px !important;
+}
 
 /* line 36, D:/mTime/mTime/mTime/scss/style.scss */
 .width325 {
-  width: 325px !important; }
+    width: 325px !important;
+}
 
 /* line 40, D:/mTime/mTime/mTime/scss/style.scss */
 .top130 {
-  top: 130px !important; }
+    top: 130px !important;
+}
 
 /* line 44, D:/mTime/mTime/mTime/scss/style.scss */
 .margin0_0 {
-  margin: 0 0 !important; }
+    margin: 0 0 !important;
+}
 
 /* line 48, D:/mTime/mTime/mTime/scss/style.scss */
 .margin_checkbox1 {
-  margin: 1px 5px 0 0 !important; }
+    margin: 1px 5px 0 0 !important;
+}
 
 /* line 52, D:/mTime/mTime/mTime/scss/style.scss */
 .padding0_10 {
-  padding: 0 10px; }
+    padding: 0 10px;
+}
 
 /* line 56, D:/mTime/mTime/mTime/scss/style.scss */
 .bg_color_tpr {
-  background-color: transparent !important; }
+    background-color: transparent !important;
+}
 
 /* line 60, D:/mTime/mTime/mTime/scss/style.scss */
 .overflow_box {
-  width: 100%;
-  height: 445px;
-  float: left;
-  overflow: auto; }
+    width: 100%;
+    height: 445px;
+    float: left;
+    overflow: auto;
+}
 
 /* line 67, D:/mTime/mTime/mTime/scss/style.scss */
 .bg_bd1_radius {
-  background-color: #fff;
-  border: 1px #aaa solid;
-  border-radius: 5px; }
+    background-color: #fff;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+}
 
 /* line 73, D:/mTime/mTime/mTime/scss/style.scss */
 .footer_row_btn {
-  width: 100%;
-  height: initial;
-  float: left;
-  position: relative;
-  padding: 0 10px; }
+    width: 100%;
+    height: initial;
+    float: left;
+    position: relative;
+    padding: 0 10px;
+}
 
 /* line 81, D:/mTime/mTime/mTime/scss/style.scss */
 .footer_row1_btn {
-  width: 100%;
-  height: initial;
-  padding: 0 10px;
-  position: absolute;
-  left: 0;
-  bottom: 10px; }
+    width: 100%;
+    height: initial;
+    padding: 0 10px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
 
 /* line 90, D:/mTime/mTime/mTime/scss/style.scss */
 .bg_color_w {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  z-index: 1; }
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+}
 
 /* line 100, D:/mTime/mTime/mTime/scss/style.scss */
 .check-box {
-  float: left;
-  width: 17px !important;
-  height: 17px !important;
-  margin: 0 0; }
+    float: left;
+    width: 17px !important;
+    height: 17px !important;
+    margin: 0 0;
+}
 
 /* line 107, D:/mTime/mTime/mTime/scss/style.scss */
 input[type="radio"], input[type="checkbox"] {
-  float: left;
-  width: 17px !important;
-  height: 17px !important;
-  margin: 0 0; }
+    float: left;
+    width: 17px !important;
+    height: 17px !important;
+    margin: 0 0;
+}
 
 /* line 114, D:/mTime/mTime/mTime/scss/style.scss */
 .checkinbox {
-  width: 100%;
-  height: 30px;
-  float: left;
-  padding: 8px 0 0 0; }
+    width: 100%;
+    height: 30px;
+    float: left;
+    padding: 8px 0 0 0;
+}
 
 /* line 121, D:/mTime/mTime/mTime/scss/style.scss */
 input {
-  border: 0; }
+    border: 0;
+}
 
 /* line 125, D:/mTime/mTime/mTime/scss/style.scss */
 .events_none {
-  background-color: #ddd !important;
-  border: 1px #aaa solid;
-  pointer-events: none !important; }
+    background-color: #ddd !important;
+    border: 1px #aaa solid;
+    pointer-events: none !important;
+}
 
 /* line 132, D:/mTime/mTime/mTime/scss/style.scss */
 td .check-box {
-  margin: 0 0 -4px 0; }
+    margin: 0 0 -4px 0;
+}
 
 /* line 137, D:/mTime/mTime/mTime/scss/style.scss */
 .header_part1 {
-  width: 100%;
-  height: 40px;
-  background-color: #038C76;
-  position: relative;
-  z-index: 99; }
-  /* line 144, D:/mTime/mTime/mTime/scss/style.scss */
-  .header_part1 .translate_part {
-    width: initial;
-    height: inherit;
-    float: right; }
-    /* line 149, D:/mTime/mTime/mTime/scss/style.scss */
-    .header_part1 .translate_part .tsl_pt_ttbtn {
-      width: initial;
-      height: initial;
-      color: #fff;
-      font-size: 14px;
-      line-height: 30px;
-      text-align: center;
-      float: right;
-      margin: 5px 0;
-      padding: 0 10px;
-      text-decoration: none;
-      position: relative; }
-  /* line 164, D:/mTime/mTime/mTime/scss/style.scss */
-  .header_part1 .hd_pt1_inbox1 {
-    color: #fff;
-    font-size: 14px;
-    width: initial;
-    height: 100%;
-    line-height: 40px;
-    float: left; }
-    /* line 172, D:/mTime/mTime/mTime/scss/style.scss */
-    .header_part1 .hd_pt1_inbox1 .pt1_inbox1_icon {
-      width: 40px;
-      height: 100%;
-      font-size: 30px;
-      line-height: 40px;
-      text-align: center;
-      float: left;
-      background-color: #026f5d;
-      margin: 0 10px 0 0; }
-    /* line 183, D:/mTime/mTime/mTime/scss/style.scss */
-    .header_part1 .hd_pt1_inbox1 #ct {
-      margin: 0 10px;
-      line-height: 40px;
-      width: initial;
-      display: inline-table; }
-  /* line 191, D:/mTime/mTime/mTime/scss/style.scss */
-  .header_part1 .hd_pt1_logouticon {
-    color: #fff;
-    width: initial;
-    font-size: 14px;
-    /*font-size: 26px;*/
-    line-height: 30px;
-    text-align: center;
-    float: right;
-    margin: 5px 0;
-    padding: 0 10px;
-    border-left: 2px #09af94 solid;
-    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    background-color: #038C76;
     position: relative;
-    cursor: pointer; }
-    /* line 206, D:/mTime/mTime/mTime/scss/style.scss */
-    .header_part1 .hd_pt1_logouticon .logouticon_mo_tt {
-      display: none; }
-  /* line 212, D:/mTime/mTime/mTime/scss/style.scss */
-  .header_part1 .hd_pt1_logouticon:hover .logouticon_mo_tt {
-    width: initial;
-    height: 26px;
-    line-height: 26px;
-    font-size: 12px;
-    position: absolute;
-    float: right;
-    top: 0;
-    right: 44px;
-    margin: 2px 0 0 0;
-    padding: 0 10px;
-    display: block;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.75);
-    z-index: 1;
-    pointer-events: none;
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif !important; }
-  /* line 233, D:/mTime/mTime/mTime/scss/style.scss */
-  .header_part1 .hd_pt1_inbox2 {
-    color: #fff;
-    font-size: 14px;
-    width: initial;
-    height: 100%;
-    line-height: 40px;
-    float: right;
-    margin: 0 10px 0 0; }
-    /* line 242, D:/mTime/mTime/mTime/scss/style.scss */
-    .header_part1 .hd_pt1_inbox2 .pt1_inbox2_usericon {
-      color: #fff;
-      width: 40px;
-      height: 100%;
-      font-size: 30px;
-      line-height: 40px;
-      text-align: center;
-      float: left;
-      margin: 0 5px 0 0;
-      text-decoration: none;
-      position: relative; }
-    /* line 255, D:/mTime/mTime/mTime/scss/style.scss */
-    .header_part1 .hd_pt1_inbox2 .hd_profile {
-      width: 300px;
-      height: initial;
-      position: absolute;
-      z-index: 99;
-      right: 44px;
-      top: 40px;
-      float: right;
-      margin: 0 0;
-      /*margin: 10px 0 0;*/
-      background-color: #026f5d;
-      border-radius: 5px 5px;
-      padding: 5px 5px;
-      display: none; }
-      /* line 270, D:/mTime/mTime/mTime/scss/style.scss */
-      .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_arrow {
-        /*margin: -15px 99px 0 0;*/
-        margin: 0 99px 0 0;
-        float: right; }
-      /* line 276, D:/mTime/mTime/mTime/scss/style.scss */
-      .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part1:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part4:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part5:hover {
-        background-color: #038C76; }
-      /* line 280, D:/mTime/mTime/mTime/scss/style.scss */
-      .header_part1 .hd_pt1_inbox2 .hd_profile .p2_b_icon:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .pf_p4_tt1:hover {
-        color: #fff; }
-      /* line 284, D:/mTime/mTime/mTime/scss/style.scss */
-      .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part1 {
-        width: 100%;
-        height: 30px;
-        line-height: 30px;
-        padding: 0 5px;
-        float: left;
-        margin: 0 0 5px 0;
-        font-size: 16px;
-        border-bottom: 1px #038C76 solid; }
-      /* line 295, D:/mTime/mTime/mTime/scss/style.scss */
-      .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 {
-        width: 100%;
-        height: 30px;
-        line-height: 30px;
-        float: left;
-        font-size: 14px;
-        padding: 0 5px; }
-        /* line 303, D:/mTime/mTime/mTime/scss/style.scss */
-        .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 .pf_p2_box {
-          width: initial;
-          height: inherit;
-          float: right; }
-          /* line 308, D:/mTime/mTime/mTime/scss/style.scss */
-          .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 .pf_p2_box .p2_b_tt {
+    z-index: 99;
+}
+    /* line 144, D:/mTime/mTime/mTime/scss/style.scss */
+    .header_part1 .translate_part {
+        width: initial;
+        height: inherit;
+        float: right;
+    }
+        /* line 149, D:/mTime/mTime/mTime/scss/style.scss */
+        .header_part1 .translate_part .tsl_pt_ttbtn {
             width: initial;
-            height: inherit;
-            float: left;
-            font-size: 12px;
-            text-align: right;
-            line-height: 30px;
-            margin: 0 5px; }
-          /* line 318, D:/mTime/mTime/mTime/scss/style.scss */
-          .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 .pf_p2_box .p2_b_icon {
-            width: 20px;
-            height: 30px;
-            margin: 0 0;
-            float: right;
-            font-size: 18px;
-            color: #999;
+            height: initial;
+            color: #fff;
+            font-size: 14px;
             line-height: 30px;
             text-align: center;
-            cursor: pointer; }
-          /* line 330, D:/mTime/mTime/mTime/scss/style.scss */
-          .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 .pf_p2_box .p2_b_icon:hover {
-            color: #fff; }
-      /* line 336, D:/mTime/mTime/mTime/scss/style.scss */
-      .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 {
-        width: 100%;
-        height: 30px;
-        line-height: 30px;
-        float: left;
+            float: right;
+            margin: 5px 0;
+            padding: 0 10px;
+            text-decoration: none;
+            position: relative;
+        }
+    /* line 164, D:/mTime/mTime/mTime/scss/style.scss */
+    .header_part1 .hd_pt1_inbox1 {
+        color: #fff;
         font-size: 14px;
-        padding: 0 5px; }
-        /* line 344, D:/mTime/mTime/mTime/scss/style.scss */
-        .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box {
-          width: initial;
-          height: 30px;
-          float: right;
-          font-size: 14px; }
-          /* line 350, D:/mTime/mTime/mTime/scss/style.scss */
-          .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_tt1 {
-            color: #999;
-            line-height: 30px;
-            padding: 0 5px;
+        width: initial;
+        height: 100%;
+        line-height: 40px;
+        float: left;
+    }
+        /* line 172, D:/mTime/mTime/mTime/scss/style.scss */
+        .header_part1 .hd_pt1_inbox1 .pt1_inbox1_icon {
+            width: 40px;
+            height: 100%;
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
             float: left;
-            text-decoration: none; }
-          /* line 358, D:/mTime/mTime/mTime/scss/style.scss */
-          .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_line {
-            margin: 5px 5px;
-            width: 1px;
-            height: 20px;
-            background-color: #999;
-            float: left; }
-          /* line 366, D:/mTime/mTime/mTime/scss/style.scss */
-          .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_tt2 {
-            line-height: 30px;
-            padding: 0 5px;
-            float: left;
-            color: #999;
-            text-decoration: none; }
-          /* line 374, D:/mTime/mTime/mTime/scss/style.scss */
-          .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_tt1:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_tt2:hover {
-            color: #fff; }
-          /* line 378, D:/mTime/mTime/mTime/scss/style.scss */
-          .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_button, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_button:hover {
-            color: #fff !important;
-            pointer-events: none;
-            font-weight: bold; }
-      /* line 386, D:/mTime/mTime/mTime/scss/style.scss */
-      .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part4 {
-        width: 100%;
-        height: 30px;
-        line-height: 30px;
-        float: left;
+            background-color: #026f5d;
+            margin: 0 10px 0 0;
+        }
+        /* line 183, D:/mTime/mTime/mTime/scss/style.scss */
+        .header_part1 .hd_pt1_inbox1 #ct {
+            margin: 0 10px;
+            line-height: 40px;
+            width: initial;
+            display: inline-table;
+        }
+    /* line 191, D:/mTime/mTime/mTime/scss/style.scss */
+    .header_part1 .hd_pt1_logouticon {
+        color: #fff;
+        width: initial;
         font-size: 14px;
-        padding: 0 5px; }
-        /* line 394, D:/mTime/mTime/mTime/scss/style.scss */
-        .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part4 .pf_p4_tt1 {
-          width: initial;
-          height: 30px;
-          float: right;
-          font-size: 14px;
-          cursor: pointer;
-          color: #999; }
-        /* line 403, D:/mTime/mTime/mTime/scss/style.scss */
-        .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part4 .pf_p4_tt1:hover {
-          color: #fff; }
-      /* line 408, D:/mTime/mTime/mTime/scss/style.scss */
-      .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part5 {
-        width: 100%;
-        height: 30px;
+        /*font-size: 26px;*/
         line-height: 30px;
-        float: left;
-        font-size: 14px;
-        padding: 0 5px;
+        text-align: center;
+        float: right;
+        margin: 5px 0;
+        padding: 0 10px;
+        border-left: 2px #09af94 solid;
         text-decoration: none;
-        cursor: pointer; }
+        position: relative;
+        cursor: pointer;
+    }
+        /* line 206, D:/mTime/mTime/mTime/scss/style.scss */
+        .header_part1 .hd_pt1_logouticon .logouticon_mo_tt {
+            display: none;
+        }
+        /* line 212, D:/mTime/mTime/mTime/scss/style.scss */
+        .header_part1 .hd_pt1_logouticon:hover .logouticon_mo_tt {
+            width: initial;
+            height: 26px;
+            line-height: 26px;
+            font-size: 12px;
+            position: absolute;
+            float: right;
+            top: 0;
+            right: 44px;
+            margin: 2px 0 0 0;
+            padding: 0 10px;
+            display: block;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.75);
+            z-index: 1;
+            pointer-events: none;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+    /* line 233, D:/mTime/mTime/mTime/scss/style.scss */
+    .header_part1 .hd_pt1_inbox2 {
+        color: #fff;
+        font-size: 14px;
+        width: initial;
+        height: 100%;
+        line-height: 40px;
+        float: right;
+        margin: 0 10px 0 0;
+    }
+        /* line 242, D:/mTime/mTime/mTime/scss/style.scss */
+        .header_part1 .hd_pt1_inbox2 .pt1_inbox2_usericon {
+            color: #fff;
+            width: 40px;
+            height: 100%;
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+            float: left;
+            margin: 0 5px 0 0;
+            text-decoration: none;
+            position: relative;
+        }
+        /* line 255, D:/mTime/mTime/mTime/scss/style.scss */
+        .header_part1 .hd_pt1_inbox2 .hd_profile {
+            width: 300px;
+            height: initial;
+            position: absolute;
+            z-index: 99;
+            right: 44px;
+            top: 40px;
+            float: right;
+            margin: 0 0;
+            /*margin: 10px 0 0;*/
+            background-color: #026f5d;
+            border-radius: 5px 5px;
+            padding: 5px 5px;
+            display: none;
+        }
+            /* line 270, D:/mTime/mTime/mTime/scss/style.scss */
+            .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_arrow {
+                /*margin: -15px 99px 0 0;*/
+                margin: 0 99px 0 0;
+                float: right;
+            }
+            /* line 276, D:/mTime/mTime/mTime/scss/style.scss */
+            .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part1:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part4:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part5:hover {
+                background-color: #038C76;
+            }
+            /* line 280, D:/mTime/mTime/mTime/scss/style.scss */
+            .header_part1 .hd_pt1_inbox2 .hd_profile .p2_b_icon:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .pf_p4_tt1:hover {
+                color: #fff;
+            }
+            /* line 284, D:/mTime/mTime/mTime/scss/style.scss */
+            .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part1 {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                padding: 0 5px;
+                float: left;
+                margin: 0 0 5px 0;
+                font-size: 16px;
+                border-bottom: 1px #038C76 solid;
+            }
+            /* line 295, D:/mTime/mTime/mTime/scss/style.scss */
+            .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                float: left;
+                font-size: 14px;
+                padding: 0 5px;
+            }
+                /* line 303, D:/mTime/mTime/mTime/scss/style.scss */
+                .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 .pf_p2_box {
+                    width: initial;
+                    height: inherit;
+                    float: right;
+                }
+                    /* line 308, D:/mTime/mTime/mTime/scss/style.scss */
+                    .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 .pf_p2_box .p2_b_tt {
+                        width: initial;
+                        height: inherit;
+                        float: left;
+                        font-size: 12px;
+                        text-align: right;
+                        line-height: 30px;
+                        margin: 0 5px;
+                    }
+                    /* line 318, D:/mTime/mTime/mTime/scss/style.scss */
+                    .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 .pf_p2_box .p2_b_icon {
+                        width: 20px;
+                        height: 30px;
+                        margin: 0 0;
+                        float: right;
+                        font-size: 18px;
+                        color: #999;
+                        line-height: 30px;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                        /* line 330, D:/mTime/mTime/mTime/scss/style.scss */
+                        .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 .pf_p2_box .p2_b_icon:hover {
+                            color: #fff;
+                        }
+            /* line 336, D:/mTime/mTime/mTime/scss/style.scss */
+            .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                float: left;
+                font-size: 14px;
+                padding: 0 5px;
+            }
+                /* line 344, D:/mTime/mTime/mTime/scss/style.scss */
+                .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box {
+                    width: initial;
+                    height: 30px;
+                    float: right;
+                    font-size: 14px;
+                }
+                    /* line 350, D:/mTime/mTime/mTime/scss/style.scss */
+                    .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_tt1 {
+                        color: #999;
+                        line-height: 30px;
+                        padding: 0 5px;
+                        float: left;
+                        text-decoration: none;
+                    }
+                    /* line 358, D:/mTime/mTime/mTime/scss/style.scss */
+                    .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_line {
+                        margin: 5px 5px;
+                        width: 1px;
+                        height: 20px;
+                        background-color: #999;
+                        float: left;
+                    }
+                    /* line 366, D:/mTime/mTime/mTime/scss/style.scss */
+                    .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_tt2 {
+                        line-height: 30px;
+                        padding: 0 5px;
+                        float: left;
+                        color: #999;
+                        text-decoration: none;
+                    }
+                        /* line 374, D:/mTime/mTime/mTime/scss/style.scss */
+                        .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_tt1:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_tt2:hover {
+                            color: #fff;
+                        }
+                    /* line 378, D:/mTime/mTime/mTime/scss/style.scss */
+                    .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_button, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_button:hover {
+                        color: #fff !important;
+                        pointer-events: none;
+                        font-weight: bold;
+                    }
+            /* line 386, D:/mTime/mTime/mTime/scss/style.scss */
+            .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part4 {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                float: left;
+                font-size: 14px;
+                padding: 0 5px;
+            }
+                /* line 394, D:/mTime/mTime/mTime/scss/style.scss */
+                .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part4 .pf_p4_tt1 {
+                    width: initial;
+                    height: 30px;
+                    float: right;
+                    font-size: 14px;
+                    cursor: pointer;
+                    color: #999;
+                }
+                    /* line 403, D:/mTime/mTime/mTime/scss/style.scss */
+                    .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part4 .pf_p4_tt1:hover {
+                        color: #fff;
+                    }
+            /* line 408, D:/mTime/mTime/mTime/scss/style.scss */
+            .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part5 {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                float: left;
+                font-size: 14px;
+                padding: 0 5px;
+                text-decoration: none;
+                cursor: pointer;
+            }
 
 /* line 422, D:/mTime/mTime/mTime/scss/style.scss */
 .header_part2 {
-  width: 100%;
-  height: 40px;
-  float: left;
-  background-color: #09af94;
-  z-index: 99;
-  position: relative; }
-  /* line 430, D:/mTime/mTime/mTime/scss/style.scss */
-  .header_part2 .hd_pt2_box {
-    width: initial;
-    height: inherit;
-    float: right; }
-    /* line 435, D:/mTime/mTime/mTime/scss/style.scss */
-    .header_part2 .hd_pt2_box .pt2_b_btn {
-      width: initial;
-      height: 30px;
-      margin: 5px 0;
-      float: left;
-      text-decoration: none; }
-      /* line 442, D:/mTime/mTime/mTime/scss/style.scss */
-      .header_part2 .hd_pt2_box .pt2_b_btn .pt2_b_inbtn {
-        line-height: 30px;
-        text-align: center;
-        font-size: 14px;
-        border-left: 2px #4ecab5 solid;
-        padding: 0 10px;
-        color: #fff; }
-    /* line 452, D:/mTime/mTime/mTime/scss/style.scss */
-    .header_part2 .hd_pt2_box .pt2_b_btn:hover, .header_part2 .hd_pt2_box .pt2_b_btneff {
-      position: relative; }
-      /* line 455, D:/mTime/mTime/mTime/scss/style.scss */
-      .header_part2 .hd_pt2_box .pt2_b_btn:hover .pt2_b_inbtn, .header_part2 .hd_pt2_box .pt2_b_btneff .pt2_b_inbtn {
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35); }
-      /* line 459, D:/mTime/mTime/mTime/scss/style.scss */
-      .header_part2 .hd_pt2_box .pt2_b_btn:hover .pt2_b_inbtneff, .header_part2 .hd_pt2_box .pt2_b_btneff .pt2_b_inbtneff {
-        width: 0;
-        height: 0;
-        margin: -5px auto 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid #fff; }
-      /* line 468, D:/mTime/mTime/mTime/scss/style.scss */
-      .header_part2 .hd_pt2_box .pt2_b_btn:hover .pt2_b_inbtnefflight, .header_part2 .hd_pt2_box .pt2_b_btneff .pt2_b_inbtnefflight {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 70%);
-        width: 100%;
+    width: 100%;
+    height: 40px;
+    float: left;
+    background-color: #09af94;
+    z-index: 99;
+    position: relative;
+}
+    /* line 430, D:/mTime/mTime/mTime/scss/style.scss */
+    .header_part2 .hd_pt2_box {
+        width: initial;
         height: inherit;
-        position: absolute;
-        z-index: 1;
-        top: -5px;
-        margin: 0 0; }
+        float: right;
+    }
+        /* line 435, D:/mTime/mTime/mTime/scss/style.scss */
+        .header_part2 .hd_pt2_box .pt2_b_btn {
+            width: initial;
+            height: 30px;
+            margin: 5px 0;
+            float: left;
+            text-decoration: none;
+        }
+            /* line 442, D:/mTime/mTime/mTime/scss/style.scss */
+            .header_part2 .hd_pt2_box .pt2_b_btn .pt2_b_inbtn {
+                line-height: 30px;
+                text-align: center;
+                font-size: 14px;
+                border-left: 2px #4ecab5 solid;
+                padding: 0 10px;
+                color: #fff;
+            }
+            /* line 452, D:/mTime/mTime/mTime/scss/style.scss */
+            .header_part2 .hd_pt2_box .pt2_b_btn:hover, .header_part2 .hd_pt2_box .pt2_b_btneff {
+                position: relative;
+            }
+                /* line 455, D:/mTime/mTime/mTime/scss/style.scss */
+                .header_part2 .hd_pt2_box .pt2_b_btn:hover .pt2_b_inbtn, .header_part2 .hd_pt2_box .pt2_b_btneff .pt2_b_inbtn {
+                    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+                }
+                /* line 459, D:/mTime/mTime/mTime/scss/style.scss */
+                .header_part2 .hd_pt2_box .pt2_b_btn:hover .pt2_b_inbtneff, .header_part2 .hd_pt2_box .pt2_b_btneff .pt2_b_inbtneff {
+                    width: 0;
+                    height: 0;
+                    margin: -5px auto 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid #fff;
+                }
+                /* line 468, D:/mTime/mTime/mTime/scss/style.scss */
+                .header_part2 .hd_pt2_box .pt2_b_btn:hover .pt2_b_inbtnefflight, .header_part2 .hd_pt2_box .pt2_b_btneff .pt2_b_inbtnefflight {
+                    background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 70%);
+                    width: 100%;
+                    height: inherit;
+                    position: absolute;
+                    z-index: 1;
+                    top: -5px;
+                    margin: 0 0;
+                }
 
 /* line 481, D:/mTime/mTime/mTime/scss/style.scss */
 .employee_part {
-  width: 100%;
-  height: initial;
-  float: left;
-  position: relative;
-  padding: 0 10px 0 420px; }
-  /* line 488, D:/mTime/mTime/mTime/scss/style.scss */
-  .employee_part .epy_pt_lt {
-    width: 400px;
-    height: initial;
-    position: absolute;
-    left: 0;
-    top: 0; }
-    /* line 495, D:/mTime/mTime/mTime/scss/style.scss */
-    .employee_part .epy_pt_lt .epy_lt_box1 {
-      width: 100%;
-      height: initial;
-      border-radius: 5px 5px;
-      border: 1px #ccc solid;
-      margin: 0 0 10px 10px;
-      overflow: auto;
-      position: relative;
-      float: left; }
-      /* line 505, D:/mTime/mTime/mTime/scss/style.scss */
-      .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb {
-        padding: 10px 10px;
-        width: 100%;
-        height: initial;
-        float: left; }
-        /* line 511, D:/mTime/mTime/mTime/scss/style.scss */
-        .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part {
-          width: 100%;
-          height: initial;
-          float: left;
-          position: relative;
-          padding: 0 0 0 120px;
-          margin: 0 0 10px 0; }
-          /* line 519, D:/mTime/mTime/mTime/scss/style.scss */
-          .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part .inb_pt_tt {
-            width: 110px;
-            height: 30px;
-            text-align: right;
-            float: left;
-            line-height: 30px;
-            font-size: 14px;
-            position: absolute;
-            left: 0; }
-          /* line 530, D:/mTime/mTime/mTime/scss/style.scss */
-          .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part .inb_pt_checkboxtt {
-            width: 100%;
-            height: 30px;
-            line-height: 30px;
-            font-size: 12px; }
-        /* line 538, D:/mTime/mTime/mTime/scss/style.scss */
-        .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part1 {
-          width: 100%;
-          height: initial;
-          float: left;
-          position: relative;
-          padding: 0 40px 0 120px;
-          margin: 0 0 10px 0; }
-          /* line 546, D:/mTime/mTime/mTime/scss/style.scss */
-          .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part1 .inb_pt1_tt {
-            width: 110px;
-            height: 30px;
-            text-align: right;
-            float: left;
-            line-height: 30px;
-            font-size: 14px;
-            position: absolute;
-            left: 0; }
-    /* line 560, D:/mTime/mTime/mTime/scss/style.scss */
-    .employee_part .epy_pt_lt .epy_lt_box2 {
-      width: 100%;
-      height: initial;
-      border-radius: 5px 5px;
-      border: 1px #ccc solid;
-      margin: 0 0 10px 10px;
-      position: relative;
-      float: left; }
-  /* line 571, D:/mTime/mTime/mTime/scss/style.scss */
-  .employee_part .epy_pt_rt {
     width: 100%;
-    min-height: 515px;
+    height: initial;
     float: left;
-    border-radius: 5px 5px;
-    border: 1px #ccc solid;
-    margin: 0 0 10px 0;
-    overflow: auto;
-    position: relative; }
+    position: relative;
+    padding: 0 10px 0 420px;
+}
+    /* line 488, D:/mTime/mTime/mTime/scss/style.scss */
+    .employee_part .epy_pt_lt {
+        width: 400px;
+        height: initial;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+        /* line 495, D:/mTime/mTime/mTime/scss/style.scss */
+        .employee_part .epy_pt_lt .epy_lt_box1 {
+            width: 100%;
+            height: initial;
+            border-radius: 5px 5px;
+            border: 1px #ccc solid;
+            margin: 0 0 10px 10px;
+            overflow: auto;
+            position: relative;
+            float: left;
+        }
+            /* line 505, D:/mTime/mTime/mTime/scss/style.scss */
+            .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb {
+                padding: 10px 10px;
+                width: 100%;
+                height: initial;
+                float: left;
+            }
+                /* line 511, D:/mTime/mTime/mTime/scss/style.scss */
+                .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part {
+                    width: 100%;
+                    height: initial;
+                    float: left;
+                    position: relative;
+                    padding: 0 0 0 120px;
+                    margin: 0 0 10px 0;
+                }
+                    /* line 519, D:/mTime/mTime/mTime/scss/style.scss */
+                    .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part .inb_pt_tt {
+                        width: 110px;
+                        height: 30px;
+                        text-align: right;
+                        float: left;
+                        line-height: 30px;
+                        font-size: 14px;
+                        position: absolute;
+                        left: 0;
+                    }
+                    /* line 530, D:/mTime/mTime/mTime/scss/style.scss */
+                    .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part .inb_pt_checkboxtt {
+                        width: 100%;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 12px;
+                    }
+                /* line 538, D:/mTime/mTime/mTime/scss/style.scss */
+                .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part1 {
+                    width: 100%;
+                    height: initial;
+                    float: left;
+                    position: relative;
+                    padding: 0 40px 0 120px;
+                    margin: 0 0 10px 0;
+                }
+                    /* line 546, D:/mTime/mTime/mTime/scss/style.scss */
+                    .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part1 .inb_pt1_tt {
+                        width: 110px;
+                        height: 30px;
+                        text-align: right;
+                        float: left;
+                        line-height: 30px;
+                        font-size: 14px;
+                        position: absolute;
+                        left: 0;
+                    }
+        /* line 560, D:/mTime/mTime/mTime/scss/style.scss */
+        .employee_part .epy_pt_lt .epy_lt_box2 {
+            width: 100%;
+            height: initial;
+            border-radius: 5px 5px;
+            border: 1px #ccc solid;
+            margin: 0 0 10px 10px;
+            position: relative;
+            float: left;
+        }
+    /* line 571, D:/mTime/mTime/mTime/scss/style.scss */
+    .employee_part .epy_pt_rt {
+        width: 100%;
+        min-height: 515px;
+        float: left;
+        border-radius: 5px 5px;
+        border: 1px #ccc solid;
+        margin: 0 0 10px 0;
+        overflow: auto;
+        position: relative;
+    }
 
 /* line 583, D:/mTime/mTime/mTime/scss/style.scss */
 .epy_lt_table {
-  width: 750px;
-  line-height: 30px;
-  margin: 0 0 40px 0;
-  font-size: 12px;
-  position: relative; }
-  /* line 590, D:/mTime/mTime/mTime/scss/style.scss */
-  .epy_lt_table thead {
-    background-color: #aaa;
-    height: 30px; }
-    /* line 595, D:/mTime/mTime/mTime/scss/style.scss */
-    .epy_lt_table thead tr th {
-      border-right: 1px #ccc solid;
-      padding: 0 5px;
-      color: #fff; }
-  /* line 603, D:/mTime/mTime/mTime/scss/style.scss */
-  .epy_lt_table tbody {
-    height: 30px; }
-    /* line 607, D:/mTime/mTime/mTime/scss/style.scss */
-    .epy_lt_table tbody tr td {
-      border-right: 1px #aaa solid;
-      padding: 0 5px; }
+    width: 750px;
+    line-height: 30px;
+    margin: 0 0 40px 0;
+    font-size: 12px;
+    position: relative;
+}
+    /* line 590, D:/mTime/mTime/mTime/scss/style.scss */
+    .epy_lt_table thead {
+        background-color: #aaa;
+        height: 30px;
+    }
+        /* line 595, D:/mTime/mTime/mTime/scss/style.scss */
+        .epy_lt_table thead tr th {
+            border-right: 1px #ccc solid;
+            padding: 0 5px;
+            color: #fff;
+        }
+    /* line 603, D:/mTime/mTime/mTime/scss/style.scss */
+    .epy_lt_table tbody {
+        height: 30px;
+    }
+        /* line 607, D:/mTime/mTime/mTime/scss/style.scss */
+        .epy_lt_table tbody tr td {
+            border-right: 1px #aaa solid;
+            padding: 0 5px;
+        }
 
 /* line 615, D:/mTime/mTime/mTime/scss/style.scss */
 .footer_row_total {
-  width: 100%;
-  height: 30px;
-  border-radius: 0 0 5px 5px;
-  padding: 0 10px;
-  position: relative;
-  float: left;
-  background-color: #444;
-  z-index: 1; }
-  /* line 625, D:/mTime/mTime/mTime/scss/style.scss */
-  .footer_row_total span {
-    width: initial;
+    width: 100%;
+    height: 30px;
+    border-radius: 0 0 5px 5px;
+    padding: 0 10px;
+    position: relative;
     float: left;
-    color: #fff;
-    line-height: 30px;
-    font-size: 12px; }
+    background-color: #444;
+    z-index: 1;
+}
+    /* line 625, D:/mTime/mTime/mTime/scss/style.scss */
+    .footer_row_total span {
+        width: initial;
+        float: left;
+        color: #fff;
+        line-height: 30px;
+        font-size: 12px;
+    }
 
 /* line 634, D:/mTime/mTime/mTime/scss/style.scss */
 .icon_calendar_btn {
-  width: 30px;
-  height: 30px;
-  line-height: 29px;
-  position: absolute;
-  right: 0;
-  border: 1px #aaa solid;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 18px;
-  color: #333;
-  text-decoration: none; }
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    position: absolute;
+    right: 0;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
 
 /* line 648, D:/mTime/mTime/mTime/scss/style.scss */
 .icon_calendar1_btn {
-  width: 30px;
-  height: 30px;
-  line-height: 29px;
-  position: absolute;
-  right: 0;
-  border: 1px #aaa solid;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 18px;
-  color: #fff !important;
-  text-decoration: none; }
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    position: absolute;
+    right: 0;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff !important;
+    text-decoration: none;
+}
 
-/* line 662, D:/mTime/mTime/mTime/scss/style.scss */
-.icon_calendar_btn:hover, .icon_calendar1_btn:hover {
-  width: 30px;
-  height: 30px;
-  line-height: 29px;
-  font-size: 18px;
-  text-decoration: none; }
+    /* line 662, D:/mTime/mTime/mTime/scss/style.scss */
+    .icon_calendar_btn:hover, .icon_calendar1_btn:hover {
+        width: 30px;
+        height: 30px;
+        line-height: 29px;
+        font-size: 18px;
+        text-decoration: none;
+    }
 
 /* line 670, D:/mTime/mTime/mTime/scss/style.scss */
 .Feedback_box {
-  width: 500px;
-  height: initial;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ddd;
-  border-radius: 5px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-  z-index: 1; }
-  /* line 682, D:/mTime/mTime/mTime/scss/style.scss */
-  .Feedback_box .Fbk_b_htr {
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    float: left;
-    font-size: 14px;
-    color: #fff;
-    border-radius: 5px 5px 0 0;
-    padding: 0 10px;
-    background-color: #222; }
-  /* line 694, D:/mTime/mTime/mTime/scss/style.scss */
-  .Feedback_box .Fbk_b_ttarea {
-    width: 100%;
-    line-height: 30px;
-    float: left;
-    font-size: 12px;
-    color: #333;
-    padding: 10px 10px;
-    background-color: #fff; }
-    /* line 703, D:/mTime/mTime/mTime/scss/style.scss */
-    .Feedback_box .Fbk_b_ttarea .b_ttarea_box {
-      width: 480px;
-      max-height: 100px;
-      min-height: 100px;
-      float: left;
-      font-size: 12px;
-      color: #333;
-      border: 1px #aaa solid;
-      padding: 5px 5px;
-      line-height: 16px; }
-  /* line 716, D:/mTime/mTime/mTime/scss/style.scss */
-  .Feedback_box .Fbk_b_ftr {
-    width: 100%;
-    height: 30px;
-    float: left;
-    padding: 0 10px;
-    margin: 5px 0; }
+    width: 500px;
+    height: initial;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+    /* line 682, D:/mTime/mTime/mTime/scss/style.scss */
+    .Feedback_box .Fbk_b_htr {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        float: left;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+        background-color: #222;
+    }
+    /* line 694, D:/mTime/mTime/mTime/scss/style.scss */
+    .Feedback_box .Fbk_b_ttarea {
+        width: 100%;
+        line-height: 30px;
+        float: left;
+        font-size: 12px;
+        color: #333;
+        padding: 10px 10px;
+        background-color: #fff;
+    }
+        /* line 703, D:/mTime/mTime/mTime/scss/style.scss */
+        .Feedback_box .Fbk_b_ttarea .b_ttarea_box {
+            width: 480px;
+            max-height: 100px;
+            min-height: 100px;
+            float: left;
+            font-size: 12px;
+            color: #333;
+            border: 1px #aaa solid;
+            padding: 5px 5px;
+            line-height: 16px;
+        }
+    /* line 716, D:/mTime/mTime/mTime/scss/style.scss */
+    .Feedback_box .Fbk_b_ftr {
+        width: 100%;
+        height: 30px;
+        float: left;
+        padding: 0 10px;
+        margin: 5px 0;
+    }
 
 /* line 725, D:/mTime/mTime/mTime/scss/style.scss */
 .firstlogin_box {
-  width: 500px;
-  height: initial;
-  padding: 15px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-  z-index: 1; }
-  /* line 738, D:/mTime/mTime/mTime/scss/style.scss */
-  .firstlogin_box .ftlogin_b_icon {
-    width: 100%;
-    height: initial;
-    float: left;
-    color: #666;
-    text-align: center;
-    font-size: 80px;
-    margin: 0 0 20px 0; }
-    /* line 747, D:/mTime/mTime/mTime/scss/style.scss */
-    .firstlogin_box .ftlogin_b_icon .ftlogin_b_httt {
-      width: 100%;
-      line-height: 30px;
-      margin: 0 0 10px 0;
-      padding: 0 10px;
-      float: left;
-      font-size: 20px;
-      text-align: center;
-      font-family: Arial, Helvetica, sans-serif !important; }
-  /* line 759, D:/mTime/mTime/mTime/scss/style.scss */
-  .firstlogin_box .ftlogin_b_part {
-    width: 100%;
-    height: initial;
-    float: left;
-    margin: 0 0 10px 0; }
-    /* line 765, D:/mTime/mTime/mTime/scss/style.scss */
-    .firstlogin_box .ftlogin_b_part .b_pt_tt {
-      width: 150px;
-      line-height: 30px;
-      font-size: 14px;
-      float: left;
-      color: #333;
-      text-align: right; }
-    /* line 774, D:/mTime/mTime/mTime/scss/style.scss */
-    .firstlogin_box .ftlogin_b_part .b_pt_box {
-      width: 100%;
-      height: 30px;
-      position: absolute;
-      left: 0;
-      padding: 0 15px 0 175px; }
-      /* line 781, D:/mTime/mTime/mTime/scss/style.scss */
-      .firstlogin_box .ftlogin_b_part .b_pt_box input {
-        width: 100%;
-        height: 30px;
-        line-height: 30px;
-        font-size: 14px;
-        padding: 0 10px;
-        background-color: #fff;
-        border: 1px #aaa solid; }
-    /* line 792, D:/mTime/mTime/mTime/scss/style.scss */
-    .firstlogin_box .ftlogin_b_part .b_pt_tt1 {
-      width: 70px;
-      line-height: 30px;
-      font-size: 14px;
-      float: left;
-      color: #333;
-      text-align: right; }
-    /* line 801, D:/mTime/mTime/mTime/scss/style.scss */
-    .firstlogin_box .ftlogin_b_part .b_pt_box1 {
-      width: 100%;
-      height: 30px;
-      position: absolute;
-      left: 0;
-      padding: 0 15px 0 95px; }
-      /* line 808, D:/mTime/mTime/mTime/scss/style.scss */
-      .firstlogin_box .ftlogin_b_part .b_pt_box1 input {
-        width: 100%;
-        height: 30px;
-        line-height: 30px;
-        font-size: 14px;
-        padding: 0 10px;
-        background-color: #fff;
-        border: 1px #aaa solid; }
-  /* line 820, D:/mTime/mTime/mTime/scss/style.scss */
-  .firstlogin_box .ftlogin_b_partbtm {
-    width: 100%;
-    height: 30px;
-    float: left; }
-
-/* line 827, D:/mTime/mTime/mTime/scss/style.scss */
-.passwordchange_box {
-  width: 500px;
-  height: initial;
-  padding: 15px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-  z-index: 1; }
-  /* line 840, D:/mTime/mTime/mTime/scss/style.scss */
-  .passwordchange_box .pwchange_b_icon {
-    width: 100%;
-    height: initial;
-    float: left;
-    color: #666;
-    text-align: center;
-    font-size: 80px;
-    margin: 0 0 20px 0; }
-    /* line 849, D:/mTime/mTime/mTime/scss/style.scss */
-    .passwordchange_box .pwchange_b_icon .b_icon_tt {
-      width: 100%;
-      height: 30px;
-      line-height: 30px;
-      text-align: center;
-      font-size: 20px !important;
-      color: #333;
-      float: left;
-      font-family: Arial, Helvetica, sans-serif !important; }
-  /* line 861, D:/mTime/mTime/mTime/scss/style.scss */
-  .passwordchange_box .pwchange_b_httt {
-    width: 100%;
-    line-height: 30px;
-    margin: 0 0 10px 0;
-    padding: 0 10px;
-    float: left;
-    font-size: 20px;
-    text-align: center; }
-  /* line 871, D:/mTime/mTime/mTime/scss/style.scss */
-  .passwordchange_box .pwchange_b_part {
-    width: 100%;
-    height: initial;
-    float: left;
-    margin: 0 0 10px 0; }
-    /* line 877, D:/mTime/mTime/mTime/scss/style.scss */
-    .passwordchange_box .pwchange_b_part .b_pt_tt {
-      width: 150px;
-      line-height: 30px;
-      font-size: 14px;
-      float: left;
-      color: #333;
-      text-align: right; }
-    /* line 886, D:/mTime/mTime/mTime/scss/style.scss */
-    .passwordchange_box .pwchange_b_part .b_pt_box {
-      width: 100%;
-      height: 30px;
-      position: absolute;
-      left: 0;
-      padding: 0 15px 0 175px; }
-      /* line 893, D:/mTime/mTime/mTime/scss/style.scss */
-      .passwordchange_box .pwchange_b_part .b_pt_box input {
-        width: 100%;
-        height: 30px;
-        line-height: 30px;
-        font-size: 14px;
-        padding: 0 10px;
-        background-color: #fff;
-        border: 1px #aaa solid; }
-    /* line 904, D:/mTime/mTime/mTime/scss/style.scss */
-    .passwordchange_box .pwchange_b_part .b_pt_tt1 {
-      width: 70px;
-      line-height: 30px;
-      font-size: 14px;
-      float: left;
-      color: #333;
-      text-align: right; }
-    /* line 913, D:/mTime/mTime/mTime/scss/style.scss */
-    .passwordchange_box .pwchange_b_part .b_pt_box1 {
-      width: 100%;
-      height: 30px;
-      position: absolute;
-      left: 0;
-      padding: 0 15px 0 95px; }
-      /* line 920, D:/mTime/mTime/mTime/scss/style.scss */
-      .passwordchange_box .pwchange_b_part .b_pt_box1 input {
-        width: 100%;
-        height: 30px;
-        line-height: 30px;
-        font-size: 14px;
-        padding: 0 10px;
-        background-color: #fff;
-        border: 1px #aaa solid; }
-  /* line 932, D:/mTime/mTime/mTime/scss/style.scss */
-  .passwordchange_box .pwchange_b_partbtm {
-    width: 100%;
-    height: 30px;
-    float: left; }
-
-/* line 939, D:/mTime/mTime/mTime/scss/style.scss */
-.ctr_leftpart_home {
-  width: 300px;
-  height: initial;
-  float: left;
-  position: relative;
-  z-index: 10; }
-  /* line 946, D:/mTime/mTime/mTime/scss/style.scss */
-  .ctr_leftpart_home .leftpart_home_box {
-    width: inherit;
-    height: initial;
-    min-height: 200px;
-    background-color: #444;
-    float: left;
-    position: relative;
-    border-radius: 0 5px 5px 0;
-    padding: 0 0 10px 0;
-    margin: 0 0 15px 0; }
-    /* line 957, D:/mTime/mTime/mTime/scss/style.scss */
-    .ctr_leftpart_home .leftpart_home_box .ltpt_home_b_httt {
-      width: initial;
-      height: 40px;
-      background-color: #222;
-      line-height: 16px;
-      font-size: 14px;
-      font-weight: bold;
-      color: #fff;
-      border-radius: 0 5px 0 0;
-      padding: 12px 10px; }
-
-/* line 971, D:/mTime/mTime/mTime/scss/style.scss */
-.leftpart_ul_box {
-  list-style-type: circle;
-  height: initial;
-  float: left;
-  display: block;
-  background-color: transparent;
-  margin: 0 0; }
-  /* line 979, D:/mTime/mTime/mTime/scss/style.scss */
-  .leftpart_ul_box li {
-    font-size: 12px;
-    line-height: 16px;
-    padding: 5px 0;
-    color: #fff;
-    background-color: transparent !important; }
-    /* line 986, D:/mTime/mTime/mTime/scss/style.scss */
-    .leftpart_ul_box li a {
-      width: inherit;
-      height: initial;
-      float: left;
-      text-decoration: none;
-      color: #aaa;
-      padding: 1px 5px 1px 0;
-      font-size: 12px; }
-  /* line 998, D:/mTime/mTime/mTime/scss/style.scss */
-  .leftpart_ul_box li:hover a {
-    color: #fff; }
-
-/* line 1004, D:/mTime/mTime/mTime/scss/style.scss */
-.faq_box {
-  width: 100%;
-  min-height: 500px;
-  float: right;
-  border-radius: 5px 5px;
-  background-color: rgba(0, 0, 0, 0.03); }
-  /* line 1011, D:/mTime/mTime/mTime/scss/style.scss */
-  .faq_box .faq_b_htrtt {
-    width: 100%;
-    height: 40px;
-    background-color: #222;
-    float: left;
-    border-radius: 5px 5px 0 0;
-    padding: 0 10px;
-    margin: 0 0 10px 0; }
-    /* line 1020, D:/mTime/mTime/mTime/scss/style.scss */
-    .faq_box .faq_b_htrtt span {
-      width: initial;
-      float: left;
-      color: #fff;
-      line-height: 40px;
-      font-size: 14px; }
-  /* line 1029, D:/mTime/mTime/mTime/scss/style.scss */
-  .faq_box .faq_b_row {
-    width: 100%;
-    height: initial;
-    float: left;
-    padding: 0 5px;
-    margin: 0 0 10px 0; }
-    /* line 1036, D:/mTime/mTime/mTime/scss/style.scss */
-    .faq_box .faq_b_row .b_row_htrtt {
-      width: 100%;
-      float: left;
-      color: #333;
-      line-height: 30px;
-      font-size: 12px;
-      font-weight: bold;
-      background-color: #ddd;
-      border-radius: 5px 5px;
-      margin: 5px 0 0 0;
-      padding: 0 5px; }
-      /* line 1048, D:/mTime/mTime/mTime/scss/style.scss */
-      .faq_box .faq_b_row .b_row_htrtt .row_htrtt_icon {
-        color: #333;
-        line-height: 26px;
-        text-align: center;
-        float: right;
-        margin: 2px 0;
-        font-size: 18px;
-        padding: 0 10px;
-        cursor: pointer; }
-    /* line 1060, D:/mTime/mTime/mTime/scss/style.scss */
-    .faq_box .faq_b_row .b_row_htrst {
-      width: 100%;
-      height: initial;
-      float: left;
-      font-size: 12px;
-      line-height: 16px;
-      color: #333;
-      padding: 10px 15px;
-      background-color: #fff; }
-
-/* line 1073, D:/mTime/mTime/mTime/scss/style.scss */
-.ctr_rightpart_home {
-  width: 100%;
-  height: 100%;
-  float: right;
-  position: absolute;
-  z-index: 1;
-  padding: 0 10px 15px 310px; }
-
-/* line 1082, D:/mTime/mTime/mTime/scss/style.scss */
-.ctr_rightpart_atdc {
-  width: 100%;
-  max-height: inherit;
-  min-height: initial;
-  float: right;
-  position: absolute;
-  z-index: 1;
-  padding: 0 10px 0 310px; }
-
-/* line 1092, D:/mTime/mTime/mTime/scss/style.scss */
-.rtpt_atdc_box {
-  width: 100%;
-  min-height: 500px;
-  float: left;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-radius: 5px 5px; }
-  /* line 1100, D:/mTime/mTime/mTime/scss/style.scss */
-  .rtpt_atdc_box .atdc_b_htrbox {
-    width: 100%;
-    height: 40px;
-    background-color: #222;
-    float: left;
-    border-radius: 5px 5px 0 0;
-    padding: 0 10px; }
-    /* line 1108, D:/mTime/mTime/mTime/scss/style.scss */
-    .rtpt_atdc_box .atdc_b_htrbox span {
-      width: initial;
-      float: left;
-      color: #fff;
-      line-height: 40px;
-      font-size: 14px; }
-  /* line 1117, D:/mTime/mTime/mTime/scss/style.scss */
-  .rtpt_atdc_box .atdc_b_tablebox {
-    width: 100%;
-    line-height: 30px;
-    margin: 0 0 40px 0;
-    font-size: 12px; }
-    /* line 1123, D:/mTime/mTime/mTime/scss/style.scss */
-    .rtpt_atdc_box .atdc_b_tablebox thead {
-      background-color: #aaa;
-      height: 30px; }
-      /* line 1128, D:/mTime/mTime/mTime/scss/style.scss */
-      .rtpt_atdc_box .atdc_b_tablebox thead tr th {
-        border-right: 1px #ccc solid;
-        padding: 0 5px;
-        color: #fff; }
-  /* line 1137, D:/mTime/mTime/mTime/scss/style.scss */
-  .rtpt_atdc_box .atdc_b_totalbox {
-    width: 100%;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.08);
-    border-radius: 0 0 5px 5px;
-    padding: 0 10px;
-    position: absolute;
-    bottom: 0; }
-    /* line 1146, D:/mTime/mTime/mTime/scss/style.scss */
-    .rtpt_atdc_box .atdc_b_totalbox span {
-      width: initial;
-      float: left;
-      color: #333;
-      line-height: 30px;
-      font-size: 12px; }
-
-/* line 1156, D:/mTime/mTime/mTime/scss/style.scss */
-.rtpt_home_box {
-  width: 100%;
-  height: inherit;
-  float: left;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-radius: 5px 5px; }
-  /* line 1164, D:/mTime/mTime/mTime/scss/style.scss */
-  .rtpt_home_box .rtpt_home_b_img {
-    width: 100%;
-    height: 200px;
-    margin: 0 0 10px 0;
-    background: url(../../img/htr_bg.jpg) top center no-repeat;
-    background-size: cover;
-    border-radius: 5px 5px 0 0; }
-  /* line 1173, D:/mTime/mTime/mTime/scss/style.scss */
-  .rtpt_home_box img {
-    margin: 0 0 10px 0;
-    border-radius: 5px 5px 0 0; }
-  /* line 1178, D:/mTime/mTime/mTime/scss/style.scss */
-  .rtpt_home_box .rtpt_home_b_tt {
-    width: 100%;
-    height: initial;
-    line-height: 18px;
-    font-size: 16px;
-    font-weight: bold;
-    float: left;
-    padding: 5px 5px; }
-  /* line 1188, D:/mTime/mTime/mTime/scss/style.scss */
-  .rtpt_home_box .rtpt_home_b_linkpart {
-    width: 100%;
-    height: 40px;
-    margin: 20px 0 0 0;
-    padding: 12px 5px;
-    line-height: 16px;
-    float: left;
-    border-radius: 5px 5px;
-    background-color: #444;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold; }
-
-/* line 1203, D:/mTime/mTime/mTime/scss/style.scss */
-.bg_color_444 {
-  background-color: #444 !important; }
-
-/* line 1207, D:/mTime/mTime/mTime/scss/style.scss */
-.body_htrcenter {
-  width: 100%;
-  height: 40px;
-  float: left;
-  margin: 5px 0;
-  padding: 0 10px;
-  border-bottom: 2px #ccc solid;
-  z-index: 20;
-  position: relative; }
-  /* line 1217, D:/mTime/mTime/mTime/scss/style.scss */
-  .body_htrcenter .htrcenter_tab {
-    width: initial;
-    height: inherit;
-    float: left;
-    margin: 0 5px 0 0;
-    border-radius: 5px 5px 0 0;
-    background-color: #666;
-    color: #fff;
-    line-height: 40px;
-    padding: 0 10px;
-    position: relative;
-    cursor: pointer;
-    font-size: 14px; }
-    /* line 1231, D:/mTime/mTime/mTime/scss/style.scss */
-    .body_htrcenter .htrcenter_tab .tab_btneff {
-      width: 100%;
-      height: 40px;
-      float: left;
-      border-radius: 5px 5px 0 0;
-      background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.35) 100%);
-      position: absolute;
-      left: 0;
-      top: 0; }
-  /* line 1243, D:/mTime/mTime/mTime/scss/style.scss */
-  .body_htrcenter .htrcenter_tab:hover {
-    background-color: #444; }
-    /* line 1246, D:/mTime/mTime/mTime/scss/style.scss */
-    .body_htrcenter .htrcenter_tab:hover .tab_btneff {
-      width: 100%;
-      height: 40px;
-      float: left;
-      border-radius: 5px 5px 0 0;
-      background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.35) 100%);
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: block; }
-
-/* line 1260, D:/mTime/mTime/mTime/scss/style.scss */
-.ctr_leftpart_atd {
-  width: 300px;
-  height: initial;
-  float: left;
-  position: relative;
-  z-index: 10;
-  padding: 0 0 0 10px; }
-  /* line 1268, D:/mTime/mTime/mTime/scss/style.scss */
-  .ctr_leftpart_atd .leftpart_atd_box {
-    width: 100%;
-    height: initial;
-    min-height: 500px;
-    background-color: #444;
-    float: left;
-    position: relative;
-    border-radius: 5px 5px;
-    padding: 0 10px; }
-    /* line 1278, D:/mTime/mTime/mTime/scss/style.scss */
-    .ctr_leftpart_atd .leftpart_atd_box .atd_b_part {
-      width: 100%;
-      height: 40px;
-      float: left;
-      margin: 10px 0; }
-      /* line 1284, D:/mTime/mTime/mTime/scss/style.scss */
-      .ctr_leftpart_atd .leftpart_atd_box .atd_b_part .atd_b_pt_tt {
-        width: initial;
-        line-height: 40px;
-        float: left;
-        padding: 0 5px;
-        color: #fff;
-        font-size: 14px; }
-      /* line 1293, D:/mTime/mTime/mTime/scss/style.scss */
-      .ctr_leftpart_atd .leftpart_atd_box .atd_b_part .atd_b_pt_slt {
-        float: right;
-        position: relative;
-        height: 30px;
-        line-height: 30px;
-        margin: 5px 0;
-        width: 200px;
-        font-size: 12px;
-        border-radius: 5px 5px; }
-    /* line 1305, D:/mTime/mTime/mTime/scss/style.scss */
-    .ctr_leftpart_atd .leftpart_atd_box .atd_b_checkbox {
-      width: 100%;
-      height: initial;
-      line-height: 18px;
-      float: left;
-      padding: 6px 5px 6px 20px;
-      font-size: 12px;
-      color: #fff; }
-      /* line 1314, D:/mTime/mTime/mTime/scss/style.scss */
-      .ctr_leftpart_atd .leftpart_atd_box .atd_b_checkbox .atd_b_ckb_box {
-        margin: 2px 5px 0 0;
-        float: left; }
-    /* line 1320, D:/mTime/mTime/mTime/scss/style.scss */
-    .ctr_leftpart_atd .leftpart_atd_box .atd_b_ttbox {
-      width: 100%;
-      height: initial;
-      position: absolute;
-      bottom: 40px;
-      left: 0;
-      font-size: 12px;
-      color: #fff;
-      border-top: 1px #999 solid;
-      padding: 10px 10px;
-      margin: 5px 0;
-      line-height: 16px; }
-    /* line 1334, D:/mTime/mTime/mTime/scss/style.scss */
-    .ctr_leftpart_atd .leftpart_atd_box .atd_b_btnpart {
-      width: 100%;
-      height: initial;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      padding: 0 10px 10px; }
-
-/* line 1345, D:/mTime/mTime/mTime/scss/style.scss */
-.atdc_editbox1 {
-  margin: 10px 0;
-  min-height: initial;
-  border: 1px #aaa solid;
-  background-color: #fff; }
-
-/* line 1352, D:/mTime/mTime/mTime/scss/style.scss */
-.popup_bg {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.75);
-  z-index: 99; }
-
-/* line 1362, D:/mTime/mTime/mTime/scss/style.scss */
-.massage_part {
-  width: initial;
-  height: inherit;
-  line-height: 40px;
-  padding: 0 10px;
-  color: #ff0000;
-  float: left;
-  font-size: 12px;
-  background-color: rgba(255, 255, 255, 0.35); }
-
-/* line 1373, D:/mTime/mTime/mTime/scss/style.scss */
-.malaysia_logo {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 1;
-  background: url(../../img/malaysia_logo_s.png) center center no-repeat;
-  opacity: 0.15;
-  pointer-events: none; }
-
-/* line 1383, D:/mTime/mTime/mTime/scss/style.scss */
-.body_center {
-  width: 100%;
-  height: initial;
-  /*height: 90%;*/
-  position: absolute;
-  /*bottom: 7px;*/
-  top: 85px;
-  z-index: 10; }
-  /* line 1392, D:/mTime/mTime/mTime/scss/style.scss */
-  .body_center .bd_ctr_nav {
-    width: 200px;
-    height: initial;
-    float: left;
-    position: relative;
-    z-index: 10; }
-    /* line 1399, D:/mTime/mTime/mTime/scss/style.scss */
-    .body_center .bd_ctr_nav .innav1_btnleft_icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 0 5px 0 0;
-      background-color: #222; }
-      /* line 1405, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_nav .innav1_btnleft_icon .innav1_btt1_btnleft {
-        width: 30px;
-        height: 30px;
-        top: 5px;
-        right: 5px;
-        position: absolute;
-        font-size: 20px;
-        text-align: center;
-        line-height: 30px;
-        cursor: pointer;
-        color: #fff;
-        z-index: 1; }
-      /* line 1419, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_nav .innav1_btnleft_icon .innav1_btt1_btnleft:hover {
-        background-color: #038c76;
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35); }
-    /* line 1425, D:/mTime/mTime/mTime/scss/style.scss */
-    .body_center .bd_ctr_nav .ctr_innav1 {
-      width: 200px;
-      height: initial;
-      background-color: #444;
-      /*background-color: #026f5d;*/
-      float: left;
-      position: relative;
-      border-radius: 0 5px 5px 0;
-      padding: 0 0 10px 0;
-      margin: 0 0 15px 0;
-      /*.ctr_innav1_btn {
-                .innav1_inbtn_ttbox {
-                    display: none;
-                }
-            }*/ }
-      /* line 1437, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btt1 span {
-        width: 200px;
-        height: 40px;
-        background-color: #222;
-        /*background-color: #005648;*/
-        line-height: 16px;
-        display: table-cell;
-        vertical-align: middle;
-        font-size: 14px;
-        font-weight: bold;
-        color: #fff;
-        border-radius: 0 5px 0 0;
-        padding: 0 35px 0 10px; }
-      /* line 1453, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn {
-        width: 100%;
-        height: 40px;
-        float: left;
-        text-decoration: none; }
-        /* line 1459, D:/mTime/mTime/mTime/scss/style.scss */
-        .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn .innav1_inbtn_icon {
-          width: 40px;
-          line-height: 40px;
-          text-align: center;
-          color: #038c76;
-          /*color: #4ecab5;*/
-          font-size: 18px;
-          float: left; }
-        /* line 1470, D:/mTime/mTime/mTime/scss/style.scss */
-        .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn .innav1_inbtn_tt span {
-          line-height: 16px;
-          display: table-cell;
-          vertical-align: middle;
-          width: 160px;
-          height: 40px;
-          color: #aaa;
-          padding: 0 5px;
-          margin: 0 0 0 40px;
-          font-size: 14px; }
-      /* line 1489, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_ttbox {
-        width: initial;
-        height: 26px;
-        line-height: 26px;
-        font-size: 12px;
-        position: relative;
-        float: left;
-        margin: -32px 0 0 40px;
-        padding: 0 10px;
-        display: block;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.75);
-        z-index: 1;
-        pointer-events: none;
-        border-radius: 5px;
-        font-family: Arial, Helvetica, sans-serif !important; }
-      /* line 1509, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_icon, .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btneff .innav1_inbtn_icon {
-        color: #fff;
-        background-color: #038c76; }
-      /* line 1515, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_tt span, .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btneff .innav1_inbtn_tt span {
-        color: #fff;
-        background-color: #09af94;
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35); }
-    /* line 1524, D:/mTime/mTime/mTime/scss/style.scss */
-    .body_center .bd_ctr_nav .ctr_innav2 {
-      width: 200px;
-      height: initial;
-      background-color: #444;
-      /*background-color: #026f5d;*/
-      float: left;
-      position: relative;
-      border-radius: 0 5px 5px 0;
-      padding: 0 0 10px 0;
-      margin: 0 0 15px 0;
-      /*.ctr_innav2_btn {
-                .innav2_inbtn_ttbox {
-                    display: none;
-                }
-            }*/ }
-      /* line 1535, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_nav .ctr_innav2 .innav2_btnleft_box {
-        width: 40px;
-        height: 40px;
-        border-radius: 0 5px 0 0;
-        background-color: #222;
-        display: none; }
-      /* line 1544, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btt1 span {
-        width: 200px;
-        height: 40px;
-        background-color: #222;
-        /*background-color: #005648;*/
-        line-height: 16px;
-        display: table-cell;
-        vertical-align: middle;
-        font-size: 14px;
-        font-weight: bold;
-        color: #fff;
-        border-radius: 0 5px 0 0;
-        padding: 0 35px 0 10px; }
-      /* line 1560, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn {
-        width: 100%;
-        height: 40px;
-        float: left;
-        text-decoration: none; }
-        /* line 1566, D:/mTime/mTime/mTime/scss/style.scss */
-        .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn .innav2_inbtn_icon {
-          width: 40px;
-          line-height: 40px;
-          text-align: center;
-          color: #038c76;
-          /*color: #4ecab5;*/
-          font-size: 18px;
-          float: left; }
-        /* line 1577, D:/mTime/mTime/mTime/scss/style.scss */
-        .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn .innav2_inbtn_tt span {
-          line-height: 16px;
-          display: table-cell;
-          vertical-align: middle;
-          width: 160px;
-          height: 40px;
-          color: #aaa;
-          padding: 0 5px;
-          margin: 0 0 0 40px;
-          font-size: 14px; }
-      /* line 1596, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_ttbox {
-        width: initial;
-        height: 26px;
-        line-height: 26px;
-        font-size: 12px;
-        position: relative;
-        float: left;
-        margin: -32px 0 0 40px;
-        padding: 0 10px;
-        display: block;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.75);
-        z-index: 1;
-        pointer-events: none;
-        border-radius: 5px;
-        font-family: Arial, Helvetica, sans-serif !important; }
-      /* line 1616, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_icon, .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btneff .innav2_inbtn_icon {
-        color: #fff;
-        background-color: #038c76; }
-      /* line 1622, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_tt span, .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btneff .innav2_inbtn_tt span {
-        color: #fff;
-        background-color: #09af94;
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35); }
-  /* line 1632, D:/mTime/mTime/mTime/scss/style.scss */
-  .body_center .bd_ctr_rightpart {
-    width: 100%;
-    height: 100%;
-    float: right;
-    position: absolute;
-    z-index: 2;
-    /*padding: 0 10px 50px 210px;*/
-    padding: 0 10px 15px 210px; }
-    /* line 1641, D:/mTime/mTime/mTime/scss/style.scss */
-    .body_center .bd_ctr_rightpart .ctr_rtpt_box {
-      width: 100%;
-      height: 515px;
-      float: left;
-      position: relative;
-      border-radius: 5px 5px;
-      background-color: rgba(0, 0, 0, 0.03);
-      border: 1px #999 solid; }
-      /* line 1650, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht {
-        width: 100%;
-        height: 40px;
-        background-color: #222;
-        float: left;
-        border-radius: 5px 5px 0 0;
-        padding: 0 10px; }
-        /* line 1658, D:/mTime/mTime/mTime/scss/style.scss */
-        .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht span {
-          width: initial;
-          float: left;
-          color: #fff;
-          line-height: 40px;
-          font-size: 14px; }
-        /* line 1666, D:/mTime/mTime/mTime/scss/style.scss */
-        .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht .rtpt_b_ht_refresh {
-          width: 30px;
-          line-height: 30px;
-          font-size: 22px;
-          text-align: center;
-          float: right;
-          color: #fff;
-          margin: 5px 0 5px 5px;
-          cursor: pointer; }
-        /* line 1677, D:/mTime/mTime/mTime/scss/style.scss */
-        .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht .rtpt_b_ht_refresh:hover {
-          color: #09af94; }
-      /* line 1682, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_rightpart .ctr_rtpt_box table {
-        width: 100%;
-        line-height: 30px;
-        margin: 0 0 40px 0;
-        font-size: 12px; }
-        /* line 1688, D:/mTime/mTime/mTime/scss/style.scss */
-        .body_center .bd_ctr_rightpart .ctr_rtpt_box table thead {
-          background-color: #aaa;
-          height: 30px; }
-          /* line 1693, D:/mTime/mTime/mTime/scss/style.scss */
-          .body_center .bd_ctr_rightpart .ctr_rtpt_box table thead tr th {
-            border-right: 1px #ccc solid;
-            padding: 0 5px;
-            color: #fff; }
-      /* line 1702, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ftr {
-        width: 100%;
-        height: 30px;
-        /*background-color: rgba(0, 0, 0, .08);*/
-        border-radius: 0 0 5px 5px;
-        padding: 0 10px;
-        position: absolute;
-        bottom: 0;
-        background-color: #444;
-        z-index: 1; }
-        /* line 1713, D:/mTime/mTime/mTime/scss/style.scss */
-        .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ftr span {
-          width: initial;
-          float: left;
-          color: #fff;
-          line-height: 30px;
-          font-size: 12px; }
-      /* line 1722, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox {
-        width: 550px;
-        height: initial;
-        padding: 10px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%); }
-        /* line 1731, D:/mTime/mTime/mTime/scss/style.scss */
-        .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part {
-          width: 100%;
-          height: initial;
-          float: left;
-          margin: 0 0 10px 0;
-          padding: 0 0 0 160px;
-          position: relative;
-          /*input {
-                        width: 370px;
-                        height: 30px;
-                        float: right;
-                        line-height: 30px;
-                        font-size: 14px;
-                        padding: 0 10px;
-                        background-color: #fff;
-                        border: 1px #aaa solid;
-                    }*/ }
-          /* line 1739, D:/mTime/mTime/mTime/scss/style.scss */
-          .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_pt_tt {
-            width: 150px;
-            height: 30px;
-            text-align: right;
-            position: absolute;
-            left: 0;
-            line-height: 30px;
-            font-size: 14px; }
-          /* line 1758, D:/mTime/mTime/mTime/scss/style.scss */
-          .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_pt_error {
-            width: 100%;
-            line-height: 20px;
-            float: left;
-            color: #ff0000;
-            font-size: 12px;
-            text-align: right; }
-        /* line 1768, D:/mTime/mTime/mTime/scss/style.scss */
-        .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_partbtn {
-          width: 100%;
-          height: 30px;
-          float: left; }
-      /* line 1775, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox {
-        width: 550px;
-        height: initial;
-        padding: 10px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%); }
-        /* line 1784, D:/mTime/mTime/mTime/scss/style.scss */
-        .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part {
-          width: 100%;
-          height: initial;
-          float: left;
-          margin: 0 0 10px 0;
-          padding: 0 0 0 170px;
-          position: relative;
-          /*input {
-                        width: 370px;
-                        height: 30px;
-                        float: right;
-                        line-height: 30px;
-                        font-size: 14px;
-                        padding: 0 10px;
-                        background-color: #fff;
-                        border: 1px #aaa solid;
-                    }*/
-          /*.hlday_addbox_pt_error {
-                        width: 100%;
-                        line-height: 20px;
-                        float: left;
-                        color: #ff0000;
-                        font-size: 12px;
-                        text-align: right;
-                    }*/ }
-          /* line 1792, D:/mTime/mTime/mTime/scss/style.scss */
-          .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .hlday_addbox_pt_tt {
-            width: 160px;
-            height: 30px;
-            text-align: right;
-            position: absolute;
-            left: 0;
-            line-height: 30px;
-            font-size: 14px;
-            font-weight: normal; }
-          /* line 1820, D:/mTime/mTime/mTime/scss/style.scss */
-          .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .checkbox1 {
-            float: left;
-            width: 17px !important;
-            height: 17px !important;
-            margin: 7px 0 0 10px !important; }
-          /* line 1827, D:/mTime/mTime/mTime/scss/style.scss */
-          .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .hlday_addbox_pt_ttbox {
-            width: 370px;
-            height: 30px;
-            float: right;
-            line-height: 30px;
-            font-size: 14px;
-            padding: 0 10px; }
-        /* line 1837, D:/mTime/mTime/mTime/scss/style.scss */
-        .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_partbtn {
-          width: 100%;
-          height: 30px;
-          float: left; }
-    /* line 1845, D:/mTime/mTime/mTime/scss/style.scss */
-    .body_center .bd_ctr_rightpart .ctr_rtpt_footer {
-      width: 100%;
-      height: initial;
-      float: left;
-      padding: 5px 0; }
-  /* line 1853, D:/mTime/mTime/mTime/scss/style.scss */
-  .body_center .bd_ctr_rightpart1 {
-    width: 100%;
-    height: initial;
-    float: left;
-    padding: 10px 10px 0 10px; }
-    /* line 1859, D:/mTime/mTime/mTime/scss/style.scss */
-    .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb {
-      width: 100%;
-      line-height: 30px;
-      float: left;
-      color: #222;
-      font-size: 14px;
-      font-weight: bold;
-      background-color: #fff; }
-      /* line 1868, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb .ctr_rtpt1_icon1 {
-        width: 30px;
-        height: inherit;
-        float: left;
-        line-height: 31px;
-        text-align: center;
-        font-size: 26px;
-        border-radius: 0 30px 30px 0;
-        background-color: #09af94;
-        margin: 0 10px 0 0;
-        color: #fff;
-        box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.35);
-        cursor: pointer; }
-      /* line 1883, D:/mTime/mTime/mTime/scss/style.scss */
-      .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb .ctr_rtpt1_icon2 {
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-        margin: 0 5px 0 0; }
-
-/* line 1893, D:/mTime/mTime/mTime/scss/style.scss */
-.systembox_lt {
-  width: 49%;
-  min-height: 605px;
-  float: left;
-  border-radius: 5px 5px;
-  border: 1px #ccc solid;
-  margin: 0 0 10px 10px;
-  overflow: auto;
-  position: relative; }
-  /* line 1903, D:/mTime/mTime/mTime/scss/style.scss */
-  .systembox_lt .stbox_lt_htb {
-    width: 100%;
-    height: 40px;
-    background-color: #222;
-    float: left;
-    border-radius: 5px 5px 0 0;
-    padding: 0 10px; }
-    /* line 1911, D:/mTime/mTime/mTime/scss/style.scss */
-    .systembox_lt .stbox_lt_htb span {
-      width: initial;
-      float: left;
-      color: #fff;
-      line-height: 40px;
-      font-size: 14px; }
-  /* line 1920, D:/mTime/mTime/mTime/scss/style.scss */
-  .systembox_lt .stbox_lt_part1 {
-    width: 100%;
-    height: initial;
-    float: left;
-    padding: 10px 10px; }
-    /* line 1926, D:/mTime/mTime/mTime/scss/style.scss */
-    .systembox_lt .stbox_lt_part1 .lt_pt1_box1 {
-      width: 100%;
-      height: initial;
-      float: left;
-      position: relative;
-      padding: 0 30px 0 160px;
-      margin: 0 0 10px 0; }
-      /* line 1934, D:/mTime/mTime/mTime/scss/style.scss */
-      .systembox_lt .stbox_lt_part1 .lt_pt1_box1 .pt1_b1_tt {
-        width: 150px;
-        height: 30px;
-        text-align: right;
-        float: left;
-        line-height: 30px;
-        font-size: 14px;
-        position: absolute;
-        left: 0; }
-      /* line 1945, D:/mTime/mTime/mTime/scss/style.scss */
-      .systembox_lt .stbox_lt_part1 .lt_pt1_box1 .pt1_b1_input {
-        width: 100%;
-        height: 30px;
-        float: right;
-        line-height: 30px;
-        font-size: 14px;
-        padding: 0 10px;
-        background-color: #fff;
-        border: 1px #aaa solid; }
-      /* line 1956, D:/mTime/mTime/mTime/scss/style.scss */
-      .systembox_lt .stbox_lt_part1 .lt_pt1_box1 .pt1_b1_textarea {
-        width: 100%;
-        max-height: 100px;
-        min-height: 100px;
-        float: right;
-        line-height: 16px;
-        font-size: 14px;
-        padding: 0 10px;
-        background-color: #fff;
-        border: 1px #aaa solid; }
-    /* line 1969, D:/mTime/mTime/mTime/scss/style.scss */
-    .systembox_lt .stbox_lt_part1 .lt_pt1_box2 {
-      width: 100%;
-      height: initial;
-      float: left;
-      position: relative;
-      padding: 0 100px 0 160px;
-      margin: 0 0 10px 0; }
-      /* line 1977, D:/mTime/mTime/mTime/scss/style.scss */
-      .systembox_lt .stbox_lt_part1 .lt_pt1_box2 .pt1_b2_tt {
-        width: 150px;
-        height: 30px;
-        text-align: right;
-        float: left;
-        line-height: 30px;
-        font-size: 14px;
-        position: absolute;
-        left: 0; }
-      /* line 1988, D:/mTime/mTime/mTime/scss/style.scss */
-      .systembox_lt .stbox_lt_part1 .lt_pt1_box2 .pt1_b2_inputimg {
-        background-color: #fff;
-        background-position: left top;
-        background-repeat: no-repeat;
-        background-size: contain; }
-  /* line 1997, D:/mTime/mTime/mTime/scss/style.scss */
-  .systembox_lt .stbox_lt_part2 {
-    width: 100%;
-    height: initial;
-    float: left;
-    position: absolute;
-    padding: 0 10px;
-    bottom: 10px; }
-
-/* line 2007, D:/mTime/mTime/mTime/scss/style.scss */
-.systembox_rt1 {
-  width: 49%;
-  min-height: 200px;
-  float: right;
-  border-radius: 5px 5px;
-  margin: 0 10px 10px 0;
-  background-color: #fff;
-  border: 1px #ccc solid;
-  position: relative; }
-  /* line 2017, D:/mTime/mTime/mTime/scss/style.scss */
-  .systembox_rt1 .stbox_rt1_httt {
-    width: 100%;
-    height: 40px;
-    background-color: #222;
-    float: left;
-    border-radius: 5px 5px 0 0;
-    padding: 0 10px; }
-    /* line 2025, D:/mTime/mTime/mTime/scss/style.scss */
-    .systembox_rt1 .stbox_rt1_httt span {
-      width: initial;
-      float: left;
-      color: #fff;
-      line-height: 40px;
-      font-size: 14px; }
-  /* line 2034, D:/mTime/mTime/mTime/scss/style.scss */
-  .systembox_rt1 .stbox_rt1_box {
-    width: 100%;
-    height: initial;
-    float: left;
-    padding: 10px 10px; }
-    /* line 2040, D:/mTime/mTime/mTime/scss/style.scss */
-    .systembox_rt1 .stbox_rt1_box .rt1_b_part1 {
-      width: 100%;
-      height: initial;
-      float: left;
-      position: relative;
-      padding: 0 30px 0 200px;
-      margin: 0 0 10px 0; }
-      /* line 2048, D:/mTime/mTime/mTime/scss/style.scss */
-      .systembox_rt1 .stbox_rt1_box .rt1_b_part1 .b_pt1_tt {
-        width: 190px;
-        height: 30px;
-        text-align: right;
-        float: left;
-        line-height: 30px;
-        font-size: 14px;
-        position: absolute;
-        left: 0; }
-    /* line 2060, D:/mTime/mTime/mTime/scss/style.scss */
-    .systembox_rt1 .stbox_rt1_box .rt1_b_part2 {
-      width: 100%;
-      height: initial;
-      float: left;
-      position: relative;
-      padding: 0 10px; }
-
-/* line 2070, D:/mTime/mTime/mTime/scss/style.scss */
-.systembox_rt2 {
-  width: 49%;
-  min-height: 100px;
-  float: right;
-  border-radius: 5px 5px;
-  margin: 0 10px 10px 0;
-  background-color: #fff;
-  border: 1px #ccc solid; }
-  /* line 2079, D:/mTime/mTime/mTime/scss/style.scss */
-  .systembox_rt2 .stbox_rt2_box1 {
-    width: 100%;
-    height: 40px;
-    background-color: #222;
-    float: left;
-    border-radius: 5px 5px 0 0;
-    padding: 0 10px; }
-    /* line 2087, D:/mTime/mTime/mTime/scss/style.scss */
-    .systembox_rt2 .stbox_rt2_box1 span {
-      width: initial;
-      float: left;
-      color: #fff;
-      line-height: 40px;
-      font-size: 14px; }
-  /* line 2096, D:/mTime/mTime/mTime/scss/style.scss */
-  .systembox_rt2 .stbox_rt2_box2 {
-    width: 100%;
-    height: initial;
-    float: left;
-    padding: 10px 10px; }
-    /* line 2102, D:/mTime/mTime/mTime/scss/style.scss */
-    .systembox_rt2 .stbox_rt2_box2 .rt2_b2_tt {
-      width: 100%;
-      height: initial;
-      line-height: 16px;
-      padding: 5px 0;
-      font-size: 12px;
-      color: #666;
-      margin: 0 0 10px 0; }
-    /* line 2112, D:/mTime/mTime/mTime/scss/style.scss */
-    .systembox_rt2 .stbox_rt2_box2 .rt2_b2_box {
-      width: 100%;
-      height: initial;
-      float: left;
-      position: relative;
-      padding: 0 10px; }
-
-/* line 2122, D:/mTime/mTime/mTime/scss/style.scss */
-.systembox_rt3 {
-  width: 49%;
-  min-height: 100px;
-  float: right;
-  border-radius: 5px 5px;
-  margin: 0 10px 10px 0;
-  background-color: #fff;
-  border: 1px #ccc solid; }
-  /* line 2131, D:/mTime/mTime/mTime/scss/style.scss */
-  .systembox_rt3 .stbox_rt3_box {
-    width: 100%;
-    height: initial;
-    float: left;
-    padding: 10px 10px; }
-    /* line 2137, D:/mTime/mTime/mTime/scss/style.scss */
-    .systembox_rt3 .stbox_rt3_box .rt3_b_httext {
-      width: 100%;
-      height: initial;
-      line-height: 16px;
-      padding: 5px 0;
-      font-size: 16px;
-      font-weight: bold;
-      color: #666;
-      margin: 0 0 10px 0; }
-    /* line 2148, D:/mTime/mTime/mTime/scss/style.scss */
-    .systembox_rt3 .stbox_rt3_box .rt3_b_addtext {
-      width: 100%;
-      height: initial;
-      line-height: 16px;
-      padding: 5px 0;
-      font-size: 12px;
-      color: #666;
-      margin: 0 0 10px 0; }
-    /* line 2158, D:/mTime/mTime/mTime/scss/style.scss */
-    .systembox_rt3 .stbox_rt3_box .rt3_b_textbox {
-      width: 100%;
-      height: initial;
-      line-height: 16px;
-      padding: 5px 0;
-      font-size: 12px;
-      color: #666;
-      margin: 0 0 10px 0; }
-      /* line 2167, D:/mTime/mTime/mTime/scss/style.scss */
-      .systembox_rt3 .stbox_rt3_box .rt3_b_textbox b {
-        width: 40px;
-        float: left; }
-      /* line 2172, D:/mTime/mTime/mTime/scss/style.scss */
-      .systembox_rt3 .stbox_rt3_box .rt3_b_textbox div {
-        float: left; }
-
-/* line 2179, D:/mTime/mTime/mTime/scss/style.scss */
-.inbox_haedtext {
-  width: 100%;
-  height: 40px;
-  background-color: #222;
-  float: left;
-  border-radius: 5px 5px 0 0;
-  padding: 0 10px; }
-  /* line 2187, D:/mTime/mTime/mTime/scss/style.scss */
-  .inbox_haedtext span {
-    width: initial;
-    float: left;
-    color: #fff;
-    line-height: 40px;
-    font-size: 14px; }
-
-/* line 2196, D:/mTime/mTime/mTime/scss/style.scss */
-.all_input1 {
-  width: 100%;
-  height: 30px;
-  float: right;
-  line-height: 30px;
-  font-size: 14px;
-  padding: 0 0 0 10px;
-  background-color: #fff;
-  border: 1px #aaa solid; }
-
-/* line 2207, D:/mTime/mTime/mTime/scss/style.scss */
-.pt1_b1_inforbtn {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  text-align: center;
-  font-size: 20px;
-  line-height: 30px;
-  color: #004f83 !important; }
-
-/* line 2219, D:/mTime/mTime/mTime/scss/style.scss */
-.pt1_b2_folderbtn {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  position: absolute;
-  top: 0;
-  right: 65px;
-  font-size: 16px;
-  text-align: center;
-  border-radius: 5px;
-  border: 1px #aaa solid;
-  color: #f50; }
-
-/* line 2233, D:/mTime/mTime/mTime/scss/style.scss */
-.pt1_b2_deletebtn {
-  width: 30px;
-  height: 30px;
-  line-height: 28px;
-  position: absolute;
-  top: 0;
-  right: 30px;
-  font-size: 20px;
-  text-align: center;
-  border-radius: 5px;
-  border: 1px #aaa solid;
-  color: #f00; }
-
-/* line 2247, D:/mTime/mTime/mTime/scss/style.scss */
-.edit_pt_box {
-  width: 100%;
-  height: inherit;
-  float: left; }
-  /* line 2252, D:/mTime/mTime/mTime/scss/style.scss */
-  .edit_pt_box .edit_pt_inb {
-    width: 100%;
-    height: initial;
-    float: left;
-    margin: 0 0 10px 0;
-    padding: 0 0 0 170px; }
-    /* line 2259, D:/mTime/mTime/mTime/scss/style.scss */
-    .edit_pt_box .edit_pt_inb .pt_inb_tt {
-      width: 160px;
-      height: 30px;
-      text-align: right;
-      float: left;
-      padding: 0 10px;
-      line-height: 30px;
-      font-size: 14px;
-      position: absolute;
-      left: 0; }
-    /* line 2271, D:/mTime/mTime/mTime/scss/style.scss */
-    .edit_pt_box .edit_pt_inb .pt_inb_input_none {
-      width: 100%;
-      height: 30px;
-      float: left;
-      line-height: 30px;
-      font-size: 14px;
-      padding: 0 10px;
-      background-color: #ccc;
-      border: 1px #aaa solid;
-      color: #333;
-      pointer-events: none; }
-    /* line 2284, D:/mTime/mTime/mTime/scss/style.scss */
-    .edit_pt_box .edit_pt_inb .pt_inb_input {
-      width: 100%;
-      height: 30px;
-      float: left;
-      line-height: 30px;
-      font-size: 14px;
-      padding: 0 10px;
-      background-color: #fff;
-      border: 1px #aaa solid;
-      color: #333; }
-
-/* line 2298, D:/mTime/mTime/mTime/scss/style.scss */
-.hlday_addbox_pt_error {
-  width: 100%;
-  line-height: 20px;
-  float: left;
-  color: #ff0000;
-  font-size: 12px;
-  text-align: right; }
-
-/* line 2307, D:/mTime/mTime/mTime/scss/style.scss */
-tbody {
-  height: 30px; }
-  /* line 2311, D:/mTime/mTime/mTime/scss/style.scss */
-  tbody tr td {
-    border-right: 1px #aaa solid;
-    padding: 0 5px; }
-  /* line 2316, D:/mTime/mTime/mTime/scss/style.scss */
-  tbody tr td:last-child {
-    border-right: 0; }
-  /* line 2321, D:/mTime/mTime/mTime/scss/style.scss */
-  tbody tr:nth-child(odd) {
-    background-color: #fff; }
-  /* line 2325, D:/mTime/mTime/mTime/scss/style.scss */
-  tbody tr:nth-child(even) {
-    background-color: #eee; }
-  /* line 2329, D:/mTime/mTime/mTime/scss/style.scss */
-  tbody tr:hover {
-    background-color: #daf1ed; }
-
-/* line 2334, D:/mTime/mTime/mTime/scss/style.scss */
-.ctr_rtpt_popupbox {
-  width: 100%;
-  height: 515px;
-  position: absolute;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.35); }
-  /* line 2341, D:/mTime/mTime/mTime/scss/style.scss */
-  .ctr_rtpt_popupbox .rtpt_popupbox_inb {
     width: 500px;
     height: initial;
     padding: 15px;
@@ -2119,600 +759,2298 @@ tbody {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-    z-index: 10; }
-    /* line 2354, D:/mTime/mTime/mTime/scss/style.scss */
-    .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon {
-      width: 100%;
-      height: initial;
-      float: left;
-      color: #666;
-      text-align: center;
-      font-size: 60px; }
-    /* line 2363, D:/mTime/mTime/mTime/scss/style.scss */
-    .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon_red {
-      width: 100%;
-      height: initial;
-      float: left;
-      color: #f00;
-      text-align: center;
-      font-size: 60px; }
-    /* line 2372, D:/mTime/mTime/mTime/scss/style.scss */
-    .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_tt {
-      width: 100%;
-      line-height: 30px;
-      font-size: 16px;
-      color: #333;
-      text-align: center;
-      float: left;
-      padding: 5px 5px;
-      font-weight: bold; }
-    /* line 2383, D:/mTime/mTime/mTime/scss/style.scss */
-    .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_btnpart {
-      width: initial;
-      height: initial;
-      margin: 10px auto 0;
-      position: relative;
-      display: table; }
-    /* line 2391, D:/mTime/mTime/mTime/scss/style.scss */
-    .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon_blue {
-      width: 100%;
-      height: initial;
-      float: left;
-      color: #0069ae;
-      text-align: center;
-      font-size: 66px; }
+    z-index: 1;
+}
+    /* line 738, D:/mTime/mTime/mTime/scss/style.scss */
+    .firstlogin_box .ftlogin_b_icon {
+        width: 100%;
+        height: initial;
+        float: left;
+        color: #666;
+        text-align: center;
+        font-size: 80px;
+        margin: 0 0 20px 0;
+    }
+        /* line 747, D:/mTime/mTime/mTime/scss/style.scss */
+        .firstlogin_box .ftlogin_b_icon .ftlogin_b_httt {
+            width: 100%;
+            line-height: 30px;
+            margin: 0 0 10px 0;
+            padding: 0 10px;
+            float: left;
+            font-size: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+    /* line 759, D:/mTime/mTime/mTime/scss/style.scss */
+    .firstlogin_box .ftlogin_b_part {
+        width: 100%;
+        height: initial;
+        float: left;
+        margin: 0 0 10px 0;
+    }
+        /* line 765, D:/mTime/mTime/mTime/scss/style.scss */
+        .firstlogin_box .ftlogin_b_part .b_pt_tt {
+            width: 150px;
+            line-height: 30px;
+            font-size: 14px;
+            float: left;
+            color: #333;
+            text-align: right;
+        }
+        /* line 774, D:/mTime/mTime/mTime/scss/style.scss */
+        .firstlogin_box .ftlogin_b_part .b_pt_box {
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            padding: 0 15px 0 175px;
+        }
+            /* line 781, D:/mTime/mTime/mTime/scss/style.scss */
+            .firstlogin_box .ftlogin_b_part .b_pt_box input {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px #aaa solid;
+            }
+        /* line 792, D:/mTime/mTime/mTime/scss/style.scss */
+        .firstlogin_box .ftlogin_b_part .b_pt_tt1 {
+            width: 70px;
+            line-height: 30px;
+            font-size: 14px;
+            float: left;
+            color: #333;
+            text-align: right;
+        }
+        /* line 801, D:/mTime/mTime/mTime/scss/style.scss */
+        .firstlogin_box .ftlogin_b_part .b_pt_box1 {
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            padding: 0 15px 0 95px;
+        }
+            /* line 808, D:/mTime/mTime/mTime/scss/style.scss */
+            .firstlogin_box .ftlogin_b_part .b_pt_box1 input {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px #aaa solid;
+            }
+    /* line 820, D:/mTime/mTime/mTime/scss/style.scss */
+    .firstlogin_box .ftlogin_b_partbtm {
+        width: 100%;
+        height: 30px;
+        float: left;
+    }
 
-/* line 2402, D:/mTime/mTime/mTime/scss/style.scss */
-ul {
-  list-style-type: none;
-  margin: 31px 0 0 0;
-  display: block;
-  background-color: #fff; }
-  /* line 2408, D:/mTime/mTime/mTime/scss/style.scss */
-  ul li {
-    font-size: 12px;
-    line-height: 18px;
-    padding: 5px 0;
-    color: #333; }
-    /* line 2414, D:/mTime/mTime/mTime/scss/style.scss */
-    ul li .li_users_icon {
-      width: initial;
-      height: initial;
-      line-height: 18px;
-      margin: 0 10px 0 20px;
-      font-size: 16px;
-      color: #09af94;
-      float: left; }
-    /* line 2424, D:/mTime/mTime/mTime/scss/style.scss */
-    ul li .li_text {
-      line-height: 18px;
-      float: left;
-      padding: 0 5px; }
-  /* line 2431, D:/mTime/mTime/mTime/scss/style.scss */
-  ul li:hover {
-    background-color: #fcfccc; }
-
-/* line 2436, D:/mTime/mTime/mTime/scss/style.scss */
-.li_btn_rename, .li_btn_rename:hover {
-  width: initial;
-  font-size: 12px;
-  display: initial;
-  margin: 0 0 0 10px;
-  color: #fff;
-  padding: 3px 5px;
-  background-color: #026f5d;
-  border-radius: 5px;
-  cursor: pointer; }
-
-/* line 2448, D:/mTime/mTime/mTime/scss/style.scss */
-.li_btn_delete, .li_btn_delete:hover {
-  width: initial;
-  font-size: 12px;
-  display: initial;
-  margin: 0 0 0 10px;
-  color: #fff;
-  padding: 3px 5px;
-  background-color: #f00;
-  border-radius: 5px;
-  cursor: pointer; }
-
-/* line 2460, D:/mTime/mTime/mTime/scss/style.scss */
-.btn_editprofile {
-  width: initial;
-  height: inherit;
-  float: right;
-  font-size: 12px;
-  text-align: right;
-  line-height: 30px;
-  cursor: pointer;
-  text-decoration: none;
-  color: #fff; }
-
-/* line 2472, D:/mTime/mTime/mTime/scss/style.scss */
-.btn_edit {
-  width: 20px;
-  line-height: 30px !important;
-  text-align: center;
-  float: left;
-  font-size: 18px !important;
-  color: #026f5d;
-  margin: 0 2px;
-  cursor: pointer; }
-
-/* line 2483, D:/mTime/mTime/mTime/scss/style.scss */
-.btn_email {
-  width: 20px;
-  line-height: 30px !important;
-  text-align: center;
-  float: left;
-  font-size: 16px !important;
-  color: #154eb7;
-  margin: 0 2px;
-  cursor: pointer; }
-
-/* line 2494, D:/mTime/mTime/mTime/scss/style.scss */
-.btn_trash {
-  width: 20px;
-  line-height: 30px !important;
-  text-align: center;
-  float: left;
-  font-size: 18px !important;
-  color: #f00;
-  margin: 0 2px;
-  cursor: pointer; }
-
-/* line 2505, D:/mTime/mTime/mTime/scss/style.scss */
-.btn_copy {
-  width: 20px;
-  line-height: 30px !important;
-  text-align: center;
-  float: left;
-  font-size: 16px !important;
-  color: #666;
-  margin: 0 2px;
-  cursor: pointer; }
-
-/* line 2516, D:/mTime/mTime/mTime/scss/style.scss */
-.btn_edit:hover, .btn_trash:hover, .btn_copy:hover {
-  color: #333; }
-
-/* line 2520, D:/mTime/mTime/mTime/scss/style.scss */
-.rtpt_ftr_addbtn {
-  width: initial;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 10px;
-  /*margin: 0 0 0 10px;*/
-  margin: 5px 5px;
-  font-size: 14px;
-  float: right;
-  border-radius: 5px;
-  background-color: #0069ae;
-  color: #fff;
-  cursor: pointer; }
-
-/* line 2535, D:/mTime/mTime/mTime/scss/style.scss */
-.rtpt_ftr_deletebtn {
-  width: initial;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 10px;
-  /*margin: 0 0 0 10px;*/
-  margin: 5px 5px;
-  font-size: 14px;
-  float: right;
-  border-radius: 5px;
-  background-color: #ff0000;
-  color: #fff;
-  cursor: pointer; }
-
-/* line 2550, D:/mTime/mTime/mTime/scss/style.scss */
-.rtpt_closebtn {
-  width: initial;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 10px;
-  margin: 0 0 0 10px;
-  font-size: 14px;
-  float: right;
-  border-radius: 5px;
-  background-color: #666;
-  color: #fff;
-  cursor: pointer; }
-
-/* line 2564, D:/mTime/mTime/mTime/scss/style.scss */
-.rtpt_printbtn {
-  width: initial;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 10px;
-  margin: 0 0 0 10px;
-  font-size: 14px;
-  float: right;
-  border-radius: 5px;
-  background-color: #f00;
-  color: #fff;
-  cursor: pointer; }
-
-/* line 2578, D:/mTime/mTime/mTime/scss/style.scss */
-.rtpt_forgotpwbtn {
-  width: initial;
-  line-height: 30px;
-  float: right;
-  text-align: left;
-  text-decoration: none;
-  color: #0069ae;
-  font-size: 12px;
-  padding: 0 10px;
-  cursor: pointer; }
-
-/* line 2590, D:/mTime/mTime/mTime/scss/style.scss */
-.rtpt_savebtn {
-  width: initial;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 10px;
-  margin: 0 0 0 10px;
-  font-size: 14px;
-  float: right;
-  border-radius: 5px;
-  background-color: #0069ae;
-  color: #fff;
-  cursor: pointer; }
-
-/* line 2604, D:/mTime/mTime/mTime/scss/style.scss */
-.rtpt_yesbtn {
-  width: initial;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 10px;
-  margin: 0 0 0 10px;
-  font-size: 14px;
-  float: right;
-  border-radius: 5px;
-  background-color: #00aa52;
-  color: #fff;
-  cursor: pointer; }
-
-/* line 2618, D:/mTime/mTime/mTime/scss/style.scss */
-.rtpt_ftr_addbtn:hover {
-  background-color: #004f83; }
-
-/* line 2622, D:/mTime/mTime/mTime/scss/style.scss */
-.rtpt_deletebtn {
-  width: initial;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 10px;
-  margin: 0 0 0 10px;
-  font-size: 14px;
-  float: right;
-  border-radius: 5px;
-  background-color: #f00;
-  color: #fff;
-  cursor: pointer; }
-
-/* line 2636, D:/mTime/mTime/mTime/scss/style.scss */
-a, a:hover {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px; }
-
-/* line 2642, D:/mTime/mTime/mTime/scss/style.scss */
-.message_part {
-  width: 49%;
-  height: 500px;
-  float: left;
-  border-radius: 5px 5px;
-  border: 1px #ccc solid;
-  margin: 0 0 0 10px;
-  overflow: auto; }
-  /* line 2651, D:/mTime/mTime/mTime/scss/style.scss */
-  .message_part .mse_pt_table {
-    width: 100%;
-    margin: 0 0 30px 0;
-    float: left;
-    line-height: 30px;
-    font-size: 12px; }
-    /* line 2658, D:/mTime/mTime/mTime/scss/style.scss */
-    .message_part .mse_pt_table thead {
-      background-color: #aaa;
-      height: 30px; }
-      /* line 2662, D:/mTime/mTime/mTime/scss/style.scss */
-      .message_part .mse_pt_table thead th {
-        border-right: 1px #ccc solid;
-        padding: 0 5px;
-        color: #fff; }
-      /* line 2668, D:/mTime/mTime/mTime/scss/style.scss */
-      .message_part .mse_pt_table thead th:last-child {
-        border-right: 0; }
-  /* line 2674, D:/mTime/mTime/mTime/scss/style.scss */
-  .message_part .mse_pt_itenbox {
-    width: inherit;
-    height: 30px;
-    background-color: #444;
-    border-radius: 0 0 5px 5px;
-    padding: 0 10px;
+/* line 827, D:/mTime/mTime/mTime/scss/style.scss */
+.passwordchange_box {
+    width: 500px;
+    height: initial;
+    padding: 15px;
     position: absolute;
-    bottom: 0; }
-    /* line 2683, D:/mTime/mTime/mTime/scss/style.scss */
-    .message_part .mse_pt_itenbox span {
-      width: 100%;
-      float: left;
-      color: #fff;
-      line-height: 30px;
-      font-size: 12px; }
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+    /* line 840, D:/mTime/mTime/mTime/scss/style.scss */
+    .passwordchange_box .pwchange_b_icon {
+        width: 100%;
+        height: initial;
+        float: left;
+        color: #666;
+        text-align: center;
+        font-size: 80px;
+        margin: 0 0 20px 0;
+    }
+        /* line 849, D:/mTime/mTime/mTime/scss/style.scss */
+        .passwordchange_box .pwchange_b_icon .b_icon_tt {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 20px !important;
+            color: #333;
+            float: left;
+            font-family: Arial, Helvetica, sans-serif !important;
+        }
+    /* line 861, D:/mTime/mTime/mTime/scss/style.scss */
+    .passwordchange_box .pwchange_b_httt {
+        width: 100%;
+        line-height: 30px;
+        margin: 0 0 10px 0;
+        padding: 0 10px;
+        float: left;
+        font-size: 20px;
+        text-align: center;
+    }
+    /* line 871, D:/mTime/mTime/mTime/scss/style.scss */
+    .passwordchange_box .pwchange_b_part {
+        width: 100%;
+        height: initial;
+        float: left;
+        margin: 0 0 10px 0;
+    }
+        /* line 877, D:/mTime/mTime/mTime/scss/style.scss */
+        .passwordchange_box .pwchange_b_part .b_pt_tt {
+            width: 150px;
+            line-height: 30px;
+            font-size: 14px;
+            float: left;
+            color: #333;
+            text-align: right;
+        }
+        /* line 886, D:/mTime/mTime/mTime/scss/style.scss */
+        .passwordchange_box .pwchange_b_part .b_pt_box {
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            padding: 0 15px 0 175px;
+        }
+            /* line 893, D:/mTime/mTime/mTime/scss/style.scss */
+            .passwordchange_box .pwchange_b_part .b_pt_box input {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px #aaa solid;
+            }
+        /* line 904, D:/mTime/mTime/mTime/scss/style.scss */
+        .passwordchange_box .pwchange_b_part .b_pt_tt1 {
+            width: 70px;
+            line-height: 30px;
+            font-size: 14px;
+            float: left;
+            color: #333;
+            text-align: right;
+        }
+        /* line 913, D:/mTime/mTime/mTime/scss/style.scss */
+        .passwordchange_box .pwchange_b_part .b_pt_box1 {
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            padding: 0 15px 0 95px;
+        }
+            /* line 920, D:/mTime/mTime/mTime/scss/style.scss */
+            .passwordchange_box .pwchange_b_part .b_pt_box1 input {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px #aaa solid;
+            }
+    /* line 932, D:/mTime/mTime/mTime/scss/style.scss */
+    .passwordchange_box .pwchange_b_partbtm {
+        width: 100%;
+        height: 30px;
+        float: left;
+    }
 
-/* line 2693, D:/mTime/mTime/mTime/scss/style.scss */
-.mse_pt_msebox {
-  width: 49%;
-  min-height: 500px;
-  float: right;
-  border-radius: 5px 5px;
-  margin: 0 10px 0 0;
-  background-color: rgba(0, 0, 0, 0.03); }
-  /* line 2701, D:/mTime/mTime/mTime/scss/style.scss */
-  .mse_pt_msebox .msebox_htr {
+/* line 939, D:/mTime/mTime/mTime/scss/style.scss */
+.ctr_leftpart_home {
+    width: 300px;
+    height: initial;
+    float: left;
+    position: relative;
+    z-index: 10;
+}
+    /* line 946, D:/mTime/mTime/mTime/scss/style.scss */
+    .ctr_leftpart_home .leftpart_home_box {
+        width: inherit;
+        height: initial;
+        min-height: 200px;
+        background-color: #444;
+        float: left;
+        position: relative;
+        border-radius: 0 5px 5px 0;
+        padding: 0 0 10px 0;
+        margin: 0 0 15px 0;
+    }
+        /* line 957, D:/mTime/mTime/mTime/scss/style.scss */
+        .ctr_leftpart_home .leftpart_home_box .ltpt_home_b_httt {
+            width: initial;
+            height: 40px;
+            background-color: #222;
+            line-height: 16px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 0 5px 0 0;
+            padding: 12px 10px;
+        }
+
+/* line 971, D:/mTime/mTime/mTime/scss/style.scss */
+.leftpart_ul_box {
+    list-style-type: circle;
+    height: initial;
+    float: left;
+    display: block;
+    background-color: transparent;
+    margin: 0 0;
+}
+    /* line 979, D:/mTime/mTime/mTime/scss/style.scss */
+    .leftpart_ul_box li {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 5px 0;
+        color: #fff;
+        background-color: transparent !important;
+    }
+        /* line 986, D:/mTime/mTime/mTime/scss/style.scss */
+        .leftpart_ul_box li a {
+            width: inherit;
+            height: initial;
+            float: left;
+            text-decoration: none;
+            color: #aaa;
+            padding: 1px 5px 1px 0;
+            font-size: 12px;
+        }
+        /* line 998, D:/mTime/mTime/mTime/scss/style.scss */
+        .leftpart_ul_box li:hover a {
+            color: #fff;
+        }
+
+/* line 1004, D:/mTime/mTime/mTime/scss/style.scss */
+.faq_box {
+    width: 100%;
+    min-height: 500px;
+    float: right;
+    border-radius: 5px 5px;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+    /* line 1011, D:/mTime/mTime/mTime/scss/style.scss */
+    .faq_box .faq_b_htrtt {
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        float: left;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+        margin: 0 0 10px 0;
+    }
+        /* line 1020, D:/mTime/mTime/mTime/scss/style.scss */
+        .faq_box .faq_b_htrtt span {
+            width: initial;
+            float: left;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    /* line 1029, D:/mTime/mTime/mTime/scss/style.scss */
+    .faq_box .faq_b_row {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 0 5px;
+        margin: 0 0 10px 0;
+    }
+        /* line 1036, D:/mTime/mTime/mTime/scss/style.scss */
+        .faq_box .faq_b_row .b_row_htrtt {
+            width: 100%;
+            float: left;
+            color: #333;
+            line-height: 30px;
+            font-size: 12px;
+            font-weight: bold;
+            background-color: #ddd;
+            border-radius: 5px 5px;
+            margin: 5px 0 0 0;
+            padding: 0 5px;
+        }
+            /* line 1048, D:/mTime/mTime/mTime/scss/style.scss */
+            .faq_box .faq_b_row .b_row_htrtt .row_htrtt_icon {
+                color: #333;
+                line-height: 26px;
+                text-align: center;
+                float: right;
+                margin: 2px 0;
+                font-size: 18px;
+                padding: 0 10px;
+                cursor: pointer;
+            }
+        /* line 1060, D:/mTime/mTime/mTime/scss/style.scss */
+        .faq_box .faq_b_row .b_row_htrst {
+            width: 100%;
+            height: initial;
+            float: left;
+            font-size: 12px;
+            line-height: 16px;
+            color: #333;
+            padding: 10px 15px;
+            background-color: #fff;
+        }
+
+/* line 1073, D:/mTime/mTime/mTime/scss/style.scss */
+.ctr_rightpart_home {
+    width: 100%;
+    height: 100%;
+    float: right;
+    position: absolute;
+    z-index: 1;
+    padding: 0 10px 15px 310px;
+}
+
+/* line 1082, D:/mTime/mTime/mTime/scss/style.scss */
+.ctr_rightpart_atdc {
+    width: 100%;
+    max-height: inherit;
+    min-height: initial;
+    float: right;
+    position: absolute;
+    z-index: 1;
+    padding: 0 10px 0 310px;
+}
+
+/* line 1092, D:/mTime/mTime/mTime/scss/style.scss */
+.rtpt_atdc_box {
+    width: 100%;
+    min-height: 500px;
+    float: left;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 5px 5px;
+}
+    /* line 1100, D:/mTime/mTime/mTime/scss/style.scss */
+    .rtpt_atdc_box .atdc_b_htrbox {
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        float: left;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+    }
+        /* line 1108, D:/mTime/mTime/mTime/scss/style.scss */
+        .rtpt_atdc_box .atdc_b_htrbox span {
+            width: initial;
+            float: left;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    /* line 1117, D:/mTime/mTime/mTime/scss/style.scss */
+    .rtpt_atdc_box .atdc_b_tablebox {
+        width: 100%;
+        line-height: 30px;
+        margin: 0 0 40px 0;
+        font-size: 12px;
+    }
+        /* line 1123, D:/mTime/mTime/mTime/scss/style.scss */
+        .rtpt_atdc_box .atdc_b_tablebox thead {
+            background-color: #aaa;
+            height: 30px;
+        }
+            /* line 1128, D:/mTime/mTime/mTime/scss/style.scss */
+            .rtpt_atdc_box .atdc_b_tablebox thead tr th {
+                border-right: 1px #ccc solid;
+                padding: 0 5px;
+                color: #fff;
+            }
+    /* line 1137, D:/mTime/mTime/mTime/scss/style.scss */
+    .rtpt_atdc_box .atdc_b_totalbox {
+        width: 100%;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.08);
+        border-radius: 0 0 5px 5px;
+        padding: 0 10px;
+        position: absolute;
+        bottom: 0;
+    }
+        /* line 1146, D:/mTime/mTime/mTime/scss/style.scss */
+        .rtpt_atdc_box .atdc_b_totalbox span {
+            width: initial;
+            float: left;
+            color: #333;
+            line-height: 30px;
+            font-size: 12px;
+        }
+
+/* line 1156, D:/mTime/mTime/mTime/scss/style.scss */
+.rtpt_home_box {
+    width: 100%;
+    height: inherit;
+    float: left;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 5px 5px;
+}
+    /* line 1164, D:/mTime/mTime/mTime/scss/style.scss */
+    .rtpt_home_box .rtpt_home_b_img {
+        width: 100%;
+        height: 200px;
+        margin: 0 0 10px 0;
+        background: url(../../img/htr_bg.jpg) top center no-repeat;
+        background-size: cover;
+        border-radius: 5px 5px 0 0;
+    }
+    /* line 1173, D:/mTime/mTime/mTime/scss/style.scss */
+    .rtpt_home_box img {
+        margin: 0 0 10px 0;
+        border-radius: 5px 5px 0 0;
+    }
+    /* line 1178, D:/mTime/mTime/mTime/scss/style.scss */
+    .rtpt_home_box .rtpt_home_b_tt {
+        width: 100%;
+        height: initial;
+        line-height: 18px;
+        font-size: 16px;
+        font-weight: bold;
+        float: left;
+        padding: 5px 5px;
+    }
+    /* line 1188, D:/mTime/mTime/mTime/scss/style.scss */
+    .rtpt_home_box .rtpt_home_b_linkpart {
+        width: 100%;
+        height: 40px;
+        margin: 20px 0 0 0;
+        padding: 12px 5px;
+        line-height: 16px;
+        float: left;
+        border-radius: 5px 5px;
+        background-color: #444;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+/* line 1203, D:/mTime/mTime/mTime/scss/style.scss */
+.bg_color_444 {
+    background-color: #444 !important;
+}
+
+/* line 1207, D:/mTime/mTime/mTime/scss/style.scss */
+.body_htrcenter {
+    width: 100%;
+    height: 40px;
+    float: left;
+    margin: 5px 0;
+    padding: 0 10px;
+    border-bottom: 2px #ccc solid;
+    z-index: 20;
+    position: relative;
+}
+    /* line 1217, D:/mTime/mTime/mTime/scss/style.scss */
+    .body_htrcenter .htrcenter_tab {
+        width: initial;
+        height: inherit;
+        float: left;
+        margin: 0 5px 0 0;
+        border-radius: 5px 5px 0 0;
+        background-color: #666;
+        color: #fff;
+        line-height: 40px;
+        padding: 0 10px;
+        position: relative;
+        cursor: pointer;
+        font-size: 14px;
+    }
+        /* line 1231, D:/mTime/mTime/mTime/scss/style.scss */
+        .body_htrcenter .htrcenter_tab .tab_btneff {
+            width: 100%;
+            height: 40px;
+            float: left;
+            border-radius: 5px 5px 0 0;
+            background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.35) 100%);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        /* line 1243, D:/mTime/mTime/mTime/scss/style.scss */
+        .body_htrcenter .htrcenter_tab:hover {
+            background-color: #444;
+        }
+            /* line 1246, D:/mTime/mTime/mTime/scss/style.scss */
+            .body_htrcenter .htrcenter_tab:hover .tab_btneff {
+                width: 100%;
+                height: 40px;
+                float: left;
+                border-radius: 5px 5px 0 0;
+                background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.35) 100%);
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: block;
+            }
+
+/* line 1260, D:/mTime/mTime/mTime/scss/style.scss */
+.ctr_leftpart_atd {
+    width: 300px;
+    height: initial;
+    float: left;
+    position: relative;
+    z-index: 10;
+    padding: 0 0 0 10px;
+}
+    /* line 1268, D:/mTime/mTime/mTime/scss/style.scss */
+    .ctr_leftpart_atd .leftpart_atd_box {
+        width: 100%;
+        height: initial;
+        min-height: 500px;
+        background-color: #444;
+        float: left;
+        position: relative;
+        border-radius: 5px 5px;
+        padding: 0 10px;
+    }
+        /* line 1278, D:/mTime/mTime/mTime/scss/style.scss */
+        .ctr_leftpart_atd .leftpart_atd_box .atd_b_part {
+            width: 100%;
+            height: 40px;
+            float: left;
+            margin: 10px 0;
+        }
+            /* line 1284, D:/mTime/mTime/mTime/scss/style.scss */
+            .ctr_leftpart_atd .leftpart_atd_box .atd_b_part .atd_b_pt_tt {
+                width: initial;
+                line-height: 40px;
+                float: left;
+                padding: 0 5px;
+                color: #fff;
+                font-size: 14px;
+            }
+            /* line 1293, D:/mTime/mTime/mTime/scss/style.scss */
+            .ctr_leftpart_atd .leftpart_atd_box .atd_b_part .atd_b_pt_slt {
+                float: right;
+                position: relative;
+                height: 30px;
+                line-height: 30px;
+                margin: 5px 0;
+                width: 200px;
+                font-size: 12px;
+                border-radius: 5px 5px;
+            }
+        /* line 1305, D:/mTime/mTime/mTime/scss/style.scss */
+        .ctr_leftpart_atd .leftpart_atd_box .atd_b_checkbox {
+            width: 100%;
+            height: initial;
+            line-height: 18px;
+            float: left;
+            padding: 6px 5px 6px 20px;
+            font-size: 12px;
+            color: #fff;
+        }
+            /* line 1314, D:/mTime/mTime/mTime/scss/style.scss */
+            .ctr_leftpart_atd .leftpart_atd_box .atd_b_checkbox .atd_b_ckb_box {
+                margin: 2px 5px 0 0;
+                float: left;
+            }
+        /* line 1320, D:/mTime/mTime/mTime/scss/style.scss */
+        .ctr_leftpart_atd .leftpart_atd_box .atd_b_ttbox {
+            width: 100%;
+            height: initial;
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            font-size: 12px;
+            color: #fff;
+            border-top: 1px #999 solid;
+            padding: 10px 10px;
+            margin: 5px 0;
+            line-height: 16px;
+        }
+        /* line 1334, D:/mTime/mTime/mTime/scss/style.scss */
+        .ctr_leftpart_atd .leftpart_atd_box .atd_b_btnpart {
+            width: 100%;
+            height: initial;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 0 10px 10px;
+        }
+
+/* line 1345, D:/mTime/mTime/mTime/scss/style.scss */
+.atdc_editbox1 {
+    margin: 10px 0;
+    min-height: initial;
+    border: 1px #aaa solid;
+    background-color: #fff;
+}
+
+/* line 1352, D:/mTime/mTime/mTime/scss/style.scss */
+.popup_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 99;
+}
+
+/* line 1362, D:/mTime/mTime/mTime/scss/style.scss */
+.massage_part {
+    width: initial;
+    height: inherit;
+    line-height: 40px;
+    padding: 0 10px;
+    color: #ff0000;
+    float: left;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* line 1373, D:/mTime/mTime/mTime/scss/style.scss */
+.malaysia_logo {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background: url(../../img/malaysia_logo_s.png) center center no-repeat;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+/* line 1383, D:/mTime/mTime/mTime/scss/style.scss */
+.body_center {
+    width: 100%;
+    height: initial;
+    /*height: 90%;*/
+    position: absolute;
+    /*bottom: 7px;*/
+    top: 85px;
+    z-index: 10;
+}
+    /* line 1392, D:/mTime/mTime/mTime/scss/style.scss */
+    .body_center .bd_ctr_nav {
+        width: 200px;
+        height: initial;
+        float: left;
+        position: relative;
+        z-index: 10;
+    }
+        /* line 1399, D:/mTime/mTime/mTime/scss/style.scss */
+        .body_center .bd_ctr_nav .innav1_btnleft_icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 0 5px 0 0;
+            background-color: #222;
+        }
+            /* line 1405, D:/mTime/mTime/mTime/scss/style.scss */
+            .body_center .bd_ctr_nav .innav1_btnleft_icon .innav1_btt1_btnleft {
+                width: 30px;
+                height: 30px;
+                top: 5px;
+                right: 5px;
+                position: absolute;
+                font-size: 20px;
+                text-align: center;
+                line-height: 30px;
+                cursor: pointer;
+                color: #fff;
+                z-index: 1;
+            }
+                /* line 1419, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_nav .innav1_btnleft_icon .innav1_btt1_btnleft:hover {
+                    background-color: #038c76;
+                    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+                }
+        /* line 1425, D:/mTime/mTime/mTime/scss/style.scss */
+        .body_center .bd_ctr_nav .ctr_innav1 {
+            width: 200px;
+            height: initial;
+            background-color: #444;
+            /*background-color: #026f5d;*/
+            float: left;
+            position: relative;
+            border-radius: 0 5px 5px 0;
+            padding: 0 0 10px 0;
+            margin: 0 0 15px 0;
+            /*.ctr_innav1_btn {
+                .innav1_inbtn_ttbox {
+                    display: none;
+                }
+            }*/
+        }
+            /* line 1437, D:/mTime/mTime/mTime/scss/style.scss */
+            .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btt1 span {
+                width: 200px;
+                height: 40px;
+                background-color: #222;
+                /*background-color: #005648;*/
+                line-height: 16px;
+                display: table-cell;
+                vertical-align: middle;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                border-radius: 0 5px 0 0;
+                padding: 0 35px 0 10px;
+            }
+            /* line 1453, D:/mTime/mTime/mTime/scss/style.scss */
+            .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn {
+                width: 100%;
+                height: 40px;
+                float: left;
+                text-decoration: none;
+            }
+                /* line 1459, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn .innav1_inbtn_icon {
+                    width: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #038c76;
+                    /*color: #4ecab5;*/
+                    font-size: 18px;
+                    float: left;
+                }
+                /* line 1470, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn .innav1_inbtn_tt span {
+                    line-height: 16px;
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 160px;
+                    height: 40px;
+                    color: #aaa;
+                    padding: 0 5px;
+                    margin: 0 0 0 40px;
+                    font-size: 14px;
+                }
+                /* line 1489, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_ttbox {
+                    width: initial;
+                    height: 26px;
+                    line-height: 26px;
+                    font-size: 12px;
+                    position: relative;
+                    float: left;
+                    margin: -32px 0 0 40px;
+                    padding: 0 10px;
+                    display: block;
+                    color: #fff;
+                    background-color: rgba(0, 0, 0, 0.75);
+                    z-index: 1;
+                    pointer-events: none;
+                    border-radius: 5px;
+                    font-family: Arial, Helvetica, sans-serif !important;
+                }
+                /* line 1509, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_icon, .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btneff .innav1_inbtn_icon {
+                    color: #fff;
+                    background-color: #038c76;
+                }
+                /* line 1515, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_tt span, .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btneff .innav1_inbtn_tt span {
+                    color: #fff;
+                    background-color: #09af94;
+                    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+                }
+        /* line 1524, D:/mTime/mTime/mTime/scss/style.scss */
+        .body_center .bd_ctr_nav .ctr_innav2 {
+            width: 200px;
+            height: initial;
+            background-color: #444;
+            /*background-color: #026f5d;*/
+            float: left;
+            position: relative;
+            border-radius: 0 5px 5px 0;
+            padding: 0 0 10px 0;
+            margin: 0 0 15px 0;
+            /*.ctr_innav2_btn {
+                .innav2_inbtn_ttbox {
+                    display: none;
+                }
+            }*/
+        }
+            /* line 1535, D:/mTime/mTime/mTime/scss/style.scss */
+            .body_center .bd_ctr_nav .ctr_innav2 .innav2_btnleft_box {
+                width: 40px;
+                height: 40px;
+                border-radius: 0 5px 0 0;
+                background-color: #222;
+                display: none;
+            }
+            /* line 1544, D:/mTime/mTime/mTime/scss/style.scss */
+            .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btt1 span {
+                width: 200px;
+                height: 40px;
+                background-color: #222;
+                /*background-color: #005648;*/
+                line-height: 16px;
+                display: table-cell;
+                vertical-align: middle;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                border-radius: 0 5px 0 0;
+                padding: 0 35px 0 10px;
+            }
+            /* line 1560, D:/mTime/mTime/mTime/scss/style.scss */
+            .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn {
+                width: 100%;
+                height: 40px;
+                float: left;
+                text-decoration: none;
+            }
+                /* line 1566, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn .innav2_inbtn_icon {
+                    width: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #038c76;
+                    /*color: #4ecab5;*/
+                    font-size: 18px;
+                    float: left;
+                }
+                /* line 1577, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn .innav2_inbtn_tt span {
+                    line-height: 16px;
+                    display: table-cell;
+                    vertical-align: middle;
+                    width: 160px;
+                    height: 40px;
+                    color: #aaa;
+                    padding: 0 5px;
+                    margin: 0 0 0 40px;
+                    font-size: 14px;
+                }
+                /* line 1596, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_ttbox {
+                    width: initial;
+                    height: 26px;
+                    line-height: 26px;
+                    font-size: 12px;
+                    position: relative;
+                    float: left;
+                    margin: -32px 0 0 40px;
+                    padding: 0 10px;
+                    display: block;
+                    color: #fff;
+                    background-color: rgba(0, 0, 0, 0.75);
+                    z-index: 1;
+                    pointer-events: none;
+                    border-radius: 5px;
+                    font-family: Arial, Helvetica, sans-serif !important;
+                }
+                /* line 1616, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_icon, .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btneff .innav2_inbtn_icon {
+                    color: #fff;
+                    background-color: #038c76;
+                }
+                /* line 1622, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_tt span, .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btneff .innav2_inbtn_tt span {
+                    color: #fff;
+                    background-color: #09af94;
+                    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+                }
+    /* line 1632, D:/mTime/mTime/mTime/scss/style.scss */
+    .body_center .bd_ctr_rightpart {
+        width: 100%;
+        height: 100%;
+        float: right;
+        position: absolute;
+        z-index: 2;
+        /*padding: 0 10px 50px 210px;*/
+        padding: 0 10px 15px 210px;
+    }
+        /* line 1641, D:/mTime/mTime/mTime/scss/style.scss */
+        .body_center .bd_ctr_rightpart .ctr_rtpt_box {
+            width: 100%;
+            height: 515px;
+            float: left;
+            position: relative;
+            border-radius: 5px 5px;
+            background-color: rgba(0, 0, 0, 0.03);
+            border: 1px #999 solid;
+        }
+            /* line 1650, D:/mTime/mTime/mTime/scss/style.scss */
+            .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht {
+                width: 100%;
+                height: 40px;
+                background-color: #222;
+                float: left;
+                border-radius: 5px 5px 0 0;
+                padding: 0 10px;
+            }
+                /* line 1658, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht span {
+                    width: initial;
+                    float: left;
+                    color: #fff;
+                    line-height: 40px;
+                    font-size: 14px;
+                }
+                /* line 1666, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht .rtpt_b_ht_refresh {
+                    width: 30px;
+                    line-height: 30px;
+                    font-size: 22px;
+                    text-align: center;
+                    float: right;
+                    color: #fff;
+                    margin: 5px 0 5px 5px;
+                    cursor: pointer;
+                }
+                    /* line 1677, D:/mTime/mTime/mTime/scss/style.scss */
+                    .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht .rtpt_b_ht_refresh:hover {
+                        color: #09af94;
+                    }
+            /* line 1682, D:/mTime/mTime/mTime/scss/style.scss */
+            .body_center .bd_ctr_rightpart .ctr_rtpt_box table {
+                width: 100%;
+                line-height: 30px;
+                margin: 0 0 40px 0;
+                font-size: 12px;
+            }
+                /* line 1688, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_rightpart .ctr_rtpt_box table thead {
+                    background-color: #aaa;
+                    height: 30px;
+                }
+                    /* line 1693, D:/mTime/mTime/mTime/scss/style.scss */
+                    .body_center .bd_ctr_rightpart .ctr_rtpt_box table thead tr th {
+                        border-right: 1px #ccc solid;
+                        padding: 0 5px;
+                        color: #fff;
+                    }
+            /* line 1702, D:/mTime/mTime/mTime/scss/style.scss */
+            .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ftr {
+                width: 100%;
+                height: 30px;
+                /*background-color: rgba(0, 0, 0, .08);*/
+                border-radius: 0 0 5px 5px;
+                padding: 0 10px;
+                position: absolute;
+                bottom: 0;
+                background-color: #444;
+                z-index: 1;
+            }
+                /* line 1713, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ftr span {
+                    width: initial;
+                    float: left;
+                    color: #fff;
+                    line-height: 30px;
+                    font-size: 12px;
+                }
+            /* line 1722, D:/mTime/mTime/mTime/scss/style.scss */
+            .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox {
+                width: 550px;
+                height: initial;
+                padding: 10px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+                /* line 1731, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part {
+                    width: 100%;
+                    height: initial;
+                    float: left;
+                    margin: 0 0 10px 0;
+                    padding: 0 0 0 160px;
+                    position: relative;
+                    /*input {
+                        width: 370px;
+                        height: 30px;
+                        float: right;
+                        line-height: 30px;
+                        font-size: 14px;
+                        padding: 0 10px;
+                        background-color: #fff;
+                        border: 1px #aaa solid;
+                    }*/
+                }
+                    /* line 1739, D:/mTime/mTime/mTime/scss/style.scss */
+                    .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_pt_tt {
+                        width: 150px;
+                        height: 30px;
+                        text-align: right;
+                        position: absolute;
+                        left: 0;
+                        line-height: 30px;
+                        font-size: 14px;
+                    }
+                    /* line 1758, D:/mTime/mTime/mTime/scss/style.scss */
+                    .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_pt_error {
+                        width: 100%;
+                        line-height: 20px;
+                        float: left;
+                        color: #ff0000;
+                        font-size: 12px;
+                        text-align: right;
+                    }
+                /* line 1768, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_partbtn {
+                    width: 100%;
+                    height: 30px;
+                    float: left;
+                }
+            /* line 1775, D:/mTime/mTime/mTime/scss/style.scss */
+            .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox {
+                width: 550px;
+                height: initial;
+                padding: 10px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+                /* line 1784, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part {
+                    width: 100%;
+                    height: initial;
+                    float: left;
+                    margin: 0 0 10px 0;
+                    padding: 0 0 0 170px;
+                    position: relative;
+                    /*input {
+                        width: 370px;
+                        height: 30px;
+                        float: right;
+                        line-height: 30px;
+                        font-size: 14px;
+                        padding: 0 10px;
+                        background-color: #fff;
+                        border: 1px #aaa solid;
+                    }*/
+                    /*.hlday_addbox_pt_error {
+                        width: 100%;
+                        line-height: 20px;
+                        float: left;
+                        color: #ff0000;
+                        font-size: 12px;
+                        text-align: right;
+                    }*/
+                }
+                    /* line 1792, D:/mTime/mTime/mTime/scss/style.scss */
+                    .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .hlday_addbox_pt_tt {
+                        width: 160px;
+                        height: 30px;
+                        text-align: right;
+                        position: absolute;
+                        left: 0;
+                        line-height: 30px;
+                        font-size: 14px;
+                        font-weight: normal;
+                    }
+                    /* line 1820, D:/mTime/mTime/mTime/scss/style.scss */
+                    .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .checkbox1 {
+                        float: left;
+                        width: 17px !important;
+                        height: 17px !important;
+                        margin: 7px 0 0 10px !important;
+                    }
+                    /* line 1827, D:/mTime/mTime/mTime/scss/style.scss */
+                    .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .hlday_addbox_pt_ttbox {
+                        width: 370px;
+                        height: 30px;
+                        float: right;
+                        line-height: 30px;
+                        font-size: 14px;
+                        padding: 0 10px;
+                    }
+                /* line 1837, D:/mTime/mTime/mTime/scss/style.scss */
+                .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_partbtn {
+                    width: 100%;
+                    height: 30px;
+                    float: left;
+                }
+        /* line 1845, D:/mTime/mTime/mTime/scss/style.scss */
+        .body_center .bd_ctr_rightpart .ctr_rtpt_footer {
+            width: 100%;
+            height: initial;
+            float: left;
+            padding: 5px 0;
+        }
+    /* line 1853, D:/mTime/mTime/mTime/scss/style.scss */
+    .body_center .bd_ctr_rightpart1 {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 10px 10px 0 10px;
+    }
+        /* line 1859, D:/mTime/mTime/mTime/scss/style.scss */
+        .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb {
+            width: 100%;
+            line-height: 30px;
+            float: left;
+            color: #222;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #fff;
+        }
+            /* line 1868, D:/mTime/mTime/mTime/scss/style.scss */
+            .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb .ctr_rtpt1_icon1 {
+                width: 30px;
+                height: inherit;
+                float: left;
+                line-height: 31px;
+                text-align: center;
+                font-size: 26px;
+                border-radius: 0 30px 30px 0;
+                background-color: #09af94;
+                margin: 0 10px 0 0;
+                color: #fff;
+                box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.35);
+                cursor: pointer;
+            }
+            /* line 1883, D:/mTime/mTime/mTime/scss/style.scss */
+            .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb .ctr_rtpt1_icon2 {
+                font-size: 18px;
+                line-height: 30px;
+                text-align: center;
+                margin: 0 5px 0 0;
+            }
+
+/* line 1893, D:/mTime/mTime/mTime/scss/style.scss */
+.systembox_lt {
+    width: 49%;
+    min-height: 605px;
+    float: left;
+    border-radius: 5px 5px;
+    border: 1px #ccc solid;
+    margin: 0 0 10px 10px;
+    overflow: auto;
+    position: relative;
+}
+    /* line 1903, D:/mTime/mTime/mTime/scss/style.scss */
+    .systembox_lt .stbox_lt_htb {
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        float: left;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+    }
+        /* line 1911, D:/mTime/mTime/mTime/scss/style.scss */
+        .systembox_lt .stbox_lt_htb span {
+            width: initial;
+            float: left;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    /* line 1920, D:/mTime/mTime/mTime/scss/style.scss */
+    .systembox_lt .stbox_lt_part1 {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 10px 10px;
+    }
+        /* line 1926, D:/mTime/mTime/mTime/scss/style.scss */
+        .systembox_lt .stbox_lt_part1 .lt_pt1_box1 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 30px 0 160px;
+            margin: 0 0 10px 0;
+        }
+            /* line 1934, D:/mTime/mTime/mTime/scss/style.scss */
+            .systembox_lt .stbox_lt_part1 .lt_pt1_box1 .pt1_b1_tt {
+                width: 150px;
+                height: 30px;
+                text-align: right;
+                float: left;
+                line-height: 30px;
+                font-size: 14px;
+                position: absolute;
+                left: 0;
+            }
+            /* line 1945, D:/mTime/mTime/mTime/scss/style.scss */
+            .systembox_lt .stbox_lt_part1 .lt_pt1_box1 .pt1_b1_input {
+                width: 100%;
+                height: 30px;
+                float: right;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px #aaa solid;
+            }
+            /* line 1956, D:/mTime/mTime/mTime/scss/style.scss */
+            .systembox_lt .stbox_lt_part1 .lt_pt1_box1 .pt1_b1_textarea {
+                width: 100%;
+                max-height: 100px;
+                min-height: 100px;
+                float: right;
+                line-height: 16px;
+                font-size: 14px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px #aaa solid;
+            }
+        /* line 1969, D:/mTime/mTime/mTime/scss/style.scss */
+        .systembox_lt .stbox_lt_part1 .lt_pt1_box2 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 100px 0 160px;
+            margin: 0 0 10px 0;
+        }
+            /* line 1977, D:/mTime/mTime/mTime/scss/style.scss */
+            .systembox_lt .stbox_lt_part1 .lt_pt1_box2 .pt1_b2_tt {
+                width: 150px;
+                height: 30px;
+                text-align: right;
+                float: left;
+                line-height: 30px;
+                font-size: 14px;
+                position: absolute;
+                left: 0;
+            }
+            /* line 1988, D:/mTime/mTime/mTime/scss/style.scss */
+            .systembox_lt .stbox_lt_part1 .lt_pt1_box2 .pt1_b2_inputimg {
+                background-color: #fff;
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+    /* line 1997, D:/mTime/mTime/mTime/scss/style.scss */
+    .systembox_lt .stbox_lt_part2 {
+        width: 100%;
+        height: initial;
+        float: left;
+        position: absolute;
+        padding: 0 10px;
+        bottom: 10px;
+    }
+
+/* line 2007, D:/mTime/mTime/mTime/scss/style.scss */
+.systembox_rt1 {
+    width: 49%;
+    min-height: 200px;
+    float: right;
+    border-radius: 5px 5px;
+    margin: 0 10px 10px 0;
+    background-color: #fff;
+    border: 1px #ccc solid;
+    position: relative;
+}
+    /* line 2017, D:/mTime/mTime/mTime/scss/style.scss */
+    .systembox_rt1 .stbox_rt1_httt {
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        float: left;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+    }
+        /* line 2025, D:/mTime/mTime/mTime/scss/style.scss */
+        .systembox_rt1 .stbox_rt1_httt span {
+            width: initial;
+            float: left;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    /* line 2034, D:/mTime/mTime/mTime/scss/style.scss */
+    .systembox_rt1 .stbox_rt1_box {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 10px 10px;
+    }
+        /* line 2040, D:/mTime/mTime/mTime/scss/style.scss */
+        .systembox_rt1 .stbox_rt1_box .rt1_b_part1 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 30px 0 200px;
+            margin: 0 0 10px 0;
+        }
+            /* line 2048, D:/mTime/mTime/mTime/scss/style.scss */
+            .systembox_rt1 .stbox_rt1_box .rt1_b_part1 .b_pt1_tt {
+                width: 190px;
+                height: 30px;
+                text-align: right;
+                float: left;
+                line-height: 30px;
+                font-size: 14px;
+                position: absolute;
+                left: 0;
+            }
+        /* line 2060, D:/mTime/mTime/mTime/scss/style.scss */
+        .systembox_rt1 .stbox_rt1_box .rt1_b_part2 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 10px;
+        }
+
+/* line 2070, D:/mTime/mTime/mTime/scss/style.scss */
+.systembox_rt2 {
+    width: 49%;
+    min-height: 100px;
+    float: right;
+    border-radius: 5px 5px;
+    margin: 0 10px 10px 0;
+    background-color: #fff;
+    border: 1px #ccc solid;
+}
+    /* line 2079, D:/mTime/mTime/mTime/scss/style.scss */
+    .systembox_rt2 .stbox_rt2_box1 {
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        float: left;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+    }
+        /* line 2087, D:/mTime/mTime/mTime/scss/style.scss */
+        .systembox_rt2 .stbox_rt2_box1 span {
+            width: initial;
+            float: left;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    /* line 2096, D:/mTime/mTime/mTime/scss/style.scss */
+    .systembox_rt2 .stbox_rt2_box2 {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 10px 10px;
+    }
+        /* line 2102, D:/mTime/mTime/mTime/scss/style.scss */
+        .systembox_rt2 .stbox_rt2_box2 .rt2_b2_tt {
+            width: 100%;
+            height: initial;
+            line-height: 16px;
+            padding: 5px 0;
+            font-size: 12px;
+            color: #666;
+            margin: 0 0 10px 0;
+        }
+        /* line 2112, D:/mTime/mTime/mTime/scss/style.scss */
+        .systembox_rt2 .stbox_rt2_box2 .rt2_b2_box {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 10px;
+        }
+
+/* line 2122, D:/mTime/mTime/mTime/scss/style.scss */
+.systembox_rt3 {
+    width: 49%;
+    min-height: 100px;
+    float: right;
+    border-radius: 5px 5px;
+    margin: 0 10px 10px 0;
+    background-color: #fff;
+    border: 1px #ccc solid;
+}
+    /* line 2131, D:/mTime/mTime/mTime/scss/style.scss */
+    .systembox_rt3 .stbox_rt3_box {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 10px 10px;
+    }
+        /* line 2137, D:/mTime/mTime/mTime/scss/style.scss */
+        .systembox_rt3 .stbox_rt3_box .rt3_b_httext {
+            width: 100%;
+            height: initial;
+            line-height: 16px;
+            padding: 5px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #666;
+            margin: 0 0 10px 0;
+        }
+        /* line 2148, D:/mTime/mTime/mTime/scss/style.scss */
+        .systembox_rt3 .stbox_rt3_box .rt3_b_addtext {
+            width: 100%;
+            height: initial;
+            line-height: 16px;
+            padding: 5px 0;
+            font-size: 12px;
+            color: #666;
+            margin: 0 0 10px 0;
+        }
+        /* line 2158, D:/mTime/mTime/mTime/scss/style.scss */
+        .systembox_rt3 .stbox_rt3_box .rt3_b_textbox {
+            width: 100%;
+            height: initial;
+            line-height: 16px;
+            padding: 5px 0;
+            font-size: 12px;
+            color: #666;
+            margin: 0 0 10px 0;
+        }
+            /* line 2167, D:/mTime/mTime/mTime/scss/style.scss */
+            .systembox_rt3 .stbox_rt3_box .rt3_b_textbox b {
+                width: 40px;
+                float: left;
+            }
+            /* line 2172, D:/mTime/mTime/mTime/scss/style.scss */
+            .systembox_rt3 .stbox_rt3_box .rt3_b_textbox div {
+                float: left;
+            }
+
+/* line 2179, D:/mTime/mTime/mTime/scss/style.scss */
+.inbox_haedtext {
     width: 100%;
     height: 40px;
     background-color: #222;
     float: left;
     border-radius: 5px 5px 0 0;
-    padding: 0 10px; }
-    /* line 2709, D:/mTime/mTime/mTime/scss/style.scss */
-    .mse_pt_msebox .msebox_htr span {
-      width: initial;
-      float: left;
-      color: #fff;
-      line-height: 40px;
-      font-size: 14px; }
-    /* line 2717, D:/mTime/mTime/mTime/scss/style.scss */
-    .mse_pt_msebox .msebox_htr .msebox_htr_date {
-      width: initial;
-      float: right;
-      padding: 0 0 0 10px;
-      line-height: 40px;
-      font-size: 12px;
-      color: #fff; }
-  /* line 2727, D:/mTime/mTime/mTime/scss/style.scss */
-  .mse_pt_msebox .msebox_ttbox {
+    padding: 0 10px;
+}
+    /* line 2187, D:/mTime/mTime/mTime/scss/style.scss */
+    .inbox_haedtext span {
+        width: initial;
+        float: left;
+        color: #fff;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+/* line 2196, D:/mTime/mTime/mTime/scss/style.scss */
+.all_input1 {
     width: 100%;
-    height: initial;
+    height: 30px;
+    float: right;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0 0 0 10px;
+    background-color: #fff;
+    border: 1px #aaa solid;
+}
+
+/* line 2207, D:/mTime/mTime/mTime/scss/style.scss */
+.pt1_b1_inforbtn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    color: #004f83 !important;
+}
+
+/* line 2219, D:/mTime/mTime/mTime/scss/style.scss */
+.pt1_b2_folderbtn {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    right: 65px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px #aaa solid;
+    color: #f50;
+}
+
+/* line 2233, D:/mTime/mTime/mTime/scss/style.scss */
+.pt1_b2_deletebtn {
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px #aaa solid;
+    color: #f00;
+}
+
+/* line 2247, D:/mTime/mTime/mTime/scss/style.scss */
+.edit_pt_box {
+    width: 100%;
+    height: inherit;
     float: left;
+}
+    /* line 2252, D:/mTime/mTime/mTime/scss/style.scss */
+    .edit_pt_box .edit_pt_inb {
+        width: 100%;
+        height: initial;
+        float: left;
+        margin: 0 0 10px 0;
+        padding: 0 0 0 170px;
+    }
+        /* line 2259, D:/mTime/mTime/mTime/scss/style.scss */
+        .edit_pt_box .edit_pt_inb .pt_inb_tt {
+            width: 160px;
+            height: 30px;
+            text-align: right;
+            float: left;
+            padding: 0 10px;
+            line-height: 30px;
+            font-size: 14px;
+            position: absolute;
+            left: 0;
+        }
+        /* line 2271, D:/mTime/mTime/mTime/scss/style.scss */
+        .edit_pt_box .edit_pt_inb .pt_inb_input_none {
+            width: 100%;
+            height: 30px;
+            float: left;
+            line-height: 30px;
+            font-size: 14px;
+            padding: 0 10px;
+            background-color: #ccc;
+            border: 1px #aaa solid;
+            color: #333;
+            pointer-events: none;
+        }
+        /* line 2284, D:/mTime/mTime/mTime/scss/style.scss */
+        .edit_pt_box .edit_pt_inb .pt_inb_input {
+            width: 100%;
+            height: 30px;
+            float: left;
+            line-height: 30px;
+            font-size: 14px;
+            padding: 0 10px;
+            background-color: #fff;
+            border: 1px #aaa solid;
+            color: #333;
+        }
+
+/* line 2298, D:/mTime/mTime/mTime/scss/style.scss */
+.hlday_addbox_pt_error {
+    width: 100%;
+    line-height: 20px;
+    float: left;
+    color: #ff0000;
     font-size: 12px;
-    color: #333;
-    line-height: 16px;
-    padding: 10px 10px; }
+    text-align: right;
+}
+
+/* line 2307, D:/mTime/mTime/mTime/scss/style.scss */
+tbody {
+    height: 30px;
+}
+    /* line 2311, D:/mTime/mTime/mTime/scss/style.scss */
+    tbody tr td {
+        border-right: 1px #aaa solid;
+        padding: 0 5px;
+    }
+        /* line 2316, D:/mTime/mTime/mTime/scss/style.scss */
+        tbody tr td:last-child {
+            border-right: 0;
+        }
+    /* line 2321, D:/mTime/mTime/mTime/scss/style.scss */
+    tbody tr:nth-child(odd) {
+        background-color: #fff;
+    }
+    /* line 2325, D:/mTime/mTime/mTime/scss/style.scss */
+    tbody tr:nth-child(even) {
+        background-color: #eee;
+    }
+    /* line 2329, D:/mTime/mTime/mTime/scss/style.scss */
+    tbody tr:hover {
+        background-color: #daf1ed;
+    }
+
+/* line 2334, D:/mTime/mTime/mTime/scss/style.scss */
+.ctr_rtpt_popupbox {
+    width: 100%;
+    height: 515px;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+    /* line 2341, D:/mTime/mTime/mTime/scss/style.scss */
+    .ctr_rtpt_popupbox .rtpt_popupbox_inb {
+        width: 500px;
+        height: initial;
+        padding: 15px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+        z-index: 10;
+    }
+        /* line 2354, D:/mTime/mTime/mTime/scss/style.scss */
+        .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon {
+            width: 100%;
+            height: initial;
+            float: left;
+            color: #666;
+            text-align: center;
+            font-size: 60px;
+        }
+        /* line 2363, D:/mTime/mTime/mTime/scss/style.scss */
+        .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon_red {
+            width: 100%;
+            height: initial;
+            float: left;
+            color: #f00;
+            text-align: center;
+            font-size: 60px;
+        }
+        /* line 2372, D:/mTime/mTime/mTime/scss/style.scss */
+        .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_tt {
+            width: 100%;
+            line-height: 30px;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+            float: left;
+            padding: 5px 5px;
+            font-weight: bold;
+        }
+        /* line 2383, D:/mTime/mTime/mTime/scss/style.scss */
+        .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_btnpart {
+            width: initial;
+            height: initial;
+            margin: 10px auto 0;
+            position: relative;
+            display: table;
+        }
+        /* line 2391, D:/mTime/mTime/mTime/scss/style.scss */
+        .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon_blue {
+            width: 100%;
+            height: initial;
+            float: left;
+            color: #0069ae;
+            text-align: center;
+            font-size: 66px;
+        }
+
+/* line 2402, D:/mTime/mTime/mTime/scss/style.scss */
+ul {
+    list-style-type: none;
+    margin: 31px 0 0 0;
+    display: block;
+    background-color: #fff;
+}
+    /* line 2408, D:/mTime/mTime/mTime/scss/style.scss */
+    ul li {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 5px 0;
+        color: #333;
+    }
+        /* line 2414, D:/mTime/mTime/mTime/scss/style.scss */
+        ul li .li_users_icon {
+            width: initial;
+            height: initial;
+            line-height: 18px;
+            margin: 0 10px 0 20px;
+            font-size: 16px;
+            color: #09af94;
+            float: left;
+        }
+        /* line 2424, D:/mTime/mTime/mTime/scss/style.scss */
+        ul li .li_text {
+            line-height: 18px;
+            float: left;
+            padding: 0 5px;
+        }
+        /* line 2431, D:/mTime/mTime/mTime/scss/style.scss */
+        ul li:hover {
+            background-color: #fcfccc;
+        }
+
+/* line 2436, D:/mTime/mTime/mTime/scss/style.scss */
+.li_btn_rename, .li_btn_rename:hover {
+    width: initial;
+    font-size: 12px;
+    display: initial;
+    margin: 0 0 0 10px;
+    color: #fff;
+    padding: 3px 5px;
+    background-color: #026f5d;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* line 2448, D:/mTime/mTime/mTime/scss/style.scss */
+.li_btn_delete, .li_btn_delete:hover {
+    width: initial;
+    font-size: 12px;
+    display: initial;
+    margin: 0 0 0 10px;
+    color: #fff;
+    padding: 3px 5px;
+    background-color: #f00;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* line 2460, D:/mTime/mTime/mTime/scss/style.scss */
+.btn_editprofile {
+    width: initial;
+    height: inherit;
+    float: right;
+    font-size: 12px;
+    text-align: right;
+    line-height: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* line 2472, D:/mTime/mTime/mTime/scss/style.scss */
+.btn_edit {
+    width: 20px;
+    line-height: 30px !important;
+    text-align: center;
+    float: left;
+    font-size: 18px !important;
+    color: #026f5d;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+/* line 2483, D:/mTime/mTime/mTime/scss/style.scss */
+.btn_email {
+    width: 20px;
+    line-height: 30px !important;
+    text-align: center;
+    float: left;
+    font-size: 16px !important;
+    color: #154eb7;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+/* line 2494, D:/mTime/mTime/mTime/scss/style.scss */
+.btn_trash {
+    width: 20px;
+    line-height: 30px !important;
+    text-align: center;
+    float: left;
+    font-size: 18px !important;
+    color: #f00;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+/* line 2505, D:/mTime/mTime/mTime/scss/style.scss */
+.btn_copy {
+    width: 20px;
+    line-height: 30px !important;
+    text-align: center;
+    float: left;
+    font-size: 16px !important;
+    color: #666;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+    /* line 2516, D:/mTime/mTime/mTime/scss/style.scss */
+    .btn_edit:hover, .btn_trash:hover, .btn_copy:hover {
+        color: #333;
+    }
+
+/* line 2520, D:/mTime/mTime/mTime/scss/style.scss */
+.rtpt_ftr_addbtn {
+    width: initial;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    /*margin: 0 0 0 10px;*/
+    margin: 5px 5px;
+    font-size: 14px;
+    float: right;
+    border-radius: 5px;
+    background-color: #0069ae;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* line 2535, D:/mTime/mTime/mTime/scss/style.scss */
+.rtpt_ftr_deletebtn {
+    width: initial;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    /*margin: 0 0 0 10px;*/
+    margin: 5px 5px;
+    font-size: 14px;
+    float: right;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* line 2550, D:/mTime/mTime/mTime/scss/style.scss */
+.rtpt_closebtn {
+    width: initial;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    float: right;
+    border-radius: 5px;
+    background-color: #666;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* line 2564, D:/mTime/mTime/mTime/scss/style.scss */
+.rtpt_printbtn {
+    width: initial;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    float: right;
+    border-radius: 5px;
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* line 2578, D:/mTime/mTime/mTime/scss/style.scss */
+.rtpt_forgotpwbtn {
+    width: initial;
+    line-height: 30px;
+    float: right;
+    text-align: left;
+    text-decoration: none;
+    color: #0069ae;
+    font-size: 12px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+/* line 2590, D:/mTime/mTime/mTime/scss/style.scss */
+.rtpt_savebtn {
+    width: initial;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    float: right;
+    border-radius: 5px;
+    background-color: #0069ae;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* line 2604, D:/mTime/mTime/mTime/scss/style.scss */
+.rtpt_yesbtn {
+    width: initial;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    float: right;
+    border-radius: 5px;
+    background-color: #00aa52;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* line 2618, D:/mTime/mTime/mTime/scss/style.scss */
+.rtpt_ftr_addbtn:hover {
+    background-color: #004f83;
+}
+
+/* line 2622, D:/mTime/mTime/mTime/scss/style.scss */
+.rtpt_deletebtn {
+    width: initial;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    float: right;
+    border-radius: 5px;
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* line 2636, D:/mTime/mTime/mTime/scss/style.scss */
+a, a:hover {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* line 2642, D:/mTime/mTime/mTime/scss/style.scss */
+.message_part {
+    width: 49%;
+    height: 500px;
+    float: left;
+    border-radius: 5px 5px;
+    border: 1px #ccc solid;
+    margin: 0 0 0 10px;
+    overflow: auto;
+}
+    /* line 2651, D:/mTime/mTime/mTime/scss/style.scss */
+    .message_part .mse_pt_table {
+        width: 100%;
+        margin: 0 0 30px 0;
+        float: left;
+        line-height: 30px;
+        font-size: 12px;
+    }
+        /* line 2658, D:/mTime/mTime/mTime/scss/style.scss */
+        .message_part .mse_pt_table thead {
+            background-color: #aaa;
+            height: 30px;
+        }
+            /* line 2662, D:/mTime/mTime/mTime/scss/style.scss */
+            .message_part .mse_pt_table thead th {
+                border-right: 1px #ccc solid;
+                padding: 0 5px;
+                color: #fff;
+            }
+                /* line 2668, D:/mTime/mTime/mTime/scss/style.scss */
+                .message_part .mse_pt_table thead th:last-child {
+                    border-right: 0;
+                }
+    /* line 2674, D:/mTime/mTime/mTime/scss/style.scss */
+    .message_part .mse_pt_itenbox {
+        width: inherit;
+        height: 30px;
+        background-color: #444;
+        border-radius: 0 0 5px 5px;
+        padding: 0 10px;
+        position: absolute;
+        bottom: 0;
+    }
+        /* line 2683, D:/mTime/mTime/mTime/scss/style.scss */
+        .message_part .mse_pt_itenbox span {
+            width: 100%;
+            float: left;
+            color: #fff;
+            line-height: 30px;
+            font-size: 12px;
+        }
+
+/* line 2693, D:/mTime/mTime/mTime/scss/style.scss */
+.mse_pt_msebox {
+    width: 49%;
+    min-height: 500px;
+    float: right;
+    border-radius: 5px 5px;
+    margin: 0 10px 0 0;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+    /* line 2701, D:/mTime/mTime/mTime/scss/style.scss */
+    .mse_pt_msebox .msebox_htr {
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        float: left;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+    }
+        /* line 2709, D:/mTime/mTime/mTime/scss/style.scss */
+        .mse_pt_msebox .msebox_htr span {
+            width: initial;
+            float: left;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        /* line 2717, D:/mTime/mTime/mTime/scss/style.scss */
+        .mse_pt_msebox .msebox_htr .msebox_htr_date {
+            width: initial;
+            float: right;
+            padding: 0 0 0 10px;
+            line-height: 40px;
+            font-size: 12px;
+            color: #fff;
+        }
+    /* line 2727, D:/mTime/mTime/mTime/scss/style.scss */
+    .mse_pt_msebox .msebox_ttbox {
+        width: 100%;
+        height: initial;
+        float: left;
+        font-size: 12px;
+        color: #333;
+        line-height: 16px;
+        padding: 10px 10px;
+    }
 
 /* line 2738, D:/mTime/mTime/mTime/scss/style.scss */
 .message_lt_part {
-  width: 49%;
-  min-height: 515px;
-  float: left;
-  border-radius: 5px 5px;
-  border: 1px #ccc solid;
-  margin: 0 0 10px 10px;
-  overflow: auto;
-  position: relative; }
+    width: 49%;
+    min-height: 515px;
+    float: left;
+    border-radius: 5px 5px;
+    border: 1px #ccc solid;
+    margin: 0 0 10px 10px;
+    overflow: auto;
+    position: relative;
+}
 
 /* line 2749, D:/mTime/mTime/mTime/scss/style.scss */
 .message_rt_part {
-  width: 49%;
-  min-height: 515px;
-  float: right;
-  border-radius: 5px 5px;
-  margin: 0 10px 10px 0;
-  background-color: #fff;
-  border: 1px #ccc solid;
-  position: relative; }
+    width: 49%;
+    min-height: 515px;
+    float: right;
+    border-radius: 5px 5px;
+    margin: 0 10px 10px 0;
+    background-color: #fff;
+    border: 1px #ccc solid;
+    position: relative;
+}
 
 /* line 2760, D:/mTime/mTime/mTime/scss/style.scss */
 .ball_color1 {
-  width: 16px;
-  height: 16px;
-  border-radius: 20px;
-  border: 2px #aaa solid;
-  background-color: #154eb7;
-  margin: 0 5px 0 0;
-  float: left; }
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    border: 2px #aaa solid;
+    background-color: #154eb7;
+    margin: 0 5px 0 0;
+    float: left;
+}
 
 /* line 2770, D:/mTime/mTime/mTime/scss/style.scss */
 .report_lt_part {
-  width: 100%;
-  height: initial;
-  float: left;
-  position: relative;
-  padding: 0 10px 0 370px; }
-  /* line 2777, D:/mTime/mTime/mTime/scss/style.scss */
-  .report_lt_part .rpt_lt_pt {
-    width: 350px;
-    min-height: 515px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #444;
-    border-radius: 5px 5px;
-    padding: 10px 10px;
-    margin: 0 0 0 10px; }
-    /* line 2788, D:/mTime/mTime/mTime/scss/style.scss */
-    .report_lt_part .rpt_lt_pt .rpt_lt_box {
-      width: 100%;
-      height: initial;
-      float: left;
-      position: relative;
-      margin: 0 0 10px 0;
-      padding: 0 0 0 100px; }
-      /* line 2796, D:/mTime/mTime/mTime/scss/style.scss */
-      .report_lt_part .rpt_lt_pt .rpt_lt_box .lt_b_tt {
-        width: 100px;
-        height: inherit;
-        line-height: 30px;
+    width: 100%;
+    height: initial;
+    float: left;
+    position: relative;
+    padding: 0 10px 0 370px;
+}
+    /* line 2777, D:/mTime/mTime/mTime/scss/style.scss */
+    .report_lt_part .rpt_lt_pt {
+        width: 350px;
+        min-height: 515px;
         position: absolute;
         left: 0;
-        padding: 0 10px 0 0;
-        color: #fff;
-        font-size: 14px;
-        text-align: right; }
-      /* line 2808, D:/mTime/mTime/mTime/scss/style.scss */
-      .report_lt_part .rpt_lt_pt .rpt_lt_box .lt_b_select {
-        width: 100%;
-        height: 30px;
-        float: left;
-        position: relative;
-        line-height: 30px;
-        margin: 5px 0;
-        font-size: 12px;
-        margin: 0 0; }
-      /* line 2819, D:/mTime/mTime/mTime/scss/style.scss */
-      .report_lt_part .rpt_lt_pt .rpt_lt_box .lt_b_radiobox {
-        width: 100%;
-        height: 30px;
-        line-height: 16px;
-        padding: 7px 0;
-        float: left;
-        font-size: 12px;
-        color: #fff; }
-    /* line 2830, D:/mTime/mTime/mTime/scss/style.scss */
-    .report_lt_part .rpt_lt_pt .rpt_lt_box1 {
-      width: 100%;
-      height: initial;
-      float: left;
-      position: relative;
-      margin: 0 0 10px 0;
-      padding: 0 0 0 140px; }
-      /* line 2838, D:/mTime/mTime/mTime/scss/style.scss */
-      .report_lt_part .rpt_lt_pt .rpt_lt_box1 .lt_b1_tt {
-        width: 140px;
-        height: inherit;
-        line-height: 30px;
-        position: absolute;
-        left: 0;
-        padding: 0 10px 0 0;
-        color: #fff;
-        font-size: 14px;
-        text-align: right; }
-      /* line 2850, D:/mTime/mTime/mTime/scss/style.scss */
-      .report_lt_part .rpt_lt_pt .rpt_lt_box1 .lt_b1_select {
-        width: 100%;
-        height: 30px;
-        float: left;
-        position: relative;
-        line-height: 30px;
-        margin: 5px 0;
-        font-size: 12px;
-        margin: 0 0; }
-      /* line 2861, D:/mTime/mTime/mTime/scss/style.scss */
-      .report_lt_part .rpt_lt_pt .rpt_lt_box1 .lt_b1_radiobox {
-        width: 100%;
-        height: 30px;
-        line-height: 16px;
-        padding: 7px 0;
-        float: left;
-        font-size: 12px;
-        color: #fff; }
-    /* line 2872, D:/mTime/mTime/mTime/scss/style.scss */
-    .report_lt_part .rpt_lt_pt .rpt_lt_ttbox {
-      width: 100%;
-      float: left;
-      font-size: 12px;
-      line-height: 18px;
-      color: #fff;
-      position: absolute;
-      left: 0;
-      bottom: 60px;
-      padding: 0 10px; }
+        top: 0;
+        background-color: #444;
+        border-radius: 5px 5px;
+        padding: 10px 10px;
+        margin: 0 0 0 10px;
+    }
+        /* line 2788, D:/mTime/mTime/mTime/scss/style.scss */
+        .report_lt_part .rpt_lt_pt .rpt_lt_box {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            margin: 0 0 10px 0;
+            padding: 0 0 0 100px;
+        }
+            /* line 2796, D:/mTime/mTime/mTime/scss/style.scss */
+            .report_lt_part .rpt_lt_pt .rpt_lt_box .lt_b_tt {
+                width: 100px;
+                height: inherit;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                padding: 0 10px 0 0;
+                color: #fff;
+                font-size: 14px;
+                text-align: right;
+            }
+            /* line 2808, D:/mTime/mTime/mTime/scss/style.scss */
+            .report_lt_part .rpt_lt_pt .rpt_lt_box .lt_b_select {
+                width: 100%;
+                height: 30px;
+                float: left;
+                position: relative;
+                line-height: 30px;
+                margin: 5px 0;
+                font-size: 12px;
+                margin: 0 0;
+            }
+            /* line 2819, D:/mTime/mTime/mTime/scss/style.scss */
+            .report_lt_part .rpt_lt_pt .rpt_lt_box .lt_b_radiobox {
+                width: 100%;
+                height: 30px;
+                line-height: 16px;
+                padding: 7px 0;
+                float: left;
+                font-size: 12px;
+                color: #fff;
+            }
+        /* line 2830, D:/mTime/mTime/mTime/scss/style.scss */
+        .report_lt_part .rpt_lt_pt .rpt_lt_box1 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            margin: 0 0 10px 0;
+            padding: 0 0 0 140px;
+        }
+            /* line 2838, D:/mTime/mTime/mTime/scss/style.scss */
+            .report_lt_part .rpt_lt_pt .rpt_lt_box1 .lt_b1_tt {
+                width: 140px;
+                height: inherit;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                padding: 0 10px 0 0;
+                color: #fff;
+                font-size: 14px;
+                text-align: right;
+            }
+            /* line 2850, D:/mTime/mTime/mTime/scss/style.scss */
+            .report_lt_part .rpt_lt_pt .rpt_lt_box1 .lt_b1_select {
+                width: 100%;
+                height: 30px;
+                float: left;
+                position: relative;
+                line-height: 30px;
+                margin: 5px 0;
+                font-size: 12px;
+                margin: 0 0;
+            }
+            /* line 2861, D:/mTime/mTime/mTime/scss/style.scss */
+            .report_lt_part .rpt_lt_pt .rpt_lt_box1 .lt_b1_radiobox {
+                width: 100%;
+                height: 30px;
+                line-height: 16px;
+                padding: 7px 0;
+                float: left;
+                font-size: 12px;
+                color: #fff;
+            }
+        /* line 2872, D:/mTime/mTime/mTime/scss/style.scss */
+        .report_lt_part .rpt_lt_pt .rpt_lt_ttbox {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            line-height: 18px;
+            color: #fff;
+            position: absolute;
+            left: 0;
+            bottom: 60px;
+            padding: 0 10px;
+        }
 
 /* line 2886, D:/mTime/mTime/mTime/scss/style.scss */
 .report_checkbox {
-  width: 100%;
-  height: initial;
-  line-height: 18px;
-  float: left;
-  padding: 6px 5px 6px 100px;
-  font-size: 12px;
-  color: #fff; }
+    width: 100%;
+    height: initial;
+    line-height: 18px;
+    float: left;
+    padding: 6px 5px 6px 100px;
+    font-size: 12px;
+    color: #fff;
+}
 
 /* line 2896, D:/mTime/mTime/mTime/scss/style.scss */
 .report_checkbox1 {
-  width: 100%;
-  height: initial;
-  line-height: 18px;
-  float: left;
-  padding: 6px 5px 6px 140px;
-  font-size: 12px;
-  color: #fff; }
+    width: 100%;
+    height: initial;
+    line-height: 18px;
+    float: left;
+    padding: 6px 5px 6px 140px;
+    font-size: 12px;
+    color: #fff;
+}
 
 /* line 2906, D:/mTime/mTime/mTime/scss/style.scss */
 .report_rt_part {
-  width: 100%;
-  min-height: 515px;
-  float: left;
-  border-radius: 5px 5px;
-  border: 1px #ccc solid;
-  position: relative; }
+    width: 100%;
+    min-height: 515px;
+    float: left;
+    border-radius: 5px 5px;
+    border: 1px #ccc solid;
+    position: relative;
+}
 
 /* line 2915, D:/mTime/mTime/mTime/scss/style.scss */
 .arrow_up {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid rgba(0, 0, 0, 0.75); }
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.75);
+}
 
 /* line 2923, D:/mTime/mTime/mTime/scss/style.scss */
 .arrow_down {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid rgba(0, 0, 0, 0.75); }
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(0, 0, 0, 0.75);
+}
 
 /* line 2931, D:/mTime/mTime/mTime/scss/style.scss */
 .arrowr_right {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid rgba(0, 0, 0, 0.75); }
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgba(0, 0, 0, 0.75);
+}
 
 /* line 2939, D:/mTime/mTime/mTime/scss/style.scss */
 .arrow_left {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid rgba(0, 0, 0, 0.75); }
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid rgba(0, 0, 0, 0.75);
+}
 
 /* line 2947, D:/mTime/mTime/mTime/scss/style.scss */
 .arrow_up_c {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #026f5d; }
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #026f5d;
+}
 
 /* line 2955, D:/mTime/mTime/mTime/scss/style.scss */
 .arrow_down_c {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #026f5d; }
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #026f5d;
+}
 
 /* line 2963, D:/mTime/mTime/mTime/scss/style.scss */
 .arrowr_right _c {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid #026f5d; }
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #026f5d;
+}
 
 /* line 2971, D:/mTime/mTime/mTime/scss/style.scss */
 .arrow_left_c {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid #026f5d; }
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #026f5d;
+}
+
+/* line 2980, D:/mTime/mTime/mTime/scss/style.scss */
+.special_rtpt_box {
+    width: 50% !important;
+    padding: 10px !important;
+    height: 255px !important;
+    float: left;
+    position: unset !important;
+    transform: none !important;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -46,7 +46,7 @@ html, body {
 }
 
 .margin_checkbox1 {
-    margin: 1px 5px 0 0!important;
+    margin: 1px 5px 0 0 !important;
 }
 
 .padding0_10 {
@@ -2976,3 +2976,12 @@ a, a:hover {
     border-right: 10px solid #026f5d;
 }
 // Triangle
+
+.special_rtpt_box {
+    width: 50% !important;
+    padding: 10px !important;
+    height: 255px !important;
+    float: left;
+    position: unset !important;
+    transform: none !important;
+}

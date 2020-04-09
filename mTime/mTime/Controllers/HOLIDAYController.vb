@@ -99,6 +99,7 @@ Namespace Controllers
             'validateBeforeSave(hOLIDAY)
 
             If ModelState.IsValid Then
+
                 holiday.ISINUSED = True
                 holiday.CREATEDBY = "SYSTEM"
                 holiday.CREATEDON = System.DateTime.Now
