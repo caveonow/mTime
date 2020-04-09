@@ -3053,4 +3053,13 @@ a, a:hover {
     transform: none !important;
 }
 
+.special_rtpt_box {
+    width: 50% !important;
+    padding: 10px !important;
+    height: 255px !important;
+    float: left;
+    position: unset !important;
+    transform: none !important;
+}
+
 /*# sourceMappingURL=style.css.map */

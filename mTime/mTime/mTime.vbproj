@@ -190,6 +190,7 @@
     <Compile Include="Controllers\PoorAttendanceReasonController.vb" />
     <Compile Include="Controllers\AttendanceStatusController.vb" />
     <Compile Include="Controllers\ReportController.vb" />
+    <Compile Include="Controllers\ShiftController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
     <Compile Include="Controllers\SystemController.vb" />
     <Compile Include="Global.asax.vb">
