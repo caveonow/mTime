@@ -189,6 +189,7 @@
     <Compile Include="Controllers\PersonalMessageController.vb" />
     <Compile Include="Controllers\PoorAttendanceReasonController.vb" />
     <Compile Include="Controllers\AttendanceStatusController.vb" />
+    <Compile Include="Controllers\ReportController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
     <Compile Include="Controllers\SystemController.vb" />
     <Compile Include="Global.asax.vb">
@@ -507,6 +508,11 @@
     <Content Include="Views\Message\_PersonalMessage.vbhtml" />
     <Content Include="Views\Message\_Announcement.vbhtml" />
     <Content Include="Views\Message\_Feedback.vbhtml" />
+    <Content Include="Views\Report\Index.vbhtml" />
+    <Content Include="Views\Report\_RatioAnalysis.vbhtml" />
+    <Content Include="Views\Report\_ByEmployee.vbhtml" />
+    <Content Include="Views\Report\_ByDepartment.vbhtml" />
+    <Content Include="Views\Report\_Analysis.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

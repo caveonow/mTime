@@ -45,6 +45,10 @@ html, body {
     margin: 0 0 !important;
 }
 
+.margin_checkbox1 {
+    margin: 1px 5px 0 0!important;
+}
+
 .padding0_10 {
     padding: 0 10px;
 }
@@ -72,6 +76,15 @@ html, body {
     float: left;
     position: relative;
     padding: 0 10px;
+}
+
+.footer_row1_btn {
+    width: 100%;
+    height: initial;
+    padding: 0 10px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
 }
 
 .bg_color_w {
@@ -629,6 +642,28 @@ td {
     text-align: center;
     font-size: 18px;
     color: #333;
+    text-decoration: none;
+}
+
+.icon_calendar1_btn {
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    position: absolute;
+    right: 0;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.icon_calendar_btn:hover, .icon_calendar1_btn:hover {
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -2730,6 +2765,151 @@ a, a:hover {
     background-color: #154eb7;
     margin: 0 5px 0 0;
     float: left;
+}
+
+.report_lt_part {
+    width: 100%;
+    height: initial;
+    float: left;
+    position: relative;
+    padding: 0 10px 0 370px;
+
+    .rpt_lt_pt {
+        width: 350px;
+        min-height: 515px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #444;
+        border-radius: 5px 5px;
+        padding: 10px 10px;
+        margin: 0 0 0 10px;
+
+        .rpt_lt_box {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            margin: 0 0 10px 0;
+            padding: 0 0 0 100px;
+
+            .lt_b_tt {
+                width: 100px;
+                height: inherit;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                padding: 0 10px 0 0;
+                color: #fff;
+                font-size: 14px;
+                text-align: right;
+            }
+
+            .lt_b_select {
+                width: 100%;
+                height: 30px;
+                float: left;
+                position: relative;
+                line-height: 30px;
+                margin: 5px 0;
+                font-size: 12px;
+                margin: 0 0;
+            }
+
+            .lt_b_radiobox {
+                width: 100%;
+                height: 30px;
+                line-height: 16px;
+                padding: 7px 0;
+                float: left;
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+
+        .rpt_lt_box1 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            margin: 0 0 10px 0;
+            padding: 0 0 0 140px;
+
+            .lt_b1_tt {
+                width: 140px;
+                height: inherit;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                padding: 0 10px 0 0;
+                color: #fff;
+                font-size: 14px;
+                text-align: right;
+            }
+
+            .lt_b1_select {
+                width: 100%;
+                height: 30px;
+                float: left;
+                position: relative;
+                line-height: 30px;
+                margin: 5px 0;
+                font-size: 12px;
+                margin: 0 0;
+            }
+
+            .lt_b1_radiobox {
+                width: 100%;
+                height: 30px;
+                line-height: 16px;
+                padding: 7px 0;
+                float: left;
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+
+        .rpt_lt_ttbox {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            line-height: 18px;
+            color: #fff;
+            position: absolute;
+            left: 0;
+            bottom: 60px;
+            padding: 0 10px;
+        }
+    }
+}
+
+.report_checkbox {
+    width: 100%;
+    height: initial;
+    line-height: 18px;
+    float: left;
+    padding: 6px 5px 6px 100px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.report_checkbox1 {
+    width: 100%;
+    height: initial;
+    line-height: 18px;
+    float: left;
+    padding: 6px 5px 6px 140px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.report_rt_part {
+    width: 100%;
+    min-height: 515px;
+    float: left;
+    border-radius: 5px 5px;
+    border: 1px #ccc solid;
+    position: relative;
 }
 // Triangle
 .arrow_up {
