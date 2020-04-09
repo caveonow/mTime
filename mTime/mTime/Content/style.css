@@ -2545,4 +2545,13 @@ a, a:hover {
   border-bottom: 10px solid transparent;
   border-right: 10px solid #026f5d; }
 
+.special_rtpt_box {
+    width: 50% !important;
+    padding: 10px !important;
+    height: 255px !important;
+    float: left;
+    position: unset !important;
+    transform: none !important;
+}
+
 /*# sourceMappingURL=style.css.map */

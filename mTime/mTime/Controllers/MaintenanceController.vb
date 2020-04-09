@@ -89,8 +89,10 @@ Namespace Controllers
         End Function
 
         Function Shift() As ActionResult
+            Dim sortedList = db.SHIFT.SortBy("SHIFTID").ToList
 
-            Return View()
+            '# Return updated dataset
+            Return View(sortedList)
         End Function
 
         Function LateTolerant() As ActionResult
