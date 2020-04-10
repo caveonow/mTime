@@ -1635,7 +1635,7 @@ td {
 
     .bd_ctr_rightpart {
         width: 100%;
-        height: 100%;
+        height: initial;
         float: right;
         position: absolute;
         z-index: 2;
@@ -3102,6 +3102,69 @@ a, a:hover {
         z-index: 1;
     }
 }
+
+.shift_addpart {
+    width: 700px;
+    height: initial;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .addpt_box {
+        width: 100%;
+        height: initial;
+        float: left;
+        margin: 0 0 10px 0;
+        padding: 0 0 0 130px;
+        position: relative;
+
+        .addpt_b_tt {
+            width: 130px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: right;
+            padding: 0 10px 0 0;
+        }
+
+        .addpt_b_input {
+            width: 250px;
+            height: 30px;
+            float: left;
+            line-height: 30px;
+            font-size: 14px;
+            padding: 0 0 0 10px;
+            background-color: #fff;
+            border: 1px #aaa solid;
+        }
+
+        .addpt_b_daybox {
+            width: 100%;
+            height: 30px;
+            float: left;
+
+            .b_dayb_inb {
+                width: 75px;
+                height: 30px;
+                float: left;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0 0;
+                background-color: #fff;
+                border: 1px #aaa solid;
+                text-align: center;
+                margin: 0 -1px 0 0;
+            }
+        }
+    }
+}
+
+
 // Triangle
 .arrow_up {
     width: 0;
