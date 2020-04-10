@@ -1,5 +1,5 @@
 ﻿@Code
-    ViewData("Employee") = "Index"
+    ViewData("Employee") = "List"
 End Code
 
 @Html.Partial("_AdminMenuTop")

@@ -9,28 +9,14 @@ Namespace Controllers
 
         Private db As New model.MasterDB
 
-        '' GET: PoorAttendanceReason
-        'Function Index() As ActionResult
+        Function Index() As ActionResult
+            Dim sortedList = db.POORATTENDANCEREASON.SortBy("POORATTENDANCEREASONID").ToList
 
-        '    '# Return updated dataset
-        '    'Return View(db.PoorAttendanceReason.ToList())
-        '    Return View()
-        'End Function
+            Debug.Print("OK")
 
-        'Function Details(ByRef id As Integer) As ActionResult
-
-        '    If IsNothing(id) Then
-        '        Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
-        '    End If
-
-        '    Dim PoorAttendanceReason As model.PoorAttendanceReason = db.PoorAttendanceReason.Find(id)
-
-        '    If IsNothing(PoorAttendanceReason) Then
-        '        Return HttpNotFound()
-        '    End If
-        '    Return View(PoorAttendanceReason)
-
-        'End Function
+            '# Return updated dataset
+            Return View(sortedList)
+        End Function
 
 
         ' GET : Create-PoorAttendanceReason

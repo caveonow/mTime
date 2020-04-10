@@ -184,9 +184,8 @@
     <Compile Include="Controllers\EmployeeController.vb" />
     <Compile Include="Controllers\FAQController.vb" />
     <Compile Include="Controllers\HyperlinkController.vb" />
-    <Compile Include="Controllers\HOLIDAYController.vb" />
+    <Compile Include="Controllers\HolidayController.vb" />
     <Compile Include="Controllers\Login.vb" />
-    <Compile Include="Controllers\MaintenanceController.vb" />
     <Compile Include="Controllers\MessageController.vb" />
     <Compile Include="Controllers\PersonalMessageController.vb" />
     <Compile Include="Controllers\PoorAttendanceReasonController.vb" />
@@ -492,15 +491,7 @@
     <Content Include="Views\Attendance\_DoorAccess.vbhtml" />
     <Content Include="Views\Holiday\Create.vbhtml" />
     <Content Include="Views\Holiday\Delete.vbhtml" />
-    <Content Include="Views\Holiday\Details.vbhtml" />
     <Content Include="Views\Holiday\Edit.vbhtml" />
-    <Content Include="Views\Maintenance\AttendanceStatus.vbhtml" />
-    <Content Include="Views\Maintenance\Department.vbhtml" />
-    <Content Include="Views\Maintenance\Grade.vbhtml" />
-    <Content Include="Views\Maintenance\Index.vbhtml" />
-    <Content Include="Views\Maintenance\LateTolerant.vbhtml" />
-    <Content Include="Views\Maintenance\Reason.vbhtml" />
-    <Content Include="Views\Maintenance\Shift.vbhtml" />
     <Content Include="Views\Shared\_AdminMenuTop.vbhtml" />
     <Content Include="Views\Shared\_StaffMenuTop.vbhtml" />
     <Content Include="Views\FAQ\Index.vbhtml" />
@@ -512,7 +503,6 @@
     <Content Include="Views\Department\Edit.vbhtml" />
     <Content Include="Views\Employee\Index.vbhtml" />
     <Content Include="Views\_ViewStart.vbhtml" />
-    <Content Include="Views\Maintenance\Holiday.vbhtml" />
     <Content Include="Views\PersonalMessage\Index.vbhtml" />
     <Content Include="Views\Message\Index.vbhtml" />
     <Content Include="Views\Message\_PersonalMessage.vbhtml" />
@@ -525,6 +515,11 @@
     <Content Include="Views\Report\_Analysis.vbhtml" />
     <Content Include="Views\AdminFAQ\Index.vbhtml" />
     <Content Include="Views\AboutUs\Index.vbhtml" />
+    <Content Include="Views\Hyperlink\Index.vbhtml" />
+    <Content Include="Views\AttendanceStatus\Index.vbhtml" />
+    <Content Include="Views\PoorAttendanceReason\Index.vbhtml" />
+    <Content Include="Views\Shift\Index.vbhtml" />
+    <Content Include="Views\Department\Index.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

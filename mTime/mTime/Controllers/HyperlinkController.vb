@@ -7,29 +7,16 @@ Namespace Controllers
         Inherits Controller
 
         Private db As New model.MasterDB
+        ' GET: Hyperlink
+        Function Index() As ActionResult
 
-        '' GET: Hyperlink
-        'Function Index() As ActionResult
+            Dim sortedList = db.HYPERLINK.SortBy("TITLE").ToList
 
-        '    '# Return updated dataset
-        '    'Return View(db.HYPERLINK.ToList())
-        '    Return View()
-        'End Function
+            'db.HYPERLINK.ToList
 
-        'Function Details(ByRef id As Integer) As ActionResult
-
-        '    If IsNothing(id) Then
-        '        Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
-        '    End If
-
-        '    Dim hyperlink As model.HYPERLINK = db.HYPERLINK.Find(id)
-
-        '    If IsNothing(hyperlink) Then
-        '        Return HttpNotFound()
-        '    End If
-        '    Return View(hyperlink)
-
-        'End Function
+            '# Return updated dataset
+            Return View(sortedList)
+        End Function
 
 
         ' GET : Create-Hyperlink
@@ -140,8 +127,6 @@ Namespace Controllers
         ' GET : Delete-Hyperlink
         Function Delete(ByVal id As Integer) As ActionResult
 
-            Debug.Print("Get : " & id.ToString)
-
             If IsNothing(id) Then
                 Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
             End If
@@ -163,14 +148,14 @@ Namespace Controllers
         <ValidateAntiForgeryToken>
         Function DeleteConfirmed(ByVal id As Integer) As ActionResult
 
-            Debug.Print(id.ToString)
-
             Dim hyperlink As model.HYPERLINK = db.HYPERLINK.Find(id)
             db.HYPERLINK.Remove(hyperlink)
             db.SaveChanges()
 
             '# Return to Index 
-            Return RedirectToRoute("HyperlinkList")
+            'Return RedirectToRoute("HyperlinkList")
+
+            Return RedirectToAction("Index")
 
         End Function
 

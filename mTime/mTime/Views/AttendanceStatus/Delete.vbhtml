@@ -22,7 +22,7 @@ End Code
 
                     <div Class="ctr_rtpt_addbox bg_bd1_radius">
                         <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Attendance Code :</div>
+                            <div Class="rtpt_addbox_pt_tt">Attendance Status Code :</div>
 
                             @Html.TextBoxFor(Function(model) model.ATTENDANCESTATUSID, New With {.Readonly = True, .class = "all_input1 events_none"})
                         </div>
@@ -34,12 +34,6 @@ End Code
                         </div>
 
                         <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Condition :</div>
-
-                            @Html.TextBoxFor(Function(model) model.CONDITION, New With {.Readonly = True, .class = "all_input1 events_none"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
                             <div Class="rtpt_addbox_pt_tt">In Used :</div>
                             <div class="checkinbox">
                                 @Html.CheckBoxFor(Function(model) model.ISINUSED, New With {.Disabled = True})
@@ -48,7 +42,7 @@ End Code
                         </div>
 
                         <div Class="rtpt_addbox_partbtn">
-                            <a href="@Url.Action("AttendanceStatus", "Maintenance")">
+                            <a href="@Url.Action("Index", "AttendanceStatus")">
                                 <div id="closebtn" Class="rtpt_closebtn filter1">
                                     Cancel
                                 </div>
@@ -95,7 +89,7 @@ End Code
                     @<script>
                             window.onload = function() {
                               $(".save_ok_popup").addClass("display_block").fadeOut(3000);
-                               window.location.href = "@Url.Action("AttendanceStatus", "Maintenance")";
+                               window.location.href = "@Url.Action("Index", "AttendanceStatus")";
                            };
                     </script>
                 End If

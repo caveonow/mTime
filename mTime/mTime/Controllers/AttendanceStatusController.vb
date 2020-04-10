@@ -3,10 +3,18 @@ Imports mTime
 
 Namespace Controllers
 
+    <RoutePrefix("Reason")>
     Public Class AttendanceStatusController
         Inherits Controller
 
         Private db As New model.MasterDB
+
+        Function Index() As ActionResult
+            Dim sortedList = db.ATTENDANCESTATUS.SortBy("ATTENDANCESTATUSID").ToList
+
+            Return View(sortedList)
+        End Function
+
 
         ' GET : Create-AttendanceStatus
         Function Create() As ActionResult
@@ -62,7 +70,7 @@ Namespace Controllers
 
         <HttpPost>
         <ValidateAntiForgeryToken>
-        Function Edit(<Bind(Include:="ATTENDANCESTATUSID, DESCRIPTION, CONDITION, ISINUSED, CREATEDBY, CREATEDON, UPDAEDBY, UPDATEDBY")> ByVal AttendanceStatus As model.ATTENDANCESTATUS) As ActionResult
+        Function Edit(<Bind(Include:="ATTENDANCESTATUSID, DESCRIPTION, ISINUSED, CREATEDBY, CREATEDON, UPDAEDBY, UPDATEDBY")> ByVal AttendanceStatus As model.ATTENDANCESTATUS) As ActionResult
             If ModelState.IsValid Then
 
                 AttendanceStatus.UPDATEDBY = "NICK"

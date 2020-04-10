@@ -10,9 +10,11 @@ Namespace Controllers
 
         Private db As New model.MasterDB
 
-        ' GET: Department
         Function Index() As ActionResult
-            Return View()
+            Dim sortedList = db.DEPARTMENT.SortBy("DEPARTMENTID").ToList
+
+            '# Return updated dataset
+            Return View(sortedList)
         End Function
 
         Function Create() As ActionResult

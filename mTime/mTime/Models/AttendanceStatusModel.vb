@@ -4,13 +4,12 @@ Namespace model
 
     Public Class ATTENDANCESTATUS
 
-        <Required(ErrorMessage:="Attendance status is required")>
+        <Required(ErrorMessage:="Attendance Status Code is required")>
         Public Property ATTENDANCESTATUSID As String
 
         <Required(ErrorMessage:="Description is required")>
         Public Property DESCRIPTION As String
-        <Required(ErrorMessage:="Condition is required")>
-        Public Property CONDITION As String
+
         Public Property ISINUSED As Boolean
         Public Property CREATEDBY As String
         Public Property CREATEDON As Date

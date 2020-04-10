@@ -11,6 +11,17 @@ End Code
     <div class="bd_ctr_rightpart">
         <div id="rtpt_box-01" class="ctr_rtpt_box">
 
+            @Code
+                If ViewBag.Result = "OK" Then
+                    @<script>
+                            window.onload = function() {
+                              $(".save_ok_popup").addClass("display_block").fadeOut(3000);
+                               window.location.href = "@Url.Action("Index", "Holiday")";
+                           };
+                    </script>
+                End If
+            End Code
+
             @Using (Html.BeginForm("Delete", "Holiday", method:=FormMethod.Post))
 
                 @Html.AntiForgeryToken()
@@ -52,7 +63,7 @@ End Code
                         </div>
 
                         <div Class="rtpt_addbox_partbtn">
-                            <a href="@Url.Action("Holiday", "Maintenance")">
+                            <a href="@Url.Action("Index", "Holiday")">
                                 <div id="closebtn" Class="rtpt_closebtn filter1">
                                     Cancel
                                 </div>
@@ -95,16 +106,7 @@ End Code
 
             End Using
 
-            @Code
-                If ViewBag.Result = "OK" Then
-                    @<script>
-                            window.onload = function() {
-                              $(".save_ok_popup").addClass("display_block").fadeOut(3000);
-                               window.location.href = "@Url.Action("Holiday", "Maintenance")";
-                           };
-                    </script>
-                End If
-            End Code
+
         </div>
 
     </div>

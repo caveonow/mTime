@@ -39,7 +39,7 @@ End Code
                         <div Class="rtpt_addbox_part">
                             <div Class="rtpt_addbox_pt_tt">Description :</div>
 
-                            @Html.TextBoxFor(Function(model) model.DESCRIPTION, New With {.class = "all_input1"})
+                            @Html.TextBoxFor(Function(model) model.DESCRIPTION, New With {.maxlength = 200, .class = "all_input1"})         
                             <div Class="rtpt_addbox_pt_error">
                                 @Html.ValidationMessageFor(Function(model) model.DESCRIPTION)
                             </div>
@@ -72,7 +72,7 @@ End Code
                         </div>
 
                         <div Class="rtpt_addbox_partbtn">
-                            <a href="@Url.Action("Reason", "Maintenance")">
+                            <a href="@Url.Action("Index", "PoorAttendanceReason")">
                                 <div id="closebtn" Class="rtpt_closebtn filter1">
                                     Cancel
                                 </div>
@@ -97,7 +97,7 @@ End Code
                     @<script>
                             window.onload = function() {
                               $(".save_ok_popup").addClass("display_block").fadeOut(3000);
-                               window.location.href = "@Url.Action("Reason", "Maintenance")";
+                               window.location.href = "@Url.Action("Index", "PoorAttendanceReason")";
                            };
                     </script>
                 End If

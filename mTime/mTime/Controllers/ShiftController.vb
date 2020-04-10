@@ -8,6 +8,14 @@ Namespace Controllers
 
         Private db As New model.MasterDB
 
+        Function Index() As ActionResult
+            Dim sortedList = db.SHIFT.SortBy("SHIFTID").ToList
+
+            '# Return updated dataset
+            Return View(sortedList)
+        End Function
+
+
         ' GET : Create-Shift
         Function Create() As ActionResult
             Return View()

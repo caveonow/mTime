@@ -29,7 +29,7 @@ End Code
 
                     <div Class="ctr_rtpt_addbox">
                         <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Attendance Code :</div>
+                            <div Class="rtpt_addbox_pt_tt">Attendance Status Code :</div>
 
                             @Html.TextBoxFor(Function(model) model.ATTENDANCESTATUSID, New With {.Readonly = True, .class = "all_input1 events_none"})
 
@@ -43,16 +43,7 @@ End Code
                                 @Html.ValidationMessageFor(Function(model) model.DESCRIPTION)
                             </div>
                         </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Condition :</div>
-
-                            @Html.TextBoxFor(Function(model) model.CONDITION, New With {.class = "all_input1"})
-                            <div Class="rtpt_addbox_pt_error">
-                                @Html.ValidationMessageFor(Function(model) model.CONDITION)
-                            </div>
-                        </div>
-
+                                             
                         <div Class="rtpt_addbox_part">
                             <div Class="rtpt_addbox_pt_tt">In Used :</div>
                             <div class="checkinbox">
@@ -61,7 +52,7 @@ End Code
                         </div>
 
                         <div Class="rtpt_addbox_partbtn">
-                            <a href="@Url.Action("AttendanceStatus", "Maintenance")">
+                            <a href="@Url.Action("Index", "AttendanceStatus")">
                                 <div id="closebtn" Class="rtpt_closebtn filter1">
                                     Cancel
                                 </div>
@@ -88,7 +79,7 @@ End Code
                     @<script>
                             window.onload = function() {
                               $(".save_ok_popup").addClass("display_block").fadeOut(3000);
-                               window.location.href = "@Url.Action("AttendanceStatus", "Maintenance")";
+                               window.location.href = "@Url.Action("Index", "AttendanceStatus")";
                            };
                     </script>
                 End If

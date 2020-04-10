@@ -1,5 +1,5 @@
 ﻿@Code
-    ViewData("Title") = "Home Page"
+    ViewData("Title") = "List"
 End Code
 
 @Html.Partial("_AdminMenuTop")
@@ -12,7 +12,7 @@ End Code
             <div class="inbox_haedtext">
                 <span>Attendance Status</span>
 
-                <a href="@Url.Action("Create", "AttendanceStatus" )">
+                <a href="@Url.Action("Create", "AttendanceStatus")">
                     <div id="addnewbtn" class="rtpt_ftr_addbtn filter1">
                         Add
                     </div>
@@ -24,15 +24,14 @@ End Code
                     <thead>
                         <tr>
                             <th style="width: 65px;"></th>
-                            <th style="width: 250px;">Attendance Code</th>
-                            <th>Description</th>
-                            <th>CONDITION</th>
+                            <th style="width: 250px;">Attendance Status Code</th>
+                            <th>Description</th>                        
                             <th>In Used</th>
                         </tr>
                     </thead>
 
                     <tbody>
-                        @For Each item In model
+                        @For Each item In Model
                             @<tr>
                                 <td>
                                     <a href="@Url.Action("Edit", "AttendanceStatus", New With {.id = item.ATTENDANCESTATUSID})">
@@ -44,8 +43,7 @@ End Code
                                     </a>
                                 </td>
                                 <td>@item.ATTENDANCESTATUSID</td>
-                                <td>@item.DESCRIPTION</td>
-                                <td>@item.CONDITION</td>
+                                <td>@item.DESCRIPTION</td>                           
                                 <td style="padding: 0 5px;"><input type="checkbox" name="isInUsed" checked=@item.IsInUsed disabled="true" /> </td>
                             </tr>
                         Next
@@ -56,9 +54,9 @@ End Code
             <div class="ctr_rtpt_b_ftr">
                 @If Model.Count() > 1 Then
                     @<span>Total : @Model.Count() row(s)</span>
-                else
+                Else
                     @<span>Total : @Model.Count() row</span>
-                end if
+                End If
             </div>
         </div>
     </div>

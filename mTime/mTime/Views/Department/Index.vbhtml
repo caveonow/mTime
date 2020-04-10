@@ -1,5 +1,5 @@
 ﻿@Code
-    ViewData("Title") = "Home Page"
+    ViewData("Title") = "List"
 End Code
 
 @Html.Partial("_AdminMenuTop")
@@ -31,7 +31,7 @@ End Code
                             Dim TotalCompanyCount = 1
                         End Code
 
-                        @For Each item In model
+                        @For Each item In Model
 
                             @<li>
                                 <div>

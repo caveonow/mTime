@@ -54,7 +54,7 @@ End Code
                         </div>
 
                         <div Class="rtpt_addbox_partbtn">
-                            <a href="@Url.Action("Department", "Maintenance")">
+                            <a href="@Url.Action("Index", "Department")">
                                 <div id="closebtn" Class="rtpt_closebtn filter1">
                                     Cancel
                                 </div>
@@ -78,7 +78,7 @@ End Code
                     @<script>
                             window.onload = function() {
                               $(".save_ok_popup").addClass("display_block").fadeOut(3000);
-                               window.location.href = "@Url.Action("Reason", "Maintenance")";
+                               window.location.href = "@Url.Action("Index", "Department")";
                            };
                     </script>
                 End If

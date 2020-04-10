@@ -37,7 +37,7 @@ End Code
                         </div>
 
                         <div Class="rtpt_addbox_partbtn">
-                            <a href="@Url.Action("Index", "Maintenance")">
+                            <a href="@Url.Action("Index", "Hyperlink")">
                                 <div id="closebtn" Class="rtpt_closebtn filter1">
                                     Cancel
                                 </div>
