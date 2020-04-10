@@ -80,6 +80,15 @@ $(function () {
 });
 
 $(function () {
+    var pull = $(".pn_sumlist_btm");
+
+    pull.on("click", function (e) {
+        e.preventDefault();
+        $(e.target.parentElement.nextElementSibling).slideToggle();
+    });
+});
+
+$(function () {
     var pull = $(".faq_heading_btm");
 
     pull.on("click", function (e) {

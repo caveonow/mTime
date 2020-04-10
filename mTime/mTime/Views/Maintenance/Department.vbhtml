@@ -21,7 +21,7 @@ End Code
             <div class="overflow_box">
                 <div class="bd_ctr_rightpart1">
                     <div class="ctr_rtpt1_inb">
-                        <div class="fa fa-angle-down fa-angle-down pn_heading_btm ctr_rtpt1_icon1"></div>
+                        <div class="fa fa-angle-down fa-angle-down pn_heading_btm ctr_rtpt1_icon1 filter1"></div>
                         <div class="fa fa-building-o ctr_rtpt1_icon2"></div>
                         COMPANY1
                     </div>
@@ -34,19 +34,109 @@ End Code
                         @For Each item In model
 
                             @<li>
-                                <div class="fa fa-users li_users_icon"></div>
-                                <div class="li_text">
-                                    @item.DEPARTMENTNAME
-                                    <b>: 10</b>
+                                <div>
+                                    <div class="fa fa-users li_users_icon"></div>
+                                    <div class="li_text">
+                                        @item.DEPARTMENTNAME
+                                        <b>: 10</b>
+                                    </div>
+                                    @*<div id="renamebtn" class="li_btn_rename"></div>*@
+                                    @Html.ActionLink("Rename", "Edit", "Department", New With {.id = item.DEPARTMENTID}, New With {.class = "li_btn_rename filter1"})
+                                    @*<div id="deletebtn" class="li_btn_delete">Delete</div>*@
+                                    @Html.ActionLink("Delete", "Delete", "Department", New With {.id = item.DEPARTMENTID}, New With {.class = "li_btn_delete filter1"})
                                 </div>
-                                @*<div id="renamebtn" class="li_btn_rename"></div>*@
-                                @Html.ActionLink("Rename", "Edit", "Department", New With {.id = item.DEPARTMENTID}, New With {.class = "li_btn_rename filter1"})
-                                @*<div id="deletebtn" class="li_btn_delete">Delete</div>*@
-                                @Html.ActionLink("Delete", "Delete", "Department", New With {.id = item.DEPARTMENTID}, New With {.class = "li_btn_delete filter1"})
                             </li>
                         Next item
                     </ul>
                 </div>
+
+
+                @*Sample UI*@
+                <div class="bd_ctr_rightpart1">
+                    <div class="ctr_rtpt1_inb">
+                        <div class="fa fa-angle-down fa-angle-down pn_heading_btm ctr_rtpt1_icon1 filter1"></div>
+                        <div class="fa fa-building-o ctr_rtpt1_icon2"></div>
+                        Sample UI 1
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div>
+                                <div class="fa fa-users li_users_icon"></div>
+                                <div class="fa fa-list li_list_icon pn_sumlist_btm filter1"></div>
+
+                                <div class="li_text">
+                                    NAME 1
+                                    <b>: 10</b>
+                                </div>
+
+                                <div id="renamebtn" class="li_btn_rename">Rename</div>
+                                <div id="deletebtn" class="li_btn_delete">Delete</div>
+                            </div>
+
+                            <ul class="ul_sub">
+                                <li class="bg_colorgray1">
+                                    <div>
+                                        <div class="fa fa-users li_users_icon"></div>
+                                        <div class="fa fa-list li_list_icon pn_sumlist_btm filter1"></div>
+                                        <div class="li_text">
+                                            NAME 1-1
+                                            <b>: 10</b>
+                                        </div>
+
+                                        <div id="renamebtn" class="li_btn_rename">Rename</div>
+                                        <div id="deletebtn" class="li_btn_delete">Delete</div>
+                                    </div>
+
+                                    <ul class="ul_sub">
+                                        <li class="bg_colorgray1">
+                                            <div>
+                                                <div class="fa fa-users li_users_icon"></div>
+                                                <div class="li_text">
+                                                    NAME 1-1
+                                                    <b>: 10</b>
+                                                </div>
+
+                                                <div id="renamebtn" class="li_btn_rename">Rename</div>
+                                                <div id="deletebtn" class="li_btn_delete">Delete</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div>
+                                <div class="fa fa-users li_users_icon"></div>
+                                <div class="li_text">
+                                    NAME 1
+                                    <b>: 10</b>
+                                </div>
+
+                                <div id="renamebtn" class="li_btn_rename">Rename</div>
+                                <div id="deletebtn" class="li_btn_delete">Delete</div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div>
+                                <div class="fa fa-users li_users_icon"></div>
+                                <div class="li_text">
+                                    NAME 1
+                                    <b>: 10</b>
+                                </div>
+
+                                <div id="renamebtn" class="li_btn_rename">Rename</div>
+                                <div id="deletebtn" class="li_btn_delete">Delete</div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                @*Sample UI*@
+
+
             </div>
 
             <div class="ctr_rtpt_b_ftr">

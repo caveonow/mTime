@@ -57,6 +57,10 @@ html, body {
     background-color: transparent !important;
 }
 
+.bg_colorgray1 {
+    background-color: #f3f3f3;
+}
+
 .overflow_box {
     width: 100%;
     height: 445px;
@@ -2401,25 +2405,18 @@ tbody {
 
 ul {
     list-style-type: none;
-    margin: 31px 0 0 0;
+    margin: 0px 0 0px 0;
+    padding: 0 10px 0 40px !important;
     display: block;
     background-color: #fff;
+    float: left;
+    width: 100%;
 
     li {
         font-size: 12px;
         line-height: 18px;
         padding: 5px 0;
         color: #333;
-
-        .li_users_icon {
-            width: initial;
-            height: initial;
-            line-height: 18px;
-            margin: 0 10px 0 20px;
-            font-size: 16px;
-            color: #09af94;
-            float: left;
-        }
 
         .li_text {
             line-height: 18px;
@@ -2431,6 +2428,38 @@ ul {
     li:hover {
         background-color: #fcfccc;
     }
+}
+
+.ul_sub {
+    margin: 5px 0 !important;
+    width: 100%;
+    float: left;
+    padding: 0 0 0 30px !important;
+}
+
+/*.ul_sub:hover {
+    background-color: #fcfccc;
+}*/
+
+.li_users_icon {
+    width: initial;
+    height: initial;
+    line-height: 18px;
+    margin: 0 10px 0 20px;
+    font-size: 16px;
+    color: #09af94;
+    float: left;
+}
+
+.li_list_icon {
+    width: initial;
+    height: initial;
+    line-height: 18px;
+    margin: 0 10px 0 0;
+    font-size: 16px;
+    color: #444;
+    float: left;
+    cursor: pointer;
 }
 
 .li_btn_rename, .li_btn_rename:hover {
@@ -2910,6 +2939,168 @@ a, a:hover {
     border-radius: 5px 5px;
     border: 1px #ccc solid;
     position: relative;
+}
+
+.about_part {
+    width: 860px;
+    height: 690px;
+    position: relative;
+    margin: 5px auto 10px auto;
+
+    .abt_pt_box {
+        width: 100%;
+        height: inherit;
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: 2;
+
+        .pt_b_htimg {
+            width: 100%;
+            height: 90px;
+            float: left;
+            margin: 0 0 20px 0;
+            background: url(../img/ht_img1.png) center center no-repeat;
+            background-size: auto;
+        }
+
+        .pt_b_row {
+            width: 100%;
+            height: initial;
+            margin: 0 0 20px 0;
+            float: left;
+
+            .b_row_box {
+                width: 500px;
+                height: initial;
+                float: left;
+                padding: 0 10px;
+
+                b {
+                    width: 100%;
+                    height: 50px;
+                    float: left;
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding: 5px 0;
+                    color: #333;
+                    margin: 0 0 10px 0;
+
+                    .b_row_inb {
+                        width: 100%;
+                        height: initial;
+                        float: left;
+                        color: #333;
+                        margin: 0 0 5px 0;
+                        padding: 0 0 0 30px;
+                        position: relative;
+
+                        span {
+                            font-size: 12px;
+                            line-height: 30px;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+
+                        .row_inb_input {
+                            width: 200px;
+                            height: 30px;
+                            float: left;
+                            border: 0;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+
+            .b_row_rtbox {
+                width: 80px;
+                height: 80px;
+                float: right;
+                background: url(../img//company_logo.jpg) center center no-repeat;
+                background-size: cover;
+                margin: 0 10px;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 310px;
+            max-height: 310px;
+            float: left;
+            font-size: 12px;
+            line-height: 18px;
+            padding: 10px;
+            margin: 0 0 10px 0;
+            border: 0;
+            background-color: transparent;
+        }
+
+        .pt_b_row1 {
+            width: 100%;
+            height: initial;
+            margin: 0 0 20px 0;
+            float: left;
+            position: relative;
+            padding: 0 10px;
+
+            .b_row1_inb {
+                width: 260px;
+                height: initial;
+                float: left;
+                border: 1px #aaa solid;
+                border-radius: 5px 5px;
+                padding: 10px;
+
+                b {
+                    width: 100%;
+                    height: initial;
+                    float: left;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 5px 0;
+                    color: #333;
+                    text-decoration: underline;
+                }
+
+                .row1_inb_name {
+                    width: 100%;
+                    height: 50px;
+                    float: left;
+                    font-size: 12px;
+                    line-height: 20px;
+                    padding: 15px 0;
+                    color: #333;
+                }
+            }
+
+            .b_row1_copyright {
+                width: 500px;
+                height: initial;
+                margin: 0 10px;
+                line-height: 20px;
+                font-size: 10px;
+                text-align: right;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+
+    .abt_pt_bglogo {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-color: #fff;
+        background: url(../img/malaysia_logo_s.png) center center no-repeat;
+        background-size: auto;
+        opacity: 0.15;
+        z-index: 1;
+    }
 }
 // Triangle
 .arrow_up {
