@@ -12,7 +12,7 @@
 
         <div class="bd_ctr_rightpart">
             <div id="rtpt_box-01" class="ctr_rtpt_box">
-                <div class="ctr_rtpt_b_ht">
+                <div class="inbox_haedtext">
 
                     <span>Reason</span>
                     <a href="@Url.Action("Create", "PoorAttendanceReason" )">
@@ -60,9 +60,9 @@
                                     <td>@item.IsInUsed</td>*@
 
 
-                                    <td style="padding: 0 5px;"><input type="checkbox" name="isForLateIn" checked=@item.IsForLateIn readonly="true"> </td>
-                                    <td style="padding: 0 5px;"><input type="checkbox" name="isForEarlyOut" checked=@item.IsForEarlyOut> </td>
-                                    <td style="padding: 0 5px;"><input type="checkbox" name="isInUsed" checked=@item.IsInUsed> </td>
+                                    <td style="padding: 0 5px;"><input type="checkbox" name="isForLateIn" checked=@item.IsForLateIn onclick="return false" /> </td>
+                                    <td style="padding: 0 5px;"><input type="checkbox" name="isForEarlyOut" checked=@item.IsForEarlyOut onclick="return false" /> </td>
+                                    <td style="padding: 0 5px;"><input type="checkbox" name="isInUsed" checked=@item.IsInUsed onclick="return false" /> </td>
                                     @*<td style="padding: 0 5px;">@Html.Checkbox("isInUsed", @item.IsInused)</td>*@
 
                                 </tr>
@@ -100,11 +100,12 @@
                 });
             });
 
-        </script>
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script type="text/javascript">
-            $("#leftnav1").addClass("ctr_innav1_btneff");
+            //Nav Top Menu Part1
+            $("#hdr_btn4").addClass("pt2_b_btneff");
+
+            //Nav Left Menu Part1
+            $("#leftnav5").addClass("ctr_innav1_btneff");
         </script>
 
 

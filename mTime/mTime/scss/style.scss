@@ -45,6 +45,10 @@ html, body {
     margin: 0 0 !important;
 }
 
+.margin_checkbox1 {
+    margin: 1px 5px 0 0 !important;
+}
+
 .padding0_10 {
     padding: 0 10px;
 }
@@ -53,11 +57,38 @@ html, body {
     background-color: transparent !important;
 }
 
+.bg_colorgray1 {
+    background-color: #f3f3f3;
+}
+
 .overflow_box {
     width: 100%;
     height: 445px;
     float: left;
     overflow: auto;
+}
+
+.bg_bd1_radius {
+    background-color: #fff;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+}
+
+.footer_row_btn {
+    width: 100%;
+    height: initial;
+    float: left;
+    position: relative;
+    padding: 0 10px;
+}
+
+.footer_row1_btn {
+    width: 100%;
+    height: initial;
+    padding: 0 10px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
 }
 
 .bg_color_w {
@@ -70,12 +101,49 @@ html, body {
     z-index: 1;
 }
 
+.check-box {
+    float: left;
+    width: 17px !important;
+    height: 17px !important;
+    margin: 0 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    float: left;
+    width: 17px !important;
+    height: 17px !important;
+    margin: 0 0;
+}
+
+.checkinbox {
+    width: 100%;
+    height: 30px;
+    float: left;
+    padding: 8px 0 0 0;
+}
+
+input {
+    border: 0;
+}
+
+.events_none {
+    background-color: #ddd !important;
+    border: 1px #aaa solid;
+    pointer-events: none !important;
+}
+
+td {
+    .check-box {
+        margin: 0 0 -4px 0;
+    }
+}
+
 .header_part1 {
     width: 100%;
     height: 40px;
     background-color: #038C76;
     position: relative;
-    z-index: 10;
+    z-index: 99;
 
     .translate_part {
         width: initial;
@@ -360,7 +428,7 @@ html, body {
     height: 40px;
     float: left;
     background-color: #09af94;
-    z-index: 10;
+    z-index: 99;
     position: relative;
 
     .hd_pt2_box {
@@ -412,6 +480,195 @@ html, body {
             }
         }
     }
+}
+
+.employee_part {
+    width: 100%;
+    height: initial;
+    float: left;
+    position: relative;
+    padding: 0 10px 0 420px;
+
+    .epy_pt_lt {
+        width: 400px;
+        height: initial;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        .epy_lt_box1 {
+            width: 100%;
+            height: initial;
+            border-radius: 5px 5px;
+            border: 1px #ccc solid;
+            margin: 0 0 10px 10px;
+            overflow: auto;
+            position: relative;
+            float: left;
+
+            .lt_b1_inb {
+                padding: 10px 10px;
+                width: 100%;
+                height: initial;
+                float: left;
+
+                .b1_inb_part {
+                    width: 100%;
+                    height: initial;
+                    float: left;
+                    position: relative;
+                    padding: 0 0 0 120px;
+                    margin: 0 0 10px 0;
+
+                    .inb_pt_tt {
+                        width: 110px;
+                        height: 30px;
+                        text-align: right;
+                        float: left;
+                        line-height: 30px;
+                        font-size: 14px;
+                        position: absolute;
+                        left: 0;
+                    }
+
+                    .inb_pt_checkboxtt {
+                        width: 100%;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 12px;
+                    }
+                }
+
+                .b1_inb_part1 {
+                    width: 100%;
+                    height: initial;
+                    float: left;
+                    position: relative;
+                    padding: 0 40px 0 120px;
+                    margin: 0 0 10px 0;
+
+                    .inb_pt1_tt {
+                        width: 110px;
+                        height: 30px;
+                        text-align: right;
+                        float: left;
+                        line-height: 30px;
+                        font-size: 14px;
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        .epy_lt_box2 {
+            width: 100%;
+            height: initial;
+            border-radius: 5px 5px;
+            border: 1px #ccc solid;
+            margin: 0 0 10px 10px;
+            position: relative;
+            float: left;
+        }
+    }
+
+    .epy_pt_rt {
+        width: 100%;
+        min-height: 515px;
+        float: left;
+        border-radius: 5px 5px;
+        border: 1px #ccc solid;
+        margin: 0 0 10px 0;
+        overflow: auto;
+        position: relative;
+    }
+}
+
+.epy_lt_table {
+    width: 750px;
+    line-height: 30px;
+    margin: 0 0 40px 0;
+    font-size: 12px;
+    position: relative;
+
+    thead {
+        background-color: #aaa;
+        height: 30px;
+
+        tr {
+            th {
+                border-right: 1px #ccc solid;
+                padding: 0 5px;
+                color: #fff;
+            }
+        }
+    }
+
+    tbody {
+        height: 30px;
+
+        tr {
+            td {
+                border-right: 1px #aaa solid;
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+.footer_row_total {
+    width: 100%;
+    height: 30px;
+    border-radius: 0 0 5px 5px;
+    padding: 0 10px;
+    position: relative;
+    float: left;
+    background-color: #444;
+    z-index: 1;
+
+    span {
+        width: initial;
+        float: left;
+        color: #fff;
+        line-height: 30px;
+        font-size: 12px;
+    }
+}
+
+.icon_calendar_btn {
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    position: absolute;
+    right: 0;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.icon_calendar1_btn {
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    position: absolute;
+    right: 0;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.icon_calendar_btn:hover, .icon_calendar1_btn:hover {
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    font-size: 18px;
+    text-decoration: none;
 }
 
 .Feedback_box {
@@ -742,7 +999,6 @@ html, body {
     }
 
     li:hover {
-
         a {
             color: #fff;
         }
@@ -918,6 +1174,11 @@ html, body {
         border-radius: 5px 5px 0 0;
     }
 
+    img {
+        margin: 0 0 10px 0;
+        border-radius: 5px 5px 0 0;
+    }
+
     .rtpt_home_b_tt {
         width: 100%;
         height: initial;
@@ -954,6 +1215,8 @@ html, body {
     margin: 5px 0;
     padding: 0 10px;
     border-bottom: 2px #ccc solid;
+    z-index: 20;
+    position: relative;
 
     .htrcenter_tab {
         width: initial;
@@ -1128,6 +1391,7 @@ html, body {
     position: absolute;
     /*bottom: 7px;*/
     top: 85px;
+    z-index: 10;
 
     .bd_ctr_nav {
         width: 200px;
@@ -1371,7 +1635,7 @@ html, body {
 
     .bd_ctr_rightpart {
         width: 100%;
-        height: 100%;
+        height: initial;
         float: right;
         position: absolute;
         z-index: 2;
@@ -1447,20 +1711,20 @@ html, body {
                 padding: 0 10px;
                 position: absolute;
                 bottom: 0;
-                background-color: #eee !important;
+                background-color: #444;
                 z-index: 1;
 
                 span {
                     width: initial;
                     float: left;
-                    color: #333;
+                    color: #fff;
                     line-height: 30px;
                     font-size: 12px;
                 }
             }
 
             .ctr_rtpt_addbox {
-                width: 500px;
+                width: 550px;
                 height: initial;
                 padding: 10px;
                 position: absolute;
@@ -1473,18 +1737,19 @@ html, body {
                     height: initial;
                     float: left;
                     margin: 0 0 10px 0;
+                    padding: 0 0 0 160px;
+                    position: relative;
 
                     .rtpt_addbox_pt_tt {
-                        width: 100px;
+                        width: 150px;
                         height: 30px;
                         text-align: right;
-                        float: left;
-                        padding: 0 10px;
+                        position: absolute;
+                        left: 0;
                         line-height: 30px;
                         font-size: 14px;
                     }
-
-                    input {
+                    /*input {
                         width: 370px;
                         height: 30px;
                         float: right;
@@ -1493,8 +1758,7 @@ html, body {
                         padding: 0 10px;
                         background-color: #fff;
                         border: 1px #aaa solid;
-                    }
-
+                    }*/
                     .rtpt_addbox_pt_error {
                         width: 100%;
                         line-height: 20px;
@@ -1526,18 +1790,20 @@ html, body {
                     height: initial;
                     float: left;
                     margin: 0 0 10px 0;
+                    padding: 0 0 0 170px;
+                    position: relative;
 
                     .hlday_addbox_pt_tt {
-                        width: 150px;
+                        width: 160px;
                         height: 30px;
                         text-align: right;
-                        float: left;
-                        padding: 0 10px;
+                        position: absolute;
+                        left: 0;
                         line-height: 30px;
                         font-size: 14px;
+                        font-weight: normal;
                     }
-
-                    input {
+                    /*input {
                         width: 370px;
                         height: 30px;
                         float: right;
@@ -1546,7 +1812,7 @@ html, body {
                         padding: 0 10px;
                         background-color: #fff;
                         border: 1px #aaa solid;
-                    }
+                    }*/
                     /*.hlday_addbox_pt_error {
                         width: 100%;
                         line-height: 20px;
@@ -1555,6 +1821,21 @@ html, body {
                         font-size: 12px;
                         text-align: right;
                     }*/
+                    .checkbox1 {
+                        float: left;
+                        width: 17px !important;
+                        height: 17px !important;
+                        margin: 7px 0 0 10px !important;
+                    }
+
+                    .hlday_addbox_pt_ttbox {
+                        width: 370px;
+                        height: 30px;
+                        float: right;
+                        line-height: 30px;
+                        font-size: 14px;
+                        padding: 0 10px;
+                    }
                 }
 
                 .hlday_addbox_partbtn {
@@ -1611,6 +1892,360 @@ html, body {
             }
         }
     }
+}
+
+.systembox_lt {
+    width: 49%;
+    min-height: 605px;
+    float: left;
+    border-radius: 5px 5px;
+    border: 1px #ccc solid;
+    margin: 0 0 10px 10px;
+    overflow: auto;
+    position: relative;
+
+    .stbox_lt_htb {
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        float: left;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+
+        span {
+            width: initial;
+            float: left;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .stbox_lt_part1 {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 10px 10px;
+
+        .lt_pt1_box1 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 30px 0 160px;
+            margin: 0 0 10px 0;
+
+            .pt1_b1_tt {
+                width: 150px;
+                height: 30px;
+                text-align: right;
+                float: left;
+                line-height: 30px;
+                font-size: 14px;
+                position: absolute;
+                left: 0;
+            }
+
+            .pt1_b1_input {
+                width: 100%;
+                height: 30px;
+                float: right;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px #aaa solid;
+            }
+
+            .pt1_b1_textarea {
+                width: 100%;
+                max-height: 100px;
+                min-height: 100px;
+                float: right;
+                line-height: 16px;
+                font-size: 14px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px #aaa solid;
+            }
+        }
+
+        .lt_pt1_box2 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 100px 0 160px;
+            margin: 0 0 10px 0;
+
+            .pt1_b2_tt {
+                width: 150px;
+                height: 30px;
+                text-align: right;
+                float: left;
+                line-height: 30px;
+                font-size: 14px;
+                position: absolute;
+                left: 0;
+            }
+
+            .pt1_b2_inputimg {
+                background-color: #fff;
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+
+    .stbox_lt_part2 {
+        width: 100%;
+        height: initial;
+        float: left;
+        position: absolute;
+        padding: 0 10px;
+        bottom: 10px;
+    }
+}
+
+.systembox_rt1 {
+    width: 49%;
+    min-height: 200px;
+    float: right;
+    border-radius: 5px 5px;
+    margin: 0 10px 10px 0;
+    background-color: #fff;
+    border: 1px #ccc solid;
+    position: relative;
+
+    .stbox_rt1_httt {
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        float: left;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+
+        span {
+            width: initial;
+            float: left;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .stbox_rt1_box {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 10px 10px;
+
+        .rt1_b_part1 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 30px 0 200px;
+            margin: 0 0 10px 0;
+
+            .b_pt1_tt {
+                width: 190px;
+                height: 30px;
+                text-align: right;
+                float: left;
+                line-height: 30px;
+                font-size: 14px;
+                position: absolute;
+                left: 0;
+            }
+        }
+
+        .rt1_b_part2 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 10px;
+        }
+    }
+}
+
+.systembox_rt2 {
+    width: 49%;
+    min-height: 100px;
+    float: right;
+    border-radius: 5px 5px;
+    margin: 0 10px 10px 0;
+    background-color: #fff;
+    border: 1px #ccc solid;
+
+    .stbox_rt2_box1 {
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        float: left;
+        border-radius: 5px 5px 0 0;
+        padding: 0 10px;
+
+        span {
+            width: initial;
+            float: left;
+            color: #fff;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .stbox_rt2_box2 {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 10px 10px;
+
+        .rt2_b2_tt {
+            width: 100%;
+            height: initial;
+            line-height: 16px;
+            padding: 5px 0;
+            font-size: 12px;
+            color: #666;
+            margin: 0 0 10px 0;
+        }
+
+        .rt2_b2_box {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            padding: 0 10px;
+        }
+    }
+}
+
+.systembox_rt3 {
+    width: 49%;
+    min-height: 100px;
+    float: right;
+    border-radius: 5px 5px;
+    margin: 0 10px 10px 0;
+    background-color: #fff;
+    border: 1px #ccc solid;
+
+    .stbox_rt3_box {
+        width: 100%;
+        height: initial;
+        float: left;
+        padding: 10px 10px;
+
+        .rt3_b_httext {
+            width: 100%;
+            height: initial;
+            line-height: 16px;
+            padding: 5px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #666;
+            margin: 0 0 10px 0;
+        }
+
+        .rt3_b_addtext {
+            width: 100%;
+            height: initial;
+            line-height: 16px;
+            padding: 5px 0;
+            font-size: 12px;
+            color: #666;
+            margin: 0 0 10px 0;
+        }
+
+        .rt3_b_textbox {
+            width: 100%;
+            height: initial;
+            line-height: 16px;
+            padding: 5px 0;
+            font-size: 12px;
+            color: #666;
+            margin: 0 0 10px 0;
+
+            b {
+                width: 40px;
+                float: left;
+            }
+
+            div {
+                float: left;
+            }
+        }
+    }
+}
+
+.inbox_haedtext {
+    width: 100%;
+    height: 40px;
+    background-color: #222;
+    float: left;
+    border-radius: 5px 5px 0 0;
+    padding: 0 10px;
+
+    span {
+        width: initial;
+        float: left;
+        color: #fff;
+        line-height: 40px;
+        font-size: 14px;
+    }
+}
+
+.all_input1 {
+    width: 100%;
+    height: 30px;
+    float: right;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0 0 0 10px;
+    background-color: #fff;
+    border: 1px #aaa solid;
+}
+
+.pt1_b1_inforbtn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    color: #004f83 !important;
+}
+
+.pt1_b2_folderbtn {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    right: 65px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px #aaa solid;
+    color: #f50;
+}
+
+.pt1_b2_deletebtn {
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px #aaa solid;
+    color: #f00;
 }
 
 .edit_pt_box {
@@ -1702,8 +2337,8 @@ tbody {
 
 .ctr_rtpt_popupbox {
     width: 100%;
-    height: 100%;
-    position: relative;
+    height: 515px;
+    position: absolute;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.35);
 
@@ -1770,9 +2405,12 @@ tbody {
 
 ul {
     list-style-type: none;
-    margin: 31px 0 0 0;
-    display: none;
+    margin: 0px 0 0px 0;
+    padding: 0 10px 0 40px !important;
+    display: block;
     background-color: #fff;
+    float: left;
+    width: 100%;
 
     li {
         font-size: 12px;
@@ -1780,13 +2418,10 @@ ul {
         padding: 5px 0;
         color: #333;
 
-        .li_users_icon {
-            width: initial;
-            height: initial;
+        .li_text {
             line-height: 18px;
-            margin: 0 10px 0 20px;
-            font-size: 16px;
-            color: #09af94;
+            float: left;
+            padding: 0 5px;
         }
     }
 
@@ -1795,7 +2430,39 @@ ul {
     }
 }
 
-.li_btn_rename {
+.ul_sub {
+    margin: 5px 0 !important;
+    width: 100%;
+    float: left;
+    padding: 0 0 0 30px !important;
+}
+
+/*.ul_sub:hover {
+    background-color: #fcfccc;
+}*/
+
+.li_users_icon {
+    width: initial;
+    height: initial;
+    line-height: 18px;
+    margin: 0 10px 0 20px;
+    font-size: 16px;
+    color: #09af94;
+    float: left;
+}
+
+.li_list_icon {
+    width: initial;
+    height: initial;
+    line-height: 18px;
+    margin: 0 10px 0 0;
+    font-size: 16px;
+    color: #444;
+    float: left;
+    cursor: pointer;
+}
+
+.li_btn_rename, .li_btn_rename:hover {
     width: initial;
     font-size: 12px;
     display: initial;
@@ -1807,7 +2474,7 @@ ul {
     cursor: pointer;
 }
 
-.li_btn_delete {
+.li_btn_delete, .li_btn_delete:hover {
     width: initial;
     font-size: 12px;
     display: initial;
@@ -1995,6 +2662,12 @@ ul {
     cursor: pointer;
 }
 
+a, a:hover {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
 .message_part {
     width: 49%;
     height: 500px;
@@ -2030,7 +2703,7 @@ ul {
     .mse_pt_itenbox {
         width: inherit;
         height: 30px;
-        background-color: #ccc;
+        background-color: #444;
         border-radius: 0 0 5px 5px;
         padding: 0 10px;
         position: absolute;
@@ -2039,7 +2712,7 @@ ul {
         span {
             width: 100%;
             float: left;
-            color: #333;
+            color: #fff;
             line-height: 30px;
             font-size: 12px;
         }
@@ -2090,6 +2763,408 @@ ul {
         padding: 10px 10px;
     }
 }
+
+.message_lt_part {
+    width: 49%;
+    min-height: 515px;
+    float: left;
+    border-radius: 5px 5px;
+    border: 1px #ccc solid;
+    margin: 0 0 10px 10px;
+    overflow: auto;
+    position: relative;
+}
+
+.message_rt_part {
+    width: 49%;
+    min-height: 515px;
+    float: right;
+    border-radius: 5px 5px;
+    margin: 0 10px 10px 0;
+    background-color: #fff;
+    border: 1px #ccc solid;
+    position: relative;
+}
+
+.ball_color1 {
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    border: 2px #aaa solid;
+    background-color: #154eb7;
+    margin: 0 5px 0 0;
+    float: left;
+}
+
+.report_lt_part {
+    width: 100%;
+    height: initial;
+    float: left;
+    position: relative;
+    padding: 0 10px 0 370px;
+
+    .rpt_lt_pt {
+        width: 350px;
+        min-height: 515px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #444;
+        border-radius: 5px 5px;
+        padding: 10px 10px;
+        margin: 0 0 0 10px;
+
+        .rpt_lt_box {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            margin: 0 0 10px 0;
+            padding: 0 0 0 100px;
+
+            .lt_b_tt {
+                width: 100px;
+                height: inherit;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                padding: 0 10px 0 0;
+                color: #fff;
+                font-size: 14px;
+                text-align: right;
+            }
+
+            .lt_b_select {
+                width: 100%;
+                height: 30px;
+                float: left;
+                position: relative;
+                line-height: 30px;
+                margin: 5px 0;
+                font-size: 12px;
+                margin: 0 0;
+            }
+
+            .lt_b_radiobox {
+                width: 100%;
+                height: 30px;
+                line-height: 16px;
+                padding: 7px 0;
+                float: left;
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+
+        .rpt_lt_box1 {
+            width: 100%;
+            height: initial;
+            float: left;
+            position: relative;
+            margin: 0 0 10px 0;
+            padding: 0 0 0 140px;
+
+            .lt_b1_tt {
+                width: 140px;
+                height: inherit;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                padding: 0 10px 0 0;
+                color: #fff;
+                font-size: 14px;
+                text-align: right;
+            }
+
+            .lt_b1_select {
+                width: 100%;
+                height: 30px;
+                float: left;
+                position: relative;
+                line-height: 30px;
+                margin: 5px 0;
+                font-size: 12px;
+                margin: 0 0;
+            }
+
+            .lt_b1_radiobox {
+                width: 100%;
+                height: 30px;
+                line-height: 16px;
+                padding: 7px 0;
+                float: left;
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+
+        .rpt_lt_ttbox {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            line-height: 18px;
+            color: #fff;
+            position: absolute;
+            left: 0;
+            bottom: 60px;
+            padding: 0 10px;
+        }
+    }
+}
+
+.report_checkbox {
+    width: 100%;
+    height: initial;
+    line-height: 18px;
+    float: left;
+    padding: 6px 5px 6px 100px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.report_checkbox1 {
+    width: 100%;
+    height: initial;
+    line-height: 18px;
+    float: left;
+    padding: 6px 5px 6px 140px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.report_rt_part {
+    width: 100%;
+    min-height: 515px;
+    float: left;
+    border-radius: 5px 5px;
+    border: 1px #ccc solid;
+    position: relative;
+}
+
+.about_part {
+    width: 860px;
+    height: 690px;
+    position: relative;
+    margin: 5px auto 10px auto;
+
+    .abt_pt_box {
+        width: 100%;
+        height: inherit;
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: 2;
+
+        .pt_b_htimg {
+            width: 100%;
+            height: 90px;
+            float: left;
+            margin: 0 0 20px 0;
+            background: url(../img/ht_img1.png) center center no-repeat;
+            background-size: auto;
+        }
+
+        .pt_b_row {
+            width: 100%;
+            height: initial;
+            margin: 0 0 20px 0;
+            float: left;
+
+            .b_row_box {
+                width: 500px;
+                height: initial;
+                float: left;
+                padding: 0 10px;
+
+                b {
+                    width: 100%;
+                    height: 50px;
+                    float: left;
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding: 5px 0;
+                    color: #333;
+                    margin: 0 0 10px 0;
+
+                    .b_row_inb {
+                        width: 100%;
+                        height: initial;
+                        float: left;
+                        color: #333;
+                        margin: 0 0 5px 0;
+                        padding: 0 0 0 30px;
+                        position: relative;
+
+                        span {
+                            font-size: 12px;
+                            line-height: 30px;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+
+                        .row_inb_input {
+                            width: 200px;
+                            height: 30px;
+                            float: left;
+                            border: 0;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+
+            .b_row_rtbox {
+                width: 80px;
+                height: 80px;
+                float: right;
+                background: url(../img//company_logo.jpg) center center no-repeat;
+                background-size: cover;
+                margin: 0 10px;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 310px;
+            max-height: 310px;
+            float: left;
+            font-size: 12px;
+            line-height: 18px;
+            padding: 10px;
+            margin: 0 0 10px 0;
+            border: 0;
+            background-color: transparent;
+        }
+
+        .pt_b_row1 {
+            width: 100%;
+            height: initial;
+            margin: 0 0 20px 0;
+            float: left;
+            position: relative;
+            padding: 0 10px;
+
+            .b_row1_inb {
+                width: 260px;
+                height: initial;
+                float: left;
+                border: 1px #aaa solid;
+                border-radius: 5px 5px;
+                padding: 10px;
+
+                b {
+                    width: 100%;
+                    height: initial;
+                    float: left;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 5px 0;
+                    color: #333;
+                    text-decoration: underline;
+                }
+
+                .row1_inb_name {
+                    width: 100%;
+                    height: 50px;
+                    float: left;
+                    font-size: 12px;
+                    line-height: 20px;
+                    padding: 15px 0;
+                    color: #333;
+                }
+            }
+
+            .b_row1_copyright {
+                width: 500px;
+                height: initial;
+                margin: 0 10px;
+                line-height: 20px;
+                font-size: 10px;
+                text-align: right;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+
+    .abt_pt_bglogo {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-color: #fff;
+        background: url(../img/malaysia_logo_s.png) center center no-repeat;
+        background-size: auto;
+        opacity: 0.15;
+        z-index: 1;
+    }
+}
+
+.shift_addpart {
+    width: 700px;
+    height: initial;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .addpt_box {
+        width: 100%;
+        height: initial;
+        float: left;
+        margin: 0 0 10px 0;
+        padding: 0 0 0 130px;
+        position: relative;
+
+        .addpt_b_tt {
+            width: 130px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: right;
+            padding: 0 10px 0 0;
+        }
+
+        .addpt_b_input {
+            width: 250px;
+            height: 30px;
+            float: left;
+            line-height: 30px;
+            font-size: 14px;
+            padding: 0 0 0 10px;
+            background-color: #fff;
+            border: 1px #aaa solid;
+        }
+
+        .addpt_b_daybox {
+            width: 100%;
+            height: 30px;
+            float: left;
+
+            .b_dayb_inb {
+                width: 75px;
+                height: 30px;
+                float: left;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0 0;
+                background-color: #fff;
+                border: 1px #aaa solid;
+                text-align: center;
+                margin: 0 -1px 0 0;
+            }
+        }
+    }
+}
+
+
 // Triangle
 .arrow_up {
     width: 0;
@@ -2155,3 +3230,12 @@ ul {
     border-right: 10px solid #026f5d;
 }
 // Triangle
+
+.special_rtpt_box {
+    width: 50% !important;
+    padding: 10px !important;
+    height: 255px !important;
+    float: left;
+    position: unset !important;
+    transform: none !important;
+}

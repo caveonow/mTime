@@ -18,10 +18,12 @@ Public Module BundleConfig
 
         bundles.Add(New ScriptBundle("~/bundles/bootstrap").Include(
                   "~/Scripts/bootstrap.js",
+                   "~/Scripts/bootstrap-datepicker3.js",
                   "~/Scripts/srs.js"))
 
         bundles.Add(New StyleBundle("~/Content/css").Include(
                   "~/Content/bootstrap.css",
+                  "~/Content/bootstrap-datepicker3.css",
                   "~/Content/font-awesome.css",
                   "~/Content/other_style.css",
                   "~/Content/style.css"))

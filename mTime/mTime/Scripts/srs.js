@@ -74,7 +74,17 @@ $(function () {
     pull.on("click", function (e) {
         e.preventDefault();
         $(e.target.parentElement.nextElementSibling).slideToggle();
+        $(e.target).toggleClass('fa-angle-right');
         $(e.target).toggleClass('fa-angle-down');
+    });
+});
+
+$(function () {
+    var pull = $(".pn_sumlist_btm");
+
+    pull.on("click", function (e) {
+        e.preventDefault();
+        $(e.target.parentElement.nextElementSibling).slideToggle();
     });
 });
 
@@ -255,26 +265,38 @@ $(".deletebtn").click(function () {
 // Attendance Page
 $("#atdc_tab1").click(function () {
     $("#atdc_part1, .tab_eff1").addClass("display_block").removeClass("display_none");
-    $("#atdc_part2, #atdc_part3").addClass("display_none").removeClass("display_block");
-    $(".tab_eff2, .tab_eff3").addClass("display_none").removeClass("display_block");
+    $("#atdc_part2, #atdc_part3, #atdc_part4").addClass("display_none").removeClass("display_block");
+    $(".tab_eff2, .tab_eff3, .tab_eff4").addClass("display_none").removeClass("display_block");
+
     $("#atdc_tab1").addClass("bg_color_444");
-    $("#atdc_tab2, #atdc_tab3").removeClass("bg_color_444");
+    $("#atdc_tab2, #atdc_tab3, #atdc_tab4").removeClass("bg_color_444");
 });
 
 $("#atdc_tab2").click(function () {
     $("#atdc_part2, .tab_eff2").addClass("display_block").removeClass("display_none");
-    $("#atdc_part1, #atdc_part3").addClass("display_none").removeClass("display_block");
-    $(".tab_eff1, .tab_eff3").addClass("display_none").removeClass("display_block");
+    $("#atdc_part1, #atdc_part3, #atdc_part4").addClass("display_none").removeClass("display_block");
+    $(".tab_eff1, .tab_eff3, .tab_eff4").addClass("display_none").removeClass("display_block");
+
     $("#atdc_tab2").addClass("bg_color_444");
-    $("#atdc_tab1, #atdc_tab3").removeClass("bg_color_444");
+    $("#atdc_tab1, #atdc_tab3, #atdc_tab4").removeClass("bg_color_444");
 });
 
 $("#atdc_tab3").click(function () {
     $("#atdc_part3, .tab_eff3").addClass("display_block").removeClass("display_none");
-    $("#atdc_part1, #atdc_part2").addClass("display_none").removeClass("display_block");
-    $(".tab_eff1, .tab_eff2").addClass("display_none").removeClass("display_block");
+    $("#atdc_part1, #atdc_part2, #atdc_part4").addClass("display_none").removeClass("display_block");
+    $(".tab_eff1, .tab_eff2, .tab_eff4").addClass("display_none").removeClass("display_block");
+
     $("#atdc_tab3").addClass("bg_color_444");
-    $("#atdc_tab1, #atdc_tab2").removeClass("bg_color_444");
+    $("#atdc_tab1, #atdc_tab2, #atdc_tab4").removeClass("bg_color_444");
+});
+
+$("#atdc_tab4").click(function () {
+    $("#atdc_part4, .tab_eff4").addClass("display_block").removeClass("display_none");
+    $("#atdc_part1, #atdc_part2, #atdc_part3").addClass("display_none").removeClass("display_block");
+    $(".tab_eff1, .tab_eff2, .tab_eff3").addClass("display_none").removeClass("display_block");
+
+    $("#atdc_tab4").addClass("bg_color_444");
+    $("#atdc_tab1, #atdc_tab2, #atdc_tab3").removeClass("bg_color_444");
 });
 
 ////Holiday Page jquery
@@ -309,15 +331,17 @@ $("#atdc_tab3").click(function () {
 
 //Private Message Page
 $(".deletebtn").click(function () {
-    $(".msebox_ttbox, .deletebtn, .msebox_htr_date").remove();
+    $(".msebox_ttbox, .msebox_htr_date").remove();
 });
 
+/*
 $(function () {
     $('table').on('click', '.btn_trash', function (e) {
         e.preventDefault();
         $(this).parents('tr').remove();
     });
 });
+*/
 
 $(".btn_email").click(function () {
     $("#email01").addClass("fa-envelope-open").removeClass("fa-envelope");

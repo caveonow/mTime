@@ -87,10 +87,13 @@
 
         </script>
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script type="text/javascript">
+            //Nav Top Menu Part1
+            $("#hdr_btn4").addClass("pt2_b_btneff");
+
+            //Nav Left Menu Part1
             $("#leftnav1").addClass("ctr_innav1_btneff");
         </script>
 
 
-
+               

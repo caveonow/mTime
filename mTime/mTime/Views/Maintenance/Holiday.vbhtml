@@ -1,5 +1,8 @@
-﻿@Code
-    ViewData("Title") = "Home Page"
+
+@ModelType IEnumerable(Of model.HOLIDAY)
+
+@Code
+    ViewData("Title") = "Index"
 End Code
 
 @Html.Partial("_AdminMenuTop")
@@ -9,146 +12,202 @@ End Code
 
     <div class="bd_ctr_rightpart">
         <div id="rtpt_box-01" class="ctr_rtpt_box">
-            <div class="ctr_rtpt_b_ht">
+            <div class="inbox_haedtext">
                 <span>Holiday</span>
 
-                <div class="fa fa-refresh rtpt_b_ht_refresh"></div>
-                <div id="addnewbtn" class="rtpt_ftr_addbtn filter1">Add Item</div>
+                @Using (Html.BeginForm("ImportHoliday", "Maintenance", FormMethod.Post, New With {.enctype = "multipart/form-data"}))
+                    @Html.AntiForgeryToken()
+                    @<div class="form-horizontal">
+
+                        @*<div id="addnewbtn" class="rtpt_ftr_addbtn filter1">*@
+                            <div id="importFilebtn"  class="rtpt_ftr_addbtn filter1">
+                                <label for="importFile" class="custom-file-upload">
+                                    Import
+                                </label>
+                                <input id="importFile" name="postedFile" type="file" accept=".csv" style="display: none;" />
+                            </div>
+                        @*</div>*@
+
+                    </div>
+                End Using
+
+                <a href="@Url.Action("Create", "Holiday")">
+                    <div id="addnewbtn" class="rtpt_ftr_addbtn filter1">
+                        Add
+                    </div>
+                </a>
+
+
+
             </div>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th style="width: 90px;"></th>
-                        <th style="width: 150px;">Date</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
+            <div Class="overflow_box">
+                <Table>
+                    <thead>
+                        <tr>
+                            <th style="width: 90px;" />
+                            <th style="width: 90px;">Name</th>
+                            <th style="width: 150px;"> Start Date</th>
+                            <th style="width: 150px;">End Date</th>
+                            <th>In Used</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                    <tr>
-                        <td>
-                            <div id="editbtn" class="fa fa-pencil-square-o btn_edit"></div>
-                            <div id="copybtn" class="fa fa-files-o btn_copy"></div>
-                            <div id="deletebtn" class="fa fa-trash-o btn_trash"></div>
-                        </td>
-                        <td>31/8/2020</td>
-                        <td>Day Day Holiday</td>
-                    </tr>
+                    <tbody>
+                        @For Each item In Model
+                            @<tr>
+                                <td>
+                                    <a href="@Url.Action("Edit", "Holiday", New With {.id = item.HOLIDAYID})" class="fa fa-pencil-square-o btn_edit" />
+                                    @*<a href="@Url.Action("Create", "Holiday", New With {.id = item.HOLIDAYID})" class="fa fa-files-o btn_copy" />*@
+                                    <a href="@Url.Action("Delete", "Holiday", New With {.id = item.HOLIDAYID})" class="fa fa-trash-o btn_trash deletebtn" />
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(Function(modelItem) item.HOLIDAYNAME)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(Function(modelItem) item.FROM)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(Function(modelItem) item.UNTIL)
+                                </td>
 
-                    <tr>
-                        <td>
-                            <div id="editbtn" class="fa fa-pencil-square-o btn_edit"></div>
-                            <div id="copybtn" class="fa fa-files-o btn_copy"></div>
-                            <div id="deletebtn" class="fa fa-trash-o btn_trash"></div>
-                        </td>
-                        <td>25/12/2020</td>
-                        <td>Day Day Holiday</td>
-                    </tr>
-                </tbody>
-            </table>
+                                <td style="padding: 0 5px;">
+                                    <input type="checkbox" name="isInUsed" checked=@item.ISINUSED onclick="return false" class="check-box" />
+                                </td>
+
+                            </tr>
+                        Next
+                    </tbody>
+                </Table>
+            </div>
 
             <div class="ctr_rtpt_b_ftr">
-                <span>Total 2 iten(s)</span>
-            </div>
-        </div>
 
-        <div id="addbox-01" class="ctr_rtpt_box display_none">
-            <div class="ctr_rtpt_b_ht">
-                <span>Holiday - Add Item</span>
-            </div>
+                @If Model.Count() > 1 Then
+                    @<span>Total : @Model.Count() row(s)</span>
+                Else
+                    @<span>Total : @Model.Count() row</span>
+                End If
 
-            <div class="ctr_holiday_addbox">
-                <!-- this is the action that call to the method in maintenance -->
-                <form action="/Maintenance/AddHoliday" method="post">
-                    <div class="hlday_addbox_part">
-                        <div class="hlday_addbox_pt_tt">Date :</div>
-                        <input type="text" id="title" name="title">
-
-                        <div class="hlday_addbox_pt_error">Text Error</div>
-                    </div>
-
-                    <div class="hlday_addbox_part">
-                        <div class="hlday_addbox_pt_tt">Description :</div>
-                        <!-- name must be same with the param name OR Request.Form("title") -->
-                        <input type="text" id="description" name="description">
-
-                        <div class="hlday_addbox_pt_error">Text Error</div>
-                    </div>
-
-                    <div class="hlday_addbox_partbtn">
-                        <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
-
-                        <!-- need to use input with type="submit" -->
-                        <input id="savebtn1" class="rtpt_savebtn filter1" type="submit" value="Save" />
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <div id="editbox-01" class="ctr_rtpt_box display_none">
-            <div class="ctr_rtpt_b_ht">
-                <span>Holiday - Edit</span>
             </div>
 
-            <div class="ctr_holiday_addbox">
-                <form action="/Maintenance/EditHoliday" method="post">
-                    <div class="hlday_addbox_part">
-                        <div class="hlday_addbox_pt_tt">Date :</div>
-                        <input type="text" id="title" name="title" value="31/8/2020">
+            @Code
 
-                        <div class="hlday_addbox_pt_error">Text Error</div>
-                    </div>
+                If TempData("HolidayImportResult") <> "" Then
 
-                    <div class="hlday_addbox_part">
-                        <div class="hlday_addbox_pt_tt">Description :</div>
-                        <input type="text" id="description" name="description" value="Day Day Holiday">
+                    If TempData("HolidayImportResult") = "OK" Then
+                        @<script>
+                             window.onload = function () {
+                                 $(".save_ok_popup").addClass("display_block").fadeOut(3000);
+                             };
+                        </script>
+                    Else
 
-                        <div class="hlday_addbox_pt_error">Text Error</div>
-                    </div>
 
-                    <div class="hlday_addbox_partbtn">
-                        <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
+                        @<script>
+                             window.onload = function () {
+                                 $(".exclamation_ok_popup").addClass("display_block").fadeOut(3000);
+                             };
+                        </script>
+                    End If
 
-                        <input id="savebtn" class="rtpt_savebtn filter1" type="submit" value="Save" />
-                    </div>
-                </form>
-            </div>
-        </div>
+                    TempData("HolidayImportResult") = ""
 
-        <div id="copybox-01" class="ctr_rtpt_popupbox display_none">
-            <div class="rtpt_popupbox_inb">
-                <div class="fa fa-files-o popupbox_inb_icon"></div>
-                <div class="popupbox_inb_tt">Confirm Copy</div>
+                End If
 
-                <div class="popupbox_inb_btnpart">
-                    <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
-                    <div id="yesbtn" class="rtpt_yesbtn filter1">Yes</div>
+            End Code
+
+
+            <div id="" Class="ctr_rtpt_popupbox display_none save_ok_popup">
+                <div Class="rtpt_popupbox_inb">
+                    <div Class="fa fa-check-circle-o popupbox_inb_icon_blue"></div>
+                    <div Class="popupbox_inb_tt">Holiday is imported successfully</div>
                 </div>
             </div>
-        </div>
 
-        <div id="deletebox-01" class="ctr_rtpt_popupbox display_none">
-            <div class="rtpt_popupbox_inb">
-                <form action="/Maintenance/DeleteHoliday" method="post">
-                    <input type="text" id="uuid" name="uuid" value="123" style="display:none">
-
-                    <div class="fa fa-trash-o popupbox_inb_icon_red"></div>
-                    <div class="popupbox_inb_tt">Confirm Delete</div>
-
-                    <div class="popupbox_inb_btnpart">
-                        <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
-                        <input id="yesbtn" type="submit" class="rtpt_yesbtn filter1" value="Yes" />
-                    </div>
-                </form>
+            <div id="" Class="ctr_rtpt_popupbox display_none exclamation_ok_popup">
+                <div Class="rtpt_popupbox_inb">
+                    <div Class="fa fa-exclamation-circle popupbox_inb_icon_red"></div>
+                    <div Class="popupbox_inb_tt">Failed to import Holiday</div>
+                </div>
             </div>
-        </div>
 
-        @*<div class="ctr_rtpt_footer">
-                <div class="rtpt_ftr_addbtn filter1">Add Item</div>
-            </div>*@
+
+        </div>
     </div>
 </div>
 
 
 <div class="bg_color_w"></div>
+
+@Section Scripts
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/bootstrap-datepicker.js")
+
+    <script type="text/javascript">
+
+        // Nav Top Menu Part1
+        $("#hdr_btn4").addClass("pt2_b_btneff");
+
+        //Nav Left Menu Part1
+        $("#leftnav2").addClass("ctr_innav1_btneff");
+
+        $(function () {        
+
+            var importFile = $("#importFile");
+
+            importFile.change(function () {
+
+                document.forms[0].submit();
+                return false;
+
+                //var fileName = $(this).val().split('\\')[$(this).val().split('\\').length - 1];
+                //var fileExtension = $(this).val().substring($(this).val().lastIndexOf(".") + 1, $(this).val().length);
+
+                //if (fileName.length > 0) {
+
+                //    if (fileExtension == "csv") {
+                //        //document.forms[0].submit();
+                //        //return false;
+                //    }
+
+                //var fileUpload = $("#importFile").get(0);
+                //var files = fileUpload.files;
+
+                //// Create FormData object
+                //var fileData = new FormData();
+
+                //// Looping over all files and add it to FormData object
+                //for (var i = 0; i < files.length; i++) {
+                //    fileData.append(files[i].name, files[i]);
+                //}
+
+                //$.ajax({
+                //    url: "/Maintenance/ImportHoliday",
+                //    type: "POST",
+                //    enctype: "multipart/form-data",
+                //    contentType: false, // Not to set any content header
+                //    processData: false, // Not to process data
+                //    data: fileData,
+                //    success: function (result) {
+                //        //alert(result);
+                //        $(".save_ok_popup").addClass("display_block").fadeOut(3000);
+
+                //    },
+                //    error: function (err) {
+                //        //alert(err.statusText);
+                //        //alert("Failed to import file 1");
+                //        $(".exclamation_ok_popup").addClass("display_block").fadeOut(3000);
+                //    }
+                //});
+
+                //}
+            });
+
+
+        });
+
+    </script>
+
+End Section
+

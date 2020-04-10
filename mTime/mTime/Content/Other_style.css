@@ -1,4 +1,4 @@
-﻿.rtpt_deletebtn {
+﻿/*.rtpt_deletebtn {
     width: initial;
     height: 30px;
     line-height: 30px;
@@ -14,7 +14,6 @@
 
 .body_center .bd_ctr_rightpart .ctr_rtpt_box {
     height:515px !important;
-    /*overflow: auto;*/
 }
 
 
@@ -56,7 +55,6 @@
 
 
 
-/*New Class*/
 
 .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_checkbox input {
     width: 30px !important;
@@ -78,3 +76,51 @@
     position:relative;
     z-index:10;
 }
+
+.rtpt_ftr_addbtn a, .rtpt_closebtn a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .checkbox1 {
+    float: left;
+    width: 17px !important;
+    height: 17px !important;
+    margin: 7px 0 0 10px !important;
+}
+
+.body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .check-box {
+    float: left;
+    width: 17px !important;
+    height: 17px !important;
+    margin: 0 0;
+}
+
+.rtpt_savebtn, .rtpt_deletebtn {
+    border: 0;
+}
+
+.body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .hlday_addbox_pt_ttbox {
+    width: 370px;
+    height: 30px;
+    float: right;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0 10px;
+    background-color: #dddd;
+    border: 1px #aaa solid;
+    pointer-events: none;
+}
+
+.body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .hlday_addbox_pt_tt{
+    font-weight:normal;
+}
+
+td .check-box {
+    width: 17px;
+    height: 17px;
+    margin: 0 0 -4px 0;
+    float: left;
+}*/

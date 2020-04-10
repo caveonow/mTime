@@ -100,6 +100,9 @@ Namespace Controllers
         <ValidateAntiForgeryToken>
         Function Edit(<Bind(Include:="POORATTENDANCEREASONID, DESCRIPTION, ISFORLATEIN, ISFOREARLYOUT, ISINUSED, CREATEDBY, CREATEDON, UPDAEDBY, UPDATEDBY")> ByVal PoorAttendanceReason As model.POORATTENDANCEREASON) As ActionResult
 
+            If PoorAttendanceReason.ISFORLATEIN = False And PoorAttendanceReason.ISFOREARLYOUT = False Then
+                ModelState.AddModelError("ISFORLATEIN", "For Late-In and For Early-Out is not ticked")
+            End If
 
             If ModelState.IsValid Then
 
@@ -153,7 +156,8 @@ Namespace Controllers
             db.SaveChanges()
 
             '# Return to Index 
-            Return RedirectToRoute("PoorAttendanceReasonList")
+            ViewBag.Result = "OK"
+            Return View(PoorAttendanceReason)
 
         End Function
 

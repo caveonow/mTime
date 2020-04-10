@@ -1,5 +1,4 @@
-﻿
-@ModelType model.HYPERLINK
+﻿@ModelType model.HYPERLINK
 
 @Code
     ViewData("Title") = "Create"
@@ -17,37 +16,29 @@ End Code
                 @Html.AntiForgeryToken()
                 @<div class="form-horizontal">
 
-                    <div Class="ctr_rtpt_b_ht">
+                    <div Class="inbox_haedtext">
                         <span> Hyperlink :: Add</span>
                     </div>
 
-                    <div Class="ctr_rtpt_addbox">
+                    <div Class="ctr_rtpt_addbox bg_bd1_radius">
                         <div Class="rtpt_addbox_part">
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">Title :</div>
+                            <div Class="rtpt_addbox_pt_tt">Title :</div>
 
-                                @Html.TextBoxFor(Function(model) model.TITLE, New With {.maxlength = 10})
+                            @Html.TextBoxFor(Function(model) model.TITLE, New With {.maxlength = 10, .class = "all_input1"})
 
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.TITLE)
-                                </div>
-
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.TITLE)
                             </div>
                         </div>
 
                         <div Class="rtpt_addbox_part">
+                            <div Class="rtpt_addbox_pt_tt">URL :</div>
 
-                            <div class="form-group">
-                                <div Class="rtpt_addbox_pt_tt">URL :</div>
-
-                                @Html.TextBoxFor(Function(model) model.URL, New With {.maxlength = 200})
-                                <div Class="rtpt_addbox_pt_error">
-                                    @Html.ValidationMessageFor(Function(model) model.URL)
-                                </div>
+                            @Html.TextBoxFor(Function(model) model.URL, New With {.maxlength = 200, .class = "all_input1"})
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.URL)
                             </div>
-
                         </div>
-
 
                         <div Class="rtpt_addbox_partbtn">
                             <a href="@Url.Action("Index", "Maintenance")">
@@ -61,11 +52,8 @@ End Code
                                     Save
                                 </div>
                             </a>
-
                         </div>
-
                     </div>
-
                 </div>
 
             End Using
@@ -74,15 +62,14 @@ End Code
 
                 If ViewBag.Result = "OK" Then
                     @<script>
-                            window.onload = function() {                           
+                            window.onload = function() {
                               $(".save_ok_popup").addClass("display_block").fadeOut(3000);
                                window.location.href = "@Url.Action("index", "Maintenance")";
-                           }; 
+                           };
                     </script>
                 End If
             End Code
 
-                                          
             <div id="" Class="ctr_rtpt_popupbox display_none save_ok_popup">
                 <div Class="rtpt_popupbox_inb">
                     <div Class="fa fa-check-circle-o popupbox_inb_icon_blue"></div>
@@ -96,26 +83,23 @@ End Code
                     <div Class="popupbox_inb_tt">Save failed</div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
 
 <div class="bg_color_w"></div>
 
-
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">
     $(function () {
 
-        $("#save").click(function () {           
-            document.forms[0].submit();        
+        $("#save").click(function () {
+            document.forms[0].submit();
             return false;
         });
 
         @*function displayStatus() {
-
-            $(".save_ok_popup").show();
+                        $(".save_ok_popup").show();
             setInterval(function () {
                 seconds--;
                 if (seconds == 0) {
@@ -127,26 +111,11 @@ End Code
             return false;
 
         };*@
+            });
 
+    //Nav Top Menu Part1
+    $("#hdr_btn4").addClass("pt2_b_btneff");
 
-    });
-
+    //Nav Left Menu Part1
+    $("#leftnav1").addClass("ctr_innav1_btneff");
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
