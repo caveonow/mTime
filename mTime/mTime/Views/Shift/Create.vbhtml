@@ -146,7 +146,7 @@ End Code
                 </div>
 
                 <div Class="footer_row_btn">
-                    <a href="@Url.Action("Shift", "Maintenance")">
+                    <a href="@Url.Action("Index", "Shift")">
                         <div id="closebtn" Class="rtpt_closebtn filter1">
                             Cancel
                         </div>
