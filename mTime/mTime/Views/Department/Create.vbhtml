@@ -21,18 +21,9 @@ End Code
                     </div>
 
                     <div Class="ctr_rtpt_addbox bg_bd1_radius">
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Department ID: </div>
-
-                            @Html.TextBoxFor(Function(model) model.DEPARTMENTID, New With {.maxlength = 20, .class = "all_input1"})
-
-                            <div Class="rtpt_addbox_pt_error">
-                                @Html.ValidationMessageFor(Function(model) model.DEPARTMENTID)
-                            </div>
-                        </div>
 
                         <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Department: </div>
+                            <div Class="rtpt_addbox_pt_tt">Department Name : </div>
 
                             @Html.TextBoxFor(Function(model) model.DEPARTMENTNAME, New With {.maxlength = 100, .class = "all_input1"})
 
@@ -42,12 +33,26 @@ End Code
                         </div>
 
                         <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Is Used?:</div>
-                            <div class="checkinbox">
-                                @Html.CheckBoxFor(Function(model) model.ISINUSED, New With {.class = "check-box"})
-                            </div>
+                            <div Class="rtpt_addbox_pt_tt">Division Name : </div>
+
+                            @Html.TextBoxFor(Function(model) model.DIVISIONNAME, New With {.maxlength = 100, .class = "all_input1"})
+                            
                             <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.DIVISIONNAME)
                             </div>
+
+                        </div>
+
+                        <div Class="rtpt_addbox_part">
+                            <div Class="rtpt_addbox_pt_tt">Unit Name : </div>
+
+                            @Html.TextBoxFor(Function(model) model.UNITNAME, New With {.maxlength = 100, .class = "all_input1"})
+
+
+                            <div Class="rtpt_addbox_pt_error">
+                                @Html.ValidationMessageFor(Function(model) model.UNITNAME)
+                            </div>
+
                         </div>
 
                         <div Class="rtpt_addbox_partbtn">

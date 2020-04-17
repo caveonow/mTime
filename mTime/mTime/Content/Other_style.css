@@ -124,3 +124,15 @@ td .check-box {
     margin: 0 0 -4px 0;
     float: left;
 }*/
+
+.li_level01:hover {
+    background-color: transparent !important;
+}
+
+.li_level02:hover {
+    background-color: transparent !important;
+}
+
+.li_level03:hover {
+    background-color: #e1ffd4 !important;
+}
