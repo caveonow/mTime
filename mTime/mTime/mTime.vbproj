@@ -178,13 +178,13 @@
     <Compile Include="Controllers\AboutUsController.vb" />
     <Compile Include="Controllers\AdminFAQController.vb" />
     <Compile Include="Controllers\AdministrationController.vb" />
-    <Compile Include="Controllers\CompanyController.vb" />
     <Compile Include="Controllers\AttendanceController.vb" />
     <Compile Include="Controllers\DepartmentController.vb" />
     <Compile Include="Controllers\EmployeeController.vb" />
     <Compile Include="Controllers\FAQController.vb" />
     <Compile Include="Controllers\HyperlinkController.vb" />
     <Compile Include="Controllers\HolidayController.vb" />
+    <Compile Include="Controllers\imgController.vb" />
     <Compile Include="Controllers\Login.vb" />
     <Compile Include="Controllers\MessageController.vb" />
     <Compile Include="Controllers\PersonalMessageController.vb" />
@@ -520,6 +520,9 @@
     <Content Include="Views\PoorAttendanceReason\Index.vbhtml" />
     <Content Include="Views\Shift\Index.vbhtml" />
     <Content Include="Views\Department\Index.vbhtml" />
+    <Content Include="Views\System\Create.vbhtml" />
+    <Content Include="Views\System\Edit.vbhtml" />
+    <Content Include="Views\System\UploadImg.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -561,6 +564,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\img\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
