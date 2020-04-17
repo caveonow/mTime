@@ -2107,7 +2107,7 @@ tbody {
 /* line 2338, D:/mTime/mTime/mTime/scss/style.scss */
 .ctr_rtpt_popupbox {
   width: 100%;
-  height: 515px;
+  height: 650px;
   position: absolute;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.35); }
@@ -2828,7 +2828,7 @@ a, a:hover {
 
 /* line 3106, D:/mTime/mTime/mTime/scss/style.scss */
 .shift_addpart {
-  width: 700px;
+  width: 875px;
   height: initial;
   padding: 10px;
   position: absolute;
@@ -2871,7 +2871,7 @@ a, a:hover {
       float: left; }
       /* line 3151, D:/mTime/mTime/mTime/scss/style.scss */
       .shift_addpart .addpt_box .addpt_b_daybox .b_dayb_inb {
-        width: 75px;
+        width: 100px;
         height: 30px;
         float: left;
         line-height: 30px;

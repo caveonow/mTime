@@ -41,7 +41,7 @@ End Code
                             <div Class="rtpt_addbox_pt_tt">Start Date :</div>
 
                             @* @Html.TextBoxFor(Function(model) model.FROM, New With {.Readonly = True, .class = "all_input1 events_none"})*@
-                            @Html.EditorFor(Function(model) model.FROM, New With {.htmlAttributes = New With {.id = "datePickerFrom", .class = "all_input1 events_none"}})
+                            @Html.EditorFor(Function(model) model.DATESTART, New With {.htmlAttributes = New With {.id = "datePickerFrom", .class = "all_input1 events_none"}})
 
                         </div>
 
@@ -49,7 +49,7 @@ End Code
                             <div Class="rtpt_addbox_pt_tt">End Date :</div>
 
                             @* @Html.TextBoxFor(Function(model) model.UNTIL, New With {.Readonly = True, .class = "all_input1 events_none"})*@
-                            @Html.EditorFor(Function(model) model.UNTIL, New With {.htmlAttributes = New With {.id = "datePickerUntil", .class = "all_input1 events_none"}})
+                            @Html.EditorFor(Function(model) model.DATEEND, New With {.htmlAttributes = New With {.id = "datePickerUntil", .class = "all_input1 events_none"}})
 
 
                         </div>

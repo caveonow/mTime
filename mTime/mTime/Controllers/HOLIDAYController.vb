@@ -16,13 +16,13 @@ Namespace Controllers
         <HttpGet>
         Function Index(ByVal yearFilter As String) As ActionResult
             ' get result from db
-            Dim listing = db.HOLIDAY.SortBy("FROM").ToList
+            Dim listing = db.HOLIDAY.SortBy("DATESTART").ToList
 
             ' get all available year for dropdown
             Dim yearListing As New List(Of Integer)
 
             For Each listingItem As model.HOLIDAY In listing
-                yearListing.Add(Year(listingItem.FROM))
+                yearListing.Add(Year(listingItem.DATESTART))
             Next
 
             ' add current year if is empty
@@ -34,7 +34,7 @@ Namespace Controllers
 
             ' Filter the year
             If Not IsNothing(yearFilter) And Not yearFilter = "All" Then
-                listing = listing.Where(Function(h) Year(h.FROM) = yearFilter).ToList()
+                listing = listing.Where(Function(h) Year(h.DATESTART) = yearFilter).ToList()
             End If
 
             ' add necessary viewbag
@@ -68,12 +68,12 @@ Namespace Controllers
 
 
             ' Check is same year
-            If Not checkIsSameYear(Holiday.FROM, Holiday.UNTIL) Then
+            If Not checkIsSameYear(Holiday.DATESTART, Holiday.DATEEND) Then
                 'ModelState.AddModelError("FROM", "Year not same")
                 ModelState.AddModelError("Until", "Year not same")
             Else
 
-                If DateDiff(DateInterval.Day, Holiday.FROM, Holiday.UNTIL) < 0 Then
+                If DateDiff(DateInterval.Day, Holiday.DATESTART, Holiday.DATEEND) < 0 Then
                     ModelState.AddModelError("Until", "End Date must latest than Start Date")
                 End If
 
@@ -118,11 +118,11 @@ Namespace Controllers
         <ValidateAntiForgeryToken>
         Function Edit(<Bind(Include:="HolidayID,HolidayNAME,FROM,UNTIL,ISINUSED,CREATEDBY,CREATEDON,UPDATEDBY,UPDATEDON")> ByVal Holiday As model.HOLIDAY) As ActionResult
             ' Check is same year
-            If Not checkIsSameYear(Holiday.FROM, Holiday.UNTIL) Then
+            If Not checkIsSameYear(Holiday.DATESTART, Holiday.DATEEND) Then
                 'ModelState.AddModelError("FROM", "Year not same")
                 ModelState.AddModelError("Until", "Cross year is not allowed")
             Else
-                If DateDiff(DateInterval.Day, Holiday.FROM, Holiday.UNTIL) < 0 Then
+                If DateDiff(DateInterval.Day, Holiday.DATESTART, Holiday.DATEEND) < 0 Then
                     ModelState.AddModelError("Until", "End Date must latest than Start Date")
                 End If
             End If
@@ -405,8 +405,8 @@ Namespace Controllers
                                 DateTime.TryParseExact(strStartDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, dteStartDate)
                                 DateTime.TryParseExact(strEndDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, dteEndDate)
 
-                                holiday.FROM = dteStartDate
-                                holiday.UNTIL = dteEndDate
+                                holiday.DATESTART = dteStartDate
+                                holiday.DATEEND = dteEndDate
 
                                 holiday.ISINUSED = True
                                 holiday.CREATEDBY = "SYSTEM"

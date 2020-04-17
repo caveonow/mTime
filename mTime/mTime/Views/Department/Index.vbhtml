@@ -19,39 +19,7 @@ End Code
             </div>
 
             <div class="overflow_box">
-                <div class="bd_ctr_rightpart1">
-                    <div class="ctr_rtpt1_inb">
-                        <div class="fa fa-angle-down fa-angle-down pn_heading_btm ctr_rtpt1_icon1 filter1"></div>
-                        <div class="fa fa-building-o ctr_rtpt1_icon2"></div>
-                        COMPANY1
-                    </div>
 
-                    <ul>
-                        @Code
-                            Dim TotalCompanyCount = 1
-                        End Code
-
-                        @For Each item In Model
-
-                            @<li>
-                                <div>
-                                    <div class="fa fa-users li_users_icon"></div>
-                                    <div class="li_text">
-                                        @item.DEPARTMENTNAME
-                                        <b>: 10</b>
-                                    </div>
-                                    @*<div id="renamebtn" class="li_btn_rename"></div>*@
-                                    @Html.ActionLink("Rename", "Edit", "Department", New With {.id = item.DEPARTMENTID}, New With {.class = "li_btn_rename filter1"})
-                                    @*<div id="deletebtn" class="li_btn_delete">Delete</div>*@
-                                    @Html.ActionLink("Delete", "Delete", "Department", New With {.id = item.DEPARTMENTID}, New With {.class = "li_btn_delete filter1"})
-                                </div>
-                            </li>
-                        Next item
-                    </ul>
-                </div>
-
-
-                @*Sample UI*@
                 <div class="bd_ctr_rightpart1">
                     <div class="ctr_rtpt1_inb">
                         <div class="fa fa-angle-down fa-angle-down pn_heading_btm ctr_rtpt1_icon1 filter1"></div>
@@ -59,135 +27,109 @@ End Code
                         Sample UI 1
                     </div>
 
+                    @Code
+                        Dim strDepartmentName As String = vbNull
+                        Dim strDivisionName As String = vbNull
+                        Dim strUnitName As String = vbNull
+
+
+                    End Code
+
+                    @*<div Class="li_text">*@
+
                     <ul>
-                        <li>
-                            <div>
-                                <div class="fa fa-users li_users_icon"></div>
-                                <div class="fa fa-list li_list_icon pn_sumlist_btm filter1"></div>
+                        @For Each item In Model
 
-                                <div class="li_text">
-                                    NAME 1
-                                    <b>: 10</b>
-                                </div>
-
-                                <div id="renamebtn" class="li_btn_rename">Rename</div>
-                                <div id="deletebtn" class="li_btn_delete">Delete</div>
-                            </div>
-
-                            <ul class="ul_sub">
-                                <li class="bg_colorgray1">
+                            @If IsDBNull(strDepartmentName) Or (strDepartmentName <> item.DEPARTMENTNAME) Then
+                                @<li class="li_level01">
                                     <div>
-                                        <div class="fa fa-users li_users_icon"></div>
-                                        <div class="fa fa-list li_list_icon pn_sumlist_btm filter1"></div>
-                                        <div class="li_text">
-                                            NAME 1-1
-                                            <b>: 10</b>
-                                        </div>
+                                        <div Class="fa fa-users li_users_icon" style="color:darkblue"></div>
 
-                                        <div id="renamebtn" class="li_btn_rename">Rename</div>
-                                        <div id="deletebtn" class="li_btn_delete">Delete</div>
+                                        @item.DEPARTMENTNAME
+
+                                        @Code
+                                            strDepartmentName = item.DEPARTMENTNAME
+                                            strDivisionName = vbNull
+                                            strUnitName = vbNull
+                                        End Code
                                     </div>
+                                </li>
+                            End If
 
-                                    <ul class="ul_sub">
-                                        <li class="bg_colorgray1">
-                                            <div>
-                                                <div class="fa fa-users li_users_icon"></div>
-                                                <div class="li_text">
-                                                    NAME 1-1
-                                                    <b>: 10</b>
-                                                </div>
 
-                                                <div id="renamebtn" class="li_btn_rename">Rename</div>
-                                                <div id="deletebtn" class="li_btn_delete">Delete</div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                            @if IsDBNull(strDivisionName) Or (strDivisionName <> item.DIVISIONNAME) Then
+
+                                @Code
+                                    strDivisionName = item.DIVISIONNAME
+                                    strUnitName = vbNull
+                                End Code
+
+                                @<ul Class="ul_sub">
+                                    <li class="li_level02">
+                                        <div>
+                                            <div Class="fa fa-users li_users_icon" style="color:brown"></div>
+                                            @If item.DIVISIONNAME = "" Then
+                                                @<span>-</span>
+                                            Else
+                                                @item.DIVISIONNAME
+                                            End If
+
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            End If
+
+                            @Code
+                                strUnitName = item.UNITNAME
+                            End code
+
+                            @<ul>
+                                <li class="li_level03">
+                                    <div>
+                                        <div Class="fa fa-users li_users_icon" style="color:darkslategray"></div>
+
+                                        @If item.UNITNAME = "" Then
+                                            @<span>-</span>
+                                        Else
+                                            @item.UNITNAME
+                                        End If
+
+                                        @Html.ActionLink("Edit", "Edit", "Department", New With {.id = item.DEPARTMENTID}, New With {.class = "li_btn_rename filter1"})
+                                        @Html.ActionLink("Delete", "Delete", "Department", New With {.id = item.DEPARTMENTID}, New With {.class = "li_btn_delete filter1"})
+
+
+                                    </div>
                                 </li>
                             </ul>
-                        </li>
 
-                        <li>
-                            <div>
-                                <div class="fa fa-users li_users_icon"></div>
-                                <div class="li_text">
-                                    NAME 1
-                                    <b>: 10</b>
-                                </div>
-
-                                <div id="renamebtn" class="li_btn_rename">Rename</div>
-                                <div id="deletebtn" class="li_btn_delete">Delete</div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div>
-                                <div class="fa fa-users li_users_icon"></div>
-                                <div class="li_text">
-                                    NAME 1
-                                    <b>: 10</b>
-                                </div>
-
-                                <div id="renamebtn" class="li_btn_rename">Rename</div>
-                                <div id="deletebtn" class="li_btn_delete">Delete</div>
-                            </div>
-                        </li>
-
+                        Next
                     </ul>
+
+
                 </div>
-                @*Sample UI*@
 
+                <div Class="ctr_rtpt_b_ftr">
+
+                </div>
 
             </div>
 
-            <div class="ctr_rtpt_b_ftr">
-
-                <span>Total @TotalCompanyCount item(s)</span>
-            </div>
         </div>
 
-        <div id="addbox-01" class="ctr_rtpt_box display_none">
-            <div class="inbox_haedtext">
-                <span>Department - Add Item</span>
-            </div>
-
-            <div class="ctr_holiday_addbox">
-                <div class="hlday_addbox_part">
-                    <div class="hlday_addbox_pt_tt">Company :</div>
-                    <input type="text" id="title" name="title">
-
-                    <div class="hlday_addbox_pt_error">Text Error</div>
-                </div>
-
-                <div class="hlday_addbox_part">
-                    <div class="hlday_addbox_pt_tt">Department :</div>
-                    <input type="text" id="URL" name="URL">
-
-                    <div class="hlday_addbox_pt_error">Text Error</div>
-                </div>
-
-                <div class="hlday_addbox_partbtn">
-                    <div id="closebtn" class="rtpt_closebtn filter1">Close</div>
-                    <div id="savebtn" class="rtpt_savebtn filter1">Save</div>
-                </div>
-            </div>
-        </div>
-
-
-        @*<div class="ctr_rtpt_footer">
-                <div class="rtpt_ftr_addbtn filter1">Add Item</div>
-            </div>*@
     </div>
+
 </div>
 
-<div class="bg_color_w"></div>
+<div Class="bg_color_w"></div>
 
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<Script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></Script>
 
-<script type="text/javascript">
-    //Nav Top Menu Part1
+<Script type="text/javascript">
+    // Nav Top Menu Part1
     $("#hdr_btn4").addClass("pt2_b_btneff");
 
     //Nav Left Menu Part1
     $("#leftnav3").addClass("ctr_innav1_btneff");
-</script>
+</Script>

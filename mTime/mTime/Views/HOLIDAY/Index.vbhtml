@@ -47,7 +47,7 @@ End Code
                         <tr>
                             <th style="width: 90px;" />
                             <th style="width: 90px;">Name</th>
-                            <th style="width: 150px;"> Start Date</th>
+                            <th style="width: 150px;">Start Date</th>
                             <th style="width: 150px;">End Date</th>
                             <th>In Used</th>
                         </tr>
@@ -65,10 +65,10 @@ End Code
                                 @Html.DisplayFor(Function(modelItem) item.HOLIDAYNAME)
                             </td>
                             <td>
-                                @Html.DisplayFor(Function(modelItem) item.FROM)
+                                @Html.DisplayFor(Function(modelItem) item.DATESTART)
                             </td>
                             <td>
-                                @Html.DisplayFor(Function(modelItem) item.UNTIL)
+                                @Html.DisplayFor(Function(modelItem) item.DATEEND)
                             </td>
 
                             <td style="padding: 0 5px;">

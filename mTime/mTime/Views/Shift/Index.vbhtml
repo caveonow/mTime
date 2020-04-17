@@ -24,7 +24,7 @@ End Code
                     <tr>
                         <th style="width: 85px;"></th>
                         <th>Shift code</th>
-                        <th>Remark</th>
+                        <th>Description</th>
                         <th>In Used</th>
                     </tr>
                 </thead>

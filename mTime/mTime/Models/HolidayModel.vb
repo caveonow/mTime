@@ -13,12 +13,12 @@ Namespace model
         <Required(ErrorMessage:="Start Date is required")>
         <Display(Name:="Start Date")>
         <DisplayFormat(DataFormatString:="{0:dd/MM/yyyy}", ApplyFormatInEditMode:=True)>
-        Public Property FROM As Date
+        Public Property DATESTART As Date
 
         <Required(ErrorMessage:="End Date is required")>
         <Display(Name:="End Date")>
         <DisplayFormat(DataFormatString:="{0:dd/MM/yyyy}", ApplyFormatInEditMode:=True)>
-        Public Property [UNTIL] As Date
+        Public Property DATEEND As Date
 
         <Display(Name:="In Used")>
         Public Property ISINUSED As Boolean

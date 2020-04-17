@@ -1,7 +1,7 @@
 @ModelType model.SHIFT
 
 @Code
-    ViewData("Title") = "Edit"
+    ViewData("Title") = "Details"
 End Code
 
 @Html.Partial("_AdminMenuTop")
@@ -9,249 +9,178 @@ End Code
 <div class="body_center">
     @Html.Partial("_SubMenuLeft")
     <div class="bd_ctr_rightpart">
-        <div id="rtpt_box-01" class="ctr_rtpt_box">
 
-            @Using (Html.BeginForm())
+        @Using (Html.BeginForm())
 
-                @Html.AntiForgeryToken()
-                @<div class="form-horizontal">
-                    <div Class="inbox_haedtext">
-                        <span> Shift :: View</span>
-                    </div>
+            @Html.AntiForgeryToken()
+            @<div id="rtpt_box-01" class="ctr_rtpt_box" style="height:650px;">
+                <div Class="inbox_haedtext">
+                    <span> Shift :: Details</span>
+                </div>
 
-                    <div Class="ctr_rtpt_addbox special_rtpt_box bg_bd1_radius" style="float:left">
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Shift Code :</div>
+                @Html.HiddenFor(Function(Model) Model.CREATEDBY)
+                @Html.HiddenFor(Function(Model) Model.CREATEDON)
+                @Html.HiddenFor(Function(Model) Model.UPDATEDBY)
+                @Html.HiddenFor(Function(Model) Model.UPDATEDON)
+            
+                <div class="bg_bd1_radius shift_addpart" style="top: 54%;">
+                    <div class="addpt_box" style="">
+                        <div class="addpt_b_tt" style="">Shift Code:</div>
+                        @Html.TextBoxFor(Function(model) model.SHIFTID, New With {.maxlength = 20, .class = "all_input1 events_none"})
 
-                            @Html.TextBoxFor(Function(model) model.SHIFTID, New With {.Readonly = True, .class = "all_input1 events_none"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Remark :</div>
-
-                            @Html.TextBoxFor(Function(model) model.REMARK, New With {.maxlength = 100, .class = "all_input1 events_none"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Grace period for late in :</div>
-
-                            @Html.TextBoxFor(Function(model) model.GRACEPERIODFORLATEIN, New With {.class = "all_input1 events_none", .type = "number"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Grace period for early out :</div>
-
-                            @Html.TextBoxFor(Function(model) model.GRACEPERIODFOREARLYOUT, New With {.class = "all_input1 events_none", .type = "number"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">In Used :</div>
-
-                            @Html.CheckBoxFor(Function(model) model.ISINUSED, New With {.Disabled = True})
+                        <div Class="hlday_addbox_pt_error" style="padding: 0 300px 0 0;">
+                            @Html.ValidationMessageFor(Function(model) model.SHIFTID)
                         </div>
                     </div>
 
-                    <div Class="ctr_rtpt_addbox special_rtpt_box bg_bd1_radius" style="float:right">
-                        <!-- Monday -->
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Monday start time :</div>
-                            
-                            @Html.TextBoxFor(Function(model) model.FLEXISTARTTIMEFROM1, New With {.class = "all_input1 events_none", .type = "time"})
-                        </div>
+                    <div class="addpt_box" style="">
+                        <div class="addpt_b_tt" style="">Description:</div>
+                        @Html.TextBoxFor(Function(model) model.REMARK, New With {.maxlength = 100, .class = "all_input1 events_none"})
 
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Monday end time :</div>
-
-                            @Html.TextBoxFor(Function(model) model.FLEXISTARTTIMETO1, New With {.class = "all_input1 events_none", .type = "time"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Monday working hour(s) :</div>
-
-                            @Html.TextBoxFor(Function(model) model.WORKHOUR1, New With {.class = "all_input1 events_none", .type = "number"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Monday is off day :</div>
-
-                            @Html.CheckBoxFor(Function(model) model.ISOFFDAY1, New With {.Disabled = True})
+                        <div Class="hlday_addbox_pt_error" style="padding: 0 300px 0 0;">
+                            @Html.ValidationMessageFor(Function(model) model.REMARK)
                         </div>
                     </div>
-                    
-                    <div Class="ctr_rtpt_addbox special_rtpt_box bg_bd1_radius" style="float:left">
-                        <!-- Tuesday -->
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Tuesday start time :</div>
 
-                            @Html.TextBoxFor(Function(model) model.FLEXISTARTTIMEFROM2, New With {.class = "all_input1 events_none", .type = "time"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Tuesday end time :</div>
-
-                            @Html.TextBoxFor(Function(model) model.FLEXISTARTTIMETO2, New With {.class = "all_input1 events_none", .type = "time"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Tuesday working hour(s) :</div>
-
-                            @Html.TextBoxFor(Function(model) model.WORKHOUR2, New With {.class = "all_input1 events_none", .type = "number"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Tuesday is off day :</div>
-
-                            @Html.CheckBoxFor(Function(model) model.ISOFFDAY2, New With {.Disabled = True})
-                        </div>
-                    </div>
-                    
-                    <div Class="ctr_rtpt_addbox special_rtpt_box bg_bd1_radius" style="float:right">
-                        <!-- Wednesday -->
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Wednesday start time :</div>
-
-                            @Html.TextBoxFor(Function(model) model.FLEXISTARTTIMEFROM3, New With {.class = "all_input1 events_none", .type = "time"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Wednesday end time :</div>
-
-                            @Html.TextBoxFor(Function(model) model.FLEXISTARTTIMETO3, New With {.class = "all_input1 events_none", .type = "time"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Wednesday working hour(s) :</div>
-
-                            @Html.TextBoxFor(Function(model) model.WORKHOUR3, New With {.class = "all_input1 events_none", .type = "number"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Wednesday is off day :</div>
-
-                            @Html.CheckBoxFor(Function(model) model.ISOFFDAY3, New With {.Disabled = True})
-                        </div>
-                    </div>
-                    
-                    <div Class="ctr_rtpt_addbox special_rtpt_box bg_bd1_radius" style="float:left">
-                        <!-- Thursday -->
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Thursday start time :</div>
-
-                            @Html.TextBoxFor(Function(model) model.FLEXISTARTTIMEFROM4, New With {.class = "all_input1 events_none", .type = "time"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Thursday end time :</div>
-
-                            @Html.TextBoxFor(Function(model) model.FLEXISTARTTIMETO4, New With {.class = "all_input1 events_none", .type = "time"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Thursday working hour(s) :</div>
-
-                            @Html.TextBoxFor(Function(model) model.WORKHOUR4, New With {.class = "all_input1 events_none", .type = "number"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Thursday is off day :</div>
-
-                            @Html.CheckBoxFor(Function(model) model.ISOFFDAY4, New With {.Disabled = True})
-                        </div>
-                    </div>
-                    
-                    <div Class="ctr_rtpt_addbox special_rtpt_box bg_bd1_radius" style="float:right">
-                        <!-- Friday -->
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Friday start time :</div>
-
-                            @Html.TextBoxFor(Function(model) model.FLEXISTARTTIMEFROM5, New With {.class = "all_input1 events_none", .type = "time"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Friday end time :</div>
-
-                            @Html.TextBoxFor(Function(model) model.FLEXISTARTTIMETO5, New With {.class = "all_input1 events_none", .type = "time"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Friday working hour(s) :</div>
-
-                            @Html.TextBoxFor(Function(model) model.WORKHOUR5, New With {.class = "all_input1 events_none", .type = "number"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Friday is off day :</div>
-
-                            @Html.CheckBoxFor(Function(model) model.ISOFFDAY5, New With {.Disabled = True})
-                        </div>
-                    </div>
-                    
-                    <div Class="ctr_rtpt_addbox special_rtpt_box bg_bd1_radius" style="float:left">
-                        <!-- Saturday -->
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Saturday start time :</div>
-
-                            @Html.TextBoxFor(Function(model) model.FLEXISTARTTIMEFROM6, New With {.class = "all_input1 events_none", .type = "time"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Saturday end time :</div>
-
-                            @Html.TextBoxFor(Function(model) model.FLEXISTARTTIMETO6, New With {.class = "all_input1 events_none", .type = "time"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Saturday working hour(s) :</div>
-
-                            @Html.TextBoxFor(Function(model) model.WORKHOUR6, New With {.class = "all_input1 events_none", .type = "number"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Saturday is off day :</div>
-
-                            @Html.CheckBoxFor(Function(model) model.ISOFFDAY6, New With {.Disabled = True})
-                        </div>
-                    </div>
-                    
-                    <div Class="ctr_rtpt_addbox special_rtpt_box bg_bd1_radius" style="float:right">
-                        <!-- Sunday -->
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Sunday start time :</div>
-
-                            @Html.TextBoxFor(Function(model) model.FLEXISTARTTIMEFROM7, New With {.class = "all_input1 events_none", .type = "time"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Sunday end time :</div>
-
-                            @Html.TextBoxFor(Function(model) model.FLEXISTARTTIMETO7, New With {.class = "all_input1 events_none", .type = "time"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Sunday working hour(s) :</div>
-
-                            @Html.TextBoxFor(Function(model) model.WORKHOUR7, New With {.class = "all_input1 events_none", .type = "number"})
-                        </div>
-
-                        <div Class="rtpt_addbox_part">
-                            <div Class="rtpt_addbox_pt_tt">Sunday is off day :</div>
-
-                            @Html.CheckBoxFor(Function(model) model.ISOFFDAY7, New With {.Disabled = True})
-                        </div>
-                    </div>
+                    <div class="addpt_box" style="">
+                        <div class="addpt_b_tt" style="">Type:</div>
                         
-                    <div Class="rtpt_addbox_partbtn">
-                        <a href="@Url.Action("Shift", "Maintenance")">
+                        <select id="id-shift-type" class="addpt_b_input events_none" name="ISFLEXIHOUR" onchange="onChangeShiftType()" value="@model.ISFLEXIHOUR" disabled="true">
+                            @If(true = model.ISFLEXIHOUR) Then 
+                                @<option value="true" class="type_flexi_btn" selected>Flexi</option>
+                            Else
+                                @<option value="true" class="type_flexi_btn">Flexi</option>
+                            End If
+
+                            @If(false = model.ISFLEXIHOUR) Then 
+                                @<option value="false" class="type_narmal_btn" selected>Normal</option>
+                            Else
+                                @<option value="false" class="type_narmal_btn">Normal</option>
+                            End If
+                        </select>
+                        
+                    </div>
+
+                    <div class="addpt_box" style="margin:0 0;">
+                        <div class="addpt_b_tt" style=""></div>
+                        <div class="addpt_b_daybox" style="">
+                            <div class="b_dayb_inb events_none">Mon</div>
+                            <div class="b_dayb_inb events_none">Tue</div>
+                            <div class="b_dayb_inb events_none">Wed</div>
+                            <div class="b_dayb_inb events_none">Thu</div>
+                            <div class="b_dayb_inb events_none">Fri</div>
+                            <div class="b_dayb_inb events_none">Sat</div>
+                            <div class="b_dayb_inb events_none">Sun</div>
+                        </div>
+                    </div>
+
+                    <div class="addpt_box" style="margin:0 0;">
+                        <div class="addpt_b_tt" style="">Work Day</div>
+                        <div class="addpt_b_daybox" style="">
+                            <div class="b_dayb_inb events_none">
+                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY1, New With { .id = "id-is-workday-1", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(1)", .disabled = "true" })
+                            </div>
+                            <div class="b_dayb_inb events_none">
+                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY2, New With { .id = "id-is-workday-2", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(2)", .disabled = "true" })
+                            </div>
+                            <div class="b_dayb_inb events_none">
+                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY3, New With { .id = "id-is-workday-3", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(3)", .disabled = "true" })
+                            </div>
+                            <div class="b_dayb_inb events_none">
+                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY4, New With { .id = "id-is-workday-4", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(4)", .disabled = "true" })
+                            </div>
+                            <div class="b_dayb_inb events_none">
+                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY5, New With { .id = "id-is-workday-5", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(5)", .disabled = "true" })
+                            </div>
+                            <div class="b_dayb_inb events_none">
+                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY6, New With { .id = "id-is-workday-6", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(6)", .disabled = "true" })
+                            </div>
+                            <div class="b_dayb_inb events_none">
+                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY7, New With { .id = "id-is-workday-7", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(7)", .disabled = "true" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="addpt_box start_from_part" style="margin: 0 0;">
+                        <div class="addpt_b_tt" style="">Time In Start</div>
+                        <div class="addpt_b_daybox" style="">
+                            @Html.TextBoxFor(Function(model) model.TIMEINSTART1, New With { .id = "id-time-start-1", .class = "b_dayb_inb events_none", .type = "time" })
+                            @Html.TextBoxFor(Function(model) model.TIMEINSTART2, New With { .id = "id-time-start-2", .class = "b_dayb_inb events_none", .type = "time" })
+                            @Html.TextBoxFor(Function(model) model.TIMEINSTART3, New With { .id = "id-time-start-3", .class = "b_dayb_inb events_none", .type = "time" })
+                            @Html.TextBoxFor(Function(model) model.TIMEINSTART4, New With { .id = "id-time-start-4", .class = "b_dayb_inb events_none", .type = "time" })
+                            @Html.TextBoxFor(Function(model) model.TIMEINSTART5, New With { .id = "id-time-start-5", .class = "b_dayb_inb events_none", .type = "time" })
+                            @Html.TextBoxFor(Function(model) model.TIMEINSTART6, New With { .id = "id-time-start-6", .class = "b_dayb_inb events_none", .type = "time" })
+                            @Html.TextBoxFor(Function(model) model.TIMEINSTART7, New With { .id = "id-time-start-7", .class = "b_dayb_inb events_none", .type = "time" })
+                        </div>
+                    </div>
+
+                    <div id="id-row-time-end" class="addpt_box start_until_part" style="margin:0 0;">
+                        <div class="addpt_b_tt" style="">Time In End</div>
+                        <div class="addpt_b_daybox" style="">
+                            @Html.TextBoxFor(Function(model) model.TIMEINEND1, New With { .id = "id-time-end-1", .class = "b_dayb_inb events_none", .type = "time" })
+                            @Html.TextBoxFor(Function(model) model.TIMEINEND2, New With { .id = "id-time-end-2", .class = "b_dayb_inb events_none", .type = "time" })
+                            @Html.TextBoxFor(Function(model) model.TIMEINEND3, New With { .id = "id-time-end-3", .class = "b_dayb_inb events_none", .type = "time" })
+                            @Html.TextBoxFor(Function(model) model.TIMEINEND4, New With { .id = "id-time-end-4", .class = "b_dayb_inb events_none", .type = "time" })
+                            @Html.TextBoxFor(Function(model) model.TIMEINEND5, New With { .id = "id-time-end-5", .class = "b_dayb_inb events_none", .type = "time" })
+                            @Html.TextBoxFor(Function(model) model.TIMEINEND6, New With { .id = "id-time-end-6", .class = "b_dayb_inb events_none", .type = "time" })
+                            @Html.TextBoxFor(Function(model) model.TIMEINEND7, New With { .id = "id-time-end-7", .class = "b_dayb_inb events_none", .type = "time" })
+                        </div>
+                    </div>
+
+                    <div class="addpt_box" style="margin:0 0;">
+                        <div class="addpt_b_tt" style="">Working Hour</div>
+                        <div class="addpt_b_daybox" style="">
+                            @Html.TextBoxFor(Function(model) model.WORKHOUR1, New With { .id = "id-work-hour-1", .class = "b_dayb_inb events_none", .type = "number" })
+                            @Html.TextBoxFor(Function(model) model.WORKHOUR2, New With { .id = "id-work-hour-2", .class = "b_dayb_inb events_none", .type = "number" })
+                            @Html.TextBoxFor(Function(model) model.WORKHOUR3, New With { .id = "id-work-hour-3", .class = "b_dayb_inb events_none", .type = "number" })
+                            @Html.TextBoxFor(Function(model) model.WORKHOUR4, New With { .id = "id-work-hour-4", .class = "b_dayb_inb events_none", .type = "number" })
+                            @Html.TextBoxFor(Function(model) model.WORKHOUR5, New With { .id = "id-work-hour-5", .class = "b_dayb_inb events_none", .type = "number" })
+                            @Html.TextBoxFor(Function(model) model.WORKHOUR6, New With { .id = "id-work-hour-6", .class = "b_dayb_inb events_none", .type = "number" })
+                            @Html.TextBoxFor(Function(model) model.WORKHOUR7, New With { .id = "id-work-hour-7", .class = "b_dayb_inb events_none", .type = "number" })
+                        </div>
+                    </div>
+
+                    <div class="addpt_box" style="margin:10px 0;">
+                        <div class="addpt_b_tt" style="font-weight: bolder; width: 100%; left: unset; position: unset; text-align: left; }">Grace Period</div>
+                    </div>
+
+                    <div class="addpt_box" style="width:45%;">
+                        <div class="addpt_b_tt" style="">Late-in:</div>
+                        @Html.TextBoxFor(Function(model) model.GRACEPERIODFORLATEIN, New With {.class = "b_dayb_inb all_input1 events_none", .type = "number", .style = "width:100%;" })
+                    </div>
+
+                    <div class="addpt_box" style="width:45%;">
+                        <div class="addpt_b_tt" style="">Early Out:</div>
+                        @Html.TextBoxFor(Function(model) model.GRACEPERIODFOREARLYOUT, New With {.class = "b_dayb_inb all_input1 events_none", .type = "number", .style = "width:100%;" })
+                    </div>
+
+                    <div class="addpt_box" style="">
+                        <div class="addpt_b_tt" style="">In Used:</div>
+                        <select id="id-in-used" class="addpt_b_input events_none" name="ISINUSED" disabled="true">
+                            @If(true = model.ISINUSED) Then 
+                                @<option value="true" class="type_flexi_btn" selected>Yes</option>
+                            Else
+                                @<option value="true" class="type_flexi_btn">Yes</option>
+                            End If
+
+                            @If(false = model.ISINUSED) Then 
+                                @<option value="false" class="type_narmal_btn" selected>No</option>
+                            Else
+                                @<option value="false" class="type_narmal_btn">No</option>
+                            End If
+                        </select>
+                    </div>
+
+                    <div Class="footer_row_btn">
+                        <a href="@Url.Action("Index", "Shift")">
                             <div id="closebtn" Class="rtpt_closebtn filter1">
                                 Back to List
                             </div>
                         </a>
                     </div>
                 </div>
-
-            End Using
-
-        </div>
+            </div>
+        End Using
     </div>
 </div>
 
@@ -268,7 +197,42 @@ End Code
                 document.forms[0].submit();
                 return false;
             });
+
+            //refresh disabled
+            for(var i = 1; i < 8; i++)
+                onChangeIsWorkDay(i);
+
+            //refresh display none
+            onChangeShiftType();
         });
+
+        function onChangeIsWorkDay(num) {
+            var tempNum = (num === undefined || num === null || num === "") ? 1: num;
+
+            if(document.getElementById("id-is-workday-" + tempNum).checked) {
+                $("#id-time-start-" + tempNum).attr("disabled", false);
+                $("#id-time-end-" + tempNum).attr("disabled", false);
+                $("#id-work-hour-" + tempNum).attr("disabled", false);
+            } else {
+                $("#id-time-start-" + tempNum).attr("disabled", "disabled");
+                $("#id-time-end-" + tempNum).attr("disabled", "disabled");
+                $("#id-work-hour-" + tempNum).attr("disabled", "disabled");
+
+                $("#id-time-start-" + tempNum).val("");
+                $("#id-time-end-" + tempNum).val("");
+                $("#id-work-hour-" + tempNum).val("");
+            }
+        }
+
+        function onChangeShiftType() {
+            var shiftType = document.getElementById("id-shift-type").value;
+
+            if(shiftType === "false") {
+                $("#id-row-time-end").css("display", "none");
+            } else {
+                $("#id-row-time-end").css("display", "");
+            }
+        }
 
         //Nav Top Menu Part1
         $("#hdr_btn4").addClass("pt2_b_btneff");

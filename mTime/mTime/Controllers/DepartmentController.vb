@@ -11,10 +11,16 @@ Namespace Controllers
         Private db As New model.MasterDB
 
         Function Index() As ActionResult
-            Dim sortedList = db.DEPARTMENT.SortBy("DEPARTMENTID").ToList
+
+            db.
+
+            Dim sortedList = From d In db.DEPARTMENT
+                             Order By d.DEPARTMENTNAME Ascending, d.DIVISIONNAME Ascending, d.UNITNAME Ascending
+                             Select d
 
             '# Return updated dataset
             Return View(sortedList)
+
         End Function
 
         Function Create() As ActionResult
@@ -27,18 +33,18 @@ Namespace Controllers
 
             Dim blnIsDuplicated As Boolean
 
-            'blnIsDuplicated = db.Department.Any(Function(model) model.DEPARTMENTNAME = department.DEPARTMENTNAME)
+            blnIsDuplicated = db.DEPARTMENT.Any(Function(model) model.DEPARTMENTNAME = department.DEPARTMENTNAME And
+                                                    model.DIVISIONNAME = department.DIVISIONNAME And
+                                                    model.UNITNAME = department.UNITNAME)
 
-            'If blnIsDuplicated = True Then
-            '    ModelState.AddModelError("DEPARTMENTNAME", "Title is duplicated")
-            'Else
-            '    If (ValidateURL(HyperLink.URL)) = False Then
-            '        ModelState.AddModelError("URL", "URL is invalid")
-            '    End If
-            'End If
+
+            If blnIsDuplicated = True Then
+                ModelState.AddModelError("DEPARTMENTNAME", "Department Name is duplicated")
+            End If
 
             If ModelState.IsValid Then
 
+                department.ISINUSED = True
                 department.CREATEDON = Now
                 department.CREATEDBY = "Nick"
 
@@ -46,17 +52,17 @@ Namespace Controllers
                 db.SaveChanges()
 
                 ViewBag.Result = "OK"
-                'Return RedirectToRoute("HyperlinkList")
+
                 Return View()
 
             End If
 
-            Return View("Department")
+            Return View(department)
 
         End Function
 
         ' GET : Edit-Department
-        Function Edit(ByVal id As String) As ActionResult
+        Function Edit(ByVal id As Integer) As ActionResult
 
             If IsNothing(id) Then
                 Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
@@ -74,34 +80,35 @@ Namespace Controllers
 
         <HttpPost>
         <ValidateAntiForgeryToken>
-        Function Edit(<Bind(Include:="DEPARTMENTID, DEPARTMENTNAME, ISINUSED, CREATEDBY, CREATEDON, UPDAEDBY, UPDATEDBY")> ByVal DEPARTMENTItem As DEPARTMENT) As ActionResult
+        Function Edit(<Bind(Include:="DEPARTMENTID, DEPARTMENTNAME, DIVISIONNAME, UNITNAME, ISINUSED, CREATEDBY, CREATEDON, UPDAEDBY, UPDATEDBY")> ByVal Department As DEPARTMENT) As ActionResult
 
-            'If (ValidateURL(hyperlink.URL)) = False Then
-            '    ModelState.AddModelError("URL", "URL is invalid")
-            'End If
+            blnIsDuplicated = db.DEPARTMENT.Any(Function(model) model.DEPARTMENTNAME = Department.DEPARTMENTNAME And
+                                          model.DIVISIONNAME = Department.DIVISIONNAME And
+                                                    model.UNITNAME = Department.UNITNAME)
+
+            If blnIsDuplicated = True Then
+                ModelState.AddModelError("DEPARTMENTNAME", "Department Name is duplicated")
+            End If
 
             If ModelState.IsValid Then
 
-                DEPARTMENTItem.UPDATEDBY = "NICK"
-                DEPARTMENTItem.UPDATEDON = Now
+                Department.UPDATEDBY = "NICK"
+                Department.UPDATEDON = Now
 
-                db.Entry(DEPARTMENTItem).State = System.Data.Entity.EntityState.Modified
+                db.Entry(Department).State = System.Data.Entity.EntityState.Modified
                 db.SaveChanges()
 
-                ''# Return to Index 
-                'Return RedirectToRoute("HyperlinkList")
-
                 ViewBag.Result = "OK"
-                'Return RedirectToRoute("HyperlinkList")
-                Return View(DEPARTMENTItem)
+
+                Return View()
 
             End If
 
-            Return View("Department")
+            Return View(Department)
         End Function
 
         ' GET : Delete-Department
-        Function Delete(ByVal id As String) As ActionResult
+        Function Delete(ByVal id As Integer) As ActionResult
 
             If IsNothing(id) Then
                 Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
@@ -120,7 +127,7 @@ Namespace Controllers
         <HttpPost>
         <ActionName("Delete")>
         <ValidateAntiForgeryToken>
-        Function DeleteConfirmed(ByVal id As String) As ActionResult
+        Function DeleteConfirmed(ByVal id As Integer) As ActionResult
 
             Dim department As model.DEPARTMENT = db.DEPARTMENT.Find(id)
             db.DEPARTMENT.Remove(department)

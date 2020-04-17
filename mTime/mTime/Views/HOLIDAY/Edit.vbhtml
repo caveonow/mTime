@@ -29,18 +29,18 @@ End Code
                         </div>
 
                         <div class="rtpt_addbox_part">
-                            @Html.LabelFor(Function(model) model.FROM, htmlAttributes:=New With {.class = "rtpt_addbox_pt_tt"})
-                            @Html.EditorFor(Function(model) model.FROM, New With {.htmlAttributes = New With {.id = "datePickerFrom", .class = "all_input1"}})
+                            @Html.LabelFor(Function(model) model.DATESTART, htmlAttributes:=New With {.class = "rtpt_addbox_pt_tt"})
+                            @Html.EditorFor(Function(model) model.DATESTART, New With {.htmlAttributes = New With {.id = "datePickerFrom", .class = "all_input1"}})
                             <div Class="rtpt_addbox_pt_error">
-                                @Html.ValidationMessageFor(Function(model) model.FROM)
+                                @Html.ValidationMessageFor(Function(model) model.DATESTART)
                             </div>
                         </div>
 
                         <div class="rtpt_addbox_part">
-                            @Html.LabelFor(Function(model) model.UNTIL, htmlAttributes:=New With {.class = "rtpt_addbox_pt_tt"})
-                            @Html.EditorFor(Function(model) model.UNTIL, New With {.htmlAttributes = New With {.id = "datePickerUntil", .class = "all_input1"}})
+                            @Html.LabelFor(Function(model) model.DATEEND, htmlAttributes:=New With {.class = "rtpt_addbox_pt_tt"})
+                            @Html.EditorFor(Function(model) model.DATEEND, New With {.htmlAttributes = New With {.id = "datePickerUntil", .class = "all_input1"}})
                             <div Class="rtpt_addbox_pt_error">
-                                @Html.ValidationMessageFor(Function(model) model.UNTIL)
+                                @Html.ValidationMessageFor(Function(model) model.DATEEND)
                             </div>
                         </div>
 
