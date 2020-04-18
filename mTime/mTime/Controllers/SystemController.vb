@@ -87,7 +87,7 @@ Namespace Controllers
             End If
 
             If ModelState.IsValid Then
-                UploadImg(postedFile)
+                UploadImg(COMPANYItem, postedFile, Nothing, Nothing)
 
                 db.Entry(COMPANYItem).State = System.Data.Entity.EntityState.Modified
                 COMPANYItem.STARTEDON = Today()
@@ -103,22 +103,51 @@ Namespace Controllers
 
         ' GET: img
         <HttpPost>
-        Public Function UploadImg(ByVal postedFile As HttpPostedFileBase) As ActionResult
+        Public Function UploadImg(ByVal Company As model.COMPANY,
+                                  ByVal postedFile1 As HttpPostedFileBase,
+                                  ByVal postedFile2 As HttpPostedFileBase,
+                                  ByVal postedFile3 As HttpPostedFileBase) As ActionResult
 
-            If postedFile IsNot Nothing Then
+            If postedFile1 IsNot Nothing Then
                 'Dim fileName As String = path.GetFileName(postedFile.FileName)
-                Dim fileName As String = "Company Logo.jpg"
-                Dim path As String = Server.MapPath("~/img/")
+                Dim fileName1 As String = "Company Logo.jpg"
+                Dim path1 As String = Server.MapPath("~/img/")
 
-                If Not Directory.Exists(path) Then
-                    Directory.CreateDirectory(path)
+                If Not Directory.Exists(path1) Then
+                    Directory.CreateDirectory(path1)
                 End If
 
-                postedFile.SaveAs(path & fileName)
-                ViewBag.ImageUrl = "img/" & fileName
+                postedFile1.SaveAs(path1 & fileName1)
+                ViewBag.ImageUrl = "img/" & fileName1
+
+
+
+                'Dim fileName As String = path.GetFileName(postedFile.FileName)
+                Dim fileName2 As String = "Company Header.jpg"
+                Dim path2 As String = Server.MapPath("~/img/")
+
+                If Not Directory.Exists(path2) Then
+                    Directory.CreateDirectory(path2)
+                End If
+
+                postedFile2.SaveAs(path2 & fileName2)
+                ViewBag.ImageUrl = "img/" & fileName2
+
+
+
+                'Dim fileName As String = path.GetFileName(postedFile.FileName)
+                Dim fileName3 As String = "Home Header.jpg"
+                Dim path3 As String = Server.MapPath("~/img/")
+
+                If Not Directory.Exists(path3) Then
+                    Directory.CreateDirectory(path3)
+                End If
+
+                postedFile3.SaveAs(path3 & fileName3)
+                ViewBag.ImageUrl = "img/" & fileName3
             End If
 
-            Return View()
+            Return View("Index")
         End Function
 
 

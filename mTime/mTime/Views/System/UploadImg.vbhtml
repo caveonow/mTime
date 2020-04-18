@@ -1,12 +1,12 @@
 ﻿@ModelType mTime.model.COMPANY
 
-@Using (Html.BeginForm("UploadImg", "System", method:=FormMethod.Post, New With {.enctype = "multipart/form-data"}))
+@Using (Html.BeginForm("UploadImg", "System", FormMethod.Post, New With {.enctype = "multipart/form-data"}))
     @Html.AntiForgeryToken()
-
-    @Html.HiddenFor(Function(Model) Model.COMPANYID)
-    @Html.HiddenFor(Function(Model) Model.COMPANYLOGOPATH)
-
+    
     @<div>
+        @Html.HiddenFor(Function(Model) Model.COMPANYID)
+        @Html.HiddenFor(Function(Model) Model.COMPANYLOGOPATH)
+
         <input type="file" name="postedFile" accept=".png" class="fa fa-folder-open pt1_b2_folderbtn filter1" />
     </div>
 End Using
