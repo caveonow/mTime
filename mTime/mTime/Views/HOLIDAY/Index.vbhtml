@@ -46,10 +46,10 @@ End Code
                     <thead>
                         <tr>
                             <th style="width: 90px;" />
-                            <th style="width: 90px;">Name</th>
+                            <th>Name</th>
                             <th style="width: 150px;">Start Date</th>
                             <th style="width: 150px;">End Date</th>
-                            <th>In Used</th>
+                            <th style="width: 90px;">In Used</th>
                         </tr>
                     </thead>
 

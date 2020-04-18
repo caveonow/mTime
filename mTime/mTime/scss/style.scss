@@ -127,7 +127,7 @@ input {
 }
 
 .events_none {
-    background-color: #ddd !important;
+    background-color: #ffffdd !important;
     border: 1px #aaa solid;
     pointer-events: none !important;
 }
@@ -1737,11 +1737,11 @@ td {
                     height: initial;
                     float: left;
                     margin: 0 0 10px 0;
-                    padding: 0 0 0 160px;
+                    padding: 0 0 0 190px;
                     position: relative;
 
                     .rtpt_addbox_pt_tt {
-                        width: 150px;
+                        width: 180px;
                         height: 30px;
                         text-align: right;
                         position: absolute;
@@ -2299,6 +2299,7 @@ td {
     }
 }
 
+
 .hlday_addbox_pt_error {
     width: 100%;
     line-height: 20px;
@@ -2306,6 +2307,15 @@ td {
     color: #ff0000;
     font-size: 12px;
     text-align: right;
+}
+
+.shift_addbox_pt_error {
+    width: 100px;
+    line-height: 20px;
+    float: left;
+    color: #ff0000;
+    font-size: 12px;
+    text-align: center;
 }
 
 tbody {
@@ -3104,7 +3114,7 @@ a, a:hover {
 }
 
 .shift_addpart {
-    width: 700px;
+    width: 875px;
     height: initial;
     padding: 10px;
     position: absolute;
@@ -3145,11 +3155,11 @@ a, a:hover {
 
         .addpt_b_daybox {
             width: 100%;
-            height: 30px;
+            min-height: 30px;
             float: left;
 
             .b_dayb_inb {
-                width: 75px;
+                width: 100px;
                 height: 30px;
                 float: left;
                 line-height: 30px;
@@ -3164,7 +3174,11 @@ a, a:hover {
     }
 }
 
-
+.b_dayb_inb_msg {
+    width: 99px;
+    height: initial;
+    float: left;
+}
 // Triangle
 .arrow_up {
     width: 0;

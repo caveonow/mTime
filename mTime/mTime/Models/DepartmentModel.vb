@@ -2,13 +2,14 @@
 
 Namespace model
 
-    Public Class DEPARTMENTEMPLOYEE
+    'Public Class DEPARTMENTSTAFF
 
-        Public Property TOTALCOUNT As Integer
+    '    Public Property DEPARTMENT As List(Of DEPARTMENT)
+    '    Public Property DEPARTMENTSTAFFCOUNT As Integer
+    '    Public Property DIVISIONSTAFFCOUNT As Integer
+    '    Public Property UNITSTAFFCOUNT As Integer
 
-        Public Property DEPARMENT As List(Of DEPARTMENT)
-
-    End Class
+    'End Class
 
     Public Class DEPARTMENT
 

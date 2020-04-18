@@ -26,18 +26,18 @@ End Code
                 <div class="bg_bd1_radius shift_addpart" style="top: 54%;">
                     <div class="addpt_box" style="">
                         <div class="addpt_b_tt" style="">Shift Code:</div>
-                        @Html.TextBoxFor(Function(model) model.SHIFTID, New With {.maxlength = 20, .class = "all_input1 events_none"})
+                        @Html.TextBoxFor(Function(model) model.SHIFTID, New With {.maxlength = 20, .class = "addpt_b_input events_none"})
 
-                        <div Class="hlday_addbox_pt_error" style="padding: 0 300px 0 0;">
+                        <div Class="hlday_addbox_pt_error" style="padding: 0 475px 0 0;">
                             @Html.ValidationMessageFor(Function(model) model.SHIFTID)
                         </div>
                     </div>
 
                     <div class="addpt_box" style="">
                         <div class="addpt_b_tt" style="">Description:</div>
-                        @Html.TextBoxFor(Function(model) model.REMARK, New With {.maxlength = 100, .class = "all_input1 events_none"})
+                        @Html.TextBoxFor(Function(model) model.REMARK, New With {.maxlength = 100, .class = "addpt_b_input events_none"})
 
-                        <div Class="hlday_addbox_pt_error" style="padding: 0 300px 0 0;">
+                        <div Class="hlday_addbox_pt_error" style="padding: 0 475px 0 0;">
                             @Html.ValidationMessageFor(Function(model) model.REMARK)
                         </div>
                     </div>
@@ -139,42 +139,21 @@ End Code
                             @Html.TextBoxFor(Function(model) model.WORKHOUR7, New With { .id = "id-work-hour-7", .class = "b_dayb_inb events_none", .type = "number" })
                         </div>
                     </div>
-
-                    <div class="addpt_box" style="margin:10px 0;">
-                        <div class="addpt_b_tt" style="font-weight: bolder; width: 100%; left: unset; position: unset; text-align: left; }">Grace Period</div>
-                    </div>
-
-                    <div class="addpt_box" style="width:45%;">
-                        <div class="addpt_b_tt" style="">Late-in:</div>
-                        @Html.TextBoxFor(Function(model) model.GRACEPERIODFORLATEIN, New With {.class = "b_dayb_inb all_input1 events_none", .type = "number", .style = "width:100%;" })
-                    </div>
-
-                    <div class="addpt_box" style="width:45%;">
-                        <div class="addpt_b_tt" style="">Early Out:</div>
-                        @Html.TextBoxFor(Function(model) model.GRACEPERIODFOREARLYOUT, New With {.class = "b_dayb_inb all_input1 events_none", .type = "number", .style = "width:100%;" })
-                    </div>
+                                       
 
                     <div class="addpt_box" style="">
                         <div class="addpt_b_tt" style="">In Used:</div>
-                        <select id="id-in-used" class="addpt_b_input events_none" name="ISINUSED" disabled="true">
-                            @If(true = model.ISINUSED) Then 
-                                @<option value="true" class="type_flexi_btn" selected>Yes</option>
-                            Else
-                                @<option value="true" class="type_flexi_btn">Yes</option>
-                            End If
 
-                            @If(false = model.ISINUSED) Then 
-                                @<option value="false" class="type_narmal_btn" selected>No</option>
-                            Else
-                                @<option value="false" class="type_narmal_btn">No</option>
-                            End If
-                        </select>
+                        <div class="checkinbox">
+                            @Html.CheckBoxFor(Function(model) model.ISINUSED, New With {.Disabled = True, .class = "check-box"})
+                        </div>
+
                     </div>
 
                     <div Class="footer_row_btn">
                         <a href="@Url.Action("Index", "Shift")">
                             <div id="closebtn" Class="rtpt_closebtn filter1">
-                                Back to List
+                                Cancel
                             </div>
                         </a>
 

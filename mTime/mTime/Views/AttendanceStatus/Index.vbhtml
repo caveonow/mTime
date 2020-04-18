@@ -33,19 +33,19 @@ End Code
                     <tbody>
                         @For Each item In Model
                             @<tr>
-                                <td>
-                                    <a href="@Url.Action("Edit", "AttendanceStatus", New With {.id = item.ATTENDANCESTATUSID})">
-                                        <div id="editbtn" class="fa fa-pencil-square-o btn_edit"></div>
-                                    </a>
+    <td>
+        <a href="@Url.Action("Edit", "AttendanceStatus", New With {.id = item.ATTENDANCESTATUSID})">
+            <div id="editbtn" class="fa fa-pencil-square-o btn_edit"></div>
+        </a>
 
-                                    <a href="@Url.Action("Delete", "AttendanceStatus", New With {.id = item.ATTENDANCESTATUSID})">
-                                        <div id="" class="fa fa-trash-o btn_trash"></div>
-                                    </a>
-                                </td>
-                                <td>@item.ATTENDANCESTATUSID</td>
-                                <td>@item.DESCRIPTION</td>                           
-                                <td style="padding: 0 5px;"><input type="checkbox" name="isInUsed" checked=@item.IsInUsed disabled="true" /> </td>
-                            </tr>
+        <a href="@Url.Action("Delete", "AttendanceStatus", New With {.id = item.ATTENDANCESTATUSID})">
+            <div id="" class="fa fa-trash-o btn_trash"></div>
+        </a>
+    </td>
+    <td>@item.ATTENDANCESTATUSID</td>
+    <td>@item.DESCRIPTION</td>
+    <td style="padding: 0 5px;"><input type="checkbox" name="isInUsed" checked=@item.IsInUsed onclick="return false" /> </td>
+</tr>
                         Next
                     </tbody>
                 </table>

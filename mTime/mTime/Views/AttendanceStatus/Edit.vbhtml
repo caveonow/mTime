@@ -27,7 +27,7 @@ End Code
                         <span> Attendance Status :: Edit</span>
                     </div>
 
-                    <div Class="ctr_rtpt_addbox">
+                    <div Class="ctr_rtpt_addbox bg_bd1_radius">
                         <div Class="rtpt_addbox_part">
                             <div Class="rtpt_addbox_pt_tt">Attendance Status Code :</div>
 

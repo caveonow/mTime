@@ -12,14 +12,34 @@ Namespace Controllers
 
         Function Index() As ActionResult
 
-            db.
 
-            Dim sortedList = From d In db.DEPARTMENT
-                             Order By d.DEPARTMENTNAME Ascending, d.DIVISIONNAME Ascending, d.UNITNAME Ascending
-                             Select d
+            Dim departmentStaffList = (From d In db.DEPARTMENT
+                                       Join s In db.STAFF
+                                          On s.DEPARTMENTID Equals d.DEPARTMENTID
+                                       Select d.DEPARTMENTID, d.DEPARTMENTNAME, d.DIVISIONNAME, d.UNITNAME)
+
+            Dim departmentList = (From d In db.DEPARTMENT
+                                  Order By d.DEPARTMENTNAME Ascending, d.DIVISIONNAME Ascending, d.UNITNAME Ascending
+                                  Select d.DEPARTMENTID,
+                                      d.DEPARTMENTNAME,
+                                        DEPARTMENTSTAFFCOUNT =
+                                      (From ds In departmentStaffList
+                                       Where ds.DEPARTMENTNAME = d.DEPARTMENTNAME
+                                       Select ds.DEPARTMENTID).Count(),
+                                      d.DIVISIONNAME,
+                                        DIVISIONSTAFFCOUNT =
+                                      (From ds In departmentStaffList
+                                       Where ds.DEPARTMENTNAME = d.DEPARTMENTNAME And ds.DIVISIONNAME = d.DIVISIONNAME
+                                       Select ds.DEPARTMENTID).Count(),
+                                        d.UNITNAME,
+                                      UNITSTAFFCOUNT =
+                                      (From ds In departmentStaffList
+                                       Where ds.DEPARTMENTID = d.DEPARTMENTID
+                                       Select ds.DEPARTMENTID).Count())
+
 
             '# Return updated dataset
-            Return View(sortedList)
+            Return View(departmentList)
 
         End Function
 

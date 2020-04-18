@@ -8,6 +8,7 @@ End Code
 
 <div class="body_center">
     @Html.Partial("_SubMenuLeft")
+   
     <div class="bd_ctr_rightpart">
 
         @Using (Html.BeginForm())
@@ -24,46 +25,47 @@ End Code
                 @Html.HiddenFor(Function(Model) Model.UPDATEDON)
             
                 <div class="bg_bd1_radius shift_addpart" style="top: 54%;">
-                    <div class="addpt_box" style="">
-                        <div class="addpt_b_tt" style="">Shift Code:</div>
-                        @Html.TextBoxFor(Function(model) model.SHIFTID, New With {.maxlength = 20, .class = "all_input1"})
 
-                        <div Class="hlday_addbox_pt_error" style="padding: 0 300px 0 0;">
+                    <div class="addpt_box">
+                        <div class="addpt_b_tt">Shift Code:</div>
+                        @Html.TextBoxFor(Function(model) model.SHIFTID, New With {.maxlength = 20, .class = "addpt_b_input events_none"})
+
+                        <div Class="hlday_addbox_pt_error" style="padding: 0 475px 0 0;">
                             @Html.ValidationMessageFor(Function(model) model.SHIFTID)
                         </div>
                     </div>
 
-                    <div class="addpt_box" style="">
-                        <div class="addpt_b_tt" style="">Description:</div>
-                        @Html.TextBoxFor(Function(model) model.REMARK, New With {.maxlength = 100, .class = "all_input1"})
+                    <div class="addpt_box">
+                        <div class="addpt_b_tt">Description:</div>
+                        @Html.TextBoxFor(Function(model) model.REMARK, New With {.maxlength = 100, .class = "addpt_b_input"})
 
-                        <div Class="hlday_addbox_pt_error" style="padding: 0 300px 0 0;">
+                        <div Class="hlday_addbox_pt_error" style="padding: 0 475px 0 0;">
                             @Html.ValidationMessageFor(Function(model) model.REMARK)
                         </div>
                     </div>
 
-                    <div class="addpt_box" style="">
-                        <div class="addpt_b_tt" style="">Type:</div>
-                        
+                    <div class="addpt_box">
+                        <div class="addpt_b_tt">Type:</div>
+
                         <select id="id-shift-type" class="addpt_b_input" name="ISFLEXIHOUR" onchange="onChangeShiftType()">
-                            @If(true = model.ISFLEXIHOUR) Then 
+                            @If (true = model.ISFLEXIHOUR) Then
                                 @<option value="true" class="type_flexi_btn" selected>Flexi</option>
                             Else
                                 @<option value="true" class="type_flexi_btn">Flexi</option>
                             End If
 
-                            @If(false = model.ISFLEXIHOUR) Then 
+                            @If (false = model.ISFLEXIHOUR) Then
                                 @<option value="false" class="type_narmal_btn" selected>Normal</option>
                             Else
                                 @<option value="false" class="type_narmal_btn">Normal</option>
                             End If
                         </select>
-                        
+
                     </div>
 
                     <div class="addpt_box" style="margin:0 0;">
-                        <div class="addpt_b_tt" style=""></div>
-                        <div class="addpt_b_daybox" style="">
+                        <div class="addpt_b_tt"></div>
+                        <div class="addpt_b_daybox">
                             <div class="b_dayb_inb events_none">Mon</div>
                             <div class="b_dayb_inb events_none">Tue</div>
                             <div class="b_dayb_inb events_none">Wed</div>
@@ -75,72 +77,112 @@ End Code
                     </div>
 
                     <div class="addpt_box" style="margin:0 0;">
-                        <div class="addpt_b_tt" style="">Work Day</div>
-                        <div class="addpt_b_daybox" style="">
+                        <div class="addpt_b_tt">Work Day</div>
+                        <div class="addpt_b_daybox">
                             <div class="b_dayb_inb">
-                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY1, New With { .id = "id-is-workday-1", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(1)" })
+                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY1, New With {.id = "id-is-workday-1", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(1)"})
                             </div>
                             <div class="b_dayb_inb">
-                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY2, New With { .id = "id-is-workday-2", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(2)" })
+                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY2, New With {.id = "id-is-workday-2", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(2)"})
                             </div>
                             <div class="b_dayb_inb">
-                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY3, New With { .id = "id-is-workday-3", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(3)" })
+                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY3, New With {.id = "id-is-workday-3", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(3)"})
                             </div>
                             <div class="b_dayb_inb">
-                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY4, New With { .id = "id-is-workday-4", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(4)" })
+                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY4, New With {.id = "id-is-workday-4", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(4)"})
                             </div>
                             <div class="b_dayb_inb">
-                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY5, New With { .id = "id-is-workday-5", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(5)" })
+                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY5, New With {.id = "id-is-workday-5", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(5)"})
                             </div>
                             <div class="b_dayb_inb">
-                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY6, New With { .id = "id-is-workday-6", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(6)" })
+                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY6, New With {.id = "id-is-workday-6", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(6)"})
                             </div>
                             <div class="b_dayb_inb">
-                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY7, New With { .id = "id-is-workday-7", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(7)" })
+                                @Html.CheckBoxFor(Function(model) model.ISWORKDAY7, New With {.id = "id-is-workday-7", .class = "b_dayb_inb", .style = "margin: 7px 41px 7px 41px;", .onchange = "onChangeIsWorkDay(7)"})
                             </div>
                         </div>
                     </div>
 
                     <div class="addpt_box start_from_part" style="margin: 0 0;">
-                        <div class="addpt_b_tt" style="">Time In Start</div>
-                        <div class="addpt_b_daybox" style="">
-                            @Html.TextBoxFor(Function(model) model.TIMEINSTART1, New With { .id = "id-time-start-1", .class = "b_dayb_inb", .type = "time" })
-                            @Html.TextBoxFor(Function(model) model.TIMEINSTART2, New With { .id = "id-time-start-2", .class = "b_dayb_inb", .type = "time" })
-                            @Html.TextBoxFor(Function(model) model.TIMEINSTART3, New With { .id = "id-time-start-3", .class = "b_dayb_inb", .type = "time" })
-                            @Html.TextBoxFor(Function(model) model.TIMEINSTART4, New With { .id = "id-time-start-4", .class = "b_dayb_inb", .type = "time" })
-                            @Html.TextBoxFor(Function(model) model.TIMEINSTART5, New With { .id = "id-time-start-5", .class = "b_dayb_inb", .type = "time" })
-                            @Html.TextBoxFor(Function(model) model.TIMEINSTART6, New With { .id = "id-time-start-6", .class = "b_dayb_inb", .type = "time" })
-                            @Html.TextBoxFor(Function(model) model.TIMEINSTART7, New With { .id = "id-time-start-7", .class = "b_dayb_inb", .type = "time" })
+                        <div class="addpt_b_tt">Time In Start</div>
+                        <div class="addpt_b_daybox">
+                            @Html.TextBoxFor(Function(model) model.TIMEINSTART1, New With {.id = "id-time-start-1", .class = "b_dayb_inb", .type = "time"})
+                            @Html.TextBoxFor(Function(model) model.TIMEINSTART2, New With {.id = "id-time-start-2", .class = "b_dayb_inb", .type = "time"})
+                            @Html.TextBoxFor(Function(model) model.TIMEINSTART3, New With {.id = "id-time-start-3", .class = "b_dayb_inb", .type = "time"})
+                            @Html.TextBoxFor(Function(model) model.TIMEINSTART4, New With {.id = "id-time-start-4", .class = "b_dayb_inb", .type = "time"})
+                            @Html.TextBoxFor(Function(model) model.TIMEINSTART5, New With {.id = "id-time-start-5", .class = "b_dayb_inb", .type = "time"})
+                            @Html.TextBoxFor(Function(model) model.TIMEINSTART6, New With {.id = "id-time-start-6", .class = "b_dayb_inb", .type = "time"})
+                            @Html.TextBoxFor(Function(model) model.TIMEINSTART7, New With {.id = "id-time-start-7", .class = "b_dayb_inb", .type = "time"})
                         </div>
                     </div>
 
                     <div id="id-row-time-end" class="addpt_box start_until_part" style="margin:0 0;">
-                        <div class="addpt_b_tt" style="">Time In End</div>
-                        <div class="addpt_b_daybox" style="">
-                            @Html.TextBoxFor(Function(model) model.TIMEINEND1, New With { .id = "id-time-end-1", .class = "b_dayb_inb", .type = "time" })
-                            @Html.TextBoxFor(Function(model) model.TIMEINEND2, New With { .id = "id-time-end-2", .class = "b_dayb_inb", .type = "time" })
-                            @Html.TextBoxFor(Function(model) model.TIMEINEND3, New With { .id = "id-time-end-3", .class = "b_dayb_inb", .type = "time" })
-                            @Html.TextBoxFor(Function(model) model.TIMEINEND4, New With { .id = "id-time-end-4", .class = "b_dayb_inb", .type = "time" })
-                            @Html.TextBoxFor(Function(model) model.TIMEINEND5, New With { .id = "id-time-end-5", .class = "b_dayb_inb", .type = "time" })
-                            @Html.TextBoxFor(Function(model) model.TIMEINEND6, New With { .id = "id-time-end-6", .class = "b_dayb_inb", .type = "time" })
-                            @Html.TextBoxFor(Function(model) model.TIMEINEND7, New With { .id = "id-time-end-7", .class = "b_dayb_inb", .type = "time" })
+                        <div class="addpt_b_tt">Time In End</div>
+                        <div class="addpt_b_daybox">
+                            @Html.TextBoxFor(Function(model) model.TIMEINEND1, New With {.id = "id-time-end-1", .class = "b_dayb_inb", .type = "time"})
+                            @Html.TextBoxFor(Function(model) model.TIMEINEND2, New With {.id = "id-time-end-2", .class = "b_dayb_inb", .type = "time"})
+                            @Html.TextBoxFor(Function(model) model.TIMEINEND3, New With {.id = "id-time-end-3", .class = "b_dayb_inb", .type = "time"})
+                            @Html.TextBoxFor(Function(model) model.TIMEINEND4, New With {.id = "id-time-end-4", .class = "b_dayb_inb", .type = "time"})
+                            @Html.TextBoxFor(Function(model) model.TIMEINEND5, New With {.id = "id-time-end-5", .class = "b_dayb_inb", .type = "time"})
+                            @Html.TextBoxFor(Function(model) model.TIMEINEND6, New With {.id = "id-time-end-6", .class = "b_dayb_inb", .type = "time"})
+                            @Html.TextBoxFor(Function(model) model.TIMEINEND7, New With {.id = "id-time-end-7", .class = "b_dayb_inb", .type = "time"})
                         </div>
                     </div>
 
                     <div class="addpt_box" style="margin:0 0;">
-                        <div class="addpt_b_tt" style="">Working Hour</div>
-                        <div class="addpt_b_daybox" style="">
-                            @Html.TextBoxFor(Function(model) model.WORKHOUR1, New With { .id = "id-work-hour-1", .class = "b_dayb_inb", .type = "number" })
-                            @Html.TextBoxFor(Function(model) model.WORKHOUR2, New With { .id = "id-work-hour-2", .class = "b_dayb_inb", .type = "number" })
-                            @Html.TextBoxFor(Function(model) model.WORKHOUR3, New With { .id = "id-work-hour-3", .class = "b_dayb_inb", .type = "number" })
-                            @Html.TextBoxFor(Function(model) model.WORKHOUR4, New With { .id = "id-work-hour-4", .class = "b_dayb_inb", .type = "number" })
-                            @Html.TextBoxFor(Function(model) model.WORKHOUR5, New With { .id = "id-work-hour-5", .class = "b_dayb_inb", .type = "number" })
-                            @Html.TextBoxFor(Function(model) model.WORKHOUR6, New With { .id = "id-work-hour-6", .class = "b_dayb_inb", .type = "number" })
-                            @Html.TextBoxFor(Function(model) model.WORKHOUR7, New With { .id = "id-work-hour-7", .class = "b_dayb_inb", .type = "number" })
+                        <div class="addpt_b_tt">Working Hour</div>
+                        <div class="addpt_b_daybox">
+                            <div class="b_dayb_inb_msg">
+                                @Html.TextBoxFor(Function(model) model.WORKHOUR1, New With {.id = "id-work-hour-1", .class = "b_dayb_inb", .type = "number"})
+                                <div class="shift_addbox_pt_error">@Html.ValidationMessageFor(Function(model) model.TIMEINSTART1)</div>
+                            </div>
+
+                            <div class="b_dayb_inb_msg">
+                                @Html.TextBoxFor(Function(model) model.WORKHOUR2, New With {.id = "id-work-hour-2", .class = "b_dayb_inb", .type = "number"})
+                                <div class="shift_addbox_pt_error">@Html.ValidationMessageFor(Function(model) model.TIMEINSTART2)</div>
+                            </div>
+
+                            <div class="b_dayb_inb_msg">
+                                @Html.TextBoxFor(Function(model) model.WORKHOUR3, New With {.id = "id-work-hour-3", .class = "b_dayb_inb", .type = "number"})
+                                <div class="shift_addbox_pt_error">@Html.ValidationMessageFor(Function(model) model.TIMEINSTART3)</div>
+                            </div>
+
+                            <div class="b_dayb_inb_msg">
+                                @Html.TextBoxFor(Function(model) model.WORKHOUR4, New With {.id = "id-work-hour-4", .class = "b_dayb_inb", .type = "number"})
+                                <div class="shift_addbox_pt_error">@Html.ValidationMessageFor(Function(model) model.TIMEINSTART4)</div>
+                            </div>
+
+                            <div class="b_dayb_inb_msg">
+                                @Html.TextBoxFor(Function(model) model.WORKHOUR5, New With {.id = "id-work-hour-5", .class = "b_dayb_inb", .type = "number"})
+                                <div class="shift_addbox_pt_error">@Html.ValidationMessageFor(Function(model) model.TIMEINSTART5)</div>
+                            </div>
+
+                            <div class="b_dayb_inb_msg">
+                                @Html.TextBoxFor(Function(model) model.WORKHOUR6, New With {.id = "id-work-hour-6", .class = "b_dayb_inb", .type = "number"})
+                                <div class="shift_addbox_pt_error">@Html.ValidationMessageFor(Function(model) model.TIMEINSTART6)</div>
+                            </div>
+
+                            <div class="b_dayb_inb_msg">
+                                @Html.TextBoxFor(Function(model) model.WORKHOUR7, New With {.id = "id-work-hour-7", .class = "b_dayb_inb", .type = "number"})
+                                <div class="shift_addbox_pt_error">@Html.ValidationMessageFor(Function(model) model.TIMEINSTART7)</div>
+                            </div>
                         </div>
                     </div>
 
-                    <div Class="hlday_addbox_pt_error">
+
+                    @*<div class="addpt_box" style="margin:0 0;">
+                        <div class="addpt_b_daybox">
+                            <div class="shift_addbox_pt_error">@Html.ValidationMessageFor(Function(model) model.TIMEINSTART1)</div>
+                            <div class="shift_addbox_pt_error">@Html.ValidationMessageFor(Function(model) model.TIMEINSTART2)</div>
+                            <div class="shift_addbox_pt_error">@Html.ValidationMessageFor(Function(model) model.TIMEINSTART3)</div>
+                            <div class="shift_addbox_pt_error">@Html.ValidationMessageFor(Function(model) model.TIMEINSTART3)</div>
+                            <div class="shift_addbox_pt_error">@Html.ValidationMessageFor(Function(model) model.TIMEINSTART5)</div>
+                            <div class="shift_addbox_pt_error">@Html.ValidationMessageFor(Function(model) model.TIMEINSTART6)</div>
+                            <div class="shift_addbox_pt_error">@Html.ValidationMessageFor(Function(model) model.TIMEINSTART7)</div>
+                        </div>
+                    </div>*@
+
+                    @*<div Class="hlday_addbox_pt_error">
                         @Html.ValidationMessageFor(Function(model) model.TIMEINSTART1)
                     </div>
                     <div Class="hlday_addbox_pt_error">
@@ -190,7 +232,7 @@ End Code
                         @Html.ValidationMessageFor(Function(model) model.WORKHOUR5)
                     </div>
 
-                    <div Class="hlday_addbox_pt_error">    
+                    <div Class="hlday_addbox_pt_error">
                         @Html.ValidationMessageFor(Function(model) model.TIMEINSTART6)
                     </div>
                     <div Class="hlday_addbox_pt_error">
@@ -208,45 +250,13 @@ End Code
                     </div>
                     <div Class="hlday_addbox_pt_error">
                         @Html.ValidationMessageFor(Function(model) model.WORKHOUR7)
-                    </div>
+                    </div>*@
 
-                    <div class="addpt_box" style="margin:10px 0;">
-                        <div class="addpt_b_tt" style="font-weight: bolder; width: 100%; left: unset; position: unset; text-align: left; }">Grace Period</div>
-                    </div>
-
-                    <div class="addpt_box" style="width:45%;">
-                        <div class="addpt_b_tt" style="">Late-in:</div>
-                        @Html.TextBoxFor(Function(model) model.GRACEPERIODFORLATEIN, New With {.class = "b_dayb_inb all_input1", .type = "number", .style = "width:100%;" })
-
-                        <div Class="hlday_addbox_pt_error">
-                            @Html.ValidationMessageFor(Function(model) model.GRACEPERIODFORLATEIN)
+                    <div class="addpt_box">
+                        <div class="addpt_b_tt">In Used :</div>
+                        <div class="checkinbox">
+                            @Html.CheckBoxFor(Function(model) model.ISINUSED)
                         </div>
-                    </div>
-
-                    <div class="addpt_box" style="width:45%;">
-                        <div class="addpt_b_tt" style="">Early Out:</div>
-                        @Html.TextBoxFor(Function(model) model.GRACEPERIODFOREARLYOUT, New With {.class = "b_dayb_inb all_input1", .type = "number", .style = "width:100%;" })
-
-                        <div Class="hlday_addbox_pt_error">
-                            @Html.ValidationMessageFor(Function(model) model.GRACEPERIODFOREARLYOUT)
-                        </div>
-                    </div>
-
-                    <div class="addpt_box" style="">
-                        <div class="addpt_b_tt" style="">In Used:</div>
-                        <select id="id-in-used" class="addpt_b_input" name="ISINUSED">
-                            @If(true = model.ISINUSED) Then 
-                                @<option value="true" class="type_flexi_btn" selected>Yes</option>
-                            Else
-                                @<option value="true" class="type_flexi_btn">Yes</option>
-                            End If
-
-                            @If(false = model.ISINUSED) Then 
-                                @<option value="false" class="type_narmal_btn" selected>No</option>
-                            Else
-                                @<option value="false" class="type_narmal_btn">No</option>
-                            End If
-                        </select>
                     </div>
 
                     <div Class="footer_row_btn">
@@ -263,7 +273,7 @@ End Code
                         </a>
                     </div>
                 </div>
-            </div>
+                </div>
         End Using
 
         @Code

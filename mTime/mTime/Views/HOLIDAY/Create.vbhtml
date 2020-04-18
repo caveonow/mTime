@@ -114,7 +114,6 @@ End Code
                 changeYear: true,
                 language: "en-IE",
                 format: "dd/mm/yyyy"
-                
             });
 
             $('#datePickerUntil').datepicker({
@@ -127,8 +126,7 @@ End Code
 
             $.validator.methods.date = function (value, element) {
                 return this.optional(element) || moment(value, 'DD/MM/YYYY').isValid();
-            };
-                     
+            };                     
 
         });
 

@@ -6,6 +6,8 @@ Namespace model
 
         <Required(ErrorMessage:="Shift Code is required")>
         Public Property SHIFTID As String
+        Public Property REMARK As String
+
         Public Property ISFLEXIHOUR As Boolean
 
         Public Property TIMEINSTART1 As Nullable(Of TimeSpan)
@@ -43,13 +45,6 @@ Namespace model
         Public Property WORKHOUR7 As Nullable(Of Integer)
         Public Property ISWORKDAY7 As Boolean
 
-        <Required(ErrorMessage:="Grace Period for Late-In is required")>
-        Public Property GRACEPERIODFORLATEIN As Integer
-
-        <Required(ErrorMessage:="Grace Period for Early Out is required")>
-        Public Property GRACEPERIODFOREARLYOUT As Integer
-
-        Public Property REMARK As String
         Public Property ISINUSED As Boolean
         Public Property CREATEDBY As String
         Public Property CREATEDON As Date

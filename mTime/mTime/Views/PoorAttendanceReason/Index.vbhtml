@@ -30,11 +30,11 @@ End Code
                     <thead>
                         <tr>
                             <th style="width: 65px;"></th>
-                            <th style="width: 250px;">Reason Code</th>
-                            <th>Description</th>
-                            <th>For Late-In</th>
-                            <th>For Early-Out</th>
-                            <th>In Used</th>
+                            <th>Reason Code</th>
+                            <th style="width: 120px;">Description</th>
+                            <th style="width: 120px;">For Late-In</th>
+                            <th style="width: 120px;">For Early-Out</th>
+                            <th style="width: 120px;">In Used</th>
                         </tr>
                     </thead>
 

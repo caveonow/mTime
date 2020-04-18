@@ -1,4 +1,5 @@
-﻿@Code
+﻿
+@Code
     ViewData("Title") = "List"
 End Code
 
@@ -31,8 +32,6 @@ End Code
                         Dim strDepartmentName As String = vbNull
                         Dim strDivisionName As String = vbNull
                         Dim strUnitName As String = vbNull
-
-
                     End Code
 
                     @*<div Class="li_text">*@
@@ -41,18 +40,20 @@ End Code
                         @For Each item In Model
 
                             @If IsDBNull(strDepartmentName) Or (strDepartmentName <> item.DEPARTMENTNAME) Then
+
                                 @<li class="li_level01">
-                                    <div>
-                                        <div Class="fa fa-users li_users_icon" style="color:darkblue"></div>
+                                     <div>
+                                         <div Class="fa fa-users li_users_icon" style="color:darkblue"></div>
+                                            @item.DEPARTMENTNAME
+                                         <span class="badge badge-info" style="font-size:8pt">@item.DEPARTMENTSTAFFCOUNT</span>
 
-                                        @item.DEPARTMENTNAME
+                                         @Code
+                                             strDepartmentName = item.DEPARTMENTNAME
+                                             strDivisionName = vbNull
+                                             strUnitName = vbNull
+                                         End Code
 
-                                        @Code
-                                            strDepartmentName = item.DEPARTMENTNAME
-                                            strDivisionName = vbNull
-                                            strUnitName = vbNull
-                                        End Code
-                                    </div>
+                                     </div>
                                 </li>
                             End If
 
@@ -74,17 +75,19 @@ End Code
                                                 @item.DIVISIONNAME
                                             End If
 
+                                            <span class="badge badge-info" style="font-size:8pt">@item.DIVISIONSTAFFCOUNT</span>
+
                                         </div>
                                     </li>
                                 </ul>
 
-                            End If
+                                    End If
 
                             @Code
                                 strUnitName = item.UNITNAME
                             End code
 
-                            @<ul>
+                            @<ul style="padding: 0 10px 0 55px !important;">
                                 <li class="li_level03">
                                     <div>
                                         <div Class="fa fa-users li_users_icon" style="color:darkslategray"></div>
@@ -94,6 +97,9 @@ End Code
                                         Else
                                             @item.UNITNAME
                                         End If
+
+
+                                        <span class="badge badge-info" style="font-size:8pt">@item.UNITSTAFFCOUNT</span>
 
                                         @Html.ActionLink("Edit", "Edit", "Department", New With {.id = item.DEPARTMENTID}, New With {.class = "li_btn_rename filter1"})
                                         @Html.ActionLink("Delete", "Delete", "Department", New With {.id = item.DEPARTMENTID}, New With {.class = "li_btn_delete filter1"})
