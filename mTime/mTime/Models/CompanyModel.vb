@@ -21,7 +21,6 @@ Namespace model
         Public Property DEFAULTLANGUAGE As String
         Public Property STARTEDON As Date
         Public Property ALLOWTOSUBMITREASONIN As Integer
-        Public Property UPDATEDON As Boolean
 
     End Class
 
