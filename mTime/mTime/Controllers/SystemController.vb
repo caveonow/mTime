@@ -1,6 +1,6 @@
 ﻿Imports System.Net
 Imports mTime
-Imports System.Web.Mvc
+Imports System.Web
 Imports mTime.model
 Imports System.IO
 
@@ -14,7 +14,6 @@ Namespace Controllers
         Function Index() As ActionResult
             ' get result from db
             Dim Company = db.COMPANY.First
-
 
             Return View(Company)
         End Function
@@ -83,7 +82,6 @@ Namespace Controllers
 
             If Request.Files.Count > 0 Then
                 Dim A As String = "A"
-
             End If
 
             If ModelState.IsValid Then
@@ -147,7 +145,22 @@ Namespace Controllers
                 ViewBag.ImageUrl = "img/" & fileName3
             End If
 
-            Return View("Index")
+            If ModelState.IsValid Then
+                db.Entry(Company).State = System.Data.Entity.EntityState.Modified
+                Company.STARTEDON = Today()
+
+                Debug.WriteLine(Company.COMPANYHEADERPATH)
+                Debug.WriteLine(Company.HOMEPAGEHEADERPATH)
+
+                db.SaveChanges()
+
+                ViewBag.Result = "OK"
+            End If
+
+            Dim destinationURL As String = "index"
+            Return RedirectToAction(HttpUtility.UrlEncode(destinationURL))
+
+            'Return RedirectToAction(HttpUtility.UrlDecode(destinationURL))
         End Function
 
 

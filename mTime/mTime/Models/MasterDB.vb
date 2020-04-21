@@ -13,6 +13,7 @@ Namespace model
         Public Property ATTENDANCESTATUS() As DbSet(Of ATTENDANCESTATUS)
         Public Property SHIFT() As DbSet(Of SHIFT)
         Public Property COMPANY() As DbSet(Of COMPANY)
+        Public Property Staff() As DbSet(Of STAFF)
 
 
         Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)

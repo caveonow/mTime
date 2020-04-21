@@ -522,7 +522,7 @@
     <Content Include="Views\Shift\Index.vbhtml" />
     <Content Include="Views\Department\Index.vbhtml" />
     <Content Include="Views\System\Create.vbhtml" />
-    <Content Include="Views\System\Edit.vbhtml" />
+    <Content Include="Views\System\CompanyInfoUpdate.vbhtml" />
     <Content Include="Views\System\UploadImg.vbhtml" />
   </ItemGroup>
   <ItemGroup>

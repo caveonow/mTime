@@ -8,7 +8,7 @@ End Code
 
 <div class="body_center">
     <div class="systembox_lt">
-        @Html.Partial("Edit")
+        @Html.Partial("CompanyInfoUpdate")
     </div>
 
 
