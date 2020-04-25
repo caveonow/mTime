@@ -184,7 +184,6 @@
     <Compile Include="Controllers\FAQController.vb" />
     <Compile Include="Controllers\HyperlinkController.vb" />
     <Compile Include="Controllers\HolidayController.vb" />
-    <Compile Include="Controllers\imgController.vb" />
     <Compile Include="Controllers\Login.vb" />
     <Compile Include="Controllers\MessageController.vb" />
     <Compile Include="Controllers\PersonalMessageController.vb" />
@@ -204,6 +203,7 @@
     <Compile Include="Models\HolidayModel.vb" />
     <Compile Include="Models\PoorAttendanceReasonModel.vb" />
     <Compile Include="Models\AttendanceStatusModel.vb" />
+    <Compile Include="Models\SettingModel.vb" />
     <Compile Include="Models\ShiftModel.vb" />
     <Compile Include="Models\StaffModel.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -524,6 +524,7 @@
     <Content Include="Views\System\Create.vbhtml" />
     <Content Include="Views\System\CompanyInfoUpdate.vbhtml" />
     <Content Include="Views\System\UploadImg.vbhtml" />
+    <Content Include="Views\System\Setting.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

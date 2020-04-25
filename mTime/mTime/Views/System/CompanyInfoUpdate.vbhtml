@@ -1,7 +1,5 @@
 ﻿@ModelType mTime.model.COMPANY
 
-
-@*@Using (Html.BeginForm("Edit", "System", FormMethod.Post, New With {.enctype = "multipart/form-data"}))*@
 @Using (Html.BeginForm("UploadImg", "System", FormMethod.Post, New With {.enctype = "multipart/form-data"}))
     @Html.AntiForgeryToken()
     @<div>
@@ -9,6 +7,11 @@
     @Html.HiddenFor(Function(Model) Model.COMPANYID)
     @Html.HiddenFor(Function(Model) Model.ADDRESSLINE2)
     @Html.HiddenFor(Function(Model) Model.ADDRESSLINE3)
+    @Html.HiddenFor(Function(Model) Model.DEFAULTLANGUAGE)
+    @Html.HiddenFor(Function(Model) Model.GRACEPERIOD)
+    @Html.HiddenFor(Function(Model) Model.MAXANNOUNCE)
+    @Html.HiddenFor(Function(Model) Model.ANNOUNCEEXPDAY)
+
 
     <div Class="inbox_haedtext">
         <span> Company Info</span>
