@@ -37,6 +37,13 @@ Namespace Controllers
                                        Where ds.DEPARTMENTID = d.DEPARTMENTID
                                        Select ds.DEPARTMENTID).Count())
 
+            ' Get company name
+            Dim Company = db.COMPANY.FirstOrDefault
+            If Not IsNothing(Company) Then
+                ViewBag.CompanyName = Company.COMPANYNAME
+            Else
+                ViewBag.CompanyName = "Company"
+            End If
 
             '# Return updated dataset
             Return View(departmentList)
