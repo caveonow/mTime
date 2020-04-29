@@ -35,10 +35,6 @@ $("#btn_firstlogin").click(function () {
     $("#firstlogin_popup").addClass("display_block").removeClass("display_none");
 });
 
-$("#Feedback_btn").click(function () {
-    $("#Feedback_popup").addClass("display_block").removeClass("display_none");
-});
-
 $("#btn_login").click(function () {
     $("#login_popup").addClass("display_block").removeClass("display_none");
 });
@@ -330,9 +326,11 @@ $("#atdc_tab4").click(function () {
 //});
 
 //Private Message Page
+/*
 $(".deletebtn").click(function () {
     $(".msebox_ttbox, .msebox_htr_date").remove();
 });
+*/
 
 /*
 $(function () {
@@ -343,8 +341,44 @@ $(function () {
 });
 */
 
+/*
 $(".btn_email").click(function () {
     $("#email01").addClass("fa-envelope-open").removeClass("fa-envelope");
     $(".msebox_ttbox, .deletebtn, .msebox_htr_date").addClass("display_black").removeClass("display_none");
 });
+*/
 //Private Message Page
+
+//Feedback
+$(".Feedback_btn").click(function () {
+    $("#Feedback_popup").addClass("display_block").removeClass("display_none");
+    $("#id-content").val("");
+    $("#id-error-panel-content").addClass("display_none");
+    $(".fbk_save_ok_popup").addClass("display_none");
+    $(".Fbk").removeClass("display_none");
+});
+
+function formSubmit (){
+    $.ajax({
+        url:'/Feedback/SaveStaffFeedback',
+        type:'post',
+        data:$('#id-form-feedback').serialize(),
+        success:async function(response){
+            if(response !== null && response !== undefined && response !== "") {
+                if(response === "success") {
+                    $(".Fbk").addClass("display_none");
+                    $(".fbk_save_ok_popup").removeClass("display_none");
+                    await sleep(1500);
+                    $("#Feedback_popup").addClass("display_none").removeClass("display_block");
+                } else {
+                    $("#id-error-panel-content").removeClass("display_none");
+                }
+            }
+        }
+    });
+}
+//Feedback
+
+function sleep(millieseconds) {
+    return new Promise(resolve => setTimeout(resolve, millieseconds));
+}

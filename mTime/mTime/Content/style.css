@@ -18,7 +18,10 @@ html, body {
 
 /* line 20, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .display_none {
-  display: none; }
+  display: none !important; }
+
+.visibility_hidden {
+  visibility: hidden !important; }
 
 /* line 24, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .display_block {
@@ -652,6 +655,10 @@ td .check-box {
       border: 1px #aaa solid;
       padding: 5px 5px;
       line-height: 16px; }
+    .Feedback_box .Fbk_b_ttarea .rtpt_addbox_pt_error {
+      text-align: right;
+      color: red;
+    }
   /* line 720, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .Feedback_box .Fbk_b_ftr {
     width: 100%;
@@ -659,6 +666,40 @@ td .check-box {
     float: left;
     padding: 0 10px;
     margin: 5px 0; }
+  .Feedback_box .fbk_ctr_rtpt_popupbox {
+    width: 100%;
+    height: 300px;
+    
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.35); }
+  .Feedback_box .fbk_ctr_rtpt_popupbox .fbk_rtpt_popupbox_inb {
+  width: 500px;
+  height: initial;
+  padding: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+  z-index: 10; }
+  .Feedback_box .fbk_ctr_rtpt_popupbox .fbk_popupbox_inb_icon_blue {
+    width: 100%;
+    height: initial;
+    float: left;
+    color: #0069ae;
+    text-align: center;
+    font-size: 66px; }
+    .Feedback_box .fbk_ctr_rtpt_popupbox .fbk_popupbox_inb_tt {
+    width: 100%;
+    line-height: 30px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    float: left;
+    padding: 5px 5px;
+    font-weight: bold; }
 
 /* line 729, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .firstlogin_box {
@@ -1090,6 +1131,15 @@ td .check-box {
     color: #fff;
     font-size: 14px;
     font-weight: bold; }
+
+  .rtpt_home_box .rtpt_home_b_linkpart_content {
+    width: 100%;
+    height: auto;
+    margin: 7px 0 7px 0;
+    padding: 12px 5px;
+    float: left;
+    border-radius: 5px 5px;
+  }
 
 /* line 1207, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .bg_color_444 {
@@ -2430,6 +2480,20 @@ ul {
   color: #fff;
   cursor: pointer; }
 
+.rtpt_backbtn {
+  width: initial;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin: 0 0 0 10px;
+  font-size: 14px;
+  float: right;
+  border-radius: 5px;
+  background-color: blue;
+  color: #fff;
+  cursor: pointer; 
+}
+
 /* line 2675, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 a, a:hover {
   color: #fff;
@@ -2552,7 +2616,9 @@ a, a:hover {
   border: 2px #aaa solid;
   background-color: #154eb7;
   margin: 0 5px 0 0;
-  float: left; }
+  float: left; 
+  cursor: pointer;
+}
 
 /* line 2809, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .report_lt_part {
@@ -2971,3 +3037,73 @@ a, a:hover {
   transform: none !important; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* admin - message */
+.message_rt_part .overflow_box {
+  height: 415px;
+  margin: 10px;
+  width: -webkit-fill-available !important;
+}
+
+.message_rt_part .overflow_box .ctr_rtpt_addbox {
+  display: flex;
+  max-width: 90%;
+  margin: auto;
+}
+
+.message_rt_part .overflow_box .ctr_rtpt_addbox .rtpt_label_part {
+  width: 95px;
+  text-align: right;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.message_rt_part .overflow_box .ctr_rtpt_addbox .rtpt_addbox_part {
+  text-align: left;
+  width: -webkit-fill-available;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.message_rt_part .overflow_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_pt_tt {
+  width: 180px;
+  height: 30px;
+  text-align: right;
+  position: absolute;
+  left: 0;
+  line-height: 30px;
+  font-size: 14px; 
+}
+
+.font_bold {
+  font-weight: bold;
+}
+
+.message_rt_part .btn_disabled {
+  width: initial;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin: 0 0 0 10px;
+  font-size: 14px;
+  float: right;
+  border-radius: 5px;
+  color: #fff;
+  
+  background-color: grey;
+  cursor: default; 
+}
+
+.message_rt_part .rtpt_addbox_pt_error {
+  width: 100%;
+  line-height: 20px;
+  float: left;
+  color: #ff0000;
+  font-size: 12px;
+  text-align: right; 
+}
+
+.datepicker {
+  z-index: 99 !important;
+}
+

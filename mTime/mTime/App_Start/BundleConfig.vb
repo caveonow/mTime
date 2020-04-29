@@ -20,13 +20,18 @@ Public Module BundleConfig
                   "~/Scripts/bootstrap.js",
                    "~/Scripts/bootstrap-datepicker3.js",
                   "~/Scripts/srs.js"))
+                  
+        bundles.Add(New ScriptBundle("~/bundles/tokenize").Include(
+                  "~/Scripts/tokenize2.js"))
 
         bundles.Add(New StyleBundle("~/Content/css").Include(
                   "~/Content/bootstrap.css",
+                  "~/Content/bootstrap.min.css",
                   "~/Content/bootstrap-datepicker3.css",
                   "~/Content/font-awesome.css",
                   "~/Content/other_style.css",
-                  "~/Content/style.css"))
+                  "~/Content/style.css",
+                  "~/Content/tokenize2.css"))
     End Sub
 
 End Module

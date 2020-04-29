@@ -14,7 +14,9 @@ Namespace model
         Public Property SHIFT() As DbSet(Of SHIFT)
         Public Property COMPANY() As DbSet(Of COMPANY)
         Public Property Staff() As DbSet(Of STAFF)
-
+        Public Property ANNOUNCEMENT() As DbSet(Of ANNOUNCEMENT)
+        Public Property PERSONALMESSAGE() As DbSet(Of PERSONALMESSAGE)
+        Public Property FEEDBACK() As DbSet(Of FEEDBACK)
 
         Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
             MyBase.OnModelCreating(modelBuilder)

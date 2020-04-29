@@ -59,6 +59,15 @@ End Code
             </div>
 
             <div class="rtpt_home_b_linkpart">Pengumuman</div>
+
+            <div id="id-body-announcement">
+                @For Each item In ViewBag.AnnouncementList
+                @<div class="rtpt_home_b_linkpart_content" style="border: 1px solid; border-radius: 0.7rem;">
+                    <div style="font-weight: bold; font-size: 18px;">@item.TITLE</div>
+                    <div>@item.REMARK</div>
+                </div>
+                Next
+            </div>
         </div>
     </div>
 </div>
