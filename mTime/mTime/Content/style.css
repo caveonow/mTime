@@ -448,14 +448,15 @@ td .check-box {
   height: initial;
   float: left;
   position: relative;
-  padding: 0 10px 0 420px; }
+  padding: 0 10px 0 310px; }
   /* line 492, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .employee_part .epy_pt_lt {
-    width: 400px;
+    width: 300px;
     height: initial;
     position: absolute;
     left: 0;
-    top: 0; }
+    top: 0;
+    padding: 0 0 10px 10px; }
     /* line 499, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .employee_part .epy_pt_lt .epy_lt_box1 {
       width: 100%;
@@ -478,18 +479,18 @@ td .check-box {
           height: initial;
           float: left;
           position: relative;
-          padding: 0 0 0 120px;
+          padding: 0 0;
           margin: 0 0 10px 0; }
           /* line 523, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part .inb_pt_tt {
-            width: 110px;
+            width: inherit;
             height: 30px;
             text-align: right;
             float: left;
             line-height: 30px;
             font-size: 14px;
-            position: absolute;
-            left: 0; }
+            position: relative;
+            text-align: left; }
           /* line 534, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part .inb_pt_checkboxtt {
             width: 100%;
@@ -536,7 +537,7 @@ td .check-box {
 
 /* line 587, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .epy_lt_table {
-  width: 750px;
+  min-width: 1300px;
   line-height: 30px;
   margin: 0 0 40px 0;
   font-size: 12px;
@@ -2146,14 +2147,17 @@ td .check-box {
 /* line 2321, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 tbody {
   height: 30px; }
-  /* line 2325, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2334, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  tbody tr {
+    border-bottom: 1px #aaa solid; }
+  /* line 2337, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   tbody tr td {
     border-right: 1px #aaa solid;
     padding: 0 5px; }
-  /* line 2330, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2342, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   tbody tr td:last-child {
     border-right: 0; }
-  /* line 2335, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2347, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   tbody tr:nth-child(odd) {
     background-color: #fff; }
   /* line 2339, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */

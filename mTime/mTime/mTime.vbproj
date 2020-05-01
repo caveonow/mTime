@@ -130,6 +130,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -193,6 +196,7 @@
     <Compile Include="Controllers\ReportController.vb" />
     <Compile Include="Controllers\ShiftController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
+    <Compile Include="Controllers\StaffController.vb" />
     <Compile Include="Controllers\SystemController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
@@ -207,6 +211,7 @@
     <Compile Include="Models\SettingModel.vb" />
     <Compile Include="Models\ShiftModel.vb" />
     <Compile Include="Models\StaffModel.vb" />
+    <Compile Include="Models\StaffShiftModel.vb" />
     <Compile Include="Models\PersonalMessageModel.vb" />
     <Compile Include="Models\FeedbackModel.vb" />
     <Compile Include="Models\AnnouncementModel.vb" />
@@ -237,6 +242,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Start\MVCGridConfig.cs" />
     <Content Include="Content\bootstrap-datepicker.css" />
     <Content Include="Content\bootstrap-datepicker.min.css" />
     <Content Include="Content\bootstrap-datepicker.standalone.css" />
@@ -502,12 +508,12 @@
     <Content Include="Views\Shared\_StaffMenuTop.vbhtml" />
     <Content Include="Views\FAQ\Index.vbhtml" />
     <Content Include="Views\Department\Create.vbhtml" />
-    <Content Include="Views\Staff\Create.vbhtml" />
+    <Content Include="Views\Staff\Import.vbhtml" />
     <Content Include="Views\Holiday\Index.vbhtml" />
     <Content Include="Views\System\Index.vbhtml" />
     <Content Include="Views\Department\Delete.vbhtml" />
     <Content Include="Views\Department\Edit.vbhtml" />
-    <Content Include="Views\Employee\Index.vbhtml" />
+    <Content Include="Views\Staff\Index.vbhtml" />
     <Content Include="Views\_ViewStart.vbhtml" />
     <Content Include="Views\PersonalMessage\Index.vbhtml" />
     <Content Include="Views\Message\Index.vbhtml" />
