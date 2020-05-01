@@ -130,9 +130,6 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
-      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
-    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -183,19 +180,19 @@
     <Compile Include="Controllers\AdministrationController.vb" />
     <Compile Include="Controllers\AttendanceController.vb" />
     <Compile Include="Controllers\DepartmentController.vb" />
+    <Compile Include="Controllers\EmployeeController.vb" />
     <Compile Include="Controllers\FAQController.vb" />
     <Compile Include="Controllers\HyperlinkController.vb" />
     <Compile Include="Controllers\HolidayController.vb" />
-    <Compile Include="Controllers\imgController.vb" />
     <Compile Include="Controllers\Login.vb" />
     <Compile Include="Controllers\MessageController.vb" />
     <Compile Include="Controllers\PersonalMessageController.vb" />
+    <Compile Include="Controllers\FeedbackController.vb" />
     <Compile Include="Controllers\PoorAttendanceReasonController.vb" />
     <Compile Include="Controllers\AttendanceStatusController.vb" />
     <Compile Include="Controllers\ReportController.vb" />
     <Compile Include="Controllers\ShiftController.vb" />
     <Compile Include="Controllers\SharedController.vb" />
-    <Compile Include="Controllers\StaffController.vb" />
     <Compile Include="Controllers\SystemController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
@@ -207,9 +204,12 @@
     <Compile Include="Models\HolidayModel.vb" />
     <Compile Include="Models\PoorAttendanceReasonModel.vb" />
     <Compile Include="Models\AttendanceStatusModel.vb" />
+    <Compile Include="Models\SettingModel.vb" />
     <Compile Include="Models\ShiftModel.vb" />
     <Compile Include="Models\StaffModel.vb" />
-    <Compile Include="Models\StaffShiftModel.vb" />
+    <Compile Include="Models\PersonalMessageModel.vb" />
+    <Compile Include="Models\FeedbackModel.vb" />
+    <Compile Include="Models\AnnouncementModel.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -237,7 +237,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Start\MVCGridConfig.cs" />
     <Content Include="Content\bootstrap-datepicker.css" />
     <Content Include="Content\bootstrap-datepicker.min.css" />
     <Content Include="Content\bootstrap-datepicker.standalone.css" />
@@ -389,6 +388,7 @@
     <Content Include="Views\Shift\Details.vbhtml" />
     <Content Include="Views\Shift\Edit.vbhtml" />
     <Content Include="Views\Shift\Delete.vbhtml" />
+    <Content Include="Views\Feedback\Index.vbhtml" />
     <Content Include="scss\bootstrap-grid.scss" />
     <Content Include="scss\bootstrap-reboot.scss" />
     <Content Include="scss\bootstrap.scss" />
@@ -502,18 +502,19 @@
     <Content Include="Views\Shared\_StaffMenuTop.vbhtml" />
     <Content Include="Views\FAQ\Index.vbhtml" />
     <Content Include="Views\Department\Create.vbhtml" />
-    <Content Include="Views\Staff\Import.vbhtml" />
+    <Content Include="Views\Staff\Create.vbhtml" />
     <Content Include="Views\Holiday\Index.vbhtml" />
     <Content Include="Views\System\Index.vbhtml" />
     <Content Include="Views\Department\Delete.vbhtml" />
     <Content Include="Views\Department\Edit.vbhtml" />
-    <Content Include="Views\Staff\Index.vbhtml" />
+    <Content Include="Views\Employee\Index.vbhtml" />
     <Content Include="Views\_ViewStart.vbhtml" />
     <Content Include="Views\PersonalMessage\Index.vbhtml" />
     <Content Include="Views\Message\Index.vbhtml" />
     <Content Include="Views\Message\_PersonalMessage.vbhtml" />
     <Content Include="Views\Message\_Announcement.vbhtml" />
     <Content Include="Views\Message\_Feedback.vbhtml" />
+    <Content Include="Views\Message\_NewPersonalMessage.vbhtml" />
     <Content Include="Views\Report\Index.vbhtml" />
     <Content Include="Views\Report\_RatioAnalysis.vbhtml" />
     <Content Include="Views\Report\_ByEmployee.vbhtml" />
@@ -528,7 +529,9 @@
     <Content Include="Views\Department\Index.vbhtml" />
     <Content Include="Views\System\Create.vbhtml" />
     <Content Include="Views\System\Edit.vbhtml" />
+    <Content Include="Views\System\CompanyInfoUpdate.vbhtml" />
     <Content Include="Views\System\UploadImg.vbhtml" />
+    <Content Include="Views\System\Setting.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
