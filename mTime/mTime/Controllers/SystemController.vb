@@ -15,8 +15,8 @@ Namespace Controllers
             ' get result from db
             Dim Company = db.COMPANY.First
 
-
             Return View(Company)
+
         End Function
 
 

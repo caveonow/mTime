@@ -122,32 +122,40 @@ input[type="radio"], input[type="checkbox"] {
   padding: 8px 0 0 0; }
 
 /* line 125, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+.checkinboxtext {
+  width: initial;
+  margin: -2px 0 0 5px;
+  text-align: left;
+  float: left;
+  font-size: 14px; }
+
+/* line 133, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 input {
   border: 0; }
 
-/* line 129, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 137, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .events_none {
   background-color: #ffffdd !important;
   border: 1px #aaa solid;
   pointer-events: none !important; }
 
-/* line 136, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 144, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 td .check-box {
   margin: 0 0 -4px 0; }
 
-/* line 141, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 149, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .header_part1 {
   width: 100%;
   height: 40px;
   background-color: #038C76;
   position: relative;
   z-index: 99; }
-  /* line 148, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 156, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .header_part1 .translate_part {
     width: initial;
     height: inherit;
     float: right; }
-    /* line 153, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 161, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .header_part1 .translate_part .tsl_pt_ttbtn {
       width: initial;
       height: initial;
@@ -160,7 +168,7 @@ td .check-box {
       padding: 0 10px;
       text-decoration: none;
       position: relative; }
-  /* line 168, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 176, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .header_part1 .hd_pt1_inbox1 {
     color: #fff;
     font-size: 14px;
@@ -168,7 +176,7 @@ td .check-box {
     height: 100%;
     line-height: 40px;
     float: left; }
-    /* line 176, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 184, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .header_part1 .hd_pt1_inbox1 .pt1_inbox1_icon {
       width: 40px;
       height: 100%;
@@ -178,13 +186,13 @@ td .check-box {
       float: left;
       background-color: #026f5d;
       margin: 0 10px 0 0; }
-    /* line 187, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 195, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .header_part1 .hd_pt1_inbox1 #ct {
       margin: 0 10px;
       line-height: 40px;
       width: initial;
       display: inline-table; }
-  /* line 195, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 203, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .header_part1 .hd_pt1_logouticon {
     color: #fff;
     width: initial;
@@ -199,10 +207,10 @@ td .check-box {
     text-decoration: none;
     position: relative;
     cursor: pointer; }
-    /* line 210, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 218, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .header_part1 .hd_pt1_logouticon .logouticon_mo_tt {
       display: none; }
-  /* line 216, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 224, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .header_part1 .hd_pt1_logouticon:hover .logouticon_mo_tt {
     width: initial;
     height: 26px;
@@ -221,7 +229,7 @@ td .check-box {
     pointer-events: none;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif !important; }
-  /* line 237, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 245, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .header_part1 .hd_pt1_inbox2 {
     color: #fff;
     font-size: 14px;
@@ -230,7 +238,7 @@ td .check-box {
     line-height: 40px;
     float: right;
     margin: 0 10px 0 0; }
-    /* line 246, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 254, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .header_part1 .hd_pt1_inbox2 .pt1_inbox2_usericon {
       color: #fff;
       width: 40px;
@@ -242,7 +250,7 @@ td .check-box {
       margin: 0 5px 0 0;
       text-decoration: none;
       position: relative; }
-    /* line 259, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 267, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .header_part1 .hd_pt1_inbox2 .hd_profile {
       width: 300px;
       height: initial;
@@ -257,18 +265,18 @@ td .check-box {
       border-radius: 5px 5px;
       padding: 5px 5px;
       display: none; }
-      /* line 274, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 282, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_arrow {
         /*margin: -15px 99px 0 0;*/
         margin: 0 99px 0 0;
         float: right; }
-      /* line 280, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 288, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part1:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part4:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part5:hover {
         background-color: #038C76; }
-      /* line 284, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 292, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .header_part1 .hd_pt1_inbox2 .hd_profile .p2_b_icon:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .pf_p4_tt1:hover {
         color: #fff; }
-      /* line 288, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 296, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part1 {
         width: 100%;
         height: 30px;
@@ -278,7 +286,7 @@ td .check-box {
         margin: 0 0 5px 0;
         font-size: 16px;
         border-bottom: 1px #038C76 solid; }
-      /* line 299, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 307, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 {
         width: 100%;
         height: 30px;
@@ -286,12 +294,12 @@ td .check-box {
         float: left;
         font-size: 14px;
         padding: 0 5px; }
-        /* line 307, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 315, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 .pf_p2_box {
           width: initial;
           height: inherit;
           float: right; }
-          /* line 312, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 320, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 .pf_p2_box .p2_b_tt {
             width: initial;
             height: inherit;
@@ -300,7 +308,7 @@ td .check-box {
             text-align: right;
             line-height: 30px;
             margin: 0 5px; }
-          /* line 322, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 330, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 .pf_p2_box .p2_b_icon {
             width: 20px;
             height: 30px;
@@ -311,10 +319,10 @@ td .check-box {
             line-height: 30px;
             text-align: center;
             cursor: pointer; }
-          /* line 334, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 342, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part2 .pf_p2_box .p2_b_icon:hover {
             color: #fff; }
-      /* line 340, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 348, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 {
         width: 100%;
         height: 30px;
@@ -322,42 +330,42 @@ td .check-box {
         float: left;
         font-size: 14px;
         padding: 0 5px; }
-        /* line 348, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 356, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box {
           width: initial;
           height: 30px;
           float: right;
           font-size: 14px; }
-          /* line 354, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 362, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_tt1 {
             color: #999;
             line-height: 30px;
             padding: 0 5px;
             float: left;
             text-decoration: none; }
-          /* line 362, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 370, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_line {
             margin: 5px 5px;
             width: 1px;
             height: 20px;
             background-color: #999;
             float: left; }
-          /* line 370, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 378, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_tt2 {
             line-height: 30px;
             padding: 0 5px;
             float: left;
             color: #999;
             text-decoration: none; }
-          /* line 378, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 386, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_tt1:hover, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_tt2:hover {
             color: #fff; }
-          /* line 382, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 390, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_button, .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part3 .pf_p3_box .p3_b_button:hover {
             color: #fff !important;
             pointer-events: none;
             font-weight: bold; }
-      /* line 390, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 398, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part4 {
         width: 100%;
         height: 30px;
@@ -365,7 +373,7 @@ td .check-box {
         float: left;
         font-size: 14px;
         padding: 0 5px; }
-        /* line 398, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 406, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part4 .pf_p4_tt1 {
           width: initial;
           height: 30px;
@@ -373,10 +381,10 @@ td .check-box {
           font-size: 14px;
           cursor: pointer;
           color: #999; }
-        /* line 407, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 415, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part4 .pf_p4_tt1:hover {
           color: #fff; }
-      /* line 412, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 420, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .header_part1 .hd_pt1_inbox2 .hd_profile .hd_pf_part5 {
         width: 100%;
         height: 30px;
@@ -387,7 +395,7 @@ td .check-box {
         text-decoration: none;
         cursor: pointer; }
 
-/* line 426, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 434, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .header_part2 {
   width: 100%;
   height: 40px;
@@ -395,19 +403,19 @@ td .check-box {
   background-color: #09af94;
   z-index: 99;
   position: relative; }
-  /* line 434, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 442, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .header_part2 .hd_pt2_box {
     width: initial;
     height: inherit;
     float: right; }
-    /* line 439, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 447, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .header_part2 .hd_pt2_box .pt2_b_btn {
       width: initial;
       height: 30px;
       margin: 5px 0;
       float: left;
       text-decoration: none; }
-      /* line 446, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 454, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .header_part2 .hd_pt2_box .pt2_b_btn .pt2_b_inbtn {
         line-height: 30px;
         text-align: center;
@@ -415,13 +423,13 @@ td .check-box {
         border-left: 2px #4ecab5 solid;
         padding: 0 10px;
         color: #fff; }
-    /* line 456, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 464, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .header_part2 .hd_pt2_box .pt2_b_btn:hover, .header_part2 .hd_pt2_box .pt2_b_btneff {
       position: relative; }
-      /* line 459, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 467, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .header_part2 .hd_pt2_box .pt2_b_btn:hover .pt2_b_inbtn, .header_part2 .hd_pt2_box .pt2_b_btneff .pt2_b_inbtn {
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35); }
-      /* line 463, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 471, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .header_part2 .hd_pt2_box .pt2_b_btn:hover .pt2_b_inbtneff, .header_part2 .hd_pt2_box .pt2_b_btneff .pt2_b_inbtneff {
         width: 0;
         height: 0;
@@ -429,7 +437,7 @@ td .check-box {
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
         border-bottom: 10px solid #fff; }
-      /* line 472, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 480, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .header_part2 .hd_pt2_box .pt2_b_btn:hover .pt2_b_inbtnefflight, .header_part2 .hd_pt2_box .pt2_b_btneff .pt2_b_inbtnefflight {
         background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 70%);
         width: 100%;
@@ -439,61 +447,62 @@ td .check-box {
         top: -5px;
         margin: 0 0; }
 
-/* line 485, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 493, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .employee_part {
   width: 100%;
   height: initial;
   float: left;
   position: relative;
-  padding: 0 10px 0 420px; }
-  /* line 492, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  padding: 0 10px 0 310px; }
+  /* line 500, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .employee_part .epy_pt_lt {
-    width: 400px;
+    width: 300px;
     height: initial;
     position: absolute;
     left: 0;
-    top: 0; }
-    /* line 499, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    top: 0;
+    padding: 0 0 10px 10px; }
+    /* line 508, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .employee_part .epy_pt_lt .epy_lt_box1 {
       width: 100%;
       height: initial;
       border-radius: 5px 5px;
       border: 1px #ccc solid;
-      margin: 0 0 10px 10px;
+      /*margin: 0 0 10px 10px;*/
       overflow: auto;
       position: relative;
       float: left; }
-      /* line 509, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 518, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb {
         padding: 10px 10px;
         width: 100%;
         height: initial;
         float: left; }
-        /* line 515, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 524, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part {
           width: 100%;
           height: initial;
           float: left;
           position: relative;
-          padding: 0 0 0 120px;
+          padding: 0 0;
           margin: 0 0 10px 0; }
-          /* line 523, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 532, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part .inb_pt_tt {
-            width: 110px;
+            width: inherit;
             height: 30px;
             text-align: right;
             float: left;
             line-height: 30px;
             font-size: 14px;
-            position: absolute;
-            left: 0; }
-          /* line 534, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+            position: relative;
+            text-align: left; }
+          /* line 543, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part .inb_pt_checkboxtt {
             width: 100%;
             height: 30px;
             line-height: 30px;
             font-size: 12px; }
-        /* line 542, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 551, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part1 {
           width: 100%;
           height: initial;
@@ -501,7 +510,7 @@ td .check-box {
           position: relative;
           padding: 0 40px 0 120px;
           margin: 0 0 10px 0; }
-          /* line 550, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 559, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .employee_part .epy_pt_lt .epy_lt_box1 .lt_b1_inb .b1_inb_part1 .inb_pt1_tt {
             width: 110px;
             height: 30px;
@@ -511,7 +520,7 @@ td .check-box {
             font-size: 14px;
             position: absolute;
             left: 0; }
-    /* line 564, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 573, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .employee_part .epy_pt_lt .epy_lt_box2 {
       width: 100%;
       height: initial;
@@ -520,7 +529,7 @@ td .check-box {
       margin: 0 0 10px 10px;
       position: relative;
       float: left; }
-  /* line 575, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 584, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .employee_part .epy_pt_rt {
     width: 100%;
     min-height: 515px;
@@ -531,31 +540,31 @@ td .check-box {
     overflow: auto;
     position: relative; }
 
-/* line 587, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 596, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .epy_lt_table {
-  width: 750px;
+  min-width: 1300px;
   line-height: 30px;
   margin: 0 0 40px 0;
   font-size: 12px;
   position: relative; }
-  /* line 594, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 603, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .epy_lt_table thead {
     background-color: #aaa;
     height: 30px; }
-    /* line 599, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 608, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .epy_lt_table thead tr th {
       border-right: 1px #ccc solid;
       padding: 0 5px;
       color: #fff; }
-  /* line 607, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 616, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .epy_lt_table tbody {
     height: 30px; }
-    /* line 611, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 620, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .epy_lt_table tbody tr td {
       border-right: 1px #aaa solid;
       padding: 0 5px; }
 
-/* line 619, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 628, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .footer_row_total {
   width: 100%;
   height: 30px;
@@ -565,7 +574,7 @@ td .check-box {
   float: left;
   background-color: #444;
   z-index: 1; }
-  /* line 629, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 638, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .footer_row_total span {
     width: initial;
     float: left;
@@ -573,7 +582,7 @@ td .check-box {
     line-height: 30px;
     font-size: 12px; }
 
-/* line 638, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 647, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .icon_calendar_btn {
   width: 30px;
   height: 30px;
@@ -587,7 +596,7 @@ td .check-box {
   color: #333;
   text-decoration: none; }
 
-/* line 652, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 661, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .icon_calendar1_btn {
   width: 30px;
   height: 30px;
@@ -601,7 +610,7 @@ td .check-box {
   color: #fff !important;
   text-decoration: none; }
 
-/* line 666, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 675, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .icon_calendar_btn:hover, .icon_calendar1_btn:hover {
   width: 30px;
   height: 30px;
@@ -609,7 +618,7 @@ td .check-box {
   font-size: 18px;
   text-decoration: none; }
 
-/* line 674, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 683, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .Feedback_box {
   width: 500px;
   height: initial;
@@ -621,7 +630,7 @@ td .check-box {
   border-radius: 5px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
   z-index: 1; }
-  /* line 686, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 695, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .Feedback_box .Fbk_b_htr {
     width: 100%;
     height: 40px;
@@ -632,7 +641,7 @@ td .check-box {
     border-radius: 5px 5px 0 0;
     padding: 0 10px;
     background-color: #222; }
-  /* line 698, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 707, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .Feedback_box .Fbk_b_ttarea {
     width: 100%;
     line-height: 30px;
@@ -641,7 +650,7 @@ td .check-box {
     color: #333;
     padding: 10px 10px;
     background-color: #fff; }
-    /* line 707, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 716, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .Feedback_box .Fbk_b_ttarea .b_ttarea_box {
       width: 480px;
       max-height: 100px;
@@ -652,7 +661,7 @@ td .check-box {
       border: 1px #aaa solid;
       padding: 5px 5px;
       line-height: 16px; }
-  /* line 720, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 729, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .Feedback_box .Fbk_b_ftr {
     width: 100%;
     height: 30px;
@@ -660,7 +669,7 @@ td .check-box {
     padding: 0 10px;
     margin: 5px 0; }
 
-/* line 729, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 738, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .firstlogin_box {
   width: 500px;
   height: initial;
@@ -673,7 +682,7 @@ td .check-box {
   border-radius: 5px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
   z-index: 1; }
-  /* line 742, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 751, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .firstlogin_box .ftlogin_b_icon {
     width: 100%;
     height: initial;
@@ -682,7 +691,7 @@ td .check-box {
     text-align: center;
     font-size: 80px;
     margin: 0 0 20px 0; }
-    /* line 751, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 760, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .firstlogin_box .ftlogin_b_icon .ftlogin_b_httt {
       width: 100%;
       line-height: 30px;
@@ -692,13 +701,13 @@ td .check-box {
       font-size: 20px;
       text-align: center;
       font-family: Arial, Helvetica, sans-serif !important; }
-  /* line 763, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 772, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .firstlogin_box .ftlogin_b_part {
     width: 100%;
     height: initial;
     float: left;
     margin: 0 0 10px 0; }
-    /* line 769, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 778, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .firstlogin_box .ftlogin_b_part .b_pt_tt {
       width: 150px;
       line-height: 30px;
@@ -706,14 +715,14 @@ td .check-box {
       float: left;
       color: #333;
       text-align: right; }
-    /* line 778, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 787, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .firstlogin_box .ftlogin_b_part .b_pt_box {
       width: 100%;
       height: 30px;
       position: absolute;
       left: 0;
       padding: 0 15px 0 175px; }
-      /* line 785, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 794, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .firstlogin_box .ftlogin_b_part .b_pt_box input {
         width: 100%;
         height: 30px;
@@ -722,7 +731,7 @@ td .check-box {
         padding: 0 10px;
         background-color: #fff;
         border: 1px #aaa solid; }
-    /* line 796, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 805, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .firstlogin_box .ftlogin_b_part .b_pt_tt1 {
       width: 70px;
       line-height: 30px;
@@ -730,14 +739,14 @@ td .check-box {
       float: left;
       color: #333;
       text-align: right; }
-    /* line 805, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 814, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .firstlogin_box .ftlogin_b_part .b_pt_box1 {
       width: 100%;
       height: 30px;
       position: absolute;
       left: 0;
       padding: 0 15px 0 95px; }
-      /* line 812, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 821, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .firstlogin_box .ftlogin_b_part .b_pt_box1 input {
         width: 100%;
         height: 30px;
@@ -746,13 +755,13 @@ td .check-box {
         padding: 0 10px;
         background-color: #fff;
         border: 1px #aaa solid; }
-  /* line 824, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 833, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .firstlogin_box .ftlogin_b_partbtm {
     width: 100%;
     height: 30px;
     float: left; }
 
-/* line 831, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 840, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .passwordchange_box {
   width: 500px;
   height: initial;
@@ -765,7 +774,7 @@ td .check-box {
   border-radius: 5px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
   z-index: 1; }
-  /* line 844, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 853, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .passwordchange_box .pwchange_b_icon {
     width: 100%;
     height: initial;
@@ -774,7 +783,7 @@ td .check-box {
     text-align: center;
     font-size: 80px;
     margin: 0 0 20px 0; }
-    /* line 853, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 862, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .passwordchange_box .pwchange_b_icon .b_icon_tt {
       width: 100%;
       height: 30px;
@@ -784,7 +793,7 @@ td .check-box {
       color: #333;
       float: left;
       font-family: Arial, Helvetica, sans-serif !important; }
-  /* line 865, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 874, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .passwordchange_box .pwchange_b_httt {
     width: 100%;
     line-height: 30px;
@@ -793,13 +802,13 @@ td .check-box {
     float: left;
     font-size: 20px;
     text-align: center; }
-  /* line 875, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 884, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .passwordchange_box .pwchange_b_part {
     width: 100%;
     height: initial;
     float: left;
     margin: 0 0 10px 0; }
-    /* line 881, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 890, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .passwordchange_box .pwchange_b_part .b_pt_tt {
       width: 150px;
       line-height: 30px;
@@ -807,14 +816,14 @@ td .check-box {
       float: left;
       color: #333;
       text-align: right; }
-    /* line 890, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 899, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .passwordchange_box .pwchange_b_part .b_pt_box {
       width: 100%;
       height: 30px;
       position: absolute;
       left: 0;
       padding: 0 15px 0 175px; }
-      /* line 897, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 906, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .passwordchange_box .pwchange_b_part .b_pt_box input {
         width: 100%;
         height: 30px;
@@ -823,7 +832,7 @@ td .check-box {
         padding: 0 10px;
         background-color: #fff;
         border: 1px #aaa solid; }
-    /* line 908, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 917, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .passwordchange_box .pwchange_b_part .b_pt_tt1 {
       width: 70px;
       line-height: 30px;
@@ -831,14 +840,14 @@ td .check-box {
       float: left;
       color: #333;
       text-align: right; }
-    /* line 917, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 926, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .passwordchange_box .pwchange_b_part .b_pt_box1 {
       width: 100%;
       height: 30px;
       position: absolute;
       left: 0;
       padding: 0 15px 0 95px; }
-      /* line 924, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 933, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .passwordchange_box .pwchange_b_part .b_pt_box1 input {
         width: 100%;
         height: 30px;
@@ -847,20 +856,20 @@ td .check-box {
         padding: 0 10px;
         background-color: #fff;
         border: 1px #aaa solid; }
-  /* line 936, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 945, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .passwordchange_box .pwchange_b_partbtm {
     width: 100%;
     height: 30px;
     float: left; }
 
-/* line 943, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 952, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .ctr_leftpart_home {
   width: 300px;
   height: initial;
   float: left;
   position: relative;
   z-index: 10; }
-  /* line 950, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 959, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .ctr_leftpart_home .leftpart_home_box {
     width: inherit;
     height: initial;
@@ -871,7 +880,7 @@ td .check-box {
     border-radius: 0 5px 5px 0;
     padding: 0 0 10px 0;
     margin: 0 0 15px 0; }
-    /* line 961, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 970, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .ctr_leftpart_home .leftpart_home_box .ltpt_home_b_httt {
       width: initial;
       height: 40px;
@@ -883,7 +892,7 @@ td .check-box {
       border-radius: 0 5px 0 0;
       padding: 12px 10px; }
 
-/* line 975, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 984, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .leftpart_ul_box {
   list-style-type: circle;
   height: initial;
@@ -891,14 +900,14 @@ td .check-box {
   display: block;
   background-color: transparent;
   margin: 0 0; }
-  /* line 983, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 992, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .leftpart_ul_box li {
     font-size: 12px;
     line-height: 16px;
     padding: 5px 0;
     color: #fff;
     background-color: transparent !important; }
-    /* line 990, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 999, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .leftpart_ul_box li a {
       width: inherit;
       height: initial;
@@ -907,18 +916,18 @@ td .check-box {
       color: #aaa;
       padding: 1px 5px 1px 0;
       font-size: 12px; }
-  /* line 1002, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1011, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .leftpart_ul_box li:hover a {
     color: #fff; }
 
-/* line 1008, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 1017, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .faq_box {
   width: 100%;
   min-height: 500px;
   float: right;
   border-radius: 5px 5px;
   background-color: rgba(0, 0, 0, 0.03); }
-  /* line 1015, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1024, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .faq_box .faq_b_htrtt {
     width: 100%;
     height: 40px;
@@ -927,21 +936,21 @@ td .check-box {
     border-radius: 5px 5px 0 0;
     padding: 0 10px;
     margin: 0 0 10px 0; }
-    /* line 1024, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1033, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .faq_box .faq_b_htrtt span {
       width: initial;
       float: left;
       color: #fff;
       line-height: 40px;
       font-size: 14px; }
-  /* line 1033, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1042, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .faq_box .faq_b_row {
     width: 100%;
     height: initial;
     float: left;
     padding: 0 5px;
     margin: 0 0 10px 0; }
-    /* line 1040, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1049, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .faq_box .faq_b_row .b_row_htrtt {
       width: 100%;
       float: left;
@@ -953,7 +962,7 @@ td .check-box {
       border-radius: 5px 5px;
       margin: 5px 0 0 0;
       padding: 0 5px; }
-      /* line 1052, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1061, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .faq_box .faq_b_row .b_row_htrtt .row_htrtt_icon {
         color: #333;
         line-height: 26px;
@@ -963,7 +972,7 @@ td .check-box {
         font-size: 18px;
         padding: 0 10px;
         cursor: pointer; }
-    /* line 1064, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1073, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .faq_box .faq_b_row .b_row_htrst {
       width: 100%;
       height: initial;
@@ -974,7 +983,7 @@ td .check-box {
       padding: 10px 15px;
       background-color: #fff; }
 
-/* line 1077, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 1086, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .ctr_rightpart_home {
   width: 100%;
   height: 100%;
@@ -983,7 +992,7 @@ td .check-box {
   z-index: 1;
   padding: 0 10px 15px 310px; }
 
-/* line 1086, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 1095, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .ctr_rightpart_atdc {
   width: 100%;
   max-height: inherit;
@@ -993,7 +1002,7 @@ td .check-box {
   z-index: 1;
   padding: 0 10px 0 310px; }
 
-/* line 1096, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 1105, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .rtpt_atdc_box {
   width: 100%;
   min-height: 500px;
@@ -1001,7 +1010,7 @@ td .check-box {
   position: relative;
   background-color: rgba(0, 0, 0, 0.03);
   border-radius: 5px 5px; }
-  /* line 1104, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1113, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .rtpt_atdc_box .atdc_b_htrbox {
     width: 100%;
     height: 40px;
@@ -1009,29 +1018,29 @@ td .check-box {
     float: left;
     border-radius: 5px 5px 0 0;
     padding: 0 10px; }
-    /* line 1112, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1121, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .rtpt_atdc_box .atdc_b_htrbox span {
       width: initial;
       float: left;
       color: #fff;
       line-height: 40px;
       font-size: 14px; }
-  /* line 1121, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1130, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .rtpt_atdc_box .atdc_b_tablebox {
     width: 100%;
     line-height: 30px;
     margin: 0 0 40px 0;
     font-size: 12px; }
-    /* line 1127, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1136, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .rtpt_atdc_box .atdc_b_tablebox thead {
       background-color: #aaa;
       height: 30px; }
-      /* line 1132, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1141, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .rtpt_atdc_box .atdc_b_tablebox thead tr th {
         border-right: 1px #ccc solid;
         padding: 0 5px;
         color: #fff; }
-  /* line 1141, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1150, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .rtpt_atdc_box .atdc_b_totalbox {
     width: 100%;
     height: 30px;
@@ -1040,7 +1049,7 @@ td .check-box {
     padding: 0 10px;
     position: absolute;
     bottom: 0; }
-    /* line 1150, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1159, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .rtpt_atdc_box .atdc_b_totalbox span {
       width: initial;
       float: left;
@@ -1048,7 +1057,7 @@ td .check-box {
       line-height: 30px;
       font-size: 12px; }
 
-/* line 1160, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 1169, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .rtpt_home_box {
   width: 100%;
   height: inherit;
@@ -1056,7 +1065,7 @@ td .check-box {
   position: relative;
   background-color: rgba(0, 0, 0, 0.03);
   border-radius: 5px 5px; }
-  /* line 1168, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1177, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .rtpt_home_box .rtpt_home_b_img {
     width: 100%;
     height: 200px;
@@ -1064,11 +1073,11 @@ td .check-box {
     background: url(../../img/htr_bg.jpg) top center no-repeat;
     background-size: cover;
     border-radius: 5px 5px 0 0; }
-  /* line 1177, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1186, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .rtpt_home_box img {
     margin: 0 0 10px 0;
     border-radius: 5px 5px 0 0; }
-  /* line 1182, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1191, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .rtpt_home_box .rtpt_home_b_tt {
     width: 100%;
     height: initial;
@@ -1077,7 +1086,7 @@ td .check-box {
     font-weight: bold;
     float: left;
     padding: 5px 5px; }
-  /* line 1192, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1201, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .rtpt_home_box .rtpt_home_b_linkpart {
     width: 100%;
     height: 40px;
@@ -1091,11 +1100,11 @@ td .check-box {
     font-size: 14px;
     font-weight: bold; }
 
-/* line 1207, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 1216, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .bg_color_444 {
   background-color: #444 !important; }
 
-/* line 1211, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 1220, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .body_htrcenter {
   width: 100%;
   height: 40px;
@@ -1105,7 +1114,7 @@ td .check-box {
   border-bottom: 2px #ccc solid;
   z-index: 20;
   position: relative; }
-  /* line 1221, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1230, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .body_htrcenter .htrcenter_tab {
     width: initial;
     height: inherit;
@@ -1119,7 +1128,7 @@ td .check-box {
     position: relative;
     cursor: pointer;
     font-size: 14px; }
-    /* line 1235, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1244, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .body_htrcenter .htrcenter_tab .tab_btneff {
       width: 100%;
       height: 40px;
@@ -1129,10 +1138,10 @@ td .check-box {
       position: absolute;
       left: 0;
       top: 0; }
-  /* line 1247, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1256, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .body_htrcenter .htrcenter_tab:hover {
     background-color: #444; }
-    /* line 1250, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1259, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .body_htrcenter .htrcenter_tab:hover .tab_btneff {
       width: 100%;
       height: 40px;
@@ -1144,7 +1153,7 @@ td .check-box {
       top: 0;
       display: block; }
 
-/* line 1264, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 1273, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .ctr_leftpart_atd {
   width: 300px;
   height: initial;
@@ -1152,7 +1161,7 @@ td .check-box {
   position: relative;
   z-index: 10;
   padding: 0 0 0 10px; }
-  /* line 1272, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1281, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .ctr_leftpart_atd .leftpart_atd_box {
     width: 100%;
     height: initial;
@@ -1162,13 +1171,13 @@ td .check-box {
     position: relative;
     border-radius: 5px 5px;
     padding: 0 10px; }
-    /* line 1282, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1291, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .ctr_leftpart_atd .leftpart_atd_box .atd_b_part {
       width: 100%;
       height: 40px;
       float: left;
       margin: 10px 0; }
-      /* line 1288, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1297, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .ctr_leftpart_atd .leftpart_atd_box .atd_b_part .atd_b_pt_tt {
         width: initial;
         line-height: 40px;
@@ -1176,7 +1185,7 @@ td .check-box {
         padding: 0 5px;
         color: #fff;
         font-size: 14px; }
-      /* line 1297, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1306, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .ctr_leftpart_atd .leftpart_atd_box .atd_b_part .atd_b_pt_slt {
         float: right;
         position: relative;
@@ -1186,7 +1195,7 @@ td .check-box {
         width: 200px;
         font-size: 12px;
         border-radius: 5px 5px; }
-    /* line 1309, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1318, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .ctr_leftpart_atd .leftpart_atd_box .atd_b_checkbox {
       width: 100%;
       height: initial;
@@ -1195,11 +1204,11 @@ td .check-box {
       padding: 6px 5px 6px 20px;
       font-size: 12px;
       color: #fff; }
-      /* line 1318, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1327, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .ctr_leftpart_atd .leftpart_atd_box .atd_b_checkbox .atd_b_ckb_box {
         margin: 2px 5px 0 0;
         float: left; }
-    /* line 1324, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1333, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .ctr_leftpart_atd .leftpart_atd_box .atd_b_ttbox {
       width: 100%;
       height: initial;
@@ -1212,7 +1221,7 @@ td .check-box {
       padding: 10px 10px;
       margin: 5px 0;
       line-height: 16px; }
-    /* line 1338, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1347, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .ctr_leftpart_atd .leftpart_atd_box .atd_b_btnpart {
       width: 100%;
       height: initial;
@@ -1221,14 +1230,14 @@ td .check-box {
       left: 0;
       padding: 0 10px 10px; }
 
-/* line 1349, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 1358, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .atdc_editbox1 {
   margin: 10px 0;
   min-height: initial;
   border: 1px #aaa solid;
   background-color: #fff; }
 
-/* line 1356, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 1365, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .popup_bg {
   width: 100%;
   height: 100%;
@@ -1238,7 +1247,7 @@ td .check-box {
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 99; }
 
-/* line 1366, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 1375, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .massage_part {
   width: initial;
   height: inherit;
@@ -1249,7 +1258,7 @@ td .check-box {
   font-size: 12px;
   background-color: rgba(255, 255, 255, 0.35); }
 
-/* line 1377, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 1386, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .malaysia_logo {
   width: 100%;
   height: 100%;
@@ -1259,7 +1268,7 @@ td .check-box {
   opacity: 0.15;
   pointer-events: none; }
 
-/* line 1387, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 1396, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .body_center {
   width: 100%;
   height: initial;
@@ -1268,20 +1277,20 @@ td .check-box {
   /*bottom: 7px;*/
   top: 85px;
   z-index: 10; }
-  /* line 1396, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1405, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .body_center .bd_ctr_nav {
     width: 200px;
     height: initial;
     float: left;
     position: relative;
     z-index: 10; }
-    /* line 1403, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1412, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .body_center .bd_ctr_nav .innav1_btnleft_icon {
       width: 40px;
       height: 40px;
       border-radius: 0 5px 0 0;
       background-color: #222; }
-      /* line 1409, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1418, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .innav1_btnleft_icon .innav1_btt1_btnleft {
         width: 30px;
         height: 30px;
@@ -1294,11 +1303,11 @@ td .check-box {
         cursor: pointer;
         color: #fff;
         z-index: 1; }
-      /* line 1423, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1432, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .innav1_btnleft_icon .innav1_btt1_btnleft:hover {
         background-color: #038c76;
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35); }
-    /* line 1429, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1438, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .body_center .bd_ctr_nav .ctr_innav1 {
       width: 200px;
       height: initial;
@@ -1314,7 +1323,7 @@ td .check-box {
                     display: none;
                 }
             }*/ }
-      /* line 1441, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1450, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btt1 span {
         width: 200px;
         height: 40px;
@@ -1328,13 +1337,13 @@ td .check-box {
         color: #fff;
         border-radius: 0 5px 0 0;
         padding: 0 35px 0 10px; }
-      /* line 1457, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1466, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn {
         width: 100%;
         height: 40px;
         float: left;
         text-decoration: none; }
-        /* line 1463, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 1472, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn .innav1_inbtn_icon {
           width: 40px;
           line-height: 40px;
@@ -1343,7 +1352,7 @@ td .check-box {
           /*color: #4ecab5;*/
           font-size: 18px;
           float: left; }
-        /* line 1474, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 1483, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn .innav1_inbtn_tt span {
           line-height: 16px;
           display: table-cell;
@@ -1354,7 +1363,7 @@ td .check-box {
           padding: 0 5px;
           margin: 0 0 0 40px;
           font-size: 14px; }
-      /* line 1493, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1502, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_ttbox {
         width: initial;
         height: 26px;
@@ -1371,16 +1380,16 @@ td .check-box {
         pointer-events: none;
         border-radius: 5px;
         font-family: Arial, Helvetica, sans-serif !important; }
-      /* line 1513, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1522, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_icon, .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btneff .innav1_inbtn_icon {
         color: #fff;
         background-color: #038c76; }
-      /* line 1519, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1528, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btn:hover .innav1_inbtn_tt span, .body_center .bd_ctr_nav .ctr_innav1 .ctr_innav1_btneff .innav1_inbtn_tt span {
         color: #fff;
         background-color: #09af94;
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35); }
-    /* line 1528, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1537, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .body_center .bd_ctr_nav .ctr_innav2 {
       width: 200px;
       height: initial;
@@ -1396,14 +1405,14 @@ td .check-box {
                     display: none;
                 }
             }*/ }
-      /* line 1539, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1548, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav2 .innav2_btnleft_box {
         width: 40px;
         height: 40px;
         border-radius: 0 5px 0 0;
         background-color: #222;
         display: none; }
-      /* line 1548, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1557, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btt1 span {
         width: 200px;
         height: 40px;
@@ -1417,13 +1426,13 @@ td .check-box {
         color: #fff;
         border-radius: 0 5px 0 0;
         padding: 0 35px 0 10px; }
-      /* line 1564, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1573, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn {
         width: 100%;
         height: 40px;
         float: left;
         text-decoration: none; }
-        /* line 1570, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 1579, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn .innav2_inbtn_icon {
           width: 40px;
           line-height: 40px;
@@ -1432,7 +1441,7 @@ td .check-box {
           /*color: #4ecab5;*/
           font-size: 18px;
           float: left; }
-        /* line 1581, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 1590, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn .innav2_inbtn_tt span {
           line-height: 16px;
           display: table-cell;
@@ -1443,7 +1452,7 @@ td .check-box {
           padding: 0 5px;
           margin: 0 0 0 40px;
           font-size: 14px; }
-      /* line 1600, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1609, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_ttbox {
         width: initial;
         height: 26px;
@@ -1460,16 +1469,16 @@ td .check-box {
         pointer-events: none;
         border-radius: 5px;
         font-family: Arial, Helvetica, sans-serif !important; }
-      /* line 1620, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1629, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_icon, .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btneff .innav2_inbtn_icon {
         color: #fff;
         background-color: #038c76; }
-      /* line 1626, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1635, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btn:hover .innav2_inbtn_tt span, .body_center .bd_ctr_nav .ctr_innav2 .ctr_innav2_btneff .innav2_inbtn_tt span {
         color: #fff;
         background-color: #09af94;
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35); }
-  /* line 1636, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1645, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .body_center .bd_ctr_rightpart {
     width: 100%;
     height: initial;
@@ -1478,7 +1487,7 @@ td .check-box {
     z-index: 2;
     /*padding: 0 10px 50px 210px;*/
     padding: 0 10px 15px 210px; }
-    /* line 1645, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1654, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .body_center .bd_ctr_rightpart .ctr_rtpt_box {
       width: 100%;
       height: 515px;
@@ -1487,7 +1496,7 @@ td .check-box {
       border-radius: 5px 5px;
       background-color: rgba(0, 0, 0, 0.03);
       border: 1px #999 solid; }
-      /* line 1654, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1663, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht {
         width: 100%;
         height: 40px;
@@ -1495,14 +1504,14 @@ td .check-box {
         float: left;
         border-radius: 5px 5px 0 0;
         padding: 0 10px; }
-        /* line 1662, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 1671, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht span {
           width: initial;
           float: left;
           color: #fff;
           line-height: 40px;
           font-size: 14px; }
-        /* line 1670, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 1679, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht .rtpt_b_ht_refresh {
           width: 30px;
           line-height: 30px;
@@ -1512,25 +1521,25 @@ td .check-box {
           color: #fff;
           margin: 5px 0 5px 5px;
           cursor: pointer; }
-        /* line 1681, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 1690, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ht .rtpt_b_ht_refresh:hover {
           color: #09af94; }
-      /* line 1686, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1695, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_rightpart .ctr_rtpt_box table {
         width: 100%;
         line-height: 30px;
         margin: 0 0 40px 0;
         font-size: 12px; }
-        /* line 1692, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 1701, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box table thead {
           background-color: #aaa;
           height: 30px; }
-          /* line 1697, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 1706, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .body_center .bd_ctr_rightpart .ctr_rtpt_box table thead tr th {
             border-right: 1px #ccc solid;
             padding: 0 5px;
             color: #fff; }
-      /* line 1706, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1715, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ftr {
         width: 100%;
         height: 30px;
@@ -1541,14 +1550,14 @@ td .check-box {
         bottom: 0;
         background-color: #444;
         z-index: 1; }
-        /* line 1717, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 1726, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_b_ftr span {
           width: initial;
           float: left;
           color: #fff;
           line-height: 30px;
           font-size: 12px; }
-      /* line 1726, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1735, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox {
         width: 550px;
         height: initial;
@@ -1557,7 +1566,7 @@ td .check-box {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%); }
-        /* line 1735, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 1744, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part {
           width: 100%;
           height: initial;
@@ -1575,7 +1584,7 @@ td .check-box {
                         background-color: #fff;
                         border: 1px #aaa solid;
                     }*/ }
-          /* line 1743, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 1752, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_pt_tt {
             width: 180px;
             height: 30px;
@@ -1584,7 +1593,7 @@ td .check-box {
             left: 0;
             line-height: 30px;
             font-size: 14px; }
-          /* line 1762, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 1771, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_part .rtpt_addbox_pt_error {
             width: 100%;
             line-height: 20px;
@@ -1592,12 +1601,12 @@ td .check-box {
             color: #ff0000;
             font-size: 12px;
             text-align: right; }
-        /* line 1772, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 1781, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_rtpt_addbox .rtpt_addbox_partbtn {
           width: 100%;
           height: 30px;
           float: left; }
-      /* line 1779, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1788, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox {
         width: 550px;
         height: initial;
@@ -1606,7 +1615,7 @@ td .check-box {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%); }
-        /* line 1788, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 1797, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part {
           width: 100%;
           height: initial;
@@ -1632,7 +1641,7 @@ td .check-box {
                         font-size: 12px;
                         text-align: right;
                     }*/ }
-          /* line 1796, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 1805, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .hlday_addbox_pt_tt {
             width: 160px;
             height: 30px;
@@ -1642,13 +1651,13 @@ td .check-box {
             line-height: 30px;
             font-size: 14px;
             font-weight: normal; }
-          /* line 1824, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 1833, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .checkbox1 {
             float: left;
             width: 17px !important;
             height: 17px !important;
             margin: 7px 0 0 10px !important; }
-          /* line 1831, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 1840, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_part .hlday_addbox_pt_ttbox {
             width: 370px;
             height: 30px;
@@ -1656,24 +1665,24 @@ td .check-box {
             line-height: 30px;
             font-size: 14px;
             padding: 0 10px; }
-        /* line 1841, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 1850, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .body_center .bd_ctr_rightpart .ctr_rtpt_box .ctr_holiday_addbox .hlday_addbox_partbtn {
           width: 100%;
           height: 30px;
           float: left; }
-    /* line 1849, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1858, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .body_center .bd_ctr_rightpart .ctr_rtpt_footer {
       width: 100%;
       height: initial;
       float: left;
       padding: 5px 0; }
-  /* line 1857, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1866, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .body_center .bd_ctr_rightpart1 {
     width: 100%;
     height: initial;
     float: left;
     padding: 10px 10px 0 10px; }
-    /* line 1863, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1872, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb {
       width: 100%;
       line-height: 30px;
@@ -1682,7 +1691,7 @@ td .check-box {
       font-size: 14px;
       font-weight: bold;
       background-color: #fff; }
-      /* line 1872, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1881, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb .ctr_rtpt1_icon1 {
         width: 30px;
         height: inherit;
@@ -1696,14 +1705,14 @@ td .check-box {
         color: #fff;
         box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.35);
         cursor: pointer; }
-      /* line 1887, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1896, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .body_center .bd_ctr_rightpart1 .ctr_rtpt1_inb .ctr_rtpt1_icon2 {
         font-size: 18px;
         line-height: 30px;
         text-align: center;
         margin: 0 5px 0 0; }
 
-/* line 1897, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 1906, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .systembox_lt {
   width: 49%;
   min-height: 605px;
@@ -1713,7 +1722,7 @@ td .check-box {
   margin: 0 0 10px 10px;
   overflow: auto;
   position: relative; }
-  /* line 1907, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1916, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .systembox_lt .stbox_lt_htb {
     width: 100%;
     height: 40px;
@@ -1721,20 +1730,20 @@ td .check-box {
     float: left;
     border-radius: 5px 5px 0 0;
     padding: 0 10px; }
-    /* line 1915, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1924, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .systembox_lt .stbox_lt_htb span {
       width: initial;
       float: left;
       color: #fff;
       line-height: 40px;
       font-size: 14px; }
-  /* line 1924, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 1933, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .systembox_lt .stbox_lt_part1 {
     width: 100%;
     height: initial;
     float: left;
     padding: 10px 10px; }
-    /* line 1930, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1939, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .systembox_lt .stbox_lt_part1 .lt_pt1_box1 {
       width: 100%;
       height: initial;
@@ -1742,7 +1751,7 @@ td .check-box {
       position: relative;
       padding: 0 30px 0 160px;
       margin: 0 0 10px 0; }
-      /* line 1938, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1947, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .systembox_lt .stbox_lt_part1 .lt_pt1_box1 .pt1_b1_tt {
         width: 150px;
         height: 30px;
@@ -1752,7 +1761,7 @@ td .check-box {
         font-size: 14px;
         position: absolute;
         left: 0; }
-      /* line 1949, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1958, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .systembox_lt .stbox_lt_part1 .lt_pt1_box1 .pt1_b1_input {
         width: 100%;
         height: 30px;
@@ -1762,7 +1771,7 @@ td .check-box {
         padding: 0 10px;
         background-color: #fff;
         border: 1px #aaa solid; }
-      /* line 1960, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1969, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .systembox_lt .stbox_lt_part1 .lt_pt1_box1 .pt1_b1_textarea {
         width: 100%;
         max-height: 100px;
@@ -1773,7 +1782,7 @@ td .check-box {
         padding: 0 10px;
         background-color: #fff;
         border: 1px #aaa solid; }
-    /* line 1973, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 1982, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .systembox_lt .stbox_lt_part1 .lt_pt1_box2 {
       width: 100%;
       height: initial;
@@ -1781,7 +1790,7 @@ td .check-box {
       position: relative;
       padding: 0 100px 0 160px;
       margin: 0 0 10px 0; }
-      /* line 1981, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 1990, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .systembox_lt .stbox_lt_part1 .lt_pt1_box2 .pt1_b2_tt {
         width: 150px;
         height: 30px;
@@ -1791,13 +1800,13 @@ td .check-box {
         font-size: 14px;
         position: absolute;
         left: 0; }
-      /* line 1992, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 2001, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .systembox_lt .stbox_lt_part1 .lt_pt1_box2 .pt1_b2_inputimg {
         background-color: #fff;
         background-position: left top;
         background-repeat: no-repeat;
         background-size: contain; }
-  /* line 2001, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2010, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .systembox_lt .stbox_lt_part2 {
     width: 100%;
     height: initial;
@@ -1806,7 +1815,7 @@ td .check-box {
     padding: 0 10px;
     bottom: 10px; }
 
-/* line 2011, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2020, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .systembox_rt1 {
   width: 49%;
   min-height: 200px;
@@ -1816,7 +1825,7 @@ td .check-box {
   background-color: #fff;
   border: 1px #ccc solid;
   position: relative; }
-  /* line 2021, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2030, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .systembox_rt1 .stbox_rt1_httt {
     width: 100%;
     height: 40px;
@@ -1824,20 +1833,20 @@ td .check-box {
     float: left;
     border-radius: 5px 5px 0 0;
     padding: 0 10px; }
-    /* line 2029, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2038, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt1 .stbox_rt1_httt span {
       width: initial;
       float: left;
       color: #fff;
       line-height: 40px;
       font-size: 14px; }
-  /* line 2038, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2047, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .systembox_rt1 .stbox_rt1_box {
     width: 100%;
     height: initial;
     float: left;
     padding: 10px 10px; }
-    /* line 2044, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2053, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt1 .stbox_rt1_box .rt1_b_part1 {
       width: 100%;
       height: initial;
@@ -1845,7 +1854,7 @@ td .check-box {
       position: relative;
       padding: 0 30px 0 200px;
       margin: 0 0 10px 0; }
-      /* line 2052, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 2061, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .systembox_rt1 .stbox_rt1_box .rt1_b_part1 .b_pt1_tt {
         width: 190px;
         height: 30px;
@@ -1855,7 +1864,7 @@ td .check-box {
         font-size: 14px;
         position: absolute;
         left: 0; }
-    /* line 2064, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2073, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt1 .stbox_rt1_box .rt1_b_part2 {
       width: 100%;
       height: initial;
@@ -1863,7 +1872,7 @@ td .check-box {
       position: relative;
       padding: 0 10px; }
 
-/* line 2074, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2083, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .systembox_rt2 {
   width: 49%;
   min-height: 100px;
@@ -1872,7 +1881,7 @@ td .check-box {
   margin: 0 10px 10px 0;
   background-color: #fff;
   border: 1px #ccc solid; }
-  /* line 2083, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2092, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .systembox_rt2 .stbox_rt2_box1 {
     width: 100%;
     height: 40px;
@@ -1880,20 +1889,20 @@ td .check-box {
     float: left;
     border-radius: 5px 5px 0 0;
     padding: 0 10px; }
-    /* line 2091, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2100, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt2 .stbox_rt2_box1 span {
       width: initial;
       float: left;
       color: #fff;
       line-height: 40px;
       font-size: 14px; }
-  /* line 2100, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2109, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .systembox_rt2 .stbox_rt2_box2 {
     width: 100%;
     height: initial;
     float: left;
     padding: 10px 10px; }
-    /* line 2106, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2115, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt2 .stbox_rt2_box2 .rt2_b2_tt {
       width: 100%;
       height: initial;
@@ -1902,7 +1911,7 @@ td .check-box {
       font-size: 12px;
       color: #666;
       margin: 0 0 10px 0; }
-    /* line 2116, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2125, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt2 .stbox_rt2_box2 .rt2_b2_box {
       width: 100%;
       height: initial;
@@ -1910,7 +1919,7 @@ td .check-box {
       position: relative;
       padding: 0 10px; }
 
-/* line 2126, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2135, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .systembox_rt3 {
   width: 49%;
   min-height: 100px;
@@ -1919,13 +1928,13 @@ td .check-box {
   margin: 0 10px 10px 0;
   background-color: #fff;
   border: 1px #ccc solid; }
-  /* line 2135, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2144, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .systembox_rt3 .stbox_rt3_box {
     width: 100%;
     height: initial;
     float: left;
     padding: 10px 10px; }
-    /* line 2141, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2150, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt3 .stbox_rt3_box .rt3_b_httext {
       width: 100%;
       height: initial;
@@ -1935,7 +1944,7 @@ td .check-box {
       font-weight: bold;
       color: #666;
       margin: 0 0 10px 0; }
-    /* line 2152, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2161, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt3 .stbox_rt3_box .rt3_b_addtext {
       width: 100%;
       height: initial;
@@ -1944,7 +1953,7 @@ td .check-box {
       font-size: 12px;
       color: #666;
       margin: 0 0 10px 0; }
-    /* line 2162, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2171, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .systembox_rt3 .stbox_rt3_box .rt3_b_textbox {
       width: 100%;
       height: initial;
@@ -1953,15 +1962,15 @@ td .check-box {
       font-size: 12px;
       color: #666;
       margin: 0 0 10px 0; }
-      /* line 2171, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 2180, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .systembox_rt3 .stbox_rt3_box .rt3_b_textbox b {
         width: 40px;
         float: left; }
-      /* line 2176, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 2185, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .systembox_rt3 .stbox_rt3_box .rt3_b_textbox div {
         float: left; }
 
-/* line 2183, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2192, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .inbox_haedtext {
   width: 100%;
   height: 40px;
@@ -1969,7 +1978,7 @@ td .check-box {
   float: left;
   border-radius: 5px 5px 0 0;
   padding: 0 10px; }
-  /* line 2191, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2200, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .inbox_haedtext span {
     width: initial;
     float: left;
@@ -1977,7 +1986,7 @@ td .check-box {
     line-height: 40px;
     font-size: 14px; }
 
-/* line 2200, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2209, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .all_input1 {
   width: 100%;
   height: 30px;
@@ -1988,7 +1997,7 @@ td .check-box {
   background-color: #fff;
   border: 1px #aaa solid; }
 
-/* line 2211, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2220, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .pt1_b1_inforbtn {
   width: 30px;
   height: 30px;
@@ -2000,7 +2009,7 @@ td .check-box {
   line-height: 30px;
   color: #004f83 !important; }
 
-/* line 2223, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2232, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .pt1_b2_folderbtn {
   width: 30px;
   height: 30px;
@@ -2014,7 +2023,7 @@ td .check-box {
   border: 1px #aaa solid;
   color: #f50; }
 
-/* line 2237, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2246, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .pt1_b2_deletebtn {
   width: 30px;
   height: 30px;
@@ -2028,19 +2037,19 @@ td .check-box {
   border: 1px #aaa solid;
   color: #f00; }
 
-/* line 2251, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2260, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .edit_pt_box {
   width: 100%;
   height: inherit;
   float: left; }
-  /* line 2256, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2265, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .edit_pt_box .edit_pt_inb {
     width: 100%;
     height: initial;
     float: left;
     margin: 0 0 10px 0;
     padding: 0 0 0 170px; }
-    /* line 2263, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2272, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .edit_pt_box .edit_pt_inb .pt_inb_tt {
       width: 160px;
       height: 30px;
@@ -2051,7 +2060,7 @@ td .check-box {
       font-size: 14px;
       position: absolute;
       left: 0; }
-    /* line 2275, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2284, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .edit_pt_box .edit_pt_inb .pt_inb_input_none {
       width: 100%;
       height: 30px;
@@ -2063,7 +2072,7 @@ td .check-box {
       border: 1px #aaa solid;
       color: #333;
       pointer-events: none; }
-    /* line 2288, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2297, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .edit_pt_box .edit_pt_inb .pt_inb_input {
       width: 100%;
       height: 30px;
@@ -2075,7 +2084,7 @@ td .check-box {
       border: 1px #aaa solid;
       color: #333; }
 
-/* line 2303, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2312, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .hlday_addbox_pt_error {
   width: 100%;
   line-height: 20px;
@@ -2084,7 +2093,7 @@ td .check-box {
   font-size: 12px;
   text-align: right; }
 
-/* line 2312, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2321, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .shift_addbox_pt_error {
   width: 100px;
   line-height: 20px;
@@ -2093,34 +2102,37 @@ td .check-box {
   font-size: 12px;
   text-align: center; }
 
-/* line 2321, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2330, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 tbody {
   height: 30px; }
-  /* line 2325, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
-  tbody tr td {
-    border-right: 1px #aaa solid;
-    padding: 0 5px; }
-  /* line 2330, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
-  tbody tr td:last-child {
-    border-right: 0; }
-  /* line 2335, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2334, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  tbody tr {
+    border-bottom: 1px #aaa solid; }
+    /* line 2337, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    tbody tr td {
+      border-right: 1px #aaa solid;
+      padding: 0 5px; }
+    /* line 2342, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    tbody tr td:last-child {
+      border-right: 0; }
+  /* line 2347, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   tbody tr:nth-child(odd) {
     background-color: #fff; }
-  /* line 2339, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2351, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   tbody tr:nth-child(even) {
     background-color: #eee; }
-  /* line 2343, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2355, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   tbody tr:hover {
     background-color: #daf1ed; }
 
-/* line 2348, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2360, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .ctr_rtpt_popupbox {
   width: 100%;
   height: 515px;
   position: absolute;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.35); }
-  /* line 2355, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2367, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .ctr_rtpt_popupbox .rtpt_popupbox_inb {
     width: 500px;
     height: initial;
@@ -2133,7 +2145,7 @@ tbody {
     border-radius: 5px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
     z-index: 10; }
-    /* line 2368, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2380, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon {
       width: 100%;
       height: initial;
@@ -2141,7 +2153,7 @@ tbody {
       color: #666;
       text-align: center;
       font-size: 60px; }
-    /* line 2377, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2389, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon_red {
       width: 100%;
       height: initial;
@@ -2149,7 +2161,7 @@ tbody {
       color: #f00;
       text-align: center;
       font-size: 60px; }
-    /* line 2386, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2398, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_tt {
       width: 100%;
       line-height: 30px;
@@ -2159,14 +2171,14 @@ tbody {
       float: left;
       padding: 5px 5px;
       font-weight: bold; }
-    /* line 2397, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2409, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_btnpart {
       width: initial;
       height: initial;
       margin: 10px auto 0;
       position: relative;
       display: table; }
-    /* line 2405, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2417, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .ctr_rtpt_popupbox .rtpt_popupbox_inb .popupbox_inb_icon_blue {
       width: 100%;
       height: initial;
@@ -2175,7 +2187,7 @@ tbody {
       text-align: center;
       font-size: 66px; }
 
-/* line 2416, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2428, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 ul {
   list-style-type: none;
   margin: 0px 0 0px 0;
@@ -2184,22 +2196,22 @@ ul {
   background-color: #fff;
   float: left;
   width: 100%; }
-  /* line 2425, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2437, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   ul li {
     font-size: 12px;
     line-height: 18px;
     padding: 5px 0;
     color: #333; }
-    /* line 2431, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2443, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     ul li .li_text {
       line-height: 18px;
       float: left;
       padding: 0 5px; }
-  /* line 2438, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2450, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   ul li:hover {
     background-color: #fcfccc; }
 
-/* line 2443, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2455, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .ul_sub {
   margin: 5px 0 !important;
   width: 100%;
@@ -2209,7 +2221,7 @@ ul {
 /*.ul_sub:hover {
     background-color: #fcfccc;
 }*/
-/* line 2454, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2466, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .li_users_icon {
   width: initial;
   height: initial;
@@ -2219,7 +2231,7 @@ ul {
   color: #09af94;
   float: left; }
 
-/* line 2464, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2476, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .li_list_icon {
   width: initial;
   height: initial;
@@ -2230,7 +2242,7 @@ ul {
   float: left;
   cursor: pointer; }
 
-/* line 2475, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2487, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .li_btn_rename, .li_btn_rename:hover {
   width: initial;
   font-size: 12px;
@@ -2242,7 +2254,7 @@ ul {
   border-radius: 5px;
   cursor: pointer; }
 
-/* line 2487, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2499, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .li_btn_delete, .li_btn_delete:hover {
   width: initial;
   font-size: 12px;
@@ -2254,7 +2266,7 @@ ul {
   border-radius: 5px;
   cursor: pointer; }
 
-/* line 2499, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2511, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .btn_editprofile {
   width: initial;
   height: inherit;
@@ -2266,7 +2278,7 @@ ul {
   text-decoration: none;
   color: #fff; }
 
-/* line 2511, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2523, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .btn_edit {
   width: 20px;
   line-height: 30px !important;
@@ -2277,7 +2289,7 @@ ul {
   margin: 0 2px;
   cursor: pointer; }
 
-/* line 2522, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2534, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .btn_email {
   width: 20px;
   line-height: 30px !important;
@@ -2288,7 +2300,7 @@ ul {
   margin: 0 2px;
   cursor: pointer; }
 
-/* line 2533, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2545, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .btn_trash {
   width: 20px;
   line-height: 30px !important;
@@ -2299,7 +2311,7 @@ ul {
   margin: 0 2px;
   cursor: pointer; }
 
-/* line 2544, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2556, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .btn_copy {
   width: 20px;
   line-height: 30px !important;
@@ -2310,11 +2322,11 @@ ul {
   margin: 0 2px;
   cursor: pointer; }
 
-/* line 2555, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2567, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .btn_edit:hover, .btn_trash:hover, .btn_copy:hover {
   color: #333; }
 
-/* line 2559, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2571, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .rtpt_ftr_addbtn {
   width: initial;
   height: 30px;
@@ -2329,7 +2341,7 @@ ul {
   color: #fff;
   cursor: pointer; }
 
-/* line 2574, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2586, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .rtpt_ftr_deletebtn {
   width: initial;
   height: 30px;
@@ -2344,7 +2356,7 @@ ul {
   color: #fff;
   cursor: pointer; }
 
-/* line 2589, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2601, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .rtpt_closebtn {
   width: initial;
   height: 30px;
@@ -2358,7 +2370,7 @@ ul {
   color: #fff;
   cursor: pointer; }
 
-/* line 2603, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2615, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .rtpt_printbtn {
   width: initial;
   height: 30px;
@@ -2372,7 +2384,7 @@ ul {
   color: #fff;
   cursor: pointer; }
 
-/* line 2617, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2629, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .rtpt_forgotpwbtn {
   width: initial;
   line-height: 30px;
@@ -2384,7 +2396,7 @@ ul {
   padding: 0 10px;
   cursor: pointer; }
 
-/* line 2629, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2641, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .rtpt_savebtn {
   width: initial;
   height: 30px;
@@ -2398,7 +2410,7 @@ ul {
   color: #fff;
   cursor: pointer; }
 
-/* line 2643, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2655, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .rtpt_yesbtn {
   width: initial;
   height: 30px;
@@ -2412,11 +2424,11 @@ ul {
   color: #fff;
   cursor: pointer; }
 
-/* line 2657, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2669, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .rtpt_ftr_addbtn:hover {
   background-color: #004f83; }
 
-/* line 2661, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2673, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .rtpt_deletebtn {
   width: initial;
   height: 30px;
@@ -2430,13 +2442,13 @@ ul {
   color: #fff;
   cursor: pointer; }
 
-/* line 2675, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2687, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 a, a:hover {
   color: #fff;
   text-decoration: none;
   font-size: 14px; }
 
-/* line 2681, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2693, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .message_part {
   width: 49%;
   height: 500px;
@@ -2445,26 +2457,26 @@ a, a:hover {
   border: 1px #ccc solid;
   margin: 0 0 0 10px;
   overflow: auto; }
-  /* line 2690, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2702, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .message_part .mse_pt_table {
     width: 100%;
     margin: 0 0 30px 0;
     float: left;
     line-height: 30px;
     font-size: 12px; }
-    /* line 2697, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2709, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .message_part .mse_pt_table thead {
       background-color: #aaa;
       height: 30px; }
-      /* line 2701, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 2713, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .message_part .mse_pt_table thead th {
         border-right: 1px #ccc solid;
         padding: 0 5px;
         color: #fff; }
-      /* line 2707, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 2719, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .message_part .mse_pt_table thead th:last-child {
         border-right: 0; }
-  /* line 2713, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2725, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .message_part .mse_pt_itenbox {
     width: inherit;
     height: 30px;
@@ -2473,7 +2485,7 @@ a, a:hover {
     padding: 0 10px;
     position: absolute;
     bottom: 0; }
-    /* line 2722, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2734, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .message_part .mse_pt_itenbox span {
       width: 100%;
       float: left;
@@ -2481,7 +2493,7 @@ a, a:hover {
       line-height: 30px;
       font-size: 12px; }
 
-/* line 2732, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2744, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .mse_pt_msebox {
   width: 49%;
   min-height: 500px;
@@ -2489,7 +2501,7 @@ a, a:hover {
   border-radius: 5px 5px;
   margin: 0 10px 0 0;
   background-color: rgba(0, 0, 0, 0.03); }
-  /* line 2740, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2752, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .mse_pt_msebox .msebox_htr {
     width: 100%;
     height: 40px;
@@ -2497,14 +2509,14 @@ a, a:hover {
     float: left;
     border-radius: 5px 5px 0 0;
     padding: 0 10px; }
-    /* line 2748, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2760, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .mse_pt_msebox .msebox_htr span {
       width: initial;
       float: left;
       color: #fff;
       line-height: 40px;
       font-size: 14px; }
-    /* line 2756, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2768, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .mse_pt_msebox .msebox_htr .msebox_htr_date {
       width: initial;
       float: right;
@@ -2512,7 +2524,7 @@ a, a:hover {
       line-height: 40px;
       font-size: 12px;
       color: #fff; }
-  /* line 2766, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2778, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .mse_pt_msebox .msebox_ttbox {
     width: 100%;
     height: initial;
@@ -2522,7 +2534,7 @@ a, a:hover {
     line-height: 16px;
     padding: 10px 10px; }
 
-/* line 2777, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2789, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .message_lt_part {
   width: 49%;
   min-height: 515px;
@@ -2533,7 +2545,7 @@ a, a:hover {
   overflow: auto;
   position: relative; }
 
-/* line 2788, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2800, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .message_rt_part {
   width: 49%;
   min-height: 515px;
@@ -2544,7 +2556,7 @@ a, a:hover {
   border: 1px #ccc solid;
   position: relative; }
 
-/* line 2799, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2811, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .ball_color1 {
   width: 16px;
   height: 16px;
@@ -2554,14 +2566,14 @@ a, a:hover {
   margin: 0 5px 0 0;
   float: left; }
 
-/* line 2809, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2821, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .report_lt_part {
   width: 100%;
   height: initial;
   float: left;
   position: relative;
   padding: 0 10px 0 370px; }
-  /* line 2816, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2828, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .report_lt_part .rpt_lt_pt {
     width: 350px;
     min-height: 515px;
@@ -2572,7 +2584,7 @@ a, a:hover {
     border-radius: 5px 5px;
     padding: 10px 10px;
     margin: 0 0 0 10px; }
-    /* line 2827, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2839, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .report_lt_part .rpt_lt_pt .rpt_lt_box {
       width: 100%;
       height: initial;
@@ -2580,7 +2592,7 @@ a, a:hover {
       position: relative;
       margin: 0 0 10px 0;
       padding: 0 0 0 100px; }
-      /* line 2835, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 2847, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .report_lt_part .rpt_lt_pt .rpt_lt_box .lt_b_tt {
         width: 100px;
         height: inherit;
@@ -2591,7 +2603,7 @@ a, a:hover {
         color: #fff;
         font-size: 14px;
         text-align: right; }
-      /* line 2847, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 2859, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .report_lt_part .rpt_lt_pt .rpt_lt_box .lt_b_select {
         width: 100%;
         height: 30px;
@@ -2601,7 +2613,7 @@ a, a:hover {
         margin: 5px 0;
         font-size: 12px;
         margin: 0 0; }
-      /* line 2858, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 2870, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .report_lt_part .rpt_lt_pt .rpt_lt_box .lt_b_radiobox {
         width: 100%;
         height: 30px;
@@ -2610,7 +2622,7 @@ a, a:hover {
         float: left;
         font-size: 12px;
         color: #fff; }
-    /* line 2869, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2881, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .report_lt_part .rpt_lt_pt .rpt_lt_box1 {
       width: 100%;
       height: initial;
@@ -2618,7 +2630,7 @@ a, a:hover {
       position: relative;
       margin: 0 0 10px 0;
       padding: 0 0 0 140px; }
-      /* line 2877, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 2889, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .report_lt_part .rpt_lt_pt .rpt_lt_box1 .lt_b1_tt {
         width: 140px;
         height: inherit;
@@ -2629,7 +2641,7 @@ a, a:hover {
         color: #fff;
         font-size: 14px;
         text-align: right; }
-      /* line 2889, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 2901, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .report_lt_part .rpt_lt_pt .rpt_lt_box1 .lt_b1_select {
         width: 100%;
         height: 30px;
@@ -2639,7 +2651,7 @@ a, a:hover {
         margin: 5px 0;
         font-size: 12px;
         margin: 0 0; }
-      /* line 2900, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 2912, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .report_lt_part .rpt_lt_pt .rpt_lt_box1 .lt_b1_radiobox {
         width: 100%;
         height: 30px;
@@ -2648,7 +2660,7 @@ a, a:hover {
         float: left;
         font-size: 12px;
         color: #fff; }
-    /* line 2911, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2923, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .report_lt_part .rpt_lt_pt .rpt_lt_ttbox {
       width: 100%;
       float: left;
@@ -2660,7 +2672,7 @@ a, a:hover {
       bottom: 60px;
       padding: 0 10px; }
 
-/* line 2925, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2937, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .report_checkbox {
   width: 100%;
   height: initial;
@@ -2670,7 +2682,7 @@ a, a:hover {
   font-size: 12px;
   color: #fff; }
 
-/* line 2935, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2947, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .report_checkbox1 {
   width: 100%;
   height: initial;
@@ -2680,7 +2692,7 @@ a, a:hover {
   font-size: 12px;
   color: #fff; }
 
-/* line 2945, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2957, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .report_rt_part {
   width: 100%;
   min-height: 515px;
@@ -2689,13 +2701,13 @@ a, a:hover {
   border: 1px #ccc solid;
   position: relative; }
 
-/* line 2954, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 2966, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .about_part {
   width: 860px;
   height: 690px;
   position: relative;
   margin: 5px auto 10px auto; }
-  /* line 2960, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 2972, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .about_part .abt_pt_box {
     width: 100%;
     height: inherit;
@@ -2703,7 +2715,7 @@ a, a:hover {
     top: 0;
     position: absolute;
     z-index: 2; }
-    /* line 2968, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2980, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .about_part .abt_pt_box .pt_b_htimg {
       width: 100%;
       height: 90px;
@@ -2711,19 +2723,19 @@ a, a:hover {
       margin: 0 0 20px 0;
       background: url(../img/ht_img1.png) center center no-repeat;
       background-size: auto; }
-    /* line 2977, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 2989, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .about_part .abt_pt_box .pt_b_row {
       width: 100%;
       height: initial;
       margin: 0 0 20px 0;
       float: left; }
-      /* line 2983, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 2995, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .about_part .abt_pt_box .pt_b_row .b_row_box {
         width: 500px;
         height: initial;
         float: left;
         padding: 0 10px; }
-        /* line 2989, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 3001, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .about_part .abt_pt_box .pt_b_row .b_row_box b {
           width: 100%;
           height: 50px;
@@ -2733,7 +2745,7 @@ a, a:hover {
           padding: 5px 0;
           color: #333;
           margin: 0 0 10px 0; }
-          /* line 2999, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+          /* line 3011, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
           .about_part .abt_pt_box .pt_b_row .b_row_box b .b_row_inb {
             width: 100%;
             height: initial;
@@ -2742,21 +2754,21 @@ a, a:hover {
             margin: 0 0 5px 0;
             padding: 0 0 0 30px;
             position: relative; }
-            /* line 3008, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+            /* line 3020, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
             .about_part .abt_pt_box .pt_b_row .b_row_box b .b_row_inb span {
               font-size: 12px;
               line-height: 30px;
               position: absolute;
               left: 0;
               top: 0; }
-            /* line 3016, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+            /* line 3028, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
             .about_part .abt_pt_box .pt_b_row .b_row_box b .b_row_inb .row_inb_input {
               width: 200px;
               height: 30px;
               float: left;
               border: 0;
               line-height: 30px; }
-      /* line 3027, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 3039, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .about_part .abt_pt_box .pt_b_row .b_row_rtbox {
         width: 80px;
         height: 80px;
@@ -2764,7 +2776,7 @@ a, a:hover {
         background: url(../img//company_logo.jpg) center center no-repeat;
         background-size: cover;
         margin: 0 10px; }
-    /* line 3037, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 3049, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .about_part .abt_pt_box textarea {
       width: 100%;
       min-height: 310px;
@@ -2776,7 +2788,7 @@ a, a:hover {
       margin: 0 0 10px 0;
       border: 0;
       background-color: transparent; }
-    /* line 3050, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 3062, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .about_part .abt_pt_box .pt_b_row1 {
       width: 100%;
       height: initial;
@@ -2784,7 +2796,7 @@ a, a:hover {
       float: left;
       position: relative;
       padding: 0 10px; }
-      /* line 3058, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 3070, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .about_part .abt_pt_box .pt_b_row1 .b_row1_inb {
         width: 260px;
         height: initial;
@@ -2792,7 +2804,7 @@ a, a:hover {
         border: 1px #aaa solid;
         border-radius: 5px 5px;
         padding: 10px; }
-        /* line 3066, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 3078, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .about_part .abt_pt_box .pt_b_row1 .b_row1_inb b {
           width: 100%;
           height: initial;
@@ -2802,7 +2814,7 @@ a, a:hover {
           padding: 5px 0;
           color: #333;
           text-decoration: underline; }
-        /* line 3077, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+        /* line 3089, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
         .about_part .abt_pt_box .pt_b_row1 .b_row1_inb .row1_inb_name {
           width: 100%;
           height: 50px;
@@ -2811,7 +2823,7 @@ a, a:hover {
           line-height: 20px;
           padding: 15px 0;
           color: #333; }
-      /* line 3088, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 3100, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .about_part .abt_pt_box .pt_b_row1 .b_row1_copyright {
         width: 500px;
         height: initial;
@@ -2822,7 +2834,7 @@ a, a:hover {
         position: absolute;
         right: 0;
         bottom: 0; }
-  /* line 3102, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 3114, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .about_part .abt_pt_bglogo {
     width: 100%;
     height: 100%;
@@ -2835,7 +2847,7 @@ a, a:hover {
     opacity: 0.15;
     z-index: 1; }
 
-/* line 3116, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 3128, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .shift_addpart {
   width: 875px;
   height: initial;
@@ -2844,7 +2856,7 @@ a, a:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
-  /* line 3125, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+  /* line 3137, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
   .shift_addpart .addpt_box {
     width: 100%;
     height: initial;
@@ -2852,7 +2864,7 @@ a, a:hover {
     margin: 0 0 10px 0;
     padding: 0 0 0 130px;
     position: relative; }
-    /* line 3133, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 3145, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .shift_addpart .addpt_box .addpt_b_tt {
       width: 130px;
       height: 30px;
@@ -2863,7 +2875,7 @@ a, a:hover {
       top: 0;
       text-align: right;
       padding: 0 10px 0 0; }
-    /* line 3145, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 3157, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .shift_addpart .addpt_box .addpt_b_input {
       width: 250px;
       height: 30px;
@@ -2873,12 +2885,12 @@ a, a:hover {
       padding: 0 0 0 10px;
       background-color: #fff;
       border: 1px #aaa solid; }
-    /* line 3156, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+    /* line 3168, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
     .shift_addpart .addpt_box .addpt_b_daybox {
       width: 100%;
       min-height: 30px;
       float: left; }
-      /* line 3161, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+      /* line 3173, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
       .shift_addpart .addpt_box .addpt_b_daybox .b_dayb_inb {
         width: 100px;
         height: 30px;
@@ -2891,13 +2903,13 @@ a, a:hover {
         text-align: center;
         margin: 0 -1px 0 0; }
 
-/* line 3177, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 3189, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .b_dayb_inb_msg {
   width: 99px;
   height: initial;
   float: left; }
 
-/* line 3183, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 3195, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .arrow_up {
   width: 0;
   height: 0;
@@ -2905,7 +2917,7 @@ a, a:hover {
   border-right: 10px solid transparent;
   border-bottom: 10px solid rgba(0, 0, 0, 0.75); }
 
-/* line 3191, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 3203, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .arrow_down {
   width: 0;
   height: 0;
@@ -2913,7 +2925,7 @@ a, a:hover {
   border-right: 10px solid transparent;
   border-top: 10px solid rgba(0, 0, 0, 0.75); }
 
-/* line 3199, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 3211, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .arrowr_right {
   width: 0;
   height: 0;
@@ -2921,7 +2933,7 @@ a, a:hover {
   border-bottom: 10px solid transparent;
   border-left: 10px solid rgba(0, 0, 0, 0.75); }
 
-/* line 3207, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 3219, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .arrow_left {
   width: 0;
   height: 0;
@@ -2929,7 +2941,7 @@ a, a:hover {
   border-bottom: 10px solid transparent;
   border-right: 10px solid rgba(0, 0, 0, 0.75); }
 
-/* line 3215, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 3227, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .arrow_up_c {
   width: 0;
   height: 0;
@@ -2937,7 +2949,7 @@ a, a:hover {
   border-right: 10px solid transparent;
   border-bottom: 10px solid #026f5d; }
 
-/* line 3223, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 3235, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .arrow_down_c {
   width: 0;
   height: 0;
@@ -2945,7 +2957,7 @@ a, a:hover {
   border-right: 10px solid transparent;
   border-top: 10px solid #026f5d; }
 
-/* line 3231, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 3243, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .arrowr_right _c {
   width: 0;
   height: 0;
@@ -2953,7 +2965,7 @@ a, a:hover {
   border-bottom: 10px solid transparent;
   border-left: 10px solid #026f5d; }
 
-/* line 3239, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 3251, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .arrow_left_c {
   width: 0;
   height: 0;
@@ -2961,7 +2973,7 @@ a, a:hover {
   border-bottom: 10px solid transparent;
   border-right: 10px solid #026f5d; }
 
-/* line 3248, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
+/* line 3260, ../../source/repos/caveonow/mTime/mTime/mTime/scss/style.scss */
 .special_rtpt_box {
   width: 50% !important;
   padding: 10px !important;

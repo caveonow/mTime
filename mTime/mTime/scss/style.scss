@@ -122,6 +122,14 @@ input[type="radio"], input[type="checkbox"] {
     padding: 8px 0 0 0;
 }
 
+.checkinboxtext {
+    width: initial;
+    margin: -2px 0 0 5px;
+    text-align: left;
+    float: left;
+    font-size: 14px;
+}
+
 input {
     border: 0;
 }
@@ -487,21 +495,22 @@ td {
     height: initial;
     float: left;
     position: relative;
-    padding: 0 10px 0 420px;
+    padding: 0 10px 0 310px;
 
     .epy_pt_lt {
-        width: 400px;
+        width: 300px;
         height: initial;
         position: absolute;
         left: 0;
         top: 0;
+        padding: 0 0 10px 10px;
 
         .epy_lt_box1 {
             width: 100%;
             height: initial;
             border-radius: 5px 5px;
             border: 1px #ccc solid;
-            margin: 0 0 10px 10px;
+            /*margin: 0 0 10px 10px;*/
             overflow: auto;
             position: relative;
             float: left;
@@ -517,18 +526,18 @@ td {
                     height: initial;
                     float: left;
                     position: relative;
-                    padding: 0 0 0 120px;
+                    padding: 0 0;
                     margin: 0 0 10px 0;
 
                     .inb_pt_tt {
-                        width: 110px;
+                        width: inherit;
                         height: 30px;
                         text-align: right;
                         float: left;
                         line-height: 30px;
                         font-size: 14px;
-                        position: absolute;
-                        left: 0;
+                        position: relative;
+                        text-align: left;
                     }
 
                     .inb_pt_checkboxtt {
@@ -585,7 +594,7 @@ td {
 }
 
 .epy_lt_table {
-    width: 750px;
+    min-width: 1300px;
     line-height: 30px;
     margin: 0 0 40px 0;
     font-size: 12px;
@@ -2321,7 +2330,10 @@ td {
 tbody {
     height: 30px;
 
+
     tr {
+        border-bottom: 1px #aaa solid;
+
         td {
             border-right: 1px #aaa solid;
             padding: 0 5px;

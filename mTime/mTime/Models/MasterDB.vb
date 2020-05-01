@@ -12,6 +12,8 @@ Namespace model
         Public Property POORATTENDANCEREASON() As DbSet(Of POORATTENDANCEREASON)
         Public Property ATTENDANCESTATUS() As DbSet(Of ATTENDANCESTATUS)
         Public Property SHIFT() As DbSet(Of SHIFT)
+        Public Property STAFF() As DbSet(Of STAFF)
+        Public Property STAFFSHIFT() As DbSet(Of STAFFSHIFT)
         Public Property COMPANY() As DbSet(Of COMPANY)
 
 
