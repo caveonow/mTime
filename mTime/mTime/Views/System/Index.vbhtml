@@ -1,6 +1,4 @@
-﻿@ModelType model.COMPANY
-
-@Code
+﻿@Code
     ViewData("System") = "Index"
 End Code
 
@@ -8,52 +6,12 @@ End Code
 
 <div class="body_center">
     <div class="systembox_lt">
-        @Html.Partial("Edit")
+        @Html.Partial("CompanyInfoUpdate")
     </div>
 
 
     <div class="systembox_rt1">
-        <div class="inbox_haedtext">
-            <span>Setting</span>
-        </div>
-
-        <div class="stbox_rt1_box">
-            <div class="rt1_b_part1">
-                <div class="b_pt1_tt">Grace period (Day) :</div>
-
-                <input type="number" id="" name="day" value="7" class="all_input1">
-
-                <a href="" class="fa fa-info-circle pt1_b1_inforbtn filter1"></a>
-
-                <div class="hlday_addbox_pt_error">Text Error</div>
-            </div>
-
-            <div class="rt1_b_part1">
-                <div class="b_pt1_tt">Max. Announcement :</div>
-
-                <input type="number" id="" name="day" value="30" class="all_input1">
-
-                <a href="" class="fa fa-info-circle pt1_b1_inforbtn filter1"></a>
-
-                <div class="hlday_addbox_pt_error">Text Error</div>
-            </div>
-
-
-            <div class="rt1_b_part1">
-                <div class="b_pt1_tt"> Announcement Expire Day :</div>
-
-                <input type="number" id="" name="day" value="60" class="all_input1">
-
-                <a href="" class="fa fa-info-circle pt1_b1_inforbtn filter1"></a>
-
-                <div class="hlday_addbox_pt_error">Text Error</div>
-            </div>
-
-            <div class="rt1_b_part2">
-                <a href="" id="save" class="rtpt_closebtn filter1">default</a>
-                <a href="" id="save" class="rtpt_savebtn filter1">Save</a>
-            </div>
-        </div>
+        @Html.Partial("Setting")
     </div>
 
     <div class="systembox_rt2">

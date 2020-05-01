@@ -323,6 +323,9 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/tokenize")
+    @Scripts.Render("~/Scripts/bootstrap-datepicker.js")
+    @Scripts.Render("~/Scripts/tokenize2.js")
     @RenderSection("scripts", required:=False)
 </body>
 </html>
