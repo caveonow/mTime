@@ -180,7 +180,7 @@
     <Compile Include="Controllers\AdministrationController.vb" />
     <Compile Include="Controllers\AttendanceController.vb" />
     <Compile Include="Controllers\DepartmentController.vb" />
-    <Compile Include="Controllers\EmployeeController.vb" />
+    <!--<Compile Include="Controllers\EmployeeController.vb" />-->
     <Compile Include="Controllers\FAQController.vb" />
     <Compile Include="Controllers\HyperlinkController.vb" />
     <Compile Include="Controllers\HolidayController.vb" />
