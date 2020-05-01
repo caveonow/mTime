@@ -18,9 +18,6 @@ Namespace model
         Public Property COMPANYLOGOPATH As String
         Public Property COMPANYHEADERPATH As String
         Public Property HOMEPAGEHEADERPATH As String
-        Public Property GRACEPERIOD As Integer
-        Public Property MAXANNOUNCE As Integer
-        Public Property ANNOUNCEEXPDAY As Integer
         Public Property DEFAULTLANGUAGE As String
         Public Property STARTEDON As Date
         Public Property ALLOWTOSUBMITREASONIN As Integer

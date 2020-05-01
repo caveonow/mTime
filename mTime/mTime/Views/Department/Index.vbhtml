@@ -25,7 +25,7 @@ End Code
                     <div class="ctr_rtpt1_inb">
                         <div class="fa fa-angle-down fa-angle-down pn_heading_btm ctr_rtpt1_icon1 filter1"></div>
                         <div class="fa fa-building-o ctr_rtpt1_icon2"></div>
-                        @ViewBag.CompanyName
+                        Sample UI 1
                     </div>
 
                     @Code
