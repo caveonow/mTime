@@ -1,4 +1,5 @@
 ﻿Imports System.ComponentModel.DataAnnotations
+Imports Newtonsoft.Json
 
 Namespace model
 
@@ -31,9 +32,13 @@ Namespace model
 
     Public Class FIREBIRDSTAFF
         Public STAFFNO As String
+        <JsonProperty("NAME")>
         Public NAME As String
+        <JsonProperty("NRIC")>
         Public NRIC As String
+        <JsonProperty("DEPARTMENTID")>
         Public DEPARTMENTID As String
+        <JsonProperty("SHIFTID")>
         Public SHIFTID As String
     End Class
 
@@ -75,10 +80,6 @@ Namespace model
         Public Property CREATEDON As Date
         Public Property UPDATEDBY As String
         Public Property UPDATEDON As Nullable(Of Date)
-
-        ' For receiving value from UI
-        Public Property NAME As String
-        Public Property SHIFTID As String
 
     End Class
 

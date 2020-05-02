@@ -230,7 +230,7 @@ End Code
                 url:'/Staff/SaveImport',
                 type:'post',
                 data: {
-                    StaffList: staffList
+                    StaffList: JSON.stringify(staffList)
                 },
                 success:async function(response){
                     

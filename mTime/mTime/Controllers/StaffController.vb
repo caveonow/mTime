@@ -185,8 +185,15 @@ Namespace Controllers
             Return View(model)
         End Function
 
-        Function SaveImport(ByVal StaffList As List(Of model.STAFF))
-            Debug.WriteLine(StaffList)
+        Function SaveImport(ByVal StaffList As String)
+            Dim FirebirdList = Newtonsoft.Json.JsonConvert.DeserializeObject(Of List(Of model.FIREBIRDSTAFF))(StaffList)
+            For Each item In FirebirdList
+                Debug.WriteLine(item.NRIC)
+                Debug.WriteLine(item.NAME)
+                Debug.WriteLine(item.DEPARTMENTID)
+                Debug.WriteLine(item.SHIFTID)
+                Debug.WriteLine("===========")
+            Next
         End Function
 
         <HttpPost>
