@@ -76,6 +76,10 @@ Namespace model
         Public Property UPDATEDBY As String
         Public Property UPDATEDON As Nullable(Of Date)
 
+        ' For receiving value from UI
+        Public Property NAME As String
+        Public Property SHIFTID As String
+
     End Class
 
 End Namespace

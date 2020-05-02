@@ -185,6 +185,10 @@ Namespace Controllers
             Return View(model)
         End Function
 
+        Function SaveImport(ByVal StaffList As List(Of model.STAFF))
+            Debug.WriteLine(StaffList)
+        End Function
+
         <HttpPost>
         Function Import(ByVal model As model.STAFFDEPARTMENT, firebirdList As IList(Of FIREBIRDSTAFF)) As ActionResult
 
@@ -272,7 +276,7 @@ Namespace Controllers
 
             Dim model = New STAFFDEPARTMENT
 
-            Dim conn = New FbConnection("database=localhost:C:\EntryPass\P1_Server\database\COMPANY.FDB;user=;password=;port:3050;")
+            Dim conn = New FbConnection("database=localhost:C:\Users\henly\Desktop\freelance\P1_Server\database\COMPANY.FDB;user=;password=;port:3050;")
             Dim cmd As FbCommand
 
             conn.Open()

@@ -102,7 +102,9 @@ End Code
 
                         <span>New Staff</span>
 
-                        <button type="submit" id="btnSave" name="Command" value="Save">Save</button>
+                        <!--<button type="submit" id="btnSave" name="Command" value="Save">Save</button>-->
+
+                        <div onclick="getTableValue()" style="color: white; margin: auto; border: 1px solid; width: 50px; cursor: pointer;">save</div>
 
                         @*<a href="@Url.Action("Import", "Staff")" id="save">
                                 <div id="addnewbtn" class="rtpt_ftr_addbtn filter1">
@@ -112,7 +114,7 @@ End Code
                     </div>
 
                     <div class="overflow_box">
-                        <table class="epy_lt_table">
+                        <table id="id-table-employee" class="epy_lt_table">
                             <thead>
                                 <tr>
                                     <th style="width: 400px;">Name</th>
@@ -188,21 +190,55 @@ End Code
 
 <div Class="bg_color_w"></div>
 
-<Script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></Script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <Script type="text/javascript">
 
-    $(function () {
-        $("#save").click(function () {
-            document.forms[0].submit();
-            //$(this).closest('form')[0].submit();
-            Return False;
-        });
-    });
+    // $(function () {
+    //     $("#save").click(function () {
+    //         document.forms[0].submit();
+    //         //$(this).closest('form')[0].submit();
+    //         Return False;
+    //     });
+    // });
+    
+    function getTableValue() {
+        var staffList = [];
+        var table = document.getElementById("id-table-employee");
 
+        for (var i = 1; i < table.rows.length; i++) {            
+            var row = table.rows[i];
+            var staff = {};
 
-</Script>
+            for(var j = 0; j < row.cells.length; j++) {
+                if(j == 0) {
+                    staff.NAME = row.cells[j].innerText;
+                } else if(j == 1) {
+                    staff.NRIC = row.cells[j].innerText;
+                } else if(j == 2) {
+                    staff.DEPARTMENTID = row.cells[j].querySelector("select").value;
+                } else if(j == 3) {
+                    staff.SHIFTID = row.cells[j].querySelector("select").value;
+                }
+            }
 
-<Script type="text/javascript">
+            staffList.push(staff);
+        }
+
+        if(staffList !== undefined && staffList !== null && staffList.length >= 0) {
+            $.ajax({
+                url:'/Staff/SaveImport',
+                type:'post',
+                data: {
+                    StaffList: staffList
+                },
+                success:async function(response){
+                    
+                }
+            });
+        }
+    }
+
     // Nav Top Menu Part1
     $("#hdr_btn1").addClass("pt2_b_btneff");
 </Script>
