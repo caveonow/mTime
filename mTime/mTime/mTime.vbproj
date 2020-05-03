@@ -538,6 +538,7 @@
     <Content Include="Views\System\CompanyInfoUpdate.vbhtml" />
     <Content Include="Views\System\UploadImg.vbhtml" />
     <Content Include="Views\System\Setting.vbhtml" />
+    <Content Include="Views\Staff\Delete.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />

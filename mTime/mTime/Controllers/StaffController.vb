@@ -18,6 +18,54 @@ Namespace Controllers
             model.DEPARTMENTLIST = GetDepartmentList()
             model.SHIFTLIST = GetShiftList()
 
+            Dim staffList = (From staff In db.STAFF
+                             Join department In db.DEPARTMENT On department.DEPARTMENTID Equals staff.DEPARTMENTID
+                             Select New With {staff.FIRSTNAME, staff.LASTNAME, staff.NRIC, staff.DEPARTMENTID, department.DEPARTMENTNAME,
+                                department.DIVISIONNAME, department.UNITNAME}
+                             ).ToList
+
+            Dim selectedStaff As model.SELECTEDSTAFF
+            Dim staffShiftList = (From staffshift In db.STAFFSHIFT
+                                  Where staffshift.EFFECTIVEON <= Now
+                                  Select staffshift).ToList
+
+
+            Dim newList As New List(Of SELECTEDSTAFF)
+
+            If staffList.Count > 0 Then
+
+                For Each row In staffList
+
+                    selectedStaff = New model.SELECTEDSTAFF
+
+                    With selectedStaff
+                        .FIRSTNAME = row.FIRSTNAME
+                        .LASTNAME = row.LASTNAME
+                        .NRIC = row.NRIC
+                        .DEPARTMENTID = CType(row.DEPARTMENTID, Integer)
+                        .DEPARTMENTNAME = row.DEPARTMENTNAME
+                        .DIVISIONNAME = row.DIVISIONNAME
+                        .UNITNAME = row.UNITNAME
+                    End With
+
+                    Dim temp = staffShiftList
+                    temp = temp.Where(Function(m) m.NRIC = row.NRIC).Take(1).ToList
+
+                    If temp.Count > 0 Then
+                        With selectedStaff
+                            .SHIFTID = temp(0).SHIFTID
+                            .EFFECTIVEON = temp(0).EFFECTIVEON
+                        End With
+                    End If
+
+                    '# Add record to list
+                    newList.Add(selectedStaff)
+
+                Next
+
+                model.STAFFSIMPLELIST = newList
+            End If
+
             Return View(model)
 
         End Function
@@ -86,7 +134,6 @@ Namespace Controllers
 
         End Function
 
-
         <HttpPost>
         Public Function Index(ByVal FirstName As String, LastName As String, NRIC As String, DEPARTMENTID As String, SHIFTID As String) As ActionResult
 
@@ -106,8 +153,6 @@ Namespace Controllers
                                   Where staffshift.EFFECTIVEON <= Now
                                   Select staffshift).ToList
 
-            'As IOrderedQueryable(Of STAFFSHIFT)
-            'Dim list As List(Of STAFFSHIFT)
 
             Dim newList As New List(Of SELECTEDSTAFF)
 
@@ -170,7 +215,6 @@ Namespace Controllers
 
         End Function
 
-
         ' GET : Import from Firebird
         Function Import() As ActionResult
 
@@ -183,98 +227,74 @@ Namespace Controllers
             model.FIREBIRDSTAFFLIST = GetFirebirdStaff()
 
             Return View(model)
-        End Function
 
-        Function SaveImport(ByVal StaffList As String)
-            Dim FirebirdList = Newtonsoft.Json.JsonConvert.DeserializeObject(Of List(Of model.FIREBIRDSTAFF))(StaffList)
-            For Each item In FirebirdList
-                Debug.WriteLine(item.NRIC)
-                Debug.WriteLine(item.NAME)
-                Debug.WriteLine(item.DEPARTMENTID)
-                Debug.WriteLine(item.SHIFTID)
-                Debug.WriteLine("===========")
-            Next
         End Function
 
         <HttpPost>
-        Function Import(ByVal model As model.STAFFDEPARTMENT, firebirdList As IList(Of FIREBIRDSTAFF)) As ActionResult
+        Function SaveImport(ByVal staffList As String) As ActionResult
 
+            Dim model = New STAFFDEPARTMENT
 
+            Dim firebirdList = Newtonsoft.Json.JsonConvert.DeserializeObject(Of List(Of model.FIREBIRDSTAFF))(staffList)
             Dim strName As String
             Dim strNRIC As String
             Dim strDepartmentID As String
             Dim strShiftID As String
+            Dim strStaffNo As String
 
-            'For Each obj In model.FIREBIRDSTAFFLIST
-            '    strName = obj.NAME
-            'Next
+            Dim modelStaff As STAFF
+            Dim modelStaffShift As STAFFSHIFT
 
-            'model.DEPARTMENTLIST = firebirdList.ToList
+            For Each item In firebirdList
 
-            'Dim intCount = model.DEPARTMENTLIST.Count
+                strName = ""
+                strNRIC = ""
+                strDepartmentID = ""
+                strShiftID = ""
+                strStaffNo = ""
 
-            'Debug.Print(intCount.ToString)
+                strName = item.NAME
+                strNRIC = item.NRIC
+                strDepartmentID = item.DEPARTMENTID
+                strShiftID = item.SHIFTID
+                strStaffNo = item.STAFFNO
 
-            'For Each obj In model.FIREBIRDSTAFFLIST
+                If strDepartmentID.Length > 0 And strShiftID.Length > 0 Then
 
+                    modelStaff = New STAFF
+                    modelStaffShift = New STAFFSHIFT
 
-            'Next
+                    With modelStaff
+                        .FIRSTNAME = strName
+                        .LASTNAME = ""
+                        .NRIC = strNRIC
+                        .STAFFNO = strStaffNo
+                        .DEPARTMENTID = CType(strDepartmentID, Integer)
+                        .STAFFGROUPID = "NORM" '# Default to Normal
+                        .ISRESIGNED = False
+                        .CREATEDON = Now
+                        .CREATEDBY = "Nick"
+                    End With
 
-            'Dim list = model.FIREBIRDSTAFFLIST
+                    db.STAFF.Add(modelStaff)
+                    db.SaveChanges()
 
+                    With modelStaffShift
+                        .NRIC = strNRIC
+                        .SHIFTID = strShiftID
+                        .EFFECTIVEON = "01-01-1990"
+                    End With
 
+                    db.STAFFSHIFT.Add(modelStaffShift)
+                    db.SaveChanges()
 
-
-            'If ModelState.IsValid Then
-            '    strName = model.FIREBIRDSTAFFLIST(0).NAME.ToString
-            'End If
-
-            'Dim itemList As New List(Of SELECTEDSTAFF)
-
-            'itemList = list
-            'Dim intCount = List.Count
-
-            'Dim intCount = model.FIREBIRDSTAFFLIST
-            'Dim itemList As New List(Of SELECTEDSTAFF)
-
-            'itemList = model.FIREBIRDSTAFFLIST
-
-            'Dim intCount = itemList.Count
-            'Dim intNo As Integer
-
-
-            'For intNo = 0 To intCount - 1
-            '    strName = itemList(intNo).NAME
-
-            'Next
-
-
-
-            If ModelState.IsValid Then
-
-                For Each item In model.FIREBIRDSTAFFLIST
-                    strName = item.NAME
-                    strNRIC = item.NRIC
-                    strDepartmentID = item.DEPARTMENTID
-                    strShiftID = item.SHIFTID
-                Next
-
-            End If
+                End If
 
 
+            Next
 
-            'Dim item As ListItem
+            Return Json(Url.Action("Index", "Staff"))
 
-            'strName = list(0).NAME
-
-            'For Each item In model.FIREBIRDSTAFFLIST
-            '    strName = item.NAME
-            '    strNRIC = item.NRIC
-            '    strDepartmentID = item.DEPARTMENTID
-            '    strShiftID = item.SHIFTID
-            'Next
-
-            Return View()
         End Function
 
 
@@ -283,7 +303,8 @@ Namespace Controllers
 
             Dim model = New STAFFDEPARTMENT
 
-            Dim conn = New FbConnection("database=localhost:C:\Users\henly\Desktop\freelance\P1_Server\database\COMPANY.FDB;user=;password=;port:3050;")
+            Dim conn = New FbConnection("database=localhost:C:\EntryPass\P1_Server\database\COMPANY.FDB;user=;password=;port:3050;")
+            'Dim conn = New FbConnection("database=localhost:C:\Users\henly\Desktop\freelance\P1_Server\database\COMPANY.FDB;user=;password=;port:3050;")
             Dim cmd As FbCommand
 
             conn.Open()
@@ -294,8 +315,10 @@ Namespace Controllers
             Dim strName As String
             Dim strIC As String
 
-            Dim firebirdStaff As model.FIREBIRDSTAFF
+            Dim modelFirebirdStaff As model.FIREBIRDSTAFF
             Dim newList As New List(Of FIREBIRDSTAFF)
+
+            Dim modelStaff As model.STAFF
 
             If dr.HasRows Then
 
@@ -305,7 +328,7 @@ Namespace Controllers
 
                 While (dr.Read)
 
-                    firebirdStaff = New model.FIREBIRDSTAFF
+                    modelFirebirdStaff = New model.FIREBIRDSTAFF
 
                     If Not IsDBNull(dr("StaffNo")) Then
                         strStaffNo = dr("StaffNo")
@@ -317,16 +340,26 @@ Namespace Controllers
                         strIC = dr("IC")
                     End If
 
-                    With firebirdStaff
-                        .STAFFNO = strStaffNo
-                        .NAME = strName
-                        .NRIC = strIC
-                        .DEPARTMENTID = vbNull
-                        .SHIFTID = vbNull
-                    End With
+                    If strIC.Length > 0 Then
 
-                    '# Add record to list
-                    newList.Add(firebirdStaff)
+                        modelStaff = db.STAFF.Find(strIC)
+
+                        If IsNothing(modelStaff) Then
+
+                            With modelFirebirdStaff
+                                .STAFFNO = strStaffNo
+                                .NAME = strName
+                                .NRIC = strIC
+                                .DEPARTMENTID = vbNull
+                                .SHIFTID = vbNull
+                            End With
+
+                            '# Add record to list
+                            newList.Add(modelFirebirdStaff)
+
+                        End If
+
+                    End If
 
                 End While
 

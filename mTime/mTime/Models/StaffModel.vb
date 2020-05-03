@@ -5,12 +5,11 @@ Namespace model
 
     Public Class STAFFDEPARTMENT
 
-
         '#  To store list of staff rows from querying
         'Public STAFF As IEnumerable(Of STAFF)
 
         '#  To store list of staff rows with shift id from querying
-        Public STAFFSIMPLELIST As IList(Of SELECTEDSTAFF)
+        Public STAFFSIMPLELIST As IEnumerable(Of SELECTEDSTAFF)
 
         '# For Index View - Filter Function
         Public FIRSTNAME As String
@@ -20,13 +19,11 @@ Namespace model
         Public SHIFTID As String
         Public SHOWRESIGNEDSTAFF As Boolean
 
-
-
         Public DEPARTMENTLIST As IList(Of SelectListItem)
         Public SHIFTLIST As IList(Of SelectListItem)
 
         '#  To store list of staff rows from Firebird Database querying
-        Public FIREBIRDSTAFFLIST As IList(Of FIREBIRDSTAFF)
+        Public FIREBIRDSTAFFLIST As IEnumerable(Of FIREBIRDSTAFF)
 
     End Class
 
