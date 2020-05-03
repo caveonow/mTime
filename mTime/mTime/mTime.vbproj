@@ -182,6 +182,7 @@
     <Compile Include="Controllers\AdminFAQController.vb" />
     <Compile Include="Controllers\AdministrationController.vb" />
     <Compile Include="Controllers\AttendanceController.vb" />
+    <Compile Include="Controllers\Encryption64.vb" />
     <Compile Include="Controllers\DepartmentController.vb" />
     <!--<Compile Include="Controllers\EmployeeController.vb" />-->
     <Compile Include="Controllers\FAQController.vb" />
