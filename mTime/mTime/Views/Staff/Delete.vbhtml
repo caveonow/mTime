@@ -1,7 +1,7 @@
 ﻿@ModelType  model.STAFFDEPARTMENT
 
 @Code
-    ViewData("Title") = "Import"
+    ViewData("Title") = "DELETE"
 End Code
 
 @Html.Partial("_AdminMenuTop")
@@ -15,7 +15,7 @@ End Code
             @<div class="epy_pt_rt">
                 <div class="inbox_haedtext">
 
-                    <span>Staff :: Import</span>
+                    <span>New Staff</span>
 
                     <!--<button type="submit" id="btnSave" name="Command" value="Save">Save</button>-->
                     @*<div onclick="getTableValue()" style="color: white; margin: auto; border: 1px solid; width: 50px; cursor: pointer;">save</div>*@
@@ -89,17 +89,6 @@ End Code
 
         End Using
 
-        @*@Code
-            If ViewBag.Result = "OK" Then
-                @<script>
-                        window.onload = function() {
-                            $(".save_ok_popup").addClass("display_block").fadeOut(3000);
-                            window.location.href = "@Url.Action("Index", "Staff")";
-                        };
-                </script>
-            End If
-        End Code*@
-
     </div>
 
     @*</div>
@@ -134,6 +123,7 @@ End Code
                 }
                 else if (j == 4) {
                     staff.STAFFNO = row.cells[j].innerText;
+
                 }
             }
 
@@ -142,14 +132,12 @@ End Code
 
         if (staffList !== undefined && staffList !== null && staffList.length >= 0) {
             $.ajax({
-                url: '/Staff/SaveImport',
+                url: '/Staff/Import',
                 type: 'post',
                 data: {
                     StaffList: JSON.stringify(staffList)
                 },
-                success: function (ret) {
-                    // Navigate to index
-                    window.location.href = ret;                 
+                success: async function (response) {
                 }
             });
         }

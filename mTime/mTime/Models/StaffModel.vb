@@ -1,15 +1,15 @@
 ﻿Imports System.ComponentModel.DataAnnotations
+Imports Newtonsoft.Json
 
 Namespace model
 
     Public Class STAFFDEPARTMENT
 
-
         '#  To store list of staff rows from querying
         'Public STAFF As IEnumerable(Of STAFF)
 
         '#  To store list of staff rows with shift id from querying
-        Public STAFFSIMPLELIST As IList(Of SELECTEDSTAFF)
+        Public STAFFSIMPLELIST As IEnumerable(Of SELECTEDSTAFF)
 
         '# For Index View - Filter Function
         Public FIRSTNAME As String
@@ -19,21 +19,23 @@ Namespace model
         Public SHIFTID As String
         Public SHOWRESIGNEDSTAFF As Boolean
 
-
-
         Public DEPARTMENTLIST As IList(Of SelectListItem)
         Public SHIFTLIST As IList(Of SelectListItem)
 
         '#  To store list of staff rows from Firebird Database querying
-        Public FIREBIRDSTAFFLIST As IList(Of FIREBIRDSTAFF)
+        Public FIREBIRDSTAFFLIST As IEnumerable(Of FIREBIRDSTAFF)
 
     End Class
 
     Public Class FIREBIRDSTAFF
         Public STAFFNO As String
+        <JsonProperty("NAME")>
         Public NAME As String
+        <JsonProperty("NRIC")>
         Public NRIC As String
+        <JsonProperty("DEPARTMENTID")>
         Public DEPARTMENTID As String
+        <JsonProperty("SHIFTID")>
         Public SHIFTID As String
     End Class
 
@@ -75,10 +77,6 @@ Namespace model
         Public Property CREATEDON As Date
         Public Property UPDATEDBY As String
         Public Property UPDATEDON As Nullable(Of Date)
-
-        ' For receiving value from UI
-        Public Property NAME As String
-        Public Property SHIFTID As String
 
     End Class
 
