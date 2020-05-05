@@ -15,10 +15,10 @@ Namespace Controllers
 
             Dim model = New STAFFDEPARTMENT
 
-            model.DEPARTMENTLIST = GetDepartmentList()
-            model.SHIFTLIST = GetShiftList()
+            model.DEPARTMENTLIST = GetDepartmentList(Nothing)
+            model.SHIFTLIST = GetShiftList(Nothing)
 
-            Dim staffList = (From staff In db.STAFF
+            Dim staffList = (From staff In db.STAFF Where staff.STATUSCODE = "A"
                              Join department In db.DEPARTMENT On department.DEPARTMENTID Equals staff.DEPARTMENTID
                              Select New With {staff.FIRSTNAME, staff.LASTNAME, staff.NRIC, staff.DEPARTMENTID, department.DEPARTMENTNAME,
                                 department.DIVISIONNAME, department.UNITNAME}
@@ -70,7 +70,7 @@ Namespace Controllers
 
         End Function
 
-        Public Function GetDepartmentList() As List(Of SelectListItem)
+        Public Function GetDepartmentList(idSelected As String) As List(Of SelectListItem)
 
             Dim departmentList = From department In db.DEPARTMENT
                                  Select department.DEPARTMENTNAME, department.DIVISIONNAME, department.UNITNAME, department.DEPARTMENTID
@@ -100,6 +100,10 @@ Namespace Controllers
                     .Text = strDepartmentname
                 End With
 
+                If Not IsNothing(idSelected) And idSelected = row.DEPARTMENTID Then
+                    item.Selected = True
+                End If
+
                 itemList.Add(item)
 
             Next
@@ -108,7 +112,7 @@ Namespace Controllers
 
         End Function
 
-        Public Function GetShiftList() As List(Of SelectListItem)
+        Public Function GetShiftList(idSelected) As List(Of SelectListItem)
 
             Dim shiftList = From shift In db.SHIFT
                             Select shift
@@ -126,6 +130,10 @@ Namespace Controllers
                     .Text = row.SHIFTID
                 End With
 
+                If Not IsNothing(idSelected) And idSelected = row.SHIFTID Then
+                    item.Selected = True
+                End If
+
                 itemList.Add(item)
 
             Next
@@ -139,8 +147,8 @@ Namespace Controllers
 
             Dim model = New STAFFDEPARTMENT
 
-            model.DEPARTMENTLIST = GetDepartmentList()
-            model.SHIFTLIST = GetShiftList()
+            model.DEPARTMENTLIST = GetDepartmentList(Nothing)
+            model.SHIFTLIST = GetShiftList(Nothing)
 
             Dim staffList = (From staff In db.STAFF
                              Join department In db.DEPARTMENT On department.DEPARTMENTID Equals staff.DEPARTMENTID
@@ -220,8 +228,8 @@ Namespace Controllers
 
             Dim model = New STAFFDEPARTMENT
 
-            model.DEPARTMENTLIST = GetDepartmentList()
-            model.SHIFTLIST = GetShiftList()
+            model.DEPARTMENTLIST = GetDepartmentList(Nothing)
+            model.SHIFTLIST = GetShiftList(Nothing)
 
             '# Get new staff list from Firebird DB via ADO.net (DSN-less connection)
             model.FIREBIRDSTAFFLIST = GetFirebirdStaff()
@@ -274,6 +282,7 @@ Namespace Controllers
                         .ISRESIGNED = False
                         .CREATEDON = Now
                         .CREATEDBY = "Nick"
+                        .STATUSCODE = "A"
                     End With
 
                     db.STAFF.Add(modelStaff)
@@ -297,14 +306,12 @@ Namespace Controllers
 
         End Function
 
-
-
         Function GetFirebirdStaff() As List(Of FIREBIRDSTAFF)
 
             Dim model = New STAFFDEPARTMENT
 
-            Dim conn = New FbConnection("database=localhost:C:\EntryPass\P1_Server\database\COMPANY.FDB;user=;password=;port:3050;")
-            'Dim conn = New FbConnection("database=localhost:C:\Users\henly\Desktop\freelance\P1_Server\database\COMPANY.FDB;user=;password=;port:3050;")
+            ' Dim conn = New FbConnection("database=localhost:C:\EntryPass\P1_Server\database\COMPANY.FDB;user=;password=;port:3050;")
+            Dim conn = New FbConnection("database=localhost:C:\Users\henly\Desktop\freelance\P1_Server\database_new\COMPANY.FDB;user=;password=;port:3050;")
             Dim cmd As FbCommand
 
             conn.Open()
@@ -342,7 +349,7 @@ Namespace Controllers
 
                     If strIC.Length > 0 Then
 
-                        modelStaff = db.STAFF.Find(strIC)
+                        modelStaff = db.STAFF.Where(Function(s) s.NRIC = strIC And s.STATUSCODE = "A").SingleOrDefault
 
                         If IsNothing(modelStaff) Then
 
@@ -370,6 +377,187 @@ Namespace Controllers
 
             Return newList
 
+        End Function
+
+        Function Edit(ByVal id As String) As ActionResult
+            If IsNothing(id) Then
+                Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
+            End If
+
+            Dim StaffDepartment = GetStaffDepartmentInfo(id)
+
+            Return View(StaffDepartment)
+        End Function
+
+        Function UpdateStaff(ByVal jsonString As String) As ActionResult
+            Dim StaffDepartment = Newtonsoft.Json.JsonConvert.DeserializeObject(Of model.STAFFDEPARTMENT)(jsonString)
+
+            ' Input validation
+            Dim isValid = True
+            Dim result As New List(Of Object)
+
+            If String.IsNullOrEmpty(StaffDepartment.DEPARTMENTID) Then
+                isValid = False
+                result.Add("ERROR_DEPARTMENT")
+            End If
+
+            If String.IsNullOrEmpty(StaffDepartment.SHIFTID) Then
+                isValid = False
+                result.Add("ERROR_SHIFT")
+            End If
+
+            If StaffDepartment.ISRESIGNED And IsNothing(StaffDepartment.RESIGNEDONSTR) Then
+                isValid = False
+                result.Add("ERROR_RESIGN_DATE")
+            End If
+
+            If Not isValid Then
+                Return Json(result, JsonRequestBehavior.AllowGet)
+            End If
+
+            ' Convert Date Str to DateTime
+            If StaffDepartment.ISRESIGNED And Not IsNothing(StaffDepartment.RESIGNEDONSTR) Then
+                Dim format() = {"dd/MM/yyyy", "d/M/yyyy", "dd-MM-yyyy"}
+                Dim expenddt As Date = Date.ParseExact(StaffDepartment.RESIGNEDONSTR, format,
+                    System.Globalization.DateTimeFormatInfo.InvariantInfo,
+                    Globalization.DateTimeStyles.None)
+
+                StaffDepartment.RESIGNEDON = expenddt
+            End If
+
+            ' Get Staff and staff shift info from db
+            Dim Staff As model.STAFF = db.STAFF.Where(Function(s) s.NRIC = StaffDepartment.NRIC And s.STATUSCODE = "A").SingleOrDefault
+            Dim StaffShift As model.STAFFSHIFT = db.STAFFSHIFT.Where(Function(ss) ss.NRIC = StaffDepartment.NRIC).SingleOrDefault
+
+            If Not IsNothing(Staff) Then
+                ' Update staff info based on user input
+                With Staff
+                    .DEPARTMENTID = StaffDepartment.DEPARTMENTID
+                    .ISRESIGNED = StaffDepartment.ISRESIGNED
+                    If StaffDepartment.ISRESIGNED Then
+                        .RESIGNEDON = StaffDepartment.RESIGNEDON
+                    Else
+                        .RESIGNEDON = Nothing
+                    End If
+                    .UPDATEDBY = "SYSTEM"
+                    .UPDATEDON = Now
+                End With
+
+                db.Entry(Staff).State = System.Data.Entity.EntityState.Modified
+                db.SaveChanges()
+            End If
+            If Not IsNothing(StaffShift) Then
+                ' Update staff shift
+                If Not Staff.ISRESIGNED Then
+                    With StaffShift
+                        .SHIFTID = StaffDepartment.SHIFTID
+                    End With
+
+                    db.Entry(StaffShift).State = System.Data.Entity.EntityState.Modified
+                    db.SaveChanges()
+                Else
+                    db.STAFFSHIFT.Remove(StaffShift)
+                    db.SaveChanges()
+                End If
+            Else
+                StaffShift = New model.STAFFSHIFT
+                StaffShift.NRIC = StaffDepartment.NRIC
+                StaffShift.SHIFTID = StaffDepartment.SHIFTID
+                StaffShift.EFFECTIVEON = Now
+
+                db.STAFFSHIFT.Add(StaffShift)
+                db.SaveChanges()
+            End If
+
+            Return Json("SUCCESS_UPDATE", JsonRequestBehavior.AllowGet)
+        End Function
+
+        Function GetStaffDepartmentInfo(id As String)
+            Dim Staff As model.STAFF = db.STAFF.Where(Function(s) s.NRIC = id And s.STATUSCODE = "A").SingleOrDefault
+            Dim StaffDepartment As New model.STAFFDEPARTMENT
+
+            If IsNothing(Staff) Then
+                Return HttpNotFound()
+            End If
+
+            Dim StaffShift As model.STAFFSHIFT = db.STAFFSHIFT.Where(Function(ss) ss.NRIC = Staff.NRIC).SingleOrDefault
+
+            With StaffDepartment
+                .STAFFNO = Staff.STAFFNO
+                .NRIC = Staff.NRIC
+                .DEPARTMENTID = Staff.DEPARTMENTID
+                If IsNothing(StaffShift) Then
+                    .SHIFTID = ""
+                Else
+                    .SHIFTID = StaffShift.SHIFTID
+                End If
+                .FIRSTNAME = Staff.FIRSTNAME
+                .LASTNAME = Staff.LASTNAME
+                .ISRESIGNED = Staff.ISRESIGNED
+                .RESIGNEDON = Staff.RESIGNEDON
+                .DEPARTMENTLIST = GetDepartmentList(Staff.DEPARTMENTID)
+                If IsNothing(StaffShift) Then
+                    .SHIFTLIST = GetShiftList(Nothing)
+                Else
+                    .SHIFTLIST = GetShiftList(StaffShift.SHIFTID)
+                End If
+            End With
+
+            Return StaffDepartment
+        End Function
+
+        Function Delete(ByVal id As String)
+            If IsNothing(id) Then
+                Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
+            End If
+
+            Dim StaffDepartment = GetStaffDepartmentInfo(id)
+
+            Return View(StaffDepartment)
+        End Function
+
+        Function DeleteStaff(ByVal id As String)
+            Dim Staff As model.STAFF = db.STAFF.Where(Function(s) s.NRIC = id).SingleOrDefault
+
+            If Not IsNothing(Staff) Then
+                With Staff
+                    .STATUSCODE = "D"
+                    .UPDATEDBY = "SYSTEM"
+                    .UPDATEDON = Now
+                End With
+
+                db.Entry(Staff).State = System.Data.Entity.EntityState.Modified
+                db.SaveChanges()
+            End If
+
+            Return Json("SUCCESS_DELETE", JsonRequestBehavior.AllowGet)
+        End Function
+
+        Function ResetPassword(ByVal id As String)
+            If IsNothing(id) Then
+                Return New HttpStatusCodeResult(HttpStatusCode.BadRequest)
+            End If
+
+            Dim StaffDepartment = GetStaffDepartmentInfo(id)
+
+            Return View(StaffDepartment)
+        End Function
+
+        Function ResetPasswordStaff(ByVal id As String)
+            Dim Staff As model.STAFF = db.STAFF.Where(Function(s) s.NRIC = id).SingleOrDefault
+
+            If Not IsNothing(Staff) Then
+                With Staff
+                    .PASSWORD = Nothing
+                    .UPDATEDBY = "SYSTEM"
+                    .UPDATEDON = Now
+                End With
+
+                db.Entry(Staff).State = System.Data.Entity.EntityState.Modified
+                db.SaveChanges()
+            End If
+
+            Return Json("SUCCESS_RESET_PASSWORD", JsonRequestBehavior.AllowGet)
         End Function
 
     End Class

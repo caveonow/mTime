@@ -114,7 +114,7 @@ End Code
                                             <div id="" class="fa fa-trash-o btn_trash deletebtn"></div>
                                         </a>
 
-                                        <a href="">
+                                        <a href="@Url.Action("ResetPassword", "Staff", New With {.id = item.NRIC})">
                                             <div id="" class="fa fa-key btn_reset">
                                                 <div id="" class="fa fa-refresh"></div>
                                             </div>

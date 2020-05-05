@@ -1,7 +1,7 @@
-﻿@ModelType model.STAFFDEPARTMENT
+@ModelType model.STAFFDEPARTMENT
 
 @Code
-    ViewData("Title") = "Delete"
+    ViewData("Title") = "Reset Password"
 End Code
 
 @Html.Partial("_AdminMenuTop")
@@ -17,7 +17,7 @@ End Code
                     @<div class="form-horizontal">
 
                         <div class="inbox_haedtext">
-                            <span>Delete Staff</span>
+                            <span>Reset Password</span>
                         </div>
 
                         <div class="b1_inb_part">
@@ -66,7 +66,7 @@ End Code
                             </a>
                             
                             <div id="savebtn" Class="rtpt_savebtn filter1" onclick="onSubmitSave()">
-                                Delete
+                                Reset Password
                             </div>
                         </div>
                     </div>
@@ -75,14 +75,14 @@ End Code
                 <div id="" Class="ctr_rtpt_popupbox display_none save_ok_popup">
                     <div Class="rtpt_popupbox_inb">
                         <div Class="fa fa-check-circle-o popupbox_inb_icon_blue"></div>
-                        <div Class="popupbox_inb_tt">Delete successfully</div>
+                        <div Class="popupbox_inb_tt">Password reset successfully</div>
                     </div>
                 </div>
 
                 <div id="" Class="ctr_rtpt_popupbox display_none exclamation_ok_popup">
                     <div Class="rtpt_popupbox_inb">
                         <div Class="fa fa-exclamation-circle popupbox_inb_icon_red"></div>
-                        <div Class="popupbox_inb_tt">Delete failed</div>
+                        <div Class="popupbox_inb_tt">Password reset failed</div>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@ End Code
 
     function onSubmitSave() {
         $.ajax({
-            url: '/Staff/DeleteStaff',
+            url: '/Staff/ResetPasswordStaff',
             type: 'post',
             data: {
                 id: document.getElementById("NRIC").value

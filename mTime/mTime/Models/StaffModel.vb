@@ -19,6 +19,13 @@ Namespace model
         Public SHIFTID As String
         Public SHOWRESIGNEDSTAFF As Boolean
 
+        ' For Edit and Delete View
+        Public Property STAFFNO As String
+        Public Property ISRESIGNED As Boolean
+        <DisplayFormat(DataFormatString:="{0:dd/MM/yyyy}", ApplyFormatInEditMode:=True)>
+        Public Property RESIGNEDON As Nullable(Of Date)
+        Public Property RESIGNEDONSTR As String
+
         Public DEPARTMENTLIST As IList(Of SelectListItem)
         Public SHIFTLIST As IList(Of SelectListItem)
 
@@ -71,12 +78,14 @@ Namespace model
         Public Property EMAIL As String
         Public Property DEPARTMENTID As String
         Public Property ISRESIGNED As Boolean
+        <DisplayFormat(DataFormatString:="{0:dd/MM/yyyy}", ApplyFormatInEditMode:=True)>
         Public Property RESIGNEDON As Nullable(Of Date)
         Public Property PASSWORD As String
         Public Property CREATEDBY As String
         Public Property CREATEDON As Date
         Public Property UPDATEDBY As String
         Public Property UPDATEDON As Nullable(Of Date)
+        Public Property STATUSCODE As String
 
     End Class
 
