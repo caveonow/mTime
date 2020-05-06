@@ -47,7 +47,7 @@ End Code
     </div>
 
     <div id="id-personal-message-body" class="overflow_box visibility_hidden" style="height: 415px;">
-        <div id="id-personal-message-hidden-id-feedback" class="display_none">
+        <div id="id-personal-message-hidden-id-feedback" class="display_none_important">
         </div>
 
         <div class="ctr_rtpt_addbox">
@@ -68,16 +68,16 @@ End Code
         </div>
     </div>
 
-    <div id="id-personal-message-new-reply-body" class="overflow_box display_none">
+    <div id="id-personal-message-new-reply-body" class="overflow_box display_none_important">
         <div class="new_message_part" style="height: 415px;">
-            <div id="id-new-personal-message-hidden-id-feedback" class="display_none">
+            <div id="id-new-personal-message-hidden-id-feedback" class="display_none_important">
             </div>
 
             <div class="ctr_rtpt_addbox">
                 <div class="rtpt_label_part">Receiver:</div>
                 <select id="id-new-personal-message-staff" multiple></select>
             </div>
-            <div id="id-new-personal-message-staff-validation" class="ctr_rtpt_addbox display_none">
+            <div id="id-new-personal-message-staff-validation" class="ctr_rtpt_addbox display_none_important">
                 <div class="rtpt_addbox_pt_error">
                     <span class="field-validation-error">Staff is required</span>
                 </div>
@@ -90,7 +90,7 @@ End Code
                     type="text"
                 />
             </div>
-            <div id="id-new-personal-message-about-validation" class="ctr_rtpt_addbox display_none">
+            <div id="id-new-personal-message-about-validation" class="ctr_rtpt_addbox display_none_important">
                 <div class="rtpt_addbox_pt_error">
                     <span class="field-validation-error">About is required</span>
                 </div>
@@ -103,7 +103,7 @@ End Code
                     type="text"
                 />
             </div>
-            <div id="id-new-personal-message-content-validation" class="ctr_rtpt_addbox display_none">
+            <div id="id-new-personal-message-content-validation" class="ctr_rtpt_addbox display_none_important">
                 <div class="rtpt_addbox_pt_error">
                     <span class="field-validation-error">Content is required</span>
                 </div>
@@ -118,14 +118,14 @@ End Code
         <div id="id-personal-message-back" class="rtpt_backbtn btn_disabled" onclick="resetTabContent()">Back</div>
     </div>
 
-    <div id="id-personal-message-delete-successful" Class="ctr_rtpt_popupbox display_none save_ok_popup">
+    <div id="id-personal-message-delete-successful" Class="ctr_rtpt_popupbox display_none_important save_ok_popup">
         <div Class="rtpt_popupbox_inb">
             <div Class="fa fa-check-circle-o popupbox_inb_icon_blue"></div>
             <div Class="popupbox_inb_tt">Delete successfully</div>
         </div>
     </div>
 
-    <div id="id-personal-message-reply-successful" Class="ctr_rtpt_popupbox display_none save_ok_popup">
+    <div id="id-personal-message-reply-successful" Class="ctr_rtpt_popupbox display_none_important save_ok_popup">
         <div Class="rtpt_popupbox_inb">
             <div Class="fa fa-check-circle-o popupbox_inb_icon_blue"></div>
             <div Class="popupbox_inb_tt">Reply successfully</div>

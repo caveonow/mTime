@@ -26,8 +26,8 @@ End Code
 
     <div id="id-tab-contents" class="body_center top130">
         <div id="atdc_part1" class="display_block">@Html.Partial("_PersonalMessage")</div>
-        <div id="atdc_part2" class="display_none">@Html.Partial("_Announcement")</div>
-        <div id="atdc_part3" class="display_none">@Html.Partial("_Feedback")</div>
+        <div id="atdc_part2" class="display_none_important">@Html.Partial("_Announcement")</div>
+        <div id="atdc_part3" class="display_none_important">@Html.Partial("_Feedback")</div>
     </div>
 
 <div class="bg_color_w"></div>
@@ -84,8 +84,8 @@ End Code
     function resetTabContent() {
         //Personal Message
         $('#id-personal-message-body').addClass('visibility_hidden');
-        $('#id-personal-message-body').removeClass('display_none');
-        $('#id-personal-message-new-reply-body').addClass('display_none');
+        $('#id-personal-message-body').removeClass('display_none_important');
+        $('#id-personal-message-new-reply-body').addClass('display_none_important');
 
         $('#id-personal-message-send').addClass('btn_disabled');
         $('#id-personal-message-create').removeClass('btn_disabled');
@@ -94,9 +94,9 @@ End Code
 
         //Announcement
         $('#id-announcement-body').addClass('visibility_hidden');
-        $('#id-announcement-body').removeClass('display_none');
+        $('#id-announcement-body').removeClass('display_none_important');
         $('#id-announcement-create-body').addClass('visibility_hidden');
-        $('#id-announcement-create-body').addClass('display_none');
+        $('#id-announcement-create-body').addClass('display_none_important');
 
         $('#id-announcement-save').addClass('btn_disabled');
         $('#id-announcement-create').removeClass('btn_disabled');
@@ -105,8 +105,8 @@ End Code
 
         ///Feedback
         $('#id-feedback-body').addClass('visibility_hidden');
-        $('#id-feedback-body').removeClass('display_none');
-        $('#id-feedback-new-reply-body').addClass('display_none');
+        $('#id-feedback-body').removeClass('display_none_important');
+        $('#id-feedback-new-reply-body').addClass('display_none_important');
 
         $('#id-feedback-send').addClass('btn_disabled');
         $('#id-feedback-reply').addClass('btn_disabled');
@@ -120,8 +120,8 @@ End Code
             type:'post',
             success:async function(response){
                 $('#id-personal-message-body').removeClass('visibility_hidden');
-                $('#id-personal-message-body').removeClass('display_none');
-                $('#id-personal-message-new-reply-body').addClass('display_none');
+                $('#id-personal-message-body').removeClass('display_none_important');
+                $('#id-personal-message-new-reply-body').addClass('display_none_important');
 
                 $('#id-personal-message-send').addClass('btn_disabled');
                 $('#id-personal-message-create').addClass('btn_disabled');
@@ -143,11 +143,11 @@ End Code
             type:'post',
             success:async function(response){
                 $('#id-announcement-body').removeClass('visibility_hidden');
-                $('#id-announcement-body').removeClass('display_none');
+                $('#id-announcement-body').removeClass('display_none_important');
                 $('#id-announcement-create-body').addClass('visibility_hidden');
-                $('#id-announcement-create-body').addClass('display_none');
+                $('#id-announcement-create-body').addClass('display_none_important');
 
-                $('#id-announcement-delete-successful').addClass('display_none');
+                $('#id-announcement-delete-successful').addClass('display_none_important');
                 $("#id-announcement-delete-successful").css("display", "");
 
                 $('#id-announcement-save').addClass('btn_disabled');
@@ -176,7 +176,7 @@ End Code
                 $('#id-feedback-delete').removeClass('btn_disabled');
                 $('#id-feedback-back').removeClass('btn_disabled');
 
-                $('#id-feedback-delete-successful').addClass('display_none');
+                $('#id-feedback-delete-successful').addClass('display_none_important');
                 $("#id-feedback-delete-successful").css("display", "");
 
                 $("#id-feedback-hidden-id-feedback").html(response[0]);
@@ -211,10 +211,10 @@ End Code
                         optionList.push("<option value='" + responseSelectionList[i].NRIC + "'>" + responseSelectionList[i].FIRSTNAME + " " + responseSelectionList[i].LASTNAME + "</option>")
                     }
 
-                    $('#id-personal-message-body').addClass('display_none');
-                    $('#id-personal-message-new-reply-body').removeClass('display_none');
+                    $('#id-personal-message-body').addClass('display_none_important');
+                    $('#id-personal-message-new-reply-body').removeClass('display_none_important');
 
-                    $('#id-new-personal-message-reply-successful').addClass('display_none');
+                    $('#id-new-personal-message-reply-successful').addClass('display_none_important');
                     $("#id-new-personal-message-reply-successful").css("display", "");
 
                     $('#id-personal-message-send').removeClass('btn_disabled');
@@ -222,9 +222,9 @@ End Code
                     $('#id-personal-message-delete').addClass('btn_disabled');
                     $('#id-personal-message-back').removeClass('btn_disabled');
 
-                    $('#id-new-personal-message-staff-validation').addClass('display_none');
-                    $('#id-new-personal-message-about-validation').addClass('display_none');
-                    $('#id-new-personal-message-content-validation').addClass('display_none');
+                    $('#id-new-personal-message-staff-validation').addClass('display_none_important');
+                    $('#id-new-personal-message-about-validation').addClass('display_none_important');
+                    $('#id-new-personal-message-content-validation').addClass('display_none_important');
 
                     $("#id-new-personal-message-staff").html(optionList);
                     $('#id-new-personal-message-staff').tokenize2({
@@ -254,7 +254,7 @@ End Code
     }
 
     function onClickDeletePersonalMessage() {
-        $('#id-personal-message-delete-successful').addClass('display_none');
+        $('#id-personal-message-delete-successful').addClass('display_none_important');
         $("#id-personal-message-delete-successful").css("display", "");
 
         var idPersonalMessageStr = $('#id-personal-message-hidden-id-feedback')[0].innerHTML;
@@ -267,7 +267,7 @@ End Code
             },
             success:async function(response){
                 if(response !== null && response !== undefined && response !== "" && response === "SUCCESS_DELETE") {
-                    $('#id-personal-message-delete-successful').removeClass('display_none').fadeOut(1500);
+                    $('#id-personal-message-delete-successful').removeClass('display_none_important').fadeOut(1500);
                     getResult("PersonalMessage");
                 }
             }
@@ -275,13 +275,13 @@ End Code
     }
 
     function onClickSendPersonalMessage() {
-        $('#id-personal-message-reply-successful').addClass('display_none');
+        $('#id-personal-message-reply-successful').addClass('display_none_important');
         $("#id-personal-message-reply-successful").css("display", "");
 
         //reset all validation
-        $('#id-new-personal-message-staff-validation').addClass('display_none');
-        $('#id-new-personal-message-about-validation').addClass('display_none');
-        $('#id-new-personal-message-content-validation').addClass('display_none');
+        $('#id-new-personal-message-staff-validation').addClass('display_none_important');
+        $('#id-new-personal-message-about-validation').addClass('display_none_important');
+        $('#id-new-personal-message-content-validation').addClass('display_none_important');
 
         //js side checking
         var isValid = true;
@@ -291,15 +291,15 @@ End Code
 
         if(selectedStaffIdList === null || selectedStaffIdList === undefined || selectedStaffIdList === '' || selectedStaffIdList.length == 0) {
             isValid = false;
-            $('#id-new-personal-message-staff-validation').removeClass('display_none');
+            $('#id-new-personal-message-staff-validation').removeClass('display_none_important');
         }
         if(aboutStr === null || aboutStr === undefined || aboutStr === '') {
             isValid = false;
-            $('#id-new-personal-message-about-validation').removeClass('display_none');
+            $('#id-new-personal-message-about-validation').removeClass('display_none_important');
         }
         if(contentStr === null || contentStr === undefined || contentStr === '') {
             isValid = false;
-            $('#id-new-personal-message-content-validation').removeClass('display_none');
+            $('#id-new-personal-message-content-validation').removeClass('display_none_important');
         }
 
         if(!isValid)
@@ -317,11 +317,11 @@ End Code
                 if(response !== null && response !== undefined && response !== "" && response !== "SUCCESS_REPLY") {
                     for(var i = 0; i < response.length; i++) {
                         if(response[i] === 'ERROR_STAFF')
-                            $('#id-new-personal-message-staff-validation').removeClass('display_none');
+                            $('#id-new-personal-message-staff-validation').removeClass('display_none_important');
                         if(response[i] === 'ERROR_ABOUT')
-                            $('#id-new-personal-message-about-validation').removeClass('display_none');
+                            $('#id-new-personal-message-about-validation').removeClass('display_none_important');
                         if(response[i] === 'ERROR_CONTENT')
-                            $('#id-new-personal-message-content-validation').removeClass('display_none');
+                            $('#id-new-personal-message-content-validation').removeClass('display_none_important');
                     }
                 } else if(response !== null && response !== undefined && response !== "" && response === "SUCCESS_REPLY") {
                     $('.token').remove()
@@ -329,7 +329,7 @@ End Code
                     $('#id-new-personal-message-about').val("");
                     $('#id-new-personal-message-content').val("");
 
-                    $('#id-personal-message-reply-successful').removeClass('display_none').fadeOut(1500);
+                    $('#id-personal-message-reply-successful').removeClass('display_none_important').fadeOut(1500);
                     getResult("PersonalMessage");
                 }
             }
@@ -337,11 +337,11 @@ End Code
     }
 
     function onClickAnnouncementCreate() {
-        $('#id-announcement-body').addClass('display_none');
+        $('#id-announcement-body').addClass('display_none_important');
         $('#id-announcement-create-body').removeClass('visibility_hidden');
-        $('#id-announcement-create-body').removeClass('display_none');
+        $('#id-announcement-create-body').removeClass('display_none_important');
 
-        $('#id-announcement-save-successful').addClass('display_none');
+        $('#id-announcement-save-successful').addClass('display_none_important');
         $("#id-announcement-save-successful").css("display", "");
 
         $('#id-announcement-save').removeClass('btn_disabled');
@@ -349,10 +349,10 @@ End Code
         $('#id-announcement-delete').addClass('btn_disabled');
         $('#id-announcement-back').removeClass('btn_disabled');
 
-        $('#id-announcement-create-title-validation').addClass('display_none');
-        $('#id-announcement-create-remark-validation').addClass('display_none');
-        $('#id-announcement-create-valid-from-validation').addClass('display_none');
-        $('#id-announcement-create-valid-to-validation').addClass('display_none');
+        $('#id-announcement-create-title-validation').addClass('display_none_important');
+        $('#id-announcement-create-remark-validation').addClass('display_none_important');
+        $('#id-announcement-create-valid-from-validation').addClass('display_none_important');
+        $('#id-announcement-create-valid-to-validation').addClass('display_none_important');
 
         $('#id-announcement-create-valid-from').datepicker({
             autoclose: true,
@@ -377,7 +377,7 @@ End Code
     }
 
     function onClickDeleteAnnouncement() {
-        $('#id-announcement-delete-successful').addClass('display_none');
+        $('#id-announcement-delete-successful').addClass('display_none_important');
         $("#id-announcement-delete-successful").css("display", "");
 
         var idAnnouncementStr = $('#id-announcement-hidden-id-announcement')[0].innerHTML;
@@ -390,7 +390,7 @@ End Code
             },
             success:async function(response){
                 if(response !== null && response !== undefined && response !== "" && response === "SUCCESS_DELETE") {
-                    $('#id-announcement-delete-successful').removeClass('display_none').fadeOut(1500);
+                    $('#id-announcement-delete-successful').removeClass('display_none_important').fadeOut(1500);
                     getResult("Announcement");
                 }
             }
@@ -398,14 +398,14 @@ End Code
     }
 
     function onClickSaveAnnouncement() {
-        $('#id-announcement-save-successful').addClass('display_none');
+        $('#id-announcement-save-successful').addClass('display_none_important');
         $("#id-announcement-save-successful").css("display", "");
 
         //reset all validation
-        $('#id-announcement-create-title-validation').addClass('display_none');
-        $('#id-announcement-create-remark-validation').addClass('display_none');
-        $('#id-announcement-create-valid-from-validation').addClass('display_none');
-        $('#id-announcement-create-valid-to-validation').addClass('display_none');
+        $('#id-announcement-create-title-validation').addClass('display_none_important');
+        $('#id-announcement-create-remark-validation').addClass('display_none_important');
+        $('#id-announcement-create-valid-from-validation').addClass('display_none_important');
+        $('#id-announcement-create-valid-to-validation').addClass('display_none_important');
 
         //js side checking
         var isValid = true;
@@ -416,19 +416,19 @@ End Code
 
         if(titleStr === null || titleStr === undefined || titleStr === '') {
             isValid = false;
-            $('#id-announcement-create-title-validation').removeClass('display_none');
+            $('#id-announcement-create-title-validation').removeClass('display_none_important');
         }
         if(remarkStr === null || remarkStr === undefined || remarkStr === '') {
             isValid = false;
-            $('#id-announcement-create-remark-validation').removeClass('display_none');
+            $('#id-announcement-create-remark-validation').removeClass('display_none_important');
         }
         if(validFromStr === null || validFromStr === undefined || validFromStr === '') {
             isValid = false;
-            $('#id-announcement-create-valid-from-validation').removeClass('display_none');
+            $('#id-announcement-create-valid-from-validation').removeClass('display_none_important');
         }
         if(validToStr === null || validToStr === undefined || validToStr === '') {
             isValid = false;
-            $('#id-announcement-create-valid-to-validation').removeClass('display_none');
+            $('#id-announcement-create-valid-to-validation').removeClass('display_none_important');
         }
 
         if(!isValid)
@@ -448,16 +448,16 @@ End Code
                 if(response !== null && response !== undefined && response !== "" && response !== "SUCCESS_SAVE") {
                     for(var i = 0; i < response.length; i++) {
                         if(response[i] === 'ERROR_TITLE')
-                            $('#id-announcement-create-title-validation').removeClass('display_none');
+                            $('#id-announcement-create-title-validation').removeClass('display_none_important');
                         if(response[i] === 'ERROR_REMARK')
-                            $('#id-announcement-create-remark-validation').removeClass('display_none');
+                            $('#id-announcement-create-remark-validation').removeClass('display_none_important');
                         if(response[i] === 'ERROR_VALIDFROM')
-                            $('#id-announcement-create-valid-from-validation').removeClass('display_none');
+                            $('#id-announcement-create-valid-from-validation').removeClass('display_none_important');
                         if(response[i] === 'ERROR_VALIDTO')
-                            $('#id-announcement-create-valid-to-validation').removeClass('display_none');
+                            $('#id-announcement-create-valid-to-validation').removeClass('display_none_important');
                     }
                 } else if(response !== null && response !== undefined && response !== "" && response === "SUCCESS_SAVE") {
-                    $('#id-announcement-save-successful').removeClass('display_none').fadeOut(1500);
+                    $('#id-announcement-save-successful').removeClass('display_none_important').fadeOut(1500);
                     getResult("Announcement");
                 }
             }
@@ -465,7 +465,7 @@ End Code
     }
 
     function onClickDeleteFeedback() {
-        $('#id-feedback-delete-successful').addClass('display_none');
+        $('#id-feedback-delete-successful').addClass('display_none_important');
         $("#id-feedback-delete-successful").css("display", "");
 
         var idFeedbackStr = $('#id-feedback-hidden-id-feedback')[0].innerHTML;
@@ -478,7 +478,7 @@ End Code
             },
             success:async function(response){
                 if(response !== null && response !== undefined && response !== "" && response === "SUCCESS_DELETE") {
-                    $('#id-feedback-delete-successful').removeClass('display_none').fadeOut(1500);
+                    $('#id-feedback-delete-successful').removeClass('display_none_important').fadeOut(1500);
                     getResult("Feedback");
                 }
             }
@@ -511,10 +511,10 @@ End Code
                         optionList.push("<option value='" + responseSelectionList[i].NRIC + "'>" + responseSelectionList[i].FIRSTNAME + " " + responseSelectionList[i].LASTNAME + "</option>")
                     }
 
-                    $('#id-feedback-body').addClass('display_none');
-                    $('#id-feedback-new-reply-body').removeClass('display_none');
+                    $('#id-feedback-body').addClass('display_none_important');
+                    $('#id-feedback-new-reply-body').removeClass('display_none_important');
 
-                    $('#id-feedback-reply-successful').addClass('display_none');
+                    $('#id-feedback-reply-successful').addClass('display_none_important');
                     $("#id-feedback-reply-successful").css("display", "");
 
                     $('#id-feedback-send').removeClass('btn_disabled');
@@ -522,9 +522,9 @@ End Code
                     $('#id-feedback-delete').addClass('btn_disabled');
                     $('#id-feedback-back').removeClass('btn_disabled');
 
-                    $('#id-feedback-new-personal-message-staff-validation').addClass('display_none');
-                    $('#id-feedback-new-personal-message-about-validation').addClass('display_none');
-                    $('#id-feedback-new-personal-message-content-validation').addClass('display_none');
+                    $('#id-feedback-new-personal-message-staff-validation').addClass('display_none_important');
+                    $('#id-feedback-new-personal-message-about-validation').addClass('display_none_important');
+                    $('#id-feedback-new-personal-message-content-validation').addClass('display_none_important');
 
                     $("#id-feedback-new-personal-message-hidden-id-feedback").html($('#id-feedback-hidden-id-feedback')[0].innerHTML);
 
@@ -560,13 +560,13 @@ End Code
     }
 
     function onClickSendPersonalMessageFromFeedback() {
-        $('#id-feedback-reply-successful').addClass('display_none');
+        $('#id-feedback-reply-successful').addClass('display_none_important');
         $("#id-feedback-reply-successful").css("display", "");
 
         //reset all validation
-        $('#id-feedback-new-personal-message-staff-validation').addClass('display_none');
-        $('#id-feedback-new-personal-message-about-validation').addClass('display_none');
-        $('#id-feedback-new-personal-message-content-validation').addClass('display_none');
+        $('#id-feedback-new-personal-message-staff-validation').addClass('display_none_important');
+        $('#id-feedback-new-personal-message-about-validation').addClass('display_none_important');
+        $('#id-feedback-new-personal-message-content-validation').addClass('display_none_important');
 
         //js side checking
         var isValid = true;
@@ -576,15 +576,15 @@ End Code
 
         if(selectedStaffIdList === null || selectedStaffIdList === undefined || selectedStaffIdList === '' || selectedStaffIdList.length == 0) {
             isValid = false;
-            $('#id-feedback-new-personal-message-staff-validation').removeClass('display_none');
+            $('#id-feedback-new-personal-message-staff-validation').removeClass('display_none_important');
         }
         if(aboutStr === null || aboutStr === undefined || aboutStr === '') {
             isValid = false;
-            $('#id-feedback-new-personal-message-about-validation').removeClass('display_none');
+            $('#id-feedback-new-personal-message-about-validation').removeClass('display_none_important');
         }
         if(contentStr === null || contentStr === undefined || contentStr === '') {
             isValid = false;
-            $('#id-feedback-new-personal-message-content-validation').removeClass('display_none');
+            $('#id-feedback-new-personal-message-content-validation').removeClass('display_none_important');
         }
 
         if(!isValid)
@@ -603,11 +603,11 @@ End Code
                 if(response !== null && response !== undefined && response !== "" && response !== "SUCCESS_REPLY") {
                     for(var i = 0; i < response.length; i++) {
                         if(response[i] === 'ERROR_STAFF')
-                            $('#id-feedback-new-personal-message-staff-validation').removeClass('display_none');
+                            $('#id-feedback-new-personal-message-staff-validation').removeClass('display_none_important');
                         if(response[i] === 'ERROR_ABOUT')
-                            $('#id-feedback-new-personal-message-about-validation').removeClass('display_none');
+                            $('#id-feedback-new-personal-message-about-validation').removeClass('display_none_important');
                         if(response[i] === 'ERROR_CONTENT')
-                            $('#id-feedback-new-personal-message-content-validation').removeClass('display_none');
+                            $('#id-feedback-new-personal-message-content-validation').removeClass('display_none_important');
                     }
                 } else if(response !== null && response !== undefined && response !== "" && response === "SUCCESS_REPLY") {
                     $('#id-feedback-new-personal-message-hidden-id-feedback').html("");
@@ -616,7 +616,7 @@ End Code
                     $('#id-feedback-new-personal-message-about').val("");
                     $('#id-feedback-new-personal-message-content').val("");
 
-                    $('#id-feedback-reply-successful').removeClass('display_none').fadeOut(1500);
+                    $('#id-feedback-reply-successful').removeClass('display_none_important').fadeOut(1500);
                     getResult("Feedback");
                 }
             }

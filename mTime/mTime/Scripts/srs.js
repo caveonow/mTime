@@ -260,36 +260,36 @@ $(".deletebtn").click(function () {
 
 // Attendance Page
 $("#atdc_tab1").click(function () {
-    $("#atdc_part1, .tab_eff1").addClass("display_block").removeClass("display_none");
-    $("#atdc_part2, #atdc_part3, #atdc_part4").addClass("display_none").removeClass("display_block");
-    $(".tab_eff2, .tab_eff3, .tab_eff4").addClass("display_none").removeClass("display_block");
+    $("#atdc_part1, .tab_eff1").addClass("display_block").removeClass("display_none_important");
+    $("#atdc_part2, #atdc_part3, #atdc_part4").addClass("display_none_important").removeClass("display_block");
+    $(".tab_eff2, .tab_eff3, .tab_eff4").addClass("display_none_important").removeClass("display_block");
 
     $("#atdc_tab1").addClass("bg_color_444");
     $("#atdc_tab2, #atdc_tab3, #atdc_tab4").removeClass("bg_color_444");
 });
 
 $("#atdc_tab2").click(function () {
-    $("#atdc_part2, .tab_eff2").addClass("display_block").removeClass("display_none");
-    $("#atdc_part1, #atdc_part3, #atdc_part4").addClass("display_none").removeClass("display_block");
-    $(".tab_eff1, .tab_eff3, .tab_eff4").addClass("display_none").removeClass("display_block");
+    $("#atdc_part2, .tab_eff2").addClass("display_block").removeClass("display_none_important");
+    $("#atdc_part1, #atdc_part3, #atdc_part4").addClass("display_none_important").removeClass("display_block");
+    $(".tab_eff1, .tab_eff3, .tab_eff4").addClass("display_none_important").removeClass("display_block");
 
     $("#atdc_tab2").addClass("bg_color_444");
     $("#atdc_tab1, #atdc_tab3, #atdc_tab4").removeClass("bg_color_444");
 });
 
 $("#atdc_tab3").click(function () {
-    $("#atdc_part3, .tab_eff3").addClass("display_block").removeClass("display_none");
-    $("#atdc_part1, #atdc_part2, #atdc_part4").addClass("display_none").removeClass("display_block");
-    $(".tab_eff1, .tab_eff2, .tab_eff4").addClass("display_none").removeClass("display_block");
+    $("#atdc_part3, .tab_eff3").addClass("display_block").removeClass("display_none_important");
+    $("#atdc_part1, #atdc_part2, #atdc_part4").addClass("display_none_important").removeClass("display_block");
+    $(".tab_eff1, .tab_eff2, .tab_eff4").addClass("display_none_important").removeClass("display_block");
 
     $("#atdc_tab3").addClass("bg_color_444");
     $("#atdc_tab1, #atdc_tab2, #atdc_tab4").removeClass("bg_color_444");
 });
 
 $("#atdc_tab4").click(function () {
-    $("#atdc_part4, .tab_eff4").addClass("display_block").removeClass("display_none");
-    $("#atdc_part1, #atdc_part2, #atdc_part3").addClass("display_none").removeClass("display_block");
-    $(".tab_eff1, .tab_eff2, .tab_eff3").addClass("display_none").removeClass("display_block");
+    $("#atdc_part4, .tab_eff4").addClass("display_block").removeClass("display_none_important");
+    $("#atdc_part1, #atdc_part2, #atdc_part3").addClass("display_none_important").removeClass("display_block");
+    $(".tab_eff1, .tab_eff2, .tab_eff3").addClass("display_none_important").removeClass("display_block");
 
     $("#atdc_tab4").addClass("bg_color_444");
     $("#atdc_tab1, #atdc_tab2, #atdc_tab3").removeClass("bg_color_444");
