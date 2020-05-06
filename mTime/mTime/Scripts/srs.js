@@ -394,6 +394,15 @@ $("#stfhdr_btn4").click(function () {
 
     $(".profile_update_item").removeClass("display_none");
 
+    $('#id-profile-update-name').val("");
+    $('#id-profile-update-surname').val("");
+    $('#id-profile-update-nric').val("");
+    $('#id-profile-update-tel').val("");
+    $('#id-profile-update-address').val("");
+    $('#id-profile-update-email').val("");
+    $('#id-profile-update-grade').val("");
+    $('#id-profile-update-gender').val("");
+
     $.ajax({
         url:'/Staff/InitProfileUpdate',
         type:'get',
@@ -494,6 +503,113 @@ function onSubmitProfileUpdateForm() {
     });
 }
 //Profile update
+
+//Update password
+function initChangePassword() {
+    $("#passwordchange_popup").addClass("display_block").removeClass("display_none_important");
+
+    $('#id-change-password-old-password-error').addClass('display_none_important');
+    $('#id-change-password-new-password-error').addClass('display_none_important');
+    $('#id-change-password-confirm-password-error').addClass('display_none_important');
+
+    $('#id-change-password-reply-successful').addClass("display_none_important");
+
+    $('.pwchange_item').removeClass("display_none_important");
+
+    $('#id-change-password-nric').val("");
+    $('#id-change-password-old-password').val("");
+    $('#id-change-password-new-password').val("");
+    $('#id-change-password-confirm-password').val("");
+
+    $.ajax({
+        url:'/Staff/InitChangePassword',
+        type:'get',
+        success: async function(response) {
+            $('#id-change-password-nric').val(response);
+        }
+    });
+}
+
+function onSubmitChangePassword() {
+    $('#id-change-password-old-password-error').addClass('display_none_important');
+    $('#id-change-password-new-password-error').addClass('display_none_important');
+    $('#id-change-password-confirm-password-error').addClass('display_none_important');
+
+    var nricStr = $('#id-change-password-nric').val();
+    var oldPasswordStr = $('#id-change-password-old-password').val();
+    var passwordStr = $('#id-change-password-new-password').val();
+    var confirmPasswordStr = $('#id-change-password-confirm-password').val();
+
+    var isValid = true;
+
+    if(oldPasswordStr === null || oldPasswordStr === undefined || oldPasswordStr === '') {
+        isValid = false;
+        $('#id-change-password-old-password-error').removeClass('display_none_important');
+        document.getElementById("id-change-password-old-password-error").innerHTML = "Old password is required.";
+    }
+    if(passwordStr === null || passwordStr === undefined || passwordStr === '') {
+        isValid = false;
+        $('#id-change-password-new-password-error').removeClass('display_none_important');
+    }
+    if(confirmPasswordStr === null || confirmPasswordStr === undefined || confirmPasswordStr === '') {
+        isValid = false;
+        $('#id-change-password-confirm-password-error').removeClass('display_none_important');
+        document.getElementById("id-change-password-confirm-password-error").innerHTML = "Confirm password is required.";
+    } else if(passwordStr !== confirmPasswordStr) {
+        isValid = false;
+        $('#id-change-password-confirm-password-error').removeClass('display_none_important');
+        document.getElementById("id-change-password-confirm-password-error").innerHTML = "Confirm password is incorrect.";
+    }
+
+    if(!isValid)
+        return;
+
+    var staffPassword = {
+        NRIC: nricStr,
+        OLDPASSWORD: oldPasswordStr,
+        NEWPASSWORD: passwordStr,
+        NEWCONFIRMPASSWORD: confirmPasswordStr
+    };
+
+    $.ajax({
+        url:'/Staff/ChangePassword',
+        type:'post',
+        data: {
+            jsonString: JSON.stringify(staffPassword)
+        },
+        success: async function(response) {
+            if(response !== null && response !== undefined && response !== "" && response !== "SUCCESS_CHANGE_PASSWORD") {
+                for(var i = 0; i < response.length; i++) {
+                    if(response[i] === 'ERROR_OLDPASSWORD') {
+                        $('#id-change-password-old-password-error').removeClass('display_none_important');
+                        document.getElementById("id-change-password-old-password-error").innerHTML = "Old password is required.";
+                    } else if(response[i] === 'ERROR_OLDPASSWORD_INCORRECT') {
+                        $('#id-change-password-old-password-error').removeClass('display_none_important');
+                        document.getElementById("id-change-password-old-password-error").innerHTML = "Old password is incorrect.";
+                    }
+                        
+                    if(response[i] === 'ERROR_NEWPASSWORD')
+                        $('#id-change-password-new-password-error').removeClass('display_none_important');
+                    if(response[i] === 'ERROR_NEWCONFIRMPASSWORD') {
+                        $('#id-change-password-confirm-password-error').removeClass('display_none_important');
+                        document.getElementById("id-change-password-confirm-password-error").innerHTML = "Confirm password is required.";
+                    } else if(response[i] === 'ERROR_INCORRECT') {
+                        $('#id-change-password-confirm-password-error').removeClass('display_none_important');
+                        document.getElementById("id-change-password-confirm-password-error").innerHTML = "Confirm password is incorrect.";
+                    }
+                }
+            } else if(response !== null && response !== undefined && response !== "" && response === "SUCCESS_CHANGE_PASSWORD") {
+                $('.pwchange_item').addClass("display_none_important");
+                $('#id-change-password-reply-successful').removeClass("display_none_important");
+                
+                await sleep(1500);
+                $("#id-change-password-reply-successful").addClass("display_none_important");
+                $("#passwordchange_popup").removeClass("display_block").addClass("display_none_important");
+            }
+        }
+    });
+}
+//Update password
 
 function sleep(millieseconds) {
     return new Promise(resolve => setTimeout(resolve, millieseconds));

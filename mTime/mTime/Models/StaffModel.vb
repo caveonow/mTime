@@ -68,6 +68,18 @@ Namespace model
 
     End Class
 
+    Public Class STAFFPASSWORD
+        <Key>
+        <JsonProperty("NRIC")>
+        Public Property NRIC As String
+        <JsonProperty("OLDPASSWORD")>
+        Public Property OLDPASSWORD As String
+        <JsonProperty("NEWPASSWORD")>
+        Public Property NEWPASSWORD As String
+        <JsonProperty("NEWCONFIRMPASSWORD")>
+        Public Property NEWCONFIRMPASSWORD As String
+    End Class
+
     Public Class STAFF
 
         <Key>

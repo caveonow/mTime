@@ -60,7 +60,7 @@
 
                 <div class="hd_pf_part4">
                     Password
-                    <div id="passwordchange_btn" class="pf_p4_tt1">
+                    <div id="passwordchange_btn" class="pf_p4_tt1" onclick="initChangePassword()">
                         Change
                     </div>
                 </div>
@@ -184,53 +184,59 @@
         </div>
     </div>
 
-    @*PoPup First Login *@
-    <div id="passwordchange_popup" class="popup_bg display_none">
+    @*PoPup Change Password *@
+    <div id="passwordchange_popup" class="popup_bg display_none_important">
         <div class="passwordchange_box">
-            <div class="fa fa-user-circle pwchange_b_icon">
+            <div class="fa fa-user-circle pwchange_b_icon pwchange_item">
                 <div class="b_icon_tt">Password Change</div>
             </div>
 
-            <div class="pwchange_b_part">
+            <div class="pwchange_b_part pwchange_item">
                 <div class="b_pt_tt">NRIC :</div>
 
                 <div class="b_pt_box">
-                    <input type="text" id="title" name="title">
+                    <input id="id-change-password-nric" type="text" class="events_none">
                 </div>
-                <div class="hlday_addbox_pt_error">Text Error</div>
             </div>
 
-            <div class="pwchange_b_part">
+            <div class="pwchange_b_part pwchange_item">
                 <div class="b_pt_tt">Old Password :</div>
 
                 <div class="b_pt_box">
-                    <input type="password" id="title" name="title">
+                    <input type="password" id="id-change-password-old-password">
                 </div>
-                <div class="hlday_addbox_pt_error">Text Error</div>
+                <div id="id-change-password-old-password-error" class="hlday_addbox_pt_error display_none_important">Old password is required.</div>
             </div>
 
-            <div class="pwchange_b_part">
+            <div class="pwchange_b_part pwchange_item">
                 <div class="b_pt_tt">Password :</div>
 
                 <div class="b_pt_box">
-                    <input type="password" id="title" name="title">
+                    <input type="password" id="id-change-password-new-password">
                 </div>
-                <div class="hlday_addbox_pt_error">Text Error</div>
+                <div id="id-change-password-new-password-error" class="hlday_addbox_pt_error display_none_important">Password is required.</div>
             </div>
 
-            <div class="pwchange_b_part">
+            <div class="pwchange_b_part pwchange_item">
                 <div class="b_pt_tt">Confirm Password :</div>
 
                 <div class="b_pt_box">
-                    <input type="password" id="title" name="title">
+                    <input type="password" id="id-change-password-confirm-password">
                 </div>
-                <div class="hlday_addbox_pt_error">Text Error</div>
+                <div id="id-change-password-confirm-password-error" class="hlday_addbox_pt_error display_none_important">Confirm password is required.</div>
             </div>
 
-            <div class="pwchange_b_partbtm">
+            <div class="pwchange_b_partbtm pwchange_item">
                 <div id="cancelbtn" class="rtpt_closebtn filter1">Cancel</div>
 
-                <div id="savebtn" class="rtpt_savebtn filter1">Save</div>
+                <div class="rtpt_savebtn filter1" onclick="onSubmitChangePassword()">Save</div>
+            </div>
+
+            <div id="id-change-password-reply-successful" Class="ctr_rtpt_popupbox display_none_important save_ok_popup">
+                <div Class="rtpt_popupbox_inb">
+                    <div Class="fa fa-check-circle-o popupbox_inb_icon_blue"></div>
+                    <div Class="popupbox_inb_tt">Change successfully</div>
+                </div>
             </div>
         </div>
     </div>

@@ -598,5 +598,56 @@ Namespace Controllers
             Return Json("SUCCESS_UPDATE_PROFILE", JsonRequestBehavior.AllowGet)
         End Function
 
+        Function InitChangePassword()
+            Dim id = "750101065066"
+
+            Return Json(id, JsonRequestBehavior.AllowGet)
+        End Function
+
+        Function ChangePassword(ByVal jsonString As String)
+            Dim StaffPassword = Newtonsoft.Json.JsonConvert.DeserializeObject(Of model.STAFFPASSWORD)(jsonString)
+
+            Dim isValid = True
+            Dim result As New List(Of Object)
+
+            If String.IsNullOrEmpty(StaffPassword.OLDPASSWORD) Then
+                isValid = False
+                result.Add("ERROR_OLDPASSWORD")
+            End If
+
+            If String.IsNullOrEmpty(StaffPassword.NEWPASSWORD) Then
+                isValid = False
+                result.Add("ERROR_NEWPASSWORD")
+            End If
+
+            If String.IsNullOrEmpty(StaffPassword.NEWCONFIRMPASSWORD) Then
+                isValid = False
+                result.Add("ERROR_NEWCONFIRMPASSWORD")
+            End If
+
+            If String.Compare(StaffPassword.NEWPASSWORD, StaffPassword.NEWCONFIRMPASSWORD) <> 0 Then
+                isValid = False
+                result.Add("ERROR_INCORRECT")
+            End If
+
+            Dim Staff As model.STAFF = db.STAFF.Where(Function(s) s.NRIC = StaffPassword.NRIC).SingleOrDefault
+
+            If String.Compare(Staff.PASSWORD, StaffPassword.OLDPASSWORD) <> 0 Then
+                isValid = False
+                result.Add("ERROR_OLDPASSWORD_INCORRECT")
+            End If
+
+            If Not isValid Then
+                Return Json(result, JsonRequestBehavior.AllowGet)
+            End If
+
+            Staff.PASSWORD = StaffPassword.NEWPASSWORD
+
+            db.Entry(Staff).State = System.Data.Entity.EntityState.Modified
+            db.SaveChanges()
+
+            Return Json("SUCCESS_CHANGE_PASSWORD", JsonRequestBehavior.AllowGet)
+        End Function
+
     End Class
 End Namespace
