@@ -26,6 +26,13 @@ Namespace model
         Public Property RESIGNEDON As Nullable(Of Date)
         Public Property RESIGNEDONSTR As String
 
+        ' For profile update
+        Public Property GENDER As String
+        Public Property CONTACTNO1 As String
+        Public Property ADDRESS As String
+        Public Property EMAIL As String
+        Public Property GRADE As String
+
         Public DEPARTMENTLIST As IList(Of SelectListItem)
         Public SHIFTLIST As IList(Of SelectListItem)
 

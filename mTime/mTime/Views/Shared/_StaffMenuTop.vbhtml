@@ -20,13 +20,12 @@
             <div class="pt2_b_inbtnefflight"></div>
         </a>
 
-        @*<a href="" class="pt2_b_btn" id="stfhdr_btn4">
+        <div class="Profile_btn pt2_b_btn" id="stfhdr_btn4" style="cursor: pointer">
             <div class="pt2_b_inbtn">Profile</div>
             <div class="pt2_b_inbtneff"></div>
             <div class="pt2_b_inbtnefflight"></div>
-        </a>*@
+        </div>
 
-        @*<div href="@Url.Action("Index", "Feedback")" class="pt2_b_btn" id="stfhdr_btn5">*@
         <div class="Feedback_btn pt2_b_btn" id="stfhdr_btn5" style="cursor: pointer">
             <div class="pt2_b_inbtn">Feedback</div>
             <div class="pt2_b_inbtneff"></div>
@@ -76,5 +75,118 @@
             </div>
         </div>
         End Using
+    </div>
+
+    <div id="profile_update_popup" class="popup_bg display_none">
+        <div class="profile_update_box">
+            <div class="profile_update_item"> 
+                <div class="profile_update_b_htr profile_update">Profile Update</div>
+
+                <div class="ctr_rtpt_addbox">
+                    <div class="rtpt_label_part">Name:</div>
+                    <input class="rtpt_addbox_part all_input1 text-box single-line form-control" 
+                        id="id-profile-update-name" 
+                        type="text"
+                        maxlength="100"
+                    />
+                    <div id="id-error-panel-name" class="rtpt_addbox_pt_error display_none">
+                        <span>Name is required</span>
+                    </div>
+                </div>
+
+                <div class="ctr_rtpt_addbox">
+                    <div class="rtpt_label_part">Surname:</div>
+                    <input class="rtpt_addbox_part all_input1 text-box single-line form-control" 
+                        id="id-profile-update-surname" 
+                        type="text"
+                        maxlength="100"
+                    />
+                    <div id="id-error-panel-surname" class="rtpt_addbox_pt_error display_none">
+                        <span>Surame is required</span>
+                    </div>
+                </div>
+
+                <div class="ctr_rtpt_addbox">
+                    <div class="rtpt_label_part">NRIC:</div>
+                    <input class="rtpt_addbox_part all_input1 text-box single-line form-control events_none"
+                        id="id-profile-update-nric" 
+                        type="text"
+                    />
+                </div>
+
+                <div class="ctr_rtpt_addbox">
+                    <div class="rtpt_label_part">Gender:</div>
+                    <select id="id-profile-update-gender" class="rtpt_addbox_part all_input1 text-box single-line form-control">
+                        
+                    </select>
+                    <div id="id-error-panel-gender" class="rtpt_addbox_pt_error display_none">
+                        <span>Gender is required</span>
+                    </div>
+                </div>
+
+                <div class="ctr_rtpt_addbox">
+                    <div class="rtpt_label_part">Tel:</div>
+                    <input class="rtpt_addbox_part all_input1 text-box single-line form-control" 
+                        id="id-profile-update-tel" 
+                        type="text"
+                        maxlength="20"
+                    />
+                </div>
+
+                <div class="ctr_rtpt_addbox">
+                    <div class="rtpt_label_part">Address:</div>
+                    <input class="rtpt_addbox_part all_input1 text-box single-line form-control" 
+                        id="id-profile-update-address" 
+                        type="text"
+                        maxlength="500"
+                    />
+                </div>
+
+                <div class="ctr_rtpt_addbox">
+                    <div class="rtpt_label_part">Email:</div>
+                    <input class="rtpt_addbox_part all_input1 text-box single-line form-control" 
+                        id="id-profile-update-email" 
+                        type="text"
+                        maxlength="100"
+                    />
+                </div>
+
+                <div class="ctr_rtpt_addbox">
+                    <div class="rtpt_label_part">Department:</div>
+                    <select id="id-profile-update-department" class="rtpt_addbox_part all_input1 text-box single-line form-control events_none">
+                        
+                    </select>
+                </div>
+
+                <div class="ctr_rtpt_addbox">
+                    <div class="rtpt_label_part">Grade:</div>
+                    <input class="rtpt_addbox_part all_input1 text-box single-line form-control" 
+                        id="id-profile-update-grade" 
+                        type="text"
+                        maxlength="5"
+                    />
+                </div>
+
+                <div class="ctr_rtpt_addbox">
+                    <div class="rtpt_label_part">Working Shift:</div>
+                    <select id="id-profile-update-working-shift" class="rtpt_addbox_part all_input1 text-box single-line form-control events_none">
+                        
+                    </select>
+                </div>
+
+                <div class="profile_update_b_ftr">
+                    <div id="closebtn" class="rtpt_closebtn filter1">Cancel</div>
+
+                    <input type="button" class="rtpt_savebtn filter1" value="Send" onclick="onSubmitProfileUpdateForm()" style="width: 55px !important"/>
+                </div>
+            </div>
+
+            <div id="" Class="display_none profile_update_save_ok_popup">
+                <div Class="profile_update_rtpt_popupbox_inb">
+                    <div Class="fa fa-check-circle-o profile_update_popupbox_inb_icon_blue"></div>
+                    <div Class="profile_update_popupbox_inb_tt">Save successfully</div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

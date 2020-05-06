@@ -136,3 +136,97 @@ td .check-box {
 .li_level03:hover {
     background-color: #e1ffd4 !important;
 }
+
+.profile_update_box {
+    width: 550px;
+    height: initial;
+    min-height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+    z-index: 1; 
+}
+
+.profile_update_box .profile_update_b_htr {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    padding: 0 10px;
+    background-color: #222; 
+}
+
+.profile_update_box .profile_update_b_ttarea {
+    width: 150px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #333;
+    padding: 10px 10px;
+    background-color: #fff; 
+}
+
+.profile_update_box .ctr_rtpt_addbox {
+    width: 550px;
+    height: initial;
+    /* padding: 10px; */
+    /* position: absolute; */
+    left: 50%;
+    top: 50%;
+    /* transform: translate(-50%, -50%);  */
+    display: inline-block;
+}
+
+.profile_update_box .rtpt_label_part {
+    float: left;
+    display: block;
+}
+
+.profile_update_box .rtpt_addbox_part {
+    width: 80% !important;
+}
+
+.profile_update_box .rtpt_addbox_pt_error {
+    width: 100%;
+    line-height: 20px;
+    float: left;
+    color: #ff0000;
+    font-size: 12px;
+    text-align: right; 
+}
+
+.profile_update_box .profile_update_b_ftr {
+    width: 100%;
+    height: 30px;
+    float: left;
+    padding: 0 10px;
+    margin: 5px 0; 
+}
+
+.profile_update_box .profile_update_save_ok_popup {
+    width: 100%;
+    height: 515px;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.35); 
+}
+
+.profile_update_box .rtpt_popupbox_inb {
+    width: 500px;
+    height: initial;
+    padding: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+    z-index: 10; 
+}

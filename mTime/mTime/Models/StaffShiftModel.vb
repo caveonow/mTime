@@ -6,7 +6,6 @@ Namespace model
         Public Property NRIC As String
         Public Property SHIFTID As String
         Public Property EFFECTIVEON As Date
-
     End Class
 
 End Namespace

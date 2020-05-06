@@ -53,7 +53,7 @@ $("#forgotpw_btn").click(function () {
 });
 
 $("#closebtn, #confirmbtn, #sendbtn, #loginbtn, #savebtn, #cancelbtn").click(function () {
-    $("#firstlogin_popup, #login_popup, #forgotpw_popup, #editprofile_popup, #Feedback_popup, #passwordchange_popup").addClass("display_none").removeClass("display_block");
+    $("#firstlogin_popup, #login_popup, #forgotpw_popup, #editprofile_popup, #Feedback_popup, #passwordchange_popup, #profile_update_popup").addClass("display_none").removeClass("display_block");
 });
 //Nav Top Menu Staff
 //$("#stfhdr_btn1").addClass("pt2_b_btneff");
@@ -378,6 +378,122 @@ function formSubmit (){
     });
 }
 //Feedback
+
+//Profile update
+$("#stfhdr_btn4").click(function () {
+    $('#id-error-panel-name').addClass('display_none');
+    $('#id-error-panel-surname').addClass('display_none');
+    $('#id-error-panel-gender').addClass('display_none');
+
+    $("#profile_update_popup").addClass("display_block").removeClass("display_none");
+    
+    $("#id-content").val("");
+    $("#id-error-panel-content").addClass("display_none");
+
+    $(".profile_update_save_ok_popup").addClass("display_none");
+
+    $(".profile_update_item").removeClass("display_none");
+
+    $.ajax({
+        url:'/Staff/InitProfileUpdate',
+        type:'get',
+        success:async function(response){
+            var result = response[0];
+
+            $('#id-profile-update-name').val(result.FIRSTNAME);
+            $('#id-profile-update-surname').val(result.LASTNAME);
+            $('#id-profile-update-nric').val(result.NRIC);
+            $('#id-profile-update-tel').val(result.CONTACTNO1);
+            $('#id-profile-update-address').val(result.ADDRESS);
+            $('#id-profile-update-email').val(result.EMAIL);
+            $('#id-profile-update-grade').val(result.GRADE);
+
+            if(result.GENDER === null || result.GENDER === undefined || result.GENDER === "" || result.GENDER === "m")
+                $('#id-profile-update-gender').html("<option value='m' selected>Male</option><option value='f'>Female</option>");
+            else
+                $('#id-profile-update-gender').html("<option value='m'>Male</option><option value='f' selected>Female</option>");
+
+            var departmentHtml = "";
+            for(var i = 0; i < result.DEPARTMENTLIST.length; i++) {
+                if(result.DEPARTMENTLIST[i].Value == result.DEPARTMENTID)
+                    departmentHtml = departmentHtml + "<option value='" + result.DEPARTMENTLIST[i].Value + "' selected>" + result.DEPARTMENTLIST[i].Text + "</option>";
+                else
+                    departmentHtml = departmentHtml + "<option value='" + result.DEPARTMENTLIST[i].Value + "'>" + result.DEPARTMENTLIST[i].Text + "</option>";
+            }
+
+            $('#id-profile-update-department').html(departmentHtml);
+
+
+            var workingShiftHtml = "";
+            for(var i = 0; i < result.SHIFTLIST.length; i++) {
+                if(result.SHIFTLIST[i].Value == result.SHIFTID)
+                    workingShiftHtml = workingShiftHtml + "<option value='" + result.SHIFTLIST[i].Value + "' selected>" + result.SHIFTLIST[i].Text + "</option>";
+                else
+                    workingShiftHtml = workingShiftHtml + "<option value='" + result.SHIFTLIST[i].Value + "'>" + result.SHIFTLIST[i].Text + "</option>";
+            }
+
+            $('#id-profile-update-working-shift').html(workingShiftHtml);
+        }
+    });
+});
+
+function onSubmitProfileUpdateForm() {
+    $('#id-error-panel-name').addClass('display_none');
+    $('#id-error-panel-surname').addClass('display_none');
+    $('#id-error-panel-gender').addClass('display_none');
+
+    var nameStr = $('#id-profile-update-name').val();
+    var surnameStr = $('#id-profile-update-surname').val();
+    var nricStr = $('#id-profile-update-nric').val();
+    var telStr = $('#id-profile-update-tel').val();
+    var addressStr = $('#id-profile-update-address').val();
+    var emailStr = $('#id-profile-update-email').val();
+    var gradeStr = $('#id-profile-update-grade').val();
+    var genderStr = $('#id-profile-update-gender').val();
+
+    var isValid = true;
+
+    if(nameStr === null || nameStr === undefined || nameStr === '') {
+        isValid = false;
+        $('#id-error-panel-name').removeClass('display_none');
+    }
+    if(surnameStr === null || surnameStr === undefined || surnameStr === '') {
+        isValid = false;
+        $('#id-error-panel-surname').removeClass('display_none');
+    }
+    if(genderStr === null || genderStr === undefined || genderStr === '') {
+        isValid = false;
+        $('#id-error-panel-gender').removeClass('display_none');
+    }
+
+    if(!isValid)
+        return;
+
+    $.ajax({
+        url:'/Staff/ProfileUpdate',
+        type:'post',
+        data: {
+            NRIC: nricStr,
+            FIRSTNAME: nameStr,
+            LASTNAME: surnameStr,
+            GENDER: genderStr,
+            CONTACTNO1: telStr,
+            ADDRESS: addressStr,
+            EMAIL: emailStr,
+            GRADE: gradeStr,
+        },
+        success:async function(response){
+            $(".profile_update_item").addClass("display_none");
+            $(".profile_update").addClass("display_none");
+            $(".profile_update_save_ok_popup").removeClass("display_none");
+            
+            await sleep(1500);
+            $(".profile_update_save_ok_popup").addClass("display_none");
+            $("#profile_update_popup").addClass("display_none").removeClass("display_block");
+        }
+    });
+}
+//Profile update
 
 function sleep(millieseconds) {
     return new Promise(resolve => setTimeout(resolve, millieseconds));

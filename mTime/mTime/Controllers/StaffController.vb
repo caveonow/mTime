@@ -501,6 +501,11 @@ Namespace Controllers
                 Else
                     .SHIFTLIST = GetShiftList(StaffShift.SHIFTID)
                 End If
+                .GENDER = Staff.GENDER
+                .CONTACTNO1 = Staff.CONTACTNO1
+                .ADDRESS = Staff.ADDRESS
+                .EMAIL = Staff.EMAIL
+                .GRADE = Staff.GRADE
             End With
 
             Return StaffDepartment
@@ -558,6 +563,39 @@ Namespace Controllers
             End If
 
             Return Json("SUCCESS_RESET_PASSWORD", JsonRequestBehavior.AllowGet)
+        End Function
+
+        Function InitProfileUpdate()
+            Dim id = "750101065066"
+            Dim StaffDepartment = GetStaffDepartmentInfo(id)
+
+            Dim result As New List(Of Object)
+            result.Add(StaffDepartment)
+
+            Return Json(result, JsonRequestBehavior.AllowGet)
+        End Function
+
+        Function ProfileUpdate(ByVal StaffParam As model.Staff) As ActionResult
+            ' Get entire staff value from db
+            Dim Staff As model.STAFF = db.STAFF.Where(Function(s) s.NRIC = StaffParam.NRIC).SingleOrDefault
+
+            ' Update necessary fields
+            If Not IsNothing(Staff) Then
+                With Staff
+                    .FIRSTNAME = StaffParam.FIRSTNAME
+                    .LASTNAME = StaffParam.LASTNAME
+                    .GENDER = StaffParam.GENDER
+                    .CONTACTNO1 = StaffParam.CONTACTNO1
+                    .ADDRESS = StaffParam.ADDRESS
+                    .EMAIL = StaffParam.EMAIL
+                    .GRADE = StaffParam.GRADE
+                End With
+
+                db.Entry(Staff).State = System.Data.Entity.EntityState.Modified
+                db.SaveChanges()
+            End if
+
+            Return Json("SUCCESS_UPDATE_PROFILE", JsonRequestBehavior.AllowGet)
         End Function
 
     End Class
